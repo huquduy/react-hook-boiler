@@ -1,34 +1,36 @@
-/* eslint-disable no-restricted-globals */
+import { stringify } from 'query-string';
 import store from 'store'
-import queryString from 'query-string'
-import React from 'react'
 
 const BASE_URL = 'https://reqres.in/api/'
-const SUCCESS_STATUS = [200, 201]
 
-interface IHttpResponse<T> extends Response {
-  parsedBody?: T;
+const attachHeaders = () => {
+  return {
+    Authorization: store.get('token'),
+    'Content-Type': 'application/json'
+  }
 }
 
-export const get = async <T>(
-  path: string,
-  args: RequestInit = { method: "get" }
-): Promise<IHttpResponse<T>> => {
-  return await http<T>(new Request(path, args));
-};
- 
-export const post = async <T>(
-  path: string,
-  body: any,
-  args: RequestInit = { method: "post", body: JSON.stringify(body) }
-): Promise<IHttpResponse<T>> => {
-  return await http<T>(new Request(path, args));
-};
- 
-export const put = async <T>(
-  path: string,
-  body: any,
-  args: RequestInit = { method: "put", body: JSON.stringify(body) }
-): Promise<IHttpResponse<T>> => {
-  return await http<T>(new Request(path, args));
-};
+export const get = async (path: string, body: any) => {
+  const url = BASE_URL + path + '?' + stringify(body)
+  const response = await fetch(url, {
+    headers: attachHeaders()
+  })
+  const payload = await response.json()
+  if (!response.ok) {
+    throw new Error(response.statusText)
+  }
+  return payload
+}
+
+export const post = async (path: string, body: any) => {
+  const url = BASE_URL + path
+  const response = await fetch(url, {
+    body: JSON.stringify(body),
+    method: 'POST'
+  })
+  const payload = await response.json()
+  if (!response.ok) {
+    throw new Error(response.statusText)
+  }
+  return payload
+}
