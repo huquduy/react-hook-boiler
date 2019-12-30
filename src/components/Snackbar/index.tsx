@@ -46,7 +46,6 @@ const useSnackbar = (status = false) => {
       ContentProps={{
         'aria-describedby': 'message-id',
       }}
-      variant="error"
       action={[
         <IconButton key="close" aria-label="close" color="secondary" onClick={handleClose}>
           <CloseIcon />
