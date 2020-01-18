@@ -1,5 +1,6 @@
+import LinearProgress, { LinearProgressProps } from "@material-ui/core/LinearProgress";
+
 import React, { useState } from "react"
-import LinearProgress, { LinearProgressProps } from '@material-ui/core/LinearProgress'
 
 type TCallback = () => void;
 

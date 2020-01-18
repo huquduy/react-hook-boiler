@@ -1,28 +1,29 @@
-import React, { lazy, Suspense } from 'react'
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route
-} from "react-router-dom"
-import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles'
-import CssBaseline from '@material-ui/core/CssBaseline'
+import React from 'react'
+import { CssBaseline } from '@material-ui/core'
+import { createMuiTheme, MuiThemeProvider } from '@material-ui/core/styles'
 import './App.scss'
+import Router from './router'
 
 const theme = createMuiTheme({
+  // overrides: {
+  //   MuiInput: {
+  //       root: {
+  //         color: "rgba(255, 255, 255, 0.5)"
+  //       },
+  //   }
+  // },
   palette: {
-    type: 'dark',
+    primary: {
+      main: '#efd77f'
+    },
+    secondary: {
+      main: '#E33E7F'
+    }
   },
   typography: {
+    fontFamily: 'hokifont',
     fontSize: 17,
-    fontFamily: 'InstaFont',
   },
-  overrides: {
-    MuiInput: {
-        root: {
-          color: "rgba(255, 255, 255, 0.5)"
-        },
-    }
-  }
 })
 
 const App: React.FC = () => {
@@ -30,15 +31,7 @@ const App: React.FC = () => {
     <div className="App">
       <MuiThemeProvider theme={theme}>
         <CssBaseline />
-        <Router>
-          <Suspense fallback={<div>Component is being loaded...</div>}>
-            <Switch>
-              <Route path="/login">
-                <Login />
-              </Route>
-            </Switch>
-          </Suspense>
-        </Router>
+        <Router />
       </MuiThemeProvider>
     </div>
   );

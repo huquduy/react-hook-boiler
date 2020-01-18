@@ -1,0 +1,1 @@
+export const imageSrc = `${process.env.PUBLIC_URL}/images/`;

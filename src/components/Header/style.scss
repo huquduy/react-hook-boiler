@@ -1,0 +1,20 @@
+@import "../../colors";
+.header-wraper{
+  margin-bottom: 56px;
+  .header {
+    >div {
+      color: $primaryColor;
+      background: $backgroundBody;
+    }
+    .flex-grow {
+      flex-grow: 1;
+    }
+    .header-left {
+      display: flex;
+      align-items: center;
+    }
+    .logo {
+      max-width: 150px;
+    }
+  }
+}
