@@ -64,7 +64,7 @@ const Home: React.FC<RouteComponentProps> = ({ history }) => {
             {map(({ image, idName }: IProviderProps) => 
               <Grid item={true} xs={4} sm={4} key={idName}>
                 <Paper className='provider'>
-                  <img className='logo' alt='hokibet188' src={`${imageSrc}/provider-photo/${image}`} />
+                  <img className='logo' alt='hokibet188' src={`${imageSrc}provider-photo/${image}`} />
                   <Typography variant="caption" display="block" gutterBottom={true}>
                     {idName}
                   </Typography>
