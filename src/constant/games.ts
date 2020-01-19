@@ -1,8 +1,9 @@
 export const SLOT_TAB = 'Slots'
-export const CASINO_TAB = 'Casino'
-export const SPORTS_TAB = 'Sports'
-export const LOTTERY_TAB = 'Lottery'
-export const POKER_TAB = 'Poker'
+const CASINO_TAB = 'Casino'
+const SPORTS_TAB = 'Sports'
+const LOTTERY_TAB = 'Lottery'
+const POKER_TAB = 'Poker'
+const TANGKAS_TAB = 'Tangkas'
 
 export interface IProviderProps {
   idName?: string;
@@ -20,33 +21,43 @@ const GAMETYPES = [
     idName: SLOT_TAB,
     providers: [
       {
-        idName: 'Spade Gaming',
-        image: 'Spade Gaming.png',
-        route: ''
-      },
-      {
         idName: 'PG',
-        image: 'PG.png',
+        image: 'pg.png',
         route: ''
       },
       {
         idName: 'Playtech',
-        image: 'Playtech.png',
+        image: 'playtech.png',
         route: ''
       },
       {
         idName: 'Microgaming',
-        image: 'Microgaming.png',
+        image: 'microgaming.png',
         route: ''
       },
       {
         idName: 'Joker',
-        image: 'Joker.png',
+        image: 'joker.png',
         route: ''
       },
       {
         idName: 'Pragmatic',
-        image: 'Pragmatic.png',
+        image: 'pragmatic.png',
+        route: ''
+      },
+      {
+        idName: '1S',
+        image: '1s.png',
+        route: ''
+      },
+      {
+        idName: 'SBO',
+        image: 'sbo.png',
+        route: ''
+      },
+      {
+        idName: 'Gameplay',
+        image: 'gameplay.png',
         route: ''
       }
     ]
@@ -55,53 +66,34 @@ const GAMETYPES = [
     idName: CASINO_TAB,
     providers: [
       {
-        idName: 'Spade Gaming',
-        image: 'Spade Gaming.png',
-        route: ''
-      },
-      {
-        idName: 'PG',
-        image: 'PG.png',
-        route: ''
-      },
-      {
         idName: 'Playtech',
-        image: 'Playtech.png',
+        image: 'playtech.png',
         route: ''
       },
       {
         idName: 'Microgaming',
-        image: 'Microgaming.png',
+        image: 'microgaming.png',
         route: ''
       },
       {
-        idName: 'Joker',
-        image: 'Joker.png',
+        idName: 'Gameplay',
+        image: 'gameplay.png',
         route: ''
       },
       {
-        idName: 'Pragmatic',
-        image: 'Pragmatic.png',
+        idName: 'SBO',
+        image: 'sbo.png',
         route: ''
       }
+      
     ]
   },
   {
     idName: SPORTS_TAB,
     providers: [
       {
-        idName: 'Spade Gaming',
-        image: 'Spade Gaming.png',
-        route: ''
-      },
-      {
-        idName: 'PG',
-        image: 'PG.png',
-        route: ''
-      },
-      {
-        idName: 'Playtech',
-        image: 'Playtech.png',
+        idName: 'BNIN',
+        image: 'bbin.png',
         route: ''
       }
     ]
@@ -114,6 +106,12 @@ const GAMETYPES = [
   },
   {
     idName: POKER_TAB,
+    providers: [
+      
+    ]
+  },
+  {
+    idName: TANGKAS_TAB,
     providers: [
       
     ]

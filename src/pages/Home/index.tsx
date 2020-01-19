@@ -1,6 +1,6 @@
-import { Grid, Paper, Tab, Tabs, Typography } from '@material-ui/core'
+import { Button, ButtonGroup, Grid, Paper, Tab, Tabs, Typography } from '@material-ui/core'
 import Header from 'components/Header'
-import Footer from 'components/Footer'
+import Bottom from 'components/Bottom'
 import { imageSrc } from 'config'
 import GAMES, { getGameType, IProviderProps, SLOT_TAB } from 'constant/games'
 import { map } from 'ramda'
@@ -23,6 +23,8 @@ const Home: React.FC<RouteComponentProps> = ({ history }) => {
   return (
     <div className='home-page'>
       <Header/>
+
+      {/* Carousel */}
       <Carousel indicators={false}>
         {
           map((item: string) =>
@@ -30,27 +32,37 @@ const Home: React.FC<RouteComponentProps> = ({ history }) => {
           , carousels)
         }
       </Carousel>
+
+      {/* Authentication functions */}
+      <div className='authentication'>
+        <ButtonGroup variant="contained" aria-label="contained primary button group">
+          <Button color='secondary'>Register</Button>
+          <Button color="primary">Login</Button>
+        </ButtonGroup>
+      </div>
+
+      {/* Provider list */}
       <div className='game-tabs'>
         <Tabs
           value={activeTab}
           onChange={handleChangeTab}
           indicatorColor="primary"
           variant="scrollable"
-          scrollButtons="auto"
+          scrollButtons="on"
         >
           {map(({ idName }: { idName: string }) => <Tab
           key={idName}
           label={<div>
-            <img className='game-type-icon' alt='hokibet188' src={`${imageSrc}game-types/${idName.toLocaleLowerCase()}.png`} />
+            <img className='game-type-icon' alt='hokibet188' src={`${imageSrc}icons/${idName.toLocaleLowerCase()}.png`} />
             <Typography variant="caption" display="block" gutterBottom={true}>
               {idName}
             </Typography>
           </div>} value={idName} />, GAMES )}
         </Tabs>
         <TabPanel value={activeTab}>
-          <Grid container={true} spacing={3}>
+          <Grid container={true} spacing={1}>
             {map(({ image, idName }: IProviderProps) => 
-              <Grid item={true} xs={6} sm={6} key={idName}>
+              <Grid item={true} xs={4} sm={4} key={idName}>
                 <Paper className='provider'>
                   <img className='logo' alt='hokibet188' src={`${imageSrc}/provider-photo/${image}`} />
                   <Typography variant="caption" display="block" gutterBottom={true}>
@@ -62,7 +74,7 @@ const Home: React.FC<RouteComponentProps> = ({ history }) => {
           </Grid>
         </TabPanel>
       </div>
-      {/* <Footer history={history}/> */}
+      <Bottom history={history}/>
     </div>
   )
 }

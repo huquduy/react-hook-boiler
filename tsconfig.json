@@ -23,6 +23,6 @@
     "noImplicitAny": false,
   },
   "include": [
-    "src"
+    "src", "public/langs/en.js"
   ]
 }

@@ -1,0 +1,18 @@
+@import "../../colors";
+.bottom-wraper {
+  margin-top: 65px;
+  .bottom {
+    color: $primaryColor;
+    background: $backgroundBody;
+    position: fixed;
+    top: auto;
+    bottom: 0;
+    display: flex;
+    justify-content: space-around;
+    height: 65px;
+    width: 100%;
+    .icon {
+      width: 30px
+    }
+  }
+}
