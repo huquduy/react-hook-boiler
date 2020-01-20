@@ -1,19 +1,20 @@
-import { fade, makeStyles, Theme, createStyles } from '@material-ui/core/styles';
-import { AppBar, Drawer } from '@material-ui/core';
-import Toolbar from '@material-ui/core/Toolbar';
-import IconButton from '@material-ui/core/IconButton';
-import Typography from '@material-ui/core/Typography';
-import MenuItem from '@material-ui/core/MenuItem';
-import Menu from '@material-ui/core/Menu';
-import MenuIcon from '@material-ui/icons/Menu';
-import LocalAtm from '@material-ui/icons/LocalAtm';
-import AccountCircle from '@material-ui/icons/AccountCircle';
+import {
+  AppBar,
+  Drawer,
+  IconButton,
+  Toolbar,
+  Typography } from '@material-ui/core'
+import {
+  AccountCircle as AccountCircleIcon,
+  LocalAtm as LocalAtmIcon,
+  Menu as MenuIcon
+} from '@material-ui/icons';
 import React from 'react';
-import { RouteComponentProps, withRouter } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import Sidebar from '../Drawer'
 import './style.scss'
 
-const Header: React.FC<RouteComponentProps> = ({ history }) => {
+const Header: React.FC = () => {
   const [isDrawerOpened, setDrawerOpened] = React.useState<boolean>(false);
 
   const handleCloseDrawer = () => {
@@ -52,8 +53,8 @@ const Header: React.FC<RouteComponentProps> = ({ history }) => {
           <div className='flex-grow' />
           <img className='logo' alt='hokibet188' src={process.env.PUBLIC_URL + '/images/logo.png'} />
           <div className='flex-grow' />
-          <div className='header-left'>
-            <LocalAtm />
+          <Link to='/profile' className='header-left'>
+            <LocalAtmIcon />
             <Typography variant="caption" display="block" gutterBottom={true}>
               100 IDR
             </Typography>
@@ -62,16 +63,15 @@ const Header: React.FC<RouteComponentProps> = ({ history }) => {
               aria-label="account of current user"
               aria-controls={menuId}
               aria-haspopup="true"
-              // onClick={handleProfileMenuOpen}
               color="inherit"
             >
-              <AccountCircle />
+              <AccountCircleIcon />
             </IconButton>
-          </div>
+          </Link>
         </Toolbar>
       </AppBar>
     </div>
   );
 }
 
-export default withRouter(Header)
+export default Header

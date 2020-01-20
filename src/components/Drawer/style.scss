@@ -3,4 +3,8 @@
 .drawer {
   color: $primaryColor;
   background: $backgroundBody;
+  .item {
+    width: 100%;
+    text-align: center;
+  }
 }

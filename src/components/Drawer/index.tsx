@@ -6,56 +6,22 @@ import {
 import { imageSrc } from 'config'
 import { map } from 'ramda'
 import React from 'react'
-import { RouteComponentProps } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 // import store from 'store'
+import SIDEBAR from './constant'
 import './style.scss'
 
-const SIDEBAR = () => [
-  {
-    icon: 'deposit.png',
-    route: 'topup',
-    title: 'Deposit',
-  },
-  {
-    icon: 'withdraw.png',
-    route: 'withdraw',
-    title: 'Withdraw',
-  },
-  {
-    icon: 'sports.png',
-    route: 'sports',
-    title: 'Sports',
-  },
-  {
-    icon: 'casino.png',
-    route: 'casino',
-    title: 'Casino',
-  },
-  {
-    icon: 'slots.png',
-    route: 'slot',
-    title: 'Slots',
-  },
-  {
-    icon: 'lottery.png',
-    route: 'lottery',
-    title: 'Lottery',
-  },
-]
-
 const sidebar: React.FC = () => {
-
-  // const handleChangeRoute = () => history.push
   return (
     <div className='drawer'>
       <List>
         {map(({ title, route, icon }) => (
           <React.Fragment key={title}>
             <ListItem button={true} key={title} >
-              <div style={{textAlign: 'center', width: '100%'}}>
+              <Link to={route} className='item'>
                 {<img alt='hokibet188' style={{width: 40}} src={`${imageSrc}/icons/${icon}`} />}
                 <span style={{color: '#fff', display: 'block'}}>{title}</span>
-              </div>
+              </Link>
             </ListItem>
             <Divider />
           </React.Fragment>

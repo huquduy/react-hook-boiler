@@ -1,6 +1,6 @@
 import { Button, ButtonGroup, Grid, Paper, Tab, Tabs, Typography } from '@material-ui/core'
-import Header from 'components/Header'
 import Bottom from 'components/Bottom'
+import Header from 'components/Header'
 import { imageSrc } from 'config'
 import GAMES, { getGameType, IProviderProps, SLOT_TAB } from 'constant/games'
 import { map } from 'ramda'
