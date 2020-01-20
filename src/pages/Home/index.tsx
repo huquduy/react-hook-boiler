@@ -35,9 +35,9 @@ const Home: React.FC<RouteComponentProps> = ({ history }) => {
 
       {/* Authentication functions */}
       <div className='authentication'>
-        <ButtonGroup variant="contained" aria-label="contained primary button group">
-          <Button color='secondary'>Register</Button>
-          <Button color="primary">Login</Button>
+        <ButtonGroup aria-label="button group">
+          <Button variant="contained" color='secondary'>Register</Button>
+          <Button variant="contained" color="primary">Login</Button>
         </ButtonGroup>
       </div>
 
