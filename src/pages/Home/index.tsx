@@ -35,10 +35,10 @@ const Home: React.FC<RouteComponentProps> = ({ history }) => {
 
       {/* Authentication functions */}
       <div className='authentication'>
-        {/* <ButtonGroup aria-label="button group"> */}
+        <ButtonGroup aria-label="contained primary button group">
           <Button variant="contained" color='secondary'>Register</Button>
           <Button variant="contained" color="primary">Login</Button>
-        {/* </ButtonGroup> */}
+        </ButtonGroup>
       </div>
 
       {/* Provider list */}
