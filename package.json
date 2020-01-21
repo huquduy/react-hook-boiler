@@ -17,6 +17,7 @@
     "react-material-ui-carousel": "^1.1.1",
     "react-router-dom": "^5.1.2",
     "react-scripts": "3.3.0",
+    "react-slick": "^0.25.2",
     "react-swipeable-views": "^0.13.4",
     "store": "^2.0.12",
     "typescript": "~3.7.2"

@@ -5,11 +5,21 @@ import { imageSrc } from 'config'
 import GAMES, { getGameType, IProviderProps, SLOT_TAB } from 'constant/games'
 import { map } from 'ramda'
 import React, {useMemo, useState} from 'react'
-import Carousel from 'react-material-ui-carousel'
 import { RouteComponentProps, withRouter } from 'react-router-dom'
+import Carousel from 'react-slick'
 import { carousels } from './constant'
 import './style.scss'
 import TabPanel from './TabPanel'
+
+const settingsCarousel = {
+  autoplay: true,
+  dots: true,
+  infinite: true,
+  slidesToScroll: 1,
+  slidesToShow: 1,
+  speed: 1000,
+  swipeToSlide: true
+};
 
 const Home: React.FC<RouteComponentProps> = ({ history }) => {
   const [activeTab, setActiveTab] = useState(SLOT_TAB)
@@ -25,10 +35,12 @@ const Home: React.FC<RouteComponentProps> = ({ history }) => {
       <Header/>
 
       {/* Carousel */}
-      <Carousel indicators={false}>
+      <Carousel {...settingsCarousel}>
         {
           map((item: string) =>
-            <img key={item} className='logo' alt='hokibet188' src={`${imageSrc}/home-carousel/${item}`} />
+            <div key={item}>
+              <img className='logo' alt='hokibet188' src={`${imageSrc}/home-carousel/${item}`} />
+            </div>
           , carousels)
         }
       </Carousel>

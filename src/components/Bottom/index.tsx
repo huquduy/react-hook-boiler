@@ -47,7 +47,8 @@ export default ({ history }: { history: any }) => {
         className='bottom'
       >
         {
-          map(({ icon, label }: IItem) => <BottomNavigationAction 
+          map(({ icon, label }: IItem) => <BottomNavigationAction
+            key={label}
             label={<Typography style={{color: '#efd77f'}} variant="caption" display="block" gutterBottom={true}>
               {label}
             </Typography>}
