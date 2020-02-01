@@ -1,6 +1,7 @@
 @import '../../colors';
 
 .home-page {
+  overflow: hidden;
   .game-tabs {
     color: $primaryColor;
     background: #0a0a0a;
@@ -19,13 +20,21 @@
     box-shadow: none
   }
   .authentication {
-    display: flex;
-    align-items: center;
-    > div {
-      width: 100%;
+    .login {
+      height: 35px;
+      line-height: 35px;
+      display: inline-block;
+      width: 50%;
+      color: rgba(0, 0, 0, 0.87);
+      background-color: $primaryColor;
     }
-    button {
-      width: 100%;
+    .register {
+      height: 35px;
+      line-height: 35px;
+      display: inline-block;
+      width: 50%;
+      color: #fff;
+      background-color: $secondaryColor;
     }
   }
 }

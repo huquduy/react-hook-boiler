@@ -1,0 +1,18 @@
+@import '../../colors';
+
+.text-input-custom {
+  label {
+    color: $primaryColor,
+  }
+  .MuiInput-underline:before {
+    border-bottom-color: $primaryColor
+  }
+  .MuiOutlinedInput-root {
+    & fieldset {
+      border-color: $secondaryColor,
+    }
+  }
+  .MuiInput-input {
+    color: $primaryColor
+  }
+}

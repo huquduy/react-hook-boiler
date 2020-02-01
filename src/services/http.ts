@@ -10,6 +10,8 @@ const attachHeaders = () => {
   }
 }
 
+export const setToken = (token: string) => store.set('token', token)
+
 export const get = async (path: string, body: any) => {
   const url = BASE_URL + path + '?' + stringify(body)
   const response = await fetch(url, {
@@ -22,7 +24,7 @@ export const get = async (path: string, body: any) => {
   return payload
 }
 
-export const post = async (path: string, body: any) => {
+export const post = async ({ path, body } : { path: string, body: any }) => {
   const url = BASE_URL + path
   const response = await fetch(url, {
     body: JSON.stringify(body),

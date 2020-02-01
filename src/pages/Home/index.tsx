@@ -1,11 +1,11 @@
-import { Button, ButtonGroup, Grid, Paper, Tab, Tabs, Typography } from '@material-ui/core'
+import { Grid, Paper, Tab, Tabs, Typography } from '@material-ui/core'
 import Bottom from 'components/Bottom'
 import Header from 'components/Header'
 import { imageSrc } from 'config'
 import GAMES, { getGameType, IProviderProps, SLOT_TAB } from 'constant/games'
 import { map } from 'ramda'
 import React, {useMemo, useState} from 'react'
-import { RouteComponentProps, withRouter } from 'react-router-dom'
+import { Link, RouteComponentProps, withRouter } from 'react-router-dom'
 import Carousel from 'react-slick'
 import { carousels } from './constant'
 import './style.scss'
@@ -13,7 +13,6 @@ import TabPanel from './TabPanel'
 
 const settingsCarousel = {
   autoplay: true,
-  dots: true,
   infinite: true,
   slidesToScroll: 1,
   slidesToShow: 1,
@@ -47,10 +46,8 @@ const Home: React.FC<RouteComponentProps> = ({ history }) => {
 
       {/* Authentication functions */}
       <div className='authentication'>
-        <ButtonGroup aria-label="contained primary button group">
-          <Button variant="contained" color='secondary'>Register</Button>
-          <Button variant="contained" color="primary">Login</Button>
-        </ButtonGroup>
+        <Link className="register" to="/register">Register</Link>
+        <Link className="login" to="/login">Login</Link>
       </div>
 
       {/* Provider list */}
@@ -86,7 +83,7 @@ const Home: React.FC<RouteComponentProps> = ({ history }) => {
           </Grid>
         </TabPanel>
       </div>
-      <Bottom history={history}/>
+      <Bottom />
     </div>
   )
 }

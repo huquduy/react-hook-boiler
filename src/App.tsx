@@ -1,17 +1,10 @@
-import React from 'react'
 import { CssBaseline } from '@material-ui/core'
 import { createMuiTheme, MuiThemeProvider } from '@material-ui/core/styles'
+import React from 'react'
 import './App.scss'
 import Router from './router'
 
 const theme = createMuiTheme({
-  // overrides: {
-  //   MuiInput: {
-  //       root: {
-  //         color: "rgba(255, 255, 255, 0.5)"
-  //       },
-  //   }
-  // },
   palette: {
     primary: {
       main: '#efd77f'

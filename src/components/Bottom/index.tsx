@@ -2,6 +2,7 @@ import { BottomNavigation, BottomNavigationAction, Typography } from '@material-
 import { imageSrc } from 'config'
 import { map } from 'ramda'
 import React, { useState } from 'react'
+import { RouteComponentProps, withRouter } from 'react-router-dom'
 import './style.scss'
 
 interface IItem {
@@ -27,12 +28,12 @@ const ITEMS = [
     route: 'home'
   },{
     icon: 'contact.png',
-    label: 'Live Support',
+    label: 'Live',
     route: 'home'
   }
 ]
 
-export default ({ history }: { history: any }) => {
+const Bottom: React.FC<RouteComponentProps> = ({ history }) => {
   const [activeTab, setActiveTab] = useState('promotion')
   const handleChange = (event: React.ChangeEvent<{}>, newValue: string) => {
     setActiveTab(newValue);
@@ -59,3 +60,5 @@ export default ({ history }: { history: any }) => {
     </div>
   );
 }
+
+export default withRouter(Bottom)

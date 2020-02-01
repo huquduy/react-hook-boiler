@@ -1,0 +1,18 @@
+@import '../../colors';
+
+.login-page {
+  min-height: calc(100vh - 50px);
+  background: url("/images/bg-poker.jpg");
+  .title {
+    line-height: 70px;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    > div {
+      margin-top: 15px;
+      width: 75%;
+      align-self: center
+    }
+  }
+}
