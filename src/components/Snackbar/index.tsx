@@ -1,13 +1,13 @@
-import React, { useState } from "react"
 import {
-  Typography,
+  IconButton,
+  Slide,
   Snackbar,
-  Slide
+  Typography,
 } from '@material-ui/core'
 import { makeStyles, Theme } from '@material-ui/core/styles'
-import IconButton from '@material-ui/core/IconButton'
-import CloseIcon from '@material-ui/icons/Close'
 import { TransitionProps } from '@material-ui/core/transitions'
+import CloseIcon from '@material-ui/icons/Close'
+import React, { useState } from "react"
 
 const TransitionLeft = (props: TransitionProps) => {
   return <Slide {...props} direction="left" />
@@ -19,7 +19,11 @@ const useStyles = makeStyles((theme: Theme) => ({
   },
 }))
 
-const useSnackbar = (status = false) => {
+type TCallback = (msg: string) => void
+
+type HookSnackbar = (status: boolean) => [TCallback, React.FC]
+
+const useSnackbar: HookSnackbar = (status = false) => {
   const classes = useStyles()
   const [open, setOpen] = useState(status)
   const [message, setMessage] = useState('')
@@ -37,7 +41,7 @@ const useSnackbar = (status = false) => {
     }, 5000)
   }
 
-  const SnackbarComponent : React.FC = () => (
+  const SnackbarComponent = () => (
     <Snackbar
       className={classes.snackbar}
       open={open}

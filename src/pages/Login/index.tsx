@@ -5,14 +5,13 @@ import {
 import {
   LockOpen as LockOpenIcon,
 } from '@material-ui/icons'
-import Bottom from 'components/Bottom'
 import Header from 'components/Header'
 import useLoading from 'components/Loading'
-// import useSnackbar from 'components/Snackbar'
+import useSnackbar from 'components/Snackbar'
 import TextInput from 'components/TextInput'
 import React from 'react'
 import { Field, withTypes } from 'react-final-form'
-import { required } from 'services/form'
+import { composeValidators, minLength, required } from 'services/form'
 import { post, setToken } from 'services/http'
 
 import './style.scss'
@@ -25,17 +24,17 @@ const { Form } = withTypes<IValues>()
 
 function Login() {
   const [, withLoading, Loading] = useLoading(false)
-  // const [showSnackbar, Snackbar] = useSnackbar()
+  const [showSnackbar, Snackbar] = useSnackbar(false)
 
   const handleLogin = async ({ username, password }) => {
     const { token, error } = await withLoading(() => post({
       body: {
-        username, password
+        password, username
       },
       path: 'login'
     })).catch((err) => err)
     if (error) {
-      // return showSnackbar(error)
+      return showSnackbar(error)
     }
     return setToken(token)
   }
@@ -53,7 +52,7 @@ function Login() {
             <div className='container'>
               <div>
                 <Field
-                  validate={required}
+                  validate={composeValidators(required, minLength(3))}
                   name="username"
                   label="Username"
                   fullWidth={true}
@@ -61,7 +60,7 @@ function Login() {
               </div>
               <div>
                 <Field
-                  validate={required}
+                  validate={composeValidators(required, minLength(5))}
                   name="password"
                   label="Password"
                   type="password"
@@ -81,8 +80,7 @@ function Login() {
             </div>
           </form>}
       </Form>
-      <Bottom/>
-      {/* <Snackbar/> */}
+      <Snackbar/>
     </div>
   )
 }
