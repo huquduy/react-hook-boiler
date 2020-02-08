@@ -1,4 +1,5 @@
 import { baseUrl } from 'config'
+import jwtDecode from 'jwt-decode'
 import { stringify } from 'query-string';
 import store from 'store'
 
@@ -10,6 +11,14 @@ const attachHeaders = () => {
 }
 
 export const setToken = (token: string) => store.set('token', token)
+
+export const getUser = () => {
+  const token = store.get('token')
+  if (!token) {
+    return {}
+  }
+  return jwtDecode(token)
+}
 
 export const get = async (path: string, body: any) => {
   const url = baseUrl + path + '?' + stringify(body)
@@ -27,6 +36,7 @@ export const post = async ({ path, body } : { path: string, body: any }) => {
   const url = baseUrl + path
   const response = await fetch(url, {
     body: JSON.stringify(body),
+    headers: attachHeaders(),
     method: 'POST'
   })
   const payload = await response.json()
@@ -35,3 +45,21 @@ export const post = async ({ path, body } : { path: string, body: any }) => {
   }
   return payload
 }
+
+export const apiRequest = async (
+  url: string,
+  method: string,
+  bodyParams?: any
+): Promise<any> => {
+  const response = await fetch(url, {
+    body: bodyParams ? JSON.stringify(bodyParams) : undefined,
+    headers: attachHeaders(),
+    method,
+  });
+
+  const payload = await response.json()
+  if (!response.ok) {
+    throw payload
+  }
+  return payload
+};

@@ -6,13 +6,14 @@ import {
   LockOpen as LockOpenIcon,
 } from '@material-ui/icons'
 import Header from 'components/Header'
-import useLoading from 'components/Loading'
-import useSnackbar from 'components/Snackbar'
 import TextInput from 'components/TextInput'
+import { AuthContext } from "contexts/authContext"
+import useLoading from 'hooks/loading'
+import useSnackbar from 'hooks/snackbar'
 import React from 'react'
 import { Field, withTypes } from 'react-final-form'
 import { composeValidators, minLength, required } from 'services/form'
-import { post, setToken } from 'services/http'
+import { post } from 'services/http'
 
 import './style.scss'
 
@@ -23,6 +24,7 @@ interface IValues {
 const { Form } = withTypes<IValues>()
 
 function Login() {
+  const { setAuthStatus } = React.useContext(AuthContext)
   const [, withLoading, Loading] = useLoading(false)
   const [showSnackbar, Snackbar] = useSnackbar(false)
 
@@ -31,12 +33,12 @@ function Login() {
       body: {
         password, username
       },
-      path: 'login'
+      path: 'user/signIn'
     })).catch((err) => err)
     if (error) {
       return showSnackbar(error)
     }
-    return setToken(token)
+    setAuthStatus(token)
   }
 
   return (

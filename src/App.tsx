@@ -1,5 +1,6 @@
 import { CssBaseline } from '@material-ui/core'
 import { createMuiTheme, MuiThemeProvider } from '@material-ui/core/styles'
+import AuthContextProvider from 'contexts/authContext'
 import React from 'react'
 import './App.scss'
 import Router from './router'
@@ -31,7 +32,9 @@ const App: React.FC = () => {
     <div className="App">
       <MuiThemeProvider theme={theme}>
         <CssBaseline />
-        <Router />
+        <AuthContextProvider>
+          <Router />
+        </AuthContextProvider>
       </MuiThemeProvider>
     </div>
   );
