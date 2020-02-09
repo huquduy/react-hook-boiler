@@ -1,6 +1,5 @@
 import { baseUrl } from 'config'
 import jwtDecode from 'jwt-decode'
-import { stringify } from 'query-string';
 import store from 'store'
 
 const attachHeaders = () => {
@@ -20,9 +19,10 @@ export const getUser = () => {
   return jwtDecode(token)
 }
 
-export const get = async (path: string, body: any) => {
-  const url = baseUrl + path + '?' + stringify(body)
+export const get = async ({ path, body } : { path: string, body?: any }) => {
+  const url = baseUrl + path
   const response = await fetch(url, {
+    body: body ? JSON.stringify(body) : undefined,
     headers: attachHeaders()
   })
   const payload = await response.json()

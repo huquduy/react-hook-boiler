@@ -1,0 +1,24 @@
+@import '../../colors';
+
+.select-input-custom {
+  label {
+    color: $primaryColor,
+  }
+  .MuiFormLabel-root {
+    text-align: left
+  }
+  .MuiInput-underline:before {
+    border-bottom-color: $primaryColor
+  }
+  .MuiOutlinedInput-root {
+    & fieldset {
+      border-color: $secondaryColor,
+    }
+  }
+  .MuiInput-input {
+    color: $primaryColor
+  }
+  .error {
+    color: $primaryColor
+  }
+}

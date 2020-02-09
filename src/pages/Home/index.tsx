@@ -3,6 +3,7 @@ import Bottom from 'components/Bottom'
 import Header from 'components/Header'
 import { imageSrc } from 'config'
 import GAMES, { getGameType, IProviderProps, SLOT_TAB } from 'constant/games'
+import { AuthContext } from "contexts/authContext"
 import { map } from 'ramda'
 import React, {useMemo, useState} from 'react'
 import { Link, RouteComponentProps, withRouter } from 'react-router-dom'
@@ -21,7 +22,9 @@ const settingsCarousel = {
 };
 
 const Home: React.FC<RouteComponentProps> = ({ history }) => {
+  const { auth } = React.useContext(AuthContext)
   const [activeTab, setActiveTab] = useState(SLOT_TAB)
+  const isLogged = !auth.token.length
 
   const handleChangeTab = (event: React.ChangeEvent<{}>, newValue: string) => {
     setActiveTab(newValue);
@@ -45,10 +48,14 @@ const Home: React.FC<RouteComponentProps> = ({ history }) => {
       </Carousel>
 
       {/* Authentication functions */}
-      <div className='authentication'>
-        <Link className="register" to="/register">Register</Link>
-        <Link className="login" to="/login">Login</Link>
-      </div>
+      {
+        isLogged
+        ? <div className='authentication'>
+          <Link className="register" to="/register">Register</Link>
+          <Link className="login" to="/login">Login</Link>
+        </div>
+        : null
+      }
 
       {/* Provider list */}
       <div className='game-tabs'>

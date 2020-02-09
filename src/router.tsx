@@ -7,6 +7,7 @@ import {
 
 const Home = lazy(() => import('./pages/Home'))
 const Login = lazy(() => import('./pages/Login'))
+const Register = lazy(() => import('./pages/Register'))
 
 const Router = () => {
   return (
@@ -16,6 +17,7 @@ const Router = () => {
           <Route exact={true} path="/" component={Home} />
           <Route path="/home" component={Home} />
           <Route path="/login" component={Login} />
+          <Route path="/register" component={Register} />
         </Switch>
       </Suspense>
     </BrowserRouter>
