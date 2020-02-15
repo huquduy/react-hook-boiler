@@ -8,6 +8,7 @@ import {
 const Home = lazy(() => import('./pages/Home'))
 const Login = lazy(() => import('./pages/Login'))
 const Register = lazy(() => import('./pages/Register'))
+const Games = lazy(() => import('./pages/Games'))
 
 const Router = () => {
   return (
@@ -18,6 +19,7 @@ const Router = () => {
           <Route path="/home" component={Home} />
           <Route path="/login" component={Login} />
           <Route path="/register" component={Register} />
+          <Route path="/games/:type" component={Games} />
         </Switch>
       </Suspense>
     </BrowserRouter>

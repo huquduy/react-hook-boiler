@@ -120,4 +120,4 @@ const GAMETYPES = [
 
 export default GAMETYPES;
 
-export const getGameType = (type: string) => GAMETYPES.find(({ idName }: { idName: string }) => idName === type ) || { providers: [], idName: null };
+export const getGameType = (type: string) => GAMETYPES.find(({ idName }: { idName: string }) => idName.toLocaleLowerCase() === type.toLocaleLowerCase() ) || { providers: [], idName: null };
