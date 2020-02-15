@@ -1,15 +1,14 @@
 @import '../../colors';
 
-.login-page {
+.register-page {
   margin-top: 56px;
-  height: calc(100vh);
-  background: url("/images/bg-poker.jpg");
   .title {
     line-height: 70px;
   }
   .container {
     display: flex;
     flex-direction: column;
+    padding-bottom: 15px;
     > div {
       margin-top: 15px;
       width: 75%;

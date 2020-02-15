@@ -4,6 +4,7 @@ import {
   Typography,
 } from '@material-ui/core'
 import {
+  Add as AddIcon,
   LockOpen as LockOpenIcon,
 } from '@material-ui/icons'
 import Header from 'components/Header'
@@ -15,7 +16,7 @@ import useSnackbar from 'hooks/snackbar'
 import { map } from 'ramda'
 import React, { useEffect, useState } from 'react'
 import { Field, withTypes } from 'react-final-form'
-import { Link, RouteComponentProps, withRouter } from 'react-router-dom'
+import { RouteComponentProps, withRouter } from 'react-router-dom'
 import { composeValidators, minLength, required } from 'services/form'
 import { get, post } from 'services/http'
 
@@ -23,26 +24,26 @@ import './style.scss'
 
 interface IForm {
   email: string,
-  bankName: string,
+  bankId: string,
   username: string,
   password: string
 }
 const { Form } = withTypes<IForm>()
 
-const Login: React.FC<RouteComponentProps> = ({ history }) => {
+const Register: React.FC<RouteComponentProps> = ({ history }) => {
   const [initialValues, setInitialValues] = useState<IForm>({
-    bankName: '3',
+    bankId: '',
     email: '',
     password: '',
-    username: 'asda',
+    username: '',
   })
   const [banks, setBanks] = useState<IOption[] | []>([])
 
   const { setAuthStatus } = React.useContext(AuthContext)
-  const [, withLoading, Loading] = useLoading(false)
+  const [isLoading, withLoading, Loading] = useLoading(false)
   const [showSnackbar, Snackbar] = useSnackbar(false)
 
-  const handleLogin = async ({ username, password }) => {
+  const handleRegister = async ({ username, password }) => {
     const { token, error } = await withLoading(() => post({
       body: {
         password, username
@@ -56,31 +57,31 @@ const Login: React.FC<RouteComponentProps> = ({ history }) => {
     setAuthStatus(token)
   }
 
-  const fetchBanks = async () => {
-    const correctBankProps = ({ bankName, id }) => ({
-      title: bankName,
-      value: String(id),
-    })
-    const { data } : { data: any[] } = await withLoading(() => get({
-      path: 'banking'
-    }))
-      .catch((err) => err)
-
-    setBanks(map(correctBankProps, data))
-
-    const initialBank = data[0].id
-    setInitialValues({
-      ...initialValues,
-      bankName: String(initialBank)
-    })
-  }
-
   useEffect(() => {
+    const fetchBanks = async() => {
+      const correctBankProps = ({ bankName, id }) => ({
+        title: bankName,
+        value: String(id),
+      })
+      const { data: bankResps } : { data: any[] } = await withLoading(() => get({
+        path: 'banking'
+      }))
+        .catch((err) => err)
+  
+      setBanks(map(correctBankProps, bankResps))
+  
+      const initialBank = bankResps[0].id
+      setInitialValues({
+        ...initialValues,
+        bankId: String(initialBank)
+      })
+    }
     fetchBanks()
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
   return (
-    <div className='login-page'>
+    <div className='register-page'>
       <Loading color="secondary" />
       <Header/>
       <Typography color="primary" className="title" variant="h5" align="center" component="h2" gutterBottom={true}>
@@ -88,7 +89,7 @@ const Login: React.FC<RouteComponentProps> = ({ history }) => {
       </Typography>
       <Form
         initialValues={initialValues}
-        onSubmit={handleLogin}>
+        onSubmit={handleRegister}>
         {({ handleSubmit }) => 
           <form onSubmit={handleSubmit}>
             <div className='container'>
@@ -98,6 +99,7 @@ const Login: React.FC<RouteComponentProps> = ({ history }) => {
                   name="username"
                   label="Username"
                   fullWidth={true}
+                  disable={isLoading.toString()}
                   component={TextInput} />
               </div>
               <div>
@@ -119,29 +121,63 @@ const Login: React.FC<RouteComponentProps> = ({ history }) => {
               </div>
               <div>
                 <Field
+                  validate={composeValidators(required, minLength(5))}
+                  name="passwordConfirm"
+                  label="Confirm Password"
+                  type="password"
+                  fullWidth={true}
+                  component={TextInput} />
+              </div>
+              <div>
+                <Field
                   validate={required}
-                  name="bankname"
-                  label="Bankname"
+                  name="phone"
+                  label="Phone number:"
+                  type="number"
+                  fullWidth={true}
+                  component={TextInput} />
+              </div>
+              <div>
+                <Field
+                  validate={required}
+                  name="bankId"
+                  label="Bank name:"
                   fullWidth={true}
                   options={banks}
                   component={SelectInput} />
               </div>
               <div>
-                <Button variant="outlined" color="primary" type="submit" startIcon={<LockOpenIcon />}>
-                  Login
-                </Button>
+                <Field
+                  validate={composeValidators(required, minLength(3))}
+                  name="bankAccountNumber"
+                  label="Bank account number:"
+                  fullWidth={true}
+                  disable={isLoading.toString()}
+                  component={TextInput} />
               </div>
               <div>
-                <Button variant="outlined" color="secondary" href="/register">
+                <Field
+                  validate={composeValidators(required, minLength(3))}
+                  name="bankAccountName"
+                  label="Bank account name:"
+                  fullWidth={true}
+                  disable={isLoading.toString()}
+                  component={TextInput} />
+              </div>
+              <div>
+                <Button variant="outlined" color="primary" type="submit" startIcon={<AddIcon />}>
                   Register
                 </Button>
               </div>
               <div>
-                <Link to="/home">
-                  <LinkMUI color="primary">
-                    Forgot Password? 
-                  </LinkMUI>
-                </Link>
+                <Button variant="outlined" color="secondary" href="/register" startIcon={<LockOpenIcon />}>
+                  Back to Login
+                </Button>
+              </div>
+              <div>
+                <LinkMUI color="primary">
+                  Forgot Password? 
+                </LinkMUI>
               </div>
             </div>
           </form>}
@@ -151,4 +187,4 @@ const Login: React.FC<RouteComponentProps> = ({ history }) => {
   )
 }
 
-export default withRouter(Login)
+export default withRouter(Register)
