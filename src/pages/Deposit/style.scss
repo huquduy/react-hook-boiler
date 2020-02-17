@@ -1,0 +1,43 @@
+@import "../../colors";
+
+.deposit-page {
+  margin-top: 56px;
+  .title {
+    line-height: 70px;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 15px;
+    > div {
+      margin-top: 15px;
+      width: 75%;
+      align-self: center;
+    }
+  }
+  form {
+    width: 100%;
+  }
+}
+.MuiExpansionPanel-root {
+  color: $primaryColor;
+  background: $backgroundBody;
+  .MuiExpansionPanelDetails-root {
+    padding: 0;
+  }
+  .MuiFormLabel-root.Mui-disabled,
+  .MuiIconButton-root {
+    color: $primaryColor;
+  }
+  &.MuiPaper-elevation1 {
+    -webkit-box-shadow: 3px 2px 3px 3px $primaryColor; /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+    -moz-box-shadow: 3px 2px 3px 3px $primaryColor; /* Firefox 3.5 - 3.6 */
+    box-shadow: 3px 2px 3px 3px $primaryColor;
+  }
+  .MuiExpansionPanel-root.Mui-expanded{
+    margin: 0;
+  }
+  .MuiExpansionPanelSummary-content.Mui-expanded{
+    margin:0;
+  }
+}

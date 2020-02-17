@@ -69,5 +69,7 @@ export default {
   ENTER_EMAIL: 'Enter Your Primary Email',
   ENTER_AGENT: 'Enter affiliate code',
   RETYPE_PASS: 'Retype Your Password',
-  BACK_TO_LOGIN: 'BACK TO LOGIN'
+  BACK_TO_LOGIN: 'BACK TO LOGIN',
+  DEPOSIT_TO_US:'DEPOSIT TO US',
+  CURRENT_BALANCE: 'CURRENT BALANCE'
 }

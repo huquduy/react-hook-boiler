@@ -15,10 +15,11 @@ type SelectInputProps = FieldRenderProps<string, any>
 
 interface ISelectInput extends SelectInputProps {
   label: string;
-  options: IOption[]
+  options: IOption[],
+  handleChange: any
 }
 
-const SelectInput: React.FC<ISelectInput> = ({ input, meta, label, options, ...rest }: ISelectInput) => {
+const SelectInput: React.FC<ISelectInput> = ({ input, meta, label, options, handleChange, ...rest }: ISelectInput) => {
   const error =
     ((meta.submitError && !meta.dirtySinceLastSubmit) || meta.error) &&
     meta.touched
@@ -32,6 +33,7 @@ const SelectInput: React.FC<ISelectInput> = ({ input, meta, label, options, ...r
         color={error ? "secondary" : "primary"}
         {...input}
         {...rest}
+        onChange={handleChange}
       >
         {options.map(({title, value}) => <option key={value} value={value}>{title}</option>)}
       </NativeSelect>

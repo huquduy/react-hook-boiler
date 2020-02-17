@@ -4,7 +4,7 @@ import store from 'store'
 
 const attachHeaders = () => {
   return {
-    Authorization: store.get('token'),
+    Authorization: 'Bearer '+ getToken(),
     'Content-Type': 'application/json'
   }
 }
@@ -17,6 +17,14 @@ export const getUser = () => {
     return {}
   }
   return jwtDecode(token)
+}
+export const getToken = () =>{
+  const UserAuth = JSON.parse(store.get('UserAuth'))
+  const token = UserAuth.token;
+  if (!token) {
+    return
+  }
+  return token
 }
 
 export const get = async ({ path, body } : { path: string, body?: any }) => {
