@@ -122,7 +122,7 @@ const Deposit: React.FC<RouteComponentProps> = ({ history }) => {
       }))
         .catch((err) => err)
         console.log(creditResps);
-      setCredits(correctCreditProps,creditResps)
+      // setCredits(correctCreditProps,creditResps)
       console.log(credits);
 
     }
