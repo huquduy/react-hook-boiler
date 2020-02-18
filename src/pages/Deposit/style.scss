@@ -18,6 +18,9 @@
   form {
     width: 100%;
   }
+  .bottom-wraper{
+    margin-top:50px;
+  }
 }
 .MuiExpansionPanel-root {
   color: $primaryColor;
@@ -34,7 +37,7 @@
     -moz-box-shadow: 3px 2px 3px 3px $primaryColor; /* Firefox 3.5 - 3.6 */
     box-shadow: 3px 2px 3px 3px $primaryColor;
   }
-  .MuiExpansionPanel-root.Mui-expanded{
+  &.Mui-expanded{
     margin: 0;
   }
   .MuiExpansionPanelSummary-content.Mui-expanded{

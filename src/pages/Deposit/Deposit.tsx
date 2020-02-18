@@ -3,13 +3,6 @@ import {
   ExpansionPanel,
   ExpansionPanelDetails,
   ExpansionPanelSummary,
-  Paper,
-  Table,
-  TableBody,
-  TableCell,
-  TableContainer,
-  TableHead,
-  TableRow,
   Typography
 } from '@material-ui/core'
 import {
@@ -18,6 +11,7 @@ import {
   Send as SendIcon,
 } from '@material-ui/icons'
 import Bottom from 'components/Bottom'
+import CurrentBalance, { ICredit } from 'components/CurrentBalance'
 import Header from 'components/Header'
 import SelectInput, { IOption } from 'components/SelectInput'
 import TextInput from 'components/TextInput'
@@ -45,10 +39,10 @@ interface IForm {
   amount: string,
 
 }
-export interface ICredit {
-  title: string;
-  data: string;
-}
+// export interface ICredit {
+//   title: string;
+//   data: string;
+// }
 const { Form } = withTypes<IForm>()
 
 const Deposit: React.FC<RouteComponentProps> = ({ history }) => {
@@ -103,8 +97,6 @@ const Deposit: React.FC<RouteComponentProps> = ({ history }) => {
         path: 'banking'
       }))
         .catch((err) => err)
-      console.log
-      (bankResps)
       setBanks(map(correctBankProps, bankResps))
       const initialBank = 0;
       setInitialValues({
@@ -121,9 +113,7 @@ const Deposit: React.FC<RouteComponentProps> = ({ history }) => {
         path: 'user/credit'
       }))
         .catch((err) => err)
-        console.log(creditResps);
-      // setCredits(correctCreditProps,creditResps)
-      console.log(credits);
+      setCredits(map(correctCreditProps,creditResps))
 
     }
     fetchCredits();
@@ -200,7 +190,6 @@ const Deposit: React.FC<RouteComponentProps> = ({ history }) => {
                   </div>
                   <div>
                     <Field
-
                       name="bankId"
                       label="To Bank :"
                       fullWidth={true}
@@ -251,11 +240,6 @@ const Deposit: React.FC<RouteComponentProps> = ({ history }) => {
                       Submit
                   </Button>
                   </div>
-                  <div>
-                    <Button variant="outlined" color="secondary" href="/home" startIcon={<HomeIcon />}>
-                      Back to Home
-                  </Button>
-                  </div>
                 </div>
               </form>}
           </Form>
@@ -270,29 +254,9 @@ const Deposit: React.FC<RouteComponentProps> = ({ history }) => {
           <Typography className="title">CURRENT BALANCE</Typography>
         </ExpansionPanelSummary>
         <ExpansionPanelDetails>
-          <TableContainer component={Paper}>
-            <Table className="" size="small" aria-label="a dense table">
-              <TableHead>
-                <TableRow>
-                  <TableCell>Dessert (100g serving)</TableCell>
-                  <TableCell align="right">Calories</TableCell>
-                </TableRow>
-              </TableHead>
-              {/* <TableBody>
-                {credits.map((item, index ) =>
-                  <TableRow key={item}>
-                    <TableCell component="th" scope="row">
-                      {item}
-                    </TableCell>
-                    <TableCell align="right">{item}</TableCell>
-                  </TableRow>
-                )}
-              </TableBody> */}
-            </Table>
-          </TableContainer>
+          <CurrentBalance label="Current Balance" arrayValue={credits} />
         </ExpansionPanelDetails>
       </ExpansionPanel>
-    {/* <div>{credits}</div> */}
       <Snackbar />
       <Bottom />
     </div>

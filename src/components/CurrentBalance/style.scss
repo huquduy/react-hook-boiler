@@ -1,0 +1,11 @@
+@import '../../colors';
+.table-custom{
+    width: 100%;
+    .MuiPaper-root{
+        background:none;
+        color: $primaryColor;
+        .MuiTableCell-body{
+            color: $primaryColor;
+        }
+    }
+}
