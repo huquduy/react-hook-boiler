@@ -8,4 +8,5 @@ export const DEFAULT_USER_AUTH = {
   bankAccountName: '',
   bankAccountNumber: '',
   bankId:0,
+  phone: ''
 }

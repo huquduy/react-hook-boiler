@@ -32,7 +32,7 @@ const CurrentBalance: React.FC<ITableBalance> = ({ label, arrayValue, ...rest }:
                                 <TableCell component="th" scope="row">
                                     {item.title}
                                 </TableCell>
-                                <TableCell align="right">{item.data}</TableCell>
+                                <TableCell align="right">{item.data} IDR</TableCell>
                             </TableRow>
                         )}
                     </TableBody>

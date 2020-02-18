@@ -83,10 +83,11 @@ const Login: React.FC<RouteComponentProps> = ({ history }) => {
                 </Button>
               </div>
               <div>
-                <Link to="/home">
-                  <LinkMUI color="primary">
+                <Link to="/home" color="primary">
+                Forgot Password? 
+                  {/* <LinkMUI color="primary">
                     Forgot Password? 
-                  </LinkMUI>
+                  </LinkMUI> */}
                 </Link>
               </div>
             </div>
