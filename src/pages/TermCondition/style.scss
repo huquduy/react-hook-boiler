@@ -1,0 +1,9 @@
+@import '../../colors';
+.term-page{
+    color: $primaryColor;
+    background: $backgroundBody;
+    .container{
+        text-align: left;
+        padding: 0 15px;
+    }
+}

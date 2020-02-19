@@ -7,7 +7,6 @@ import {
 } from '@material-ui/core'
 import {
   ExpandMore as ExpandMoreIcon,
-  Home as HomeIcon,
   Send as SendIcon,
 } from '@material-ui/icons'
 import Bottom from 'components/Bottom'
@@ -39,10 +38,6 @@ interface IForm {
   amount: string,
 
 }
-// export interface ICredit {
-//   title: string;
-//   data: string;
-// }
 const { Form } = withTypes<IForm>()
 
 const Deposit: React.FC<RouteComponentProps> = ({ history }) => {

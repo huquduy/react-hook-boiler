@@ -9,6 +9,9 @@ const Home = lazy(() => import('./pages/Home'))
 const Login = lazy(() => import('./pages/Login'))
 const Register = lazy(() => import('./pages/Register'))
 const Deposit = lazy(() => import('./pages/Deposit'))
+const Withdraw = lazy(() => import('./pages/Withdraw'))
+const TermCondition = lazy(() => import('./pages/TermCondition'))
+const Profile = lazy(() => import('./pages/Profile'))
 
 const Router = () => {
   return (
@@ -20,6 +23,9 @@ const Router = () => {
           <Route path="/login" component={Login} />
           <Route path="/register" component={Register} />
           <Route path="/deposit" component={Deposit} />
+          <Route path="/withdraw" component={Withdraw} />
+          <Route path="/term-condition" component={TermCondition} />
+          <Route path="/profile" component={Profile} />
         </Switch>
       </Suspense>
     </BrowserRouter>
