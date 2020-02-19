@@ -6,7 +6,7 @@ export default () => [
   },
   {
     icon: 'deposit.png',
-    route: '/topup',
+    route: '/deposit',
     title: 'Deposit',
   },
   {

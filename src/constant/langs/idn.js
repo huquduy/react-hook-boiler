@@ -69,5 +69,7 @@ export default {
   ENTER_EMAIL: 'Masukkan Email Utama Anda',
   ENTER_AGENT: 'Masukkan email Agen Anda (opsional)',
   RETYPE_PASS: 'Ketik Ulang Kata Sandi Anda',
-  BACK_TO_LOGIN: 'KEMBALI UNTUK MASUK'
+  BACK_TO_LOGIN: 'KEMBALI UNTUK MASUK',
+  DEPOSIT_TO_US:'SETORAN',
+  CURRENT_BALANCE: 'CURRENT BALANCE'
 }
