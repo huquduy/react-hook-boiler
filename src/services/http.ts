@@ -22,7 +22,7 @@ export const getToken = () =>{
   const UserAuth = JSON.parse(store.get('UserAuth'))
   const token = UserAuth.token;
   if (!token) {
-    return
+    return ''
   }
   return token
 }
