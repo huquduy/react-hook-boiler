@@ -4,9 +4,10 @@ import store from 'store'
 
 const attachHeaders = () => {
   return {
-    // Authorization: 'Bearer '+ getToken(),
+    'Authorization': 'Bearer ' + getToken() ,
     'Content-Type': 'application/json'
-  }
+
+    }
 }
 
 export const setToken = (token: string) => store.set('token', token)
@@ -19,15 +20,12 @@ export const getUser = () => {
   return jwtDecode(token)
 }
 export const getToken = () =>{
-  const UserAuth = JSON.parse(store.get('UserAuth'))
-  console.log(UserAuth);
-
-  const token = UserAuth.token
-  console.log(token)
-  if (token) {
-    return token
+  const checkStore = store.get('UserAuth');
+  if(!checkStore){
+    return ''
   }
-  return ''
+  const UserAuth = JSON.parse(checkStore)
+  return UserAuth.token
 }
 
 export const get = async ({ path, body } : { path: string, body?: any }) => {
