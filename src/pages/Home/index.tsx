@@ -4,7 +4,6 @@ import Header from 'components/Header'
 import { imageSrc } from 'config'
 import GAMES, { getGameType, IProviderProps, SLOT_TAB } from 'constant/games'
 import { AuthContext } from "contexts/authContext"
-import useDialog from 'hooks/dialog'
 import { map } from 'ramda'
 import React, {useMemo, useState} from 'react'
 import { Link, RouteComponentProps, withRouter } from 'react-router-dom'
@@ -25,12 +24,10 @@ const settingsCarousel = {
 const Home: React.FC<RouteComponentProps> = ({ history }) => {
   const { auth } = React.useContext(AuthContext)
   const [activeTab, setActiveTab] = useState(SLOT_TAB)
-  const [showDialog, DialogComponent] = useDialog(false)
   const isLogged = !auth.token.length
 
   const handleChangeTab = (event: React.ChangeEvent<{}>, newValue: string) => {
     setActiveTab(newValue);
-    showDialog()
   };
 
   const { providers } : { providers: IProviderProps[] } = useMemo(() => getGameType(activeTab), [activeTab])
@@ -93,9 +90,6 @@ const Home: React.FC<RouteComponentProps> = ({ history }) => {
           </Grid>
         </TabPanel>
       </div>
-      <DialogComponent title='test'>
-        <div>Here is your content given ....</div>
-      </DialogComponent>
       <Bottom />
     </div>
   )
