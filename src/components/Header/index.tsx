@@ -3,20 +3,31 @@ import {
   Drawer,
   IconButton,
   Toolbar,
-  Typography } from '@material-ui/core'
+  Typography
+} from '@material-ui/core'
 import {
   AccountCircle as AccountCircleIcon,
+  LocalAtm as LocalAtmIcon,
   Menu as MenuIcon
 } from '@material-ui/icons'
+import CurrentBalance, { ICredit } from 'components/CurrentBalance'
 import { AuthContext } from 'contexts/authContext'
-import React from 'react'
+import useDialog from 'hooks/dialog'
+import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import Sidebar from '../Drawer'
 import './style.scss'
+import useLoading from 'hooks/loading'
+import { map } from 'ramda'
+import { get, post } from 'services/http'
+
 
 const Header: React.FC = () => {
   const { auth } = React.useContext(AuthContext)
   const [isDrawerOpened, setDrawerOpened] = React.useState<boolean>(false);
+  const [showDialog, DialogComponent] = useDialog(false)
+  const [credits, setCredits] = useState<ICredit[] | []>([])
+  const [isLoading, withLoading, Loading] = useLoading(false)
 
   const handleCloseDrawer = () => {
     setDrawerOpened(false);
@@ -25,7 +36,28 @@ const Header: React.FC = () => {
   const handleOpenDrawer = () => {
     setDrawerOpened(true);
   };
+  const handleDiaLog = () => {
+    showDialog()
+  };
+  useEffect(() => {
+    const fetchCredits = async () => {
+      const correctCreditProps = ({ title, data }) => ({
+        data, title
+      })
+      const { data: creditResps }: { data: any[] } = await withLoading(() => get({
+        path: 'user/credit'
+      }))
+        .catch((err) => err)
+      setCredits(map(correctCreditProps, creditResps))
 
+    }
+    if(auth.username) {
+      fetchCredits();
+    }
+
+
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [])
   const menuId = 'primary-search-account-menu';
 
   return (
@@ -56,17 +88,29 @@ const Header: React.FC = () => {
           <div className='flex-grow' />
           {!auth.token
             ? <Link to='/login' className='header-left'>
-                <IconButton
-                  edge="end"
-                  aria-label="account of current user"
-                  aria-controls={menuId}
-                  aria-haspopup="true"
-                  color="inherit"
-                >
-                  <AccountCircleIcon />
-                </IconButton>
-              </Link>
-            : <Link to='/profile' className='header-left'>
+              <IconButton
+                edge="end"
+                aria-label="account of current user"
+                aria-controls={menuId}
+                aria-haspopup="true"
+                color="inherit"
+              >
+                <AccountCircleIcon />
+              </IconButton>
+            </Link>
+            : <div className="content-header">
+              {
+                 auth.username  ? <IconButton
+                edge="start"
+                className='icon-btn'
+                color="inherit"
+                aria-label="open dialog"
+                onClick={handleDiaLog}
+              >
+                <LocalAtmIcon />
+              </IconButton> : null
+              }
+              <Link to='/profile' className='header-left'>
                 <IconButton
                   edge="end"
                   aria-label="account of current user"
@@ -79,8 +123,11 @@ const Header: React.FC = () => {
                   </Typography>
                   <AccountCircleIcon />
                 </IconButton>
-              </Link>}
+              </Link></div>}
         </Toolbar>
+        <DialogComponent title='CURRENT BALANCE'>
+          <CurrentBalance label="Current Balance" arrayValue={credits} />
+        </DialogComponent>
       </AppBar>
     </div>
   );

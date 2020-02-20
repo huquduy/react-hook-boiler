@@ -1,0 +1,12 @@
+@import '../../colors';
+
+.MuiPaper-root{
+    background: $backgroundBody;
+}
+.MuiTypography-h6{
+    color: $primaryColor;
+    text-align: center;
+}
+.MuiButton-textPrimary{
+    border: 1px solid $primaryColor;
+}

@@ -1,11 +1,19 @@
 @import '../../colors';
 .table-custom{
     width: 100%;
+    border: 1px solid $white;
+    font-size: 13px;
     .MuiPaper-root{
         background:none;
         color: $primaryColor;
         .MuiTableCell-body{
             color: $primaryColor;
         }
+    }
+    table tbody th,td{
+        font-size: 14px;
+    }
+    .MuiTableCell-sizeSmall{
+        padding: 6px;
     }
 }

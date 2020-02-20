@@ -1,16 +1,11 @@
 import {
   Button,
-  ExpansionPanel,
-  ExpansionPanelDetails,
-  ExpansionPanelSummary,
   Typography
 } from '@material-ui/core'
 import {
-  ExpandMore as ExpandMoreIcon,
   Send as SendIcon,
 } from '@material-ui/icons'
 import Bottom from 'components/Bottom'
-import CurrentBalance, { ICredit } from 'components/CurrentBalance'
 import Header from 'components/Header'
 import SelectInput, { IOption } from 'components/SelectInput'
 import TextInput from 'components/TextInput'
@@ -27,7 +22,6 @@ import './style.scss'
 
 interface IForm {
   password: string,
-  paymentMethod: string,
   bankName: string,
   currency: string,
   bankAccountName: string,
@@ -44,7 +38,6 @@ const Deposit: React.FC<RouteComponentProps> = ({ history }) => {
   const { auth } = React.useContext(AuthContext)
   const [initialValues, setInitialValues] = useState<IForm>({
     password: '',
-    paymentMethod: 'Local Transfer',
     bankName: auth.bankName,
     currency: auth.currency,
     bankAccountName: auth.bankAccountName,
@@ -55,7 +48,6 @@ const Deposit: React.FC<RouteComponentProps> = ({ history }) => {
     amount: ''
   })
   const [banks, setBanks] = useState<IOption[] | []>([])
-  const [credits, setCredits] = useState<ICredit[] | []>([])
 
   const [isLoading, withLoading, Loading] = useLoading(false)
   const [showSnackbar, Snackbar] = useSnackbar(false)
@@ -100,18 +92,6 @@ const Deposit: React.FC<RouteComponentProps> = ({ history }) => {
       })
     }
     fetchBanks()
-    const fetchCredits = async () => {
-      const correctCreditProps = ({ title, data }) => ({
-        data, title
-      })
-      const { data: creditResps }: { data: any[] } = await withLoading(() => get({
-        path: 'user/credit'
-      }))
-        .catch((err) => err)
-      setCredits(map(correctCreditProps,creditResps))
-
-    }
-    fetchCredits();
 
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
@@ -122,31 +102,12 @@ const Deposit: React.FC<RouteComponentProps> = ({ history }) => {
       <Typography color="primary" className="title" variant="h5" align="center" component="h2" gutterBottom={true}>
         DEPOSIT
         </Typography>
-      <ExpansionPanel
-      defaultExpanded={true}>
-        <ExpansionPanelSummary
-          expandIcon={<ExpandMoreIcon />}
-          aria-controls="panel1a-content"
-          id="panel1a-header"
-        >
-          <Typography className="title">DEPOSIT TO US</Typography>
-        </ExpansionPanelSummary>
-        <ExpansionPanelDetails>
-          <Form
+        <Form
             initialValues={initialValues}
             onSubmit={handleDeposit}>
             {({ handleSubmit }) =>
               <form onSubmit={handleSubmit}>
                 <div className='container'>
-                  <div>
-                    <Field
-                      name="paymentMethod"
-                      label="Payment Method: "
-                      type="text"
-                      fullWidth={true}
-                      disabled={true}
-                      component={TextInput} />
-                  </div>
                   <div>
                     <Field
                       name="bankName"
@@ -238,20 +199,6 @@ const Deposit: React.FC<RouteComponentProps> = ({ history }) => {
                 </div>
               </form>}
           </Form>
-        </ExpansionPanelDetails>
-      </ExpansionPanel>
-      <ExpansionPanel>
-        <ExpansionPanelSummary
-          expandIcon={<ExpandMoreIcon />}
-          aria-controls="panel2a-content"
-          id="panel2a-header"
-        >
-          <Typography className="title">CURRENT BALANCE</Typography>
-        </ExpansionPanelSummary>
-        <ExpansionPanelDetails>
-          <CurrentBalance label="Current Balance" arrayValue={credits} />
-        </ExpansionPanelDetails>
-      </ExpansionPanel>
       <Snackbar />
       <Bottom />
     </div>
