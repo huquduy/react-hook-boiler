@@ -3,8 +3,7 @@ import {
   Drawer,
   IconButton,
   Toolbar, 
-  Typography,
-   Modal} from '@material-ui/core'
+  Typography} from '@material-ui/core'
 
 import {
   AccountCircle as AccountCircleIcon,
@@ -14,14 +13,11 @@ import { AuthContext } from 'contexts/authContext'
 import React from 'react'
 import { Link } from 'react-router-dom'
 import Sidebar from '../Drawer'
-import SimpleModal from '../Modal';
 import './style.scss'
 
 const Header: React.FC = () => {
   const { auth } = React.useContext(AuthContext)
   const [isDrawerOpened, setDrawerOpened] = React.useState<boolean>(false);
-  // const [modalStyle] = React.useState(getModalStyle);
-  const [open, setOpen] = React.useState(false);
 
   const handleCloseDrawer = () => {
     setDrawerOpened(false);
@@ -29,14 +25,6 @@ const Header: React.FC = () => {
 
   const handleOpenDrawer = () => {
     setDrawerOpened(true);
-  };
-
-  const handleOpen = () => {
-    setOpen(true);
-  };
-
-  const handleClose = () => {
-    setOpen(false);
   };
 
   const menuId = 'primary-search-account-menu';
@@ -80,19 +68,6 @@ const Header: React.FC = () => {
                 </IconButton>
               </Link>
             : <div>
-              <IconButton
-            edge="start"
-            className='icon-btn'
-            color="inherit"
-            aria-label="open drawer"
-            onClick={handleOpen}
-          >
-            Home
-          </IconButton>
-                    {/* <button 
-                  color="inherit" onClick={handleOpen} >
-                       Open Modal
-                    </button> */}
               <Link to='/profile' className='header-left'>
                 <IconButton
                   edge="end"
@@ -109,17 +84,6 @@ const Header: React.FC = () => {
               </Link></div>}
         </Toolbar>
       </AppBar>
-      <Modal
-        aria-labelledby="simple-modal-title"
-        aria-describedby="simple-modal-description"
-        open={open}
-        onClose={handleClose}
-      >
-        <div>
-        <SimpleModal />
-        </div>
-
-        </Modal>
     </div>
   );
 }

@@ -17,7 +17,7 @@ import { map } from 'ramda'
 import React, { useEffect, useState } from 'react'
 import { Field, withTypes } from 'react-final-form'
 import { RouteComponentProps, withRouter } from 'react-router-dom'
-import { composeValidators, minLength, required } from 'services/form'
+import { compareWithField, composeValidators, isEmail, maxLength, minLength, required } from 'services/form'
 import { get, post } from 'services/http'
 
 import './style.scss'
@@ -25,16 +25,22 @@ import './style.scss'
 interface IForm {
   email: string,
   bankId: string,
+  bankAccountName: string,
+  bankAccountNumber: string,
   username: string,
-  password: string
+  password: string,
+  phone: string,
 }
 const { Form } = withTypes<IForm>()
 
 const Register: React.FC<RouteComponentProps> = ({ history }) => {
   const [initialValues, setInitialValues] = useState<IForm>({
+    bankAccountName: '',
+    bankAccountNumber: '',
     bankId: '',
     email: '',
     password: '',
+    phone: '',
     username: '',
   })
   const [banks, setBanks] = useState<IOption[] | []>([])
@@ -48,7 +54,7 @@ const Register: React.FC<RouteComponentProps> = ({ history }) => {
       body: {
         password, username
       },
-      path: 'user/signIn'
+      path: 'user'
     })).catch((err) => err)
     if (error) {
       return showSnackbar(error)
@@ -104,7 +110,7 @@ const Register: React.FC<RouteComponentProps> = ({ history }) => {
               </div>
               <div>
                 <Field
-                  validate={composeValidators(required, minLength(3))}
+                  validate={isEmail}
                   name="email"
                   label="Email"
                   fullWidth={true}
@@ -121,7 +127,7 @@ const Register: React.FC<RouteComponentProps> = ({ history }) => {
               </div>
               <div>
                 <Field
-                  validate={composeValidators(required, minLength(5))}
+                  validate={compareWithField('password')}
                   name="passwordConfirm"
                   label="Confirm Password"
                   type="password"
@@ -130,7 +136,7 @@ const Register: React.FC<RouteComponentProps> = ({ history }) => {
               </div>
               <div>
                 <Field
-                  validate={required}
+                  validate={composeValidators(required, minLength(11), maxLength(16))}
                   name="phone"
                   label="Phone number:"
                   type="number"
@@ -148,7 +154,7 @@ const Register: React.FC<RouteComponentProps> = ({ history }) => {
               </div>
               <div>
                 <Field
-                  validate={composeValidators(required, minLength(3))}
+                  validate={composeValidators(required, minLength(10))}
                   name="bankAccountNumber"
                   label="Bank account number:"
                   fullWidth={true}
@@ -157,7 +163,7 @@ const Register: React.FC<RouteComponentProps> = ({ history }) => {
               </div>
               <div>
                 <Field
-                  validate={composeValidators(required, minLength(3))}
+                  validate={minLength(3)}
                   name="bankAccountName"
                   label="Bank account name:"
                   fullWidth={true}

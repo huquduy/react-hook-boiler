@@ -12,6 +12,7 @@ const Deposit = lazy(() => import('./pages/Deposit'))
 const Withdraw = lazy(() => import('./pages/Withdraw'))
 const TermCondition = lazy(() => import('./pages/TermCondition'))
 const Profile = lazy(() => import('./pages/Profile'))
+const Games = lazy(() => import('./pages/Games'))
 
 const Router = () => {
   return (
@@ -26,6 +27,7 @@ const Router = () => {
           <Route path="/withdraw" component={Withdraw} />
           <Route path="/term-condition" component={TermCondition} />
           <Route path="/profile" component={Profile} />
+          <Route path="/games/:type" component={Games} />
         </Switch>
       </Suspense>
     </BrowserRouter>

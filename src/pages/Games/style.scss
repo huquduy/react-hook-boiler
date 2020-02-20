@@ -1,0 +1,25 @@
+@import '../../colors';
+
+.games-page {
+  overflow: hidden;
+  .title {
+    line-height: 70px;
+  }
+  .provider{
+    background: transparent;
+    color: $primaryColor;
+    box-shadow: none;
+    img {
+      width: 100%;
+    }
+  }
+  .container {
+    padding: 15px;
+    color: $primaryColor;
+    display: flex;
+    flex-direction: column;
+    .game-type-icon {
+      width: 40px;
+    }
+  }
+}
