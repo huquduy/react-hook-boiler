@@ -48,10 +48,13 @@ const Header: React.FC = () => {
         path: 'user/credit'
       }))
         .catch((err) => err)
-      setCredits(map(correctCreditProps,creditResps))
+      setCredits(map(correctCreditProps, creditResps))
 
     }
-    fetchCredits();
+    if(auth.username) {
+      fetchCredits();
+    }
+
 
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
@@ -95,8 +98,9 @@ const Header: React.FC = () => {
                 <AccountCircleIcon />
               </IconButton>
             </Link>
-            : <div>
-              <IconButton
+            : <div className="content-header">
+              {
+                 auth.username  ? <IconButton
                 edge="start"
                 className='icon-btn'
                 color="inherit"
@@ -104,7 +108,8 @@ const Header: React.FC = () => {
                 onClick={handleDiaLog}
               >
                 <LocalAtmIcon />
-              </IconButton>
+              </IconButton> : null
+              }
               <Link to='/profile' className='header-left'>
                 <IconButton
                   edge="end"
@@ -120,7 +125,7 @@ const Header: React.FC = () => {
                 </IconButton>
               </Link></div>}
         </Toolbar>
-        <DialogComponent title='test'>
+        <DialogComponent title='CURRENT BALANCE'>
           <CurrentBalance label="Current Balance" arrayValue={credits} />
         </DialogComponent>
       </AppBar>

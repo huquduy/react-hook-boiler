@@ -11,14 +11,11 @@ import {
     Send as SendIcon,
 } from '@material-ui/icons'
 import Bottom from 'components/Bottom'
-import CurrentBalance, { ICredit } from 'components/CurrentBalance'
 import Header from 'components/Header'
-import SelectInput, { IOption } from 'components/SelectInput'
 import TextInput from 'components/TextInput'
 import { AuthContext } from "contexts/authContext"
 import useLoading from 'hooks/loading'
 import useSnackbar from 'hooks/snackbar'
-import { find, map, propEq } from 'ramda'
 import React, { useEffect, useState } from 'react'
 import { Field, withTypes } from 'react-final-form'
 import { RouteComponentProps, withRouter } from 'react-router-dom'
@@ -28,7 +25,6 @@ import './style.scss'
 
 interface IForm {
     password: string,
-    paymentMethod: string,
     bankName: string,
     currency: string,
     bankAccountName: string,
@@ -47,10 +43,8 @@ const Withdraw: React.FC<RouteComponentProps> = ({ history }) => {
         bankName: auth.bankName,
         currency: auth.currency,
         password: '',
-        paymentMethod: 'Local Transfer',
 
     })
-    const [credits, setCredits] = useState<ICredit[] | []>([])
 
     const [isLoading, withLoading, Loading] = useLoading(false)
     const [showSnackbar, Snackbar] = useSnackbar(false)
@@ -68,18 +62,6 @@ const Withdraw: React.FC<RouteComponentProps> = ({ history }) => {
         // history.push('/home')
     }
     useEffect(() => {
-        const fetchCredits = async () => {
-            const correctCreditProps = ({ title, data }) => ({
-                data, title
-            })
-            const { data: creditResps }: { data: any[] } = await withLoading(() => get({
-                path: 'user/credit'
-            }))
-                .catch((err) => err)
-            setCredits(map(correctCreditProps, creditResps))
-
-        }
-        fetchCredits();
 
         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [])
@@ -90,17 +72,7 @@ const Withdraw: React.FC<RouteComponentProps> = ({ history }) => {
             <Typography color="primary" className="title" variant="h5" align="center" component="h2" gutterBottom={true}>
                 WITHDRAWAL
           </Typography>
-            <ExpansionPanel
-                defaultExpanded={true}>
-                <ExpansionPanelSummary
-                    expandIcon={<ExpandMoreIcon />}
-                    aria-controls="panel1a-content"
-                    id="panel1a-header"
-                >
-                    <Typography className="title">WITHDRAWN</Typography>
-                </ExpansionPanelSummary>
-                <ExpansionPanelDetails>
-                    <Form
+          <Form
                         initialValues={initialValues}
                         onSubmit={handleDeposit}>
                         {({ handleSubmit }) =>
@@ -179,20 +151,6 @@ const Withdraw: React.FC<RouteComponentProps> = ({ history }) => {
                                 </div>
                             </form>}
                     </Form>
-                </ExpansionPanelDetails>
-            </ExpansionPanel>
-            <ExpansionPanel>
-                <ExpansionPanelSummary
-                    expandIcon={<ExpandMoreIcon />}
-                    aria-controls="panel2a-content"
-                    id="panel2a-header"
-                >
-                    <Typography className="title">CURRENT BALANCE</Typography>
-                </ExpansionPanelSummary>
-                <ExpansionPanelDetails>
-                    <CurrentBalance label="Current Balance" arrayValue={credits} />
-                </ExpansionPanelDetails>
-            </ExpansionPanel>
             <Snackbar />
             <Bottom />
         </div>

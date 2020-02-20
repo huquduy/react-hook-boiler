@@ -6,6 +6,7 @@ import {
   DialogTitle
 } from "@material-ui/core";
 import React, { FC, ReactNode, useState } from "react"
+import './style.scss'
 
 type TCallback = () => void
 type HookDialog = (status: boolean) => [TCallback, React.FC<{ children?: ReactNode, title?: string }>]
@@ -20,7 +21,7 @@ const useDialog: HookDialog = (status) => {
   const DialogComponent: FC<{ children?: ReactNode, title?: string }> = ({
     children, title = 'Akuhoki message'
   }) => (
-    <div>
+    <div className="dialog">
       <Dialog
         open={Boolean(isOpened)}
         onClose={handleClose}
@@ -32,7 +33,7 @@ const useDialog: HookDialog = (status) => {
         </DialogContent>
         <DialogActions>
           <Button onClick={handleClose} color="primary" autoFocus={true}>
-            Got it
+            OK
           </Button>
         </DialogActions>
       </Dialog>
