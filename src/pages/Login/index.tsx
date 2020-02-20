@@ -40,7 +40,6 @@ const Login: React.FC<RouteComponentProps> = ({ history }) => {
     if (error) {
       return showSnackbar(error)
     }
-    console.log(token);
     history.push('/home')
     setAuthStatus(token)
   }
