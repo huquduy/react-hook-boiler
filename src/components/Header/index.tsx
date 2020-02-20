@@ -66,7 +66,11 @@ const Header: React.FC = () => {
                   <AccountCircleIcon />
                 </IconButton>
               </Link>
-            : <Link to='/profile' className='header-left'>
+            : <div>
+              <Typography variant="caption" display="block" gutterBottom={true}>
+                    CurrentBalance
+                  </Typography>
+              <Link to='/profile' className='header-left'>
                 <IconButton
                   edge="end"
                   aria-label="account of current user"
@@ -79,7 +83,7 @@ const Header: React.FC = () => {
                   </Typography>
                   <AccountCircleIcon />
                 </IconButton>
-              </Link>}
+              </Link></div>}
         </Toolbar>
       </AppBar>
     </div>

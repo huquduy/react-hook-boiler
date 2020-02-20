@@ -27,15 +27,15 @@ const sidebar: React.FC= () => {
                 <span style={{ color: '#fff', display: 'block' }}>{title}</span>
               </Link>
             </ListItem>
-            <ListItem button={true} onClick={logout}>
+            <Divider />
+          </React.Fragment>
+        ), SIDEBAR())}
+         <ListItem button={true} onClick={logout}>
               <div style={{ textAlign: 'center', width: '100%' }}>
                 <img style={{ width: 40 }} src={`${process.env.PUBLIC_URL}/icon/icon-logout.svg`} />
                 <span style={{ color: '#fff', display: 'block' }}>LOGOUT</span>
               </div>
             </ListItem>
-            <Divider />
-          </React.Fragment>
-        ), SIDEBAR())}
         {/* <ListItem button={true} onClick={handleClickOpenLangModal}>
           <div style={{textAlign: 'center', width: '100%'}}>
             <img style={{width: 40}} src={`${process.env.PUBLIC_URL}/icon/lang_icon.png`} />
