@@ -66,12 +66,12 @@ const Home: React.FC<RouteComponentProps> = ({ history }) => {
           variant="scrollable"
           scrollButtons="on"
         >
-          {map(({ idName }: { idName: string }) => <Tab
+          {map(({ idName, title}: { idName: string ,title:string }) => <Tab
           key={idName}
           label={<div>
             <img className='game-type-icon' alt='hokibet188' src={`${imageSrc}icons/${idName.toLocaleLowerCase()}.png`} />
             <Typography variant="caption" display="block" gutterBottom={true}>
-              {idName}
+              {title}
             </Typography>
           </div>} value={idName} />, GAMES )}
         </Tabs>
