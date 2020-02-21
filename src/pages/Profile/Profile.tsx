@@ -10,7 +10,7 @@ import {
     Send as SendIcon,
 } from '@material-ui/icons'
 import Bottom from 'components/Bottom'
-import CurrentBalance, { ICredit } from 'components/CurrentBalance'
+import CurrentBalance, { ICredit } from 'components/Credits'
 import Header from 'components/Header'
 import SelectInput, { IOption } from 'components/SelectInput'
 import TextInput from 'components/TextInput'
