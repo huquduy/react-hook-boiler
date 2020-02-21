@@ -80,15 +80,6 @@ const Withdraw: React.FC<RouteComponentProps> = ({ history }) => {
                                 <div className='container'>
                                     <div>
                                         <Field
-                                            name="paymentMethod"
-                                            label="Payment Method: "
-                                            type="text"
-                                            fullWidth={true}
-                                            disabled={true}
-                                            component={TextInput} />
-                                    </div>
-                                    <div>
-                                        <Field
                                             name="bankName"
                                             label="From Bank :"
                                             type="text"
@@ -132,6 +123,11 @@ const Withdraw: React.FC<RouteComponentProps> = ({ history }) => {
                                             disable={isLoading.toString()}
                                             fullWidth={true}
                                             component={TextInput} />
+                                    </div>
+                                    <div className="des-amount">
+                                        <span>(IDR 1000 = 1 unit)</span> <br />
+                                        <span>Min : 50 IDR</span><br />
+                                        <span>Max : 99000 IDR</span>
                                     </div>
                                     <div>
                                         <Field

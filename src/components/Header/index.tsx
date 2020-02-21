@@ -13,13 +13,13 @@ import {
 import CurrentBalance, { ICredit } from 'components/CurrentBalance'
 import { AuthContext } from 'contexts/authContext'
 import useDialog from 'hooks/dialog'
-import React, { useEffect, useState } from 'react'
-import { Link } from 'react-router-dom'
-import Sidebar from '../Drawer'
-import './style.scss'
 import useLoading from 'hooks/loading'
 import { map } from 'ramda'
+import React, { useEffect, useState } from 'react'
+import { Link } from 'react-router-dom'
 import { get, post } from 'services/http'
+import Sidebar from '../Drawer'
+import './style.scss'
 
 
 const Header: React.FC = () => {

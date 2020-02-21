@@ -102,103 +102,108 @@ const Deposit: React.FC<RouteComponentProps> = ({ history }) => {
       <Typography color="primary" className="title" variant="h5" align="center" component="h2" gutterBottom={true}>
         DEPOSIT
         </Typography>
-        <Form
-            initialValues={initialValues}
-            onSubmit={handleDeposit}>
-            {({ handleSubmit }) =>
-              <form onSubmit={handleSubmit}>
-                <div className='container'>
-                  <div>
-                    <Field
-                      name="bankName"
-                      label="From Bank :"
-                      type="text"
-                      fullWidth={true}
-                      disabled={true}
-                      component={TextInput} />
-                  </div>
-                  <div>
-                    <Field
-                      name="bankAccountName"
-                      label="Bank Account Name: "
-                      type="text"
-                      disabled={true}
-                      fullWidth={true}
-                      component={TextInput} />
-                  </div>
-                  <div>
-                    <Field
-                      name="bankAccountNumber"
-                      label="Bank Account No :"
-                      type="text"
-                      disabled={true}
-                      fullWidth={true}
-                      component={TextInput} />
-                  </div>
-                  <div>
-                    <Field
-                      name="currency"
-                      label="Currency"
-                      type="text"
-                      disabled={true}
-                      fullWidth={true}
-                      component={TextInput} />
-                  </div>
-                  <div>
-                    <Field
-                      name="bankId"
-                      label="To Bank :"
-                      fullWidth={true}
-                      options={banks}
-                      handleChange={handleChange}
-                      component={SelectInput} />
-                  </div>
-                  <div>
-                    <Field
-                      name="accountName"
-                      label="Account Name :"
-                      type="text"
-                      disabled={true}
-                      fullWidth={true}
-                      component={TextInput} />
-                  </div>
-                  <div>
-                    <Field
-                      name="accountNumber"
-                      label="Account Number :"
-                      type="text"
-                      disabled={true}
-                      fullWidth={true}
-                      component={TextInput} />
-                  </div>
-                  <div>
-                    <Field
-                      validate={composeValidators(required, mustBeNumber)}
-                      name="amount"
-                      label="Amount :"
-                      type="text"
-                      disable={isLoading.toString()}
-                      fullWidth={true}
-                      component={TextInput} />
-                  </div>
-                  <div>
-                    <Field
-                      validate={required}
-                      name="password"
-                      label="Confirm Password :"
-                      type="password"
-                      disable={isLoading.toString()}
-                      fullWidth={true}
-                      component={TextInput} />
-                  </div>
-                  <div>
-                    <Button variant="outlined" color="primary" type="submit" startIcon={<SendIcon />}>
-                      Submit
+      <Form
+        initialValues={initialValues}
+        onSubmit={handleDeposit}>
+        {({ handleSubmit }) =>
+          <form onSubmit={handleSubmit}>
+            <div className='container'>
+              <div>
+                <Field
+                  name="bankName"
+                  label="From Bank :"
+                  type="text"
+                  fullWidth={true}
+                  disabled={true}
+                  component={TextInput} />
+              </div>
+              <div>
+                <Field
+                  name="bankAccountName"
+                  label="Bank Account Name: "
+                  type="text"
+                  disabled={true}
+                  fullWidth={true}
+                  component={TextInput} />
+              </div>
+              <div>
+                <Field
+                  name="bankAccountNumber"
+                  label="Bank Account No :"
+                  type="text"
+                  disabled={true}
+                  fullWidth={true}
+                  component={TextInput} />
+              </div>
+              <div>
+                <Field
+                  name="currency"
+                  label="Currency"
+                  type="text"
+                  disabled={true}
+                  fullWidth={true}
+                  component={TextInput} />
+              </div>
+              <div>
+                <Field
+                  name="bankId"
+                  label="To Bank :"
+                  fullWidth={true}
+                  options={banks}
+                  handleChange={handleChange}
+                  component={SelectInput} />
+              </div>
+              <div>
+                <Field
+                  name="accountName"
+                  label="Account Name :"
+                  type="text"
+                  disabled={true}
+                  fullWidth={true}
+                  component={TextInput} />
+              </div>
+              <div>
+                <Field
+                  name="accountNumber"
+                  label="Account Number :"
+                  type="text"
+                  disabled={true}
+                  fullWidth={true}
+                  component={TextInput} />
+              </div>
+              <div>
+                <Field
+                  validate={composeValidators(required, mustBeNumber)}
+                  name="amount"
+                  label="Amount :"
+                  type="text"
+                  disable={isLoading.toString()}
+                  fullWidth={true}
+                  component={TextInput} />
+              </div>
+              <div className="des-amount">
+                <span>(IDR 1000 = 1 unit)</span> <br />
+                <span>Min : 50 IDR</span><br />
+                <span>Max : 99000 IDR</span>
+              </div>
+              <div>
+                <Field
+                  validate={required}
+                  name="password"
+                  label="Confirm Password :"
+                  type="password"
+                  disable={isLoading.toString()}
+                  fullWidth={true}
+                  component={TextInput} />
+              </div>
+              <div>
+                <Button variant="outlined" color="primary" type="submit" startIcon={<SendIcon />}>
+                  Submit
                   </Button>
-                  </div>
-                </div>
-              </form>}
-          </Form>
+              </div>
+            </div>
+          </form>}
+      </Form>
       <Snackbar />
       <Bottom />
     </div>

@@ -4,6 +4,7 @@ const SPORTS_TAB = 'Sports'
 const LOTTERY_TAB = 'Lottery'
 const POKER_TAB = 'Poker'
 const TANGKAS_TAB = 'Tangkas'
+const FISHHUNTER_TAB = 'FishHunter'
 
 export interface IProviderProps {
   idName?: string;
@@ -14,6 +15,7 @@ export interface IProviderProps {
 export interface IGameTypeProps {
   providers: IProviderProps[];
   idName: string;
+  title: string;
 }
 
 const GAMETYPES = [
@@ -60,7 +62,8 @@ const GAMETYPES = [
         image: 'gameplay.png',
         route: ''
       }
-    ]
+    ],
+    title:'SLOT'
   },
   {
     idName: CASINO_TAB,
@@ -86,7 +89,8 @@ const GAMETYPES = [
         route: ''
       }
       
-    ]
+    ],
+    title:'CASINO'
   },
   {
     idName: SPORTS_TAB,
@@ -96,25 +100,56 @@ const GAMETYPES = [
         image: 'bbin.png',
         route: ''
       }
-    ]
+    ],
+    title:'SPORTS'
   },
   {
     idName: LOTTERY_TAB,
     providers: [
       
-    ]
+    ],
+    title:'LOTTERY'
   },
   {
     idName: POKER_TAB,
     providers: [
+      {
+        idName: 'BNIN',
+        image: 'bbin.png',
+        route: ''
+      }
       
-    ]
+    ],
+    title:'POKER'
+  },
+  {
+    idName: FISHHUNTER_TAB,
+    providers: [
+      {
+        idName: 'PLAYTECH',
+        image: 'PLAYTECH-min.png',
+        route: ''
+      },
+      {
+        idName: 'GG GAMING',
+        image: 'GG-GAMING-min.png',
+        route: ''
+      },
+      {
+        idName: 'JOKER',
+        image: 'HB-JOKER-min.png',
+        route: ''
+      }
+      
+    ], 
+    title:'FISH HUNTER'
   },
   {
     idName: TANGKAS_TAB,
     providers: [
       
-    ]
+    ], 
+    title: 'TANGKAS'
   }
 ]
 
