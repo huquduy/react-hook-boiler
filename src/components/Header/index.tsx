@@ -10,24 +10,19 @@ import {
   LocalAtm as LocalAtmIcon,
   Menu as MenuIcon
 } from '@material-ui/icons'
-import CurrentBalance, { ICredit } from 'components/CurrentBalance'
+import Credits from 'components/Credits'
 import { AuthContext } from 'contexts/authContext'
 import useDialog from 'hooks/dialog'
-import useLoading from 'hooks/loading'
-import { map } from 'ramda'
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
-import { get, post } from 'services/http'
 import Sidebar from '../Drawer'
 import './style.scss'
 
 
 const Header: React.FC = () => {
   const { auth } = React.useContext(AuthContext)
-  const [isDrawerOpened, setDrawerOpened] = React.useState<boolean>(false);
+  const [isDrawerOpened, setDrawerOpened] = useState<boolean>(false);
   const [showDialog, DialogComponent] = useDialog(false)
-  const [credits, setCredits] = useState<ICredit[] | []>([])
-  const [isLoading, withLoading, Loading] = useLoading(false)
 
   const handleCloseDrawer = () => {
     setDrawerOpened(false);
@@ -35,29 +30,8 @@ const Header: React.FC = () => {
 
   const handleOpenDrawer = () => {
     setDrawerOpened(true);
-  };
-  const handleDiaLog = () => {
-    showDialog()
-  };
-  useEffect(() => {
-    const fetchCredits = async () => {
-      const correctCreditProps = ({ title, data }) => ({
-        data, title
-      })
-      const { data: creditResps }: { data: any[] } = await withLoading(() => get({
-        path: 'user/credit'
-      }))
-        .catch((err) => err)
-      setCredits(map(correctCreditProps, creditResps))
-
-    }
-    if(auth.username) {
-      fetchCredits();
-    }
-
-
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [])
+  }
+  
   const menuId = 'primary-search-account-menu';
 
   return (
@@ -105,7 +79,7 @@ const Header: React.FC = () => {
                 className='icon-btn'
                 color="inherit"
                 aria-label="open dialog"
-                onClick={handleDiaLog}
+                onClick={showDialog}
               >
                 <LocalAtmIcon />
               </IconButton> : null
@@ -125,8 +99,8 @@ const Header: React.FC = () => {
                 </IconButton>
               </Link></div>}
         </Toolbar>
-        <DialogComponent title='CURRENT BALANCE'>
-          <CurrentBalance label="Current Balance" arrayValue={credits} />
+        <DialogComponent title='Your Credits'>
+          <Credits />
         </DialogComponent>
       </AppBar>
     </div>

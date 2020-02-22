@@ -6,8 +6,19 @@ const attachHeaders = () => {
   return {
     'Authorization': 'Bearer ' + getToken() ,
     'Content-Type': 'application/json'
-
     }
+}
+
+const handleErrors = response => {
+  if ([200, 201].includes(response.status)) {
+    return response
+  }
+  if (response.status === 401) {
+    store.clearAll()
+    window.location.href = 'login'
+  }
+  
+  throw response
 }
 
 export const setToken = (token: string) => store.set('token', token)
@@ -34,9 +45,10 @@ export const get = async ({ path, body } : { path: string, body?: any }) => {
     body: body ? JSON.stringify(body) : undefined,
     headers: attachHeaders()
   })
-  const payload = await response.json()
-  if (!response.ok) {
-    throw new Error(response.statusText)
+  const responseHandledError = handleErrors(response)
+  const payload = await responseHandledError.json()
+  if (!responseHandledError.ok) {
+    throw payload
   }
   return payload
 }
