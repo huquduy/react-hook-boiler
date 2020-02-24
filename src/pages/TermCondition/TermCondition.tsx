@@ -1,35 +1,21 @@
 import {
-    Button,
-    ExpansionPanel,
-    ExpansionPanelDetails,
-    ExpansionPanelSummary,
     Typography
   } from '@material-ui/core'
-  import {
-    ExpandMore as ExpandMoreIcon,
-    Home as HomeIcon,
-    Send as SendIcon,
-  } from '@material-ui/icons'
   import Bottom from 'components/Bottom'
   import Header from 'components/Header'
-  import { AuthContext } from "contexts/authContext"
   import useLoading from 'hooks/loading'
   import useSnackbar from 'hooks/snackbar'
-  import React, { useEffect, useState } from 'react'
+  import React  from 'react'
   import { RouteComponentProps, withRouter } from 'react-router-dom'
-  import { get, post } from 'services/http'
   import './style.scss'
 
   
   const TermCondition: React.FC<RouteComponentProps> = ({ history }) => {
-    const { auth } = React.useContext(AuthContext)
-
-  
     const [isLoading, withLoading, Loading] = useLoading(false)
     const [showSnackbar, Snackbar] = useSnackbar(false)
+    // const [Snackbar] = useSnackbar(false)
   
-    useEffect(() => {
-    }, [])
+    // useEffect(() => { }, [])
     return (
       <div className='term-page'>
         <Loading color="secondary" />

@@ -6,7 +6,7 @@ import {
 import { imageSrc } from 'config'
 import { map } from 'ramda'
 import React from 'react'
-import { Link, RouteComponentProps, withRouter } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import store from 'store'
 import SIDEBAR from './constant'
 import './style.scss'
@@ -32,7 +32,7 @@ const sidebar: React.FC= () => {
         ), SIDEBAR())}
          <ListItem button={true} onClick={logout}>
               <div style={{ textAlign: 'center', width: '100%' }}>
-                <img style={{ width: 40 }} src={`${process.env.PUBLIC_URL}/icon/icon-logout.svg`} />
+                <img alt="hokibet188" style={{ width: 40 }} src={`${process.env.PUBLIC_URL}/icon/icon-logout.svg`} />
                 <span style={{ color: '#fff', display: 'block' }}>LOGOUT</span>
               </div>
             </ListItem>

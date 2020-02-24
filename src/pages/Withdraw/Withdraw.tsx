@@ -1,13 +1,8 @@
 import {
     Button,
-    ExpansionPanel,
-    ExpansionPanelDetails,
-    ExpansionPanelSummary,
     Typography
 } from '@material-ui/core'
 import {
-    ExpandMore as ExpandMoreIcon,
-    Home as HomeIcon,
     Send as SendIcon,
 } from '@material-ui/icons'
 import Bottom from 'components/Bottom'
@@ -20,13 +15,12 @@ import React, { useEffect, useState } from 'react'
 import { Field, withTypes } from 'react-final-form'
 import { RouteComponentProps, withRouter } from 'react-router-dom'
 import { composeValidators, mustBeNumber, required } from 'services/form'
-import { get, post } from 'services/http'
+import { post } from 'services/http'
 import './style.scss'
 
 interface IForm {
     password: string,
     bankName: string,
-    currency: string,
     bankAccountName: string,
     bankAccountNumber: string,
     amount: string,
@@ -36,12 +30,11 @@ const { Form } = withTypes<IForm>()
 
 const Withdraw: React.FC<RouteComponentProps> = ({ history }) => {
     const { auth } = React.useContext(AuthContext)
-    const [initialValues, setInitialValues] = useState<IForm>({
+    const [initialValues] = useState<IForm>({
         amount: '',
         bankAccountName: auth.bankAccountName,
         bankAccountNumber: auth.bankAccountNumber,
         bankName: auth.bankName,
-        currency: auth.currency,
         password: '',
 
     })
@@ -100,15 +93,6 @@ const Withdraw: React.FC<RouteComponentProps> = ({ history }) => {
                                         <Field
                                             name="bankAccountNumber"
                                             label="Bank Account No :"
-                                            type="text"
-                                            disabled={true}
-                                            fullWidth={true}
-                                            component={TextInput} />
-                                    </div>
-                                    <div>
-                                        <Field
-                                            name="currency"
-                                            label="Currency"
                                             type="text"
                                             disabled={true}
                                             fullWidth={true}
