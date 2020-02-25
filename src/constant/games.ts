@@ -25,42 +25,42 @@ const GAMETYPES = [
       {
         idName: 'PG',
         image: 'pg.png',
-        route: ''
+        route: 'slots/pg'
       },
       {
         idName: 'Playtech',
         image: 'playtech.png',
-        route: ''
+        route: 'slots/playtech'
       },
       {
         idName: 'Microgaming',
         image: 'microgaming.png',
-        route: ''
+        route: 'slots/microgaming'
       },
       {
         idName: 'Joker',
         image: 'joker.png',
-        route: ''
+        route: 'slots/joker'
       },
       {
         idName: 'Pragmatic',
         image: 'pragmatic.png',
-        route: ''
+        route: 'slots/pragmatic'
       },
       {
         idName: '1S',
         image: '1s.png',
-        route: ''
+        route: 'slots/1s'
       },
       {
         idName: 'SBO',
         image: 'sbo.png',
-        route: ''
+        route: 'slots/sbo'
       },
       {
         idName: 'Gameplay',
         image: 'gameplay.png',
-        route: ''
+        route: 'slots/gameplay'
       }
     ],
     title:'SLOT'

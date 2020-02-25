@@ -26,7 +26,7 @@ const Games: React.FC = () => {
             <Grid item={true} xs={6} sm={6} key={idName}>
               <Link to={route}>
                 <Paper className='provider'>
-                  <img className='logo' alt='hokibet188' src={`${imageSrc}provider-photo/${image}`} />
+                  <img className='logo' alt='hokibet188' src={`${imageSrc}providers/${image}`} />
                   <Typography variant="caption" display="block" gutterBottom={true}>
                     {idName}
                   </Typography>

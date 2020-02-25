@@ -22,7 +22,7 @@ import './style.scss'
 const Header: React.FC = () => {
   const { auth } = React.useContext(AuthContext)
   const [isDrawerOpened, setDrawerOpened] = useState<boolean>(false);
-  const [showDialog, DialogComponent] = useDialog(false)
+  const [showDialog, Dialog] = useDialog(false)
 
   const handleCloseDrawer = () => {
     setDrawerOpened(false);
@@ -99,9 +99,9 @@ const Header: React.FC = () => {
                 </IconButton>
               </Link></div>}
         </Toolbar>
-        <DialogComponent title='Your Credits'>
+        <Dialog title='Your Credits'>
           <Credits />
-        </DialogComponent>
+        </Dialog>
       </AppBar>
     </div>
   );
