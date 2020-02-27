@@ -43,5 +43,5 @@ export default () => [
     icon: 'fishhunter.png',
     route: '/fishhunter',
     title: 'Fish hunter',
-  },
+  }
 ]

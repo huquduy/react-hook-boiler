@@ -2,6 +2,7 @@ import { CssBaseline } from '@material-ui/core'
 import { createMuiTheme, MuiThemeProvider } from '@material-ui/core/styles'
 import AuthContextProvider from 'contexts/authContext'
 import React from 'react'
+import io from 'socket.io-client';
 import './App.scss'
 import Router from './router'
 
@@ -26,6 +27,10 @@ const theme = createMuiTheme({
     fontSize: 17,
   },
 })
+// const socket=io.connect("wss://echo.websocket.org/");
+// socket.on("news",(data:any)=>alert(data));
+// socket.emit("news","hello");
+
 
 const App: React.FC = () => {
   return (

@@ -3,6 +3,11 @@ import {
   List,
   ListItem
 } from '@material-ui/core'
+import {
+  LocalAtm as LocalAtmIcon,
+  Menu as MenuIcon,
+  MoreHoriz as MoreHorizIcon
+} from '@material-ui/icons'
 import { imageSrc } from 'config'
 import { map } from 'ramda'
 import React from 'react'
@@ -12,10 +17,11 @@ import SIDEBAR from './constant'
 import './style.scss'
 
 
+
 const sidebar: React.FC= () => {
-  const logout = () =>{
-    store.clearAll()
-  }
+  // const handleMore = () =>{
+   
+  // }
   return (
     <div className='drawer'>
       <List>
@@ -30,25 +36,15 @@ const sidebar: React.FC= () => {
             <Divider />
           </React.Fragment>
         ), SIDEBAR())}
-         {/* <ListItem button={true} onClick={logout}>
-              <div style={{ textAlign: 'center', width: '100%' }}>
-                <img alt="hokibet188" style={{ width: 40 }} src={`${process.env.PUBLIC_URL}/icon/icon-logout.svg`} />
-                <span style={{ color: '#fff', display: 'block' }}>LOGOUT</span>
-              </div>
-            </ListItem> */}
-        {/* <ListItem button={true} onClick={handleClickOpenLangModal}>
-          <div style={{textAlign: 'center', width: '100%'}}>
-            <img style={{width: 40}} src={`${process.env.PUBLIC_URL}/icon/lang_icon.png`} />
-            <span style={{color: '#fff', display: 'block'}}>{t('LANGS')}</span>
-          </div>
-        </ListItem>
         <Divider />
-        <ListItem button={true} onClick={() => { history.push('/'); store.clearAll()}}>
-          <div style={{textAlign: 'center', width: '100%'}}>
-            <img style={{width: 40}} src={`${process.env.PUBLIC_URL}/icon/icon-logout.svg`} />
-            <span style={{color: '#fff', display: 'block'}}>{t('LOGOUT')}</span>
-          </div>
-        </ListItem> */}
+         <ListItem button={true}>
+         <Link to={'/more-page'} className='item'>
+              <div style={{ textAlign: 'center', width: '100%' }}>
+                <img alt="hokibet188" style={{ width: 40 }} src={`${imageSrc}/icons/more_horiz.svg`} />
+                <span style={{ color: '#fff', display: 'block' }}>More</span>
+              </div>
+              </Link>
+            </ListItem>
       </List>
     </div>
   )

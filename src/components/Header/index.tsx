@@ -18,13 +18,12 @@ import { AuthContext } from 'contexts/authContext'
 import useDialog from 'hooks/dialog'
 import React, { useState } from 'react'
 import { Link , useHistory} from 'react-router-dom'
-import store from 'store'
 import Sidebar from '../Drawer'
 import './style.scss'
 
 
 const Header: React.FC  = () => {
-  const { auth } = React.useContext(AuthContext)
+  const { auth , setUnauthStatus} = React.useContext(AuthContext)
   const [isDrawerOpened, setDrawerOpened] = useState<boolean>(false);
   const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
   const [showDialog, Dialog] = useDialog(false)
@@ -42,7 +41,7 @@ const Header: React.FC  = () => {
     history.push('/profile')
   }
   const handleLogout= () =>{
-    store.clearAll()
+    setUnauthStatus();
     setAnchorEl(null)
     history.push('/home')
     window.location.reload()

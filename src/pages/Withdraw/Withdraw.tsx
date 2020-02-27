@@ -52,7 +52,6 @@ const Withdraw: React.FC<RouteComponentProps> = ({ history }) => {
         if (error) {
             return showSnackbar(error)
         }
-        // history.push('/home')
     }
     useEffect(() => {
 

@@ -11,20 +11,17 @@ import {
 
   
   const TermCondition: React.FC<RouteComponentProps> = ({ history }) => {
-    const [isLoading, withLoading, Loading] = useLoading(false)
-    const [showSnackbar, Snackbar] = useSnackbar(false)
-    // const [Snackbar] = useSnackbar(false)
-  
-    // useEffect(() => { }, [])
+    // const [ Loading] = useLoading(false)
+    // const [ Snackbar] = useSnackbar(false)
     return (
       <div className='term-page'>
-        <Loading color="secondary" />
+        {/* <Loading color="secondary" /> */}
         <Header />
         <Typography color="primary" className="title" variant="h5" align="center" component="h2" gutterBottom={true}>
-          TERM & CONDITION
+        Syarat Dan Ketentuan
           </Typography>
           <div className="container">
-          <Typography className="title">Syarat Dan Ketentuan</Typography>
+          {/* <Typography className="title">Syarat Dan Ketentuan</Typography> */}
           <ul className="list-custom">
 	<li> Dengan menggunakan dan / atau mengunjungi setiap bagian (termasuk sub - domain ) dari website kami perusahaan atau situs-situs lain atau aplikasi yang kita sendiri (“Website”) dan / atau mendaftar di situs web ini, Anda setuju untuk terikat dengan 
 			
@@ -44,7 +41,7 @@ import {
 	<li> Harap diperhatikan bahwa perusahaan kami dan mitra kami berhak untuk membatalkan , menolak dan menolak setiap taruhan ditempatkan oleh pelanggan yang diduga tidak normal / tidak teratur taruhan atau penggunaan kecerdasan buatan ( bot ) . </li>
 </ul>
           </div>
-        <Snackbar />
+        {/* <Snackbar /> */}
         <Bottom />
       </div>
   

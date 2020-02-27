@@ -20,6 +20,14 @@ a {
 .App-link {
   color: #61dafb;
 }
+.term-page{
+  color: $primaryColor;
+  background: $backgroundBody;
+  .container{
+      text-align: left;
+      padding: 0 15px;
+  }
+}
 
 @keyframes App-logo-spin {
   from {
