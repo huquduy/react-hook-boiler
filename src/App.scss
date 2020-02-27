@@ -5,6 +5,9 @@ html {
   text-align: center;
 }
 
+body{
+  background-color: $backgroundBody !important;
+}
 .MuiButtonBase-root {
   color: none;
   background-color: none;
