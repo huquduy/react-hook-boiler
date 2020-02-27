@@ -26,8 +26,8 @@ import './style.scss'
 const Header: React.FC  = () => {
   const { auth } = React.useContext(AuthContext)
   const [isDrawerOpened, setDrawerOpened] = useState<boolean>(false);
-  const [showDialog, DialogComponent] = useDialog(false)
   const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
+  const [showDialog, Dialog] = useDialog(false)
   const history = useHistory()
 
   const handleClick = (event: React.MouseEvent<HTMLButtonElement>) => {
@@ -47,6 +47,7 @@ const Header: React.FC  = () => {
     history.push('/home')
     window.location.reload()
   }
+
 
   const handleCloseDrawer = () => {
     setDrawerOpened(false);
@@ -143,9 +144,9 @@ const Header: React.FC  = () => {
               </Link> */}
               </div>}
         </Toolbar>
-        <DialogComponent title='Your Credits'>
+        <Dialog title='Your Credits'>
           <Credits />
-        </DialogComponent>
+        </Dialog>
       </AppBar>
     </div>
   );
