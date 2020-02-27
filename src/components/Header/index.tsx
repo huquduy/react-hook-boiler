@@ -1,7 +1,10 @@
 import {
   AppBar,
+  Button,
   Drawer,
   IconButton,
+  Menu,
+  MenuItem,
   Toolbar,
   Typography
 } from '@material-ui/core'
@@ -14,15 +17,36 @@ import Credits from 'components/Credits'
 import { AuthContext } from 'contexts/authContext'
 import useDialog from 'hooks/dialog'
 import React, { useState } from 'react'
-import { Link } from 'react-router-dom'
+import { Link , useHistory} from 'react-router-dom'
+import store from 'store'
 import Sidebar from '../Drawer'
 import './style.scss'
 
 
-const Header: React.FC = () => {
+const Header: React.FC  = () => {
   const { auth } = React.useContext(AuthContext)
   const [isDrawerOpened, setDrawerOpened] = useState<boolean>(false);
   const [showDialog, DialogComponent] = useDialog(false)
+  const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
+  const history = useHistory()
+
+  const handleClick = (event: React.MouseEvent<HTMLButtonElement>) => {
+    setAnchorEl(event.currentTarget);
+  };
+
+  const handleClose = () => {
+    setAnchorEl(null)
+  };
+  const handleProfile =() =>{
+    setAnchorEl(null)
+    history.push('/profile')
+  }
+  const handleLogout= () =>{
+    store.clearAll()
+    setAnchorEl(null)
+    history.push('/home')
+    window.location.reload()
+  }
 
   const handleCloseDrawer = () => {
     setDrawerOpened(false);
@@ -31,7 +55,7 @@ const Header: React.FC = () => {
   const handleOpenDrawer = () => {
     setDrawerOpened(true);
   }
-  
+
   const menuId = 'primary-search-account-menu';
 
   return (
@@ -74,17 +98,36 @@ const Header: React.FC = () => {
             </Link>
             : <div className="content-header">
               {
-                 auth.username  ? <IconButton
-                edge="start"
-                className='icon-btn'
-                color="inherit"
-                aria-label="open dialog"
-                onClick={showDialog}
-              >
-                <LocalAtmIcon />
-              </IconButton> : null
+                auth.username ? <IconButton
+                  edge="start"
+                  className='icon-btn'
+                  color="inherit"
+                  aria-label="open dialog"
+                  onClick={showDialog}
+                >
+                  <LocalAtmIcon />
+                </IconButton> : null
               }
-              <Link to='/profile' className='header-left'>
+              <Button className='header-left' color="inherit" aria-controls="simple-menu" aria-haspopup="true" onClick={handleClick}>
+              <Typography variant="caption" display="block" gutterBottom={true}>
+                    {auth.username}
+                    <br />
+                    {auth.balance} IDR
+                  </Typography>
+                  <AccountCircleIcon />
+              </Button>
+              <Menu
+                id="simple-menu"
+                anchorEl={anchorEl}
+                keepMounted
+                open={Boolean(anchorEl)}
+                onClose={handleClose}
+                anchorPosition ={{top:40, left:0}}
+              >
+                <MenuItem onClick={handleProfile}>Profile</MenuItem>
+                <MenuItem onClick={handleLogout}>Logout</MenuItem>
+              </Menu>
+              {/* <Link to='/profile' className='header-left'>
                 <IconButton
                   edge="end"
                   aria-label="account of current user"
@@ -97,7 +140,8 @@ const Header: React.FC = () => {
                   </Typography>
                   <AccountCircleIcon />
                 </IconButton>
-              </Link></div>}
+              </Link> */}
+              </div>}
         </Toolbar>
         <DialogComponent title='Your Credits'>
           <Credits />

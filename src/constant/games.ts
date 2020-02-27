@@ -104,25 +104,6 @@ const GAMETYPES = [
     title:'SPORTS'
   },
   {
-    idName: LOTTERY_TAB,
-    providers: [
-      
-    ],
-    title:'LOTTERY'
-  },
-  {
-    idName: POKER_TAB,
-    providers: [
-      {
-        idName: 'BNIN',
-        image: 'bbin.png',
-        route: ''
-      }
-      
-    ],
-    title:'POKER'
-  },
-  {
     idName: FISHHUNTER_TAB,
     providers: [
       {
@@ -145,12 +126,31 @@ const GAMETYPES = [
     title:'FISH HUNTER'
   },
   {
+    idName: POKER_TAB,
+    providers: [
+      {
+        idName: 'BNIN',
+        image: 'bbin.png',
+        route: ''
+      }
+      
+    ],
+    title:'POKER'
+  },
+  {
     idName: TANGKAS_TAB,
     providers: [
       
     ], 
     title: 'TANGKAS'
-  }
+  },
+  {
+    idName: LOTTERY_TAB,
+    providers: [
+      
+    ],
+    title:'LOTTERY'
+  },
 ]
 
 export default GAMETYPES;

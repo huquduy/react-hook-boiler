@@ -9,4 +9,5 @@ export interface IUserAuth {
   bankAccountNumber: string;
   bankId: number;
   phone: string;
+  balance: string;
 };
