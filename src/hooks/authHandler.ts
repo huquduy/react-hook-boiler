@@ -8,7 +8,6 @@ const useAuthHandler = (initialState: IUserAuth) => {
   const [auth, setAuth] = React.useState(initialState);
 
   const setAuthStatus = (token: string) => {
-    console.log(jwtDecode(token));
     const { balance, email, id, username, currency , bankName, bankAccountName, bankAccountNumber, bankId, phone}: { balance: string, email: string, id: string, username: string, currency: string, bankName:string, bankAccountName: string, bankAccountNumber: string, bankId: number, phone: string } = jwtDecode(token)
     const userAuth = {
       balance, email, id, token, username, currency, bankName, bankAccountName, bankAccountNumber, bankId, phone

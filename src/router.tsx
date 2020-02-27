@@ -14,6 +14,12 @@ const TermCondition = lazy(() => import('./pages/TermCondition'))
 const Profile = lazy(() => import('./pages/Profile'))
 const Games = lazy(() => import('./pages/Games'))
 const Slot = lazy(() => import('./pages/Slot'))
+const MorePage = lazy(()=> import ('./pages/MorePage'))
+const AboutUs = lazy(()=> import ('./pages/AboutUs'))
+const Privacy = lazy(()=> import ('./pages/Privacy'))
+const Banking = lazy(()=> import ('./pages/Banking'))
+const Reponsible = lazy(()=> import ('./pages/Reponsible'))
+
 
 const Router = () => {
   return (
@@ -30,6 +36,11 @@ const Router = () => {
           <Route path="/profile" component={Profile} />
           <Route path="/games/:type" component={Games} />
           <Route path="/slots/:providerId" component={Slot} />
+          <Route path="/more-page" component={MorePage} />
+          <Route path="/privacy" component={Privacy} />
+          <Route path="/about-us" component={AboutUs} />
+          <Route path="/banking" component={Banking} />
+          <Route path="/reposible" component={Reponsible} />
         </Switch>
       </Suspense>
     </BrowserRouter>

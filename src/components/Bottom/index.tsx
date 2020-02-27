@@ -1,4 +1,4 @@
-import { BottomNavigation, BottomNavigationAction, Typography } from '@material-ui/core'
+import { BottomNavigation, BottomNavigationAction, Typography, Button, Menu, MenuItem } from '@material-ui/core'
 import { imageSrc } from 'config'
 import { map } from 'ramda'
 import React, { useState } from 'react'
@@ -24,20 +24,29 @@ const ITEMS = [
   },
   {
     icon: 'contact.png',
-    label: 'Whatsapp',
-    route: 'home'
+    label: 'WhatsApp',
+    route: 'promotion'
   },{
     icon: 'contact.png',
-    label: 'Live',
-    route: 'home'
+    label: ' ',
+    route: ''
   }
 ]
 
 const Bottom: React.FC<RouteComponentProps> = ({ history }) => {
+  const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
   const [activeTab, setActiveTab] = useState('promotion')
   const handleChange = (event: React.ChangeEvent<{}>, newValue: string) => {
     setActiveTab(newValue);
   };
+  const handleClick = (event: React.MouseEvent<HTMLButtonElement>) => {
+    setAnchorEl(event.currentTarget);
+  };
+  
+  const handleClose = () => {
+    setAnchorEl(null)
+  };
+  
 
   return (
     <div className='bottom-wraper'>
