@@ -6,7 +6,7 @@ import {
 import { imageSrc } from 'config'
 import { map } from 'ramda'
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { Link, RouteComponentProps, withRouter} from 'react-router-dom'
 import store from 'store'
 import SIDEBAR from './constant'
 import './style.scss'

@@ -25,11 +25,17 @@
 .MuiMenu-paper{
   box-shadow: 0 0 15px $primaryColor;
   background: $backgroundBody;
-  top:45px !important;
+  top:50px !important;
   color: $primaryColor;
   .MuiMenu-list li:first-child{
     border-bottom: 1px solid $primaryColor;
   }
+}
+.MuiMenuItem-root{
+  min-height: 35px;
+  padding-top: 0;
+  padding-bottom:0;
+  font-size: inherit;
 }
 @media only screen and (max-width: 320px) {
   .header-wraper .header .logo{
