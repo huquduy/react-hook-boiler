@@ -5,6 +5,7 @@ import TabPanel from 'components/TabPanel'
 import { imageSrc } from 'config'
 import GAMES, { getGameType, IProviderProps, SLOT_TAB } from 'constant/games'
 import { AuthContext } from "contexts/authContext"
+import useMarquee from 'hooks/marquee'
 import { map } from 'ramda'
 import React, {useMemo, useState} from 'react'
 import { Link, RouteComponentProps, withRouter } from 'react-router-dom'
@@ -24,6 +25,7 @@ const settingsCarousel = {
 const Home: React.FC<RouteComponentProps> = ({ history }) => {
   const { auth } = React.useContext(AuthContext)
   const [activeTab, setActiveTab] = useState(SLOT_TAB)
+  const [MarqueeComponent] = useMarquee(); 
   const isLogged = !auth.token.length
 
   const handleChangeTab = (event: React.ChangeEvent<{}>, newValue: string) => {
@@ -54,9 +56,12 @@ const Home: React.FC<RouteComponentProps> = ({ history }) => {
           <Link className="register" to="/register">Register</Link>
           <Link className="login" to="/login">Login</Link>
         </div>
-        : null
+        : <div className='authentication'>
+        <Link className="register" to="/deposit">Deposit</Link>
+        <Link className="login" to="/withdraw">Withdraw</Link>
+      </div>
       }
-
+      <MarqueeComponent text="CUKUP 1 ID UNTUK BERMAIN SEMUA GAMES | ALTERNATIF LINK WWW.HOKIBET188.PRO WWW.HOKIBET188.ONLINE" />
       {/* Provider list */}
       <div className='game-tabs'>
         <Tabs

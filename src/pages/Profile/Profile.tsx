@@ -1,28 +1,21 @@
 import {
     Button,
-    ExpansionPanel,
-    ExpansionPanelDetails,
-    ExpansionPanelSummary,
     Typography
 } from '@material-ui/core'
 import {
-    ExpandMore as ExpandMoreIcon,
     Send as SendIcon,
 } from '@material-ui/icons'
 import Bottom from 'components/Bottom'
-import CurrentBalance, { ICredit } from 'components/Credits'
 import Header from 'components/Header'
-import SelectInput, { IOption } from 'components/SelectInput'
 import TextInput from 'components/TextInput'
 import { AuthContext } from "contexts/authContext"
 import useLoading from 'hooks/loading'
 import useSnackbar from 'hooks/snackbar'
-import { find, map, propEq } from 'ramda'
 import React, { useEffect, useState } from 'react'
 import { Field, withTypes } from 'react-final-form'
 import { RouteComponentProps, withRouter } from 'react-router-dom'
-import { composeValidators, mustBeNumber, required } from 'services/form'
-import { get, post } from 'services/http'
+import { composeValidators, required } from 'services/form'
+import {  post } from 'services/http'
 import './style.scss'
 
 interface IForm {
@@ -42,7 +35,7 @@ const { Form } = withTypes<IForm>()
 
 const Profile: React.FC<RouteComponentProps> = ({ history }) => {
     const { auth } = React.useContext(AuthContext)
-    const [initialValues, setInitialValues] = useState<IForm>({
+    const [initialValues] = useState<IForm>({
         bankAccountName: auth.bankAccountName,
         bankAccountNumber: auth.bankAccountNumber,
         bankName: auth.bankName,

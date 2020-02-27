@@ -23,7 +23,6 @@ import './style.scss'
 interface IForm {
   password: string,
   bankName: string,
-  currency: string,
   bankAccountName: string,
   bankAccountNumber: string,
   bankId: number,
@@ -37,15 +36,14 @@ const { Form } = withTypes<IForm>()
 const Deposit: React.FC<RouteComponentProps> = ({ history }) => {
   const { auth } = React.useContext(AuthContext)
   const [initialValues, setInitialValues] = useState<IForm>({
-    password: '',
-    bankName: auth.bankName,
-    currency: auth.currency,
+    accountName: '',
+    accountNumber: '',
+    amount: '',
     bankAccountName: auth.bankAccountName,
     bankAccountNumber: auth.bankAccountNumber,
     bankId: auth.bankId,
-    accountName: '',
-    accountNumber: '',
-    amount: ''
+    bankName: auth.bankName,
+    password: ''
   })
   const [banks, setBanks] = useState<IOption[] | []>([])
 
@@ -130,15 +128,6 @@ const Deposit: React.FC<RouteComponentProps> = ({ history }) => {
                 <Field
                   name="bankAccountNumber"
                   label="Bank Account No :"
-                  type="text"
-                  disabled={true}
-                  fullWidth={true}
-                  component={TextInput} />
-              </div>
-              <div>
-                <Field
-                  name="currency"
-                  label="Currency"
                   type="text"
                   disabled={true}
                   fullWidth={true}
