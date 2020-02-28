@@ -1,4 +1,4 @@
-import joker from './joker.constant'
+import {joker} from './joker.constant'
 
 export interface IGames {
   code: string,
