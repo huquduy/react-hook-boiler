@@ -5,16 +5,6 @@ export default () => [
     title: 'Home',
   },
   {
-    icon: 'deposit.png',
-    route: '/deposit',
-    title: 'Deposit',
-  },
-  {
-    icon: 'withdraw.png',
-    route: '/withdraw',
-    title: 'Withdraw',
-  },
-  {
     icon: 'sports.png',
     route: '/sports',
     title: 'Sports',

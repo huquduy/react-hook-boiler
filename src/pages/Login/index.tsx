@@ -28,6 +28,7 @@ const Login: React.FC<RouteComponentProps> = ({ history }) => {
   const { setAuthStatus } = React.useContext(AuthContext)
   const [, withLoading, Loading] = useLoading(false)
   const [showSnackbar, Snackbar] = useSnackbar(false)
+  let errorMessage = null
 
   const handleLogin = async ({ username, password }) => {
     const { token, error } = await withLoading(() => post({
@@ -37,7 +38,9 @@ const Login: React.FC<RouteComponentProps> = ({ history }) => {
       path: 'user/signIn'
     })).catch((err) => err)
     if (error) {
-      return showSnackbar(error)
+      errorMessage  = error
+      return errorMessage
+      // return showSnackbar(error)
     }
     history.push('/home')
     setAuthStatus(token)
@@ -50,6 +53,10 @@ const Login: React.FC<RouteComponentProps> = ({ history }) => {
       <Typography color="primary" className="title" variant="h5" align="center" component="h2" gutterBottom={true}>
         LOGIN
       </Typography>
+      <Typography color="primary" className="title" variant="h5" align="center" component="h2" gutterBottom={true}>
+        {errorMessage}
+      </Typography>
+      {/* {(errorMessage != null) ?  : null} */}
       <Form onSubmit={handleLogin}>
         {({ handleSubmit }) => 
           <form onSubmit={handleSubmit}>
@@ -84,15 +91,12 @@ const Login: React.FC<RouteComponentProps> = ({ history }) => {
               <div>
                 <Link to="/home" color="primary">
                 Forgot Password? 
-                  {/* <LinkMUI color="primary">
-                    Forgot Password? 
-                  </LinkMUI> */}
                 </Link>
               </div>
             </div>
           </form>}
       </Form>
-      <Snackbar/>
+      {/* <Snackbar/> */}
     </div>
   )
 }
