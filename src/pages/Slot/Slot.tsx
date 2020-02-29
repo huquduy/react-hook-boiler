@@ -25,11 +25,12 @@ const Home: React.FC = () => {
   const handleFreeSearchChanged = e => setFreeSearch(e.target.value)
 
   const handleChangeProvider = (event: React.ChangeEvent<{}>, newValue: string) => {
-    history.push(newValue);
+    history.push(newValue)
   };
 
   const handleChangeGroup = (event: React.ChangeEvent<{}>, group: string) => {
-    setActiveGroup(group);
+    setActiveGroup(group)
+    setFreeSearch('')
   };
 
   const groups: string[] = useMemo(() => {
@@ -79,6 +80,7 @@ const Home: React.FC = () => {
         </Tabs>
 
         {activeGroup.length && <Tabs
+          className='group'
           value={activeGroup}
           onChange={handleChangeGroup}
           indicatorColor="primary"
@@ -93,8 +95,10 @@ const Home: React.FC = () => {
 
         <div className='game-search'>
           <TextField
+            label='Search games'
             className='text-input-custom'
             onChange={handleFreeSearchChanged}
+            value={freeSearch}
             InputProps={{
               startAdornment: (
                 <InputAdornment position='end'>
