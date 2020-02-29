@@ -1,7 +1,6 @@
 import TextField from '@material-ui/core/TextField'
 import React from 'react'
 import { FieldRenderProps } from "react-final-form"
-import './style.scss'
 
 type Props = FieldRenderProps<string, any>
 
