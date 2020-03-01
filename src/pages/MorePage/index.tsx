@@ -8,7 +8,7 @@ import Bottom from 'components/Bottom'
 import Header from 'components/Header'
 import { map } from 'ramda'
 import React from 'react'
-import { Link, RouteComponentProps, withRouter } from 'react-router-dom'
+import { Link} from 'react-router-dom'
 import MOREPAGE from './constant'
 
 const MorePage: React.FC = () => {

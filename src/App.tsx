@@ -2,7 +2,7 @@ import { CssBaseline } from '@material-ui/core'
 import { createMuiTheme, MuiThemeProvider } from '@material-ui/core/styles'
 import AuthContextProvider from 'contexts/authContext'
 import React from 'react'
-import io from 'socket.io-client';
+// import io from 'socket.io-client';
 import './App.scss'
 import Router from './router'
 

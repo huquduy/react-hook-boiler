@@ -3,8 +3,6 @@ import {
   } from '@material-ui/core'
   import Bottom from 'components/Bottom'
   import Header from 'components/Header'
-  import useLoading from 'hooks/loading'
-  import useSnackbar from 'hooks/snackbar'
   import React  from 'react'
   import { RouteComponentProps, withRouter } from 'react-router-dom'
   import './style.scss'

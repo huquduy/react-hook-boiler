@@ -8,8 +8,8 @@ import {
 import Header from 'components/Header'
 import TextInput from 'components/TextInput'
 import { AuthContext } from "contexts/authContext"
+import useErrorDialog from 'hooks/error-dialog'
 import useLoading from 'hooks/loading'
-import useSnackbar from 'hooks/snackbar'
 import React from 'react'
 import { Field, withTypes } from 'react-final-form'
 import { Link, RouteComponentProps, withRouter } from 'react-router-dom'
@@ -27,7 +27,7 @@ const { Form } = withTypes<IForm>()
 const Login: React.FC<RouteComponentProps> = ({ history }) => {
   const { setAuthStatus } = React.useContext(AuthContext)
   const [, withLoading, Loading] = useLoading(false)
-  const [showSnackbar, Snackbar] = useSnackbar(false)
+  const [showDialog, ErrorDialogComponent] = useErrorDialog(false)
 
   const handleLogin = async ({ username, password }) => {
     const { token, error } = await withLoading(() => post({
@@ -37,7 +37,7 @@ const Login: React.FC<RouteComponentProps> = ({ history }) => {
       path: 'user/signIn'
     })).catch((err) => err)
     if (error) {
-      return showSnackbar(error)
+      return showDialog(error)
     }
     history.push('/home')
     setAuthStatus(token)
@@ -84,15 +84,12 @@ const Login: React.FC<RouteComponentProps> = ({ history }) => {
               <div>
                 <Link to="/home" color="primary">
                 Forgot Password? 
-                  {/* <LinkMUI color="primary">
-                    Forgot Password? 
-                  </LinkMUI> */}
                 </Link>
               </div>
             </div>
           </form>}
       </Form>
-      <Snackbar/>
+      <ErrorDialogComponent />
     </div>
   )
 }
