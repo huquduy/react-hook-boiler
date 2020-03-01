@@ -1,4 +1,5 @@
-import {joker} from './joker.constant'
+import joker from './joker.constant'
+import playtech from './playtech.constant'
 
 export interface IGames {
   code: string,
@@ -8,5 +9,6 @@ export interface IGames {
 }
 
 export default {
-  joker
+  joker,
+  playtech,
 }

@@ -81,14 +81,16 @@ const Home: React.FC<RouteComponentProps> = ({ history }) => {
         </Tabs>
         <TabPanel value={activeTab}>
           <Grid container={true} spacing={1}>
-            {map(({ image, idName }: IProviderProps) => 
+            {map(({ image, idName, route }: IProviderProps) => 
               <Grid item={true} xs={4} sm={4} key={idName}>
-                <Paper className='provider'>
-                  <img className='logo' alt='hokibet188' src={`${imageSrc}providers/${image}`} />
-                  <Typography variant="caption" display="block" gutterBottom={true}>
-                    {idName}
-                  </Typography>
-                </Paper>
+                <Link to={route}>
+                  <Paper className='provider'>
+                    <img className='logo' alt='hokibet188' src={`${imageSrc}providers/${image}`} />
+                    <Typography variant="caption" display="block" gutterBottom={true}>
+                      {idName}
+                    </Typography>
+                  </Paper>
+                </Link>
               </Grid>
             , providers)}
           </Grid>

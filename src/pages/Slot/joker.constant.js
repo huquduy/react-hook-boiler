@@ -1,4 +1,4 @@
-export const  joker = [
+export default [
   {
     code: 'fwria11mjbrwh',
     name: 'Three Kingdoms Quest',
