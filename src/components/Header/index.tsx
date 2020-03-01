@@ -86,17 +86,19 @@ const Header: React.FC  = () => {
           <img className='logo' alt='hokibet188' src={process.env.PUBLIC_URL + '/images/logo.png'} />
           <div className='flex-grow' />
           {!auth.token
-            ? <Link to='/login' className='header-left'>
-              <IconButton
-                edge="end"
-                aria-label="account of current user"
-                aria-controls={menuId}
-                aria-haspopup="true"
-                color="inherit"
-              >
-                <AccountCircleIcon />
-              </IconButton>
-            </Link>
+            ? 
+            // <Link to='/login' className='header-left'>
+            //   <IconButton
+            //     edge="end"
+            //     aria-label="account of current user"
+            //     aria-controls={menuId}
+            //     aria-haspopup="true"
+            //     color="inherit"
+            //   >
+            //     <AccountCircleIcon />
+            //   </IconButton>
+            // </Link>
+            null
             : <div className="content-header">
               <Button className='header-left' color="inherit" aria-controls="simple-menu" aria-haspopup="true" onClick={toggleProfileMenu}>
                 <Typography variant="caption" display="block" gutterBottom={true}>
