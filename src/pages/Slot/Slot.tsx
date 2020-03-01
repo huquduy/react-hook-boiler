@@ -6,7 +6,7 @@ import TabPanel from 'components/TabPanel'
 import { imageSrc } from 'config'
 import { getGameType, IProviderProps, SLOT_TAB } from 'constant/games'
 import { filter, map, reduce } from 'ramda'
-import React, {useEffect, useMemo, useState} from 'react'
+import React, {useCallback, useEffect, useMemo, useState} from 'react'
 import ReactImageFallback from "react-image-fallback"
 import { useHistory, useParams, withRouter } from 'react-router-dom'
 import gamesByProvider, { IGames } from './constant'
@@ -22,20 +22,20 @@ const Home: React.FC = () => {
 
   const { providers } : { providers: IProviderProps[] } = useMemo(() => getGameType(SLOT_TAB), [])
 
-  const toogleSearching = () => setSearchingShown(!searchingShown)
+  const toogleSearching = useCallback(() => setSearchingShown(!searchingShown), [searchingShown])
 
   const games = gamesByProvider[providerId]
 
-  const handleFreeSearchChanged = e => setFreeSearch(e.target.value)
+  const handleFreeSearchChanged = useCallback(e => setFreeSearch(e.target.value), [])
 
-  const handleChangeProvider = (event: React.ChangeEvent<{}>, newValue: string) => {
+  const handleChangeProvider = useCallback((event: React.ChangeEvent<{}>, newValue: string) => {
     history.push(newValue)
-  };
+  }, [history])
 
-  const handleChangeGroup = (event: React.ChangeEvent<{}>, group: string) => {
+  const handleChangeGroup = useCallback((event: React.ChangeEvent<{}>, group: string) => {
     setActiveGroup(group)
     setFreeSearch('')
-  };
+  }, [])
 
   const groups: string[] = useMemo(() => {
     const getGroup = (accumulator: string[], { group = 'All' }: {group: string}) => {
