@@ -8,8 +8,8 @@ import {
 import Header from 'components/Header'
 import TextInput from 'components/TextInput'
 import { AuthContext } from "contexts/authContext"
+import useErrorDialog from 'hooks/error-dialog'
 import useLoading from 'hooks/loading'
-import useSnackbar from 'hooks/snackbar'
 import React from 'react'
 import { Field, withTypes } from 'react-final-form'
 import { Link, RouteComponentProps, withRouter } from 'react-router-dom'
@@ -27,8 +27,7 @@ const { Form } = withTypes<IForm>()
 const Login: React.FC<RouteComponentProps> = ({ history }) => {
   const { setAuthStatus } = React.useContext(AuthContext)
   const [, withLoading, Loading] = useLoading(false)
-  const [showSnackbar, Snackbar] = useSnackbar(false)
-  let errorMessage = null
+  const [showDialog, ErrorDialogComponent] = useErrorDialog(false)
 
   const handleLogin = async ({ username, password }) => {
     const { token, error } = await withLoading(() => post({
@@ -38,9 +37,7 @@ const Login: React.FC<RouteComponentProps> = ({ history }) => {
       path: 'user/signIn'
     })).catch((err) => err)
     if (error) {
-      errorMessage  = error
-      return errorMessage
-      // return showSnackbar(error)
+      return showDialog(error)
     }
     history.push('/home')
     setAuthStatus(token)
@@ -53,10 +50,6 @@ const Login: React.FC<RouteComponentProps> = ({ history }) => {
       <Typography color="primary" className="title" variant="h5" align="center" component="h2" gutterBottom={true}>
         LOGIN
       </Typography>
-      <Typography color="primary" className="title" variant="h5" align="center" component="h2" gutterBottom={true}>
-        {errorMessage}
-      </Typography>
-      {/* {(errorMessage != null) ?  : null} */}
       <Form onSubmit={handleLogin}>
         {({ handleSubmit }) => 
           <form onSubmit={handleSubmit}>
@@ -96,7 +89,7 @@ const Login: React.FC<RouteComponentProps> = ({ history }) => {
             </div>
           </form>}
       </Form>
-      {/* <Snackbar/> */}
+      <ErrorDialogComponent />
     </div>
   )
 }
