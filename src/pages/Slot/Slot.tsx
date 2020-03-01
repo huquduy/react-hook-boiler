@@ -1,4 +1,4 @@
-import { Chip, Grid, InputAdornment, Paper, Tab, Tabs, TextField, Typography } from '@material-ui/core'
+import { Chip, Grid, IconButton, InputAdornment, Paper, Tab, Tabs, TextField, Typography } from '@material-ui/core'
 import SearchIcon from '@material-ui/icons/Search';
 import Bottom from 'components/Bottom'
 import Header from 'components/Header'
@@ -14,11 +14,14 @@ import './style.scss'
 const Home: React.FC = () => {
   const history = useHistory()
   const { providerId = SLOT_TAB } = useParams()
+  const [searchingShown, setSearchingShown] = useState<boolean>(false)
   const [freeSearch, setFreeSearch] = useState<string>('')
   const [activeGroup, setActiveGroup] = useState<string>('')
   const [gamesAvailable, setGamesAvailable] = useState<IGames[]>([])
 
   const { providers } : { providers: IProviderProps[] } = useMemo(() => getGameType(SLOT_TAB), [])
+
+  const toogleSearching = () => setSearchingShown(!searchingShown)
 
   const games = gamesByProvider[providerId]
 
@@ -78,22 +81,26 @@ const Home: React.FC = () => {
               </Typography>
             </div>} value={route} />, providers )}
         </Tabs>
+        
+        <div className='group'>
+          {activeGroup.length && <Tabs
+            value={activeGroup}
+            onChange={handleChangeGroup}
+            indicatorColor="primary"
+            variant="scrollable"
+            scrollButtons="on"
+          >
+            {map((group: string) => <Tab
+              key={group}
+              label={<Chip color='primary' label={group} variant="outlined"/>}
+              value={group} />, groups )}
+          </Tabs>}
+          <IconButton onClick={toogleSearching} color='primary' className='toogle-search'>
+            <SearchIcon />
+          </IconButton>
+        </div>
 
-        {activeGroup.length && <Tabs
-          className='group'
-          value={activeGroup}
-          onChange={handleChangeGroup}
-          indicatorColor="primary"
-          variant="scrollable"
-          scrollButtons="on"
-        >
-          {map((group: string) => <Tab
-            key={group}
-            label={<Chip color='primary' label={group} variant="outlined"/>}
-            value={group} />, groups )}
-        </Tabs>}
-
-        <div className='game-search'>
+        {searchingShown && <div className='game-search'>
           <TextField
             label='Search games'
             className='text-input-custom'
@@ -107,7 +114,7 @@ const Home: React.FC = () => {
               ),
             }}
           />
-        </div>
+        </div>}
         
         <TabPanel value={activeGroup}>
           <Grid container={true} spacing={1}>
