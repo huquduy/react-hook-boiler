@@ -1,6 +1,6 @@
 @import "../../colors";
 .bottom-wraper {
-  margin-top: 65px;
+  margin-top: 49px;
   .bottom {
     border-top: 1px solid $primaryColor;
     color: $primaryColor;
@@ -15,5 +15,11 @@
     .icon {
       width: 20px
     }
+  }
+  .MuiBottomNavigationAction-label.MuiBottomNavigationAction-iconOnly{
+    opacity: 1;
+  }
+  .MuiBottomNavigationAction-root.MuiBottomNavigationAction-iconOnly{
+    padding-top: 8px;
   }
 }

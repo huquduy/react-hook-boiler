@@ -30,13 +30,13 @@ const ITEMS = [
   },
   {
     icon: 'contact.png',
-    isExtenal: true,
+    isExtenal: false,
     label: 'WhatsApp',
     route: 'promotion',
     target: ''
   },{
     icon: 'contact.png',
-    isExtenal: false,
+    isExtenal: true,
     label: 'Live Chat',
     route: 'https://v2.zopim.com/widget/livechat.html?key=4AV3AjiTSLlEJzZEwHTFojUPOVayt8Wr&&lang=ms&hostname=www.hokibet188.com&api_calls=%5B%5D',
     target: '_blank'
@@ -67,14 +67,27 @@ const Bottom: React.FC<RouteComponentProps> = ({ history }) => {
         className='bottom'
       >
         {
-          map(({ icon, label, route , target, isExtenal}: IItem) => <BottomNavigationAction
+          map(({ icon, label, route , target, isExtenal}: IItem) => 
+          <div>{!isExtenal ?
+          <BottomNavigationAction
             key={label}
             label={<Typography style={{color: '#efd77f'}} variant="caption" display="block" gutterBottom={true}>
               {label}
             </Typography>}
             icon={<img className='icon' alt='hokibet188' src={`${imageSrc}icons/${icon}`} />}
-            component={Link}  to={route} target={target} rel="noopener noreferrer"
-          />, ITEMS)
+            component={Link}  to={route}  rel="noopener noreferrer"
+          />: <a href={route} target={target}>
+            <BottomNavigationAction
+            key={label}
+            label={<Typography style={{color: '#efd77f'}} variant="caption" display="block" gutterBottom={true}>
+              {label}
+            </Typography>}
+            icon={<img className='icon' alt='hokibet188' src={`${imageSrc}icons/${icon}`} />}
+            />
+          </a>
+          }
+          </div>
+          , ITEMS)
         }
       </BottomNavigation>
     </div>
