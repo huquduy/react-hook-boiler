@@ -1,1577 +1,1485 @@
 const a = [
     {
-        GameType: 'Slot',
-        Code: 'Sanguo',
-        GameOCode: 'fwria11mjbrwh',
-        GameCode: 'fwria11mjbrwh',
-        GameName: 'Three Kingdoms Quest',
-        SupportedPlatForms: 'Desktop,Mobile',
-        Specials: 'hot',
-        Technology: 'HTML',
-        Order: 40,
-        DefaultWidth: 960,
-        DefaultHeight: 600,
-        Image1: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/landscape/fwria11mjbrwh.png',
-        Image2: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/portrait/fwria11mjbrwh.png',
-        gameURL: 'http://www.gwc688.net/?token=xjs3dm1dsdipc&game=fwria11mjbrwh&redirectUrl=https%3A%2F%2Fdemo.97ipay.com'
-    },
-    {
-        GameType: 'Slot',
-        Code: 'Leishen',
-        GameOCode: '8rqwot18etnuw',
-        GameCode: '8rqwot18etnuw',
-        GameName: 'Thunder God',
-        SupportedPlatForms: 'Desktop,Mobile',
-        Specials: 'hot',
-        Technology: 'HTML',
-        Order: 45,
-        DefaultWidth: 960,
-        DefaultHeight: 600,
-        Image1: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/landscape/8rqwot18etnuw.png',
-        Image2: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/portrait/8rqwot18etnuw.png',
-        gameURL: 'http://www.gwc688.net/?token=xjs3dm1dsdipc&game=8rqwot18etnuw&redirectUrl=https%3A%2F%2Fdemo.97ipay.com'
-    },
-    {
-        GameType: 'Slot',
-        Code: 'Dolphin',
-        GameOCode: 'kf41ymtxfos1r',
-        GameCode: 'kf41ymtxfos1r',
-        GameName: 'Ocean Paradise',
-        SupportedPlatForms: 'Desktop,Mobile',
-        Specials: '',
-        Technology: 'HTML',
-        Order: 51,
-        DefaultWidth: 960,
-        DefaultHeight: 600,
-        Image1: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/landscape/kf41ymtxfos1r.png',
-        Image2: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/portrait/kf41ymtxfos1r.png',
-        gameURL: 'http://www.gwc688.net/?token=xjs3dm1dsdipc&game=kf41ymtxfos1r&redirectUrl=https%3A%2F%2Fdemo.97ipay.com'
-    },
-    {
-        GameType: 'Slot',
-        Code: 'HappyParty',
-        GameOCode: 'ebudnqj68h6d4',
-        GameCode: 'ebudnqj68h6d4',
-        GameName: 'Happy Party',
-        SupportedPlatForms: 'Desktop,Mobile',
-        Specials: '',
-        Technology: 'HTML',
-        Order: 52,
-        DefaultWidth: 1024,
-        DefaultHeight: 708,
-        Image1: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/landscape/ebudnqj68h6d4.png',
-        Image2: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/portrait/ebudnqj68h6d4.png',
-        gameURL: 'http://www.gwc688.net/?token=xjs3dm1dsdipc&game=ebudnqj68h6d4&redirectUrl=https%3A%2F%2Fdemo.97ipay.com'
-    },
-    {
-        GameType: 'Slot',
-        Code: 'African',
-        GameOCode: 'xtpy4bx49xhx1',
-        GameCode: 'xtpy4bx49xhx1',
-        GameName: 'African',
-        SupportedPlatForms: 'Desktop,Mobile',
-        Specials: '',
-        Technology: 'HTML',
-        Order: 95,
-        DefaultWidth: 960,
-        DefaultHeight: 600,
-        Image1: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/landscape/xtpy4bx49xhx1.png',
-        Image2: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/portrait/xtpy4bx49xhx1.png',
-        gameURL: 'http://www.gwc688.net/?token=xjs3dm1dsdipc&game=xtpy4bx49xhx1&redirectUrl=https%3A%2F%2Fdemo.97ipay.com'
-    },
-    {
-        GameType: 'Slot',
-        Code: 'Aladdin',
-        GameOCode: '1q36p58phmt6y',
-        GameCode: '1q36p58phmt6y',
-        GameName: 'Genie',
-        SupportedPlatForms: 'Desktop,Mobile',
-        Specials: '',
-        Technology: 'HTML',
-        Order: 94,
-        DefaultWidth: 960,
-        DefaultHeight: 600,
-        Image1: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/landscape/1q36p58phmt6y.png',
-        Image2: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/portrait/1q36p58phmt6y.png',
-        gameURL: 'http://www.gwc688.net/?token=xjs3dm1dsdipc&game=1q36p58phmt6y&redirectUrl=https%3A%2F%2Fdemo.97ipay.com'
-    },
-    {
-        GameType: 'Slot',
-        Code: 'GodOfFortune',
-        GameOCode: 'dhdirsn3m3xia',
-        GameCode: 'dhdirsn3m3xia',
-        GameName: 'Lucky God',
-        SupportedPlatForms: 'Desktop,Mobile',
-        Specials: 'hot',
-        Technology: 'HTML',
-        Order: 50,
-        DefaultWidth: 1024,
-        DefaultHeight: 708,
-        Image1: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/landscape/dhdirsn3m3xia.png',
-        Image2: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/portrait/dhdirsn3m3xia.png',
-        gameURL: 'http://www.gwc688.net/?token=xjs3dm1dsdipc&game=dhdirsn3m3xia&redirectUrl=https%3A%2F%2Fdemo.97ipay.com'
-    },
-    {
-        GameType: 'Slot',
-        Code: 'DolphinReef',
-        GameOCode: 'rh8iwwntk3mie',
-        GameCode: 'rh8iwwntk3mie',
-        GameName: 'Dolphin Reef',
-        SupportedPlatForms: 'Desktop,Mobile',
-        Specials: '',
-        Technology: 'HTML',
-        Order: 326,
-        DefaultWidth: 960,
-        DefaultHeight: 600,
-        Image1: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/landscape/rh8iwwntk3mie.png',
-        Image2: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/portrait/rh8iwwntk3mie.png',
-        gameURL: 'http://www.gwc688.net/?token=xjs3dm1dsdipc&game=rh8iwwntk3mie&redirectUrl=https%3A%2F%2Fdemo.97ipay.com'
-    },
-    {
-        GameType: 'Slot',
-        Code: 'HighwayKings',
-        GameOCode: 'axt5pxf7sk35y',
-        GameCode: 'axt5pxf7sk35y',
-        GameName: 'Highway Kings',
-        SupportedPlatForms: 'Desktop,Mobile',
-        Specials: '',
-        Technology: 'HTML',
-        Order: 327,
-        DefaultWidth: 960,
-        DefaultHeight: 600,
-        Image1: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/landscape/axt5pxf7sk35y.png',
-        Image2: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/portrait/axt5pxf7sk35y.png',
-        gameURL: 'http://www.gwc688.net/?token=xjs3dm1dsdipc&game=axt5pxf7sk35y&redirectUrl=https%3A%2F%2Fdemo.97ipay.com'
-    },
-    {
-        GameType: 'Slot',
-        Code: 'ANightOut',
-        GameOCode: '69xaiyrbo4dae',
-        GameCode: '69xaiyrbo4dae',
-        GameName: 'A Night Out',
-        SupportedPlatForms: 'Desktop,Mobile',
-        Specials: '',
-        Technology: 'HTML',
-        Order: 300,
-        DefaultWidth: 960,
-        DefaultHeight: 600,
-        Image1: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/landscape/69xaiyrbo4dae.png',
-        Image2: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/portrait/69xaiyrbo4dae.png',
-        gameURL: 'http://www.gwc688.net/?token=xjs3dm1dsdipc&game=69xaiyrbo4dae&redirectUrl=https%3A%2F%2Fdemo.97ipay.com'
-    },
-    {
-        GameType: 'Slot',
-        Code: 'Azteca',
-        GameOCode: 'oqt9p9876m39y',
-        GameCode: 'oqt9p9876m39y',
-        GameName: 'Azteca',
-        SupportedPlatForms: 'Desktop,Mobile',
-        Specials: '',
-        Technology: 'HTML',
-        Order: 332,
-        DefaultWidth: 960,
-        DefaultHeight: 600,
-        Image1: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/landscape/oqt9p9876m39y.png',
-        Image2: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/portrait/oqt9p9876m39y.png',
-        gameURL: 'http://www.gwc688.net/?token=xjs3dm1dsdipc&game=oqt9p9876m39y&redirectUrl=https%3A%2F%2Fdemo.97ipay.com'
-    },
-    {
-        GameType: 'Slot',
-        Code: 'Sparta',
-        GameOCode: 'jbzd1cjsgh4dk',
-        GameCode: 'jbzd1cjsgh4dk',
-        GameName: 'Sparta',
-        SupportedPlatForms: 'Desktop,Mobile',
-        Specials: '',
-        Technology: 'HTML',
-        Order: 331,
-        DefaultWidth: 960,
-        DefaultHeight: 600,
-        Image1: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/landscape/jbzd1cjsgh4dk.png',
-        Image2: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/portrait/jbzd1cjsgh4dk.png',
-        gameURL: 'http://www.gwc688.net/?token=xjs3dm1dsdipc&game=jbzd1cjsgh4dk&redirectUrl=https%3A%2F%2Fdemo.97ipay.com'
-    },
-    {
-        GameType: 'Slot',
-        Code: 'SafariHeat',
-        GameOCode: '4d5kdkpqi6sk4',
-        GameCode: '4d5kdkpqi6sk4',
-        GameName: 'Safari Heat',
-        SupportedPlatForms: 'Desktop,Mobile',
-        Specials: '',
-        Technology: 'HTML',
-        Order: 90,
-        DefaultWidth: 960,
-        DefaultHeight: 600,
-        Image1: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/landscape/4d5kdkpqi6sk4.png',
-        Image2: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/portrait/4d5kdkpqi6sk4.png',
-        gameURL: 'http://www.gwc688.net/?token=xjs3dm1dsdipc&game=4d5kdkpqi6sk4&redirectUrl=https%3A%2F%2Fdemo.97ipay.com'
-    },
-    {
-        GameType: 'Slot',
-        Code: 'PantherMoon',
-        GameOCode: 'u6d7fsg355x7a',
-        GameCode: 'u6d7fsg355x7a',
-        GameName: 'Panther Moon',
-        SupportedPlatForms: 'Desktop,Mobile',
-        Specials: '',
-        Technology: 'HTML',
-        Order: 91,
-        DefaultWidth: 960,
-        DefaultHeight: 600,
-        Image1: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/landscape/u6d7fsg355x7a.png',
-        Image2: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/portrait/u6d7fsg355x7a.png',
-        gameURL: 'http://www.gwc688.net/?token=xjs3dm1dsdipc&game=u6d7fsg355x7a&redirectUrl=https%3A%2F%2Fdemo.97ipay.com'
-    },
-    {
-        GameType: 'Slot',
-        Code: 'GreatBlue',
-        GameOCode: 't656f48j75z6a',
-        GameCode: 't656f48j75z6a',
-        GameName: 'Great Blue',
-        SupportedPlatForms: 'Desktop,Mobile',
-        Specials: '',
-        Technology: 'HTML',
-        Order: 334,
-        DefaultWidth: 960,
-        DefaultHeight: 600,
-        Image1: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/landscape/t656f48j75z6a.png',
-        Image2: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/portrait/t656f48j75z6a.png',
-        gameURL: 'http://www.gwc688.net/?token=xjs3dm1dsdipc&game=t656f48j75z6a&redirectUrl=https%3A%2F%2Fdemo.97ipay.com'
-    },
-    {
-        GameType: 'Slot',
-        Code: 'SilverBullet',
-        GameOCode: 'z1pc5tp4zqhm1',
-        GameCode: 'z1pc5tp4zqhm1',
-        GameName: 'Silver Bullet',
-        SupportedPlatForms: 'Desktop,Mobile',
-        Specials: null,
-        Technology: 'HTML',
-        Order: 300,
-        DefaultWidth: 960,
-        DefaultHeight: 600,
-        Image1: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/landscape/z1pc5tp4zqhm1.png',
-        Image2: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/portrait/z1pc5tp4zqhm1.png',
-        gameURL: 'http://www.gwc688.net/?token=xjs3dm1dsdipc&game=z1pc5tp4zqhm1&redirectUrl=https%3A%2F%2Fdemo.97ipay.com'
-    },
-    {
-        GameType: 'Slot',
-        Code: 'CaptainsTreasure',
-        GameOCode: 'bes8675wqiigs',
-        GameCode: 'bes8675wqiigs',
-        GameName: "Captain's Treasure",
-        SupportedPlatForms: 'Desktop,Mobile',
-        Specials: null,
-        Technology: 'HTML',
-        Order: 300,
-        DefaultWidth: 960,
-        DefaultHeight: 600,
-        Image1: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/landscape/bes8675wqiigs.png',
-        Image2: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/portrait/bes8675wqiigs.png',
-        gameURL: 'http://www.gwc688.net/?token=xjs3dm1dsdipc&game=bes8675wqiigs&redirectUrl=https%3A%2F%2Fdemo.97ipay.com'
-    },
-    {
-        GameType: 'Slot',
-        Code: 'BonusBear',
-        GameOCode: 'bwwza4umpbwsh',
-        GameCode: 'bwwza4umpbwsh',
-        GameName: 'Bonus Bear',
-        SupportedPlatForms: 'Desktop,Mobile',
-        Specials: null,
-        Technology: 'HTML',
-        Order: 300,
-        DefaultWidth: 960,
-        DefaultHeight: 600,
-        Image1: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/landscape/bwwza4umpbwsh.png',
-        Image2: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/portrait/bwwza4umpbwsh.png',
-        gameURL: 'http://www.gwc688.net/?token=xjs3dm1dsdipc&game=bwwza4umpbwsh&redirectUrl=https%3A%2F%2Fdemo.97ipay.com'
-    },
-    {
-        GameType: 'Slot',
-        Code: 'Football',
-        GameOCode: 's6xhiogba5dhe',
-        GameCode: 's6xhiogba5dhe',
-        GameName: 'Football',
-        SupportedPlatForms: 'Desktop,Mobile',
-        Specials: null,
-        Technology: 'HTML',
-        Order: 350,
-        DefaultWidth: 960,
-        DefaultHeight: 600,
-        Image1: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/landscape/s6xhiogba5dhe.png',
-        Image2: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/portrait/s6xhiogba5dhe.png',
-        gameURL: 'http://www.gwc688.net/?token=xjs3dm1dsdipc&game=s6xhiogba5dhe&redirectUrl=https%3A%2F%2Fdemo.97ipay.com'
-    },
-    {
-        GameType: 'Slot',
-        Code: 'ThaiParadise',
-        GameOCode: '5864tji8w113w',
-        GameCode: '5864tji8w113w',
-        GameName: 'Thai Paradise',
-        SupportedPlatForms: 'Desktop,Mobile',
-        Specials: null,
-        Technology: 'HTML',
-        Order: 92,
-        DefaultWidth: 960,
-        DefaultHeight: 600,
-        Image1: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/landscape/5864tji8w113w.png',
-        Image2: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/portrait/5864tji8w113w.png',
-        gameURL: 'http://www.gwc688.net/?token=xjs3dm1dsdipc&game=5864tji8w113w&redirectUrl=https%3A%2F%2Fdemo.97ipay.com'
-    },
-    {
-        GameType: 'Slot',
-        Code: 'CaptainsTreasurePro',
-        GameOCode: 'qieoeyodyyyoc',
-        GameCode: 'qieoeyodyyyoc',
-        GameName: "Captain's Treasure Pro",
-        SupportedPlatForms: 'Desktop,Mobile',
-        Specials: null,
-        Technology: 'HTML',
-        Order: 300,
-        DefaultWidth: 960,
-        DefaultHeight: 600,
-        Image1: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/landscape/qieoeyodyyyoc.png',
-        Image2: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/portrait/qieoeyodyyyoc.png',
-        gameURL: 'http://www.gwc688.net/?token=xjs3dm1dsdipc&game=qieoeyodyyyoc&redirectUrl=https%3A%2F%2Fdemo.97ipay.com'
-    },
-    {
-        GameType: 'Slot',
-        Code: 'PanJinLian',
-        GameOCode: '79mafnrjt48aa',
-        GameCode: '79mafnrjt48aa',
-        GameName: 'Pan Jin Lian',
-        SupportedPlatForms: 'Desktop,Mobile',
-        Specials: 'hot,new',
-        Technology: 'HTML',
-        Order: 30,
-        DefaultWidth: 960,
-        DefaultHeight: 600,
-        Image1: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/landscape/79mafnrjt48aa.png',
-        Image2: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/portrait/79mafnrjt48aa.png',
-        gameURL: 'http://www.gwc688.net/?token=xjs3dm1dsdipc&game=79mafnrjt48aa&redirectUrl=https%3A%2F%2Fdemo.97ipay.com'
-    },
-    {
-        GameType: 'Slot',
-        Code: 'MoneyBangBang',
-        GameOCode: 'k3anse3yrrunq',
-        GameCode: 'k3anse3yrrunq',
-        GameName: 'MoneyBangBang',
-        SupportedPlatForms: 'Desktop,Mobile',
-        Specials: 'hot,new',
-        Technology: 'HTML',
-        Order: 25,
-        DefaultWidth: 960,
-        DefaultHeight: 600,
-        Image1: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/landscape/k3anse3yrrunq.png',
-        Image2: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/portrait/k3anse3yrrunq.png',
-        gameURL: 'http://www.gwc688.net/?token=xjs3dm1dsdipc&game=k3anse3yrrunq&redirectUrl=https%3A%2F%2Fdemo.97ipay.com'
-    },
-    {
-        GameType: 'Slot',
-        Code: 'Huga',
-        GameOCode: 'pirtanombyroh',
-        GameCode: 'pirtanombyroh',
-        GameName: 'Huga',
-        SupportedPlatForms: 'Desktop,Mobile',
-        Specials: 'hot,new',
-        Technology: 'HTML',
-        Order: 15,
-        DefaultWidth: 960,
-        DefaultHeight: 600,
-        Image1: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/landscape/pirtanombyroh.png',
-        Image2: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/portrait/pirtanombyroh.png',
-        gameURL: 'http://www.gwc688.net/?token=xjs3dm1dsdipc&game=pirtanombyroh&redirectUrl=https%3A%2F%2Fdemo.97ipay.com'
-    },
-    {
-        GameType: 'Slot',
-        Code: 'Beanstalk',
-        GameOCode: 'ne4gq55cpitgg',
-        GameCode: 'ne4gq55cpitgg',
-        GameName: 'Beanstalk',
-        SupportedPlatForms: 'Desktop,Mobile',
-        Specials: 'hot,new',
-        Technology: 'HTML',
-        Order: 20,
-        DefaultWidth: 960,
-        DefaultHeight: 600,
-        Image1: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/landscape/ne4gq55cpitgg.png',
-        Image2: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/portrait/ne4gq55cpitgg.png',
-        gameURL: 'http://www.gwc688.net/?token=xjs3dm1dsdipc&game=ne4gq55cpitgg&redirectUrl=https%3A%2F%2Fdemo.97ipay.com'
-    },
-    {
-        GameType: 'Slot',
-        Code: 'Alice',
-        GameOCode: 'kia1eetdryo1c',
-        GameCode: 'kia1eetdryo1c',
-        GameName: 'Alice',
-        SupportedPlatForms: 'Desktop,Mobile',
-        Specials: 'hot,new',
-        Technology: 'HTML',
-        Order: 12,
-        DefaultWidth: 960,
-        DefaultHeight: 600,
-        Image1: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/landscape/kia1eetdryo1c.png',
-        Image2: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/portrait/kia1eetdryo1c.png',
-        gameURL: 'http://www.gwc688.net/?token=xjs3dm1dsdipc&game=kia1eetdryo1c&redirectUrl=https%3A%2F%2Fdemo.97ipay.com'
-    },
-    {
-        GameType: 'Slot',
-        Code: 'WhiteSnake',
-        GameOCode: 'u17q53q45xcp1',
-        GameCode: 'u17q53q45xcp1',
-        GameName: 'White Snake',
-        SupportedPlatForms: 'Desktop,Mobile',
-        Specials: 'hot,new',
-        Technology: 'HTML',
-        Order: 11,
-        DefaultWidth: 960,
-        DefaultHeight: 600,
-        Image1: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/landscape/u17q53q45xcp1.png',
-        Image2: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/portrait/u17q53q45xcp1.png',
-        gameURL: 'http://www.gwc688.net/?token=xjs3dm1dsdipc&game=u17q53q45xcp1&redirectUrl=https%3A%2F%2Fdemo.97ipay.com'
-    },
-    {
-        GameType: 'Slot',
-        Code: 'GodOfFortunePlus',
-        GameOCode: 'ef1uyxt98o6ur',
-        GameCode: 'ef1uyxt98o6ur',
-        GameName: 'Lucky God Progressive',
-        SupportedPlatForms: 'Desktop,Mobile',
-        Specials: 'hot,new',
-        Technology: 'HTML',
-        Order: 3,
-        DefaultWidth: 960,
-        DefaultHeight: 600,
-        Image1: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/landscape/ef1uyxt98o6ur.png',
-        Image2: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/portrait/ef1uyxt98o6ur.png',
-        gameURL: 'http://www.gwc688.net/?token=xjs3dm1dsdipc&game=ef1uyxt98o6ur&redirectUrl=https%3A%2F%2Fdemo.97ipay.com'
-    },
-    {
-        GameType: 'Slot',
-        Code: 'Mammamia',
-        GameOCode: '9xpa7brfxj7zo',
-        GameCode: '9xpa7brfxj7zo',
-        GameName: 'Mammamia',
-        SupportedPlatForms: 'Desktop,Mobile',
-        Specials: 'hot,new',
-        Technology: 'HTML',
-        Order: 14,
-        DefaultWidth: 960,
-        DefaultHeight: 600,
-        Image1: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/landscape/9xpa7brfxj7zo.png',
-        Image2: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/portrait/9xpa7brfxj7zo.png',
-        gameURL: 'http://www.gwc688.net/?token=xjs3dm1dsdipc&game=9xpa7brfxj7zo&redirectUrl=https%3A%2F%2Fdemo.97ipay.com'
-    },
-    {
-        GameType: 'Slot',
-        Code: 'AncientEgypt',
-        GameOCode: 'naagsa5ycfugq',
-        GameCode: 'naagsa5ycfugq',
-        GameName: 'Ancient Egypt',
-        SupportedPlatForms: 'Desktop,Mobile',
-        Specials: 'hot,new',
-        Technology: 'HTML',
-        Order: 3,
-        DefaultWidth: 960,
-        DefaultHeight: 600,
-        Image1: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/landscape/naagsa5ycfugq.png',
-        Image2: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/portrait/naagsa5ycfugq.png',
-        gameURL: 'http://www.gwc688.net/?token=xjs3dm1dsdipc&game=naagsa5ycfugq&redirectUrl=https%3A%2F%2Fdemo.97ipay.com'
-    },
-    {
-        GameType: 'Slot',
-        Code: 'RobinHood',
-        GameOCode: 'i4rc816e388c6',
-        GameCode: 'i4rc816e388c6',
-        GameName: 'Robin Hood',
-        SupportedPlatForms: 'Desktop,Mobile',
-        Specials: 'hot,new',
-        Technology: 'HTML',
-        Order: 3,
-        DefaultWidth: 960,
-        DefaultHeight: 600,
-        Image1: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/landscape/i4rc816e388c6.png',
-        Image2: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/portrait/i4rc816e388c6.png',
-        gameURL: 'http://www.gwc688.net/?token=xjs3dm1dsdipc&game=i4rc816e388c6&redirectUrl=https%3A%2F%2Fdemo.97ipay.com'
-    },
-    {
-        GameType: 'Slot',
-        Code: 'HighwayKingsPro',
-        GameOCode: 'nh9swadbc3use',
-        GameCode: 'nh9swadbc3use',
-        GameName: 'HighwayKings Progressive',
-        SupportedPlatForms: 'Desktop,Mobile',
-        Specials: 'hot,new',
-        Technology: 'HTML',
-        Order: 3,
-        DefaultWidth: 960,
-        DefaultHeight: 600,
-        Image1: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/landscape/nh9swadbc3use.png',
-        Image2: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/portrait/nh9swadbc3use.png',
-        gameURL: 'http://www.gwc688.net/?token=xjs3dm1dsdipc&game=nh9swadbc3use&redirectUrl=https%3A%2F%2Fdemo.97ipay.com'
-    },
-    {
-        GameType: 'Slot',
-        Code: 'Miami',
-        GameOCode: 'tqi9778i7mi6o',
-        GameCode: 'tqi9778i7mi6o',
-        GameName: 'Miami',
-        SupportedPlatForms: 'Desktop,Mobile',
-        Specials: 'hot,new',
-        Technology: 'HTML',
-        Order: 3,
-        DefaultWidth: 960,
-        DefaultHeight: 600,
-        Image1: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/landscape/tqi9778i7mi6o.png',
-        Image2: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/portrait/tqi9778i7mi6o.png',
-        gameURL: 'http://www.gwc688.net/?token=xjs3dm1dsdipc&game=tqi9778i7mi6o&redirectUrl=https%3A%2F%2Fdemo.97ipay.com'
-    },
-    {
-        GameType: 'Slot',
-        Code: 'GoldenMonkeyKing',
-        GameOCode: '9mqe9bhroi78s',
-        GameCode: '9mqe9bhroi78s',
-        GameName: 'Golden Monkey King',
-        SupportedPlatForms: 'Desktop,Mobile',
-        Specials: 'new,hot',
-        Technology: 'HTML',
-        Order: 56,
-        DefaultWidth: 960,
-        DefaultHeight: 600,
-        Image1: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/landscape/9mqe9bhroi78s.png',
-        Image2: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/portrait/9mqe9bhroi78s.png',
-        gameURL: 'http://www.gwc688.net/?token=xjs3dm1dsdipc&game=9mqe9bhroi78s&redirectUrl=https%3A%2F%2Fdemo.97ipay.com'
-    },
-    {
-        GameType: 'Slot',
-        Code: 'Caishen',
-        GameOCode: 'byz81hmsq748k',
-        GameCode: 'byz81hmsq748k',
-        GameName: 'Supreme Caishen',
-        SupportedPlatForms: 'Desktop,Mobile',
-        Specials: 'hot,new',
-        Technology: 'HTML',
-        Order: 3,
-        DefaultWidth: 960,
-        DefaultHeight: 600,
-        Image1: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/landscape/byz81hmsq748k.png',
-        Image2: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/portrait/byz81hmsq748k.png',
-        gameURL: 'http://www.gwc688.net/?token=xjs3dm1dsdipc&game=byz81hmsq748k&redirectUrl=https%3A%2F%2Fdemo.97ipay.com'
-    },
-    {
-        GameType: 'Slot',
-        Code: 'Roma',
-        GameOCode: '5m6k9j7rwspjs',
-        GameCode: '5m6k9j7rwspjs',
-        GameName: 'Roma',
-        SupportedPlatForms: 'Desktop,Mobile',
-        Specials: 'hot,new',
-        Technology: 'HTML',
-        Order: -3,
-        DefaultWidth: 960,
-        DefaultHeight: 630,
-        Image1: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/landscape/5m6k9j7rwspjs.png',
-        Image2: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/portrait/5m6k9j7rwspjs.png',
-        gameURL: 'http://www.gwc688.net/?token=xjs3dm1dsdipc&game=5m6k9j7rwspjs&redirectUrl=https%3A%2F%2Fdemo.97ipay.com'
-    },
-    {
-        GameType: 'Slot',
-        Code: 'EgyptQueen',
-        GameOCode: 'igg7tisz4ukhw',
-        GameCode: 'igg7tisz4ukhw',
-        GameName: 'Egypt Queen',
-        SupportedPlatForms: 'Desktop,Mobile',
-        Specials: 'hot,new',
-        Technology: 'HTML',
-        Order: -3,
-        DefaultWidth: 960,
-        DefaultHeight: 630,
-        Image1: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/landscape/igg7tisz4ukhw.png',
-        Image2: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/portrait/igg7tisz4ukhw.png',
-        gameURL: 'http://www.gwc688.net/?token=xjs3dm1dsdipc&game=igg7tisz4ukhw&redirectUrl=https%3A%2F%2Fdemo.97ipay.com'
-    },
-    {
-        GameType: 'Slot',
-        Code: 'DragonPhoenix',
-        GameOCode: 'w4ypzw6o48mpq',
-        GameCode: 'w4ypzw6o48mpq',
-        GameName: 'Dragon Phoenix',
-        SupportedPlatForms: 'Desktop,Mobile',
-        Specials: 'hot,new',
-        Technology: 'HTML',
-        Order: -3,
-        DefaultWidth: 960,
-        DefaultHeight: 630,
-        Image1: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/landscape/w4ypzw6o48mpq.png',
-        Image2: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/portrait/w4ypzw6o48mpq.png',
-        gameURL: 'http://www.gwc688.net/?token=xjs3dm1dsdipc&game=w4ypzw6o48mpq&redirectUrl=https%3A%2F%2Fdemo.97ipay.com'
-    },
-    {
-        GameType: 'Slot',
-        Code: 'JungleIsland',
-        GameOCode: 'xbxy1yegyhnyk',
-        GameCode: 'xbxy1yegyhnyk',
-        GameName: 'Jungle Island',
-        SupportedPlatForms: 'Desktop,Mobile',
-        Specials: 'hot,new',
-        Technology: 'HTML',
-        Order: -3,
-        DefaultWidth: 960,
-        DefaultHeight: 630,
-        Image1: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/landscape/xbxy1yegyhnyk.png',
-        Image2: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/portrait/xbxy1yegyhnyk.png',
-        gameURL: 'http://www.gwc688.net/?token=xjs3dm1dsdipc&game=xbxy1yegyhnyk&redirectUrl=https%3A%2F%2Fdemo.97ipay.com'
-    },
-    {
-        GameType: 'Slot',
-        Code: 'WaterMargin',
-        GameOCode: 'foff4ikkjprr1',
-        GameCode: 'foff4ikkjprr1',
-        GameName: 'Water Margin',
-        SupportedPlatForms: 'Desktop,Mobile',
-        Specials: 'hot,new',
-        Technology: 'HTML',
-        Order: -3,
-        DefaultWidth: 960,
-        DefaultHeight: 630,
-        Image1: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/landscape/foff4ikkjprr1.png',
-        Image2: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/portrait/foff4ikkjprr1.png',
-        gameURL: 'http://www.gwc688.net/?token=xjs3dm1dsdipc&game=foff4ikkjprr1&redirectUrl=https%3A%2F%2Fdemo.97ipay.com'
-    },
-    {
-        GameType: 'Slot',
-        Code: 'SilverBulletPlus',
-        GameOCode: 'ruufkzk1kpefn',
-        GameCode: 'ruufkzk1kpefn',
-        GameName: 'SilverBullet Progressive',
-        SupportedPlatForms: 'Desktop,Mobile',
-        Specials: 'hot,new',
-        Technology: 'HTML',
-        Order: 3,
-        DefaultWidth: 960,
-        DefaultHeight: 600,
-        Image1: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/landscape/ruufkzk1kpefn.png',
-        Image2: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/portrait/ruufkzk1kpefn.png',
-        gameURL: 'http://www.gwc688.net/?token=xjs3dm1dsdipc&game=ruufkzk1kpefn&redirectUrl=https%3A%2F%2Fdemo.97ipay.com'
-    },
-    {
-        GameType: 'Slot',
-        Code: 'CaptainsTreasurePlus',
-        GameOCode: 'awn5jciusna5c',
-        GameCode: 'awn5jciusna5c',
-        GameName: 'Captains Treasure Progressive',
-        SupportedPlatForms: 'Desktop,Mobile',
-        Specials: 'hot,new',
-        Technology: 'HTML',
-        Order: 3,
-        DefaultWidth: 960,
-        DefaultHeight: 600,
-        Image1: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/landscape/awn5jciusna5c.png',
-        Image2: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/portrait/awn5jciusna5c.png',
-        gameURL: 'http://www.gwc688.net/?token=xjs3dm1dsdipc&game=awn5jciusna5c&redirectUrl=https%3A%2F%2Fdemo.97ipay.com'
-    },
-    {
-        GameType: 'Slot',
-        Code: 'GodOfFortunePlus2',
-        GameOCode: '3hj4fkfji4z4a',
-        GameCode: '3hj4fkfji4z4a',
-        GameName: 'Lucky God Progressive 2',
-        SupportedPlatForms: 'Desktop,Mobile',
-        Specials: 'new,hot',
-        Technology: 'HTML',
-        Order: 3,
-        DefaultWidth: 960,
-        DefaultHeight: 600,
-        Image1: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/landscape/3hj4fkfji4z4a.png',
-        Image2: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/portrait/3hj4fkfji4z4a.png',
-        gameURL: 'http://www.gwc688.net/?token=xjs3dm1dsdipc&game=3hj4fkfji4z4a&redirectUrl=https%3A%2F%2Fdemo.97ipay.com'
-    },
-    {
-        GameType: 'Slot',
-        Code: 'CryptoManiaGW',
-        GameOCode: '4akkze7ywgukq',
-        GameCode: '4akkze7ywgukq',
-        GameName: 'Crypto Mania',
-        SupportedPlatForms: 'Desktop,Mobile',
-        Specials: 'new,hot',
-        Technology: 'HTML',
-        Order: -700,
-        DefaultWidth: 960,
-        DefaultHeight: 600,
-        Image1: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/landscape/4akkze7ywgukq.png',
-        Image2: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/portrait/4akkze7ywgukq.png',
-        gameURL: 'http://www.gwc688.net/?token=xjs3dm1dsdipc&game=4akkze7ywgukq&redirectUrl=https%3A%2F%2Fdemo.97ipay.com'
-    },
-    {
-        GameType: 'Slot',
-        Code: 'BushidoBladeGW',
-        GameOCode: '86burqb38a9ua',
-        GameCode: '86burqb38a9ua',
-        GameName: 'Bushido Blade',
-        SupportedPlatForms: 'Desktop,Mobile',
-        Specials: 'new,hot',
-        Technology: 'HTML',
-        Order: -700,
-        DefaultWidth: 960,
-        DefaultHeight: 600,
-        Image1: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/landscape/86burqb38a9ua.png',
-        Image2: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/portrait/86burqb38a9ua.png',
-        gameURL: 'http://www.gwc688.net/?token=xjs3dm1dsdipc&game=86burqb38a9ua&redirectUrl=https%3A%2F%2Fdemo.97ipay.com'
-    },
-    {
-        GameType: 'Slot',
-        Code: 'EmpressRegnantGW',
-        GameOCode: 'o7f9ih8t6559e',
-        GameCode: 'o7f9ih8t6559e',
-        GameName: 'Empress Regnant',
-        SupportedPlatForms: 'Desktop,Mobile',
-        Specials: 'new,hot',
-        Technology: 'HTML',
-        Order: -1301,
-        DefaultWidth: 960,
-        DefaultHeight: 600,
-        Image1: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/landscape/o7f9ih8t6559e.png',
-        Image2: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/portrait/o7f9ih8t6559e.png',
-        gameURL: 'http://www.gwc688.net/?token=xjs3dm1dsdipc&game=o7f9ih8t6559e&redirectUrl=https%3A%2F%2Fdemo.97ipay.com'
-    },
-    {
-        GameType: 'Slot',
-        Code: 'DynamiteReelsGW',
-        GameOCode: '8u9r4tj48chd1',
-        GameCode: '8u9r4tj48chd1',
-        GameName: 'Dynamite Reels',
-        SupportedPlatForms: 'Desktop,Mobile',
-        Specials: 'new,hot',
-        Technology: 'HTML',
-        Order: -700,
-        DefaultWidth: 960,
-        DefaultHeight: 600,
-        Image1: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/landscape/8u9r4tj48chd1.png',
-        Image2: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/portrait/8u9r4tj48chd1.png',
-        gameURL: 'http://www.gwc688.net/?token=xjs3dm1dsdipc&game=8u9r4tj48chd1&redirectUrl=https%3A%2F%2Fdemo.97ipay.com'
-    },
-    {
-        GameType: 'Slot',
-        Code: 'LionsDanceGW',
-        GameOCode: 'wtupmzq14xepn',
-        GameCode: 'wtupmzq14xepn',
-        GameName: 'Lions Dance',
-        SupportedPlatForms: 'Desktop,Mobile',
-        Specials: 'new,hot',
-        Technology: 'HTML',
-        Order: -1301,
-        DefaultWidth: 960,
-        DefaultHeight: 600,
-        Image1: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/landscape/wtupmzq14xepn.png',
-        Image2: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/portrait/wtupmzq14xepn.png',
-        gameURL: 'http://www.gwc688.net/?token=xjs3dm1dsdipc&game=wtupmzq14xepn&redirectUrl=https%3A%2F%2Fdemo.97ipay.com'
-    },
-    {
-        GameType: 'Slot',
-        Code: 'Phoenix888GW',
-        GameOCode: 'd8cso3u8ct1iw',
-        GameCode: 'd8cso3u8ct1iw',
-        GameName: 'Phoenix 888',
-        SupportedPlatForms: 'Desktop,Mobile',
-        Specials: 'new,hot',
-        Technology: 'HTML',
-        Order: -1301,
-        DefaultWidth: 960,
-        DefaultHeight: 600,
-        Image1: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/landscape/d8cso3u8ct1iw.png',
-        Image2: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/portrait/d8cso3u8ct1iw.png',
-        gameURL: 'http://www.gwc688.net/?token=xjs3dm1dsdipc&game=d8cso3u8ct1iw&redirectUrl=https%3A%2F%2Fdemo.97ipay.com'
-    },
-    {
-        GameType: 'Slot',
-        Code: 'DragonPowerFlameGW',
-        GameOCode: '3yfmucpss64mk',
-        GameCode: '3yfmucpss64mk',
-        GameName: 'Dragon Power Flame',
-        SupportedPlatForms: 'Desktop,Mobile',
-        Specials: 'new,hot',
-        Technology: 'HTML',
-        Order: -1310,
-        DefaultWidth: 960,
-        DefaultHeight: 600,
-        Image1: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/landscape/3yfmucpss64mk.png',
-        Image2: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/portrait/3yfmucpss64mk.png',
-        gameURL: 'http://www.gwc688.net/?token=xjs3dm1dsdipc&game=3yfmucpss64mk&redirectUrl=https%3A%2F%2Fdemo.97ipay.com'
-    },
-    {
-        GameType: 'Slot',
-        Code: 'WitchsBrewGW',
-        GameOCode: 'bmr8675wqiigs',
-        GameCode: 'bmr8675wqiigs',
-        GameName: "Witch's Brew",
-        SupportedPlatForms: 'Desktop,Mobile',
-        Specials: 'new,hot',
-        Technology: 'HTML',
-        Order: -312810,
-        DefaultWidth: 960,
-        DefaultHeight: 600,
-        Image1: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/landscape/bmr8675wqiigs.png',
-        Image2: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/portrait/bmr8675wqiigs.png',
-        gameURL: 'http://www.gwc688.net/?token=xjs3dm1dsdipc&game=bmr8675wqiigs&redirectUrl=https%3A%2F%2Fdemo.97ipay.com'
-    },
-    {
-        GameType: 'Slot',
-        Code: 'NezhaGW',
-        GameOCode: 'bzgza4umpbwsh',
-        GameCode: 'bzgza4umpbwsh',
-        GameName: "Third Prince's Journey",
-        SupportedPlatForms: 'Desktop,Mobile',
-        Specials: 'new,hot',
-        Technology: 'HTML',
-        Order: -312811,
-        DefaultWidth: 960,
-        DefaultHeight: 600,
-        Image1: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/landscape/bzgza4umpbwsh.png',
-        Image2: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/portrait/bzgza4umpbwsh.png',
-        gameURL: 'http://www.gwc688.net/?token=xjs3dm1dsdipc&game=bzgza4umpbwsh&redirectUrl=https%3A%2F%2Fdemo.97ipay.com'
-    },
-    {
-        GameType: 'Slot',
-        Code: 'PeachBanquetGW',
-        GameOCode: 's77hiogba5dhe',
-        GameCode: 's77hiogba5dhe',
-        GameName: 'Peach Banquet',
-        SupportedPlatForms: 'Desktop,Mobile',
-        Specials: 'new,hot',
-        Technology: 'HTML',
-        Order: -312812,
-        DefaultWidth: 960,
-        DefaultHeight: 600,
-        Image1: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/landscape/s77hiogba5dhe.png',
-        Image2: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/portrait/s77hiogba5dhe.png',
-        gameURL: 'http://www.gwc688.net/?token=xjs3dm1dsdipc&game=s77hiogba5dhe&redirectUrl=https%3A%2F%2Fdemo.97ipay.com'
-    },
-    {
-        GameType: 'Slot',
-        Code: 'TaiShangLaoJunGW',
-        GameOCode: 'dxxsh3dfmjpio',
-        GameCode: 'dxxsh3dfmjpio',
-        GameName: 'Tai Shang Lao Jun',
-        SupportedPlatForms: 'Desktop,Mobile',
-        Specials: 'new,hot',
-        Technology: 'HTML',
-        Order: -312813,
-        DefaultWidth: 960,
-        DefaultHeight: 600,
-        Image1: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/landscape/dxxsh3dfmjpio.png',
-        Image2: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/portrait/dxxsh3dfmjpio.png',
-        gameURL: 'http://www.gwc688.net/?token=xjs3dm1dsdipc&game=dxxsh3dfmjpio&redirectUrl=https%3A%2F%2Fdemo.97ipay.com'
-    },
-    {
-        GameType: 'Slot',
-        Code: 'LuckyRooster',
-        GameOCode: '7cz37fritkfao',
-        GameCode: '7cz37fritkfao',
-        GameName: 'Lucky Rooster',
-        SupportedPlatForms: 'Desktop,Mobile',
-        Specials: 'new,hot',
-        Technology: 'HTML',
-        Order: -213918,
-        DefaultWidth: 1105,
-        DefaultHeight: 737,
-        Image1: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/landscape/7cz37fritkfao.png',
-        Image2: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/portrait/7cz37fritkfao.png',
-        gameURL: 'http://www.gwc688.net/?token=xjs3dm1dsdipc&game=7cz37fritkfao&redirectUrl=https%3A%2F%2Fdemo.97ipay.com'
-    },
-    {
-        GameType: 'Slot',
-        Code: 'ChineseBossGW',
-        GameOCode: '7tccifcktqre1',
-        GameCode: '7tccifcktqre1',
-        GameName: 'Chinese Boss',
-        SupportedPlatForms: 'Desktop,Mobile',
-        Specials: 'new,hot',
-        Technology: 'HTML',
-        Order: -1300,
-        DefaultWidth: 960,
-        DefaultHeight: 600,
-        Image1: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/landscape/7tccifcktqre1.png',
-        Image2: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/portrait/7tccifcktqre1.png',
-        gameURL: 'http://www.gwc688.net/?token=xjs3dm1dsdipc&game=7tccifcktqre1&redirectUrl=https%3A%2F%2Fdemo.97ipay.com'
-    },
-    {
-        GameType: 'Slot',
-        Code: 'CaishenRichesGW',
-        GameOCode: 'zygj7oqga9nck',
-        GameCode: 'zygj7oqga9nck',
-        GameName: 'Caishen Riches',
-        SupportedPlatForms: 'Desktop,Mobile',
-        Specials: 'new,hot',
-        Technology: 'HTML',
-        Order: -700,
-        DefaultWidth: 960,
-        DefaultHeight: 600,
-        Image1: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/landscape/zygj7oqga9nck.png',
-        Image2: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/portrait/zygj7oqga9nck.png',
-        gameURL: 'http://www.gwc688.net/?token=xjs3dm1dsdipc&game=zygj7oqga9nck&redirectUrl=https%3A%2F%2Fdemo.97ipay.com'
-    },
-    {
-        GameType: 'Slot',
-        Code: 'EnterTheKTVGW',
-        GameOCode: 'srd3xusx3ughr',
-        GameCode: 'srd3xusx3ughr',
-        GameName: 'Enter The KTV',
-        SupportedPlatForms: 'Desktop,Mobile',
-        Specials: 'new,hot',
-        Technology: 'HTML',
-        Order: -700,
-        DefaultWidth: 960,
-        DefaultHeight: 600,
-        Image1: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/landscape/srd3xusx3ughr.png',
-        Image2: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/portrait/srd3xusx3ughr.png',
-        gameURL: 'http://www.gwc688.net/?token=xjs3dm1dsdipc&game=srd3xusx3ughr&redirectUrl=https%3A%2F%2Fdemo.97ipay.com'
-    },
-    {
-        GameType: 'Slot',
-        Code: 'LightningGodGW',
-        GameOCode: '1ru5x5zx7us6r',
-        GameCode: '1ru5x5zx7us6r',
-        GameName: 'Lightning God',
-        SupportedPlatForms: 'Desktop,Mobile',
-        Specials: 'new,hot',
-        Technology: 'HTML',
-        Order: -312708,
-        DefaultWidth: 960,
-        DefaultHeight: 600,
-        Image1: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/landscape/1ru5x5zx7us6r.png',
-        Image2: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/portrait/1ru5x5zx7us6r.png',
-        gameURL: 'http://www.gwc688.net/?token=xjs3dm1dsdipc&game=1ru5x5zx7us6r&redirectUrl=https%3A%2F%2Fdemo.97ipay.com'
-    },
-    {
-        GameType: 'Slot',
-        Code: 'ChinaGW',
-        GameOCode: 'dkzdo35rcipfs',
-        GameCode: 'dkzdo35rcipfs',
-        GameName: 'China',
-        SupportedPlatForms: 'Desktop,Mobile',
-        Specials: 'new,hot',
-        Technology: 'HTML',
-        Order: -312704,
-        DefaultWidth: 1680,
-        DefaultHeight: 1050,
-        Image1: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/landscape/dkzdo35rcipfs.png',
-        Image2: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/portrait/dkzdo35rcipfs.png',
-        gameURL: 'http://www.gwc688.net/?token=xjs3dm1dsdipc&game=dkzdo35rcipfs&redirectUrl=https%3A%2F%2Fdemo.97ipay.com'
-    },
-    {
-        GameType: 'Slot',
-        Code: 'WildGiantPandaGW',
-        GameOCode: 'q9gi4yybyadoe',
-        GameCode: 'q9gi4yybyadoe',
-        GameName: 'Wild Giant Panda',
-        SupportedPlatForms: 'Desktop,Mobile',
-        Specials: 'new,hot',
-        Technology: 'HTML',
-        Order: -312705,
-        DefaultWidth: 960,
-        DefaultHeight: 600,
-        Image1: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/landscape/q9gi4yybyadoe.png',
-        Image2: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/portrait/q9gi4yybyadoe.png',
-        gameURL: 'http://www.gwc688.net/?token=xjs3dm1dsdipc&game=q9gi4yybyadoe&redirectUrl=https%3A%2F%2Fdemo.97ipay.com'
-    },
-    {
-        GameType: 'Slot',
-        Code: 'FourDragonsGW',
-        GameOCode: 'wykepsq659qp4',
-        GameCode: 'wykepsq659qp4',
-        GameName: 'Four Dragons',
-        SupportedPlatForms: 'Desktop,Mobile',
-        Specials: 'new,hot',
-        Technology: 'HTML',
-        Order: -312706,
-        DefaultWidth: 960,
-        DefaultHeight: 600,
-        Image1: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/landscape/wykepsq659qp4.png',
-        Image2: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/portrait/wykepsq659qp4.png',
-        gameURL: 'http://www.gwc688.net/?token=xjs3dm1dsdipc&game=wykepsq659qp4&redirectUrl=https%3A%2F%2Fdemo.97ipay.com'
-    },
-    {
-        GameType: 'Slot',
-        Code: 'FourTigersGW',
-        GameOCode: 'rsjogw1ukbeic',
-        GameCode: 'rsjogw1ukbeic',
-        GameName: 'Four Tigers',
-        SupportedPlatForms: 'Desktop,Mobile',
-        Specials: 'new,hot',
-        Technology: 'HTML',
-        Order: -1900,
-        DefaultWidth: 960,
-        DefaultHeight: 600,
-        Image1: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/landscape/rsjogw1ukbeic.png',
-        Image2: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/portrait/rsjogw1ukbeic.png',
-        gameURL: 'http://www.gwc688.net/?token=xjs3dm1dsdipc&game=rsjogw1ukbeic&redirectUrl=https%3A%2F%2Fdemo.97ipay.com'
-    },
-    {
-        GameType: 'Slot',
-        Code: 'NeptuneTreasureGW',
-        GameOCode: '5ii9zgw5unc3h',
-        GameCode: '5ii9zgw5unc3h',
-        GameName: 'Neptune Treasure',
-        SupportedPlatForms: 'Desktop,Mobile',
-        Specials: 'new,hot',
-        Technology: 'HTML',
-        Order: -312707,
-        DefaultWidth: 960,
-        DefaultHeight: 600,
-        Image1: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/landscape/5ii9zgw5unc3h.png',
-        Image2: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/portrait/5ii9zgw5unc3h.png',
-        gameURL: 'http://www.gwc688.net/?token=xjs3dm1dsdipc&game=5ii9zgw5unc3h&redirectUrl=https%3A%2F%2Fdemo.97ipay.com'
-    },
-    {
-        GameType: 'Slot',
-        Code: 'LordOfTheOceanGW',
-        GameOCode: 'xmzfobaryz7xs',
-        GameCode: 'xmzfobaryz7xs',
-        GameName: 'Lord Of The Ocean',
-        SupportedPlatForms: 'Desktop,Mobile',
-        Specials: 'new,hot',
-        Technology: 'HTML',
-        Order: -213902,
-        DefaultWidth: 1105,
-        DefaultHeight: 737,
-        Image1: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/landscape/xmzfobaryz7xs.png',
-        Image2: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/portrait/xmzfobaryz7xs.png',
-        gameURL: 'http://www.gwc688.net/?token=xjs3dm1dsdipc&game=xmzfobaryz7xs&redirectUrl=https%3A%2F%2Fdemo.97ipay.com'
-    },
-    {
-        GameType: 'Slot',
-        Code: 'GeishaGW',
-        GameOCode: 'qxoindypyeboy',
-        GameCode: 'qxoindypyeboy',
-        GameName: 'Geisha',
-        SupportedPlatForms: 'Desktop,Mobile',
-        Specials: 'new,hot',
-        Technology: 'HTML',
-        Order: -213903,
-        DefaultWidth: 1105,
-        DefaultHeight: 737,
-        Image1: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/landscape/qxoindypyeboy.png',
-        Image2: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/portrait/qxoindypyeboy.png',
-        gameURL: 'http://www.gwc688.net/?token=xjs3dm1dsdipc&game=qxoindypyeboy&redirectUrl=https%3A%2F%2Fdemo.97ipay.com'
-    },
-    {
-        GameType: 'Slot',
-        Code: 'ColumbusGW',
-        GameOCode: 'aij68ciusna5c',
-        GameCode: 'aij68ciusna5c',
-        GameName: 'Columbus',
-        SupportedPlatForms: 'Desktop,Mobile',
-        Specials: 'new,hot',
-        Technology: 'HTML',
-        Order: -2401,
-        DefaultWidth: 1105,
-        DefaultHeight: 737,
-        Image1: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/landscape/aij68ciusna5c.png',
-        Image2: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/portrait/aij68ciusna5c.png',
-        gameURL: 'http://www.gwc688.net/?token=xjs3dm1dsdipc&game=aij68ciusna5c&redirectUrl=https%3A%2F%2Fdemo.97ipay.com'
-    },
-    {
-        GameType: 'Slot',
-        Code: 'JustJewelsGW',
-        GameOCode: 'satj3o6ya8dcq',
-        GameCode: 'satj3o6ya8dcq',
-        GameName: 'Just Jewels',
-        SupportedPlatForms: 'Desktop,Mobile',
-        Specials: 'new,hot',
-        Technology: 'HTML',
-        Order: -2400,
-        DefaultWidth: 1105,
-        DefaultHeight: 737,
-        Image1: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/landscape/satj3o6ya8dcq.png',
-        Image2: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/portrait/satj3o6ya8dcq.png',
-        gameURL: 'http://www.gwc688.net/?token=xjs3dm1dsdipc&game=satj3o6ya8dcq&redirectUrl=https%3A%2F%2Fdemo.97ipay.com'
-    },
-    {
-        GameType: 'Slot',
-        Code: 'QueenOfTheNileGW',
-        GameOCode: '8nsbhokge7nrk',
-        GameCode: '8nsbhokge7nrk',
-        GameName: 'Queen Of The Nile',
-        SupportedPlatForms: 'Desktop,Mobile',
-        Specials: 'new,hot',
-        Technology: 'HTML',
-        Order: -213912,
-        DefaultWidth: 1105,
-        DefaultHeight: 737,
-        Image1: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/landscape/8nsbhokge7nrk.png',
-        Image2: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/portrait/8nsbhokge7nrk.png',
-        gameURL: 'http://www.gwc688.net/?token=xjs3dm1dsdipc&game=8nsbhokge7nrk&redirectUrl=https%3A%2F%2Fdemo.97ipay.com'
-    },
-    {
-        GameType: 'Slot',
-        Code: 'SizzlingHotGW',
-        GameOCode: 'ww3a8wsu4de7c',
-        GameCode: 'ww3a8wsu4de7c',
-        GameName: 'Sizzling Hot',
-        SupportedPlatForms: 'Desktop,Mobile',
-        Specials: 'new,hot',
-        Technology: 'HTML',
-        Order: -213914,
-        DefaultWidth: 1105,
-        DefaultHeight: 737,
-        Image1: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/landscape/ww3a8wsu4de7c.png',
-        Image2: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/portrait/ww3a8wsu4de7c.png',
-        gameURL: 'http://www.gwc688.net/?token=xjs3dm1dsdipc&game=ww3a8wsu4de7c&redirectUrl=https%3A%2F%2Fdemo.97ipay.com'
-    },
-    {
-        GameType: 'Slot',
-        Code: 'DolphinPearlGW',
-        GameOCode: '43bx3e7ywgukq',
-        GameCode: '43bx3e7ywgukq',
-        GameName: 'Dolphin Pearl',
-        SupportedPlatForms: 'Desktop,Mobile',
-        Specials: 'new,hot',
-        Technology: 'HTML',
-        Order: -213916,
-        DefaultWidth: 1105,
-        DefaultHeight: 737,
-        Image1: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/landscape/43bx3e7ywgukq.png',
-        Image2: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/portrait/43bx3e7ywgukq.png',
-        gameURL: 'http://www.gwc688.net/?token=xjs3dm1dsdipc&game=43bx3e7ywgukq&redirectUrl=https%3A%2F%2Fdemo.97ipay.com'
-    },
-    {
-        GameType: 'Slot',
-        Code: 'BookOfRaGW',
-        GameOCode: 'ioheiiqk3xrc1',
-        GameCode: 'ioheiiqk3xrc1',
-        GameName: 'Book Of Ra',
-        SupportedPlatForms: 'Desktop,Mobile',
-        Specials: 'new,hot',
-        Technology: 'HTML',
-        Order: -2701,
-        DefaultWidth: 1105,
-        DefaultHeight: 737,
-        Image1: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/landscape/ioheiiqk3xrc1.png',
-        Image2: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/portrait/ioheiiqk3xrc1.png',
-        gameURL: 'http://www.gwc688.net/?token=xjs3dm1dsdipc&game=ioheiiqk3xrc1&redirectUrl=https%3A%2F%2Fdemo.97ipay.com'
-    },
-    {
-        GameType: 'Slot',
-        Code: 'LuckyLadyCharmGW',
-        GameOCode: '7f9h9fwz11kaw',
-        GameCode: '7f9h9fwz11kaw',
-        GameName: 'Lucky Lady Charm',
-        SupportedPlatForms: 'Desktop,Mobile',
-        Specials: 'new,hot',
-        Technology: 'HTML',
-        Order: -2702,
-        DefaultWidth: 1105,
-        DefaultHeight: 737,
-        Image1: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/landscape/7f9h9fwz11kaw.png',
-        Image2: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/portrait/7f9h9fwz11kaw.png',
-        gameURL: 'http://www.gwc688.net/?token=xjs3dm1dsdipc&game=7f9h9fwz11kaw&redirectUrl=https%3A%2F%2Fdemo.97ipay.com'
-    },
-    {
-        GameType: 'Slot',
-        Code: 'NuggetHunterGW',
-        GameOCode: '84igeq3a8r9d6',
-        GameCode: '84igeq3a8r9d6',
-        GameName: 'Nugget Hunter',
-        SupportedPlatForms: 'Desktop,Mobile',
-        Specials: 'new,hot',
-        Technology: 'HTML',
-        Order: -213917,
-        DefaultWidth: 1105,
-        DefaultHeight: 737,
-        Image1: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/landscape/84igeq3a8r9d6.png',
-        Image2: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/portrait/84igeq3a8r9d6.png',
-        gameURL: 'http://www.gwc688.net/?token=xjs3dm1dsdipc&game=84igeq3a8r9d6&redirectUrl=https%3A%2F%2Fdemo.97ipay.com'
-    },
-    {
-        GameType: 'Slot',
-        Code: 'FiftyLionsGW',
-        GameOCode: 'fk9yoi4wkifrs',
-        GameCode: 'fk9yoi4wkifrs',
-        GameName: 'Fifty Lions',
-        SupportedPlatForms: 'Desktop,Mobile',
-        Specials: 'new,hot',
-        Technology: 'HTML',
-        Order: -213915,
-        DefaultWidth: 1105,
-        DefaultHeight: 737,
-        Image1: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/landscape/fk9yoi4wkifrs.png',
-        Image2: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/portrait/fk9yoi4wkifrs.png',
-        gameURL: 'http://www.gwc688.net/?token=xjs3dm1dsdipc&game=fk9yoi4wkifrs&redirectUrl=https%3A%2F%2Fdemo.97ipay.com'
-    },
-    {
-        GameType: 'Slot',
-        Code: 'DolphinTreasureGW',
-        GameOCode: 'ateqfxp1sqamn',
-        GameCode: 'ateqfxp1sqamn',
-        GameName: 'Dolphin Treasure',
-        SupportedPlatForms: 'Desktop,Mobile',
-        Specials: 'new,hot',
-        Technology: 'HTML',
-        Order: -213916,
-        DefaultWidth: 1105,
-        DefaultHeight: 737,
-        Image1: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/landscape/ateqfxp1sqamn.png',
-        Image2: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/portrait/ateqfxp1sqamn.png',
-        gameURL: 'http://www.gwc688.net/?token=xjs3dm1dsdipc&game=ateqfxp1sqamn&redirectUrl=https%3A%2F%2Fdemo.97ipay.com'
-    },
-    {
-        GameType: 'Slot',
-        Code: 'AncientArtifactGW',
-        GameOCode: 'ie9eti6w4zfcs',
-        GameCode: 'ie9eti6w4zfcs',
-        GameName: 'Ancient Artifact',
-        SupportedPlatForms: 'Desktop,Mobile',
-        Specials: 'new,hot',
-        Technology: 'HTML',
-        Order: -214018,
-        DefaultWidth: 1105,
-        DefaultHeight: 737,
-        Image1: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/landscape/ie9eti6w4zfcs.png',
-        Image2: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/portrait/ie9eti6w4zfcs.png',
-        gameURL: 'http://www.gwc688.net/?token=xjs3dm1dsdipc&game=ie9eti6w4zfcs&redirectUrl=https%3A%2F%2Fdemo.97ipay.com'
-    },
-    {
-        GameType: 'Slot',
-        Code: 'MoneyVaultGW',
-        GameOCode: 'oajk3h9o685xq',
-        GameCode: 'oajk3h9o685xq',
-        GameName: 'Money Vault',
-        SupportedPlatForms: 'Desktop,Mobile',
-        Specials: 'new,hot',
-        Technology: 'HTML',
-        Order: -312810,
-        DefaultWidth: 960,
-        DefaultHeight: 600,
-        Image1: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/landscape/oajk3h9o685xq.png',
-        Image2: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/portrait/oajk3h9o685xq.png',
-        gameURL: 'http://www.gwc688.net/?token=xjs3dm1dsdipc&game=oajk3h9o685xq&redirectUrl=https%3A%2F%2Fdemo.97ipay.com'
-    },
-    {
-        GameType: 'Slot',
-        Code: 'BurningPearlGW',
-        GameOCode: 'ur8593z8hu17w',
-        GameCode: 'ur8593z8hu17w',
-        GameName: 'Burning Pearl',
-        SupportedPlatForms: 'Desktop,Mobile',
-        Specials: 'new,hot',
-        Technology: 'HTML',
-        Order: -312810,
-        DefaultWidth: 960,
-        DefaultHeight: 600,
-        Image1: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/landscape/ur8593z8hu17w.png',
-        Image2: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/portrait/ur8593z8hu17w.png',
-        gameURL: 'http://www.gwc688.net/?token=xjs3dm1dsdipc&game=ur8593z8hu17w&redirectUrl=https%3A%2F%2Fdemo.97ipay.com'
-    },
-    {
-        GameType: 'Slot',
-        Code: 'HorusEyeGW',
-        GameOCode: 'j9nzkkbjfaz1a',
-        GameCode: 'j9nzkkbjfaz1a',
-        GameName: 'Horus Eye',
-        SupportedPlatForms: 'Desktop,Mobile',
-        Specials: 'new,hot',
-        Technology: 'HTML',
-        Order: -312810,
-        DefaultWidth: 960,
-        DefaultHeight: 600,
-        Image1: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/landscape/j9nzkkbjfaz1a.png',
-        Image2: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/portrait/j9nzkkbjfaz1a.png',
-        gameURL: 'http://www.gwc688.net/?token=xjs3dm1dsdipc&game=j9nzkkbjfaz1a&redirectUrl=https%3A%2F%2Fdemo.97ipay.com'
-    },
-    {
-        GameType: 'Slot',
-        Code: 'OctagonGemGW',
-        GameOCode: '4tyxfmpnwqokn',
-        GameCode: '4tyxfmpnwqokn',
-        GameName: 'Octagon Gem',
-        SupportedPlatForms: 'Desktop,Mobile',
-        Specials: 'new,hot',
-        Technology: 'HTML',
-        Order: -213917,
-        DefaultWidth: 1105,
-        DefaultHeight: 737,
-        Image1: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/landscape/4tyxfmpnwqokn.png',
-        Image2: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/portrait/4tyxfmpnwqokn.png',
-        gameURL: 'http://www.gwc688.net/?token=xjs3dm1dsdipc&game=4tyxfmpnwqokn&redirectUrl=https%3A%2F%2Fdemo.97ipay.com'
-    },
-    {
-        GameType: 'Slot',
-        Code: 'HotFruitsGW',
-        GameOCode: 'soojfuqnaxycn',
-        GameCode: 'soojfuqnaxycn',
-        GameName: 'Hot Fruits',
-        SupportedPlatForms: 'Desktop,Mobile',
-        Specials: 'new,hot',
-        Technology: 'HTML',
-        Order: -213917,
-        DefaultWidth: 1105,
-        DefaultHeight: 737,
-        Image1: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/landscape/soojfuqnaxycn.png',
-        Image2: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/portrait/soojfuqnaxycn.png',
-        gameURL: 'http://www.gwc688.net/?token=xjs3dm1dsdipc&game=soojfuqnaxycn&redirectUrl=https%3A%2F%2Fdemo.97ipay.com'
-    },
-    {
-        GameType: 'Fishing',
-        Code: 'FH2R0',
-        GameOCode: 'xkhy6baryz7xs',
-        GameCode: 'xkhy6baryz7xs',
-        GameName: 'Fish Hunter 2 EX - Newbie',
-        SupportedPlatForms: 'Desktop,Mobile',
-        Specials: 'new,hot',
-        Technology: 'HTML',
-        Order: -312809,
-        DefaultWidth: 1280,
-        DefaultHeight: 720,
-        Image1: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/landscape/xkhy6baryz7xs.png',
-        Image2: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/portrait/xkhy6baryz7xs.png',
-        gameURL: 'http://www.gwc688.net/?token=xjs3dm1dsdipc&game=xkhy6baryz7xs&redirectUrl=https%3A%2F%2Fdemo.97ipay.com'
-    },
-    {
-        GameType: 'Fishing',
-        Code: 'FH2R1',
-        GameOCode: 'qq5ocdypyeboy',
-        GameCode: 'qq5ocdypyeboy',
-        GameName: 'Fish Hunter 2 EX - Novice',
-        SupportedPlatForms: 'Desktop,Mobile',
-        Specials: 'new,hot',
-        Technology: 'HTML',
-        Order: -312809,
-        DefaultWidth: 1280,
-        DefaultHeight: 720,
-        Image1: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/landscape/qq5ocdypyeboy.png',
-        Image2: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/portrait/qq5ocdypyeboy.png',
-        gameURL: 'http://www.gwc688.net/?token=xjs3dm1dsdipc&game=qq5ocdypyeboy&redirectUrl=https%3A%2F%2Fdemo.97ipay.com'
-    },
-    {
-        GameType: 'Fishing',
-        Code: 'FH2R2',
-        GameOCode: 'g54rso4yefdrq',
-        GameCode: 'g54rso4yefdrq',
-        GameName: 'Fish Hunter 2 EX - Pro',
-        SupportedPlatForms: 'Desktop,Mobile',
-        Specials: 'new,hot',
-        Technology: 'HTML',
-        Order: -312809,
-        DefaultWidth: 1280,
-        DefaultHeight: 720,
-        Image1: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/landscape/g54rso4yefdrq.png',
-        Image2: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/portrait/g54rso4yefdrq.png',
-        gameURL: 'http://www.gwc688.net/?token=xjs3dm1dsdipc&game=g54rso4yefdrq&redirectUrl=https%3A%2F%2Fdemo.97ipay.com'
-    },
-    {
-        GameType: 'Fishing',
-        Code: 'FH2R3',
-        GameOCode: 'ary5bxi9z165r',
-        GameCode: 'ary5bxi9z165r',
-        GameName: 'Fish Hunter 2 EX - My Club',
-        SupportedPlatForms: 'Desktop,Mobile',
-        Specials: 'new,hot',
-        Technology: 'HTML',
-        Order: -312809,
-        DefaultWidth: 1280,
-        DefaultHeight: 720,
-        Image1: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/landscape/ary5bxi9z165r.png',
-        Image2: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/portrait/ary5bxi9z165r.png',
-        gameURL: 'http://www.gwc688.net/?token=xjs3dm1dsdipc&game=ary5bxi9z165r&redirectUrl=https%3A%2F%2Fdemo.97ipay.com'
-    },
-    {
-        GameType: 'Fishing',
-        Code: 'FSGF',
-        GameOCode: 'b8rzo7uzqt4sw',
-        GameCode: 'b8rzo7uzqt4sw',
-        GameName: 'Fish Hunting: Golden Toad',
-        SupportedPlatForms: 'Desktop,Mobile',
-        Specials: 'new,hot',
-        Technology: 'HTML',
-        Order: -312809,
-        DefaultWidth: 1280,
-        DefaultHeight: 720,
-        Image1: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/landscape/b8rzo7uzqt4sw.png',
-        Image2: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/portrait/b8rzo7uzqt4sw.png',
-        gameURL: 'http://www.gwc688.net/?token=xjs3dm1dsdipc&game=b8rzo7uzqt4sw&redirectUrl=https%3A%2F%2Fdemo.97ipay.com'
-    },
-    {
-        GameType: 'Fishing',
-        Code: 'FSGF1',
-        GameOCode: '8d7r1okge7nrk',
-        GameCode: '8d7r1okge7nrk',
-        GameName: 'Fish Hunting: Da Sheng Nao Hai',
-        SupportedPlatForms: 'Desktop,Mobile',
-        Specials: 'new,hot',
-        Technology: 'HTML',
-        Order: -312809,
-        DefaultWidth: 1280,
-        DefaultHeight: 720,
-        Image1: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/landscape/8d7r1okge7nrk.png',
-        Image2: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/portrait/8d7r1okge7nrk.png',
-        gameURL: 'http://www.gwc688.net/?token=xjs3dm1dsdipc&game=8d7r1okge7nrk&redirectUrl=https%3A%2F%2Fdemo.97ipay.com'
-    },
-    {
-        GameType: 'Fishing',
-        Code: 'FSGF2',
-        GameOCode: 'nzkseaudcbosc',
-        GameCode: 'nzkseaudcbosc',
-        GameName: 'Fish Hunting: Li Kui Pi Yu',
-        SupportedPlatForms: 'Desktop,Mobile',
-        Specials: 'new,hot',
-        Technology: 'HTML',
-        Order: -312809,
-        DefaultWidth: 1280,
-        DefaultHeight: 720,
-        Image1: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/landscape/nzkseaudcbosc.png',
-        Image2: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/portrait/nzkseaudcbosc.png',
-        gameURL: 'http://www.gwc688.net/?token=xjs3dm1dsdipc&game=nzkseaudcbosc&redirectUrl=https%3A%2F%2Fdemo.97ipay.com'
-    },
-    {
-        GameType: 'Fishing',
-        Code: 'FishMoneyTree',
-        GameOCode: 'wi17jwsu4de7c',
-        GameCode: 'wi17jwsu4de7c',
-        GameName: 'Fish Hunting: Yao Qian Shu',
-        SupportedPlatForms: 'Desktop,Mobile',
-        Specials: 'new,hot',
-        Technology: 'HTML',
-        Order: -312809,
-        DefaultWidth: 1280,
-        DefaultHeight: 720,
-        Image1: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/landscape/wi17jwsu4de7c.png',
-        Image2: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/portrait/wi17jwsu4de7c.png',
-        gameURL: 'http://www.gwc688.net/?token=xjs3dm1dsdipc&game=wi17jwsu4de7c&redirectUrl=https%3A%2F%2Fdemo.97ipay.com'
-    },
-    {
-        GameType: 'Fishing',
-        Code: 'FHMA',
-        GameOCode: '1jeqx59c7ztqg',
-        GameCode: '1jeqx59c7ztqg',
-        GameName: 'Fish Hunter Monster Awaken',
-        SupportedPlatForms: 'Desktop,Mobile',
-        Specials: 'new,hot',
-        Technology: 'HTML',
-        Order: -312809,
-        DefaultWidth: 1280,
-        DefaultHeight: 720,
-        Image1: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/landscape/1jeqx59c7ztqg.png',
-        Image2: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/portrait/1jeqx59c7ztqg.png',
-        gameURL: 'http://www.gwc688.net/?token=xjs3dm1dsdipc&game=1jeqx59c7ztqg&redirectUrl=https%3A%2F%2Fdemo.97ipay.com'
-    },
-    {
-        GameType: 'Fishing',
-        Code: 'FishSpongebob',
-        GameOCode: '4omkmmpnwqokn',
-        GameCode: '4omkmmpnwqokn',
-        GameName: 'Fish Hunter Spongebob',
-        SupportedPlatForms: 'Desktop,Mobile',
-        Specials: 'new,hot',
-        Technology: 'HTML',
-        Order: -312809,
-        DefaultWidth: 1280,
-        DefaultHeight: 720,
-        Image1: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/landscape/4omkmmpnwqokn.png',
-        Image2: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/portrait/4omkmmpnwqokn.png',
-        gameURL: 'http://www.gwc688.net/?token=xjs3dm1dsdipc&game=4omkmmpnwqokn&redirectUrl=https%3A%2F%2Fdemo.97ipay.com'
-    },
-    {
-        GameType: 'Fishing',
-        Code: 'FishHunterInsectParadise',
-        GameOCode: 'ddpg1amgc71gk',
-        GameCode: 'ddpg1amgc71gk',
-        GameName: 'Fish Hunter Insect Paradise',
-        SupportedPlatForms: 'Desktop,Mobile',
-        Specials: 'new,hot',
-        Technology: 'HTML',
-        Order: -312809,
-        DefaultWidth: 1280,
-        DefaultHeight: 720,
-        Image1: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/landscape/ddpg1amgc71gk.png',
-        Image2: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/portrait/ddpg1amgc71gk.png',
-        gameURL: 'http://www.gwc688.net/?token=xjs3dm1dsdipc&game=ddpg1amgc71gk&redirectUrl=https%3A%2F%2Fdemo.97ipay.com'
-    },
-    {
-        GameType: 'Fishing',
-        Code: 'FHBH5',
-        GameOCode: 'kk8nqm3cfwtng',
-        GameCode: 'kk8nqm3cfwtng',
-        GameName: 'Fish Haiba',
-        SupportedPlatForms: 'Desktop,Mobile',
-        Specials: 'new,hot',
-        Technology: 'HTML',
-        Order: -625410,
-        DefaultWidth: 1280,
-        DefaultHeight: 720,
-        Image1: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/landscape/kk8nqm3cfwtng.png',
-        Image2: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/portrait/kk8nqm3cfwtng.png',
-        gameURL: 'http://www.gwc688.net/?token=xjs3dm1dsdipc&game=kk8nqm3cfwtng&redirectUrl=https%3A%2F%2Fdemo.97ipay.com'
-    },
-    {
-        GameType: 'ECasino',
-        Code: 'DragonTiger',
-        GameOCode: 'dc7sh3dfmjpio',
-        GameCode: 'dc7sh3dfmjpio',
-        GameName: 'Dragon Tiger',
-        SupportedPlatForms: 'Desktop,Mobile',
-        Specials: 'hot',
-        Technology: 'HTML',
-        Order: 40,
-        DefaultWidth: 960,
-        DefaultHeight: 600,
-        Image1: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/landscape/dc7sh3dfmjpio.png',
-        Image2: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/portrait/dc7sh3dfmjpio.png',
-        gameURL: 'http://www.gwc688.net/?token=xjs3dm1dsdipc&game=dc7sh3dfmjpio&redirectUrl=https%3A%2F%2Fdemo.97ipay.com'
-    },
-    {
-        GameType: 'ECasino',
-        Code: 'Belangkai',
-        GameOCode: '3uim5ppkiqwk1',
-        GameCode: '3uim5ppkiqwk1',
-        GameName: 'Belangkai',
-        SupportedPlatForms: 'Desktop,Mobile',
-        Specials: 'hot',
-        Technology: 'HTML',
-        Order: 40,
-        DefaultWidth: 960,
-        DefaultHeight: 600,
-        Image1: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/landscape/3uim5ppkiqwk1.png',
-        Image2: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/portrait/3uim5ppkiqwk1.png',
-        gameURL: 'http://www.gwc688.net/?token=xjs3dm1dsdipc&game=3uim5ppkiqwk1&redirectUrl=https%3A%2F%2Fdemo.97ipay.com'
-    },
-    {
-        GameType: 'ECasino',
-        Code: 'Baccarat',
-        GameOCode: 'j3wngk3efrzn6',
-        GameCode: 'j3wngk3efrzn6',
-        GameName: 'Baccarat',
-        SupportedPlatForms: 'Desktop,Mobile',
-        Specials: 'hot',
-        Technology: 'HTML',
-        Order: 40,
-        DefaultWidth: 960,
-        DefaultHeight: 600,
-        Image1: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/landscape/j3wngk3efrzn6.png',
-        Image2: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/portrait/j3wngk3efrzn6.png',
-        gameURL: 'http://www.gwc688.net/?token=xjs3dm1dsdipc&game=j3wngk3efrzn6&redirectUrl=https%3A%2F%2Fdemo.97ipay.com'
-    },
-    {
-        GameType: 'ECasino',
-        Code: 'HuLu',
-        GameOCode: 'yr1zy9u9xt6zr',
-        GameCode: 'yr1zy9u9xt6zr',
-        GameName: 'HuLu',
-        SupportedPlatForms: 'Desktop,Mobile',
-        Specials: 'hot',
-        Technology: 'HTML',
-        Order: 40,
-        DefaultWidth: 960,
-        DefaultHeight: 600,
-        Image1: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/landscape/yr1zy9u9xt6zr.png',
-        Image2: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/portrait/yr1zy9u9xt6zr.png',
-        gameURL: 'http://www.gwc688.net/?token=xjs3dm1dsdipc&game=yr1zy9u9xt6zr&redirectUrl=https%3A%2F%2Fdemo.97ipay.com'
+      "gameType": "Video Slots",
+      "gameGroup": "Slots",
+      "gameName": "Amazon Wild",
+      "gameCode": "ashamw"
+    },
+    {
+      "gameType": "Card Games",
+      "gameGroup": "Table Games",
+      "gameName": "American Blackjack",
+      "gameCode": "bja"
+    },
+    {
+      "gameType": "Video Slots",
+      "gameGroup": "Slots",
+      "gameName": "Archer",
+      "gameCode": "arc"
+    },
+    {
+      "gameType": "Video Slots",
+      "gameGroup": "Slots",
+      "gameName": "Arctic Treasure",
+      "gameCode": "art"
+    },
+    {
+      "gameType": "Video Slots",
+      "gameGroup": "Slots",
+      "gameName": "Atlantis Queen",
+      "gameCode": "gtsatq"
+    },
+    {
+      "gameType": "Card Games",
+      "gameGroup": "Table Games",
+      "gameName": "Baccarat",
+      "gameCode": "ba"
+    },
+    {
+      "gameType": "Video Slots",
+      "gameGroup": "Slots",
+      "gameName": "Beach Life",
+      "gameCode": "bl"
+    },
+    {
+      "gameType": "Classic Slots",
+      "gameGroup": "Slots",
+      "gameName": "Bermuda Triangle",
+      "gameCode": "bt"
+    },
+    {
+      "gameType": "Card Games",
+      "gameGroup": "Table Games",
+      "gameName": "Blackjack Multihand 5",
+      "gameCode": "bj_mh5"
+    },
+    {
+      "gameType": "Card Games",
+      "gameGroup": "Table Games",
+      "gameName": "Blackjack Pro",
+      "gameCode": "psdbj"
+    },
+    {
+      "gameType": "Video Slots",
+      "gameGroup": "Slots",
+      "gameName": "Bonus Bears",
+      "gameCode": "bob"
+    },
+    {
+      "gameType": "Video Slots",
+      "gameGroup": "Slots",
+      "gameName": "A Night Out",
+      "gameCode": "hb"
+    },
+    {
+      "gameType": "Video Slots",
+      "gameGroup": "Slots",
+      "gameName": "Captains Treasure",
+      "gameCode": "ct"
+    },
+    {
+      "gameType": "Video Slots",
+      "gameGroup": "Slots",
+      "gameName": "Captain&#39;s Treasure Pro",
+      "gameCode": "ctp2"
+    },
+    {
+      "gameType": "Card Games",
+      "gameGroup": "Table Games",
+      "gameName": "Casino Hold &#39;Em",
+      "gameCode": "cheaa"
+    },
+    {
+      "gameType": "Video Slots",
+      "gameGroup": "Slots",
+      "gameName": "Cat Queen",
+      "gameCode": "catqc"
+    },
+    {
+      "gameType": "Video Slots",
+      "gameGroup": "Slots",
+      "gameName": "Cherry Love",
+      "gameCode": "chl"
+    },
+    {
+      "gameType": "Video Slots",
+      "gameGroup": "Slots",
+      "gameName": "Chinese Kitchen",
+      "gameCode": "cm"
+    },
+    {
+      "gameType": "Video Slots",
+      "gameGroup": "Slots",
+      "gameName": "Cops N&#39; Bandits",
+      "gameCode": "gtscnb"
+    },
+    {
+      "gameType": "Classic Slots",
+      "gameGroup": "Slots",
+      "gameName": "Crazy 7",
+      "gameCode": "c7"
+    },
+    {
+      "gameType": "Video Slots",
+      "gameGroup": "Slots",
+      "gameName": "Desert Treasure",
+      "gameCode": "dt"
+    },
+    {
+      "gameType": "Video Slots",
+      "gameGroup": "Slots",
+      "gameName": "Dolphin Reef",
+      "gameCode": "dnr"
+    },
+    {
+      "gameType": "Video Slots",
+      "gameGroup": "Slots",
+      "gameName": "Easter Surprise",
+      "gameCode": "eas"
+    },
+    {
+      "gameType": "Video Slots",
+      "gameGroup": "Slots",
+      "gameName": "Esmeralda",
+      "gameCode": "esmk"
+    },
+    {
+      "gameType": "Video Slots",
+      "gameGroup": "Slots",
+      "gameName": "Everybody&#39;s Jackpot",
+      "gameCode": "evj"
+    },
+    {
+      "gameType": "Video Slots",
+      "gameGroup": "Slots",
+      "gameName": "Football Rules",
+      "gameCode": "fbr"
+    },
+    {
+      "gameType": "Video Slots",
+      "gameGroup": "Slots",
+      "gameName": "Forest of Wonder",
+      "gameCode": "fow"
+    },
+    {
+      "gameType": "Classic Slots",
+      "gameGroup": "Slots",
+      "gameName": "Fountain of Youth",
+      "gameCode": "foy"
+    },
+    {
+      "gameType": "Video Slots",
+      "gameGroup": "Slots",
+      "gameName": "Fortunes of the Fox",
+      "gameCode": "fxf"
+    },
+    {
+      "gameType": "Video Slots",
+      "gameGroup": "Slots",
+      "gameName": "Frankie Dettori&#39;s Magic Seven",
+      "gameCode": "fdt"
+    },
+    {
+      "gameType": "Video Slots",
+      "gameGroup": "Slots",
+      "gameName": "Full Moon Fortunes",
+      "gameCode": "ashfmf"
+    },
+    {
+      "gameType": "Video Slots",
+      "gameGroup": "Slots",
+      "gameName": "Funky Fruits Farm",
+      "gameCode": "fff"
+    },
+    {
+      "gameType": "Video Slots",
+      "gameGroup": "Slots",
+      "gameName": "Funky Fruits Jackpot Game",
+      "gameCode": "fnfrj"
+    },
+    {
+      "gameType": "Classic Slots",
+      "gameGroup": "Slots",
+      "gameName": "Funky Monkey",
+      "gameCode": "fm"
+    },
+    {
+      "gameType": "Video Slots",
+      "gameGroup": "Slots",
+      "gameName": "Gladiator",
+      "gameCode": "glr"
+    },
+    {
+      "gameType": "Video Slots",
+      "gameGroup": "Slots",
+      "gameName": "Gladiator Jackpot",
+      "gameCode": "glrj"
+    },
+    {
+      "gameType": "Video Slots",
+      "gameGroup": "Slots",
+      "gameName": "Golden Tour",
+      "gameCode": "gos"
+    },
+    {
+      "gameType": "Video Slots",
+      "gameGroup": "Slots",
+      "gameName": "Great Blue",
+      "gameCode": "bib"
+    },
+    {
+      "gameType": "Video Slots",
+      "gameGroup": "Slots",
+      "gameName": "Greatest Odyssey",
+      "gameCode": "gro"
+    },
+    {
+      "gameType": "Video Slots",
+      "gameGroup": "Slots",
+      "gameName": "Halloween Fortune",
+      "gameCode": "hlf"
+    },
+    {
+      "gameType": "Classic Slots",
+      "gameGroup": "Slots",
+      "gameName": "Haunted House",
+      "gameCode": "hh"
+    },
+    {
+      "gameType": "Video Slots",
+      "gameGroup": "Slots",
+      "gameName": "Heart of The Jungle",
+      "gameCode": "ashhotj"
+    },
+    {
+      "gameType": "Video Slots",
+      "gameGroup": "Slots",
+      "gameName": "Highway Kings",
+      "gameCode": "hk"
+    },
+    {
+      "gameType": "Video Slots",
+      "gameGroup": "Slots",
+      "gameName": "Highway Kings Pro",
+      "gameCode": "gtshwkp"
+    },
+    {
+      "gameType": "Video Slots",
+      "gameGroup": "Slots",
+      "gameName": "Hot Gems",
+      "gameCode": "gts50"
+    },
+    {
+      "gameType": "Video Slots",
+      "gameGroup": "Slots",
+      "gameName": "Geisha Story",
+      "gameCode": "ges"
+    },
+    {
+      "gameType": "Video Slots",
+      "gameGroup": "Slots",
+      "gameName": "Irish Luck",
+      "gameCode": "gtsirl"
+    },
+    {
+      "gameType": "Video Slots",
+      "gameGroup": "Slots",
+      "gameName": "Jackpot Giant",
+      "gameCode": "jpgt"
+    },
+    {
+      "gameType": "Video Slots",
+      "gameGroup": "Slots",
+      "gameName": "Kong The Eighth Wonder Of The World",
+      "gameCode": "kkg"
+    },
+    {
+      "gameType": "Video Slots",
+      "gameGroup": "Slots",
+      "gameName": "Marilyn Monroe",
+      "gameCode": "gtsmrln"
+    },
+    {
+      "gameType": "Video Slots",
+      "gameGroup": "Slots",
+      "gameName": "Mr. Cashback",
+      "gameCode": "mcb"
+    },
+    {
+      "gameType": "Classic Slots",
+      "gameGroup": "Slots",
+      "gameName": "Neptunes Kingdom",
+      "gameCode": "nk"
+    },
+    {
+      "gameType": "Video Slots",
+      "gameGroup": "Slots",
+      "gameName": "Panther Moon",
+      "gameCode": "pmn"
+    },
+    {
+      "gameType": "Classic Slots",
+      "gameGroup": "Slots",
+      "gameName": "Party Line",
+      "gameCode": "pl"
+    },
+    {
+      "gameType": "Video Slots",
+      "gameGroup": "Slots",
+      "gameName": "Penguin Vacation",
+      "gameCode": "pgv"
+    },
+    {
+      "gameType": "Video Slots",
+      "gameGroup": "Slots",
+      "gameName": "Pharaoh&#39;s Secrets",
+      "gameCode": "pst"
+    },
+    {
+      "gameType": "Video Slots",
+      "gameGroup": "Slots",
+      "gameName": "Plenty O&#39;Fortune",
+      "gameCode": "gtspor"
+    },
+    {
+      "gameType": "Video Slots",
+      "gameGroup": "Slots",
+      "gameName": "Rome and Glory",
+      "gameCode": "gtsrng"
+    },
+    {
+      "gameType": "Table Games",
+      "gameGroup": "Table Games",
+      "gameName": "European Roulette",
+      "gameCode": "ro"
+    },
+    {
+      "gameType": "Video Slots",
+      "gameGroup": "Slots",
+      "gameName": "Safari Heat",
+      "gameCode": "sfh"
+    },
+    {
+      "gameType": "Video Slots",
+      "gameGroup": "Slots",
+      "gameName": "Samba Brazil",
+      "gameCode": "gtssmbr"
+    },
+    {
+      "gameType": "Video Slots",
+      "gameGroup": "Slots",
+      "gameName": "Santa Surprise",
+      "gameCode": "ssp"
+    },
+    {
+      "gameType": "Video Slots",
+      "gameGroup": "Slots",
+      "gameName": "Secrets of the Amazon",
+      "gameCode": "samz"
+    },
+    {
+      "gameType": "Video Slots",
+      "gameGroup": "Slots",
+      "gameName": "Sherlock Mystery",
+      "gameCode": "shmst"
+    },
+    {
+      "gameType": "Video Slots",
+      "gameGroup": "Slots",
+      "gameName": "Wings Of Gold Regular",
+      "gameCode": "gtswng"
+    },
+    {
+      "gameType": "Video Slots",
+      "gameGroup": "Slots",
+      "gameName": "Dr Love More",
+      "gameCode": "dlm"
+    },
+    {
+      "gameType": "Video Slots",
+      "gameGroup": "Slots",
+      "gameName": "Skazka Pro",
+      "gameCode": "skp"
+    },
+    {
+      "gameType": "Video Slots",
+      "gameGroup": "Slots",
+      "gameName": "Wild Spirit",
+      "gameCode": "wis"
+    },
+    {
+      "gameType": "Live Dealer Games",
+      "gameGroup": "Live Dealers Casino",
+      "gameName": "7 Seat Baccarat Live",
+      "gameCode": "7bal"
+    },
+    {
+      "gameType": "Live Dealer Games",
+      "gameGroup": "Live Dealers Casino",
+      "gameName": "Baccarat Live",
+      "gameCode": "bal"
+    },
+    {
+      "gameType": "Live Dealer Games",
+      "gameGroup": "Live Dealers Casino",
+      "gameName": "Blackjack Live",
+      "gameCode": "bjl"
+    },
+    {
+      "gameType": "Live Dealer Games",
+      "gameGroup": "Live Dealers Casino",
+      "gameName": "Casino Hold’Em Live",
+      "gameCode": "chel"
+    },
+    {
+      "gameType": "Live Dealer Games",
+      "gameGroup": "Live Dealers Casino",
+      "gameName": "Exclusive Roulette (Live VIP Roulette)",
+      "gameCode": "rodl"
+    },
+    {
+      "gameType": "Live Dealer Games",
+      "gameGroup": "Live Dealers Casino",
+      "gameName": "Live French Roulette",
+      "gameCode": "rofl"
+    },
+    {
+      "gameType": "Live Dealer Games",
+      "gameGroup": "Live Dealers Casino",
+      "gameName": "Progressive Live Baccarat",
+      "gameCode": "plba"
+    },
+    {
+      "gameType": "Live Dealer Games",
+      "gameGroup": "Live Dealers Casino",
+      "gameName": "Roulette Live",
+      "gameCode": "rol"
+    },
+    {
+      "gameType": "Live Dealer Games",
+      "gameGroup": "Live Dealers Casino",
+      "gameName": "Sic Bo Live",
+      "gameCode": "sbl"
+    },
+    {
+      "gameType": "Live Dealer Games",
+      "gameGroup": "Live Dealers Casino",
+      "gameName": "Unlimited Blackjack Live",
+      "gameCode": "ubjl"
+    },
+    {
+      "gameType": "Live Dealer Games",
+      "gameGroup": "Live Dealers Casino",
+      "gameName": "VIP Baccarat Live",
+      "gameCode": "vbal"
+    },
+    {
+      "gameType": "Video Slots",
+      "gameGroup": "Slots",
+      "gameName": "Silent Samurai",
+      "gameCode": "sis"
+    },
+    {
+      "gameType": "Video Slots",
+      "gameGroup": "Slots",
+      "gameName": "Silver Bullet",
+      "gameCode": "sib"
+    },
+    {
+      "gameType": "Classic Slots",
+      "gameGroup": "Slots",
+      "gameName": "Standard Fivereel",
+      "gameCode": "sfr"
+    },
+    {
+      "gameType": "Video Slots",
+      "gameGroup": "Slots",
+      "gameName": "Streak of Luck",
+      "gameCode": "sol"
+    },
+    {
+      "gameType": "Video Slots",
+      "gameGroup": "Slots",
+      "gameName": "Sweet Party",
+      "gameCode": "cnpr"
+    },
+    {
+      "gameType": "Video Slots",
+      "gameGroup": "Slots",
+      "gameName": "Thai Paradise",
+      "gameCode": "tpd2"
+    },
+    {
+      "gameType": "Video Slots",
+      "gameGroup": "Slots",
+      "gameName": "Thai Temple",
+      "gameCode": "thtk"
+    },
+    {
+      "gameType": "Classic Slots",
+      "gameGroup": "Slots",
+      "gameName": "Tres Amigos",
+      "gameCode": "ta"
+    },
+    {
+      "gameType": "Video Slots",
+      "gameGroup": "Slots",
+      "gameName": "True Love",
+      "gameCode": "trl"
+    },
+    {
+      "gameType": "Video Slots",
+      "gameGroup": "Slots",
+      "gameName": "Ugga Bugga",
+      "gameCode": "ub"
+    },
+    {
+      "gameType": "Video Slots",
+      "gameGroup": "Slots",
+      "gameName": "Vacation Station",
+      "gameCode": "er"
+    },
+    {
+      "gameType": "Video Slots",
+      "gameGroup": "Slots",
+      "gameName": "White King",
+      "gameCode": "whk"
+    },
+    {
+      "gameType": "Video Slots",
+      "gameGroup": "Slots",
+      "gameName": "Wild Gambler",
+      "gameCode": "gtswg"
+    },
+    {
+      "gameType": "Video Slots",
+      "gameGroup": "Slots",
+      "gameName": "Wu Long",
+      "gameCode": "wlg"
+    },
+    {
+      "gameType": "Video Slots",
+      "gameGroup": "Slots",
+      "gameName": "Zhao Cai Jin Bao",
+      "gameCode": "zcjb"
+    },
+    {
+      "gameType": "Video Slots",
+      "gameGroup": "Slots",
+      "gameName": "Vikingmania",
+      "gameCode": "gts52"
+    },
+    {
+      "gameType": "Video Slots",
+      "gameGroup": "Slots",
+      "gameName": "Football Carnival",
+      "gameCode": "gtsfc"
+    },
+    {
+      "gameType": "Video Slots",
+      "gameGroup": "Slots",
+      "gameName": "The Three Musketeers and The Queen&#39;s Diamond",
+      "gameCode": "tmqd"
+    },
+    {
+      "gameType": "Video Slots",
+      "gameGroup": "Slots",
+      "gameName": "Lucky Panda",
+      "gameCode": "gts51"
+    },
+    {
+      "gameType": "Scratch Cards",
+      "gameGroup": "Scratchcards",
+      "gameName": "3 Clowns Scratch",
+      "gameCode": "tclsc"
+    },
+    {
+      "gameType": "Scratch Cards",
+      "gameGroup": "Scratchcards",
+      "gameName": "Classic Slot Scratch",
+      "gameCode": "scs"
+    },
+    {
+      "gameType": "Video Slots",
+      "gameGroup": "Slots",
+      "gameName": "Rocky",
+      "gameCode": "rky"
+    },
+    {
+      "gameType": "Card Games",
+      "gameGroup": "Table Games",
+      "gameName": "Blackjack Surrender",
+      "gameCode": "bjsd2"
+    },
+    {
+      "gameType": "Video Slots",
+      "gameGroup": "Slots",
+      "gameName": "Piggies and the Wolf",
+      "gameCode": "paw"
+    },
+    {
+      "gameType": "Video Slots",
+      "gameGroup": "Slots",
+      "gameName": "The Mummy",
+      "gameCode": "mmy"
+    },
+    {
+      "gameType": "Video Slots",
+      "gameGroup": "Slots",
+      "gameName": "Queen of Pyramids",
+      "gameCode": "qop"
+    },
+    {
+      "gameType": "Video Slots",
+      "gameGroup": "Slots",
+      "gameName": "Gold Rally",
+      "gameCode": "grel"
+    },
+    {
+      "gameType": "Table Games",
+      "gameGroup": "Table Games",
+      "gameName": "American Roulette",
+      "gameCode": "rodz"
+    },
+    {
+      "gameType": "Table Games",
+      "gameGroup": "Table Games",
+      "gameName": "Premium American Roulette",
+      "gameCode": "rodz_g"
+    },
+    {
+      "gameType": "Video Slots",
+      "gameGroup": "Slots",
+      "gameName": "Daring Dave &amp; the Eye of Ra",
+      "gameCode": "gtsdrdv"
+    },
+    {
+      "gameType": "Video Slots",
+      "gameGroup": "Slots",
+      "gameName": "The Discovery",
+      "gameCode": "dcv"
+    },
+    {
+      "gameType": "Video Slots",
+      "gameGroup": "Slots",
+      "gameName": "Golden Games",
+      "gameCode": "glg"
+    },
+    {
+      "gameType": "Fixed-Odds Games",
+      "gameGroup": "Others",
+      "gameName": "Rubik&#39;s Riches",
+      "gameCode": "gtsru"
+    },
+    {
+      "gameType": "Classic Slots",
+      "gameGroup": "Slots",
+      "gameName": "Magic Slots",
+      "gameCode": "ms"
+    },
+    {
+      "gameType": "Card Games",
+      "gameGroup": "Table Games",
+      "gameName": "Perfect Blackjack Multihand 5",
+      "gameCode": "bjp"
+    },
+    {
+      "gameType": "Video Slots",
+      "gameGroup": "Slots",
+      "gameName": "Desert Treasure II",
+      "gameCode": "dt2"
+    },
+    {
+      "gameType": "Video Slots",
+      "gameGroup": "Slots",
+      "gameName": "Top Trumps Celebs",
+      "gameCode": "ttc"
+    },
+    {
+      "gameType": "Video Slots",
+      "gameGroup": "Slots",
+      "gameName": "Diamond Valley Pro",
+      "gameCode": "dv2"
+    },
+    {
+      "gameType": "Video Slots",
+      "gameGroup": "Slots",
+      "gameName": "Fruit Mania",
+      "gameCode": "fmn"
+    },
+    {
+      "gameType": "Fixed-Odds Games",
+      "gameGroup": "Others",
+      "gameName": "Cashblox",
+      "gameCode": "gtscb"
+    },
+    {
+      "gameType": "Table Games",
+      "gameGroup": "Table Games",
+      "gameName": "Premium (European) Roulette",
+      "gameCode": "ro_g"
+    },
+    {
+      "gameType": "Video Slots",
+      "gameGroup": "Slots",
+      "gameName": "Dragon Kingdom",
+      "gameCode": "gtsdgk"
+    },
+    {
+      "gameType": "Video Slots",
+      "gameGroup": "Slots",
+      "gameName": "Sparta",
+      "gameCode": "spr"
+    },
+    {
+      "gameType": "Video Slots",
+      "gameGroup": "Slots",
+      "gameName": "The Jazz Club",
+      "gameCode": "gtsjzc"
+    },
+    {
+      "gameType": "Video Slots",
+      "gameGroup": "Slots",
+      "gameName": "Fei Cui Gong Zhu",
+      "gameCode": "fcgz"
+    },
+    {
+      "gameType": "Video Slots",
+      "gameGroup": "Slots",
+      "gameName": "Vacation Station Deluxe",
+      "gameCode": "vcstd"
+    },
+    {
+      "gameType": "Video Slots",
+      "gameGroup": "Slots",
+      "gameName": "Cat In Vegas",
+      "gameCode": "ctiv"
+    },
+    {
+      "gameType": "Video Slots",
+      "gameGroup": "Slots",
+      "gameName": "The Riches of Don Quixote",
+      "gameCode": "donq"
+    },
+    {
+      "gameType": "Video Slots",
+      "gameGroup": "Slots",
+      "gameName": "Chests of Plenty",
+      "gameCode": "ashcpl"
+    },
+    {
+      "gameType": "Video Slots",
+      "gameGroup": "Slots",
+      "gameName": "Sinbad&#39;s Golden Voyage",
+      "gameCode": "ashsbd"
+    },
+    {
+      "gameType": "Video Slots",
+      "gameGroup": "Slots",
+      "gameName": "Ice Run",
+      "gameCode": "gtsir"
+    },
+    {
+      "gameType": "Video Slots",
+      "gameGroup": "Slots",
+      "gameName": "The Great Ming Empire",
+      "gameCode": "gtsgme"
+    },
+    {
+      "gameType": "Video Slots",
+      "gameGroup": "Slots",
+      "gameName": "Fei Long Zai Tian",
+      "gameCode": "gtsflzt"
+    },
+    {
+      "gameType": "Video Slots",
+      "gameGroup": "Slots",
+      "gameName": "Bounty of the Beanstalk",
+      "gameCode": "ashbob"
+    },
+    {
+      "gameType": "Video Slots",
+      "gameGroup": "Slots",
+      "gameName": "Fairest of Them All",
+      "gameCode": "ashfta"
+    },
+    {
+      "gameType": "Video Slots",
+      "gameGroup": "Slots",
+      "gameName": "Sun Wukong",
+      "gameCode": "gtsswk"
+    },
+    {
+      "gameType": "Video Slots",
+      "gameGroup": "Slots",
+      "gameName": "Magical Stacks",
+      "gameCode": "mgstk"
+    },
+    {
+      "gameType": "Video Slots",
+      "gameGroup": "Slots",
+      "gameName": "Top Gun",
+      "gameCode": "topg"
+    },
+    {
+      "gameType": "Video Slots",
+      "gameGroup": "Slots",
+      "gameName": "Zhao Cai Jin Bao Jackpot",
+      "gameCode": "zcjbjp"
+    },
+    {
+      "gameType": "Video Slots",
+      "gameGroup": "Slots",
+      "gameName": "Zhao Cai Tong Zi",
+      "gameCode": "zctz"
+    },
+    {
+      "gameType": "Video Slots",
+      "gameGroup": "Slots",
+      "gameName": "Frankie Dettori&#39;s Magic Seven Jackpot",
+      "gameCode": "fdtjg"
+    },
+    {
+      "gameType": "Video Slots",
+      "gameGroup": "Slots",
+      "gameName": "Bai Shi",
+      "gameCode": "bs"
+    },
+    {
+      "gameType": "Video Slots",
+      "gameGroup": "Slots",
+      "gameName": "Si Xiang",
+      "gameCode": "sx"
+    },
+    {
+      "gameType": "Video Slots",
+      "gameGroup": "Slots",
+      "gameName": "Ji Xiang 8",
+      "gameCode": "gtsjxb"
+    },
+    {
+      "gameType": "Video Slots",
+      "gameGroup": "Slots",
+      "gameName": "Land of Gold",
+      "gameCode": "lndg"
+    },
+    {
+      "gameType": "Video Slots",
+      "gameGroup": "Slots",
+      "gameName": "Geisha Story Jackpot",
+      "gameCode": "gesjp"
+    },
+    {
+      "gameType": "Video Slots",
+      "gameGroup": "Slots",
+      "gameName": "Wu Long Jackpot",
+      "gameCode": "wlgjp"
+    },
+    {
+      "gameType": "Video Slots",
+      "gameGroup": "Slots",
+      "gameName": "Silent Samurai Jackpot",
+      "gameCode": "sisjp"
+    },
+    {
+      "gameType": "Video Slots",
+      "gameGroup": "Slots",
+      "gameName": "Queen Of Wands",
+      "gameCode": "qnw"
+    },
+    {
+      "gameType": "Video Slots",
+      "gameGroup": "Slots",
+      "gameName": "Liu Fu Shou",
+      "gameCode": "kfp"
+    },
+    {
+      "gameType": "Video Slots",
+      "gameGroup": "Slots",
+      "gameName": "Jin Qian Wa",
+      "gameCode": "jqw"
+    },
+    {
+      "gameType": "Video Slots",
+      "gameGroup": "Slots",
+      "gameName": "Age of The Gods ™",
+      "gameCode": "aogs"
+    },
+    {
+      "gameType": "Video Slots",
+      "gameGroup": "Slots",
+      "gameName": "Age of The Gods: Furious Four",
+      "gameCode": "furf"
+    },
+    {
+      "gameType": "Live Dealer Games",
+      "gameGroup": "Live Dealers Casino",
+      "gameName": "No Commision Live Baccarat",
+      "gameCode": "nc_7bal"
+    },
+    {
+      "gameType": "Live Dealer Games",
+      "gameGroup": "Live Dealers Casino",
+      "gameName": "No Commission Mini Baccarat Live",
+      "gameCode": "nc_bal"
+    },
+    {
+      "gameType": "Video Slots",
+      "gameGroup": "Slots",
+      "gameName": "Five Tiger Generals",
+      "gameCode": "ftg"
+    },
+    {
+      "gameType": "Video Slots",
+      "gameGroup": "Slots",
+      "gameName": "Wu Lu Cai Shen",
+      "gameCode": "wlcsh"
+    },
+    {
+      "gameType": "Video Slots",
+      "gameGroup": "Slots",
+      "gameName": "Spud O&#39;Reillys Crops of Gold",
+      "gameCode": "spud"
+    },
+    {
+      "gameType": "Video Slots",
+      "gameGroup": "Slots",
+      "gameName": "Age of The Gods: Goddess of Wisdom",
+      "gameCode": "athn"
+    },
+    {
+      "gameType": "Video Slots",
+      "gameGroup": "Slots",
+      "gameName": "Long Long Long",
+      "gameCode": "longlong"
+    },
+    {
+      "gameType": "Video Slots",
+      "gameGroup": "Slots",
+      "gameName": "Chaoji 888",
+      "gameCode": "chao"
+    },
+    {
+      "gameType": "Video Slots",
+      "gameGroup": "Slots",
+      "gameName": "Buffalo Blitz",
+      "gameCode": "bfb"
+    },
+    {
+      "gameType": "Video Slots",
+      "gameGroup": "Slots",
+      "gameName": "Age of The Gods: King of Olympus",
+      "gameCode": "zeus"
+    },
+    {
+      "gameType": "Video Slots",
+      "gameGroup": "Slots",
+      "gameName": "Gem Queen",
+      "gameCode": "gemq"
+    },
+    {
+      "gameType": "Video Slots",
+      "gameGroup": "Slots",
+      "gameName": "Inca Jackpot",
+      "gameCode": "aztec"
+    },
+    {
+      "gameType": "Video Slots",
+      "gameGroup": "Slots",
+      "gameName": "Age of The Gods: Prince of Olympus",
+      "gameCode": "hrcls"
+    },
+    {
+      "gameType": "Video Slots",
+      "gameGroup": "Slots",
+      "gameName": "Halloween Fortune II",
+      "gameCode": "hlf2"
+    },
+    {
+      "gameType": "Video Slots",
+      "gameGroup": "Slots",
+      "gameName": "Feng Kuang Ma Jiang",
+      "gameCode": "fkmj"
+    },
+    {
+      "gameType": "Table Games",
+      "gameGroup": "Table Games",
+      "gameName": "Fish Prawn Crab",
+      "gameCode": "gtsfpc"
+    },
+    {
+      "gameType": "Video Slots",
+      "gameGroup": "Slots",
+      "gameName": "Ri Ri Jin Cai",
+      "gameCode": "ririjc"
+    },
+    {
+      "gameType": "Video Slots",
+      "gameGroup": "Slots",
+      "gameName": "Miss Fortune",
+      "gameCode": "mfrt"
+    },
+    {
+      "gameType": "Video Slots",
+      "gameGroup": "Slots",
+      "gameName": "Age of The Gods: Fate Sisters",
+      "gameCode": "ftsis"
+    },
+    {
+      "gameType": "Video Slots",
+      "gameGroup": "Slots",
+      "gameName": "Ri Ri Sheng Cai",
+      "gameCode": "ririshc"
+    },
+    {
+      "gameType": "Video Slots",
+      "gameGroup": "Slots",
+      "gameName": "Jade Emperor",
+      "gameCode": "gtsje"
+    },
+    {
+      "gameType": "Fixed-Odds Games",
+      "gameGroup": "Others",
+      "gameName": "Cash Fish",
+      "gameCode": "cashfi"
+    },
+    {
+      "gameType": "Video Slots",
+      "gameGroup": "Slots",
+      "gameName": "Triple Monkey",
+      "gameCode": "trpmnk"
+    },
+    {
+      "gameType": "Video Slots",
+      "gameGroup": "Slots",
+      "gameName": "Wild Gambler 2: Arctic Adventure",
+      "gameCode": "ashwgaa"
+    },
+    {
+      "gameType": "Video Slots",
+      "gameGroup": "Slots",
+      "gameName": "Fortune Day",
+      "gameCode": "fday"
+    },
+    {
+      "gameType": "Video Slots",
+      "gameGroup": "Slots",
+      "gameName": "Lotto Madness",
+      "gameCode": "lm"
+    },
+    {
+      "gameType": "Video Slots",
+      "gameGroup": "Slots",
+      "gameName": "Lie Yan Zuan Shi",
+      "gameCode": "ght_a"
+    },
+    {
+      "gameType": "Video Slots",
+      "gameGroup": "Slots",
+      "gameName": "Time for a Deal",
+      "gameCode": "ashtmd"
+    },
+    {
+      "gameType": "Video Slots",
+      "gameGroup": "Slots",
+      "gameName": "Adventures in Wonderland",
+      "gameCode": "ashadv"
+    },
+    {
+      "gameType": "Video Slots",
+      "gameGroup": "Slots",
+      "gameName": "The Glass Slipper",
+      "gameCode": "ashglss"
+    },
+    {
+      "gameType": "Video Slots",
+      "gameGroup": "Slots",
+      "gameName": "Savannah Cash",
+      "gameCode": "savcas"
+    },
+    {
+      "gameType": "Video Slots",
+      "gameGroup": "Slots",
+      "gameName": "Fortune Lions",
+      "gameCode": "pop_swfl_skw"
+    },
+    {
+      "gameType": "Video Slots",
+      "gameGroup": "Slots",
+      "gameName": "Hot KTV",
+      "gameCode": "hotktv"
+    },
+    {
+      "gameType": "Table Games",
+      "gameGroup": "Table Games",
+      "gameName": "Age Of The Gods Roulette",
+      "gameCode": "aogro"
+    },
+    {
+      "gameType": "Video Slots",
+      "gameGroup": "Slots",
+      "gameName": "Heavenly Ruler",
+      "gameCode": "heavru"
+    },
+    {
+      "gameType": "Video Slots",
+      "gameGroup": "Slots",
+      "gameName": "Si Ling",
+      "gameCode": "pop_swsl_skw"
+    },
+    {
+      "gameType": "Video Slots",
+      "gameGroup": "Slots",
+      "gameName": "Super Lion",
+      "gameCode": "slion"
+    },
+    {
+      "gameType": "Video Slots",
+      "gameGroup": "Slots",
+      "gameName": "Haoshi Cheng Shuang",
+      "gameCode": "pop_swhcs_skw"
+    },
+    {
+      "gameType": "Video Slots",
+      "gameGroup": "Slots",
+      "gameName": "Warriors Gold",
+      "gameCode": "warg"
+    },
+    {
+      "gameType": "Video Slots",
+      "gameGroup": "Slots",
+      "gameName": "8 Treasures 1 Queen",
+      "gameCode": "pop_sw_8tr1qu_skw"
+    },
+    {
+      "gameType": "Video Slots",
+      "gameGroup": "Slots",
+      "gameName": "Tiao Tiao Mao Mao",
+      "gameCode": "titimama"
+    },
+    {
+      "gameType": "Video Slots",
+      "gameGroup": "Slots",
+      "gameName": "Egypt Spin",
+      "gameCode": "egspin"
+    },
+    {
+      "gameType": "Video Slots",
+      "gameGroup": "Slots",
+      "gameName": "Sugar Land",
+      "gameCode": "sugla"
+    },
+    {
+      "gameType": "Video Slots",
+      "gameGroup": "Slots",
+      "gameName": "Age of the Gods: God of Storms",
+      "gameCode": "aeolus"
+    },
+    {
+      "gameType": "Video Slots",
+      "gameGroup": "Slots",
+      "gameName": "Heart of the Frontier",
+      "gameCode": "ashhof"
+    },
+    {
+      "gameType": "Video Slots",
+      "gameGroup": "Slots",
+      "gameName": "Ice Cave",
+      "gameCode": "ashicv"
+    },
+    {
+      "gameType": "Video Slots",
+      "gameGroup": "Slots",
+      "gameName": "Legacy Of The Wild",
+      "gameCode": "legwld"
+    },
+    {
+      "gameType": "Table Games",
+      "gameGroup": "Table Games",
+      "gameName": "Dragon Jackpot Roulette",
+      "gameCode": "drgro"
+    },
+    {
+      "gameType": "Video Slots",
+      "gameGroup": "Slots",
+      "gameName": "Funky Monkey Jackpot",
+      "gameCode": "fmjp"
+    },
+    {
+      "gameType": "Video Slots",
+      "gameGroup": "Slots",
+      "gameName": "Great blue Jackpot",
+      "gameCode": "grbjp"
+    },
+    {
+      "gameType": "Video Slots",
+      "gameGroup": "Slots",
+      "gameName": "Yun Cong Long",
+      "gameCode": "yclong"
+    },
+    {
+      "gameType": "Video Slots",
+      "gameGroup": "Slots",
+      "gameName": "Xuan Pu Lian Huan",
+      "gameCode": "xufe"
+    },
+    {
+      "gameType": "Video Slots",
+      "gameGroup": "Slots",
+      "gameName": "Gaelic Luck",
+      "gameCode": "popc"
+    },
+    {
+      "gameType": "Video Slots",
+      "gameGroup": "Slots",
+      "gameName": "Pixel Samurai",
+      "gameCode": "pisa"
+    },
+    {
+      "gameType": "Video Slots",
+      "gameGroup": "Slots",
+      "gameName": "Pharaoh’s Treasure Deluxe",
+      "gameCode": "phtd"
+    },
+    {
+      "gameType": "Video Slots",
+      "gameGroup": "Slots",
+      "gameName": "Jungle Giants",
+      "gameCode": "jnglg"
+    },
+    {
+      "gameType": "Video Slots",
+      "gameGroup": "Slots",
+      "gameName": "Epic Ape",
+      "gameCode": "epa"
+    },
+    {
+      "gameType": "Video Slots",
+      "gameGroup": "Slots",
+      "gameName": "Dragon Champions",
+      "gameCode": "drgch"
+    },
+    {
+      "gameType": "Video Slots",
+      "gameGroup": "Slots",
+      "gameName": "Ways of the Phoenix",
+      "gameCode": "wotp"
+    },
+    {
+      "gameType": "Video Slots",
+      "gameGroup": "Slots",
+      "gameName": "Coin Coin Coin",
+      "gameCode": "ccccny"
+    },
+    {
+      "gameType": "Video Slots",
+      "gameGroup": "Slots",
+      "gameName": "Tiger Claw",
+      "gameCode": "tigc"
+    },
+    {
+      "gameType": "Video Slots",
+      "gameGroup": "Slots",
+      "gameName": "Anaconda Wild",
+      "gameCode": "anwild"
+    },
+    {
+      "gameType": "Video Slots",
+      "gameGroup": "Slots",
+      "gameName": "Panther Pays",
+      "gameCode": "gpas_panthpays_pop"
+    },
+    {
+      "gameType": "Video Slots",
+      "gameGroup": "Slots",
+      "gameName": "Raiders of the Hidden Realm",
+      "gameCode": "gpas_rothr_pop"
+    },
+    {
+      "gameType": "Video Slots",
+      "gameGroup": "Slots",
+      "gameName": "Legend of the Jaguar",
+      "gameCode": "gpas_lotj_pop"
+    },
+    {
+      "gameType": "Video Slots",
+      "gameGroup": "Slots",
+      "gameName": "Fiesta de la Memoria",
+      "gameCode": "gpas_fiesta_pop"
+    },
+    {
+      "gameType": "Video Slots",
+      "gameGroup": "Slots",
+      "gameName": "Satsumo&#39;s Revenge",
+      "gameCode": "gpas_satsumo_pop"
+    },
+    {
+      "gameType": "Video Slots",
+      "gameGroup": "Slots",
+      "gameName": "Dragon Riches",
+      "gameCode": "pop_sw_dr_skw"
+    },
+    {
+      "gameType": "Video Slots",
+      "gameGroup": "Slots",
+      "gameName": "Ying Xiong Lu Bu",
+      "gameCode": "pop_sw_yxlb_skw"
+    },
+    {
+      "gameType": "Video Slots",
+      "gameGroup": "Slots",
+      "gameName": "Eternal Lady",
+      "gameCode": "gpas_elady_pop"
+    },
+    {
+      "gameType": "Video Slots",
+      "gameGroup": "Slots",
+      "gameName": "Jinfu Xingyun",
+      "gameCode": "gpas_xjinfu_pop"
+    },
+    {
+      "gameType": "Video Slots",
+      "gameGroup": "Slots",
+      "gameName": "Sky Queen",
+      "gameCode": "gpas_squeen_pop"
+    },
+    {
+      "gameType": "Video Slots",
+      "gameGroup": "Slots",
+      "gameName": "Tiger Turtle Dragon Phoenix",
+      "gameCode": "gpas_tigertdp_pop"
+    },
+    {
+      "gameType": "Video Slots",
+      "gameGroup": "Slots",
+      "gameName": "Fat Choy Choy Sun",
+      "gameCode": "gpas_fatchoy_pop"
+    },
+    {
+      "gameType": "Video Slots",
+      "gameGroup": "Slots",
+      "gameName": "Jin Qian Wa Jackpot",
+      "gameCode": "pop_sw_jqw_ab_jp_skw"
+    },
+    {
+      "gameType": "Video Slots",
+      "gameGroup": "Slots",
+      "gameName": "Respin Mania Wu Shi Jackpot",
+      "gameCode": "pop_sw_rm_ab_jp_skw"
+    },
+    {
+      "gameType": "Video Slots",
+      "gameGroup": "Slots",
+      "gameName": "Zhao Cai Tong Zi Jackpot",
+      "gameCode": "pop_shctz_ab_jp_skw"
+    },
+    {
+      "gameType": "Video Slots",
+      "gameGroup": "Slots",
+      "gameName": "Dragon Bond",
+      "gameCode": "gpas_dbond_pop"
+    },
+    {
+      "gameType": "Video Slots",
+      "gameGroup": "Slots",
+      "gameName": "Jinfu Long",
+      "gameCode": "gpas_jflong_pop"
+    },
+    {
+      "gameType": "Video Slots",
+      "gameGroup": "Slots",
+      "gameName": "Pharaoh’s Daughter",
+      "gameCode": "gpas_scqueen_pop"
+    },
+    {
+      "gameType": "Video Slots",
+      "gameGroup": "Slots",
+      "gameName": "Savage Jungle",
+      "gameCode": "gpas_sjungle_pop"
+    },
+    {
+      "gameType": "Video Slots",
+      "gameGroup": "Slots",
+      "gameName": "Free Chip Blackjack",
+      "gameCode": "fcbj"
+    },
+    {
+      "gameType": "Video Slots",
+      "gameGroup": "Slots",
+      "gameName": "Long Jia Xiang Yun",
+      "gameCode": "ljxy"
+    },
+    {
+      "gameType": "Video Slots",
+      "gameGroup": "Slots",
+      "gameName": "Aztec Reel",
+      "gameCode": "pop_sw_ar_skw"
+    },
+    {
+      "gameType": "Video Slots",
+      "gameGroup": "Slots",
+      "gameName": "Fire Reel",
+      "gameCode": "pop_sw_fr_skw"
+    },
+    {
+      "gameType": "Video Slots",
+      "gameGroup": "Slots",
+      "gameName": "Metal Reel",
+      "gameCode": "pop_sw_mr_skw"
+    },
+    {
+      "gameType": "Video Slots",
+      "gameGroup": "Slots",
+      "gameName": "Riverboat Reel",
+      "gameCode": "pop_sw_rr_skw"
+    },
+    {
+      "gameType": "Video Slots",
+      "gameGroup": "Slots",
+      "gameName": "Water Reel",
+      "gameCode": "pop_sw_wrl_skw"
+    },
+    {
+      "gameType": "Video Slots",
+      "gameGroup": "Slots",
+      "gameName": "Blue Wizard",
+      "gameCode": "gpas_bwizard_pop"
+    },
+    {
+      "gameType": "Video Slots",
+      "gameGroup": "Slots",
+      "gameName": "Tsai Shens Gift",
+      "gameCode": "gpas_tsgift_pop"
+    },
+    {
+      "gameType": "Video Slots",
+      "gameGroup": "Slots",
+      "gameName": "Tiger Stacks",
+      "gameCode": "gpas_tstacks_pop"
+    },
+    {
+      "gameType": "Video Slots",
+      "gameGroup": "Slots",
+      "gameName": "Ni Shu Shen Me",
+      "gameCode": "gpas_nsshen_pop"
+    },
+    {
+      "gameType": "Video Slots",
+      "gameGroup": "Slots",
+      "gameName": "White King 2",
+      "gameCode": "whk2"
+    },
+    {
+      "gameType": "Video Slots",
+      "gameGroup": "Slots",
+      "gameName": "Monkey Mania",
+      "gameCode": "mnkmn"
     }
-];
+  ];
 
-console.log(a.map(({GameType, GameCode, GameName, Image1}) => ({
-    code: GameCode,
-    name: GameName,
-    thumbnail: Image1,
-    type: GameType
-})))
+console.log(JSON.stringify(a.map(({gameGroup, gameCode, gameName, Image1}) => ({
+    code: gameCode,
+    name: gameName,
+    thumbnail: gameCode + '.jpg',
+    type: gameGroup
+}))))
