@@ -29,7 +29,7 @@ const ITEMS = [
     target: ''
   },
   {
-    icon: 'contact.png',
+    icon: 'wa.png',
     isExtenal: false,
     label: 'WhatsApp',
     route: 'promotion',
