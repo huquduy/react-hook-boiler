@@ -3,16 +3,10 @@ import {
   List,
   ListItem
 } from '@material-ui/core'
-import {
-  LocalAtm as LocalAtmIcon,
-  Menu as MenuIcon,
-  MoreHoriz as MoreHorizIcon
-} from '@material-ui/icons'
 import { imageSrc } from 'config'
 import { map } from 'ramda'
 import React from 'react'
-import { Link, RouteComponentProps, withRouter} from 'react-router-dom'
-import store from 'store'
+import { Link }from 'react-router-dom'
 import SIDEBAR from './constant'
 import './style.scss'
 
