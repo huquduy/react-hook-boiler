@@ -2,34 +2,44 @@ import { BottomNavigation, BottomNavigationAction, Typography} from '@material-u
 import { imageSrc } from 'config'
 import { map } from 'ramda'
 import React, { useState } from 'react'
-import { RouteComponentProps, withRouter } from 'react-router-dom'
+import { Link, RouteComponentProps, withRouter} from 'react-router-dom'
 import './style.scss'
 
 interface IItem {
   icon: string;
   label: string;
   route: string;
+  target: string;
+  isExtenal: boolean;
 }
 
 const ITEMS = [
   {
     icon: 'home.png',
+    isExtenal: false,
     label: 'Home',
-    route: 'home'
+    route: 'home',
+    target: '',
   },
   {
     icon: 'promotion.png',
+    isExtenal: false,
     label: 'Promotion',
-    route: 'promotion'
+    route: 'promotion',
+    target: ''
   },
   {
     icon: 'contact.png',
+    isExtenal: true,
     label: 'WhatsApp',
-    route: 'promotion'
+    route: 'promotion',
+    target: ''
   },{
     icon: 'contact.png',
-    label: ' ',
-    route: ''
+    isExtenal: false,
+    label: 'Live Chat',
+    route: 'https://v2.zopim.com/widget/livechat.html?key=4AV3AjiTSLlEJzZEwHTFojUPOVayt8Wr&&lang=ms&hostname=www.hokibet188.com&api_calls=%5B%5D',
+    target: '_blank'
   }
 ]
 
@@ -57,12 +67,13 @@ const Bottom: React.FC<RouteComponentProps> = ({ history }) => {
         className='bottom'
       >
         {
-          map(({ icon, label }: IItem) => <BottomNavigationAction
+          map(({ icon, label, route , target, isExtenal}: IItem) => <BottomNavigationAction
             key={label}
             label={<Typography style={{color: '#efd77f'}} variant="caption" display="block" gutterBottom={true}>
               {label}
             </Typography>}
             icon={<img className='icon' alt='hokibet188' src={`${imageSrc}icons/${icon}`} />}
+            component={Link}  to={route} target={target} rel="noopener noreferrer"
           />, ITEMS)
         }
       </BottomNavigation>
