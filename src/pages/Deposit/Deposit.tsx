@@ -78,15 +78,20 @@ const Deposit: React.FC<RouteComponentProps> = ({ history }) => {
         title: bankName,
         value: String(id)
       })
-      const { data: bankResps }: { data: any[] } = await withLoading(() => get({
+      const { data: bankResps, error }: { data: any[], error:string } = await withLoading(() => get({
         path: 'banking'
       }))
         .catch((err) => err)
+      if(error){
+        return ;
+      }
       setBanks(map(correctBankProps, bankResps))
       const initialBank = 0;
       setInitialValues({
         ...initialValues,
-        bankId: initialBank
+        accountName: bankResps[initialBank].accountName,
+        accountNumber: bankResps[initialBank].accountNumber,
+        bankId: initialBank,
       })
     }
     fetchBanks()
