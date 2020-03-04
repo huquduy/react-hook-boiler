@@ -8,7 +8,7 @@ import { getGameType, IProviderProps, SLOT_TAB } from 'constant/games'
 import { filter, map, reduce } from 'ramda'
 import React, {useCallback, useEffect, useMemo, useState} from 'react'
 import ReactImageFallback from "react-image-fallback"
-import { useHistory, useParams, withRouter } from 'react-router-dom'
+import { useHistory, useParams, withRouter, Link } from 'react-router-dom'
 import gamesByProvider, { IGames } from './constant'
 import './style.scss'
 
@@ -119,10 +119,11 @@ const Home: React.FC = () => {
         
         <TabPanel value={activeGroup}>
           <Grid container={true} spacing={1}>
-            {map(({ code, name, thumbnail }: IGames) => 
+            {map(({ code, name, thumbnail, linkGame }: IGames) => 
               <Grid item={true} xs={4} sm={4} key={code}>
                 <Paper className='provider'>
-                  <ReactImageFallback
+                <Link to={`${linkGame}${code}` || ''}>
+                <ReactImageFallback
                     fallbackImage='/images/404.jpg'
                     className='game'
                     alt='hokibet188'
@@ -130,6 +131,7 @@ const Home: React.FC = () => {
                   <Typography variant="caption" display="block" gutterBottom={true}>
                     {name}
                   </Typography>
+                </Link>
                 </Paper>
               </Grid>
             , gamesAvailable)}
