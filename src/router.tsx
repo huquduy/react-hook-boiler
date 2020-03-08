@@ -19,6 +19,7 @@ const AboutUs = lazy(()=> import ('./pages/AboutUs'))
 const Privacy = lazy(()=> import ('./pages/Privacy'))
 const Banking = lazy(()=> import ('./pages/Banking'))
 const Reponsible = lazy(()=> import ('./pages/Reponsible'))
+const PlayingTG = lazy(()=> import ('./pages/PlayingTG'))
 
 
 const Router = () => {
@@ -41,6 +42,7 @@ const Router = () => {
           <Route path="/about-us" component={AboutUs} />
           <Route path="/banking" component={Banking} />
           <Route path="/reposible" component={Reponsible} />
+          <Route path="/gamesoft/tg/groups/:group/types/:type/codes/:code" component={PlayingTG} />
         </Switch>
       </Suspense>
     </BrowserRouter>
