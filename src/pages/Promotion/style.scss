@@ -1,0 +1,51 @@
+@import "../../colors";
+
+.promotion-page {
+  margin-top: 56px;
+  color: $primaryColor;
+  background: $backgroundBody;
+  .title {
+    line-height: 70px;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 15px;
+    > div {
+      margin-top: 15px;
+      width: 95%;
+      align-self: center;
+    }
+    img{
+        width: 100%;
+    }
+  }
+  .MuiPaper-root{
+      color: $primaryColor;
+  }
+  .MuiExpansionPanelSummary-root{
+      padding: 0;
+  }
+  .MuiExpansionPanelSummary-content{
+      margin: 0;
+  }
+  .MuiExpansionPanel-root{
+      border: 1px solid $primaryColor;
+      border-radius: 0;
+  }
+  .MuiExpansionPanelSummary-root.Mui-expanded{
+      min-height:58px;
+  }
+  .MuiExpansionPanelDetails-root {
+    text-align: left;
+    display: flex;
+    padding: 8px 8px 8px;
+    ul{
+        margin: 0;
+        padding: 20px 20px;
+    }
+    h4{
+        margin:0;
+    }
+}
+}
