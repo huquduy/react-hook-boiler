@@ -6,6 +6,7 @@ export interface IGames {
   name: string,
   thumbnail: string,
   group?: string,
+  linkGame?: string,
 }
 
 export default {

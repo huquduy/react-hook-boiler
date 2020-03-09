@@ -139,7 +139,7 @@ const Register: React.FC<RouteComponentProps> = ({ history }) => {
                   validate={composeValidators(required, minLength(11), maxLength(16))}
                   name="phone"
                   label="Phone number:"
-                  type="number"
+                  type="text"
                   fullWidth={true}
                   component={TextInput} />
               </div>

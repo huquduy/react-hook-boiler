@@ -16,7 +16,7 @@ export default () => [
   },
   {
     icon: 'slots.png',
-    route: '/slot',
+    route: '/slots/joker',
     title: 'Slots',
   },
   {

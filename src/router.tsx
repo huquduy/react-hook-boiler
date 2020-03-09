@@ -19,7 +19,10 @@ const AboutUs = lazy(()=> import ('./pages/AboutUs'))
 const Privacy = lazy(()=> import ('./pages/Privacy'))
 const Banking = lazy(()=> import ('./pages/Banking'))
 const Reponsible = lazy(()=> import ('./pages/Reponsible'))
+const Promotion = lazy(()=> import ('./pages/Promotion'))
+const Faq = lazy(()=> import ('./pages/Faq'))
 const PlayingTG = lazy(()=> import ('./pages/PlayingTG'))
+const Contact = lazy(()=> import ('./pages/Contact'))
 
 
 const Router = () => {
@@ -42,6 +45,9 @@ const Router = () => {
           <Route path="/about-us" component={AboutUs} />
           <Route path="/banking" component={Banking} />
           <Route path="/reposible" component={Reponsible} />
+          <Route path="/promotion" component={Promotion} />
+          <Route path="/faq" component={Faq} />
+          <Route path="/contact" component={Contact} />
           <Route path="/gamesoft/tg/groups/:group/types/:type/codes/:code" component={PlayingTG} />
         </Switch>
       </Suspense>

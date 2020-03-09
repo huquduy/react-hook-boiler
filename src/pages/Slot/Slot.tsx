@@ -129,7 +129,7 @@ const Home: React.FC = () => {
         
         <TabPanel value={activeGroup}>
           <Grid container={true} spacing={1}>
-            {map(({ code, name, thumbnail }: IGames) => 
+            {map(({ code, name, thumbnail, linkGame }: IGames) => 
               <Grid item={true} xs={4} sm={4} key={code}>
                 <Link to={genarateLoginPage(providerId, code)} target="_blank">
                   <Paper className='provider'>
