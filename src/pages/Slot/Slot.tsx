@@ -8,7 +8,7 @@ import { getGameType, IProviderProps, SLOT_TAB } from 'constant/games'
 import { filter, map, reduce } from 'ramda'
 import React, {useCallback, useEffect, useMemo, useState} from 'react'
 import ReactImageFallback from "react-image-fallback"
-import { useHistory, useParams, withRouter, Link } from 'react-router-dom'
+import { Link, useHistory, useParams, withRouter } from 'react-router-dom'
 import gamesByProvider, { IGames } from './constant'
 import './style.scss'
 
@@ -19,6 +19,16 @@ const Home: React.FC = () => {
   const [freeSearch, setFreeSearch] = useState<string>('')
   const [activeGroup, setActiveGroup] = useState<string>('')
   const [gamesAvailable, setGamesAvailable] = useState<IGames[]>([])
+
+  const genarateLoginPage = (type: string, code: string) => {
+    const proxies = {
+      joker: `/gamesoft/tg/groups/SLOTS/types/JOKER/codes/${code}`
+    }
+    if (proxies[type]) {
+      return proxies[type]
+    }
+    return ''
+  }
 
   const { providers } : { providers: IProviderProps[] } = useMemo(() => getGameType(SLOT_TAB), [])
 
@@ -67,7 +77,7 @@ const Home: React.FC = () => {
       {/* Provider list */}
       <div className='game-tabs'>
         <Tabs
-          value={`slots/${providerId}`}
+          value={`/slots/${providerId}`}
           onChange={handleChangeProvider}
           indicatorColor="primary"
           variant="scrollable"
@@ -121,18 +131,18 @@ const Home: React.FC = () => {
           <Grid container={true} spacing={1}>
             {map(({ code, name, thumbnail, linkGame }: IGames) => 
               <Grid item={true} xs={4} sm={4} key={code}>
-                <Paper className='provider'>
-                <Link to={`${linkGame}${code}` || ''}>
-                <ReactImageFallback
-                    fallbackImage='/images/404.jpg'
-                    className='game'
-                    alt='hokibet188'
-                    src={thumbnail} />
-                  <Typography variant="caption" display="block" gutterBottom={true}>
-                    {name}
-                  </Typography>
+                <Link to={genarateLoginPage(providerId, code)} target="_blank">
+                  <Paper className='provider'>
+                    <ReactImageFallback
+                      fallbackImage='/images/404.jpg'
+                      className='game'
+                      alt='hokibet188'
+                      src={thumbnail} />
+                    <Typography variant="caption" display="block" gutterBottom={true}>
+                      {name}
+                    </Typography>
+                  </Paper>
                 </Link>
-                </Paper>
               </Grid>
             , gamesAvailable)}
           </Grid>
