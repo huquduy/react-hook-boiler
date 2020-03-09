@@ -26,7 +26,7 @@ export default () => [
     },
     {
       icon: 'slots.png',
-      route: '/contact-us',
+      route: '/contact',
       title: 'CONTACT US',
     },
     {

@@ -1,0 +1,17 @@
+@import "../../colors";
+table.table-contact{
+    border-spacing: 0;
+    width: 100%;
+  tr{
+      td{
+        border:1px solid $primaryColor;
+      }
+  }
+}
+ul{
+    li{
+        list-style: none;
+        display: inline-block;
+        margin-right:5px;
+    }
+}
