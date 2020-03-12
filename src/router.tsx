@@ -22,6 +22,7 @@ const Reponsible = lazy(()=> import ('./pages/Reponsible'))
 const Promotion = lazy(()=> import ('./pages/Promotion'))
 const Faq = lazy(()=> import ('./pages/Faq'))
 const PlayingTG = lazy(()=> import ('./pages/PlayingTG'))
+const PlayingGS = lazy(()=> import ('./pages/PlayingGS'))
 const Contact = lazy(()=> import ('./pages/Contact'))
 
 
@@ -48,7 +49,8 @@ const Router = () => {
           <Route path="/promotion" component={Promotion} />
           <Route path="/faq" component={Faq} />
           <Route path="/contact" component={Contact} />
-          <Route path="/gamesoft/tg/groups/:group/types/:type/codes/:code" component={PlayingTG} />
+          <Route path="/tg/groups/:group/types/:type/codes/:code" component={PlayingTG} />
+          <Route path="/gs/groups/:group/types/:type/codes/:code" component={PlayingGS} />
         </Switch>
       </Suspense>
     </BrowserRouter>
