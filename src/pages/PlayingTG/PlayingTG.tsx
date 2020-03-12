@@ -8,14 +8,17 @@ const PlayingTG: React.FC = () => {
   const [isLoading, withLoading, Loading] = useLoading(false)
   const [loginUrl, setLoginUrl] = useState<string>('')
   const [token, setToken] = useState<any>('')
-  const { group, type, code } = useParams()
+  const { group, type = 'joker', code } = useParams()
 
   useEffect(() => {
     const getToken = async () => {
-      const resp = await withLoading(() => get({
-        path: 'sbo/login'
+      const { token: tokenResp } = await withLoading(() => get({
+        body: {
+          provider: type.toLocaleLowerCase()
+        },
+        path: 'game/login',
       }))
-      setToken(resp)
+      setToken(tokenResp)
     }
     setLoginUrl(`http://wwwut01.tr8games.com/middleware/v1/Dispatch/Game/${group}/${type}/${code}/MOBILE/en-US`)
     getToken()

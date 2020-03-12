@@ -41,8 +41,8 @@ export const getToken = () =>{
 
 export const get = async ({ path, body } : { path: string, body?: any }) => {
   const url = baseUrl + path
-  const response = await fetch(url, {
-    body: body ? JSON.stringify(body) : undefined,
+  const queryString = body ? new URLSearchParams(body) : ''
+  const response = await fetch(`${url}?${queryString}`, {
     headers: attachHeaders()
   })
   const responseHandledError = handleErrors(response)

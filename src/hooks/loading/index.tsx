@@ -2,12 +2,12 @@ import LinearProgress, { LinearProgressProps } from "@material-ui/core/LinearPro
 import React, { useState } from "react"
 import './style.scss'
 
-type TCallback = () => void
-type HookLoading = (status: boolean) => [boolean, (callback: TCallback) => Promise<void>, React.FC<LinearProgressProps>]
+type TCallback = () => any
+type HookLoading = (status: boolean) => [boolean, (callback: TCallback) => Promise<any>, React.FC<LinearProgressProps>]
 
 const useLoading: HookLoading = (status) => {
   const [loading, setLoading] = useState(status)
-  const withLoading = async (callback: TCallback): Promise<void> => {
+  const withLoading = async (callback: TCallback): Promise<any> => {
     setLoading(true)
     try {
       const response = await callback()
