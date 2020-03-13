@@ -23,7 +23,7 @@ const sidebar: React.FC= () => {
           <React.Fragment key={title}>
             <ListItem button={true} key={title} >
               <Link to={route} className='item'>
-                {<img alt='hokibet188' style={{ width: 40 }} src={`${imageSrc}/icons/${icon}`} />}
+                {/* {<img alt='hokibet188' style={{ width: 40 }} src={`${imageSrc}/icons/${icon}`} />} */}
                 <span style={{ color: '#fff', display: 'block' }}>{title}</span>
               </Link>
             </ListItem>
@@ -34,7 +34,7 @@ const sidebar: React.FC= () => {
          <ListItem button={true}>
          <Link to={'/more-page'} className='item'>
               <div style={{ textAlign: 'center', width: '100%' }}>
-                <img alt="hokibet188" style={{ width: 40 }} src={`${imageSrc}/icons/more_horiz.svg`} />
+                {/* <img alt="hokibet188" style={{ width: 40 }} src={`${imageSrc}/icons/more_horiz.svg`} /> */}
                 <span style={{ color: '#fff', display: 'block' }}>More</span>
               </div>
               </Link>
