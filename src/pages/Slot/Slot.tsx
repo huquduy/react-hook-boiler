@@ -22,7 +22,8 @@ const Home: React.FC = () => {
 
   const genarateLoginPage = (type: string, code: string) => {
     const proxies = {
-      joker: `/gamesoft/tg/groups/SLOTS/types/JOKER/codes/${code}`
+      joker: `/tg/groups/SLOTS/types/JOKER/codes/${code}`,
+      playtech: `/gs/groups/slots/types/playtech/codes/${code}`,
     }
     if (proxies[type]) {
       return proxies[type]
