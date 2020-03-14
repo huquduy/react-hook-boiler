@@ -8,19 +8,19 @@ const PlayingTG: React.FC = () => {
   const [isLoading, withLoading, Loading] = useLoading(false)
   const [loginUrl, setLoginUrl] = useState<string>('')
   const [token, setToken] = useState<any>('')
-  const { group, type = 'joker', code } = useParams()
+  const { group = 'joker', type, code } = useParams()
 
   useEffect(() => {
     const getToken = async () => {
       const { token: tokenResp } = await withLoading(() => get({
         body: {
-          provider: type.toLocaleLowerCase()
+          provider: group.toLocaleLowerCase()
         },
         path: 'game/login',
       }))
       setToken(tokenResp)
     }
-    setLoginUrl(`http://wwwut01.tr8games.com/middleware/v1/Dispatch/Game/${group}/${type}/${code}/MOBILE/en-US`)
+    setLoginUrl(`http://wwwut01.tr8games.com/middleware/v1/Dispatch/Game/${type}/${group}/${code}/MOBILE/en-US`)
     getToken()
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [group, type, code])

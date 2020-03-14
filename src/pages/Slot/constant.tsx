@@ -1,7 +1,9 @@
 import gameplay from './gameplay.constant'
 import joker from './joker.constant'
 import microgaming from './microgaming.constant'
+import pg from './pg.constant'
 import playtech from './playtech.constant'
+import pragmatic from './pragmatic.constant'
 
 export interface IGames {
   code: string,
@@ -15,5 +17,7 @@ export default {
   gameplay,
   joker,
   microgaming,
+  pg,
   playtech,
+  pragmatic,
 }

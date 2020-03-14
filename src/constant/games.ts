@@ -10,6 +10,7 @@ export interface IProviderProps {
   idName?: string;
   image: string;
   route: string;
+  target?: string;
 }
 
 export interface IGameTypeProps {
@@ -41,6 +42,12 @@ const GAMETYPES = [
         idName: 'Joker',
         image: 'joker.png',
         route: '/slots/joker'
+      },
+      {
+        idName: 'Asiagaming',
+        image: 'joker.png',
+        route: '/gs/groups/asiagaming/types/slot/codes/unused',
+        target: '_blank'
       },
       {
         idName: 'Pragmatic',
