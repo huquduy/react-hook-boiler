@@ -22,8 +22,10 @@ const Home: React.FC = () => {
 
   const genarateLoginPage = (type: string, code: string) => {
     const proxies = {
+      gameplay: `/gs/groups/gameplay/types/slots/codes/${code}`,
       joker: `/tg/groups/SLOTS/types/JOKER/codes/${code}`,
-      playtech: `/gs/groups/slots/types/playtech/codes/${code}`,
+      microgaming: `/gs/groups/microgaming/types/SL/codes/${code}`,
+      playtech: `/gs/groups/playtech/types/SL/codes/${code}`,
     }
     if (proxies[type]) {
       return proxies[type]
@@ -133,7 +135,7 @@ const Home: React.FC = () => {
             {map(({ code, name, thumbnail, linkGame }: IGames) => 
               <Grid item={true} xs={4} sm={4} key={code}>
                 <Link to={genarateLoginPage(providerId, code)} target="_blank">
-                  <Paper className='provider'>
+                  <Paper className={`provider ${providerId}`}>
                     <ReactImageFallback
                       fallbackImage='/images/404.jpg'
                       className='game'
