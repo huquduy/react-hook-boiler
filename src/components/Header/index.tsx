@@ -62,14 +62,15 @@ const Header: React.FC  = () => {
   return (
     <div className='header-wraper'>
       <Drawer open={isDrawerOpened} onClose={handleCloseDrawer}>
-        <div
+        {/* <div
           tabIndex={0}
           role="button"
           onClick={handleCloseDrawer}
           onKeyDown={handleCloseDrawer}
         >
-          <Sidebar />
-        </div>
+          
+        </div> */}
+        <Sidebar />
       </Drawer>
       <AppBar className='header' position="fixed">
         <Toolbar>
