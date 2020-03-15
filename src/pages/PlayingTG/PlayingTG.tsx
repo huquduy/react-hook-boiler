@@ -14,7 +14,7 @@ const PlayingTG: React.FC = () => {
     const getToken = async () => {
       const { token: tokenResp } = await withLoading(() => get({
         body: {
-          provider: group.toLocaleLowerCase()
+          provider: 'sbo'
         },
         path: 'game/login',
       }))

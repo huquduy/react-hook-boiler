@@ -57,12 +57,13 @@ const GAMETYPES = [
       {
         idName: '1S',
         image: '1s.png',
-        route: '/slots/1s'
+        route: '/slots/s1'
       },
       {
         idName: 'SBO',
         image: 'sbo.png',
-        route: '/slots/sbo'
+        route: '/tg/groups/SBO/types/SBO/codes/CQ9',
+        target: '_blank'
       },
       {
         idName: 'Gameplay',
