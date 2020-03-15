@@ -34,4 +34,22 @@
       padding: 0;
     }
   }
+  .microgaming {
+    overflow: hidden;
+    position: relative;
+    height: 130px;
+  }
+  
+  .microgaming img {
+    position: absolute;
+    clip-path: inset(0% 48% 0% 0%);
+    left: 10%;
+    height: 70%;
+    width: 175%;
+  }
+  .microgaming span {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
 }

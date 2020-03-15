@@ -56,7 +56,7 @@ const Deposit: React.FC<RouteComponentProps> = ({ history }) => {
         amount, password
       },
       path: 'deposit/execute'
-    })).catch((err) => err)
+    })).catch(err => err)
     if (error) {
       return showSnackbar(error)
     }

@@ -29,7 +29,7 @@ const Contact = lazy(()=> import ('./pages/Contact'))
 const Router = () => {
   return (
     <BrowserRouter>
-      <Suspense fallback={<div>Component is being loaded...</div>}>
+      <Suspense fallback={<div className='primary'>Component is being loaded...</div>}>
         <Switch>
           <Route exact={true} path="/" component={Home} />
           <Route path="/home" component={Home} />

@@ -10,6 +10,7 @@ export interface IProviderProps {
   idName?: string;
   image: string;
   route: string;
+  target?: string;
 }
 
 export interface IGameTypeProps {
@@ -43,6 +44,12 @@ const GAMETYPES = [
         route: '/slots/joker'
       },
       {
+        idName: 'Asiagaming',
+        image: 'joker.png',
+        route: '/gs/groups/asiagaming/types/slot/codes/unused',
+        target: '_blank'
+      },
+      {
         idName: 'Pragmatic',
         image: 'pragmatic.png',
         route: '/slots/pragmatic'
@@ -50,12 +57,13 @@ const GAMETYPES = [
       {
         idName: '1S',
         image: '1s.png',
-        route: '/slots/1s'
+        route: '/slots/s1'
       },
       {
         idName: 'SBO',
         image: 'sbo.png',
-        route: '/slots/sbo'
+        route: '/tg/groups/SBO/types/SBO/codes/CQ9',
+        target: '_blank'
       },
       {
         idName: 'Gameplay',

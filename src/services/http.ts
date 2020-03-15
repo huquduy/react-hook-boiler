@@ -9,16 +9,17 @@ const attachHeaders = () => {
     }
 }
 
-const handleErrors = response => {
+const handleErrors = async response => {
   if ([200, 201].includes(response.status)) {
-    return response
+    return response.json()
   }
   if (response.status === 401) {
     store.clearAll()
     window.location.href = 'login'
   }
   
-  throw response
+  const error = await response.json()
+  throw error
 }
 
 export const setToken = (token: string) => store.set('token', token)
@@ -45,12 +46,8 @@ export const get = async ({ path, body } : { path: string, body?: any }) => {
   const response = await fetch(`${url}?${queryString}`, {
     headers: attachHeaders()
   })
-  const responseHandledError = handleErrors(response)
-  const payload = await responseHandledError.json()
-  if (!responseHandledError.ok) {
-    throw payload
-  }
-  return payload
+  const responseHandledError = await handleErrors(response)
+  return responseHandledError
 }
 
 export const post = async ({ path, body } : { path: string, body: any }) => {

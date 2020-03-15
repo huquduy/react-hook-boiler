@@ -1,4 +1,4 @@
-import { Chip, Grid, IconButton, InputAdornment, Paper, Tab, Tabs, TextField, Typography } from '@material-ui/core'
+import { Chip, Grid, IconButton, Link as LinkMui, InputAdornment, Paper, Tab, Tabs, TextField, Typography } from '@material-ui/core'
 import SearchIcon from '@material-ui/icons/Search';
 import Bottom from 'components/Bottom'
 import Header from 'components/Header'
@@ -8,12 +8,11 @@ import { getGameType, IProviderProps, SLOT_TAB } from 'constant/games'
 import { filter, map, reduce } from 'ramda'
 import React, {useCallback, useEffect, useMemo, useState} from 'react'
 import ReactImageFallback from "react-image-fallback"
-import { Link, useHistory, useParams, withRouter } from 'react-router-dom'
+import { Link, useParams, withRouter } from 'react-router-dom'
 import gamesByProvider, { IGames } from './constant'
 import './style.scss'
 
 const Home: React.FC = () => {
-  const history = useHistory()
   const { providerId = SLOT_TAB } = useParams()
   const [searchingShown, setSearchingShown] = useState<boolean>(false)
   const [freeSearch, setFreeSearch] = useState<string>('')
@@ -22,8 +21,13 @@ const Home: React.FC = () => {
 
   const genarateLoginPage = (type: string, code: string) => {
     const proxies = {
-      joker: `/tg/groups/SLOTS/types/JOKER/codes/${code}`,
-      playtech: `/gs/groups/slots/types/playtech/codes/${code}`,
+      gameplay: `/gs/groups/gameplay/types/slots/codes/${code}`,
+      joker: `/tg/groups/JOKER/types/SLOTS/codes/${code}`,
+      microgaming: `/gs/groups/microgaming/types/SL/codes/${code}`,
+      pg: `/tg/groups/PGSOFT/types/SLOTS/codes/${code}`,
+      playtech: `/gs/groups/playtech/types/SL/codes/${code}`,
+      pragmatic: `/tg/groups/PP/types/SLOTS/codes/${code}`,
+      s1: `/tg/groups/s1/types/SLOTS/codes/${code}`,
     }
     if (proxies[type]) {
       return proxies[type]
@@ -38,10 +42,6 @@ const Home: React.FC = () => {
   const games = gamesByProvider[providerId]
 
   const handleFreeSearchChanged = useCallback(e => setFreeSearch(e.target.value), [])
-
-  const handleChangeProvider = useCallback((event: React.ChangeEvent<{}>, newValue: string) => {
-    history.push(newValue)
-  }, [history])
 
   const handleChangeGroup = useCallback((event: React.ChangeEvent<{}>, group: string) => {
     setActiveGroup(group)
@@ -79,19 +79,18 @@ const Home: React.FC = () => {
       <div className='game-tabs'>
         <Tabs
           value={`/slots/${providerId}`}
-          onChange={handleChangeProvider}
           indicatorColor="primary"
           variant="scrollable"
           scrollButtons="on"
         >
-          {map(({ idName, image, route }: IProviderProps) => <Tab
+          {map(({ idName, image, route, target }: IProviderProps) => <Tab
             key={idName}
-            label={<div>
+            label={<LinkMui href={route} target={target}>
               <img className='game-type-icon' alt='hokibet188' src={`${imageSrc}providers/${image}`} />
               <Typography variant="caption" display="block" gutterBottom={true}>
                 {idName}
               </Typography>
-            </div>} value={route} />, providers )}
+            </LinkMui>} value={route} />, providers )}
         </Tabs>
         
         <div className='group'>
@@ -133,7 +132,7 @@ const Home: React.FC = () => {
             {map(({ code, name, thumbnail, linkGame }: IGames) => 
               <Grid item={true} xs={4} sm={4} key={code}>
                 <Link to={genarateLoginPage(providerId, code)} target="_blank">
-                  <Paper className='provider'>
+                  <Paper className={`provider ${providerId}`}>
                     <ReactImageFallback
                       fallbackImage='/images/404.jpg'
                       className='game'
