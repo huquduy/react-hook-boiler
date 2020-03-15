@@ -1,3 +1,4 @@
+import s1 from './1s.constant'
 import gameplay from './gameplay.constant'
 import joker from './joker.constant'
 import microgaming from './microgaming.constant'
@@ -20,4 +21,5 @@ export default {
   pg,
   playtech,
   pragmatic,
+  s1,
 }
