@@ -3,8 +3,40 @@
 .drawer {
   color: $primaryColor;
   background: $backgroundBody;
+  font-size: 17px;
   .item {
     width: 100%;
-    text-align: center;
+    text-align: left;
+    // border-bottom: 1px solid #ccc;
+    span {
+      img {
+        margin-right: 8px;
+      }
+    }
+  }
+  ul {
+    // margin-left: 15px;
+    // .MuiButtonBase-root{
+    //   padding-top:0;
+    //   padding-bottom: 0;
+    // }
+    div {
+      // padding-top:0;
+      // padding-bottom: 0;
+      span {
+        font-size: inherit;
+        // line-height:1;
+        img {
+          margin-right: 8px;
+        }
+      }
+      .MuiCollapse-wrapper {
+        margin-left: 15px;
+      }
+    }
+  }
+  .MuiSvgIcon-root {
+    position: absolute;
+    right: 0;
   }
 }

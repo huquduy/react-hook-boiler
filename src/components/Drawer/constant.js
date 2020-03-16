@@ -47,25 +47,61 @@ export default () => [
     title: 'Games',
     level2:[
       {
-        icon: 'sports.png',
-        route: '/sports',
-        title: 'Con',
+        icon: 'slots.png',
+        route: '',
+        title: 'Slots',
         level3:[
           {
-            icon: 'sports.png',
-            route: '/sports',
-            title: 'Chau',
-          }]
+            icon: '',
+            route: '/slots/pg',
+            title: 'PG',
+          },
+          {
+            icon: '',
+            route: '/slots/playtech',
+            title: 'Playtech',
+          },
+          {
+            icon: '',
+            route: '/slots/microgaming',
+            title: 'Microgaming',
+          },
+          {
+            icon: '',
+            route: '/slots/joker',
+            title: 'Joker',
+          },
+          {
+            icon: '',
+            route: '/gs/groups/asiagaming/types/slot/codes/unused',
+            title: 'Asiagaming',
+          },
+          {
+            icon: '',
+            route: '/slots/pragmatic',
+            title: 'Pragmatic',
+          },
+          {
+            icon: '',
+            route: '/slots/s1',
+            title: '1S',
+          },
+          {
+            icon: '',
+            route: '/tg/groups/SBO/types/SBO/codes/CQ9',
+            title: 'SBO',
+          },
+          {
+            icon: '',
+            route: '/slots/gameplay',
+            title: 'Gameplay',
+          }
+        ]
       },
       {
         icon: 'casino.png',
         route: '/casino',
         title: 'Casino',
-      },
-      {
-        icon: 'slots.png',
-        route: '/slots/joker',
-        title: 'Slots',
       },
       {
         icon: 'lottery.png',
@@ -87,32 +123,32 @@ export default () => [
   {
     icon: 'lottery.png',
     route: '/about-us',
-    title: 'ABOUT US',
+    title: 'About Us',
   },
   {
     icon: 'lottery.png',
     route: '/term-condition',
-    title: 'TERM & CONDITION',
+    title: 'Term & Condition',
   },
   {
     icon: 'lottery.png',
     route: '/privacy',
-    title: 'PRIVACY & POLICY',
+    title: 'Privacy & Policy',
   },
   {
     icon: 'lottery.png',
     route: '/reposible',
-    title: 'RESPOSIBLE GAMBLING',
+    title: 'Resposible Gambling',
   },
   {
     icon: 'lottery.png',
     route: '/banking',
-    title: 'BANKING',
+    title: 'Banking',
   },
   {
     icon: 'slots.png',
     route: '/contact',
-    title: 'CONTACT US',
+    title: 'Contact Us',
   },
   {
     icon: 'lottery.png',

@@ -17,13 +17,13 @@ import Credits from 'components/Credits'
 import { AuthContext } from 'contexts/authContext'
 import useDialog from 'hooks/dialog'
 import React, { useState } from 'react'
-import { Link , useHistory} from 'react-router-dom'
+import { Link, useHistory } from 'react-router-dom'
 import Sidebar from '../Drawer'
 import './style.scss'
 
 
-const Header: React.FC  = () => {
-  const { auth , setUnauthStatus} = React.useContext(AuthContext)
+const Header: React.FC = () => {
+  const { auth, setUnauthStatus } = React.useContext(AuthContext)
   const [isDrawerOpened, setDrawerOpened] = useState<boolean>(false);
   const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null)
   const [showCreditsDialog, CreditsDialog] = useDialog(false)
@@ -37,12 +37,12 @@ const Header: React.FC  = () => {
     setAnchorEl(null)
   };
 
-  const navigateToProfile =() =>{
+  const navigateToProfile = () => {
     setAnchorEl(null)
     history.push('/profile')
   }
 
-  const handleLogout= () =>{
+  const handleLogout = () => {
     setUnauthStatus();
     setAnchorEl(null)
     history.push('/home')
@@ -61,19 +61,47 @@ const Header: React.FC  = () => {
 
   return (
     <div className='header-wraper'>
-      <Drawer open={isDrawerOpened} onClose={handleCloseDrawer}>
-        {/* <div
+      <Drawer open={isDrawerOpened} onClose={handleCloseDrawer} anchor="right">
+        <div
           tabIndex={0}
           role="button"
           onClick={handleCloseDrawer}
           onKeyDown={handleCloseDrawer}
         >
-          
-        </div> */}
+
+        </div>
         <Sidebar />
       </Drawer>
       <AppBar className='header' position="fixed">
         <Toolbar>
+        <div className='' />
+          {!auth.token
+            ?
+            null
+            : <div className="content-header">
+              <Button className='header-left' color="inherit" aria-controls="simple-menu" aria-haspopup="true" onClick={toggleProfileMenu}>
+                <AccountCircleIcon />
+                <Typography variant="caption" display="block" gutterBottom={true}>
+                  {auth.username}
+                </Typography>
+              </Button>
+              <Menu
+                id="simple-menu"
+                anchorEl={anchorEl}
+                keepMounted={true}
+                open={Boolean(anchorEl)}
+                onClose={handleClose}
+                anchorPosition={{ top: 40, left: 0 }}
+              >
+                <MenuItem onClick={showCreditsDialog}><LocalAtmIcon />{auth.balance} IDR</MenuItem>
+                <MenuItem onClick={navigateToProfile}>Profile</MenuItem>
+                <MenuItem onClick={handleLogout}>Logout</MenuItem>
+              </Menu>
+            </div>}
+          <div className='flex-grow' />
+          <img className='logo' alt='hokibet188' src={process.env.PUBLIC_URL + '/images/logo.png'} />
+          
+          <div className='flex-grow' />
           <IconButton
             edge="start"
             className='icon-btn'
@@ -83,43 +111,6 @@ const Header: React.FC  = () => {
           >
             <MenuIcon />
           </IconButton>
-          <div className='flex-grow' />
-          <img className='logo' alt='hokibet188' src={process.env.PUBLIC_URL + '/images/logo.png'} />
-          <div className='flex-grow' />
-          {!auth.token
-            ? 
-            // <Link to='/login' className='header-left'>
-            //   <IconButton
-            //     edge="end"
-            //     aria-label="account of current user"
-            //     aria-controls={menuId}
-            //     aria-haspopup="true"
-            //     color="inherit"
-            //   >
-            //     <AccountCircleIcon />
-            //   </IconButton>
-            // </Link>
-            null
-            : <div className="content-header">
-              <Button className='header-left' color="inherit" aria-controls="simple-menu" aria-haspopup="true" onClick={toggleProfileMenu}>
-                <Typography variant="caption" display="block" gutterBottom={true}>
-                  {auth.username}
-                </Typography>
-                <AccountCircleIcon />
-              </Button>
-              <Menu
-                id="simple-menu"
-                anchorEl={anchorEl}
-                keepMounted={true}
-                open={Boolean(anchorEl)}
-                onClose={handleClose}
-                anchorPosition ={{top:40, left:0}}
-              >
-                <MenuItem onClick={showCreditsDialog}><LocalAtmIcon/>{auth.balance} IDR</MenuItem>
-                <MenuItem onClick={navigateToProfile}>Profile</MenuItem>
-                <MenuItem onClick={handleLogout}>Logout</MenuItem>
-              </Menu>
-              </div>}
         </Toolbar>
         <CreditsDialog title='Your Credits'>
           <Credits />

@@ -24,12 +24,13 @@ const Faq = lazy(()=> import ('./pages/Faq'))
 const PlayingTG = lazy(()=> import ('./pages/PlayingTG'))
 const PlayingGS = lazy(()=> import ('./pages/PlayingGS'))
 const Contact = lazy(()=> import ('./pages/Contact'))
+const ForgotPassword = lazy(() => import ('./pages/ForgotPassword'))
 
 
 const Router = () => {
   return (
     <BrowserRouter>
-      <Suspense fallback={<div className='primary'>Component is being loaded...</div>}>
+      <Suspense fallback={<div className='primary'>Website is being loaded...</div>}>
         <Switch>
           <Route exact={true} path="/" component={Home} />
           <Route path="/home" component={Home} />
@@ -49,6 +50,7 @@ const Router = () => {
           <Route path="/promotion" component={Promotion} />
           <Route path="/faq" component={Faq} />
           <Route path="/contact" component={Contact} />
+          <Route path="/forgot-password" component={ForgotPassword} />
           <Route path="/tg/groups/:group/types/:type/codes/:code" component={PlayingTG} />
           <Route path="/gs/groups/:group/types/:type/codes/:code" component={PlayingGS} />
         </Switch>

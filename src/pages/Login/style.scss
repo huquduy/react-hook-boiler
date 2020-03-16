@@ -16,4 +16,16 @@
       align-self: center
     }
   }
+  .success {
+    border-color:  $successColor;
+    color: $successColor;
+  }
+  .link-primary{
+    color: $secondaryColor;
+  }
+}
+.MuiOutlinedInput-input:-webkit-autofill {
+  border-radius: inherit;
+  background: transparent !important;
+  color: $primaryColor !important;
 }

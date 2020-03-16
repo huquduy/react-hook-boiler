@@ -101,6 +101,7 @@ const Register: React.FC<RouteComponentProps> = ({ history }) => {
             <div className='container'>
               <div>
                 <Field
+                  variant="outlined"
                   validate={composeValidators(required, minLength(3))}
                   name="username"
                   label="Username"
@@ -110,6 +111,7 @@ const Register: React.FC<RouteComponentProps> = ({ history }) => {
               </div>
               <div>
                 <Field
+                  variant="outlined"
                   validate={isEmail}
                   name="email"
                   label="Email"
@@ -118,6 +120,7 @@ const Register: React.FC<RouteComponentProps> = ({ history }) => {
               </div>
               <div>
                 <Field
+                  variant="outlined"
                   validate={composeValidators(required, minLength(5))}
                   name="password"
                   label="Password"
@@ -127,6 +130,7 @@ const Register: React.FC<RouteComponentProps> = ({ history }) => {
               </div>
               <div>
                 <Field
+                  variant="outlined"
                   validate={compareWithField('password')}
                   name="passwordConfirm"
                   label="Confirm Password"
@@ -136,6 +140,7 @@ const Register: React.FC<RouteComponentProps> = ({ history }) => {
               </div>
               <div>
                 <Field
+                  variant="outlined"
                   validate={composeValidators(required, minLength(11), maxLength(16))}
                   name="phone"
                   label="Phone number:"
@@ -145,6 +150,7 @@ const Register: React.FC<RouteComponentProps> = ({ history }) => {
               </div>
               <div>
                 <Field
+                  variant="outlined"
                   validate={required}
                   name="bankId"
                   label="Bank name:"
@@ -154,6 +160,7 @@ const Register: React.FC<RouteComponentProps> = ({ history }) => {
               </div>
               <div>
                 <Field
+                  variant="outlined"
                   validate={composeValidators(required, minLength(10))}
                   name="bankAccountNumber"
                   label="Bank account number:"
@@ -163,6 +170,7 @@ const Register: React.FC<RouteComponentProps> = ({ history }) => {
               </div>
               <div>
                 <Field
+                  variant="outlined"
                   validate={minLength(3)}
                   name="bankAccountName"
                   label="Bank account name:"
@@ -176,15 +184,15 @@ const Register: React.FC<RouteComponentProps> = ({ history }) => {
                 </Button>
               </div>
               <div>
-                <Button variant="outlined" color="secondary" href="/register" startIcon={<LockOpenIcon />}>
+                <Button variant="outlined" className="success" href="/login" startIcon={<LockOpenIcon />}>
                   Back to Login
                 </Button>
               </div>
-              <div>
-                <LinkMUI color="primary">
+              {/* <div>
+                <LinkMUI className="link-primary">
                   Forgot Password? 
                 </LinkMUI>
-              </div>
+              </div> */}
             </div>
           </form>}
       </Form>
