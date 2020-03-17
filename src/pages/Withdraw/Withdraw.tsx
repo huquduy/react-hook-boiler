@@ -124,7 +124,7 @@ const Withdraw: React.FC<RouteComponentProps> = ({ history }) => {
                                 <Field
                                     validate={composeValidators(required, mustBeNumber)}
                                     name="calcAmount"
-                                    label="Change Amount :"
+                                    label="Transfer Bank :"
                                     type="text"
                                     disable={isLoading.toString()}
                                     fullWidth={true}

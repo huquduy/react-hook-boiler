@@ -61,7 +61,7 @@ const Header: React.FC = () => {
 
   return (
     <div className='header-wraper'>
-      <Drawer open={isDrawerOpened} onClose={handleCloseDrawer} anchor="right">
+      <Drawer open={isDrawerOpened} onClose={handleCloseDrawer} anchor="left">
         <div
           tabIndex={0}
           role="button"
@@ -74,16 +74,28 @@ const Header: React.FC = () => {
       </Drawer>
       <AppBar className='header' position="fixed">
         <Toolbar>
-        <div className='' />
+        <IconButton
+            edge="start"
+            className='icon-btn'
+            color="inherit"
+            aria-label="open drawer"
+            onClick={handleOpenDrawer}
+          >
+            <MenuIcon />
+          </IconButton>
+          <div className='flex-grow' />
+          <img className='logo' alt='hokibet188' src={process.env.PUBLIC_URL + '/images/logo.png'} />
+        <div className='flex-grow' />
           {!auth.token
             ?
             null
             : <div className="content-header">
               <Button className='header-left' color="inherit" aria-controls="simple-menu" aria-haspopup="true" onClick={toggleProfileMenu}>
-                <AccountCircleIcon />
+                
                 <Typography variant="caption" display="block" gutterBottom={true}>
                   {auth.username}
                 </Typography>
+                <AccountCircleIcon />
               </Button>
               <Menu
                 id="simple-menu"
@@ -98,19 +110,10 @@ const Header: React.FC = () => {
                 <MenuItem onClick={handleLogout}>Logout</MenuItem>
               </Menu>
             </div>}
-          <div className='flex-grow' />
-          <img className='logo' alt='hokibet188' src={process.env.PUBLIC_URL + '/images/logo.png'} />
           
-          <div className='flex-grow' />
-          <IconButton
-            edge="start"
-            className='icon-btn'
-            color="inherit"
-            aria-label="open drawer"
-            onClick={handleOpenDrawer}
-          >
-            <MenuIcon />
-          </IconButton>
+          
+          {/* <div className='flex-grow' /> */}
+          
         </Toolbar>
         <CreditsDialog title='Your Credits'>
           <Credits />
