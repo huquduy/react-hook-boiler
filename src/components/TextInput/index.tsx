@@ -15,6 +15,7 @@ const  TextInput : React.FC<Props> = ({ input, meta, ...rest }: Props) => {
   return (
     <TextField
       className='text-input-custom'
+      variant="outlined"
       helperText={helperText}
       error={error}
       {...input}

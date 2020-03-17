@@ -38,7 +38,7 @@ a {
   }
 }
 
-.text-input-custom {
+.text-input-custom,.select-input-custom {
   label {
     color: $primaryColor,
   }
@@ -50,14 +50,19 @@ a {
   }
   .MuiOutlinedInput-root {
     & fieldset {
-      border-color: $secondaryColor,
+      border-color: $primaryColor,
     }
   }
   .MuiInput-input {
     color: $primaryColor
+  }
+  .MuiNativeSelect-outlined{
+    border-color: $primaryColor,
   }
 }
 
 .primary { 
   color: $primaryColor
 }
+
+// MuiNativeSelect-root MuiNativeSelect-select MuiNativeSelect-outlined MuiInputBase-input MuiInput-input
