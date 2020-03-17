@@ -30,6 +30,7 @@ const SelectInput: React.FC<ISelectInput> = ({ input, meta, label, options, hand
         {label}
       </InputLabel>
       <NativeSelect
+      variant="outlined"
         color={error ? "secondary" : "primary"}
         {...input}
         {...rest}
