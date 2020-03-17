@@ -11,8 +11,8 @@ import useErrorDialog from 'hooks/error-dialog'
 import useLoading from 'hooks/loading'
 import React from 'react'
 import { Field, withTypes } from 'react-final-form'
-import { Link, RouteComponentProps, withRouter } from 'react-router-dom'
-import { composeValidators, isEmail, minLength, required } from 'services/form'
+import { RouteComponentProps, withRouter } from 'react-router-dom'
+import {  isEmail} from 'services/form'
 import { post } from 'services/http'
 
 import './style.scss'
@@ -27,7 +27,7 @@ const ForgotPassword: React.FC<RouteComponentProps> = ({ history }) => {
     const [showDialog, ErrorDialogComponent] = useErrorDialog(false)
 
     const handleForgotPassword = async ({ email }) => {
-        const { token, error } = await withLoading(() => post({
+        const {  error } = await withLoading(() => post({
             body: {
                 email
             },

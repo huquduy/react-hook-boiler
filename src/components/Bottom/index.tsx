@@ -30,10 +30,10 @@ const ITEMS = [
   },
   {
     icon: 'wa.png',
-    isExtenal: false,
+    isExtenal: true,
     label: 'WhatsApp',
-    route: 'promotion',
-    target: ''
+    route: 'https://api.whatsapp.com/send?phone=855883071618&text=Hallo%20Support%20Hokibet188%20Saya%20ingin%20Menanyakan%20beberapa%20hal',
+    target: '_blank'
   },{
     icon: 'contact.png',
     isExtenal: true,

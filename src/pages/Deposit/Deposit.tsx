@@ -12,6 +12,7 @@ import TextInput from 'components/TextInput'
 import { AuthContext } from "contexts/authContext"
 import useLoading from 'hooks/loading'
 import useSnackbar from 'hooks/snackbar'
+import Numeral from 'numeral'
 import { find, map, propEq } from 'ramda'
 import React, { useEffect, useState } from 'react'
 import { Field, withTypes } from 'react-final-form'
@@ -29,6 +30,7 @@ interface IForm {
   accountName: string,
   accountNumber: string,
   amount: string,
+  calcAmount: string,
 
 }
 const { Form } = withTypes<IForm>()
@@ -43,7 +45,8 @@ const Deposit: React.FC<RouteComponentProps> = ({ history }) => {
     bankAccountNumber: auth.bankAccountNumber,
     bankId: auth.bankId,
     bankName: auth.bankName,
-    password: ''
+    password: '',
+    calcAmount: ''
   })
   const [banks, setBanks] = useState<IOption[] | []>([])
 
@@ -70,6 +73,15 @@ const Deposit: React.FC<RouteComponentProps> = ({ history }) => {
       accountNumber: findResult.accountNumber
     })
   }
+  const handleChangeAmount = (event: React.ChangeEvent<{ value: unknown }>) => {
+    const value = event.target.value
+    const calcAmount = Numeral(Number(value) * 1000).format('0,0')
+    setInitialValues({
+      ...initialValues,
+      amount: String(value),
+      calcAmount: String(calcAmount)
+    })
+  }
   useEffect(() => {
     const fetchBanks = async () => {
       const correctBankProps = ({ bankName, id, accountName, accountNumber }) => ({
@@ -78,12 +90,12 @@ const Deposit: React.FC<RouteComponentProps> = ({ history }) => {
         title: bankName,
         value: String(id)
       })
-      const { data: bankResps, error }: { data: any[], error:string } = await withLoading(() => get({
+      const { data: bankResps, error }: { data: any[], error: string } = await withLoading(() => get({
         path: 'banking'
       }))
         .catch((err) => err)
-      if(error){
-        return ;
+      if (error) {
+        return;
       }
       setBanks(map(correctBankProps, bankResps))
       const initialBank = 0;
@@ -171,15 +183,27 @@ const Deposit: React.FC<RouteComponentProps> = ({ history }) => {
                   name="amount"
                   label="Amount :"
                   type="text"
+                  onChange={handleChangeAmount}
+                  placeholder="kredit(1kredit=1000 rupiah)"
                   disable={isLoading.toString()}
                   fullWidth={true}
                   component={TextInput} />
               </div>
-              <div className="des-amount">
+              <div>
+                <Field
+                  validate={composeValidators(required, mustBeNumber)}
+                  name="calcAmount"
+                  label="Change Amount :"
+                  type="text"
+                  disable={isLoading.toString()}
+                  fullWidth={true}
+                  component={TextInput} />
+              </div>
+              {/* <div className="des-amount">
                 <span>(IDR 1000 = 1 unit)</span> <br />
                 <span>Min : 50 IDR</span><br />
                 <span>Max : 99000 IDR</span>
-              </div>
+              </div> */}
               <div>
                 <Field
                   validate={required}
