@@ -39,7 +39,7 @@ const PlayingGS: React.FC = () => {
 
   useEffect(() => {
     const getLoginUrl = async () => {
-      const loginUrl = proxies[type] ? await proxies[type]() : await proxies.default()
+      const loginUrl = proxies[group] ? await proxies[group]() : await proxies.default()
       if (loginUrl.error) {
         return setErrorLogin(loginUrl.error)
       }
