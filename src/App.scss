@@ -5,7 +5,7 @@ html {
   text-align: center;
 }
 
-body{
+body {
   background-color: $backgroundBody !important;
 }
 .MuiButtonBase-root {
@@ -20,12 +20,12 @@ a {
 .App-link {
   color: #61dafb;
 }
-.term-page{
+.term-page {
   color: $primaryColor;
   background: $backgroundBody;
-  .container{
-      text-align: left;
-      padding: 0 15px;
+  .container {
+    text-align: left;
+    padding: 0 15px;
   }
 }
 
@@ -38,31 +38,41 @@ a {
   }
 }
 
-.text-input-custom,.select-input-custom {
+.text-input-custom,
+.select-input-custom {
   label {
-    color: $primaryColor,
+    color: $primaryColor;
   }
   .MuiInputBase-root {
-    color: $primaryColor,
+    color: $primaryColor;
   }
   .MuiInput-underline:before {
-    border-bottom-color: $primaryColor
+    border-bottom-color: $primaryColor;
   }
   .MuiOutlinedInput-root {
     & fieldset {
-      border-color: $primaryColor,
+      border-color: $primaryColor;
     }
   }
+  .MuiInputBase-root.Mui-disabled {
+    color: $primaryColor;
+    cursor: default;
+  }
+  .MuiInputBase-input.Mui-disabled {
+    opacity: 0.7;
+  }
+  .MuiOutlinedInput-root.Mui-disabled .MuiOutlinedInput-notchedOutline {
+    border-color: $primaryColor;
+  }
   .MuiInput-input {
-    color: $primaryColor
+    color: $primaryColor;
   }
-  .MuiNativeSelect-outlined{
-    border-color: $primaryColor,
+  .MuiNativeSelect-outlined {
+    border-color: $primaryColor;
   }
 }
 
-.primary { 
-  color: $primaryColor
+.primary {
+  color: $primaryColor;
 }
 
-// MuiNativeSelect-root MuiNativeSelect-select MuiNativeSelect-outlined MuiInputBase-input MuiInput-input

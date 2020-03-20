@@ -8,11 +8,12 @@
     text-align: left
   }
   .MuiInput-underline:before {
-    border-bottom-color: $primaryColor
+    // border-bottom-color: $primaryColor
   }
   .MuiOutlinedInput-root {
+    
     & fieldset {
-      border-color: $secondaryColor,
+      border-color: $secondaryColor;
     }
   }
   .MuiInput-input, .MuiNativeSelect-icon {
