@@ -65,4 +65,15 @@ a {
   color: $primaryColor
 }
 
+.PrivateTabIndicator-root-176 {
+  height: 0 !important;
+}
+
+.MuiTab-textColorInherit {
+  &.Mui-selected {
+    border: 2px solid $primaryColor;
+    border-radius: 8px;
+  }
+}
+
 // MuiNativeSelect-root MuiNativeSelect-select MuiNativeSelect-outlined MuiInputBase-input MuiInput-input

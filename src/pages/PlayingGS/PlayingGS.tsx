@@ -21,9 +21,10 @@ const PlayingGS: React.FC = () => {
         },
         path: 'game/login',
       })).catch(err => err)
-      if (error) {
-        return { error }
+      if (error || typeof loginUrl === 'string') {
+        return { error: error || loginUrl }
       }
+
       return loginUrl
     },
     gameplay: async () => {
