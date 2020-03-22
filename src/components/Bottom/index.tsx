@@ -44,19 +44,10 @@ const ITEMS = [
 ]
 
 const Bottom: React.FC<RouteComponentProps> = ({ history }) => {
-  // const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
   const [activeTab, setActiveTab] = useState('promotion')
   const handleChange = (event: React.ChangeEvent<{}>, newValue: string) => {
     setActiveTab(newValue);
   };
-  // const handleClick = (event: React.MouseEvent<HTMLButtonElement>) => {
-  //   setAnchorEl(event.currentTarget);
-  // };
-  
-  // const handleClose = () => {
-  //   setAnchorEl(null)
-  // };
-  
 
   return (
     <div className='bottom-wraper'>
@@ -68,7 +59,7 @@ const Bottom: React.FC<RouteComponentProps> = ({ history }) => {
       >
         {
           map(({ icon, label, route , target, isExtenal}: IItem) => 
-          <div>{!isExtenal ?
+          < div key={label}>{!isExtenal ?
           <BottomNavigationAction
             key={label}
             label={<Typography style={{color: '#efd77f'}} variant="caption" display="block" gutterBottom={true}>
@@ -76,7 +67,7 @@ const Bottom: React.FC<RouteComponentProps> = ({ history }) => {
             </Typography>}
             icon={<img className='icon' alt='hokibet188' src={`${imageSrc}icons/${icon}`} />}
             component={Link}  to={route}  rel="noopener noreferrer"
-          />: <a href={route} target={target}>
+          />: <a key={label} href={route} target={target}>
             <BottomNavigationAction
             key={label}
             label={<Typography style={{color: '#efd77f'}} variant="caption" display="block" gutterBottom={true}>

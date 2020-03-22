@@ -27,11 +27,11 @@ const Promotion: React.FC<RouteComponentProps> = ({ history }) => {
                 PROMOTION
           </Typography>
             <div className="container">
-                {map(({ id, name, image, content }) => <ExpansionPanel expanded={expanded === id} onChange={handleChange(id)} >
-                    <ExpansionPanelSummary aria-controls={id} id={id}>
+                {map(({ id, name, image, content }) => <ExpansionPanel key={id} expanded={expanded === id} onChange={handleChange(id)} >
+                    <ExpansionPanelSummary aria-controls={id} id={id} key={id}>
                        <img className='game-type-icon' alt='hokibet188' src={`${imageSrc}promo/${image}`} />
                     </ExpansionPanelSummary>
-                    <ExpansionPanelDetails>
+                    <ExpansionPanelDetails key={id}>
                         <div dangerouslySetInnerHTML={{ __html: content }} />
                     </ExpansionPanelDetails> </ExpansionPanel>, promotions)}
             </div>

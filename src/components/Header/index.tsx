@@ -17,7 +17,7 @@ import Credits from 'components/Credits'
 import { AuthContext } from 'contexts/authContext'
 import useDialog from 'hooks/dialog'
 import React, { useState } from 'react'
-import { Link, useHistory } from 'react-router-dom'
+import { useHistory } from 'react-router-dom'
 import Sidebar from '../Drawer'
 import './style.scss'
 
@@ -57,7 +57,7 @@ const Header: React.FC = () => {
     setDrawerOpened(true);
   }
 
-  const menuId = 'primary-search-account-menu';
+  // const menuId = 'primary-search-account-menu';
 
   return (
     <div className='header-wraper'>
@@ -68,7 +68,6 @@ const Header: React.FC = () => {
           onClick={handleCloseDrawer}
           onKeyDown={handleCloseDrawer}
         >
-
         </div>
         <Sidebar />
       </Drawer>
