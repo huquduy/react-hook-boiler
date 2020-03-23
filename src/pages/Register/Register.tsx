@@ -142,7 +142,7 @@ const Register: React.FC<RouteComponentProps> = ({ history }) => {
                   variant="outlined"
                   validate={composeValidators(required, minLength(11), maxLength(16))}
                   name="phone"
-                  label="Phone number:"
+                  label="Phone number"
                   type="text"
                   fullWidth={true}
                   component={TextInput} />
@@ -152,7 +152,7 @@ const Register: React.FC<RouteComponentProps> = ({ history }) => {
                   variant="outlined"
                   validate={required}
                   name="bankId"
-                  label="Bank name:"
+                  label="Bank name"
                   fullWidth={true}
                   options={banks}
                   component={SelectInput} />
@@ -162,7 +162,7 @@ const Register: React.FC<RouteComponentProps> = ({ history }) => {
                   variant="outlined"
                   validate={composeValidators(required, minLength(10))}
                   name="bankAccountNumber"
-                  label="Bank account number:"
+                  label="Bank account number"
                   fullWidth={true}
                   disable={isLoading.toString()}
                   component={TextInput} />
@@ -172,7 +172,7 @@ const Register: React.FC<RouteComponentProps> = ({ history }) => {
                   variant="outlined"
                   validate={minLength(3)}
                   name="bankAccountName"
-                  label="Bank account name:"
+                  label="Bank account name"
                   fullWidth={true}
                   disable={isLoading.toString()}
                   component={TextInput} />

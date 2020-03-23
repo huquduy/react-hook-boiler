@@ -100,13 +100,109 @@ export default () => [
       },
       {
         icon: 'casino.png',
-        route: '/casino',
+        route: '',
         title: 'Casino',
+        level3:[
+          {
+            icon: '',
+            route: '/slots/pg',
+            title: 'PT CASINO',
+          },
+          {
+            icon: '',
+            route: '/slots/pg',
+            title: 'ALLBET CASINO',
+          },
+          {
+            icon: '',
+            route: '/slots/pg',
+            title: 'AG CASINO',
+          },
+          {
+            icon: '',
+            route: '/slots/pg',
+            title: 'GP CASINO',
+          },
+          {
+            icon: '',
+            route: '/slots/pg',
+            title: 'MG CASINO',
+          },
+          {
+            icon: '',
+            route: '/slots/pg',
+            title: 'BB CASINO',
+          },
+          {
+            icon: '',
+            route: '/slots/pg',
+            title: 'IDN CASINO',
+          },
+          {
+            icon: '',
+            route: '/slots/pg',
+            title: 'OG CASINO',
+          },
+          {
+            icon: '',
+            route: '/slots/pg',
+            title: 'SBO CASINO',
+          },
+          {
+            icon: '',
+            route: '/slots/pg',
+            title: 'ION CASINO',
+          }
+        ]
       },
       {
-        icon: 'lottery.png',
-        route: '/lottery',
-        title: 'Lottery',
+        icon: 'sports.png',
+        route: '',
+        title: 'Sports',
+        level3:[
+          {
+            icon: '',
+            route: '/slots/pg',
+            title: 'WFT SPORTSBOOK',
+          },
+          {
+            icon: '',
+            route: '/slots/pg',
+            title: 'BBIN SPORTSBOOK',
+          },
+          {
+            icon: '',
+            route: '/slots/pg',
+            title: 'SBO SPORTSBOOK',
+          }
+        ]
+      },
+      {
+        icon: 'fishhunter.png',
+        route: '',
+        title: 'Fish hunter',
+        level3:[
+          {
+            icon: '',
+            route: '/slots/pg',
+            title: 'PLAYTECH',
+          },
+          {
+            icon: '',
+            route: '/slots/pg',
+            title: 'GG Gaming',
+          },
+          {
+            icon: '',
+            route: '/slots/pg',
+            title: 'JOKER',
+          }
+        ]
+      },
+      {
+        icon: 'poker.png',
+        route: '/poker',
+        title: 'Poker',
       },
       {
         icon: 'tangkas.png',
@@ -114,14 +210,25 @@ export default () => [
         title: 'Tangkas',
       },
       {
-        icon: 'fishhunter.png',
-        route: '/fishhunter',
-        title: 'Fish hunter',
+        icon: 'lottery.png',
+        route: '/play/lottery',
+        title: 'Lottery',
+
+      },
+      {
+        icon: 'cockfight.png',
+        route: '/play/cookfight',
+        title: 'Cock Fight',
       }
     ]
   },
   {
-    icon: 'lottery.png',
+    icon: 'download.png',
+    route: '/mobile/0',
+    title: 'Download',
+  },
+  {
+    icon: 'about.png',
     route: '/about-us',
     title: 'About Us',
   },
@@ -146,7 +253,7 @@ export default () => [
     title: 'Banking',
   },
   {
-    icon: 'slots.png',
+    icon: 'contact.png',
     route: '/contact',
     title: 'Contact Us',
   },

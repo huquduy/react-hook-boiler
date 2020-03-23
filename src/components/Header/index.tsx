@@ -87,7 +87,7 @@ const Header: React.FC = () => {
         <div className='flex-grow' />
           {!auth.token
             ?
-            null
+            <div className="block-hidden"> <AccountCircleIcon style={{display:"none"}}/>&nbsp;</div>
             : <div className="content-header">
               <Button className='header-left' color="inherit" aria-controls="simple-menu" aria-haspopup="true" onClick={toggleProfileMenu}>
                 

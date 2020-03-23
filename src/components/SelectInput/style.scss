@@ -1,13 +1,16 @@
 @import '../../colors';
 
 .select-input-custom {
+    border-color: $primaryColor;
+    border: 1px solid;
+    border-radius: 4px;
   label {
     color: $primaryColor,
   }
   .MuiFormLabel-root {
     text-align: left
   }
-  .MuiInput-underline:before {
+  .MuiInput-underline:after {
     // border-bottom-color: $primaryColor
   }
   .MuiOutlinedInput-root {

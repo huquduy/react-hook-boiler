@@ -78,7 +78,7 @@ const Home: React.FC<RouteComponentProps> = ({ history }) => {
       <MarqueeText className="marquee" text={runningText} duration={30} repeat={1}/>
       {/* Provider list */}
       <div className='game-tabs'>
-        <Tabs
+        <Tabs className="custom_tab"
           value={activeTab}
           onChange={handleChangeTab}
           indicatorColor="primary"
