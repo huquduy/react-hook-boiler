@@ -9,6 +9,7 @@
     flex-direction: column;
     .custom_tab{
       border-bottom: 0;
+      padding-top: 16px;
       .MuiTab-textColorInherit.Mui-selected{
         border: 1px solid $primaryColor;
         border-radius: 4px;

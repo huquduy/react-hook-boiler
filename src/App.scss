@@ -76,3 +76,18 @@ a {
   color: $primaryColor;
 }
 
+<<<<<<< HEAD
+=======
+.PrivateTabIndicator-root-176 {
+  height: 0 !important;
+}
+
+.MuiTab-textColorInherit {
+  &.Mui-selected {
+    border: 2px solid $primaryColor;
+    border-radius: 8px;
+  }
+}
+
+// MuiNativeSelect-root MuiNativeSelect-select MuiNativeSelect-outlined MuiInputBase-input MuiInput-input
+>>>>>>> 9d4a5d65bdc6d317e27151904a49f2b4078d2c30
