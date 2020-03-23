@@ -25,60 +25,60 @@ const GAMETYPES = [
     providers: [
       {
         idName: 'PG',
-        image: 'pg.png',
+        image: 'slots/pg.png',
         route: '/slots/pg'
       },
       {
         idName: 'Playtech',
-        image: 'playtech.png',
+        image: 'slots/playtech.png',
         route: '/slots/playtech'
       },
       {
         idName: 'Microgaming',
-        image: 'microgaming.png',
+        image: 'slots/microgaming.png',
         route: '/slots/microgaming'
       },
       {
         idName: 'Joker',
-        image: 'joker.png',
+        image: 'slots/joker.png',
         route: '/slots/joker'
       },
       {
         idName: 'Asiagaming',
-        image: 'asiagaming.png',
+        image: 'slots/asiagaming.png',
         route: '/gs/groups/asiagaming/types/slot/codes/null',
         target: '_blank'
       },
       {
         idName: 'Pragmatic',
-        image: 'pragmatic.png',
+        image: 'slots/pragmatic.png',
         route: '/slots/pragmatic'
       },
       {
         idName: '1S',
-        image: '1s.png',
+        image: 'slots/1s.png',
         route: '/slots/s1'
       },
       {
         idName: 'SBO',
-        image: 'sbo.png',
+        image: 'slots/sbo.png',
         route: '/tg/groups/SBO/types/SBO/codes/CQ9',
         target: '_blank'
       },
       {
         idName: 'Gameplay',
-        image: 'gameplay.png',
+        image: 'slots/gameplay.png',
         route: '/slots/gameplay'
       },
       {
         idName: 'GG gaming',
-        image: 'gg.png',
+        image: 'slots/gg.png',
         route: '/gs/groups/gg/types/slot/codes/null',
         target: '_blank',
       },
       {
         idName: 'BBin',
-        image: 'bbin.png',
+        image: 'slots/bbin.png',
         route: '/gs/groups/bbin/types/slot/codes/Ltlottery',
         target: '_blank',
       }
@@ -90,61 +90,61 @@ const GAMETYPES = [
     providers: [
       {
         idName: 'Playtech',
-        image: 'playtech.png',
+        image: 'casinos/playtech.png',
         route: '/gs/groups/playtech/types/slot/codes/7bal',
         target: '_blank',
       },
       {
         idName: 'Allbet',
-        image: 'allbet.png',
+        image: 'casinos/allbet.png',
         route: '/gs/groups/allbet/types/null/codes/null',
         target: '_blank',
       },
       {
         idName: 'Asiagaming',
-        image: 'asiagaming.png',
+        image: 'casinos/asiagaming.png',
         route: '/gs/groups/asiagaming/types/casino/codes/null',
         target: '_blank'
       },
       {
         idName: 'Gameplay',
-        image: 'gameplay.png',
+        image: 'casinos/gameplay.png',
         route: '/gs/groups/gameplay/types/casino/codes/casino',
         target: '_blank',
       },
       {
         idName: 'Microgaming',
-        image: 'microgaming.png',
+        image: 'casinos/microgaming.png',
         route: '/gs/groups/microgaming/types/LC/codes/null',
         target: '_blank',
       },
       {
         idName: 'IDN live',
-        image: 'idn.png',
+        image: 'casinos/idn.png',
         route: '/gs/groups/idn/types/null/codes/null',
         target: '_blank',
       },
       {
         idName: 'BBin',
-        image: 'bbin.png',
+        image: 'casinos/bbin.png',
         route: '/gs/groups/bbin/types/slot/codes/live',
         target: '_blank',
       },
       {
         idName: 'SBO',
-        image: 'sbo.png',
+        image: 'casinos/sbo.png',
         route: '/tg/groups/SBO/types/SBO/codes/LIVECASINO',
         target: '_blank'
       },
       {
         idName: 'OG',
-        image: 'og.png',
+        image: 'casinos/og.png',
         route: '/gs/groups/og/types/null/codes/null',
         target: '_blank',
       },
       {
         idName: 'ION',
-        image: 'ion.png',
+        image: 'casinos/ion.png',
         route: '/tg/groups/TRG/types/ION/codes/BACCARAT',
         target: '_blank',
       },
@@ -155,9 +155,22 @@ const GAMETYPES = [
     idName: SPORTS_TAB,
     providers: [
       {
+        idName: 'WFT',
+        image: 'sportsbook/wft.png',
+        route: '/gs/groups/wft/types/null/codes/null',
+        target: '_blank',
+      },
+      {
         idName: 'BNIN',
-        image: 'bbin.png',
-        route: ''
+        image: 'sportsbook/bbin.png',
+        route: '/gs/groups/bbin/types/slot/codes/ball',
+        target: '_blank',
+      },
+      {
+        idName: 'SBO',
+        image: 'sportsbook/sbo.png',
+        route: '/tg/groups/SBO/types/SBO/codes/SPORTS',
+        target: '_blank',
       }
     ],
     title:'SPORTS'
