@@ -59,7 +59,7 @@ const Bottom: React.FC<RouteComponentProps> = ({ history }) => {
       >
         {
           map(({ icon, label, route , target, isExtenal}: IItem) => 
-          {!isExtenal ?
+          <div>{!isExtenal ?
             <BottomNavigationAction
               key={label}
               label={<Typography style={{color: '#efd77f'}} variant="caption" display="block" gutterBottom={true}>
@@ -76,7 +76,7 @@ const Bottom: React.FC<RouteComponentProps> = ({ history }) => {
               icon={<img className='icon' alt='hokibet188' src={`${imageSrc}icons/${icon}`} />}
               />
             </a>
-          }
+          }</div>
           , ITEMS)
         }
       </BottomNavigation>
