@@ -59,25 +59,24 @@ const Bottom: React.FC<RouteComponentProps> = ({ history }) => {
       >
         {
           map(({ icon, label, route , target, isExtenal}: IItem) => 
-          < div key={label}>{!isExtenal ?
-          <BottomNavigationAction
-            key={label}
-            label={<Typography style={{color: '#efd77f'}} variant="caption" display="block" gutterBottom={true}>
-              {label}
-            </Typography>}
-            icon={<img className='icon' alt='hokibet188' src={`${imageSrc}icons/${icon}`} />}
-            component={Link}  to={route}  rel="noopener noreferrer"
-          />: <a key={label} href={route} target={target}>
+          {!isExtenal ?
             <BottomNavigationAction
-            key={label}
-            label={<Typography style={{color: '#efd77f'}} variant="caption" display="block" gutterBottom={true}>
-              {label}
-            </Typography>}
-            icon={<img className='icon' alt='hokibet188' src={`${imageSrc}icons/${icon}`} />}
-            />
-          </a>
+              key={label}
+              label={<Typography style={{color: '#efd77f'}} variant="caption" display="block" gutterBottom={true}>
+                {label}
+              </Typography>}
+              icon={<img className='icon' alt='hokibet188' src={`${imageSrc}icons/${icon}`} />}
+              component={Link}  to={route}  rel="noopener noreferrer"
+            />: <a key={label} href={route} target={target}>
+              <BottomNavigationAction
+              key={label}
+              label={<Typography style={{color: '#efd77f'}} variant="caption" display="block" gutterBottom={true}>
+                {label}
+              </Typography>}
+              icon={<img className='icon' alt='hokibet188' src={`${imageSrc}icons/${icon}`} />}
+              />
+            </a>
           }
-          </div>
           , ITEMS)
         }
       </BottomNavigation>
