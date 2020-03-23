@@ -61,7 +61,7 @@ const Login: React.FC<RouteComponentProps> = ({ history }) => {
                   label="Username"
                   fullWidth={true}
                   variant="outlined"
-                  autocomplete="iusername"
+                  autoComplete="iusername"
                   component={TextInput} />
               </div>
               <div>
@@ -72,7 +72,7 @@ const Login: React.FC<RouteComponentProps> = ({ history }) => {
                   type="password"
                   fullWidth={true}
                   variant="outlined"
-                  autocomplete="new-password"
+                  autoComplete="new-password"
                   component={TextInput} />
               </div>
               <div>

@@ -12,7 +12,7 @@ import TextInput from 'components/TextInput'
 import { AuthContext } from "contexts/authContext"
 import useLoading from 'hooks/loading'
 import useSnackbar from 'hooks/snackbar'
-import { map } from 'ramda'
+import { map} from 'ramda'
 import React, { useEffect, useState } from 'react'
 import { Field, withTypes } from 'react-final-form'
 import { RouteComponentProps, withRouter } from 'react-router-dom'

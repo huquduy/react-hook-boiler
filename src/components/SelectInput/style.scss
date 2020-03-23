@@ -1,9 +1,10 @@
 @import '../../colors';
 
 .select-input-custom {
-    border-color: $primaryColor;
+    border-color: $primaryColor !important;
     border: 1px solid;
     border-radius: 4px;
+    position: relative;
   label {
     color: $primaryColor,
   }
@@ -11,7 +12,18 @@
     text-align: left
   }
   .MuiInput-underline:after {
-    // border-bottom-color: $primaryColor
+    border-bottom: 0 !important;
+  }
+  .MuiInput-input{
+    padding :1rem 5px;
+  }
+  .MuiFormLabel-root{
+    text-align: left;
+    position: absolute;
+    top: -10px;
+    left: 5px;
+    padding: 0 6px;
+    background: $backgroundBody;
   }
   .MuiOutlinedInput-root {
     
