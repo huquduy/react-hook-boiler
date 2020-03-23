@@ -1,23 +1,23 @@
 import {
   AppBar,
   Button,
+  Collapse,
   Drawer,
   IconButton,
+  List,
+  ListItem,
+  ListItemText,
   Menu,
   MenuItem,
   Toolbar,
-  Typography,
-  ListItem,
-  List,
-  Collapse,
-  ListItemText
+  Typography
 } from '@material-ui/core'
 import {
   AccountCircle as AccountCircleIcon,
-  LocalAtm as LocalAtmIcon,
-  Menu as MenuIcon,
   ExpandLess,
-  ExpandMore
+  ExpandMore,
+  LocalAtm as LocalAtmIcon,
+  Menu as MenuIcon
 } from '@material-ui/icons'
 import Credits from 'components/Credits'
 import { AuthContext } from 'contexts/authContext'
@@ -35,9 +35,9 @@ const Header: React.FC = () => {
   const [showCreditsDialog, CreditsDialog] = useDialog(false)
   const history = useHistory()
   const [open, setOpen] = React.useState(false);
-    const handleClickOpen = () => {
-      setOpen(!open);
-    };
+  const handleClickOpen = () => {
+    setOpen(!open);
+  };
 
   const toggleProfileMenu = (event: React.MouseEvent<HTMLButtonElement>) => {
     setAnchorEl(event.currentTarget);
@@ -116,7 +116,7 @@ const Header: React.FC = () => {
               >
                 <MenuItem onClick={showCreditsDialog}><LocalAtmIcon />{auth.balance} IDR</MenuItem>
                 <MenuItem onClick={navigateToProfile}>Profile</MenuItem>
-                <MenuItem >
+                <MenuItem>
                   <List><ListItem button onClick={handleClickOpen}>
                     <ListItemText primary="Report" />
                     {open ? <ExpandLess /> : <ExpandMore />}
@@ -124,7 +124,7 @@ const Header: React.FC = () => {
                     <Collapse in={open} timeout="auto" unmountOnExit>
                       <List component="div" disablePadding>
                         <ListItem button >
-                          
+
                           <ListItemText primary="Depo" />
                         </ListItem>
                       </List>
