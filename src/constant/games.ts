@@ -5,6 +5,7 @@ const LOTTERY_TAB = 'Lottery'
 const POKER_TAB = 'Poker'
 const TANGKAS_TAB = 'Tangkas'
 const FISHHUNTER_TAB = 'FishHunter'
+const COCK_FIGHT = 'Cockfight'
 
 export interface IProviderProps {
   idName?: string;
@@ -180,22 +181,38 @@ const GAMETYPES = [
     providers: [
       {
         idName: 'PLAYTECH',
-        image: 'PLAYTECH-min.png',
-        route: ''
+        image: 'fishhunter/playtech.png',
+        route: '/gs/groups/playtech/types/slot/codes/cashfi',
+        target: '_blank',
       },
       {
         idName: 'GG GAMING',
-        image: 'GG-GAMING-min.png',
-        route: ''
+        image: 'fishhunter/gg.png',
+        route: '/gs/groups/gg/types/slot/codes/null',
+        target: '_blank',
       },
       {
         idName: 'JOKER',
-        image: 'HB-JOKER-min.png',
-        route: ''
+        image: 'fishhunter/joker.png',
+        route: '/tg/groups/JOKER/types/SLOTS/codes/Fishing',
+        target: '_blank',
       }
       
     ], 
-    title:'FISH HUNTER'
+    title: 'FISH HUNTER'
+  },
+  {
+    idName: COCK_FIGHT,
+    providers: [
+      {
+        idName: COCK_FIGHT,
+        image: 'cockfight/cockfight.png',
+        route: '/gs/groups/cookfight/types/null/codes/null',
+        target: '_blank',
+      }
+      
+    ],
+    title: COCK_FIGHT
   },
   {
     idName: POKER_TAB,
@@ -205,14 +222,18 @@ const GAMETYPES = [
         image: 'bbin.png',
         route: ''
       }
-      
     ],
     title:'POKER'
   },
   {
     idName: TANGKAS_TAB,
     providers: [
-      
+      {
+        idName: TANGKAS_TAB,
+        image: 'tangkas/tangkas.png',
+        route: '/gs/groups/tangkas/types/null/codes/null',
+        target: '_blank',
+      }
     ], 
     title: 'TANGKAS'
   },

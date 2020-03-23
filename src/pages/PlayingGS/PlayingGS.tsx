@@ -21,7 +21,7 @@ const PlayingGS: React.FC = () => {
         },
         path: 'game/login',
       })).catch(err => err)
-      if (error || typeof loginUrl === 'string') {
+      if (error || typeof loginUrl !== 'string') {
         return { error: error || loginUrl }
       }
 
