@@ -105,7 +105,7 @@ const Deposit: React.FC<RouteComponentProps> = ({ history }) => {
         ...initialValues,
         accountName: bankResps[initialBank].accountName,
         accountNumber: bankResps[initialBank].accountNumber,
-        bankId: initialBank,
+        bankId: bankResps[initialBank].id,
       })
     }
     fetchBanks()

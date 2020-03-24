@@ -10,9 +10,15 @@
     .custom_tab{
       border-bottom: 0;
       padding-top: 16px;
+      .MuiTab-textColorInherit{
+        width: 65px;
+        height: 80px;
+        }
       .MuiTab-textColorInherit.Mui-selected{
         border: 1px solid $primaryColor;
         border-radius: 4px;
+        width: 65px;
+        height: 80px;
       }
       .MuiTabs-indicator{
         height: 0;

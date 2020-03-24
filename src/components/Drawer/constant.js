@@ -178,9 +178,9 @@ export default () => [
         ]
       },
       {
-        icon: 'fishhunter.png',
+        icon: 'fishing.png',
         route: '',
-        title: 'Fish hunter',
+        title: 'Fishing',
         level3:[
           {
             icon: '',
