@@ -29,11 +29,12 @@ const Home: React.FC<RouteComponentProps> = ({ history }) => {
   const [activeTab, setActiveTab] = useState(SLOT_TAB)
   const [runningText, setRunningText] = useState('')
   const isLogged = !auth.token.length
-  const [, withLoading, Loading] = useLoading(false)
+  const [, withLoading] = useLoading(false)
 
   const handleChangeTab = (event: React.ChangeEvent<{}>, newValue: string) => {
     setActiveTab(newValue);
   };
+  
   useEffect(() => {
     const fetchText = async () => {
       const textString = await withLoading(() => get({
@@ -42,9 +43,8 @@ const Home: React.FC<RouteComponentProps> = ({ history }) => {
         .catch((err) => err)
         setRunningText(textString)
       }
-  
     fetchText()
-  }, [])
+  },[])
 
   const { providers } : { providers: IProviderProps[] } = useMemo(() => getGameType(activeTab), [activeTab])
 
@@ -78,7 +78,7 @@ const Home: React.FC<RouteComponentProps> = ({ history }) => {
       <MarqueeText className="marquee" text={runningText} duration={30} repeat={1}/>
       {/* Provider list */}
       <div className='game-tabs'>
-        <Tabs
+        <Tabs className="custom_tab"
           value={activeTab}
           onChange={handleChangeTab}
           indicatorColor="primary"

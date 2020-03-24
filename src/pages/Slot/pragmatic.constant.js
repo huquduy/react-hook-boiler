@@ -1,15 +1,15 @@
 export default [
   {
-    code: 'cs5moneyroll',
-    name: 'Money Roll?',
-    group: 'Classic Slot',
-    thumbnail: '/images/pragmatic/cs5moneyroll.jpg'
-  },
-  {
     code: 'vs20bl',
     name: 'Busy Bees?',
     group: 'Video Slot',
     thumbnail: '/images/pragmatic/vs20bl.jpg'
+  },
+  {
+    code: 'cs5moneyroll',
+    name: 'Money Roll?',
+    group: 'Classic Slot',
+    thumbnail: '/images/pragmatic/cs5moneyroll.jpg'
   },
   {
     code: 'vs25h',

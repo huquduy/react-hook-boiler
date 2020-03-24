@@ -157,6 +157,7 @@ const Deposit: React.FC<RouteComponentProps> = ({ history }) => {
                   fullWidth={true}
                   options={banks}
                   handleChange={handleChange}
+                  variant="outlined"
                   component={SelectInput} />
               </div>
               <div>

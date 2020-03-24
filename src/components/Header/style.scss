@@ -37,6 +37,10 @@
   padding-bottom:0;
   font-size: inherit;
 }
+.block-hidden{
+  width: 40px;
+  display: block;
+}
 @media only screen and (max-width: 320px) {
   .header-wraper .header .logo{
     max-width: 110px;

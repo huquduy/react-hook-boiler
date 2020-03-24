@@ -1,17 +1,14 @@
-//NEW
 import {
   Collapse,
-  Divider,
+
   List,
   ListItem,
-  ListItemIcon,
-  ListItemText,
   Typography,
 } from '@material-ui/core'
 import { ExpandLess, ExpandMore, } from '@material-ui/icons'
 import { imageSrc } from 'config'
 import { map } from 'ramda'
-import React, { useState } from 'react'
+import React from 'react'
 import { Link } from 'react-router-dom'
 import SIDEBAR from './constant'
 import './style.scss'
@@ -25,8 +22,7 @@ const Sidebar: React.FC = () => {
     };
     return (
       <List>
-        {!items ? <div>
-        </div> :
+        {!items ? <div /> :
           <div>
             <ListItem button={true} onClick={handleClickOpen} key={title}>
               {route ?
@@ -44,7 +40,7 @@ const Sidebar: React.FC = () => {
             <Collapse in={open} timeout="auto" unmountOnExit>
               <List component="div" disablePadding>
                 {map((item) => (
-                  <div>
+                  <div key={item.title}>
                     {!item.level3 ? <ListItem button>
                       <Link to={item.route} className='item'>
                         <span style={{ color: '#fff', display: 'block' }}>

@@ -1,6 +1,6 @@
 import {
   InputLabel,
-  NativeSelect,
+  NativeSelect
 } from '@material-ui/core'
 import React from 'react'
 import { FieldRenderProps } from "react-final-form"
@@ -30,7 +30,7 @@ const SelectInput: React.FC<ISelectInput> = ({ input, meta, label, options, hand
         {label}
       </InputLabel>
       <NativeSelect
-      variant="outlined"
+        variant="outlined"
         color={error ? "secondary" : "primary"}
         {...input}
         {...rest}

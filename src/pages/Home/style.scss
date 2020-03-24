@@ -7,7 +7,17 @@
     background: #0a0a0a;
     display: flex;
     flex-direction: column;
-    padding-top: 16px;
+    .custom_tab{
+      border-bottom: 0;
+      padding-top: 16px;
+      .MuiTab-textColorInherit.Mui-selected{
+        border: 1px solid $primaryColor;
+        border-radius: 4px;
+      }
+      .MuiTabs-indicator{
+        height: 0;
+      }
+    }
     .game-type-icon {
       width: 40px;
     }
@@ -42,4 +52,5 @@
       background-color: $secondaryColor;
     }
   }
+  
 }
