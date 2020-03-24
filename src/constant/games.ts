@@ -4,7 +4,7 @@ const SPORTS_TAB = 'Sports'
 const LOTTERY_TAB = 'Lottery'
 const POKER_TAB = 'Poker'
 const TANGKAS_TAB = 'Tangkas'
-const FISHHUNTER_TAB = 'FishHunter'
+const FISHHUNTER_TAB = 'Fishing'
 const COCK_FIGHT = 'Cockfight'
 
 export interface IProviderProps {

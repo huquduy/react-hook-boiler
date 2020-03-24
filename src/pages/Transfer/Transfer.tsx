@@ -143,6 +143,39 @@ const Transfer: React.FC<RouteComponentProps> = ({ history }) => {
                 origin: String(initialWallet)
             })
         }
+        
+        if (auth.username) {
+            fetchWallets()
+        }
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, [])
+    useEffect(()=>{
+        const correctDataProps = (item: any) => ({
+            title: item,
+            value: item,
+        })
+        const fetchSupplier = async () => {
+            const { data: supplierResps, error }: { data: any[], error: string } = await withLoading(() => get({
+                path: 'suppliers'
+            }))
+                .catch((err) => err)
+            if (error) {
+                return;
+            }
+            setSuppliers(map(correctDataProps, supplierResps))
+            const initialSupplier = supplierResps[0];
+            setInitialValues({
+                ...initialValues,
+                target: initialSupplier,
+            })
+            fetchBonusProvider(supplierResps[0])
+        }
+        if (auth.username) {
+            fetchSupplier()
+        }
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, [])
+    useEffect(()=>{
         const fetchCredits = async () => {
             const correctCreditProps = ({ title, data }) => ({
                 label: title,
@@ -164,29 +197,11 @@ const Transfer: React.FC<RouteComponentProps> = ({ history }) => {
             })
 
         }
-        const fetchSupplier = async () => {
-            const { data: supplierResps, error }: { data: any[], error: string } = await withLoading(() => get({
-                path: 'suppliers'
-            }))
-                .catch((err) => err)
-            if (error) {
-                return;
-            }
-            setSuppliers(map(correctDataProps, supplierResps))
-            const initialSupplier = supplierResps[0];
-            setInitialValues({
-                ...initialValues,
-                target: initialSupplier,
-            })
-            fetchBonusProvider(supplierResps[0])
-        }
         if (auth.username) {
             fetchCredits()
-            fetchWallets()
-            fetchSupplier()
         }
         // eslint-disable-next-line react-hooks/exhaustive-deps
-    }, [])
+    },[])
     return (
         <div className='deposit-page'>
             <Loading color="secondary" />
