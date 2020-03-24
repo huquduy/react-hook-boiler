@@ -1,8 +1,8 @@
 @import "../../colors";
-.header-wraper{
+.header-wraper {
   margin-top: 56px;
   .header {
-    >div {
+    > div {
       color: $primaryColor;
       background: $backgroundBody;
     }
@@ -18,31 +18,56 @@
       max-width: 150px;
     }
   }
-  .content-header{
+  .content-header {
     display: flex;
   }
+
 }
-.MuiMenu-paper{
+.profile-menu {
+  .MuiList-root {
+    padding: 0;
+    font-size: inherit;
+    color: inherit;
+    .MuiListItemText-root{
+      span{
+        font-size: 17px;
+      }
+    }
+    .MuiListItem-gutters {
+      padding-left: 0;
+    }
+    .MuiList-root {
+      a {
+        color: $primaryColor;
+      }
+    }
+  }
+  .MuiCollapse-wrapper{
+    padding-left: 10px;
+  }
+}
+.MuiMenu-paper {
   box-shadow: 0 0 15px $primaryColor;
   background: $backgroundBody;
-  top:50px !important;
+  top: 50px !important;
   color: $primaryColor;
-  .MuiMenu-list li:first-child{
+  .MuiMenu-list li:first-child {
     border-bottom: 1px solid $primaryColor;
   }
 }
-.MuiMenuItem-root{
+.MuiMenuItem-root {
   min-height: 35px;
   padding-top: 0;
-  padding-bottom:0;
+  padding-bottom: 0;
   font-size: inherit;
 }
-.block-hidden{
+.block-hidden {
   width: 40px;
   display: block;
 }
+
 @media only screen and (max-width: 320px) {
-  .header-wraper .header .logo{
+  .header-wraper .header .logo {
     max-width: 110px;
   }
 }

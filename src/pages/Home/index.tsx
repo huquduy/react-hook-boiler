@@ -44,6 +44,7 @@ const Home: React.FC<RouteComponentProps> = ({ history }) => {
         setRunningText(textString)
       }
     fetchText()
+      // eslint-disable-next-line react-hooks/exhaustive-deps
   },[])
 
   const { providers } : { providers: IProviderProps[] } = useMemo(() => getGameType(activeTab), [activeTab])
@@ -70,8 +71,9 @@ const Home: React.FC<RouteComponentProps> = ({ history }) => {
           <Link className="register" to="/register">Register</Link>
           <Link className="login" to="/login">Login</Link>
         </div>
-        : <div className='authentication'>
+        : <div className='auth'>
         <Link className="register" to="/deposit">Deposit</Link>
+        <Link className="transfer" to="/transfer">Transfer</Link>
         <Link className="login" to="/withdraw">Withdraw</Link>
       </div>
       }

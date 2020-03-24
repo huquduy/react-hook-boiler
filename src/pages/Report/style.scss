@@ -1,0 +1,79 @@
+@import "../../colors";
+
+.deposit-page {
+  margin-top: 56px;
+  color: $primaryColor;
+  background: $backgroundBody;
+  .title {
+    line-height: 70px;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 15px;
+    > div {
+      margin-top: 15px;
+      width: 75%;
+      align-self: center;
+    }
+  }
+  .des-amount{
+    text-align: left;
+    // margin-left: 15px;
+  }
+  form {
+    width: 100%;
+  }
+  .bottom-wraper{
+    margin-top:50px;
+  }
+  .MuiFormLabel-root.Mui-disabled,
+  .MuiIconButton-root {
+    color: $primaryColor;
+  }
+}
+.table-custom{
+    width: 100%;
+    overflow: auto;
+    .loading {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .MuiTable-root{
+        overflow-x: auto;
+    }
+    .MuiTableHead-root{
+        .MuiTableCell-head{
+            color: $primaryColor;
+        }
+    }
+    .MuiTableRow-root {
+        color: inherit;
+        display: table-row;
+        outline: 0;
+        vertical-align: middle;
+        white-space: nowrap;
+    }
+    .MuiPaper-root{
+      color: $primaryColor;
+      overflow-x: scroll;
+      .MuiTableCell-body{
+        color: $primaryColor;
+        padding: 16px 0;
+      }
+      .MuiTableCell-root {
+        border-bottom: 1px solid rgba(239, 215, 127, 0.08)
+      }
+    }
+    .MuiTablePagination-root{
+        color: $primaryColor;
+        .MuiSelect-icon{
+            color: $primaryColor;
+        }
+        .MuiSelect-select.MuiSelect-select{
+            border: 1px solid $primaryColor;
+            border-radius: 4px;
+        }
+    }
+  }
