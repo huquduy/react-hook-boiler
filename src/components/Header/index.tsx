@@ -23,7 +23,7 @@ import Credits from 'components/Credits'
 import { AuthContext } from 'contexts/authContext'
 import useDialog from 'hooks/dialog'
 import React, { useState } from 'react'
-import { useHistory } from 'react-router-dom'
+import { useHistory, Link } from 'react-router-dom'
 import Sidebar from '../Drawer'
 import './style.scss'
 
@@ -93,7 +93,7 @@ const Header: React.FC = () => {
             <MenuIcon />
           </IconButton>
           <div className='flex-grow' />
-          <img className='logo' alt='hokibet188' src={process.env.PUBLIC_URL + '/images/logo.png'} />
+          <Link to="/"><img className='logo' alt='hokibet188' src={process.env.PUBLIC_URL + '/images/logo.png'} /></Link>
           <div className='flex-grow' />
           {!auth.token
             ?
@@ -116,17 +116,18 @@ const Header: React.FC = () => {
               >
                 <MenuItem onClick={showCreditsDialog}><LocalAtmIcon />{auth.balance} IDR</MenuItem>
                 <MenuItem onClick={navigateToProfile}>Profile</MenuItem>
-                <MenuItem>
-                  <List><ListItem button onClick={handleClickOpen}>
+                <MenuItem className="profile-menu">
+                  <List ><ListItem button onClick={handleClickOpen}>
                     <ListItemText primary="Report" />
                     {open ? <ExpandLess /> : <ExpandMore />}
                   </ListItem>
                     <Collapse in={open} timeout="auto" unmountOnExit>
                       <List component="div" disablePadding>
                         <ListItem button >
-
-                          <ListItemText primary="Depo" />
+                          <Link to="/report/deposit" className="link-primary">Deposit</Link>
                         </ListItem>
+                        <ListItem button ><Link to="/report/withdraw" className="link-primary">Withdrawn</Link></ListItem>
+                        <ListItem button ><Link to="/report/transfer" className="link-primary">Transfer</Link></ListItem>
                       </List>
                     </Collapse>
                   </List></MenuItem>

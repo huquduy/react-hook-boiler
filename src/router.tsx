@@ -25,6 +25,10 @@ const PlayingTG = lazy(()=> import ('./pages/PlayingTG'))
 const PlayingGS = lazy(()=> import ('./pages/PlayingGS'))
 const Contact = lazy(()=> import ('./pages/Contact'))
 const ForgotPassword = lazy(() => import ('./pages/ForgotPassword'))
+const Transfer = lazy(()=> import ('./pages/Transfer'))
+const DepositReport = lazy(()=> import ('./pages/Report/Deposit'))
+const WithdrawReport = lazy(()=> import ('./pages/Report/Withdraw'))
+const TransferReport = lazy(()=> import ('./pages/Report/Transfer'))
 
 
 const Router = () => {
@@ -53,6 +57,10 @@ const Router = () => {
           <Route path="/forgot-password" component={ForgotPassword} />
           <Route path="/tg/groups/:group/types/:type/codes/:code" component={PlayingTG} />
           <Route path="/gs/groups/:group/types/:type/codes/:code" component={PlayingGS} />
+          <Route path="/transfer" component={Transfer} />
+          <Route path="/report/deposit" component={DepositReport} />
+          <Route path="/report/withdraw" component={WithdrawReport} />
+          <Route path="/report/transfer" component={TransferReport} />
         </Switch>
       </Suspense>
     </BrowserRouter>

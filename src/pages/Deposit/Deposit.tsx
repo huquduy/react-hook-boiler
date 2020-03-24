@@ -66,9 +66,11 @@ const Deposit: React.FC<RouteComponentProps> = ({ history }) => {
     // history.push('/home')
   }
   const handleChange = (event: React.ChangeEvent<{ value: unknown }>) => {
-    const findResult = find(propEq('value', event.target.value))(banks);
+    const value = event.target.value
+    const findResult = find(propEq('value',value ))(banks);
     setInitialValues({
       ...initialValues,
+      bankId: Number(value),
       accountName: findResult.accountName,
       accountNumber: findResult.accountNumber
     })

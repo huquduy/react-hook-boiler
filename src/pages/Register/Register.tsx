@@ -61,6 +61,13 @@ const Register: React.FC<RouteComponentProps> = ({ history }) => {
     history.push('/home')
     setAuthStatus(token)
   }
+  const handleChange = (event: React.ChangeEvent<{ value: unknown }>) => {
+    const value = event.target.value
+    setInitialValues({
+        ...initialValues,
+        bankId: String(value)
+    })
+}
 
   useEffect(() => {
     const fetchBanks = async() => {
@@ -155,6 +162,7 @@ const Register: React.FC<RouteComponentProps> = ({ history }) => {
                   label="Bank name"
                   fullWidth={true}
                   options={banks}
+                  handleChange={handleChange}
                   component={SelectInput} />
               </div>
               <div>
