@@ -21,6 +21,7 @@ import { RouteComponentProps, withRouter } from 'react-router-dom'
 import { composeValidators, mustBeNumber, required } from 'services/form'
 import { get, post } from 'services/http'
 import './style.scss'
+import useErrorDialog from 'hooks/error-dialog/error-dialog'
 
 interface IForm {
     origin: string,
@@ -56,6 +57,7 @@ const Transfer: React.FC<RouteComponentProps> = ({ history }) => {
     const [wallets, setWallets] = useState<IOption[] | []>([])
     const [suppliers, setSuppliers] = useState<IOption[] | []>([])
     const [credits, setCredits] = useState<ICredit[] | []>([])
+    const [showDialog, ErrorDialogComponent] = useErrorDialog(false)
     const [bonus, setBonus] = useState<IBonus>({
         id: 0,
         title: '',
@@ -66,7 +68,7 @@ const Transfer: React.FC<RouteComponentProps> = ({ history }) => {
     })
     const [checkShow, setCheckShow] = useState(false)
     const [isLoading, withLoading, Loading] = useLoading(false)
-    const [showSnackbar, Snackbar] = useSnackbar(false)
+    const [, Snackbar] = useSnackbar(false)
 
     const handleTransfer = async ({ amount, loyaltyBonus, origin, target }) => {
         const { error } = await withLoading(() => post({
@@ -76,7 +78,8 @@ const Transfer: React.FC<RouteComponentProps> = ({ history }) => {
             path: 'transfer/execute'
         })).catch(err => err)
         if (error) {
-            return showSnackbar(error)
+            return showDialog(error)
+            // return showSnackbar(error)
         }
         // history.push('/home')
     }
@@ -111,97 +114,59 @@ const Transfer: React.FC<RouteComponentProps> = ({ history }) => {
         const arrNoFetch = ['4D lottery', 'Poker IDN']
         const checkFetch = arrNoFetch.indexOf(value);
         setCheckShow(false)
-        if(checkFetch<0){
+        if (checkFetch < 0) {
             setCheckShow(true)
             const params: any = { provider: value }
-        const bonusResps = await withLoading(() => get({
-            body: params,
-            path: 'transfer/bonus/loyalty/'
+            const bonusResps = await withLoading(() => get({
+                body: params,
+                path: 'transfer/bonus/loyalty/'
 
-        }))
-            .catch((err) => err)
-        setBonus({ ...bonusResps, ...{ fullText: (`${bonusResps.title} Bonus ${bonusResps.percentage * 100} %`).toUpperCase() } })
+            }))
+                .catch((err) => err)
+            setBonus({ ...bonusResps, ...{ fullText: (`${bonusResps.title} Bonus ${bonusResps.percentage * 100} %`).toUpperCase() } })
         }
     }
     useEffect(() => {
-        const correctDataProps = (item: any) => ({
-            title: item,
-            value: item,
-        })
-        const fetchWallets = async () => {
-            const { data: walletResps, error }: { data: any[], error: string } = await withLoading(() => get({
-                path: 'wallets'
-            }))
-                .catch((err) => err)
-            if (error) {
-                return;
-            }
-            setWallets(map(correctDataProps, walletResps))
-            const initialWallet = walletResps[0];
-            setInitialValues({
-                ...initialValues,
-                origin: String(initialWallet)
+        const fetchData = async() =>{
+            const correctDataProps = (item: any) => ({
+                title: item,
+                value: item,
             })
-        }
-        
-        if (auth.username) {
-            fetchWallets()
-        }
-        // eslint-disable-next-line react-hooks/exhaustive-deps
-    }, [])
-    useEffect(()=>{
-        const correctDataProps = (item: any) => ({
-            title: item,
-            value: item,
-        })
-        const fetchSupplier = async () => {
-            const { data: supplierResps, error }: { data: any[], error: string } = await withLoading(() => get({
-                path: 'suppliers'
-            }))
-                .catch((err) => err)
-            if (error) {
-                return;
-            }
-            setSuppliers(map(correctDataProps, supplierResps))
-            const initialSupplier = supplierResps[0];
-            setInitialValues({
-                ...initialValues,
-                target: initialSupplier,
-            })
-            fetchBonusProvider(supplierResps[0])
-        }
-        if (auth.username) {
-            fetchSupplier()
-        }
-        // eslint-disable-next-line react-hooks/exhaustive-deps
-    }, [])
-    useEffect(()=>{
-        const fetchCredits = async () => {
             const correctCreditProps = ({ title, data }) => ({
                 label: title,
                 value: data
             })
-            const { data: creditResps, error }: { data: any[], error: string } = await withLoading(() => get({
-                path: 'user/credit'
-            }))
-                .catch((err) => err)
+            try {
+                const [{data:supplierResps}, {data:walletResps},  { data: creditResps}] = await withLoading(() => Promise.all([
+                    withLoading(() => get({path: 'suppliers'})),
+                    withLoading(() => get({path: 'wallets'})),
+                    withLoading(() => get({path: 'user/credit'}))
+                ]))
+                setWallets(map(correctDataProps, walletResps))
+                setSuppliers(map(correctDataProps, supplierResps))
+                setCredits(map(correctCreditProps, creditResps))
+                const initialSupplier = supplierResps[0]
+                const initialWallet = walletResps[0]
+                const initialCredit = creditResps[0].data
+                setInitialValues({
+                    ...initialValues,
+                    credit: initialCredit,
+                    origin: String(initialWallet),
+                    target: initialSupplier,
+                })
+                fetchBonusProvider(supplierResps[0])
 
-            if (error) {
-                // tslint:disable-next-line: no-console
-                console.log(error)
+            } catch (error){
+                throw error
             }
-            setCredits(map(correctCreditProps, creditResps))
-            setInitialValues({
-                ...initialValues,
-                credit: creditResps[0].data
-            })
-
         }
+
         if (auth.username) {
-            fetchCredits()
+            fetchData()
         }
         // eslint-disable-next-line react-hooks/exhaustive-deps
-    },[])
+    }, [])
+
     return (
         <div className='deposit-page'>
             <Loading color="secondary" />
@@ -264,8 +229,8 @@ const Transfer: React.FC<RouteComponentProps> = ({ history }) => {
                                 <Typography variant="caption" display="block" gutterBottom={true}>
                                     * I want to claim bonus with term and conditions. Rollover {bonus.rollingTime} Times
                                 </Typography>
-                            </div>: null}
-                            
+                            </div> : null}
+
 
                             <div>
                                 <Button variant="outlined" color="primary" type="submit" startIcon={<SendIcon />}>
@@ -275,6 +240,7 @@ const Transfer: React.FC<RouteComponentProps> = ({ history }) => {
                         </div>
                     </form>}
             </Form>
+            <ErrorDialogComponent />
             <Snackbar />
             <Bottom />
         </div>
