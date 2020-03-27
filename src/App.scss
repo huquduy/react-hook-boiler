@@ -82,9 +82,16 @@ a {
 
 .MuiTab-textColorInherit {
   &.Mui-selected {
-    border: 2px solid $primaryColor;
+    // border: 2px solid $primaryColor;
     border-radius: 8px;
-    background: rgba(239, 215, 127, 0.2);
+    // background: rgba(239, 215, 127, 0.2);
+    .MuiTypography-colorPrimary{
+      span{
+        border: 2px solid $primaryColor;
+        background: rgba(239, 215, 127, 0.2);
+      }
+    }
+   
   }
 }
 .PrivateTabIndicator-root-512 {

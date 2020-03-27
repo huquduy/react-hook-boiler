@@ -12,6 +12,7 @@ import Header from 'components/Header'
 import SelectInput, { IOption } from 'components/SelectInput'
 import TextInput from 'components/TextInput'
 import { AuthContext } from "contexts/authContext"
+import useErrorDialog from 'hooks/error-dialog/error-dialog'
 import useLoading from 'hooks/loading'
 import useSnackbar from 'hooks/snackbar'
 import { find, map, propEq } from 'ramda'
@@ -21,7 +22,6 @@ import { RouteComponentProps, withRouter } from 'react-router-dom'
 import { composeValidators, mustBeNumber, required } from 'services/form'
 import { get, post } from 'services/http'
 import './style.scss'
-import useErrorDialog from 'hooks/error-dialog/error-dialog'
 
 interface IForm {
     origin: string,
@@ -78,10 +78,22 @@ const Transfer: React.FC<RouteComponentProps> = ({ history }) => {
             path: 'transfer/execute'
         })).catch(err => err)
         if (error) {
-            return showDialog(error)
-            // return showSnackbar(error)
+            return showDialog(error,"Error")
+        } else {
+            const  { data: creditResps} = await withLoading(() => get({path: 'user/credit'}))
+            const correctCreditProps = ({ title, data }) => ({
+                label: title,
+                value: data
+            })
+            setCredits(map(correctCreditProps, creditResps))
+            const findResult = find(propEq('label', origin))(credits);
+            setInitialValues({
+                ...initialValues,
+                credit: findResult.value
+            })
+            return showDialog("Transfer Successfully", "Success")
         }
-        // history.push('/home')
+        
     }
     const handleChangeTransferFrom = (event: React.ChangeEvent<{ value: unknown }>) => {
         const value = event.target.value
@@ -123,6 +135,10 @@ const Transfer: React.FC<RouteComponentProps> = ({ history }) => {
 
             }))
                 .catch((err) => err)
+                if(bonusResps.error){
+                    setCheckShow(false)
+                    return;
+                }
             setBonus({ ...bonusResps, ...{ fullText: (`${bonusResps.title} Bonus ${bonusResps.percentage * 100} %`).toUpperCase() } })
         }
     }
