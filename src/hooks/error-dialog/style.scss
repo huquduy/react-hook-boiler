@@ -1,0 +1,11 @@
+@import '../../colors';
+.error{
+    h2{
+        color: $secondaryColor;
+    }
+}
+.success{
+   h2{
+    color: $primaryColor;
+   }
+}

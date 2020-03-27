@@ -37,7 +37,7 @@ const Login: React.FC<RouteComponentProps> = ({ history }) => {
       path: 'user/signIn'
     })).catch((err) => err)
     if (error) {
-      return showDialog(error)
+      return showDialog(error, "Error")
     }
     history.push('/home')
     setAuthStatus(token)

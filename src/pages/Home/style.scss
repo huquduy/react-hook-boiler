@@ -89,5 +89,19 @@
       background-color: $secondaryColor;
     }
   }
+  .text-home{
+    color:$primaryColor;
+    background: #0a0a0a;
+    padding: 16px;
+    border-top: 1px solid $primaryColor;
+    h3{
+      text-align:center;
+      padding: 10px 0px;
+      margin: 0;
+    }
+    p{
+      text-align:left;
+    }
+  }
   
 }

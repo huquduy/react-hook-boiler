@@ -7,7 +7,7 @@ import GAMES, { getGameType, IProviderProps, SLOT_TAB } from 'constant/games'
 import { AuthContext } from "contexts/authContext"
 import useLoading from 'hooks/loading'
 import { map } from 'ramda'
-import React, {useEffect, useMemo, useState} from 'react'
+import React, { useEffect, useMemo, useState } from 'react'
 import MarqueeText from 'react-marquee-text-component'
 import { Link, RouteComponentProps, withRouter } from 'react-router-dom'
 import Carousel from 'react-slick'
@@ -34,24 +34,24 @@ const Home: React.FC<RouteComponentProps> = ({ history }) => {
   const handleChangeTab = (event: React.ChangeEvent<{}>, newValue: string) => {
     setActiveTab(newValue);
   };
-  
+
   useEffect(() => {
     const fetchText = async () => {
       const textString = await withLoading(() => get({
         path: 'runningText'
       }))
         .catch((err) => err)
-        setRunningText(textString)
-      }
+      setRunningText(textString)
+    }
     fetchText()
-      // eslint-disable-next-line react-hooks/exhaustive-deps
-  },[])
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [])
 
-  const { providers } : { providers: IProviderProps[] } = useMemo(() => getGameType(activeTab), [activeTab])
+  const { providers }: { providers: IProviderProps[] } = useMemo(() => getGameType(activeTab), [activeTab])
 
   return (
     <div className='home-page'>
-      <Header/>
+      <Header />
 
       {/* Carousel */}
       <Carousel {...settingsCarousel}>
@@ -60,24 +60,24 @@ const Home: React.FC<RouteComponentProps> = ({ history }) => {
             <div key={item}>
               <img className='logo' alt='hokibet188' src={`${imageSrc}/home-carousel/${item}`} />
             </div>
-          , carousels)
+            , carousels)
         }
       </Carousel>
 
       {/* Authentication functions */}
       {
         isLogged
-        ? <div className='authentication'>
-          <Link className="register" to="/register">Register</Link>
-          <Link className="login" to="/login">Login</Link>
-        </div>
-        : <div className='auth'>
-        <Link className="register" to="/deposit">Deposit</Link>
-        <Link className="transfer" to="/transfer">Transfer</Link>
-        <Link className="login" to="/withdraw">Withdraw</Link>
-      </div>
+          ? <div className='authentication'>
+            <Link className="register" to="/register">Register</Link>
+            <Link className="login" to="/login">Login</Link>
+          </div>
+          : <div className='auth'>
+            <Link className="register" to="/deposit">Deposit</Link>
+            <Link className="transfer" to="/transfer">Transfer</Link>
+            <Link className="login" to="/withdraw">Withdraw</Link>
+          </div>
       }
-      <MarqueeText className="marquee" text={runningText} duration={30} repeat={1}/>
+      <MarqueeText className="marquee" text={runningText} duration={30} repeat={1} />
       {/* Provider list */}
       <div className='game-tabs'>
         <Tabs className="custom_tab"
@@ -94,11 +94,11 @@ const Home: React.FC<RouteComponentProps> = ({ history }) => {
               <Typography variant="caption" display="block" gutterBottom={true}>
                 {idName}
               </Typography>
-            </div>} value={idName} />, GAMES )}
+            </div>} value={idName} />, GAMES)}
         </Tabs>
         <TabPanel value={activeTab}>
           <Grid container={true} spacing={1}>
-            {map(({ image, idName, route, target }: IProviderProps) => 
+            {map(({ image, idName, route, target }: IProviderProps) =>
               <Grid item={true} xs={4} sm={4} key={idName}>
                 <a href={route} target={target}>
                   <Paper className='provider'>
@@ -109,9 +109,18 @@ const Home: React.FC<RouteComponentProps> = ({ history }) => {
                   </Paper>
                 </a>
               </Grid>
-            , providers)}
+              , providers)}
           </Grid>
         </TabPanel>
+      </div>
+      {/* Text intro */}
+      <div className="text-home">
+        <h3>SITUS JUDI ONLINE DAN PERMAINAN CASINO TERPERCAYA</h3>
+        <p>Hokibet188 adalah salah satu situs kasino online terpercaya di Indonesia. Berhasil memperoleh kepopuleran melalui penggabungan teknologi informasi terbaru dengan koleksi game-game online yang unik. Anda akan menikmati pengalaman bermain game Casino Online terbaik dan paling aman melalui kemitraan kami dengan sejumlah pemegang merk terkenal dan terbesar dalam industri games kasino online ini. Hokibet188 menawarkan berbagai pilihan permainan games online Sportbooks, Live Casino, Slots Game, 4D, Poker. Mainkan live game Baccarat, Blackjack, Roulette, Sic Bo,Poker dan masih banyak lagi dengan live dealer yang profesional langsung dari browser Anda dan rasakan pengalaman bermain game online terbaik</p>
+        <h3>SLOT ONLINE TERPERCAYA DAN TERBAIK</h3>
+        <p>Hokibet188 menyediakan permainan slot online Terbaik yang paling eksklusif kepada Anda. Mesin-mesin slots online yang disediakan tidak hanya menarik tapi juga terbaru guna memenuhi kebutuhan anda. Selain itu, Hokibet188 menawarkan hadiah yang tinggi dan beragam termasuk progresif jackpot sampai ratusan juta rupiah dan prosedur penarikan dana yang cepat dan mudah kepada Anda. Pemain bisa menikmati pilihan game slots yang beragam melalui perangkat lunak berteknologi tinggi serta standar-standar game yang telah mendapatkan sertifikasi Fair Play.</p>
+        <h3>BANDAR JUDI BOLA SBOBET RESMI TERPERCAYA INDONESIA</h3>
+        <p>Hokibet188 agen sbobet online paling terpercaya di Indonesia.Hokibet188 menjamin berapapun kemenangan member 100% di bayar penuh dengan proses wd yg sangat cepat support 24 jam. kami yang sudah memiliki reputasi tinggi di kalangan para Pemain Taruhan Bola Online terbesar. inilah alasan kenapa kami menyebut Hokibet188 agen sbobet terbesar & terbaik di indonesia.Baik untuk sbobet bola atau sbobet casino.</p>
       </div>
       <Bottom />
     </div>

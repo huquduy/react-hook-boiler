@@ -46,7 +46,7 @@ const ITEMS = [
 ]
 
 const Bottom: React.FC = () => {
-  const [activeTab, setActiveTab] = useState('promotion')
+  const [activeTab, setActiveTab] = useState('home')
   const handleChange = (event: React.ChangeEvent<{}>, newValue: string) => {
     setActiveTab(newValue);
   };

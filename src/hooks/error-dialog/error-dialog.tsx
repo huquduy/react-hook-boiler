@@ -9,26 +9,29 @@ import {
 import React, { FC, ReactNode, useState } from "react"
 import './style.scss'
 
-type TCallback = (msg: string) => void
+type TCallback = (msg: string, statusAPI: string) => void
 type HookDialog = (status: boolean) => [TCallback, React.FC<{ children?: ReactNode, title?: string }>]
 
 const useErrorDialog: HookDialog = (status) => {
   const [isOpened, setIsOpened] = useState(status)
   const [message, setMessage] = useState('')
+  const [statusApi, setStatusAPI] = useState('')
 
   const handleClose = () => {
     setIsOpened(false)
     setMessage('')
+    setStatusAPI('')
   }
 
-  const showDialog = (msg: string) => {
+  const showDialog = ( msg: string, statusAPI: string) => {
     setMessage(msg)
+    setStatusAPI(statusAPI)
     setIsOpened(true)
 
   }
 
   const ErrorDialogComponent: FC<{ children?: ReactNode, title?: string }> = ({
-    children, title = 'Error'
+    children, title
   }) => (
       <div className="dialog">
         <Dialog
@@ -36,11 +39,17 @@ const useErrorDialog: HookDialog = (status) => {
           onClose={handleClose}
           aria-labelledby="responsive-dialog-title"
         >
-          <DialogTitle id="responsive-dialog-title">{title}</DialogTitle>
+          {statusApi === "Error" ?  <DialogTitle id="responsive-dialog-title" className="error">{statusApi}</DialogTitle>: 
+           <DialogTitle id="responsive-dialog-title" className="success">{statusApi}</DialogTitle>}
+         
           <DialogContent>
+          {statusApi === "Error" ? 
             <Typography color="secondary" variant="inherit" align="center" component="span" gutterBottom>
               {message}
-            </Typography>
+            </Typography>: 
+            <Typography color="primary" variant="inherit" align="center" component="span" gutterBottom>
+            {message}
+          </Typography>}
           </DialogContent>
           <DialogActions>
             <Button onClick={handleClose} color="primary" autoFocus={true}>

@@ -34,7 +34,7 @@ const ForgotPassword: React.FC<RouteComponentProps> = ({ history }) => {
             path: 'user/forgot'
         })).catch((err) => err)
         if (error) {
-            return showDialog(error)
+            return showDialog(error, "Error")
         }
         history.push('/home')
     }
