@@ -1,11 +1,11 @@
 import {
-    Button,
-    Checkbox,
-    FormControlLabel,
-    Typography
+  Button,
+  Checkbox,
+  FormControlLabel,
+  Typography
 } from '@material-ui/core'
 import {
-    Send as SendIcon,
+  Send as SendIcon,
 } from '@material-ui/icons'
 import Bottom from 'components/Bottom'
 import Header from 'components/Header'
@@ -24,244 +24,244 @@ import { get, post } from 'services/http'
 import './style.scss'
 
 interface IForm {
-    origin: string,
-    target: string,
-    amount: string,
-    loyaltyBonus: boolean,
-    credit: string
+  origin: string,
+  target: string,
+  amount: string,
+  loyaltyBonus: boolean,
+  credit: string
 }
 
 export interface ICredit {
-    label: string;
-    value: string;
+  label: string;
+  value: string;
 }
 export interface IBonus {
-    id: number,
-    title: string,
-    rollingTime: number,
-    status: number,
-    percentage: number,
-    fullText: string,
+  id: number,
+  title: string,
+  rollingTime: number,
+  status: number,
+  percentage: number,
+  fullText: string,
 }
 const { Form } = withTypes<IForm>()
 
 const Transfer: React.FC<RouteComponentProps> = ({ history }) => {
-    const { auth } = React.useContext(AuthContext)
-    const [initialValues, setInitialValues] = useState<IForm>({
-        amount: '',
-        credit: '',
-        loyaltyBonus: false,
-        origin: '',
-        target: '',
+  const { auth } = React.useContext(AuthContext)
+  const [initialValues, setInitialValues] = useState<IForm>({
+    amount: '',
+    credit: '',
+    loyaltyBonus: false,
+    origin: '',
+    target: '',
+  })
+  const [wallets, setWallets] = useState<IOption[] | []>([])
+  const [suppliers, setSuppliers] = useState<IOption[] | []>([])
+  const [credits, setCredits] = useState<ICredit[] | []>([])
+  const [showDialog, ErrorDialogComponent] = useErrorDialog(false)
+  const [bonus, setBonus] = useState<IBonus>({
+    id: 0,
+    title: '',
+    fullText: '',
+    rollingTime: 0,
+    percentage: 0,
+    status: 1,
+  })
+  const [checkShow, setCheckShow] = useState(false)
+  const [isLoading, withLoading, Loading] = useLoading(false)
+  const [, Snackbar] = useSnackbar(false)
+
+  const handleTransfer = async ({ amount, loyaltyBonus, origin, target }) => {
+    const { error } = await withLoading(() => post({
+      body: {
+        amount, loyaltyBonus, origin, target
+      },
+      path: 'transfer/execute'
+    })).catch(err => err)
+    if (error) {
+      return showDialog(error, "Error")
+    } else {
+      const { data: creditResps } = await withLoading(() => get({ path: 'user/credit' }))
+      // const correctCreditProps = ({ title, data }) => ({
+      //     label: title,
+      //     value: data
+      // })
+      // setCredits(map(correctCreditProps, creditResps))
+      const findResult = find(propEq('title', origin))(creditResps);
+      setInitialValues({
+        ...initialValues,
+        credit: findResult.value
+      })
+      return showDialog("Transfer Successfully", "Success")
+    }
+
+  }
+  const handleChangeTransferFrom = (event: React.ChangeEvent<{ value: unknown }>) => {
+    const value = event.target.value
+    const findResult = find(propEq('label', value))(credits);
+    setInitialValues({
+      ...initialValues,
+      credit: findResult.value,
+      origin: String(value)
     })
-    const [wallets, setWallets] = useState<IOption[] | []>([])
-    const [suppliers, setSuppliers] = useState<IOption[] | []>([])
-    const [credits, setCredits] = useState<ICredit[] | []>([])
-    const [showDialog, ErrorDialogComponent] = useErrorDialog(false)
-    const [bonus, setBonus] = useState<IBonus>({
-        id: 0,
-        title: '',
-        fullText: '',
-        rollingTime: 0,
-        percentage: 0,
-        status: 1,
+  }
+  const handleChangeTransferTo = (event: React.ChangeEvent<{ value: unknown }>) => {
+    const value = String(event.target.value)
+    setInitialValues({
+      ...initialValues,
+      target: value
     })
-    const [checkShow, setCheckShow] = useState(false)
-    const [isLoading, withLoading, Loading] = useLoading(false)
-    const [, Snackbar] = useSnackbar(false)
+    fetchBonusProvider(value);
 
-    const handleTransfer = async ({ amount, loyaltyBonus, origin, target }) => {
-        const { error } = await withLoading(() => post({
-            body: {
-                amount, loyaltyBonus, origin, target
-            },
-            path: 'transfer/execute'
-        })).catch(err => err)
-        if (error) {
-            return showDialog(error,"Error")
-        } else {
-            const  { data: creditResps} = await withLoading(() => get({path: 'user/credit'}))
-            const correctCreditProps = ({ title, data }) => ({
-                label: title,
-                value: data
-            })
-            setCredits(map(correctCreditProps, creditResps))
-            const findResult = find(propEq('label', origin))(credits);
-            setInitialValues({
-                ...initialValues,
-                credit: findResult.value
-            })
-            return showDialog("Transfer Successfully", "Success")
-        }
-        
-    }
-    const handleChangeTransferFrom = (event: React.ChangeEvent<{ value: unknown }>) => {
-        const value = event.target.value
-        const findResult = find(propEq('label', value))(credits);
-        setInitialValues({
-            ...initialValues,
-            credit: findResult.value,
-            origin: String(value)
-        })
-    }
-    const handleChangeTransferTo = (event: React.ChangeEvent<{ value: unknown }>) => {
-        const value = String(event.target.value)
-        setInitialValues({
-            ...initialValues,
-            target: value
-        })
-        fetchBonusProvider(value);
-
-    }
-    const handeChangeCheckbox = (event: React.ChangeEvent<{ checked: boolean }>) => {
-        const value = event.target.checked
-        setInitialValues({
-            ...initialValues,
-            loyaltyBonus: value
-        })
+  }
+  const handeChangeCheckbox = (event: React.ChangeEvent<{ checked: boolean }>) => {
+    const value = event.target.checked
+    setInitialValues({
+      ...initialValues,
+      loyaltyBonus: value
+    })
 
 
-    }
-    const fetchBonusProvider = async (value: string) => {
-        const arrNoFetch = ['4D lottery', 'Poker IDN']
-        const checkFetch = arrNoFetch.indexOf(value);
+  }
+  const fetchBonusProvider = async (value: string) => {
+    const arrNoFetch = ['4D lottery', 'Poker IDN']
+    const checkFetch = arrNoFetch.indexOf(value);
+    setCheckShow(false)
+    if (checkFetch < 0) {
+      setCheckShow(true)
+      const params: any = { provider: value }
+      const bonusResps = await withLoading(() => get({
+        body: params,
+        path: 'transfer/bonus/loyalty/'
+
+      }))
+        .catch((err) => err)
+      if (bonusResps.error) {
         setCheckShow(false)
-        if (checkFetch < 0) {
-            setCheckShow(true)
-            const params: any = { provider: value }
-            const bonusResps = await withLoading(() => get({
-                body: params,
-                path: 'transfer/bonus/loyalty/'
-
-            }))
-                .catch((err) => err)
-                if(bonusResps.error){
-                    setCheckShow(false)
-                    return;
-                }
-            setBonus({ ...bonusResps, ...{ fullText: (`${bonusResps.title} Bonus ${bonusResps.percentage * 100} %`).toUpperCase() } })
-        }
+        return;
+      }
+      setBonus({ ...bonusResps, ...{ fullText: (`${bonusResps.title} Bonus ${bonusResps.percentage * 100} %`).toUpperCase() } })
     }
-    useEffect(() => {
-        const fetchData = async() =>{
-            const correctDataProps = (item: any) => ({
-                title: item,
-                value: item,
-            })
-            const correctCreditProps = ({ title, data }) => ({
-                label: title,
-                value: data
-            })
-            try {
-                const [{data:supplierResps}, {data:walletResps},  { data: creditResps}] = await withLoading(() => Promise.all([
-                    withLoading(() => get({path: 'suppliers'})),
-                    withLoading(() => get({path: 'wallets'})),
-                    withLoading(() => get({path: 'user/credit'}))
-                ]))
-                setWallets(map(correctDataProps, walletResps))
-                setSuppliers(map(correctDataProps, supplierResps))
-                setCredits(map(correctCreditProps, creditResps))
-                const initialSupplier = supplierResps[0]
-                const initialWallet = walletResps[0]
-                const initialCredit = creditResps[0].data
-                setInitialValues({
-                    ...initialValues,
-                    credit: initialCredit,
-                    origin: String(initialWallet),
-                    target: initialSupplier,
-                })
-                fetchBonusProvider(supplierResps[0])
+  }
+  useEffect(() => {
+    const fetchData = async () => {
+      const correctDataProps = (item: any) => ({
+        title: item,
+        value: item,
+      })
+      const correctCreditProps = ({ title, data }) => ({
+        label: title,
+        value: data
+      })
+      try {
+        const [{ data: supplierResps }, { data: walletResps }, { data: creditResps }] = await withLoading(() => Promise.all([
+          withLoading(() => get({ path: 'suppliers' })),
+          withLoading(() => get({ path: 'wallets' })),
+          withLoading(() => get({ path: 'user/credit' }))
+        ]))
+        setWallets(map(correctDataProps, walletResps))
+        setSuppliers(map(correctDataProps, supplierResps))
+        setCredits(map(correctCreditProps, creditResps))
+        const initialSupplier = supplierResps[0]
+        const initialWallet = walletResps[0]
+        const initialCredit = creditResps[0].data
+        setInitialValues({
+          ...initialValues,
+          credit: initialCredit,
+          origin: String(initialWallet),
+          target: initialSupplier,
+        })
+        fetchBonusProvider(supplierResps[0])
 
-            } catch (error){
-                throw error
-            }
-        }
+      } catch (error) {
+        throw error
+      }
+    }
 
-        if (auth.username) {
-            fetchData()
-        }
-        // eslint-disable-next-line react-hooks/exhaustive-deps
-    }, [])
+    if (auth.username) {
+      fetchData()
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [])
 
-    return (
-        <div className='deposit-page'>
-            <Loading color="secondary" />
-            <Header />
-            <Typography color="primary" className="title" variant="h5" align="center" component="h2" gutterBottom={true}>
-                BALANCE TRANSFER
+  return (
+    <div className='deposit-page'>
+      <Loading color="secondary" />
+      <Header />
+      <Typography color="primary" className="title" variant="h5" align="center" component="h2" gutterBottom={true}>
+        BALANCE TRANSFER
           </Typography>
-            <Form
-                initialValues={initialValues}
-                onSubmit={handleTransfer}>
-                {({ handleSubmit }) =>
-                    <form onSubmit={handleSubmit}>
-                        <div className='container'>
-                            <div>
-                                <Field
-                                    name="origin"
-                                    label="Transfer From"
-                                    fullWidth={true}
-                                    options={wallets}
-                                    handleChange={handleChangeTransferFrom}
-                                    variant="outlined"
-                                    component={SelectInput} />
-                            </div>
-                            <div>
-                                <Field
-                                    name="credit"
-                                    label="Credit"
-                                    type="text"
-                                    disabled={true}
-                                    fullWidth={true}
-                                    component={TextInput} />
-                            </div>
-                            <div>
-                                <Field
-                                    name="target"
-                                    label="Transfer To"
-                                    fullWidth={true}
-                                    options={suppliers}
-                                    handleChange={handleChangeTransferTo}
-                                    variant="outlined"
-                                    component={SelectInput} />
-                            </div>
-                            <div>
-                                <Field
-                                    validate={composeValidators(required, mustBeNumber)}
-                                    name="amount"
-                                    label="Amount"
-                                    type="text"
-                                    disable={isLoading.toString()}
-                                    fullWidth={true}
-                                    component={TextInput} />
-                            </div>
-                            {checkShow ? <div>
-                                <FormControlLabel
-                                    value="loyaltyBonus"
-                                    control={<Checkbox color="primary" onChange={handeChangeCheckbox} />}
-                                    label={bonus.fullText}
-                                    name="loyaltyBonus"
-                                />
-                                <Typography variant="caption" display="block" gutterBottom={true}>
-                                    * I want to claim bonus with term and conditions. Rollover {bonus.rollingTime} Times
+      <Form
+        initialValues={initialValues}
+        onSubmit={handleTransfer}>
+        {({ handleSubmit }) =>
+          <form onSubmit={handleSubmit}>
+            <div className='container'>
+              <div>
+                <Field
+                  name="origin"
+                  label="Transfer From"
+                  fullWidth={true}
+                  options={wallets}
+                  handleChange={handleChangeTransferFrom}
+                  variant="outlined"
+                  component={SelectInput} />
+              </div>
+              <div>
+                <Field
+                  name="credit"
+                  label="Credit"
+                  type="text"
+                  disabled={true}
+                  fullWidth={true}
+                  component={TextInput} />
+              </div>
+              <div>
+                <Field
+                  name="target"
+                  label="Transfer To"
+                  fullWidth={true}
+                  options={suppliers}
+                  handleChange={handleChangeTransferTo}
+                  variant="outlined"
+                  component={SelectInput} />
+              </div>
+              <div>
+                <Field
+                  validate={composeValidators(required, mustBeNumber)}
+                  name="amount"
+                  label="Amount"
+                  type="text"
+                  disable={isLoading.toString()}
+                  fullWidth={true}
+                  component={TextInput} />
+              </div>
+              {checkShow ? <div>
+                <FormControlLabel
+                  value="loyaltyBonus"
+                  control={<Checkbox color="primary" onChange={handeChangeCheckbox} />}
+                  label={bonus.fullText}
+                  name="loyaltyBonus"
+                />
+                <Typography variant="caption" display="block" gutterBottom={true}>
+                  * I want to claim bonus with term and conditions. Rollover {bonus.rollingTime} Times
                                 </Typography>
-                            </div> : null}
+              </div> : null}
 
 
-                            <div>
-                                <Button variant="outlined" color="primary" type="submit" startIcon={<SendIcon />}>
-                                    Submit
+              <div>
+                <Button variant="outlined" color="primary" type="submit" startIcon={<SendIcon />}>
+                  Submit
                     </Button>
-                            </div>
-                        </div>
-                    </form>}
-            </Form>
-            <ErrorDialogComponent />
-            <Snackbar />
-            <Bottom />
-        </div>
+              </div>
+            </div>
+          </form>}
+      </Form>
+      <ErrorDialogComponent />
+      <Snackbar />
+      <Bottom />
+    </div>
 
-    )
+  )
 }
 
 export default withRouter(Transfer)
