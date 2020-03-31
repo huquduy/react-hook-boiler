@@ -87,8 +87,9 @@ a {
     // background: rgba(239, 215, 127, 0.2);
     .MuiTypography-colorPrimary{
       span{
-        border: 2px solid $primaryColor;
-        background: rgba(239, 215, 127, 0.2);
+        border: 1px solid $primaryColor;
+        background: rgba(239, 215, 127, 0.1);
+        border-radius: 4px;
       }
     }
    
