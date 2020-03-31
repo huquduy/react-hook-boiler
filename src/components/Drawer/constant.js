@@ -233,22 +233,22 @@ export default () => [
     title: 'About Us',
   },
   {
-    icon: 'lottery.png',
+    icon: 'term.png',
     route: '/term-condition',
     title: 'Term & Condition',
   },
   {
-    icon: 'lottery.png',
+    icon: 'privacy.png',
     route: '/privacy',
     title: 'Privacy & Policy',
   },
   {
-    icon: 'lottery.png',
+    icon: 'responsible.png',
     route: '/reposible',
     title: 'Resposible Gambling',
   },
   {
-    icon: 'lottery.png',
+    icon: 'banking.png',
     route: '/banking',
     title: 'Banking',
   },
@@ -258,7 +258,7 @@ export default () => [
     title: 'Contact Us',
   },
   {
-    icon: 'lottery.png',
+    icon: 'faq.png',
     route: '/faq',
     title: 'FAQ',
   }
