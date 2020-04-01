@@ -218,9 +218,10 @@ const GAMETYPES = [
     idName: POKER_TAB,
     providers: [
       {
-        idName: 'BNIN',
-        image: 'bbin.png',
-        route: ''
+        idName: 'IDN',
+        image: 'poker/idn.png',
+        route: '/gs/groups/idnPoker/types/null/codes/null',
+        target: '_blank',
       }
     ],
     title:'POKER'
