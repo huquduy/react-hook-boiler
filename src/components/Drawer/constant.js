@@ -1,56 +1,15 @@
-// export default () => [
-//   {
-//     icon: 'home.png',
-//     route: '/home',
-//     title: 'Home',
-//   },
-//   {
-//     icon: 'sports.png',
-//     route: '/sports',
-//     title: 'Sports',
-//   },
-//   {
-//     icon: 'casino.png',
-//     route: '/casino',
-//     title: 'Casino',
-//   },
-//   {
-//     icon: 'slots.png',
-//     route: '/slots/joker',
-//     title: 'Slots',
-//   },
-//   {
-//     icon: 'lottery.png',
-//     route: '/lottery',
-//     title: 'Lottery',
-//   },
-//   {
-//     icon: 'tangkas.png',
-//     route: '/tangkas',
-//     title: 'Tangkas',
-//   },
-//   {
-//     icon: 'fishhunter.png',
-//     route: '/fishhunter',
-//     title: 'Fish hunter',
-//   }
-// ]
-export default () => [
-  {
-    icon: 'home.png',
-    route: '/home',
-    title: 'Home',
-  },
+
+export const games = [
   {
     icon: 'sports.png',
     route: '',
     title: 'Games',
-    level2:[
+    items:[
       {
         icon: 'slots.png',
         route: '',
         title: 'Slots',
-        level3:[
+        items:[
           {
             icon: '',
             route: '/slots/pg',
@@ -102,7 +61,7 @@ export default () => [
         icon: 'casino.png',
         route: '',
         title: 'Casino',
-        level3:[
+        items:[
           {
             icon: '',
             route: '/slots/pg',
@@ -159,7 +118,7 @@ export default () => [
         icon: 'sports.png',
         route: '',
         title: 'Sports',
-        level3:[
+        items:[
           {
             icon: '',
             route: '/slots/pg',
@@ -181,7 +140,7 @@ export default () => [
         icon: 'fishing.png',
         route: '',
         title: 'Fishing',
-        level3:[
+        items:[
           {
             icon: '',
             route: '/slots/pg',
@@ -222,45 +181,49 @@ export default () => [
       }
     ]
   },
-  {
-    icon: 'download.png',
-    route: '/mobile/0',
-    title: 'Download',
-  },
-  {
-    icon: 'about.png',
-    route: '/about-us',
-    title: 'About Us',
-  },
-  {
-    icon: 'term.png',
-    route: '/term-condition',
-    title: 'Term & Condition',
-  },
-  {
-    icon: 'privacy.png',
-    route: '/privacy',
-    title: 'Privacy & Policy',
-  },
-  {
-    icon: 'responsible.png',
-    route: '/reposible',
-    title: 'Resposible Gambling',
-  },
-  {
-    icon: 'banking.png',
-    route: '/banking',
-    title: 'Banking',
-  },
-  {
-    icon: 'contact.png',
-    route: '/contact',
-    title: 'Contact Us',
-  },
-  {
-    icon: 'faq.png',
-    route: '/faq',
-    title: 'FAQ',
-  }
-  
-]
+
+];
+export const profile = [{
+  icon: 'sports.png',
+  route: '',
+  title: 'Transaksi',
+  items: [
+    {
+      icon: '',
+      route: '/contact',
+      title: 'Deposit',
+    },
+    {
+      icon: '',
+      route: '/withdraw',
+      title: 'Withdrawn',
+    },
+    {
+      icon: '',
+      route: '/transfer',
+      title: 'Transfer',
+    }
+  ]
+}];
+export const report = [{
+  icon: 'sports.png',
+  route: '',
+  title: 'Report',
+  items: [
+    {
+      icon: '',
+      route: '/report/deposit',
+      title: 'Deposit',
+    },
+    {
+      icon: '',
+      route: '/report/withdraw',
+      title: 'Withdrawn',
+    },
+    {
+      icon: '',
+      route: '/report/transfer',
+      title: 'Transfer',
+    }
+  ]
+}];
