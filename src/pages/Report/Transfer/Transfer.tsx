@@ -19,6 +19,7 @@ import TextInput from 'components/TextInput'
 import { AuthContext } from "contexts/authContext"
 import useLoading from 'hooks/loading'
 import useSnackbar from 'hooks/snackbar'
+import moment from 'moment'
 import { map } from 'ramda'
 import React, { useEffect, useState } from 'react'
 import { Field, withTypes } from 'react-final-form'
@@ -35,13 +36,13 @@ const { Form } = withTypes<IForm>()
 
 const TransferReport: React.FC<RouteComponentProps> = ({ history }) => {
     const { auth } = React.useContext(AuthContext)
-    const [initialValues, setInitialValues] = useState<IForm>({
-        fromDate: String(new Date()),
-        toDate: String(new Date())
+    const [initialValues] = useState<IForm>({
+        fromDate: moment(new Date()).format('YYYY-MM-DD'),
+        toDate: moment(new Date()).format('YYYY-MM-DD')
     })
     const [rows, setRows] = useState<[]>([])
 
-    const [isLoading, withLoading, Loading] = useLoading(false)
+    const [, withLoading, Loading] = useLoading(false)
     const [showSnackbar, Snackbar] = useSnackbar(false)
     const [page, setPage] = React.useState(0);
     const [rowsPerPage, setRowsPerPage] = React.useState(15);
@@ -66,8 +67,8 @@ const TransferReport: React.FC<RouteComponentProps> = ({ history }) => {
         setPage(0);
     };
     useEffect(() => {
-        const fromDate = '2019-08-01';
-        const toDate = '2020-03-05';
+        const fromDate = moment(new Date()).format('YYYY-MM-DD')
+        const toDate = moment(new Date()).format('YYYY-MM-DD')
         if(auth.username){
             fetchTable({ fromDate, toDate })
         }

@@ -15,13 +15,16 @@ import './style.scss'
 const Sidebar: React.FC = () => {
   const { auth } = React.useContext(AuthContext)
   const isLogged = !auth.token.length
+  const onClick = (e) => {
+    e.preventDefault()
+  }
   const MenuItem = ({ title, route, icon, items }) => {
     const [open, setOpen] = React.useState(false);
     const handleClickOpen = () => {
       setOpen(!open);
     };
     return (
-      <React.Fragment >
+      <React.Fragment key={title}>
         {!items ? null :
           <React.Fragment key={title}>
             <ListItem button={true} onClick={handleClickOpen} key={title}>
@@ -30,18 +33,18 @@ const Sidebar: React.FC = () => {
                   <span className='item-text'>{title}</span>
                 </Link>
                 :
-                <a className='item'>
+                <Link to="" className='item' onClick={onClick}>
                   <span className='item-text'>
                     {icon ? <img alt='hokibet188' className="icon-menu" src={`${imageSrc}/icons/${icon}`} /> : null}
                     {title}</span>
-                </a>}
+                </Link>}
               {open ? <ExpandLess /> : <ExpandMore />}
             </ListItem>
             <Collapse in={open} timeout="auto" unmountOnExit={true}>
-              <List component="div" disablePadding={true}>
+              <List component="div" disablePadding={true} key={title}>
                 {map((item) => (
                   <React.Fragment key={item.title}>
-                    {!item.items ? <ListItem button={true}>
+                    {!item.items ? <ListItem button={true} key={item.title}>
                       <Link to={item.route} className='item'>
                         <span className='item-text'>
                           {item.icon ? <img alt='hokibet188' className="icon-menu" src={`${imageSrc}/icons/${item.icon}`} /> : null}
@@ -65,19 +68,19 @@ const Sidebar: React.FC = () => {
     };
     return (
       <React.Fragment key={title}>
-        <ListItem button={true} onClick={handleClick}>
-          <a className='item'>
+        <ListItem button={true} onClick={handleClick}  key={title}>
+          <Link to="" className='item' onClick={onClick}>
             <span className='item-text'>
               <img alt='hokibet188' className="icon-menu" src={`${imageSrc}/icons/${icon}`} />{title}
             </span>
-          </a>
+          </Link>
           {open ? <ExpandLess /> : <ExpandMore />}
         </ListItem>
         <Collapse in={open} timeout="auto" unmountOnExit={true}>
-          <List component="div" disablePadding={true}>
+          <List component="div" disablePadding={true} key={title}>
             {map((item) => (
-              <ListItem button={true} key={item.route} >
-                <Link to='deposit' className='item'>
+              <ListItem button={true} key={item.title}>
+                <Link to={item.route} className='item' key={item.title}>
                   <span className='item-text'>{item.icon ? <img alt='hokibet188' className="icon-menu" src={`${imageSrc}/icons/${item.icon}`} /> : null}{item.title}</span>
                 </Link>
               </ListItem>
@@ -97,23 +100,23 @@ const Sidebar: React.FC = () => {
           </Link>
         </ListItem>
         {map((item: any) =>
-          <MenuItem title={item.title} route={item.route} icon={item.icon} items={item.items} />, games)}
+          <MenuItem title={item.title} route={item.route} icon={item.icon} items={item.items}  key="3" />, games)}
         {!isLogged ? <ListItem button={true} key="profile" >
-          <Link to='profile' className='item'>
+          <Link to='/profile' className='item'>
             <span className='item-text'><img alt='hokibet188' className="icon-menu" src={`${imageSrc}/icons/about.png`} />Profile</span>
           </Link>
         </ListItem>
           : <ListItem button={true} key="login" >
-            <Link to='login' className='item'>
+            <Link to='/login' className='item'>
               <span className='item-text'><img alt='hokibet188' className="icon-menu" src={`${imageSrc}/icons/about.png`} />Login</span>
             </Link>
           </ListItem>}
         {!isLogged ?
           <React.Fragment>
             {map((item: any) =>
-              <MenuCollapse title={item.title} route={item.route} icon={item.icon} items={item.items} />, profile)}
+              <MenuCollapse title={item.title} route={item.route} icon={item.icon} items={item.items} key="1" />, profile)}
             {map((item: any) =>
-              <MenuCollapse title={item.title} route={item.route} icon={item.icon} items={item.items} />, report)}
+              <MenuCollapse title={item.title} route={item.route} icon={item.icon} items={item.items} key="2"/>, report)}
           </React.Fragment> : null}
         <ListItem button={true} key="download" >
           <Link to='/mobile/0' className='item'>
@@ -121,7 +124,7 @@ const Sidebar: React.FC = () => {
           </Link>
         </ListItem>
         <ListItem button={true} key="about" >
-          <Link to='/about' className='item'>
+          <Link to='/about-us' className='item'>
             <span className='item-text'><img alt='hokibet188' className="icon-menu" src={`${imageSrc}/icons/about.png`} />About Us</span>
           </Link>
         </ListItem>
