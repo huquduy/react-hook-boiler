@@ -23,13 +23,13 @@ const ITEMS = [
   {
     icon: 'home.png',
     label: 'Home',
-    route: 'home',
+    route: '/home',
     target: '',
   },
   {
     icon: 'promotion.png',
     label: 'Promotion',
-    route: 'promotion',
+    route: '/promotion',
     target: ''
   },
   {

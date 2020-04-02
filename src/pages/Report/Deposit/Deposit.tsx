@@ -19,6 +19,7 @@ import TextInput from 'components/TextInput'
 import { AuthContext } from "contexts/authContext"
 import useLoading from 'hooks/loading'
 import useSnackbar from 'hooks/snackbar'
+import moment from 'moment'
 import { map } from 'ramda'
 import React, { useEffect, useState } from 'react'
 import { Field, withTypes } from 'react-final-form'
@@ -35,19 +36,19 @@ const { Form } = withTypes<IForm>()
 
 const DepositReport: React.FC<RouteComponentProps> = ({ history }) => {
     const { auth } = React.useContext(AuthContext)
-    const [initialValues, setInitialValues] = useState<IForm>({
-        fromDate: String(new Date()),
-        toDate: String(new Date())
+    const [initialValues] = useState<IForm>({
+        fromDate: moment(new Date()).format('YYYY-MM-DD'),
+        toDate: moment(new Date()).format('YYYY-MM-DD')
     })
     const [rows, setRows] = useState<[]>([])
 
-    const [isLoading, withLoading, Loading] = useLoading(false)
+    const [, withLoading, Loading] = useLoading(false)
     const [showSnackbar, Snackbar] = useSnackbar(false)
     const [page, setPage] = React.useState(0);
     const [rowsPerPage, setRowsPerPage] = React.useState(15);
 
     const fetchTable = async ({ fromDate, toDate }) => {
-        const params: any = { 'fromDate': fromDate, 'toDate': toDate, 'page': 1 }
+        const params: any = { 'fromDate': fromDate, 'toDate': toDate, 'page': page+1 }
         const { result: dataResults, error }: { result: [], error: string } = await withLoading(() => get({
             body: params,
             path: 'deposit/history'
@@ -63,11 +64,11 @@ const DepositReport: React.FC<RouteComponentProps> = ({ history }) => {
 
     const handleChangeRowsPerPage = (event: React.ChangeEvent<HTMLInputElement>) => {
         setRowsPerPage(parseInt(event.target.value, 10));
-        setPage(0);
+        setPage(1);
     };
     useEffect(() => {
-        const fromDate = '2019-08-01';
-        const toDate = '2020-03-05';
+        const fromDate = moment(new Date()).format('YYYßY-MM-DD')
+        const toDate = moment(new Date()).format('YYYY-MM-DD')
         if(auth.username){
             fetchTable({ fromDate, toDate })
         }
@@ -149,7 +150,7 @@ const DepositReport: React.FC<RouteComponentProps> = ({ history }) => {
                     </Table>
                 </TableContainer>
                 {rows.length > 0 ? <TablePagination
-                    rowsPerPageOptions={[5, 10, 15]}
+                    rowsPerPageOptions={[10]}
                     component="div"
                     count={rows.length}
                     rowsPerPage={rowsPerPage}

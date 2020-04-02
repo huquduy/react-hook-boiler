@@ -190,7 +190,7 @@ export const profile = [{
   items: [
     {
       icon: '',
-      route: '/contact',
+      route: '/deposit',
       title: 'Deposit',
     },
     {
@@ -213,17 +213,17 @@ export const report = [{
     {
       icon: '',
       route: '/report/deposit',
-      title: 'Deposit',
+      title: 'Report Deposit',
     },
     {
       icon: '',
       route: '/report/withdraw',
-      title: 'Withdrawn',
+      title: 'Report Withdrawn',
     },
     {
       icon: '',
       route: '/report/transfer',
-      title: 'Transfer',
+      title: 'Report Transfer',
     }
   ]
 }];
