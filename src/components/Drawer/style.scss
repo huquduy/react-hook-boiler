@@ -4,10 +4,22 @@
   color: $primaryColor;
   background: $backgroundBody;
   font-size: 17px;
+  .MuiListItem-button {
+    &:hover{
+      text-decoration: none;
+      background: rgba(239, 215, 127, 0.2);
+      .item{
+        color: $primaryColor;
+      }
+      span.item-text{
+        color: $primaryColor;
+        display: block;
+      }
+    }
+  }
   .item {
     width: 100%;
     text-align: left;
-    // border-bottom: 1px solid #ccc;
     span {
       img {
         margin-right: 8px;
@@ -15,17 +27,9 @@
     }
   }
   ul {
-    // margin-left: 15px;
-    // .MuiButtonBase-root{
-    //   padding-top:0;
-    //   padding-bottom: 0;
-    // }
     div {
-      // padding-top:0;
-      // padding-bottom: 0;
       span {
         font-size: inherit;
-        // line-height:1;
         img {
           margin-right: 8px;
         }
@@ -38,5 +42,12 @@
   .MuiSvgIcon-root {
     position: absolute;
     right: 0;
+  }
+  span.item-text{
+    color: #fff;
+    display: block;
+  }
+  img.icon-menu{
+    width: 15px;
   }
 }
