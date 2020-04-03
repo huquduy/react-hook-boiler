@@ -99,8 +99,6 @@ const Sidebar: React.FC = () => {
             <span className='item-text'><img alt='hokibet188' className="icon-menu" src={`${imageSrc}/icons/home.png`} />Home</span>
           </Link>
         </ListItem>
-        {map((item: any) =>
-          <MenuItem title={item.title} route={item.route} icon={item.icon} items={item.items}  key="3" />, games)}
         {!isLogged ? <ListItem button={true} key="profile" >
           <Link to='/profile' className='item'>
             <span className='item-text'><img alt='hokibet188' className="icon-menu" src={`${imageSrc}/icons/about.png`} />Profile</span>
@@ -118,6 +116,8 @@ const Sidebar: React.FC = () => {
             {map((item: any) =>
               <MenuCollapse title={item.title} route={item.route} icon={item.icon} items={item.items} key="2"/>, report)}
           </React.Fragment> : null}
+          {map((item: any) =>
+          <MenuItem title={item.title} route={item.route} icon={item.icon} items={item.items}  key="3" />, games)}
         <ListItem button={true} key="download" >
           <Link to='/mobile/0' className='item'>
             <span className='item-text'><img alt='hokibet188' className="icon-menu" src={`${imageSrc}/icons/download.png`} />Download</span>
