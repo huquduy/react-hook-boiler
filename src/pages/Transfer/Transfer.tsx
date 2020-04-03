@@ -89,7 +89,7 @@ const Transfer: React.FC<RouteComponentProps> = ({ history }) => {
       const findResult = find(propEq('title', origin))(creditResps);
       setInitialValues({
         ...initialValues,
-        credit: findResult.value
+        credit: findResult.data
       })
       return showDialog("Transfer Successfully", "Success")
     }
