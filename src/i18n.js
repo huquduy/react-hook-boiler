@@ -1,5 +1,5 @@
-import i18n from "i18next"
-import { initReactI18next } from "react-i18next"
+import i18n from 'i18next'
+import { initReactI18next } from 'react-i18next'
 import store from 'store'
 import en from './constant/langs/en'
 import idn from './constant/langs/idn'
@@ -28,4 +28,4 @@ i18n
     }
   })
 
-  export default i18n
+export default i18n

@@ -4,7 +4,7 @@ import Header from 'components/Header'
 import TabPanel from 'components/TabPanel'
 import { imageSrc } from 'config'
 import GAMES, { getGameType, IProviderProps, SLOT_TAB } from 'constant/games'
-import { AuthContext } from "contexts/authContext"
+import { AuthContext } from 'contexts/authContext'
 import useLoading from 'hooks/loading'
 import { map } from 'ramda'
 import React, { useEffect, useMemo, useState } from 'react'
@@ -60,7 +60,7 @@ const Home: React.FC<RouteComponentProps> = ({ history }) => {
             <div key={item}>
               <img className='logo' alt='hokibet188' src={`${imageSrc}/home-carousel/${item}`} />
             </div>
-            , carousels)
+          , carousels)
         }
       </Carousel>
 
@@ -80,7 +80,8 @@ const Home: React.FC<RouteComponentProps> = ({ history }) => {
       <MarqueeText className="marquee" text={runningText} duration={30} repeat={1} />
       {/* Provider list */}
       <div className='game-tabs'>
-        <Tabs className="custom_tab"
+        <Tabs
+          className="custom_tab"
           value={activeTab}
           onChange={handleChangeTab}
           indicatorColor="primary"
@@ -94,7 +95,9 @@ const Home: React.FC<RouteComponentProps> = ({ history }) => {
               <Typography variant="caption" display="block" gutterBottom={true}>
                 {idName}
               </Typography>
-            </div>} value={idName} />, GAMES)}
+                   </div>}
+            value={idName}
+          />, GAMES)}
         </Tabs>
         <TabPanel value={activeTab}>
           <Grid container={true} spacing={1}>
@@ -109,7 +112,7 @@ const Home: React.FC<RouteComponentProps> = ({ history }) => {
                   </Paper>
                 </a>
               </Grid>
-              , providers)}
+            , providers)}
           </Grid>
         </TabPanel>
       </div>

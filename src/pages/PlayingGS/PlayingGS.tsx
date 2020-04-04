@@ -58,7 +58,7 @@ const PlayingGS: React.FC = () => {
       {Boolean(errorLogin.length) && <Typography color="secondary" variant="overline" display="block" gutterBottom={true}>
         {`${group}: ${errorLogin}`}
       </Typography>}
-      <Loading/>
+      <Loading />
     </div>
   )
 }

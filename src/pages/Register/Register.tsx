@@ -9,10 +9,10 @@ import {
 import Header from 'components/Header'
 import SelectInput, { IOption } from 'components/SelectInput'
 import TextInput from 'components/TextInput'
-import { AuthContext } from "contexts/authContext"
+import { AuthContext } from 'contexts/authContext'
 import useLoading from 'hooks/loading'
 import useSnackbar from 'hooks/snackbar'
-import { map} from 'ramda'
+import { map } from 'ramda'
 import React, { useEffect, useState } from 'react'
 import { Field, withTypes } from 'react-final-form'
 import { RouteComponentProps, withRouter } from 'react-router-dom'
@@ -62,15 +62,15 @@ const Register: React.FC<RouteComponentProps> = ({ history }) => {
     setAuthStatus(token)
   }
   const handleChange = (event: React.ChangeEvent<{ value: unknown }>) => {
-    const value = event.target.value
+    const { value } = event.target
     setInitialValues({
-        ...initialValues,
-        bankId: String(value)
+      ...initialValues,
+      bankId: String(value)
     })
-}
+  }
 
   useEffect(() => {
-    const fetchBanks = async() => {
+    const fetchBanks = async () => {
       const correctBankProps = ({ bankName, id }) => ({
         title: bankName,
         value: String(id),
@@ -95,13 +95,14 @@ const Register: React.FC<RouteComponentProps> = ({ history }) => {
   return (
     <div className='register-page'>
       <Loading color="secondary" />
-      <Header/>
+      <Header />
       <Typography color="primary" className="title" variant="h5" align="center" component="h2" gutterBottom={true}>
         REGISTER
       </Typography>
       <Form
         initialValues={initialValues}
-        onSubmit={handleRegister}>
+        onSubmit={handleRegister}
+      >
         {({ handleSubmit }) => 
           <form onSubmit={handleSubmit}>
             <div className='container'>
@@ -113,7 +114,8 @@ const Register: React.FC<RouteComponentProps> = ({ history }) => {
                   label="Username"
                   fullWidth={true}
                   disable={isLoading.toString()}
-                  component={TextInput} />
+                  component={TextInput}
+                />
               </div>
               <div>
                 <Field
@@ -122,7 +124,8 @@ const Register: React.FC<RouteComponentProps> = ({ history }) => {
                   name="email"
                   label="Email"
                   fullWidth={true}
-                  component={TextInput} />
+                  component={TextInput}
+                />
               </div>
               <div>
                 <Field
@@ -132,7 +135,8 @@ const Register: React.FC<RouteComponentProps> = ({ history }) => {
                   label="Password"
                   type="password"
                   fullWidth={true}
-                  component={TextInput} />
+                  component={TextInput}
+                />
               </div>
               <div>
                 <Field
@@ -142,7 +146,8 @@ const Register: React.FC<RouteComponentProps> = ({ history }) => {
                   label="Confirm Password"
                   type="password"
                   fullWidth={true}
-                  component={TextInput} />
+                  component={TextInput}
+                />
               </div>
               <div>
                 <Field
@@ -152,7 +157,8 @@ const Register: React.FC<RouteComponentProps> = ({ history }) => {
                   label="Phone number"
                   type="text"
                   fullWidth={true}
-                  component={TextInput} />
+                  component={TextInput}
+                />
               </div>
               <div>
                 <Field
@@ -163,7 +169,8 @@ const Register: React.FC<RouteComponentProps> = ({ history }) => {
                   fullWidth={true}
                   options={banks}
                   handleChange={handleChange}
-                  component={SelectInput} />
+                  component={SelectInput}
+                />
               </div>
               <div>
                 <Field
@@ -173,7 +180,8 @@ const Register: React.FC<RouteComponentProps> = ({ history }) => {
                   label="Bank account number"
                   fullWidth={true}
                   disable={isLoading.toString()}
-                  component={TextInput} />
+                  component={TextInput}
+                />
               </div>
               <div>
                 <Field
@@ -183,7 +191,8 @@ const Register: React.FC<RouteComponentProps> = ({ history }) => {
                   label="Bank account name"
                   fullWidth={true}
                   disable={isLoading.toString()}
-                  component={TextInput} />
+                  component={TextInput}
+                />
               </div>
               <div>
                 <Button variant="outlined" color="primary" type="submit" startIcon={<AddIcon />}>
@@ -203,7 +212,7 @@ const Register: React.FC<RouteComponentProps> = ({ history }) => {
             </div>
           </form>}
       </Form>
-      <Snackbar/>
+      <Snackbar />
     </div>
   )
 }

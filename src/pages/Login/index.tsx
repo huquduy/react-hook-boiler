@@ -7,7 +7,7 @@ import {
 } from '@material-ui/icons'
 import Header from 'components/Header'
 import TextInput from 'components/TextInput'
-import { AuthContext } from "contexts/authContext"
+import { AuthContext } from 'contexts/authContext'
 import useErrorDialog from 'hooks/error-dialog'
 import useLoading from 'hooks/loading'
 import React from 'react'
@@ -37,7 +37,7 @@ const Login: React.FC<RouteComponentProps> = ({ history }) => {
       path: 'user/signIn'
     })).catch((err) => err)
     if (error) {
-      return showDialog(error, "Error")
+      return showDialog(error, 'Error')
     }
     history.push('/home')
     setAuthStatus(token)
@@ -46,7 +46,7 @@ const Login: React.FC<RouteComponentProps> = ({ history }) => {
   return (
     <div className='login-page'>
       <Loading color="secondary" />
-      <Header/>
+      <Header />
       <Typography color="primary" className="title" variant="h5" align="center" component="h2" gutterBottom={true}>
         LOGIN
       </Typography>
@@ -62,7 +62,8 @@ const Login: React.FC<RouteComponentProps> = ({ history }) => {
                   fullWidth={true}
                   variant="outlined"
                   autoComplete="iusername"
-                  component={TextInput} />
+                  component={TextInput}
+                />
               </div>
               <div>
                 <Field
@@ -73,7 +74,8 @@ const Login: React.FC<RouteComponentProps> = ({ history }) => {
                   fullWidth={true}
                   variant="outlined"
                   autoComplete="new-password"
-                  component={TextInput} />
+                  component={TextInput}
+                />
               </div>
               <div>
                 <Button variant="outlined" color="primary" type="submit" startIcon={<LockOpenIcon />}>
@@ -87,7 +89,7 @@ const Login: React.FC<RouteComponentProps> = ({ history }) => {
               </div>
               <div>
                 <Link to="/forgot-password" className="link-primary">
-                Forgot Password? 
+                  Forgot Password? 
                 </Link>
               </div>
             </div>

@@ -77,8 +77,7 @@ const Header: React.FC = () => {
           role="button"
           onClick={handleCloseDrawer}
           onKeyDown={handleCloseDrawer}
-        >
-        </div>
+        />
         <Sidebar />
       </Drawer>
       <AppBar className='header' position="fixed">
@@ -93,11 +92,11 @@ const Header: React.FC = () => {
             <MenuIcon />
           </IconButton>
           <div className='flex-grow' />
-          <Link to="/"><img className='logo' alt='hokibet188' src={process.env.PUBLIC_URL + '/images/logo.png'} /></Link>
+          <Link to="/"><img className='logo' alt='hokibet188' src={`${process.env.PUBLIC_URL  }/images/logo.png`} /></Link>
           <div className='flex-grow' />
           {!auth.token
             ?
-            <div className="block-hidden"> <AccountCircleIcon style={{ display: "none" }} />&nbsp;</div>
+              <div className="block-hidden"> <AccountCircleIcon style={{ display: 'none' }} />&nbsp;</div>
             : <div className="content-header">
               <Button className='header-left' color="inherit" aria-controls="simple-menu" aria-haspopup="true" onClick={toggleProfileMenu}>
 
@@ -117,20 +116,21 @@ const Header: React.FC = () => {
                 <MenuItem onClick={showCreditsDialog}><LocalAtmIcon />{auth.balance} IDR</MenuItem>
                 <MenuItem onClick={navigateToProfile}>Profile</MenuItem>
                 <MenuItem className="profile-menu">
-                  <List ><ListItem button onClick={handleClickOpen}>
+                  <List><ListItem button onClick={handleClickOpen}>
                     <ListItemText primary="Report" />
                     {open ? <ExpandLess /> : <ExpandMore />}
-                  </ListItem>
+                        </ListItem>
                     <Collapse in={open} timeout="auto" unmountOnExit>
                       <List component="div" disablePadding>
-                        <ListItem button >
+                        <ListItem button>
                           <Link to="/report/deposit" className="link-primary">Deposit</Link>
                         </ListItem>
-                        <ListItem button ><Link to="/report/withdraw" className="link-primary">Withdrawn</Link></ListItem>
-                        <ListItem button ><Link to="/report/transfer" className="link-primary">Transfer</Link></ListItem>
+                        <ListItem button><Link to="/report/withdraw" className="link-primary">Withdrawn</Link></ListItem>
+                        <ListItem button><Link to="/report/transfer" className="link-primary">Transfer</Link></ListItem>
                       </List>
                     </Collapse>
-                  </List></MenuItem>
+                  </List>
+                </MenuItem>
                 <MenuItem onClick={handleLogout}>Logout</MenuItem>
               </Menu>
             </div>}

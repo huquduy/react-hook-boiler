@@ -4,8 +4,8 @@ import {
   DialogActions,
   DialogContent,
   DialogTitle
-} from "@material-ui/core";
-import React, { FC, ReactNode, useState } from "react"
+} from '@material-ui/core';
+import React, { FC, ReactNode, useState } from 'react'
 import './style.scss'
 
 type TCallback = () => void

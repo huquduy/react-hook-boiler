@@ -15,7 +15,7 @@ export default (props: ITabPanelProps) => {
       role="tabpanel"
       {...other}
     >
-      {<Box p={2}>{children}</Box>}
+      <Box p={2}>{children}</Box>
     </Typography>
   );
 }
