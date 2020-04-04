@@ -11,7 +11,7 @@ import Bottom from 'components/Bottom'
 import Header from 'components/Header'
 import SelectInput, { IOption } from 'components/SelectInput'
 import TextInput from 'components/TextInput'
-import { AuthContext } from "contexts/authContext"
+import { AuthContext } from 'contexts/authContext'
 import useErrorDialog from 'hooks/error-dialog/error-dialog'
 import useLoading from 'hooks/loading'
 import useSnackbar from 'hooks/snackbar'
@@ -78,25 +78,25 @@ const Transfer: React.FC<RouteComponentProps> = ({ history }) => {
       path: 'transfer/execute'
     })).catch(err => err)
     if (error) {
-      return showDialog(error, "Error")
-    } else {
-      const { data: creditResps } = await withLoading(() => get({ path: 'user/credit' }))
-      // const correctCreditProps = ({ title, data }) => ({
-      //     label: title,
-      //     value: data
-      // })
-      // setCredits(map(correctCreditProps, creditResps))
-      const findResult = find(propEq('title', origin))(creditResps);
-      setInitialValues({
-        ...initialValues,
-        credit: findResult.data
-      })
-      return showDialog("Transfer Successfully", "Success")
-    }
+      return showDialog(error, 'Error')
+    } 
+    const { data: creditResps } = await withLoading(() => get({ path: 'user/credit' }))
+    // const correctCreditProps = ({ title, data }) => ({
+    //     label: title,
+    //     value: data
+    // })
+    // setCredits(map(correctCreditProps, creditResps))
+    const findResult = find(propEq('title', origin))(creditResps);
+    setInitialValues({
+      ...initialValues,
+      credit: findResult.data
+    })
+    return showDialog('Transfer Successfully', 'Success')
+    
 
   }
   const handleChangeTransferFrom = (event: React.ChangeEvent<{ value: unknown }>) => {
-    const value = event.target.value
+    const { value } = event.target
     const findResult = find(propEq('label', value))(credits);
     setInitialValues({
       ...initialValues,
@@ -189,10 +189,11 @@ const Transfer: React.FC<RouteComponentProps> = ({ history }) => {
       <Header />
       <Typography color="primary" className="title" variant="h5" align="center" component="h2" gutterBottom={true}>
         BALANCE TRANSFER
-          </Typography>
+      </Typography>
       <Form
         initialValues={initialValues}
-        onSubmit={handleTransfer}>
+        onSubmit={handleTransfer}
+      >
         {({ handleSubmit }) =>
           <form onSubmit={handleSubmit}>
             <div className='container'>
@@ -204,7 +205,8 @@ const Transfer: React.FC<RouteComponentProps> = ({ history }) => {
                   options={wallets}
                   handleChange={handleChangeTransferFrom}
                   variant="outlined"
-                  component={SelectInput} />
+                  component={SelectInput}
+                />
               </div>
               <div>
                 <Field
@@ -213,7 +215,8 @@ const Transfer: React.FC<RouteComponentProps> = ({ history }) => {
                   type="text"
                   disabled={true}
                   fullWidth={true}
-                  component={TextInput} />
+                  component={TextInput}
+                />
               </div>
               <div>
                 <Field
@@ -223,7 +226,8 @@ const Transfer: React.FC<RouteComponentProps> = ({ history }) => {
                   options={suppliers}
                   handleChange={handleChangeTransferTo}
                   variant="outlined"
-                  component={SelectInput} />
+                  component={SelectInput}
+                />
               </div>
               <div>
                 <Field
@@ -233,7 +237,8 @@ const Transfer: React.FC<RouteComponentProps> = ({ history }) => {
                   type="text"
                   disable={isLoading.toString()}
                   fullWidth={true}
-                  component={TextInput} />
+                  component={TextInput}
+                />
               </div>
               {checkShow ? <div>
                 <FormControlLabel
@@ -244,14 +249,14 @@ const Transfer: React.FC<RouteComponentProps> = ({ history }) => {
                 />
                 <Typography variant="caption" display="block" gutterBottom={true}>
                   * I want to claim bonus with term and conditions. Rollover {bonus.rollingTime} Times
-                                </Typography>
+                </Typography>
               </div> : null}
 
 
               <div>
                 <Button variant="outlined" color="primary" type="submit" startIcon={<SendIcon />}>
                   Submit
-                    </Button>
+                </Button>
               </div>
             </div>
           </form>}

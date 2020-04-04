@@ -4,9 +4,9 @@ import store from 'store'
 
 const attachHeaders = () => {
   return {
-    'Authorization': 'Bearer ' + getToken() ,
+    'Authorization': `Bearer ${  getToken()}`,
     'Content-Type': 'application/json'
-    }
+  }
 }
 
 const handleErrors = async response => {

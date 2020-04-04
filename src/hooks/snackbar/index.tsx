@@ -7,7 +7,7 @@ import {
 import { makeStyles, Theme } from '@material-ui/core/styles'
 import { TransitionProps } from '@material-ui/core/transitions'
 import CloseIcon from '@material-ui/icons/Close'
-import React, { useState } from "react"
+import React, { useState } from 'react'
 
 const TransitionLeft = (props: TransitionProps) => {
   return <Slide {...props} direction="left" />

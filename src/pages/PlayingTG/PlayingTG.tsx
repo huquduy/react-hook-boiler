@@ -2,7 +2,7 @@ import {
   Typography,
 } from '@material-ui/core'
 import useLoading from 'hooks/loading'
-import React, {useEffect, useRef, useState} from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import { useParams } from 'react-router-dom'
 import { get } from 'services/http'
 
@@ -41,10 +41,10 @@ const PlayingTG: React.FC = () => {
         Your game is loading ...
       </Typography>}
       <form style={{ display: 'none' }} id="tg-form" method="post" action={loginUrl} ref={formTGLogin}>
-          <input type="text" name="Payload" value={token} />
-          <input type="submit" value="Submit" />
+        <input type="text" name="Payload" value={token} />
+        <input type="submit" value="Submit" />
       </form>
-      <Loading/>
+      <Loading />
     </div>
   )
 }

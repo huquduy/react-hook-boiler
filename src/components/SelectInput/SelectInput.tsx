@@ -3,7 +3,7 @@ import {
   NativeSelect
 } from '@material-ui/core'
 import React from 'react'
-import { FieldRenderProps } from "react-final-form"
+import { FieldRenderProps } from 'react-final-form'
 import './style.scss'
 
 export interface IOption {
@@ -26,17 +26,17 @@ const SelectInput: React.FC<ISelectInput> = ({ input, meta, label, options, hand
 
   return (
     <div className="select-input-custom">
-      <InputLabel shrink={true} color={error ? "secondary" : "primary"}>
+      <InputLabel shrink={true} color={error ? 'secondary' : 'primary'}>
         {label}
       </InputLabel>
       <NativeSelect
         variant="outlined"
-        color={error ? "secondary" : "primary"}
+        color={error ? 'secondary' : 'primary'}
         {...input}
         {...rest}
         onChange={handleChange}
       >
-        {options.map(({title, value}) => <option key={value} value={value}>{title}</option>)}
+        {options.map(({ title, value }) => <option key={value} value={value}>{title}</option>)}
       </NativeSelect>
       {error && (
         <p className="MuiFormHelperText-root Mui-error">{meta.error}</p>

@@ -1,7 +1,7 @@
 import { DEFAULT_USER_AUTH } from 'constant/auth'
 import { IUserAuth } from 'customInterfaces'
 import useAuthHandler from 'hooks/authHandler'
-import React, { createContext, FC, ReactNode } from "react"
+import React, { createContext, FC, ReactNode } from 'react'
 import { getStoredUserAuth } from 'services/storage'
 
 interface IAuthContextInterface {

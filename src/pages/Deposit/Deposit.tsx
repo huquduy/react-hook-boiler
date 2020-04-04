@@ -9,7 +9,7 @@ import Bottom from 'components/Bottom'
 import Header from 'components/Header'
 import SelectInput, { IOption } from 'components/SelectInput'
 import TextInput from 'components/TextInput'
-import { AuthContext } from "contexts/authContext"
+import { AuthContext } from 'contexts/authContext'
 import useLoading from 'hooks/loading'
 import useSnackbar from 'hooks/snackbar'
 import Numeral from 'numeral'
@@ -66,8 +66,8 @@ const Deposit: React.FC<RouteComponentProps> = ({ history }) => {
     // history.push('/home')
   }
   const handleChange = (event: React.ChangeEvent<{ value: unknown }>) => {
-    const value = event.target.value
-    const findResult = find(propEq('value',value ))(banks);
+    const { value } = event.target
+    const findResult = find(propEq('value', value ))(banks);
     setInitialValues({
       ...initialValues,
       bankId: Number(value),
@@ -76,7 +76,7 @@ const Deposit: React.FC<RouteComponentProps> = ({ history }) => {
     })
   }
   const handleChangeAmount = (event: React.ChangeEvent<{ value: unknown }>) => {
-    const value = event.target.value
+    const { value } = event.target
     const calcAmount = Numeral(Number(value) * 1000).format('0,0')
     setInitialValues({
       ...initialValues,
@@ -118,10 +118,11 @@ const Deposit: React.FC<RouteComponentProps> = ({ history }) => {
       <Header />
       <Typography color="primary" className="title" variant="h5" align="center" component="h2" gutterBottom={true}>
         DEPOSIT
-        </Typography>
+      </Typography>
       <Form
         initialValues={initialValues}
-        onSubmit={handleDeposit}>
+        onSubmit={handleDeposit}
+      >
         {({ handleSubmit }) =>
           <form onSubmit={handleSubmit}>
             <div className='container'>
@@ -132,7 +133,8 @@ const Deposit: React.FC<RouteComponentProps> = ({ history }) => {
                   type="text"
                   fullWidth={true}
                   disabled={true}
-                  component={TextInput} />
+                  component={TextInput}
+                />
               </div>
               <div>
                 <Field
@@ -141,7 +143,8 @@ const Deposit: React.FC<RouteComponentProps> = ({ history }) => {
                   type="text"
                   disabled={true}
                   fullWidth={true}
-                  component={TextInput} />
+                  component={TextInput}
+                />
               </div>
               <div>
                 <Field
@@ -150,7 +153,8 @@ const Deposit: React.FC<RouteComponentProps> = ({ history }) => {
                   type="text"
                   disabled={true}
                   fullWidth={true}
-                  component={TextInput} />
+                  component={TextInput}
+                />
               </div>
               <div>
                 <Field
@@ -160,7 +164,8 @@ const Deposit: React.FC<RouteComponentProps> = ({ history }) => {
                   options={banks}
                   handleChange={handleChange}
                   variant="outlined"
-                  component={SelectInput} />
+                  component={SelectInput}
+                />
               </div>
               <div>
                 <Field
@@ -169,7 +174,8 @@ const Deposit: React.FC<RouteComponentProps> = ({ history }) => {
                   type="text"
                   disabled={true}
                   fullWidth={true}
-                  component={TextInput} />
+                  component={TextInput}
+                />
               </div>
               <div>
                 <Field
@@ -178,7 +184,8 @@ const Deposit: React.FC<RouteComponentProps> = ({ history }) => {
                   type="text"
                   disabled={true}
                   fullWidth={true}
-                  component={TextInput} />
+                  component={TextInput}
+                />
               </div>
               <div>
                 <Field
@@ -190,7 +197,8 @@ const Deposit: React.FC<RouteComponentProps> = ({ history }) => {
                   placeholder="kredit(1kredit=1000 rupiah)"
                   disable={isLoading.toString()}
                   fullWidth={true}
-                  component={TextInput} />
+                  component={TextInput}
+                />
               </div>
               <div>
                 <Field
@@ -200,7 +208,8 @@ const Deposit: React.FC<RouteComponentProps> = ({ history }) => {
                   type="text"
                   disable={isLoading.toString()}
                   fullWidth={true}
-                  component={TextInput} />
+                  component={TextInput}
+                />
               </div>
               {/* <div className="des-amount">
                 <span>(IDR 1000 = 1 unit)</span> <br />
@@ -215,12 +224,13 @@ const Deposit: React.FC<RouteComponentProps> = ({ history }) => {
                   type="password"
                   disable={isLoading.toString()}
                   fullWidth={true}
-                  component={TextInput} />
+                  component={TextInput}
+                />
               </div>
               <div>
                 <Button variant="outlined" color="primary" type="submit" startIcon={<SendIcon />}>
                   Submit
-                  </Button>
+                </Button>
               </div>
             </div>
           </form>}

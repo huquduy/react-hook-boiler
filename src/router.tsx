@@ -1,9 +1,11 @@
+import { AuthContext } from 'contexts/authContext'
 import React, { lazy, Suspense } from 'react'
 import {
   BrowserRouter,
+  Redirect,
   Route,
   Switch,
-} from "react-router-dom"
+} from 'react-router-dom'
 
 const Home = lazy(() => import('./pages/Home'))
 const Login = lazy(() => import('./pages/Login'))
@@ -14,22 +16,32 @@ const TermCondition = lazy(() => import('./pages/TermCondition'))
 const Profile = lazy(() => import('./pages/Profile'))
 const Games = lazy(() => import('./pages/Games'))
 const Slot = lazy(() => import('./pages/Slot'))
-const MorePage = lazy(()=> import ('./pages/MorePage'))
-const AboutUs = lazy(()=> import ('./pages/AboutUs'))
-const Privacy = lazy(()=> import ('./pages/Privacy'))
-const Banking = lazy(()=> import ('./pages/Banking'))
-const Reponsible = lazy(()=> import ('./pages/Reponsible'))
-const Promotion = lazy(()=> import ('./pages/Promotion'))
-const Faq = lazy(()=> import ('./pages/Faq'))
-const PlayingTG = lazy(()=> import ('./pages/PlayingTG'))
-const PlayingGS = lazy(()=> import ('./pages/PlayingGS'))
-const Contact = lazy(()=> import ('./pages/Contact'))
-const ForgotPassword = lazy(() => import ('./pages/ForgotPassword'))
-const Transfer = lazy(()=> import ('./pages/Transfer'))
-const DepositReport = lazy(()=> import ('./pages/Report/Deposit'))
-const WithdrawReport = lazy(()=> import ('./pages/Report/Withdraw'))
-const TransferReport = lazy(()=> import ('./pages/Report/Transfer'))
+const MorePage = lazy(()=> import('./pages/MorePage'))
+const AboutUs = lazy(()=> import('./pages/AboutUs'))
+const Privacy = lazy(()=> import('./pages/Privacy'))
+const Banking = lazy(()=> import('./pages/Banking'))
+const Reponsible = lazy(()=> import('./pages/Reponsible'))
+const Promotion = lazy(()=> import('./pages/Promotion'))
+const Faq = lazy(()=> import('./pages/Faq'))
+const PlayingTG = lazy(()=> import('./pages/PlayingTG'))
+const PlayingGS = lazy(()=> import('./pages/PlayingGS'))
+const Contact = lazy(()=> import('./pages/Contact'))
+const ForgotPassword = lazy(() => import('./pages/ForgotPassword'))
+const Transfer = lazy(()=> import('./pages/Transfer'))
+const DepositReport = lazy(()=> import('./pages/Report/Deposit'))
+const WithdrawReport = lazy(()=> import('./pages/Report/Withdraw'))
+const TransferReport = lazy(()=> import('./pages/Report/Transfer'))
 
+const RequiredLoginRooute = ({ component: Component, ...rest }) => {
+  const { auth: { isLogged } } = React.useContext(AuthContext)
+  const render = props => isLogged ? <Component {...props} /> : <Redirect to="/login" />
+  return (
+    <Route
+      {...rest}
+      render={render}
+    />
+  );
+}
 
 const Router = () => {
   return (
@@ -55,11 +67,11 @@ const Router = () => {
           <Route path="/faq" component={Faq} />
           <Route path="/contact" component={Contact} />
           <Route path="/forgot-password" component={ForgotPassword} />
-          <Route path="/tg/groups/:group/types/:type/codes/:code" component={PlayingTG} />
-          <Route path="/gs/groups/:group/types/:type/codes/:code" component={PlayingGS} />
-          <Route path="/transfer" component={Transfer} />
-          <Route path="/report/deposit" component={DepositReport} />
-          <Route path="/report/withdraw" component={WithdrawReport} />
+          <RequiredLoginRooute path="/tg/groups/:group/types/:type/codes/:code" component={PlayingTG} />
+          <RequiredLoginRooute path="/gs/groups/:group/types/:type/codes/:code" component={PlayingGS} />
+          <RequiredLoginRooute path="/transfer" component={Transfer} />
+          <RequiredLoginRooute path="/report/deposit" component={DepositReport} />
+          <RequiredLoginRooute path="/report/withdraw" component={WithdrawReport} />
           <Route path="/report/transfer" component={TransferReport} />
         </Switch>
       </Suspense>

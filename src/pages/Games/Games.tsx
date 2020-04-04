@@ -14,7 +14,7 @@ const Games: React.FC = () => {
 
   return (
     <div className='games-page'>
-      <Header/>
+      <Header />
       <Typography color="primary" className="title" variant="h5" align="center" component="h2" gutterBottom={true}>
         {type.toLocaleUpperCase()}
       </Typography>

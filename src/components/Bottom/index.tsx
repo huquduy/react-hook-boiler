@@ -1,4 +1,4 @@
-import { BottomNavigation, BottomNavigationAction, Typography} from '@material-ui/core'
+import { BottomNavigation, BottomNavigationAction, Typography } from '@material-ui/core'
 import { imageSrc } from 'config'
 import { map } from 'ramda'
 import React, { useState } from 'react'
@@ -37,7 +37,7 @@ const ITEMS = [
     label: 'WhatsApp',
     route: 'https://api.whatsapp.com/send?phone=855883071618&text=Hallo%20Support%20Hokibet188%20Saya%20ingin%20Menanyakan%20beberapa%20hal',
     target: '_blank'
-  },{
+  }, {
     icon: 'contact.png',
     label: 'Live Chat',
     route: 'https://v2.zopim.com/widget/livechat.html?key=4AV3AjiTSLlEJzZEwHTFojUPOVayt8Wr&&lang=ms&hostname=www.hokibet188.com&api_calls=%5B%5D',
@@ -60,16 +60,16 @@ const Bottom: React.FC = () => {
       >
         {
           map(({ icon, label, route, target }: IItem) => 
-          <MyLink showLabel="true" key={route} href={route} target={target}>
-            <BottomNavigationAction
-            showLabel={true}
-            key={label}
-            label={<Typography style={{color: '#efd77f'}} variant="caption" display="block" gutterBottom={true}>
-              {label}
-            </Typography>}
-            icon={<img className='icon' alt='hokibet188' src={`${imageSrc}icons/${icon}`} />}
-            />
-          </MyLink>
+            <MyLink showLabel="true" key={route} href={route} target={target}>
+              <BottomNavigationAction
+                showLabel={true}
+                key={label}
+                label={<Typography style={{ color: '#efd77f' }} variant="caption" display="block" gutterBottom={true}>
+                  {label}
+                       </Typography>}
+                icon={<img className='icon' alt='hokibet188' src={`${imageSrc}icons/${icon}`} />}
+              />
+            </MyLink>
           , ITEMS)
         }
       </BottomNavigation>

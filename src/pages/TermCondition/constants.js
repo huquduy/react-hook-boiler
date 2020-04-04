@@ -1,10 +1,10 @@
 export const termCondition = {
-    en:{
-        titile:'',
-        data:''
+  en:{
+    titile:'',
+    data:''
 
-    },
-    idn:{
+  },
+  idn:{
 
-    }
+  }
 }

@@ -1,4 +1,5 @@
 export interface IUserAuth {
+  isLogged: boolean;
   id: string;
   username: string;
   email: string;
@@ -10,4 +11,4 @@ export interface IUserAuth {
   bankId: number;
   phone: string;
   balance: string;
-};
+}

@@ -1,4 +1,4 @@
-import { Chip, Grid, IconButton, Link as LinkMui, InputAdornment, Paper, Tab, Tabs, TextField, Typography } from '@material-ui/core'
+import { Chip, Grid, IconButton, InputAdornment, Link as LinkMui, Paper, Tab, Tabs, TextField, Typography } from '@material-ui/core'
 import SearchIcon from '@material-ui/icons/Search';
 import Bottom from 'components/Bottom'
 import Header from 'components/Header'
@@ -6,8 +6,8 @@ import TabPanel from 'components/TabPanel'
 import { imageSrc } from 'config'
 import { getGameType, IProviderProps, SLOT_TAB } from 'constant/games'
 import { filter, map, reduce } from 'ramda'
-import React, {useCallback, useEffect, useMemo, useState} from 'react'
-import ReactImageFallback from "react-image-fallback"
+import React, { useCallback, useEffect, useMemo, useState } from 'react'
+import ReactImageFallback from 'react-image-fallback'
 import { Link, useParams, withRouter } from 'react-router-dom'
 import gamesByProvider, { IGames } from './constant'
 import './style.scss'
@@ -73,7 +73,7 @@ const Home: React.FC = () => {
 
   return (
     <div className='slot-page'>
-      <Header/>
+      <Header />
 
       {/* Provider list */}
       <div className='game-tabs'>
@@ -85,33 +85,40 @@ const Home: React.FC = () => {
         >
           {map(({ idName, image, route, target }: IProviderProps) => <Tab
             key={idName}
-            label={<LinkMui href={route} target={target}>
-              <img className='game-type-icon' alt='hokibet188' src={`${imageSrc}providers/${image}`} />
-              <Typography variant="caption" display="block" gutterBottom={true}>
-                {idName}
-              </Typography>
-            </LinkMui>} value={route} />, providers )}
+            label={
+              <LinkMui href={route} target={target}>
+                <img className='game-type-icon' alt='hokibet188' src={`${imageSrc}providers/${image}`} />
+                <Typography variant="caption" display="block" gutterBottom={true}>
+                  {idName}
+                </Typography>
+              </LinkMui>
+              }
+            value={route}
+          />, providers )}
         </Tabs>
         
         <div className='group'>
-          {activeGroup.length && <Tabs
-            value={activeGroup}
-            onChange={handleChangeGroup}
-            indicatorColor="primary"
-            variant="scrollable"
-            scrollButtons="on"
-          >
-            {map((group: string) => <Tab
-              key={group}
-              label={<Chip color='primary' label={group} variant="outlined"/>}
-              value={group} />, groups )}
-          </Tabs>}
+          {activeGroup.length &&
+            <Tabs
+              value={activeGroup}
+              onChange={handleChangeGroup}
+              indicatorColor="primary"
+              variant="scrollable"
+              scrollButtons="on"
+            >
+              {map((group: string) => <Tab
+                key={group}
+                label={<Chip color='primary' label={group} variant="outlined" />}
+                value={group}
+              />, groups )}
+            </Tabs>}
           <IconButton onClick={toogleSearching} color='primary' className='toogle-search'>
             <SearchIcon />
           </IconButton>
         </div>
 
-        {searchingShown && <div className='game-search'>
+        {searchingShown &&
+        <div className='game-search'>
           <TextField
             label='Search games'
             className='text-input-custom'
@@ -137,7 +144,8 @@ const Home: React.FC = () => {
                       fallbackImage='/images/404.jpg'
                       className='game'
                       alt='hokibet188'
-                      src={thumbnail} />
+                      src={thumbnail}
+                    />
                     <Typography variant="caption" display="block" gutterBottom={true}>
                       {name}
                     </Typography>

@@ -62,7 +62,7 @@ const Credits: React.FC = () => {
             Your credits are being loaded ...
           </Typography>
         </div>
-      : <TableContainer component={Paper}>
+        : <TableContainer component={Paper}>
           <Table className="" size="small" aria-label="table-balance">
             <TableBody>
               {map(({ label: labelItem, value }: ICredit) =>
@@ -75,8 +75,7 @@ const Credits: React.FC = () => {
               , credits)}
             </TableBody>
           </Table>
-        </TableContainer>
-      }
+          </TableContainer>}
     </div>
   )
 }
