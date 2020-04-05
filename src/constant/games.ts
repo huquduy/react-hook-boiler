@@ -241,7 +241,12 @@ const GAMETYPES = [
   {
     idName: LOTTERY_TAB,
     providers: [
-      
+      {
+        idName: LOTTERY_TAB,
+        image: 'lottery/toto4d.png',
+        route: '/gs/groups/toto4d/types/null/codes/null',
+        target: '_blank',
+      }
     ],
     title:'LOTTERY'
   },
@@ -249,4 +254,6 @@ const GAMETYPES = [
 
 export default GAMETYPES;
 
-export const getGameType = (type: string) => GAMETYPES.find(({ idName }: { idName: string }) => idName.toLocaleLowerCase() === type.toLocaleLowerCase() ) || { providers: [], idName: null };
+export const getGameType = (type: string) => 
+  GAMETYPES.find(({ idName }: { idName: string }) =>
+    idName.toLocaleLowerCase() === type.toLocaleLowerCase() ) || { providers: [], idName: null }

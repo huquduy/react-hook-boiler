@@ -3,5 +3,13 @@
   "rules": {
     "no-implicit-dependencies": false,
     "no-submodule-imports": false
-  }
+  },
+  "linterOptions": {
+    "exclude": [
+      "bin",
+      "**/__test__",
+      "lib/*generated.js",
+      "src/serviceWorker.ts"
+    ]
+}
 }

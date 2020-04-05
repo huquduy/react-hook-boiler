@@ -24,6 +24,11 @@ const SelectInput: React.FC<ISelectInput> = ({ input, meta, label, options, hand
     ((meta.submitError && !meta.dirtySinceLastSubmit) || meta.error) &&
     meta.touched
 
+  const callbackOnChange = e => {
+    input.onChange(e)
+    handleChange(e)
+  }
+
   return (
     <div className="select-input-custom">
       <InputLabel shrink={true} color={error ? 'secondary' : 'primary'}>
@@ -34,7 +39,7 @@ const SelectInput: React.FC<ISelectInput> = ({ input, meta, label, options, hand
         color={error ? 'secondary' : 'primary'}
         {...input}
         {...rest}
-        onChange={handleChange}
+        onChange={callbackOnChange}
       >
         {options.map(({ title, value }) => <option key={value} value={value}>{title}</option>)}
       </NativeSelect>
