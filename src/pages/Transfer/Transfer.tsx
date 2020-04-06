@@ -15,13 +15,15 @@ import { AuthContext } from 'contexts/authContext'
 import useErrorDialog from 'hooks/error-dialog/error-dialog'
 import useLoading from 'hooks/loading'
 import useSnackbar from 'hooks/snackbar'
-import { find, map, propEq } from 'ramda'
+import { filter, find, map, pipe, propEq } from 'ramda'
 import React, { useEffect, useState } from 'react'
 import { Field, withTypes } from 'react-final-form'
 import { RouteComponentProps, withRouter } from 'react-router-dom'
 import { composeValidators, mustBeNumber, required } from 'services/form'
 import { get, post } from 'services/http'
 import './style.scss'
+
+const MAIN_WALLET = 'Main Wallet'
 
 interface IForm {
   origin: string,
@@ -31,10 +33,6 @@ interface IForm {
   credit: string
 }
 
-export interface ICredit {
-  label: string;
-  value: string;
-}
 export interface IBonus {
   id: number,
   title: string,
@@ -43,7 +41,13 @@ export interface IBonus {
   percentage: number,
   fullText: string,
 }
+
 const { Form } = withTypes<IForm>()
+
+const titleWithCredit = ({ title, value }) => ({
+  title: `${title} - (${value})`,
+  value: title
+})
 
 const Transfer: React.FC<RouteComponentProps> = ({ history }) => {
   const { auth } = React.useContext(AuthContext)
@@ -54,17 +58,17 @@ const Transfer: React.FC<RouteComponentProps> = ({ history }) => {
     origin: '',
     target: '',
   })
-  const [wallets, setWallets] = useState<IOption[] | []>([])
-  const [suppliers, setSuppliers] = useState<IOption[] | []>([])
-  const [credits, setCredits] = useState<ICredit[] | []>([])
+  const [originOptions, setOriginOptions] = useState<IOption[] | []>([])
+  const [targetOptions, setTargetOptions] = useState<IOption[] | []>([])
+  const [credits, setCredits] = useState<IOption[] | []>([])
   const [showDialog, ErrorDialogComponent] = useErrorDialog(false)
   const [bonus, setBonus] = useState<IBonus>({
-    id: 0,
-    title: '',
     fullText: '',
-    rollingTime: 0,
+    id: 0,
     percentage: 0,
+    rollingTime: 0,
     status: 1,
+    title: '',
   })
   const [checkShow, setCheckShow] = useState(false)
   const [isLoading, withLoading, Loading] = useLoading(false)
@@ -81,46 +85,49 @@ const Transfer: React.FC<RouteComponentProps> = ({ history }) => {
       return showDialog(error, 'Error')
     } 
     const { data: creditResps } = await withLoading(() => get({ path: 'user/credit' }))
-    // const correctCreditProps = ({ title, data }) => ({
-    //     label: title,
-    //     value: data
-    // })
-    // setCredits(map(correctCreditProps, creditResps))
-    const findResult = find(propEq('title', origin))(creditResps);
+    const { data: credit } = find(propEq('title', origin))(creditResps);
     setInitialValues({
       ...initialValues,
-      credit: findResult.data
+      credit
     })
     return showDialog('Transfer Successfully', 'Success')
-    
-
   }
+
   const handleChangeTransferFrom = (event: React.ChangeEvent<{ value: unknown }>) => {
     const { value } = event.target
-    const findResult = find(propEq('label', value))(credits);
+    const { data: credit } = find(propEq('label', value))(credits);
     setInitialValues({
       ...initialValues,
-      credit: findResult.value,
+      credit,
       origin: String(value)
     })
   }
-  const handleChangeTransferTo = (event: React.ChangeEvent<{ value: unknown }>) => {
-    const value = String(event.target.value)
-    setInitialValues({
-      ...initialValues,
-      target: value
-    })
-    fetchBonusProvider(value);
 
+  const handleChangeTransferTo = (event: React.ChangeEvent<{ value: unknown }>) => {
+    const target = String(event.target.value)
+    fetchBonusProvider(target)
+    if (target === MAIN_WALLET) {
+      const notMainWallet = ({ title }: IOption) => title !== MAIN_WALLET
+      const suppliersFiltered = pipe(
+        filter<IOption, 'array'>(notMainWallet),
+        map(titleWithCredit)
+      )(credits)
+      return setOriginOptions(suppliersFiltered)
+    } 
+    const isMainWallet = ({ title }: IOption) => title === MAIN_WALLET
+    const mainWalletFiltered = pipe(
+      filter<IOption, 'array'>(isMainWallet),
+      map(titleWithCredit)
+    )(credits)
+    return setOriginOptions(mainWalletFiltered)
   }
+
   const handeChangeCheckbox = (event: React.ChangeEvent<{ checked: boolean }>) => {
     const value = event.target.checked
     setInitialValues({
       ...initialValues,
       loyaltyBonus: value
     })
-
-
   }
   const fetchBonusProvider = async (value: string) => {
     const arrNoFetch = ['4D lottery', 'Poker IDN']
@@ -144,37 +151,25 @@ const Transfer: React.FC<RouteComponentProps> = ({ history }) => {
   }
   useEffect(() => {
     const fetchData = async () => {
-      const correctDataProps = (item: any) => ({
-        title: item,
-        value: item,
-      })
-      const correctCreditProps = ({ title, data }) => ({
-        label: title,
+      const correctCreditProps = ({ title, data }): IOption => ({
+        title,
         value: data
       })
-      try {
-        const [{ data: supplierResps }, { data: walletResps }, { data: creditResps }] = await withLoading(() => Promise.all([
-          withLoading(() => get({ path: 'suppliers' })),
-          withLoading(() => get({ path: 'wallets' })),
-          withLoading(() => get({ path: 'user/credit' }))
-        ]))
-        setWallets(map(correctDataProps, walletResps))
-        setSuppliers(map(correctDataProps, supplierResps))
-        setCredits(map(correctCreditProps, creditResps))
-        const initialSupplier = supplierResps[0]
-        const initialWallet = walletResps[0]
-        const initialCredit = creditResps[0].data
-        setInitialValues({
-          ...initialValues,
-          credit: initialCredit,
-          origin: String(initialWallet),
-          target: initialSupplier,
-        })
-        fetchBonusProvider(supplierResps[0])
-
-      } catch (error) {
-        throw error
-      }
+      const [{ data: creditResps }] = await withLoading(() => Promise.all([
+        withLoading(() => get({ path: 'user/credit' }))
+      ]))
+      const creditsCorrected = map(correctCreditProps)(creditResps)
+      setCredits(creditsCorrected)
+      const optionsCorrected = map(titleWithCredit)(creditsCorrected)
+      setOriginOptions(optionsCorrected)
+      setTargetOptions(optionsCorrected)
+      const [{ title: origin }, { title: target }] = creditsCorrected
+      setInitialValues({
+        ...initialValues,
+        origin,
+        target,
+      })
+      fetchBonusProvider(origin)
     }
 
     if (auth.username) {
@@ -202,7 +197,7 @@ const Transfer: React.FC<RouteComponentProps> = ({ history }) => {
                   name="origin"
                   label="Transfer From"
                   fullWidth={true}
-                  options={wallets}
+                  options={originOptions}
                   handleChange={handleChangeTransferFrom}
                   variant="outlined"
                   component={SelectInput}
@@ -210,20 +205,10 @@ const Transfer: React.FC<RouteComponentProps> = ({ history }) => {
               </div>
               <div>
                 <Field
-                  name="credit"
-                  label="Credit"
-                  type="text"
-                  disabled={true}
-                  fullWidth={true}
-                  component={TextInput}
-                />
-              </div>
-              <div>
-                <Field
                   name="target"
                   label="Transfer To"
                   fullWidth={true}
-                  options={suppliers}
+                  options={targetOptions}
                   handleChange={handleChangeTransferTo}
                   variant="outlined"
                   component={SelectInput}
