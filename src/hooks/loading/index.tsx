@@ -1,12 +1,13 @@
-import LinearProgress, { LinearProgressProps } from '@material-ui/core/LinearProgress';
+import Backdrop from '@material-ui/core/Backdrop';
+import CircularProgress from '@material-ui/core/CircularProgress';
 import React, { useState } from 'react'
 import './style.scss'
 
 type TCallback = () => any
-type HookLoading = (status: boolean) => [boolean, (callback: TCallback) => Promise<any>, React.FC<LinearProgressProps>]
+type HookLoading = (status: boolean) => [boolean, (callback: TCallback) => Promise<any>, React.FC<{color?: string}>]
 
 const useLoading: HookLoading = (status) => {
-  const [loading, setLoading] = useState(status)
+  const [loading, setLoading] = useState(false)
   const withLoading = async (callback: TCallback): Promise<any> => {
     setLoading(true)
     try {
@@ -18,10 +19,10 @@ const useLoading: HookLoading = (status) => {
       throw error
     }
   }
-  const LoadingComponent = (props: LinearProgressProps) => (
-    <div>
-      { loading ? <LinearProgress className="loading-container" {...props} /> : null }
-    </div>
+  const LoadingComponent = (props) => (
+    <Backdrop className="loading-container" open={loading}>
+      <CircularProgress {...props} />
+    </Backdrop>
   )
   return [ loading, withLoading, LoadingComponent ]
 }

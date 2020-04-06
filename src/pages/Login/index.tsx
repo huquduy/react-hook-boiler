@@ -12,7 +12,7 @@ import useErrorDialog from 'hooks/error-dialog'
 import useLoading from 'hooks/loading'
 import React from 'react'
 import { Field, withTypes } from 'react-final-form'
-import { Link, RouteComponentProps, withRouter } from 'react-router-dom'
+import { Link, RouteComponentProps, useHistory, useLocation } from 'react-router-dom'
 import { composeValidators, minLength, required } from 'services/form'
 import { post } from 'services/http'
 
@@ -24,7 +24,14 @@ interface IForm {
 }
 const { Form } = withTypes<IForm>()
 
-const Login: React.FC<RouteComponentProps> = ({ history }) => {
+const useQuery = () => {
+  return new URLSearchParams(useLocation().search);
+}
+
+const Login: React.FC<RouteComponentProps> = () => {
+  const history = useHistory()
+  const query = useQuery()
+  const redirectUrl = query.get('redirect')
   const { setAuthStatus } = React.useContext(AuthContext)
   const [, withLoading, Loading] = useLoading(false)
   const [showDialog, ErrorDialogComponent] = useErrorDialog(false)
@@ -39,8 +46,8 @@ const Login: React.FC<RouteComponentProps> = ({ history }) => {
     if (error) {
       return showDialog(error, 'Error')
     }
-    history.push('/home')
-    setAuthStatus(token)
+    history.push(redirectUrl || '/home')
+    return setAuthStatus(token)
   }
 
   return (
@@ -100,4 +107,4 @@ const Login: React.FC<RouteComponentProps> = ({ history }) => {
   )
 }
 
-export default withRouter(Login)
+export default Login

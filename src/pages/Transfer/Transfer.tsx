@@ -18,7 +18,6 @@ import useSnackbar from 'hooks/snackbar'
 import { filter, find, map, pipe, propEq } from 'ramda'
 import React, { useEffect, useState } from 'react'
 import { Field, withTypes } from 'react-final-form'
-import { RouteComponentProps, withRouter } from 'react-router-dom'
 import { composeValidators, mustBeNumber, required } from 'services/form'
 import { get, post } from 'services/http'
 import './style.scss'
@@ -45,11 +44,11 @@ export interface IBonus {
 const { Form } = withTypes<IForm>()
 
 const titleWithCredit = ({ title, value }) => ({
-  title: `${title} - (${value})`,
+  title: `${title} - (${value} IDR)`,
   value: title
 })
 
-const Transfer: React.FC<RouteComponentProps> = ({ history }) => {
+const Transfer: React.FC = () => {
   const { auth } = React.useContext(AuthContext)
   const [initialValues, setInitialValues] = useState<IForm>({
     amount: '',
@@ -129,15 +128,13 @@ const Transfer: React.FC<RouteComponentProps> = ({ history }) => {
       loyaltyBonus: value
     })
   }
-  const fetchBonusProvider = async (value: string) => {
-    const arrNoFetch = ['4D lottery', 'Poker IDN']
-    const checkFetch = arrNoFetch.indexOf(value);
-    setCheckShow(false)
-    if (checkFetch < 0) {
-      setCheckShow(true)
-      const params: any = { provider: value }
+  const fetchBonusProvider = async (provider: string) => {
+    const ignoredBonuses = ['4D lottery', 'Poker IDN']
+    const isAllowedBonus = !ignoredBonuses.includes(provider)
+    setCheckShow(isAllowedBonus)
+    if (isAllowedBonus) {
       const bonusResps = await withLoading(() => get({
-        body: params,
+        body: { provider },
         path: 'transfer/bonus/loyalty/'
 
       }))
@@ -180,7 +177,7 @@ const Transfer: React.FC<RouteComponentProps> = ({ history }) => {
 
   return (
     <div className='deposit-page'>
-      <Loading color="secondary" />
+      <Loading color="primary" />
       <Header />
       <Typography color="primary" className="title" variant="h5" align="center" component="h2" gutterBottom={true}>
         BALANCE TRANSFER
@@ -254,4 +251,4 @@ const Transfer: React.FC<RouteComponentProps> = ({ history }) => {
   )
 }
 
-export default withRouter(Transfer)
+export default Transfer
