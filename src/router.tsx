@@ -5,6 +5,7 @@ import {
   Redirect,
   Route,
   Switch,
+  useLocation,
 } from 'react-router-dom'
 
 const Home = lazy(() => import('./pages/Home'))
@@ -33,8 +34,9 @@ const WithdrawReport = lazy(()=> import('./pages/Report/Withdraw'))
 const TransferReport = lazy(()=> import('./pages/Report/Transfer'))
 
 const RequiredLoginRooute = ({ component: Component, ...rest }) => {
+  const { pathname } = useLocation()
   const { auth: { isLogged } } = React.useContext(AuthContext)
-  const render = props => isLogged ? <Component {...props} /> : <Redirect to="/login" />
+  const render = props => isLogged ? <Component {...props} /> : <Redirect to={`/login?redirect=${pathname}`} />
   return (
     <Route
       {...rest}
