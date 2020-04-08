@@ -2,6 +2,8 @@
 
 .register-page {
   margin-top: 56px;
+  color: $primaryColor;
+  background: $backgroundBody;
   .title {
     line-height: 70px;
   }
@@ -12,8 +14,22 @@
     > div {
       margin-top: 15px;
       width: 75%;
-      align-self: center
+      align-self: center;
     }
+  }
+  .des-amount{
+    text-align: left;
+    // margin-left: 15px;
+  }
+  form {
+    width: 100%;
+  }
+  .bottom-wraper{
+    margin-top:50px;
+  }
+  .MuiFormLabel-root.Mui-disabled,
+  .MuiIconButton-root {
+    color: $primaryColor;
   }
   .success {
     border-color:  $successColor;

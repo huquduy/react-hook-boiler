@@ -17,7 +17,6 @@ const TermCondition = lazy(() => import('./pages/TermCondition'))
 const Profile = lazy(() => import('./pages/Profile'))
 const Games = lazy(() => import('./pages/Games'))
 const Slot = lazy(() => import('./pages/Slot'))
-const MorePage = lazy(()=> import('./pages/MorePage'))
 const AboutUs = lazy(()=> import('./pages/AboutUs'))
 const Privacy = lazy(()=> import('./pages/Privacy'))
 const Banking = lazy(()=> import('./pages/Banking'))
@@ -54,13 +53,9 @@ const Router = () => {
           <Route path="/home" component={Home} />
           <Route path="/login" component={Login} />
           <Route path="/register" component={Register} />
-          <Route path="/deposit" component={Deposit} />
-          <Route path="/withdraw" component={Withdraw} />
           <Route path="/term-condition" component={TermCondition} />
-          <Route path="/profile" component={Profile} />
           <Route path="/games/:type" component={Games} />
           <Route path="/slots/:providerId" component={Slot} />
-          <Route path="/more-page" component={MorePage} />
           <Route path="/privacy" component={Privacy} />
           <Route path="/about-us" component={AboutUs} />
           <Route path="/banking" component={Banking} />
@@ -72,9 +67,12 @@ const Router = () => {
           <RequiredLoginRooute path="/tg/groups/:group/types/:type/codes/:code" component={PlayingTG} />
           <RequiredLoginRooute path="/gs/groups/:group/types/:type/codes/:code" component={PlayingGS} />
           <RequiredLoginRooute path="/transfer" component={Transfer} />
+          <RequiredLoginRooute path="/deposit" component={Deposit} />
+          <RequiredLoginRooute path="/withdraw" component={Withdraw} />
           <RequiredLoginRooute path="/report/deposit" component={DepositReport} />
           <RequiredLoginRooute path="/report/withdraw" component={WithdrawReport} />
-          <Route path="/report/transfer" component={TransferReport} />
+          <RequiredLoginRooute path="/report/transfer" component={TransferReport} />
+          <RequiredLoginRooute path="/profile" component={Profile} />
         </Switch>
       </Suspense>
     </BrowserRouter>

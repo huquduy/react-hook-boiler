@@ -4,18 +4,18 @@ import {
 import Bottom from 'components/Bottom'
 import Header from 'components/Header'
 import React  from 'react'
-import { RouteComponentProps, withRouter, Link } from 'react-router-dom'
+import { Link, RouteComponentProps, withRouter } from 'react-router-dom'
+import './style.scss'
 
-  
 const Reponsible: React.FC<RouteComponentProps> = ({ history }) => {
   return (
-    <div className='term-page'>
+    <div className='res-page'>
       <Header />
       <Typography color="primary" className="title" variant="h5" align="center" component="h2" gutterBottom={true}>
         PERJUDIAN YANG BERTANGGUNG JAWAB
       </Typography>
       <div className="container">
-        <ul className="list-custom"><span>
+        <ul className="list-custom">
           <p>Sebagai penyedia game online , kami telah membawa gairah untuk bermain game dan taruhan ke internet . Kami mendukung generasi gamer online - dengan penawaran menarik dan menantang . Kami juga bertanggung jawab untuk produk kami line-up .</p>
           <p>Kami ingin menyediakan platform gaming paling aman dan paling inovatif di dunia untuk orang dewasa . Dengan menggunakan produk yang adil dan bertanggung jawab line-up , setiap pengguna bisa bermain dalam berarti keuangan mereka dan menerima layanan terbaik . Kami berkomitmen untuk integritas , keadilan dan kehandalan . Oleh karena itu jelas bahwa website harus melakukan yang terbaik untuk menghindari dan mengurangi masalah yang dapat timbul dari partisipasi dalam permainan kesempatan , terutama melalui bermain yang berlebihan . Pada saat yang sama , penting untuk menghormati hak-hak orang-orang yang mengambil bagian dalam permainan kesempatan sampai batas yang wajar sebagai sarana hiburan .</p> 
           <p>Gaming bertanggung jawab di website ini didasarkan pada tiga pilar :</p> <p>1 . Keamanan pemain <br /> 2 . Keamanan permainan <br /> 3 . Perlindungan terhadap kecanduan game .</p> <p>Bersama dengan lembaga penelitian , asosiasi dan lembaga terapi , kami bekerja pada langkah-langkah untuk perlindungan player dan bekerja menuju , kerangka bertanggung jawab aman dan dapat diandalkan untuk game online di Asia dan Eropa .</p>
@@ -56,7 +56,6 @@ const Reponsible: React.FC<RouteComponentProps> = ({ history }) => {
             <br /> 
           </p>
           <p>Penjudi kompulsif Kebanyakan akan menjawab ya untuk setidaknya tujuh pertanyaan ini. Jika Anda ingin mencari nasihat profesional , silahkan mencari bantuan .</p>
-        </span>
         </ul>
       </div>
       <Bottom />

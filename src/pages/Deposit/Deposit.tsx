@@ -10,8 +10,9 @@ import Header from 'components/Header'
 import SelectInput, { IOption } from 'components/SelectInput'
 import TextInput from 'components/TextInput'
 import { AuthContext } from 'contexts/authContext'
+import useErrorDialog from 'hooks/error-dialog/error-dialog'
 import useLoading from 'hooks/loading'
-import useSnackbar from 'hooks/snackbar'
+// import useSnackbar from 'hooks/snackbar'
 import Numeral from 'numeral'
 import { find, map, propEq } from 'ramda'
 import React, { useEffect, useState } from 'react'
@@ -37,6 +38,7 @@ const { Form } = withTypes<IForm>()
 
 const Deposit: React.FC<RouteComponentProps> = ({ history }) => {
   const { auth } = React.useContext(AuthContext)
+  const [showDialog, ErrorDialogComponent] = useErrorDialog(false)
   const [initialValues, setInitialValues] = useState<IForm>({
     accountName: '',
     accountNumber: '',
@@ -51,7 +53,7 @@ const Deposit: React.FC<RouteComponentProps> = ({ history }) => {
   const [banks, setBanks] = useState<IOption[] | []>([])
 
   const [isLoading, withLoading, Loading] = useLoading(false)
-  const [showSnackbar, Snackbar] = useSnackbar(false)
+  // const [showSnackbar, Snackbar] = useSnackbar(false)
 
   const handleDeposit = async ({ amount, password }) => {
     const { error } = await withLoading(() => post({
@@ -61,9 +63,11 @@ const Deposit: React.FC<RouteComponentProps> = ({ history }) => {
       path: 'deposit/execute'
     })).catch(err => err)
     if (error) {
-      return showSnackbar(error)
+      // return showSnackbar(error)
+      return showDialog(error, 'Error')
     }
     // history.push('/home')
+    return showDialog('Deposit Succesfully', 'Success')
   }
   const handleChange = (event: React.ChangeEvent<{ value: unknown }>) => {
     const { value } = event.target
@@ -202,20 +206,16 @@ const Deposit: React.FC<RouteComponentProps> = ({ history }) => {
               </div>
               <div>
                 <Field
-                  validate={composeValidators(required, mustBeNumber)}
+                  validate={composeValidators(required)}
                   name="calcAmount"
                   label="Transfer Bank :"
                   type="text"
                   disable={isLoading.toString()}
                   fullWidth={true}
                   component={TextInput}
+                  disabled={true}
                 />
               </div>
-              {/* <div className="des-amount">
-                <span>(IDR 1000 = 1 unit)</span> <br />
-                <span>Min : 50 IDR</span><br />
-                <span>Max : 99000 IDR</span>
-              </div> */}
               <div>
                 <Field
                   validate={required}
@@ -235,7 +235,8 @@ const Deposit: React.FC<RouteComponentProps> = ({ history }) => {
             </div>
           </form>}
       </Form>
-      <Snackbar />
+      <ErrorDialogComponent />
+      {/* <Snackbar /> */}
       <Bottom />
     </div>
 

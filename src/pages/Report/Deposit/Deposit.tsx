@@ -68,7 +68,7 @@ const DepositReport: React.FC<RouteComponentProps> = () => {
     setPage(1);
   };
   useEffect(() => {
-    const fromDate = moment(new Date()).format('YYYßY-MM-DD')
+    const fromDate = moment(new Date()).format('YYYY-MM-DD')
     const toDate = moment(new Date()).format('YYYY-MM-DD')
     if(auth.username){
       fetchTable({ fromDate, toDate })

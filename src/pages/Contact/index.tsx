@@ -12,7 +12,6 @@ import './style.scss'
 const Contact: React.FC<RouteComponentProps> = ({ history }) => {
   return (
     <div className='term-page'>
-   
       <Header />
       <Typography color="primary" className="title" variant="h5" align="center" component="h2" gutterBottom={true}>
         CONTACT US

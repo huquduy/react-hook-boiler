@@ -130,7 +130,7 @@ const Sidebar: React.FC = () => {
           </Link>
         </ListItem>
         <ListItem button={true} key="term">
-          <Link to='/term' className='item'>
+          <Link to='/term-condition' className='item'>
             <span className='item-text'><img alt='hokibet188' className="icon-menu" src={`${imageSrc}/icons/term.png`} />Term & Condition</span>
           </Link>
         </ListItem>

@@ -9,26 +9,18 @@ import './style.scss'
 
   
 const TermCondition: React.FC<RouteComponentProps> = ({ history }) => {
-  // const [ Loading] = useLoading(false)
-  // const [ Snackbar] = useSnackbar(false)
   return (
     <div className='term-page'>
-      {/* <Loading color="secondary" /> */}
       <Header />
       <Typography color="primary" className="title" variant="h5" align="center" component="h2" gutterBottom={true}>
         Syarat Dan Ketentuan
       </Typography>
       <div className="container">
-        {/* <Typography className="title">Syarat Dan Ketentuan</Typography> */}
         <ul className="list-custom">
           <li> Dengan menggunakan dan / atau mengunjungi setiap bagian (termasuk sub - domain ) dari website kami perusahaan atau situs-situs lain atau aplikasi yang kita sendiri (“Website”) dan / atau mendaftar di situs web ini, Anda setuju untuk terikat dengan 
-			
             <br />( i ) Syarat dan Ketentuan
-				
             <br />( ii ) Kebijakan Privasi kami , dan 
-					
             <br />( iii ) Peraturan berlaku untuk taruhan atau produk game dan dianggap telah diterima dan dipahami semua Ketentuan . 
-					
           </li>
           <li> Silakan baca Syarat hati-hati dan jika Anda tidak menerima Persyaratan , jangan menggunakan Website. Ketentuan ini juga berlaku untuk semua telepon taruhan dan taruhan atau game melalui perangkat mobile termasuk aplikasi download ke perangkat mobile. </li>
           <li> Di mana Anda bermain game apa saja , atau menempatkan taruhan atau taruhan , menggunakan situs web ini, Anda menerima dan setuju untuk terikat oleh, Aturan yang berlaku untuk produk yang berlaku tersedia di Situs Web dari waktu ke waktu . </li>
@@ -39,7 +31,6 @@ const TermCondition: React.FC<RouteComponentProps> = ({ history }) => {
           <li> Harap diperhatikan bahwa perusahaan kami dan mitra kami berhak untuk membatalkan , menolak dan menolak setiap taruhan ditempatkan oleh pelanggan yang diduga tidak normal / tidak teratur taruhan atau penggunaan kecerdasan buatan ( bot ) . </li>
         </ul>
       </div>
-      {/* <Snackbar /> */}
       <Bottom />
     </div>
   

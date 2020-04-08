@@ -60,10 +60,6 @@
     }
   }
   .auth{
-    // display: flex;
-    // flex-direction:row;
-    // flex-wrap:wrap;
-    // justify-content:flex-start;
     .transfer{
       height: 35px;
       line-height: 35px;
@@ -90,7 +86,7 @@
     }
   }
   .text-home{
-    color:$primaryColor;
+    color:$gray-head;
     background: #0a0a0a;
     padding: 16px;
     border-top: 1px solid $primaryColor;
@@ -101,6 +97,9 @@
     }
     p{
       text-align:left;
+    }
+    .color-gold{
+      color:$primaryColor;
     }
   }
   
