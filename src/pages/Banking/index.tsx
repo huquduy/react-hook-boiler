@@ -9,11 +9,8 @@ import './style.scss';
 
 
 const Banking: React.FC<RouteComponentProps> = ({ history }) => {
-  // const [ Loading] = useLoading(false)
-  // const [ Snackbar] = useSnackbar(false)
   return (
     <div className='term-page'>
-      {/* <Loading color="secondary" /> */}
       <Header />
       <Typography color="primary" className="title" variant="h5" align="center" component="h2" gutterBottom={true}>
         TPerbankan
@@ -90,10 +87,11 @@ const Banking: React.FC<RouteComponentProps> = ({ history }) => {
             </tbody>
           </table>
         </div>
-        <ul><span><p>INFORMASI PENTING:</p> <li>
-          <br />• Untuk deposit dan penarikan harus mengisi form yang terdapat didalam AKUN ANDA. <br />• Transaksi penarikan akan diproses paling lama 2 jam. <br />• Member hanya dapat melakukan penarikan maksimum 2 kali dalam waktu 24 jam. <br />• Member dapat melakukan deposit dan penarikan mengikuti jam online Bank masing-masing. <br />• Segala transaksi akan bergantung pada jadwal online/pengoperasian bank yang disebutkan diatas (informasi jadwal online bank dapat ditanyakan kepada customer service kami) <br />• Penarikan hanya akan di proses ke rekening yang Anda daftarkan pertama kali di Hokibet188 <br />• Tidak melayani transfer ke rekening pihak ke-tiga. <br />• Apabila nama dan no rekening tidak sesuai dengan yang didaftarkan, maka semua dana yang ada kami anggap sebagai donasi/sumbangan. <br />• Harap menginformasikan sebelumnya apabila terdapat penarikan dana dalam jumlah besar, dikarenakan akan memerlukan beberapa waktu untuk memproses transaksi tersebut. <br />• Kami tidak melayani adanya komplain dalam bentuk apapun setelah proses deposit / penarikan selesai lebih dari 24 jam. <br />• Untuk bank lokal lain selain bank yang tersedia di tabel di atas, silahkan hubungi customer service kami untuk informasi lebih lanjut. <br />• Untuk bantuan pelanggan silahkan menghubungi customer service kami (online 24 jam). 
+        <ul className="list-custom ">
+          <p>INFORMASI PENTING:</p> 
+        <li>
+          <br />• Untuk deposit dan penarikan harus mengisi form yang terdapat didalam AKUN ANDA. <br />• Transaksi penarikan akan diproses paling lama 2 jam. <br />• Member hanya dapat melakukan penarikan maksimum 2 kali dalam waktu 24 jam. <br />• Member dapat melakukan deposit dan penarikan mengikuti jam online Bank masing-masing. <br />• Segala transaksi akan bergantung pada jadwal online/pengoperasian bank yang disebutkan diatas (informasi jadwal online bank dapat ditanyakan kepada customer service kami) <br />• Penarikan hanya akan di proses ke rekening yang Anda daftarkan pertama kali di Hokibet188 <br />• Tidak melayani transfer ke rekening pihak ke-tiga. <br />• Apabila nama dan no rekening tidak sesuai dengan yang didaftarkan, maka semua dana yang ada kami anggap sebagai donasi/sumbangan. <br />• Harap menginformasikan sebelumnya apabila terdapat penarikan dana dalam jumlah besar, dikarenakan akan memerlukan beberapa waktu untuk memproses transaksi tersebut. <br />• Kami tidak melayani adanya komplain dalam bentuk apapun setelah proses deposit / penarikan selesai lebih dari 24 jam. <br />• Untuk bank lokal lain selain bank yang tersedia di tabel di atas, silahkan hubungi customer service kami untuk informasi lebih lanjut. <br />• Untuk bantuan pelanggan silahkan menghubungi customer service kami (online 24 jam).
         </li>
-        </span>
         </ul>
       </div>
       {/* <Snackbar /> */}

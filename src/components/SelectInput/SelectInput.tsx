@@ -16,7 +16,7 @@ type SelectInputProps = FieldRenderProps<string, any>
 interface ISelectInput extends SelectInputProps {
   label: string;
   options: IOption[],
-  handleChange: any
+  handleChange?: any
 }
 
 const SelectInput: React.FC<ISelectInput> = ({ input, meta, label, options, handleChange, ...rest }: ISelectInput) => {

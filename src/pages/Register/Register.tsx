@@ -1,5 +1,7 @@
 import {
   Button,
+  Checkbox,
+  FormControlLabel,
   Typography,
 } from '@material-ui/core'
 import {
@@ -10,6 +12,7 @@ import Header from 'components/Header'
 import SelectInput, { IOption } from 'components/SelectInput'
 import TextInput from 'components/TextInput'
 import { AuthContext } from 'contexts/authContext'
+import useErrorDialog from 'hooks/error-dialog/error-dialog'
 import useLoading from 'hooks/loading'
 import useSnackbar from 'hooks/snackbar'
 import { map } from 'ramda'
@@ -23,12 +26,13 @@ import './style.scss'
 
 interface IForm {
   email: string,
-  bankId: string,
+  bankId: number,
   bankAccountName: string,
   bankAccountNumber: string,
   username: string,
   password: string,
   phone: string,
+  currency:string,
 }
 const { Form } = withTypes<IForm>()
 
@@ -36,38 +40,51 @@ const Register: React.FC<RouteComponentProps> = ({ history }) => {
   const [initialValues, setInitialValues] = useState<IForm>({
     bankAccountName: '',
     bankAccountNumber: '',
-    bankId: '',
+    bankId: 2,
+    currency:'IDR',
     email: '',
     password: '',
     phone: '',
-    username: '',
+    username: ''
+   
   })
   const [banks, setBanks] = useState<IOption[] | []>([])
 
   const { setAuthStatus } = React.useContext(AuthContext)
   const [isLoading, withLoading, Loading] = useLoading(false)
-  const [showSnackbar, Snackbar] = useSnackbar(false)
+  // const [showSnackbar, Snackbar] = useSnackbar(false)
+  const [showDialog, ErrorDialogComponent] = useErrorDialog(false)
 
-  const handleRegister = async ({ username, password }) => {
+  const handleRegister = async ({ username, password, phone, bankAccountName, bankAccountNumber, email, bankId, currency }) => {
     const { token, error } = await withLoading(() => post({
       body: {
-        password, username
+        // tslint:disable-next-line: object-literal-sort-keys
+        password, username, phone, bankAccountName, bankAccountNumber, email, bankId: Number(bankId), currency
       },
-      path: 'user'
-    })).catch((err) => err)
-    if (error) {
-      return showSnackbar(error)
-    }
-    history.push('/home')
-    setAuthStatus(token)
-  }
-  const handleChange = (event: React.ChangeEvent<{ value: unknown }>) => {
-    const { value } = event.target
-    setInitialValues({
-      ...initialValues,
-      bankId: String(value)
+      path: 'user/signUp'
+    })).catch((err) => {
+      console.log(err);
+      return showDialog(err, 'Error')
+
     })
+    if (error) {
+      console.log(error);
+      // return showSnackbar(error)
+      return showDialog(error, 'Error')
+    }else {
+      setAuthStatus(token)
+      showDialog('Register Successfully', 'Success')
+      history.push('/home')
+    }
+    
   }
+  const handeChangeCheckbox = () => {
+
+  }
+  const handleChange = () => {
+
+  }
+
 
   useEffect(() => {
     const fetchBanks = async () => {
@@ -75,21 +92,21 @@ const Register: React.FC<RouteComponentProps> = ({ history }) => {
         title: bankName,
         value: String(id),
       })
-      const { data: bankResps } : { data: any[] } = await withLoading(() => get({
+      const { data: bankResps }: { data: any[] } = await withLoading(() => get({
         path: 'banking'
       }))
         .catch((err) => err)
-  
+
       setBanks(map(correctBankProps, bankResps))
-  
+
       const initialBank = bankResps[0].id
       setInitialValues({
         ...initialValues,
-        bankId: String(initialBank)
+        bankId: initialBank
       })
     }
     fetchBanks()
-  // eslint-disable-next-line react-hooks/exhaustive-deps
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
   return (
@@ -103,13 +120,13 @@ const Register: React.FC<RouteComponentProps> = ({ history }) => {
         initialValues={initialValues}
         onSubmit={handleRegister}
       >
-        {({ handleSubmit }) => 
+        {({ handleSubmit }) =>
           <form onSubmit={handleSubmit}>
             <div className='container'>
               <div>
                 <Field
                   variant="outlined"
-                  validate={composeValidators(required, minLength(3))}
+                  validate={composeValidators(required, minLength(3), maxLength(9))}
                   name="username"
                   label="Username"
                   fullWidth={true}
@@ -168,8 +185,8 @@ const Register: React.FC<RouteComponentProps> = ({ history }) => {
                   label="Bank name"
                   fullWidth={true}
                   options={banks}
-                  handleChange={handleChange}
                   component={SelectInput}
+                  handleChange={handleChange}
                 />
               </div>
               <div>
@@ -195,6 +212,15 @@ const Register: React.FC<RouteComponentProps> = ({ history }) => {
                 />
               </div>
               <div>
+              <FormControlLabel
+
+                  value="ischeck"
+                  control={<Checkbox color="primary" onChange={handeChangeCheckbox} />}
+                  label={'*I am over 18 years of age and have read and accepted Terms & Conditions, Privacy Policy & Betting Rules as published on this site.'}
+                  name="isCheck"
+                />
+                </div>
+              <div>
                 <Button variant="outlined" color="primary" type="submit" startIcon={<AddIcon />}>
                   Register
                 </Button>
@@ -204,15 +230,11 @@ const Register: React.FC<RouteComponentProps> = ({ history }) => {
                   Back to Login
                 </Button>
               </div>
-              {/* <div>
-                <LinkMUI className="link-primary">
-                  Forgot Password? 
-                </LinkMUI>
-              </div> */}
             </div>
           </form>}
       </Form>
-      <Snackbar />
+      <ErrorDialogComponent />
+      {/* <Snackbar /> */}
     </div>
   )
 }

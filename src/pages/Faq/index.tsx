@@ -5,24 +5,110 @@ import Bottom from 'components/Bottom'
 import Header from 'components/Header'
 import React from 'react'
 import { RouteComponentProps, withRouter } from 'react-router-dom'
-
+import './style.scss'
 
 const Faq: React.FC<RouteComponentProps> = ({ history }) => {
-  // const [ Loading] = useLoading(false)
-  // const [ Snackbar] = useSnackbar(false)
   return (
-    <div className='term-page'>
-      {/* <Loading color="secondary" /> */}
+    <div className='faq'>
       <Header />
       <Typography color="primary" className="title" variant="h5" align="center" component="h2" gutterBottom={true}>
         FAQ
-      </Typography>
+    </Typography>
       <div className="container">
-        <ul className="list-custom"><span><p>General</p><li> What are the currencies accepted by The Company?<br />The currencies accepted by The Company are :<br />- Indonesian Rupiah (IDR)</li><li> How do I deposit funds into my betting account?<br />For faster credit of funds, it is recommended to use Local-Pay - Local Bank Deposits.</li><li> How do I withdraw funds from my betting account?<br />Money can be withdrawn from your betting account via the Local Bank Transfer.</li><li> How long does it take to process a withdrawal?<br />Once we have received all of your necessary information in accordance with&nbsp;The Company Withdrawal Policy, we will send the withdrawal request for our Finance team to commence with processing.</li></span></ul>
-        <div className="table-responsive"><table className="margin-left table table-bordered tbl-faq"><thead><tr><th>Method of withdrawal</th><th>The Company Processing Time</th><th>Funds Received&nbsp; by You (Estimated)</th></tr></thead><tbody><tr><td>Banking</td><td>--/-</td><td>--/-</td></tr><tr><td>Bank transfer</td><td>1-5 min</td><td>1-5 min</td></tr><tr><td>Local Bank transfer</td><td>1-5 min</td><td>1-5 min</td></tr></tbody></table></div>
-        <ul><span><p>*Business Days exclude Saturdays, Sundays, public holidays and your local bank holidays.</p><li>5. Will I be charged for any deposit and withdrawal transactions?&nbsp;<br />The Company will NOT charge members for any deposit and withdrawal transactions made to their accounts. However for selected banks, there will be additional transaction fees that will not be absorbed by The Company. Kindly check with your bank for the transaction fees.</li><li>6. Why are the Main and Products’ Wallets for?<br />Main Wallet’s balance displays the total amount that you can withdraw or transfer to Products’ Wallet to fund betting transactions. All newly successful deposits are updated to this balance.<br />Your balance will be displayed in the respective Products’ Wallets:<br />- SportsBook or Sports Book betting<br />- Casino: For Live Dealer in The Company Live Casino and Slot Games<br />- Lottery: For digit betting products like Keno<br />- Poker: for all kinds of poker games in Poker Products<br />You can fund transfer from the Main Wallet to the respective Products’ Wallet by selecting the desired wallet from the Transfer From/To drop down list.<br />ii) My Account<br />- How to open an account with The Company?<br />- Opening an account with The Company is easy and should only take a few minutes.<br />- On the home page, click on the 'Join Now' button in the top right-hand corner of the page. You will then find the following information on the registration page:&nbsp;<br />- Username - your unique identifier when logging into your account.<br />- Password - Not case sensitive, but must be between 8 to 10 characters long with a mixture of letters and numbers, of which 2 or more need to be numbers. Remember to always keep your password private and confidential.<br />- Email address - to alert you of any important notices, product announcements or promotions specific to your account.<br />- Currency - currency that you wish to use for depositing and wagering.<br />- Lastly, you will be asked to fill up some other personal contact information, accept the Terms and Conditions and confirm that you are over 18 years of age.<br />- What happens if I forget my logic details?<br />- If you have forgotten your&nbsp;username, simply click on the 'Forgot your username?' link just below the login section of the homepage. Enter your registered email address and the displayed verification code and you will receive an email from us with your username. Please check your junk/spam folders in case our email is not recognised.<br />- If you have forgotten your&nbsp;password, simply click on the&nbsp;'Forgot your username?'&nbsp;link just below the login section of the homepage and follow the instructions.<br />- (For the login section in main page, please replace ‘Forgot login details?’ with ‘Forgot your username’ and add&nbsp;'Forgot your username?'&nbsp;So there’s two in total.)<br />- What happens if the ‘Password Error’ icon appears?<br />- Double check and make sure your password is being entered correctly. It needs to be between 8 to 10 characters, of which 2 or more need to be numbers.<br />- If this problem continues, kindly contact our representative on live help or contact us <br />- Is my Personal Information secure?<br />- The Company will not disclose your personal information to any third party unless required to do so by enforcing laws and regulations.<br />- We reserve the right to disclose and transfer your personal data to our respective payment settlement service providers and financial institutions to the extent necessary for the completion of payments for services provided through our website.<br />- All personal information supplied is transmitted via Secure Socket (SSL 128 bit encryption Standard) and stored in secure operating environments that are not accessible by the public. Internal access to all data is limited and strictly monitored.<br />- Please refer to our Privacy Policy for more information.<br />iii) Deposit<br />How to make deposit using Local-Pay?<br />- Step 1:<br />Contact center information services company Live Help or contact our service center company information to get our bank details.<br />- Step 2:<br />Select the deposit to the bank that you want to deposit, for example the BCA, Mandiri, BNI, BRI has been provided. Please quote account name and account number to deposit of.<br />- Step 3:<br />Sign amount you want to deposit to the value of sample 100 rp 100,000<br />- Step4:<br />Put in your password and then submit<br />iv). Withdrawal<br />1. How do I make withdrawals from betting account I?<br />- You can withdraw funds from your betting account using a local bank transfer. Withdrawal of funds from the account can only be made in the same currency with the currency when the deposit is made.<br />- To request that the withdrawal be sent to your bank account, select the 'Withdrawal' on page pullout. Enter the amount you want to visit, enter your password and click Submit</li></span></ul>
+        <ul className="list-custom">
+          <p><strong>Hal umum</strong></p>
+          <li>1. Apakah mata uang yang diterima oleh perusahaan?
+          <br />Mata uang yang diterima oleh perusahaan adalah:<br />
+            - Indonesia Rupiah (IDR)</li>
+          <li>2 . Bagaimana saya menyetor dana ke rekening taruhan saya?<br />
+            Untuk kredit dana lebih cepat, disarankan untuk menggunakan Local-Pay - Deposit Bank Lokal.</li>
+          <li>3. Bagaimana saya melakukan penarikan dana dari rekening taruhan saya?<br />
+            Uang dapat ditarik dari rekening taruhan melalui Local Bank Transfer.</li>
+          <li>4. Berapa lama waktu yang diperlukan untuk memproses penarikan?<br />
+            Setelah kami menerima semua informasi yang diperlukan sesuai dengan Kebijakan Perusahaan&nbsp; dalam hal
+            Penarikan, kami akan mengirimkan permintaan penarikan kepada tim keuangan kami untuk memulai proses tersebut
+        </li>
+        </ul>
+        <div className="table-responsive">
+          <table className="margin-left table table-bordered tbl-faq">
+            <thead>
+              <tr>
+                <th>Method of withdrawal</th>
+                <th>The Company Processing Time</th>
+                <th>Funds Received&nbsp; by You (Estimated)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Banking</td>
+                <td>--/-</td>
+                <td>--/-</td>
+              </tr>
+              <tr>
+                <td>Bank transfer</td>
+                <td>1-5 min</td>
+                <td>1-5 min</td>
+              </tr>
+              <tr>
+                <td>Local Bank transfer</td>
+                <td>1-5 min</td>
+                <td>1-5 min</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <ul className="list-custom">
+          <p>* Hari kerja mengecualikan Sabtu, Minggu, hari libur dan hari libur bank lokal Anda.</p>
+          <li>5. Apakah saya akan dikenakan biaya untuk setiap transaksi deposit dan penarikan? <br /> Perusahaan tidak
+            akan mengenakan biaya untuk setiap transaksi deposit dan penarikan yang dilakukan ke rekening Anda. </li>
+          <li>6. Apa kegunaan dompet utama dan dompet produk? <br /> Saldo Dompet Utama menunjukan jumlah total dana
+            yang anda bisa tarik atau transfer ke Dompet Produk untuk mendanai transaksi taruhan Anda. Deposit yang baru
+            berhasil akan diperbarui ke saldo dompet utama tersebut. <br /> Saldo Anda akan ditampilkan di masing-masing
+            dompet produk: <br /> -SportsBook atau taruhan Sportbooks <br /> -Casino: Untuk Dealer live di Perusahaan
+            Live kasino dan Slot Games <br /> -Lotere: Untuk produk taruhan angka seperti Keno <br /> -Poker: untuk
+            semua jenis permainan poker di produk Poker <br />- Anda dapat mentransfer dana dari dompet utama ke
+            masing-masing dompet produk dengan memilih dompet yang diinginkan dari Transfer dari/ke daftar drop-down.
+            <br /> ii). <strong className="upper">Akun saya</strong> <br /> 1. Bagaimana cara untuk membuka akun di
+            perusahaan? <br />- Membuka akun di perusahaan sangat mudah dan seharusnya hanya akan memakan waktu beberapa
+            menit saja. <br />- Pada halaman utama, klik 'Join Now(Bergabung Sekarang)' tombol di pojok kanan atas
+            halaman. Kemudian Anda akan menemukan informasi berikut pada halaman pendaftaran: <br />- Nama pengguna -
+            pengenal unik Anda ketika login ke akun Anda. <br />- Sandi - rahasia, tetapi harus terdiri dari karakter
+            yang panjang antara 6 sampai 12 karakter dengan campuran huruf dan angka, yang harus terdiri dari huruf
+            besar dan angka. Ingatlah untuk selalu menjaga password Anda pribadi dan rahasia. <br />- Alamat email –
+            untuk mengingatkan Anda mengenai pemberitahuan penting, pengumuman produk atau promosi khusus untuk account
+            Anda. <br />- Mata uang - mata uang yang ingin Anda gunakan untuk deposit dan taruhan. <br />- Terakhir,
+            Anda akan diminta untuk mengisi beberapa informasi kontak pribadi lainnya, menerima syarat dan ketentuan dan
+            mengkonfirmasi bahwa Anda sudah berusia lebih dari 18 tahun. <br /> 2. Apa yang akan terjadi jika saya lupa
+            rincian login saya? <br />- Jika anda lupa username anda, cukup klik pada link 'Lupa username anda?' di
+            bawah bagian login halaman utama. Masukkan alamat email Anda dan kode verifikasi yang ditampilkan dan Anda
+            akan menerima email dari kami dengan isi nama pengguna Anda. Silahkan periksa folder junk/spam jika
+            seandainya email kami tidak diakui/dikenali. <br />- Jika anda lupa password, cukup klik pada link 'Lupa
+            password anda?' di bawah bagian login halaman utama dan ikuti petunjuk. <br />- (Untuk bagian login di
+            halaman utama, harap ganti 'Lupa rincian login?' dengan 'Lupa username Anda' dan tambahkan 'Lupa password
+            anda?' maka total ada dua.) <br /> 3. Apa yang terjadi jika tulisan 'Password Error' muncul? <br />- Periksa
+            dan pastikan password sudah dimasukkan dengan benar. Password harus terdiri dari 8 sampai 10 karakter,
+            dimana 2 atau lebih harus terdiri atasangka/nomor. <br />- Jika masalah ini berlanjut, silakan hubungi
+            perwakilan kami di LIVE HELP atau mengemail kami di Kontak <br /> 4. Apakah informasi pribadi saya aman?
+            <br />- Perusahaan tidak akan mengungkapkan informasi pribadi Anda kepada pihak ketiga <br />- Kami berhak
+            untuk mengungkapkan dan mentransfer data pribadi Anda kepada penyedia Layanan-Layanan pembayaran kami dan
+            lembaga-lembaga keuangan yang diperlukan untuk menyelesaikan pembayaran terhadap layanan yang diberikan
+            melalui website kami. <br />- Semua informasi pribadi yang diberikan akan dikirimkan melalui Secure Socket
+            (SSL 128 bit enkripsi standar) dan disimpan di sistem operasiaonal yang aman yang tidak dapat diakses oleh
+            publik. Internal akses ke semua data terbatas dan akan diawasi secara ketat. <br />- Silakan lihat Kebijakan
+            Privasi kami untuk informasi lebih lanjut. <br /> iii). <strong className="upper">Deposit</strong> <br /> 1.
+            Bagaimana cara melakukan deposit melalui Local-Pay? <br />- Step 1: <br /> Hubungi pusat pelayanan informasi
+            perusahaan Live Help atau Kontak pusat pelayanan informasi perusahaan kami untuk mendapatkan detail bank
+            kami. <br />- Step 2: <br /> Pilih Setoran ke bank yang hendak Anda setor misalnya BCA,Mandiri,BNI,BRI yang
+            telah disediakan. <br /> Silakan kutipkan Nama akun dan nomer rekening untuk pendepositan. <br />- Step 3:
+            <br /> Masuk Jumlah yang ingin anda setor contoh 100 untuk nilai rp 100.000 <br />- Step4: <br /> Masukan
+            Password anda lalu submit <br /> iv). <strong className="upper">Penarikan</strong> <br /> 1. Bagaimana cara
+            melakukan penarikan dana dari akun taruhan Saya? <br />- Anda dapat melakukan penarikan dana dari account
+            taruhan Anda menggunakan Transfer Bank lokal. Penarikan dana dari akun hanya dapat dilakukan dalam mata uang
+            yang sama dengan mata uang ketika deposit dibuat. <br />- Untuk meminta agar penarikan dikirimkan ke
+            rekening bank Anda, pilih 'Penarikan' di halaman penarikan. Masukkan jumlah yang Anda ingin tarik, masukkan
+            Password anda dan klik Submit </li>
+        </ul>
       </div>
-      {/* <Snackbar /> */}
       <Bottom />
     </div>
 
