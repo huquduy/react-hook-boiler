@@ -77,7 +77,7 @@ const Home: React.FC<RouteComponentProps> = ({ history }) => {
             <Link className="login" to="/withdraw">Withdraw</Link>
           </div>
       }
-      <MarqueeText className="marquee" text={runningText} duration={30} repeat={1} />
+      <MarqueeText className="marquee" text={runningText} duration={30} repeat={3} />
       {/* Provider list */}
       <div className='game-tabs'>
         <Tabs

@@ -11,14 +11,14 @@
       border-bottom: 0;
       padding-top: 16px;
       .MuiTab-textColorInherit{
-        width: 65px;
-        height: 80px;
+        max-width: 65px;
+        max-height: 80px;
         }
       .MuiTab-textColorInherit.Mui-selected{
         border: 1px solid $primaryColor;
         border-radius: 4px;
-        width: 65px;
-        height: 80px;
+        max-width: 65px;
+        max-height: 80px;
         background: rgba(239, 215, 127, 0.2);
       }
       .MuiTabs-indicator{
@@ -32,6 +32,11 @@
   .marquee{
     background: $backgroundBody;
     color: $primaryColor;
+    .marquee-content{
+      .marquee-text{
+        margin-right: 50px;
+      }
+    }
   }
   .logo {
     width: 100%;
