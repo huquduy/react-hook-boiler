@@ -1,1478 +1,1238 @@
 export default [
   {
-    'code': 'ashamw',
-    'name': 'Amazon Wild',
-    'thumbnail': '/images/playtech/ashamw.jpg',
-    'group': 'Slots'
+    "name": "Amazon Wild",
+    "code": "ashamw",
+    "group": "SlotMachines",
+    "thumbnail": "https://indoxbet.com//Resources/images/desktop/PLAYTECH/amazon-wild.png"
   },
   {
-    'code': 'bja',
-    'name': 'American Blackjack',
-    'thumbnail': '/images/playtech/bja.jpg',
-    'group': 'Table Games'
+    "name": "Archer",
+    "code": "arc",
+    "group": "SlotMachines",
+    "thumbnail": "https://indoxbet.com//Resources/images/desktop/PLAYTECH/archer.png"
   },
   {
-    'code': 'arc',
-    'name': 'Archer',
-    'thumbnail': '/images/playtech/arc.jpg',
-    'group': 'Slots'
+    "name": "Bonus Bears",
+    "code": "bob",
+    "group": "SlotMachines",
+    "thumbnail": "https://indoxbet.com//Resources/images/desktop/PLAYTECH/bonus-bears.png"
   },
   {
-    'code': 'art',
-    'name': 'Arctic Treasure',
-    'thumbnail': '/images/playtech/art.jpg',
-    'group': 'Slots'
+    "name": "Buffalo Blitz",
+    "code": "bfb",
+    "group": "SlotMachines",
+    "thumbnail": "https://indoxbet.com//Resources/images/desktop/PLAYTECH/buffalo-blitz.png"
   },
   {
-    'code': 'gtsatq',
-    'name': 'Atlantis Queen',
-    'thumbnail': '/images/playtech/gtsatq.jpg',
-    'group': 'Slots'
+    "name": "Captains Treasure",
+    "code": "ct",
+    "group": "SlotMachines",
+    "thumbnail": "https://indoxbet.com//Resources/images/desktop/PLAYTECH/captain-treasure.png"
   },
   {
-    'code': 'ba',
-    'name': 'Baccarat',
-    'thumbnail': '/images/playtech/ba.jpg',
-    'group': 'Table Games'
+    "name": "Dolphin Reef",
+    "code": "dnr",
+    "group": "SlotMachines",
+    "thumbnail": "https://indoxbet.com//Resources/images/desktop/PLAYTECH/dolphin-reef.png"
   },
   {
-    'code': 'bl',
-    'name': 'Beach Life',
-    'thumbnail': '/images/playtech/bl.jpg',
-    'group': 'Slots'
+    "name": "Feng Kuang Ma Jiang",
+    "code": "fkmj",
+    "group": "SlotMachines",
+    "thumbnail": "https://indoxbet.com//Resources/images/desktop/PLAYTECH/feng-kuang-ma-jiang.png"
   },
   {
-    'code': 'bt',
-    'name': 'Bermuda Triangle',
-    'thumbnail': '/images/playtech/bt.jpg',
-    'group': 'Slots'
+    "name": "Gem Queen",
+    "code": "gemq",
+    "group": "SlotMachines",
+    "thumbnail": "https://indoxbet.com//Resources/images/desktop/PLAYTECH/gem-queen.png"
   },
   {
-    'code': 'bj_mh5',
-    'name': 'Blackjack Multihand 5',
-    'thumbnail': '/images/playtech/bj_mh5.jpg',
-    'group': 'Table Games'
+    "name": "Golden Tour",
+    "code": "gos",
+    "group": "SlotMachines",
+    "thumbnail": "https://indoxbet.com//Resources/images/desktop/PLAYTECH/golden-tour.png"
   },
   {
-    'code': 'psdbj',
-    'name': 'Blackjack Pro',
-    'thumbnail': '/images/playtech/psdbj.jpg',
-    'group': 'Table Games'
+    "name": "Great Blue",
+    "code": "bib",
+    "group": "SlotMachines",
+    "thumbnail": "https://indoxbet.com//Resources/images/desktop/PLAYTECH/great-blue.png"
   },
   {
-    'code': 'bob',
-    'name': 'Bonus Bears',
-    'thumbnail': '/images/playtech/bob.jpg',
-    'group': 'Slots'
+    "name": "Highway Kings",
+    "code": "hk",
+    "group": "SlotMachines",
+    "thumbnail": "https://indoxbet.com//Resources/images/desktop/PLAYTECH/highway-kings.png"
   },
   {
-    'code': 'hb',
-    'name': 'A Night Out',
-    'thumbnail': '/images/playtech/hb.jpg',
-    'group': 'Slots'
+    "name": "Inca Jackpot",
+    "code": "aztec",
+    "group": "SlotMachines",
+    "thumbnail": "https://indoxbet.com//Resources/images/desktop/PLAYTECH/inca-jackpot.png"
   },
   {
-    'code': 'ct',
-    'name': 'Captains Treasure',
-    'thumbnail': '/images/playtech/ct.jpg',
-    'group': 'Slots'
+    "name": "Jin Qian Wa",
+    "code": "jqw",
+    "group": "SlotMachines",
+    "thumbnail": "https://indoxbet.com//Resources/images/desktop/PLAYTECH/jin-qian-wa.png"
   },
   {
-    'code': 'ctp2',
-    'name': 'Captain&#39;s Treasure Pro',
-    'thumbnail': '/images/playtech/ctp2.jpg',
-    'group': 'Slots'
+    "name": "Long Long Long",
+    "code": "longlong",
+    "group": "SlotMachines",
+    "thumbnail": "https://indoxbet.com//Resources/images/desktop/PLAYTECH/long-long-long.png"
   },
   {
-    'code': 'cheaa',
-    'name': 'Casino Hold &#39;Em',
-    'thumbnail': '/images/playtech/cheaa.jpg',
-    'group': 'Table Games'
+    "name": "Nian Nian You Yu",
+    "code": "nian",
+    "group": "SlotMachines",
+    "thumbnail": "https://indoxbet.com//Resources/images/desktop/PLAYTECH/nian-nian-you-yu.png"
   },
   {
-    'code': 'catqc',
-    'name': 'Cat Queen',
-    'thumbnail': '/images/playtech/catqc.jpg',
-    'group': 'Slots'
+    "name": "Queen of Wands",
+    "code": "qnw",
+    "group": "SlotMachines",
+    "thumbnail": "https://indoxbet.com//Resources/images/desktop/PLAYTECH/queen-of-wands.png"
   },
   {
-    'code': 'chl',
-    'name': 'Cherry Love',
-    'thumbnail': '/images/playtech/chl.jpg',
-    'group': 'Slots'
+    "name": "Super Lion",
+    "code": "slion",
+    "group": "SlotMachines",
+    "thumbnail": "https://indoxbet.com//Resources/images/desktop/PLAYTECH/super-lions.png"
   },
   {
-    'code': 'cm',
-    'name': 'Chinese Kitchen',
-    'thumbnail': '/images/playtech/cm.jpg',
-    'group': 'Slots'
+    "name": "Triple Monkey",
+    "code": "trpmnk",
+    "group": "SlotMachines",
+    "thumbnail": "https://indoxbet.com//Resources/images/desktop/PLAYTECH/triple-monkey.png"
   },
   {
-    'code': 'gtscnb',
-    'name': 'Cops N&#39; Bandits',
-    'thumbnail': '/images/playtech/gtscnb.jpg',
-    'group': 'Slots'
+    "name": "Zhao Cai Jin Bao",
+    "code": "zcjb",
+    "group": "SlotMachines",
+    "thumbnail": "https://indoxbet.com//Resources/images/desktop/PLAYTECH/zhao-cai-jin-bao.png"
   },
   {
-    'code': 'c7',
-    'name': 'Crazy 7',
-    'thumbnail': '/images/playtech/c7.jpg',
-    'group': 'Slots'
+    "name": "Zhao Cai Tong Zi",
+    "code": "zctz",
+    "group": "SlotMachines",
+    "thumbnail": "https://indoxbet.com//Resources/images/desktop/PLAYTECH/zhao-cai-tong-zi.png"
   },
   {
-    'code': 'dt',
-    'name': 'Desert Treasure',
-    'thumbnail': '/images/playtech/dt.jpg',
-    'group': 'Slots'
+    "name": "Long Jia Xiang Yun",
+    "code": "ljxy",
+    "group": "SlotMachines",
+    "thumbnail": "https://indoxbet.com//Resources/images/desktop/PLAYTECH/ljxy.png"
   },
   {
-    'code': 'dnr',
-    'name': 'Dolphin Reef',
-    'thumbnail': '/images/playtech/dnr.jpg',
-    'group': 'Slots'
+    "name": "Monkey Mania",
+    "code": "mnkmn",
+    "group": "SlotMachines",
+    "thumbnail": "https://indoxbet.com//Resources/images/desktop/PLAYTECH/mnkmn.png"
   },
   {
-    'code': 'eas',
-    'name': 'Easter Surprise',
-    'thumbnail': '/images/playtech/eas.jpg',
-    'group': 'Slots'
+    "name": "White King 2",
+    "code": "whk2",
+    "group": "SlotMachines",
+    "thumbnail": "https://indoxbet.com//Resources/images/desktop/PLAYTECH/whk2.png"
   },
   {
-    'code': 'esmk',
-    'name': 'Esmeralda',
-    'thumbnail': '/images/playtech/esmk.jpg',
-    'group': 'Slots'
+    "name": "A Night Out",
+    "code": "hb",
+    "group": "SlotMachines",
+    "thumbnail": "https://indoxbet.com//Resources/images/desktop/PLAYTECH/a-night-out.png"
   },
   {
-    'code': 'evj',
-    'name': 'Everybody&#39;s Jackpot',
-    'thumbnail': '/images/playtech/evj.jpg',
-    'group': 'Slots'
+    "name": "Adventures in Wonderland Deluxe",
+    "code": "ashadv",
+    "group": "SlotMachines",
+    "thumbnail": "https://indoxbet.com//Resources/images/desktop/PLAYTECH/adventures-in-wonderland-deluxe.png"
   },
   {
-    'code': 'fbr',
-    'name': 'Football Rules',
-    'thumbnail': '/images/playtech/fbr.jpg',
-    'group': 'Slots'
+    "name": "Age of the Gods",
+    "code": "aogs",
+    "group": "SlotMachines",
+    "thumbnail": "https://indoxbet.com//Resources/images/desktop/PLAYTECH/age-of-the-gods.png"
   },
   {
-    'code': 'fow',
-    'name': 'Forest of Wonder',
-    'thumbnail': '/images/playtech/fow.jpg',
-    'group': 'Slots'
+    "name": "Age of the Gods : Fate Sisters",
+    "code": "ftsis",
+    "group": "SlotMachines",
+    "thumbnail": "https://indoxbet.com//Resources/images/desktop/PLAYTECH/age-of-the-gods-fate-sisters.png"
   },
   {
-    'code': 'foy',
-    'name': 'Fountain of Youth',
-    'thumbnail': '/images/playtech/foy.jpg',
-    'group': 'Slots'
+    "name": "Age of the Gods : Furious Four",
+    "code": "furf",
+    "group": "SlotMachines",
+    "thumbnail": "https://indoxbet.com//Resources/images/desktop/PLAYTECH/age-of-the-gods-furious4.png"
   },
   {
-    'code': 'fxf',
-    'name': 'Fortunes of the Fox',
-    'thumbnail': '/images/playtech/fxf.jpg',
-    'group': 'Slots'
+    "name": "Age of the Gods : Goddess of Wisdom",
+    "code": "athn",
+    "group": "SlotMachines",
+    "thumbnail": "https://indoxbet.com//Resources/images/desktop/PLAYTECH/age-of-the-gods-goddes-of-wisdom.png"
   },
   {
-    'code': 'fdt',
-    'name': 'Frankie Dettori&#39;s Magic Seven',
-    'thumbnail': '/images/playtech/fdt.jpg',
-    'group': 'Slots'
+    "name": "Age of Gods King of Olympus",
+    "code": "kolymp",
+    "group": "SlotMachines",
+    "thumbnail": "https://indoxbet.com//Resources/images/desktop/PLAYTECH/kolymp.png"
   },
   {
-    'code': 'ashfmf',
-    'name': 'Full Moon Fortunes',
-    'thumbnail': '/images/playtech/ashfmf.jpg',
-    'group': 'Slots'
+    "name": "Age of the Gods : Prince of Olympus",
+    "code": "hrcls",
+    "group": "SlotMachines",
+    "thumbnail": "https://indoxbet.com//Resources/images/desktop/PLAYTECH/age-of-the-gods-prince-of-olympus.png"
   },
   {
-    'code': 'fff',
-    'name': 'Funky Fruits Farm',
-    'thumbnail': '/images/playtech/fff.jpg',
-    'group': 'Slots'
+    "name": "Age of the Gods Roulette",
+    "code": "aogro",
+    "group": "SlotMachines",
+    "thumbnail": "https://indoxbet.com//Resources/images/desktop/PLAYTECH/age-of-the-gods-roulette.png"
   },
   {
-    'code': 'fnfrj',
-    'name': 'Funky Fruits Jackpot Game',
-    'thumbnail': '/images/playtech/fnfrj.jpg',
-    'group': 'Slots'
+    "name": "Age of the Gods: God of Storms",
+    "code": "aeolus",
+    "group": "SlotMachines",
+    "thumbnail": "https://indoxbet.com//Resources/images/desktop/PLAYTECH/age-of-gods-storm.png"
   },
   {
-    'code': 'fm',
-    'name': 'Funky Monkey',
-    'thumbnail': '/images/playtech/fm.jpg',
-    'group': 'Slots'
+    "name": "Anaconda Wild",
+    "code": "anwild",
+    "group": "SlotMachines",
+    "thumbnail": "https://indoxbet.com//Resources/images/desktop/PLAYTECH/anaconda-wild.png"
   },
   {
-    'code': 'glr',
-    'name': 'Gladiator',
-    'thumbnail': '/images/playtech/glr.jpg',
-    'group': 'Slots'
+    "name": "Atlantis Queen",
+    "code": "gtsatq",
+    "group": "SlotMachines",
+    "thumbnail": "https://indoxbet.com//Resources/images/desktop/PLAYTECH/atlantis-queen.png"
   },
   {
-    'code': 'glrj',
-    'name': 'Gladiator Jackpot',
-    'thumbnail': '/images/playtech/glrj.jpg',
-    'group': 'Slots'
+    "name": "Bai Shi",
+    "code": "bs",
+    "group": "SlotMachines",
+    "thumbnail": "https://indoxbet.com//Resources/images/desktop/PLAYTECH/bai-shi.png"
   },
   {
-    'code': 'gos',
-    'name': 'Golden Tour',
-    'thumbnail': '/images/playtech/gos.jpg',
-    'group': 'Slots'
+    "name": "Beach Life",
+    "code": "bl",
+    "group": "SlotMachines",
+    "thumbnail": "https://indoxbet.com//Resources/images/desktop/PLAYTECH/beach-life.png"
   },
   {
-    'code': 'bib',
-    'name': 'Great Blue',
-    'thumbnail': '/images/playtech/bib.jpg',
-    'group': 'Slots'
+    "name": "Bermuda Triangle",
+    "code": "bt",
+    "group": "SlotMachines",
+    "thumbnail": "https://indoxbet.com//Resources/images/desktop/PLAYTECH/bermuda-triangle.png"
   },
   {
-    'code': 'gro',
-    'name': 'Greatest Odyssey',
-    'thumbnail': '/images/playtech/gro.jpg',
-    'group': 'Slots'
+    "name": "Bounty of the Beanstalk",
+    "code": "ashbob",
+    "group": "SlotMachines",
+    "thumbnail": "https://indoxbet.com//Resources/images/desktop/PLAYTECH/bounty-of-the-beanstalk.png"
   },
   {
-    'code': 'hlf',
-    'name': 'Halloween Fortune',
-    'thumbnail': '/images/playtech/hlf.jpg',
-    'group': 'Slots'
+    "name": "Cat In Vegas",
+    "code": "ctiv",
+    "group": "SlotMachines",
+    "thumbnail": "https://indoxbet.com//Resources/images/desktop/PLAYTECH/cat-in-vegas.png"
   },
   {
-    'code': 'hh',
-    'name': 'Haunted House',
-    'thumbnail': '/images/playtech/hh.jpg',
-    'group': 'Slots'
+    "name": "Cat Queen",
+    "code": "catqc",
+    "group": "SlotMachines",
+    "thumbnail": "https://indoxbet.com//Resources/images/desktop/PLAYTECH/cat-queen.png"
   },
   {
-    'code': 'ashhotj',
-    'name': 'Heart of The Jungle',
-    'thumbnail': '/images/playtech/ashhotj.jpg',
-    'group': 'Slots'
+    "name": "Chaoji 888",
+    "code": "chao",
+    "group": "SlotMachines",
+    "thumbnail": "https://indoxbet.com//Resources/images/desktop/PLAYTECH/chaoji-888.png"
   },
   {
-    'code': 'hk',
-    'name': 'Highway Kings',
-    'thumbnail': '/images/playtech/hk.jpg',
-    'group': 'Slots'
+    "name": "Cherry Love",
+    "code": "chl",
+    "group": "SlotMachines",
+    "thumbnail": "https://indoxbet.com//Resources/images/desktop/PLAYTECH/cherry-love.png"
   },
   {
-    'code': 'gtshwkp',
-    'name': 'Highway Kings Pro',
-    'thumbnail': '/images/playtech/gtshwkp.jpg',
-    'group': 'Slots'
+    "name": "Chests of Plenty",
+    "code": "ashcpl",
+    "group": "SlotMachines",
+    "thumbnail": "https://indoxbet.com//Resources/images/desktop/PLAYTECH/chest-of-plenty.png"
   },
   {
-    'code': 'gts50',
-    'name': 'Hot Gems',
-    'thumbnail': '/images/playtech/gts50.jpg',
-    'group': 'Slots'
+    "name": "Chinese Kitchen",
+    "code": "cm",
+    "group": "SlotMachines",
+    "thumbnail": "https://indoxbet.com//Resources/images/desktop/PLAYTECH/chinese-kitchen.png"
   },
   {
-    'code': 'ges',
-    'name': 'Geisha Story',
-    'thumbnail': '/images/playtech/ges.jpg',
-    'group': 'Slots'
+    "name": "Coin Coin Coin CNY",
+    "code": "ccccny",
+    "group": "SlotMachines",
+    "thumbnail": "https://indoxbet.com//Resources/images/desktop/PLAYTECH/coin-coin.png"
   },
   {
-    'code': 'gtsirl',
-    'name': 'Irish Luck',
-    'thumbnail': '/images/playtech/gtsirl.jpg',
-    'group': 'Slots'
+    "name": "Cops N Bandits",
+    "code": "gtscnb",
+    "group": "SlotMachines",
+    "thumbnail": "https://indoxbet.com//Resources/images/desktop/PLAYTECH/cops-and-bandits.png"
   },
   {
-    'code': 'jpgt',
-    'name': 'Jackpot Giant',
-    'thumbnail': '/images/playtech/jpgt.jpg',
-    'group': 'Slots'
+    "name": "Cowboys & Aliens",
+    "code": "gtscbl",
+    "group": "SlotMachines",
+    "thumbnail": "https://indoxbet.com//Resources/images/desktop/PLAYTECH/cowboys-and-aliens.png"
   },
   {
-    'code': 'kkg',
-    'name': 'Kong The Eighth Wonder Of The World',
-    'thumbnail': '/images/playtech/kkg.jpg',
-    'group': 'Slots'
+    "name": "Crazy 7",
+    "code": "c7",
+    "group": "SlotMachines",
+    "thumbnail": "https://indoxbet.com//Resources/images/desktop/PLAYTECH/crazy-7.png"
   },
   {
-    'code': 'gtsmrln',
-    'name': 'Marilyn Monroe',
-    'thumbnail': '/images/playtech/gtsmrln.jpg',
-    'group': 'Slots'
+    "name": "Daring Dave & the Eye of Ra",
+    "code": "gtsdrdv",
+    "group": "SlotMachines",
+    "thumbnail": "https://indoxbet.com//Resources/images/desktop/PLAYTECH/daring-dave.png"
   },
   {
-    'code': 'mcb',
-    'name': 'Mr. Cashback',
-    'thumbnail': '/images/playtech/mcb.jpg',
-    'group': 'Slots'
+    "name": "Desert Treasure",
+    "code": "mobdt",
+    "group": "SlotMachines",
+    "thumbnail": "https://indoxbet.com//Resources/images/desktop/PLAYTECH/desert-treasure.png"
   },
   {
-    'code': 'nk',
-    'name': 'Neptunes Kingdom',
-    'thumbnail': '/images/playtech/nk.jpg',
-    'group': 'Slots'
+    "name": "Dr Love More",
+    "code": "dlm",
+    "group": "SlotMachines",
+    "thumbnail": "https://indoxbet.com//Resources/images/desktop/PLAYTECH/dr-lovemore.png"
   },
   {
-    'code': 'pmn',
-    'name': 'Panther Moon',
-    'thumbnail': '/images/playtech/pmn.jpg',
-    'group': 'Slots'
+    "name": "Dragon Champions",
+    "code": "drgch",
+    "group": "SlotMachines",
+    "thumbnail": "https://indoxbet.com//Resources/images/desktop/PLAYTECH/dragon-champions.png"
   },
   {
-    'code': 'pl',
-    'name': 'Party Line',
-    'thumbnail': '/images/playtech/pl.jpg',
-    'group': 'Slots'
+    "name": "Dragon Kingdom",
+    "code": "gtsdgk",
+    "group": "SlotMachines",
+    "thumbnail": "https://indoxbet.com//Resources/images/desktop/PLAYTECH/dragon-kingdoms.png"
   },
   {
-    'code': 'pgv',
-    'name': 'Penguin Vacation',
-    'thumbnail': '/images/playtech/pgv.jpg',
-    'group': 'Slots'
+    "name": "Easter Surprise",
+    "code": "eas",
+    "group": "SlotMachines",
+    "thumbnail": "https://indoxbet.com//Resources/images/desktop/PLAYTECH/easter-surprise.png"
   },
   {
-    'code': 'pst',
-    'name': 'Pharaoh&#39;s Secrets',
-    'thumbnail': '/images/playtech/pst.jpg',
-    'group': 'Slots'
+    "name": "Esmeralda",
+    "code": "esm",
+    "group": "SlotMachines",
+    "thumbnail": "https://indoxbet.com//Resources/images/desktop/PLAYTECH/esmeralda.png"
   },
   {
-    'code': 'gtspor',
-    'name': 'Plenty O&#39;Fortune',
-    'thumbnail': '/images/playtech/gtspor.jpg',
-    'group': 'Slots'
+    "name": "Epic Ape",
+    "code": "epa",
+    "group": "SlotMachines",
+    "thumbnail": "https://indoxbet.com//Resources/images/desktop/PLAYTECH/epic-ape.png"
   },
   {
-    'code': 'gtsrng',
-    'name': 'Rome and Glory',
-    'thumbnail': '/images/playtech/gtsrng.jpg',
-    'group': 'Slots'
+    "name": "Everybodys Jackpot",
+    "code": "evj",
+    "group": "SlotMachines",
+    "thumbnail": "https://indoxbet.com//Resources/images/desktop/PLAYTECH/everybody-jackpot.png"
   },
   {
-    'code': 'ro',
-    'name': 'European Roulette',
-    'thumbnail': '/images/playtech/ro.jpg',
-    'group': 'Table Games'
+    "name": "Fairest of Them All",
+    "code": "ashfta",
+    "group": "SlotMachines",
+    "thumbnail": "https://indoxbet.com//Resources/images/desktop/PLAYTECH/fairest-of-them-all.png"
   },
   {
-    'code': 'sfh',
-    'name': 'Safari Heat',
-    'thumbnail': '/images/playtech/sfh.jpg',
-    'group': 'Slots'
+    "name": "Fei Cui Gong Zhu",
+    "code": "fcgz",
+    "group": "SlotMachines",
+    "thumbnail": "https://indoxbet.com//Resources/images/desktop/PLAYTECH/fei-cui-gong-zhu.png"
   },
   {
-    'code': 'gtssmbr',
-    'name': 'Samba Brazil',
-    'thumbnail': '/images/playtech/gtssmbr.jpg',
-    'group': 'Slots'
+    "name": "Fei Long Zai Tian",
+    "code": "gtsflzt",
+    "group": "SlotMachines",
+    "thumbnail": "https://indoxbet.com//Resources/images/desktop/PLAYTECH/fei-long-zai-tian.png"
   },
   {
-    'code': 'ssp',
-    'name': 'Santa Surprise',
-    'thumbnail': '/images/playtech/ssp.jpg',
-    'group': 'Slots'
+    "name": "Five Tiger Generals",
+    "code": "ftg",
+    "group": "SlotMachines",
+    "thumbnail": "https://indoxbet.com//Resources/images/desktop/PLAYTECH/five-tiger-general.png"
   },
   {
-    'code': 'samz',
-    'name': 'Secrets of the Amazon',
-    'thumbnail': '/images/playtech/samz.jpg',
-    'group': 'Slots'
+    "name": "Fountain of Youth",
+    "code": "foy",
+    "group": "SlotMachines",
+    "thumbnail": "https://indoxbet.com//Resources/images/desktop/PLAYTECH/fountain-of-youth.png"
   },
   {
-    'code': 'shmst',
-    'name': 'Sherlock Mystery',
-    'thumbnail': '/images/playtech/shmst.jpg',
-    'group': 'Slots'
+    "name": "Football Rules",
+    "code": "fbr",
+    "group": "SlotMachines",
+    "thumbnail": "https://indoxbet.com//Resources/images/desktop/PLAYTECH/football-rules.png"
   },
   {
-    'code': 'gtswng',
-    'name': 'Wings Of Gold Regular',
-    'thumbnail': '/images/playtech/gtswng.jpg',
-    'group': 'Slots'
+    "name": "Football Carnival",
+    "code": "gtsfc",
+    "group": "SlotMachines",
+    "thumbnail": "https://indoxbet.com//Resources/images/desktop/PLAYTECH/football-carnival.png"
   },
   {
-    'code': 'dlm',
-    'name': 'Dr Love More',
-    'thumbnail': '/images/playtech/dlm.jpg',
-    'group': 'Slots'
+    "name": "Forest of Wonders",
+    "code": "fow",
+    "group": "SlotMachines",
+    "thumbnail": "https://indoxbet.com//Resources/images/desktop/PLAYTECH/forest-of-wonders.png"
   },
   {
-    'code': 'skp',
-    'name': 'Skazka Pro',
-    'thumbnail': '/images/playtech/skp.jpg',
-    'group': 'Slots'
+    "name": "Fortunate 5",
+    "code": "frtf",
+    "group": "SlotMachines",
+    "thumbnail": "https://indoxbet.com//Resources/images/desktop/PLAYTECH/fortunate-5.png"
   },
   {
-    'code': 'wis',
-    'name': 'Wild Spirit',
-    'thumbnail': '/images/playtech/wis.jpg',
-    'group': 'Slots'
+    "name": "Fortune Day",
+    "code": "fday",
+    "group": "SlotMachines",
+    "thumbnail": "https://indoxbet.com//Resources/images/desktop/PLAYTECH/fortune-day.png"
   },
   {
-    'code': '7bal',
-    'name': '7 Seat Baccarat Live',
-    'thumbnail': '/images/playtech/7bal.jpg',
-    'group': 'Live Dealers Casino'
+    "name": "Fortunes of the Fox",
+    "code": "fxf",
+    "group": "SlotMachines",
+    "thumbnail": "https://indoxbet.com//Resources/images/desktop/PLAYTECH/fortunes-of-the-fox.png"
   },
   {
-    'code': 'bal',
-    'name': 'Baccarat Live',
-    'thumbnail': '/images/playtech/bal.jpg',
-    'group': 'Live Dealers Casino'
+    "name": "Frankie Dettoris Magic Seven",
+    "code": "fdt",
+    "group": "SlotMachines",
+    "thumbnail": "https://indoxbet.com//Resources/images/desktop/PLAYTECH/frankie-dettory-magic-seven.png"
   },
   {
-    'code': 'bjl',
-    'name': 'Blackjack Live',
-    'thumbnail': '/images/playtech/bjl.jpg',
-    'group': 'Live Dealers Casino'
+    "name": "Frankie Dettoris Magic Seven Jackpot",
+    "code": "fdtjg",
+    "group": "SlotMachines",
+    "thumbnail": "https://indoxbet.com//Resources/images/desktop/PLAYTECH/frankie-dettori-magic-seven-jackpot.png"
   },
   {
-    'code': 'chel',
-    'name': 'Casino Hold’Em Live',
-    'thumbnail': '/images/playtech/chel.jpg',
-    'group': 'Live Dealers Casino'
+    "name": "Fruit Mania",
+    "code": "fmn",
+    "group": "SlotMachines",
+    "thumbnail": "https://indoxbet.com//Resources/images/desktop/PLAYTECH/fruit-mania.png"
   },
   {
-    'code': 'rodl',
-    'name': 'Exclusive Roulette (Live VIP Roulette)',
-    'thumbnail': '/images/playtech/rodl.jpg',
-    'group': 'Live Dealers Casino'
+    "name": "Full Moon Fortunes",
+    "code": "ashfmf",
+    "group": "SlotMachines",
+    "thumbnail": "https://indoxbet.com//Resources/images/desktop/PLAYTECH/fullmoon-fortunes.png"
   },
   {
-    'code': 'rofl',
-    'name': 'Live French Roulette',
-    'thumbnail': '/images/playtech/rofl.jpg',
-    'group': 'Live Dealers Casino'
+    "name": "Funky Fruits",
+    "code": "fnfrj",
+    "group": "SlotMachines",
+    "thumbnail": "https://indoxbet.com//Resources/images/desktop/PLAYTECH/funky-fruit.png"
   },
   {
-    'code': 'plba',
-    'name': 'Progressive Live Baccarat',
-    'thumbnail': '/images/playtech/plba.jpg',
-    'group': 'Live Dealers Casino'
+    "name": "Funky Fruits Farm",
+    "code": "fff",
+    "group": "SlotMachines",
+    "thumbnail": "https://indoxbet.com//Resources/images/desktop/PLAYTECH/funky-fruit-farm.png"
   },
   {
-    'code': 'rol',
-    'name': 'Roulette Live',
-    'thumbnail': '/images/playtech/rol.jpg',
-    'group': 'Live Dealers Casino'
+    "name": "Funky Monkey",
+    "code": "fm",
+    "group": "SlotMachines",
+    "thumbnail": "https://indoxbet.com//Resources/images/desktop/PLAYTECH/funky-monkey.png"
   },
   {
-    'code': 'sbl',
-    'name': 'Sic Bo Live',
-    'thumbnail': '/images/playtech/sbl.jpg',
-    'group': 'Live Dealers Casino'
+    "name": "Funky Monkey Jackpot",
+    "code": "fmjp",
+    "group": "SlotMachines",
+    "thumbnail": "https://indoxbet.com//Resources/images/desktop/PLAYTECH/funky-monkey-jackpot.png"
   },
   {
-    'code': 'ubjl',
-    'name': 'Unlimited Blackjack Live',
-    'thumbnail': '/images/playtech/ubjl.jpg',
-    'group': 'Live Dealers Casino'
+    "name": "Gaelic Luck",
+    "code": "popc",
+    "group": "SlotMachines",
+    "thumbnail": "https://indoxbet.com//Resources/images/desktop/PLAYTECH/gaelic-luck.png"
   },
   {
-    'code': 'vbal',
-    'name': 'VIP Baccarat Live',
-    'thumbnail': '/images/playtech/vbal.jpg',
-    'group': 'Live Dealers Casino'
+    "name": "Geisha Story",
+    "code": "ges",
+    "group": "SlotMachines",
+    "thumbnail": "https://indoxbet.com//Resources/images/desktop/PLAYTECH/geisha-story.png"
   },
   {
-    'code': 'sis',
-    'name': 'Silent Samurai',
-    'thumbnail': '/images/playtech/sis.jpg',
-    'group': 'Slots'
+    "name": "Gladiator Jackpot",
+    "code": "glrj",
+    "group": "SlotMachines",
+    "thumbnail": "https://indoxbet.com//Resources/images/desktop/PLAYTECH/gladiator-jackpot.png"
   },
   {
-    'code': 'sib',
-    'name': 'Silver Bullet',
-    'thumbnail': '/images/playtech/sib.jpg',
-    'group': 'Slots'
+    "name": "Golden Games",
+    "code": "glg",
+    "group": "SlotMachines",
+    "thumbnail": "https://indoxbet.com//Resources/images/desktop/PLAYTECH/golden-games.png"
   },
   {
-    'code': 'sfr',
-    'name': 'Standard Fivereel',
-    'thumbnail': '/images/playtech/sfr.jpg',
-    'group': 'Slots'
+    "name": "Gold Rally",
+    "code": "grel",
+    "group": "SlotMachines",
+    "thumbnail": "https://indoxbet.com//Resources/images/desktop/PLAYTECH/gold-rally.png"
   },
   {
-    'code': 'sol',
-    'name': 'Streak of Luck',
-    'thumbnail': '/images/playtech/sol.jpg',
-    'group': 'Slots'
+    "name": "Great blue Jackpot",
+    "code": "grbjp",
+    "group": "SlotMachines",
+    "thumbnail": "https://indoxbet.com//Resources/images/desktop/PLAYTECH/great-blue-jackpot.png"
   },
   {
-    'code': 'cnpr',
-    'name': 'Sweet Party',
-    'thumbnail': '/images/playtech/cnpr.jpg',
-    'group': 'Slots'
+    "name": "Halloween Fortune",
+    "code": "hlf",
+    "group": "SlotMachines",
+    "thumbnail": "https://indoxbet.com//Resources/images/desktop/PLAYTECH/halloween-fortune.png"
   },
   {
-    'code': 'tpd2',
-    'name': 'Thai Paradise',
-    'thumbnail': '/images/playtech/tpd2.jpg',
-    'group': 'Slots'
+    "name": "Halloween Fortune 2",
+    "code": "hlf2",
+    "group": "SlotMachines",
+    "thumbnail": "https://indoxbet.com//Resources/images/desktop/PLAYTECH/hallowen-fortune-2.png"
   },
   {
-    'code': 'thtk',
-    'name': 'Thai Temple',
-    'thumbnail': '/images/playtech/thtk.jpg',
-    'group': 'Slots'
+    "name": "Haunted House",
+    "code": "hh",
+    "group": "SlotMachines",
+    "thumbnail": "https://indoxbet.com//Resources/images/desktop/PLAYTECH/haunted-house.png"
   },
   {
-    'code': 'ta',
-    'name': 'Tres Amigos',
-    'thumbnail': '/images/playtech/ta.jpg',
-    'group': 'Slots'
+    "name": "Heart of the Frontier",
+    "code": "ashhof",
+    "group": "SlotMachines",
+    "thumbnail": "https://indoxbet.com//Resources/images/desktop/PLAYTECH/heart-of-the-frontier.png"
   },
   {
-    'code': 'trl',
-    'name': 'True Love',
-    'thumbnail': '/images/playtech/trl.jpg',
-    'group': 'Slots'
+    "name": "Heart of the Jungle",
+    "code": "ashhotj",
+    "group": "SlotMachines",
+    "thumbnail": "https://indoxbet.com//Resources/images/desktop/PLAYTECH/heart-of-the-jungle.png"
   },
   {
-    'code': 'ub',
-    'name': 'Ugga Bugga',
-    'thumbnail': '/images/playtech/ub.jpg',
-    'group': 'Slots'
+    "name": "Heavenly Ruler",
+    "code": "heavru",
+    "group": "SlotMachines",
+    "thumbnail": "https://indoxbet.com//Resources/images/desktop/PLAYTECH/heavenly-ruler.png"
   },
   {
-    'code': 'er',
-    'name': 'Vacation Station',
-    'thumbnail': '/images/playtech/er.jpg',
-    'group': 'Slots'
+    "name": "Hot Gems",
+    "code": "gts50",
+    "group": "SlotMachines",
+    "thumbnail": "https://indoxbet.com//Resources/images/desktop/PLAYTECH/hot-gems.png"
   },
   {
-    'code': 'whk',
-    'name': 'White King',
-    'thumbnail': '/images/playtech/whk.jpg',
-    'group': 'Slots'
+    "name": "Hot KTV",
+    "code": "hotktv",
+    "group": "SlotMachines",
+    "thumbnail": "https://indoxbet.com//Resources/images/desktop/PLAYTECH/hot-ktv.png"
   },
   {
-    'code': 'gtswg',
-    'name': 'Wild Gambler',
-    'thumbnail': '/images/playtech/gtswg.jpg',
-    'group': 'Slots'
+    "name": "Ice Cave",
+    "code": "ashicv",
+    "group": "SlotMachines",
+    "thumbnail": "https://indoxbet.com//Resources/images/desktop/PLAYTECH/ice-cave.png"
   },
   {
-    'code': 'wlg',
-    'name': 'Wu Long',
-    'thumbnail': '/images/playtech/wlg.jpg',
-    'group': 'Slots'
+    "name": "Irish Luck",
+    "code": "irl",
+    "group": "SlotMachines",
+    "thumbnail": "https://indoxbet.com//Resources/images/desktop/PLAYTECH/irl.png"
   },
   {
-    'code': 'zcjb',
-    'name': 'Zhao Cai Jin Bao',
-    'thumbnail': '/images/playtech/zcjb.jpg',
-    'group': 'Slots'
+    "name": "Jackpot Giant",
+    "code": "jpgt",
+    "group": "SlotMachines",
+    "thumbnail": "https://indoxbet.com//Resources/images/desktop/PLAYTECH/jackpot-giant.png"
   },
   {
-    'code': 'gts52',
-    'name': 'Vikingmania',
-    'thumbnail': '/images/playtech/gts52.jpg',
-    'group': 'Slots'
+    "name": "Jade Emperor",
+    "code": "gtsje",
+    "group": "SlotMachines",
+    "thumbnail": "https://indoxbet.com//Resources/images/desktop/PLAYTECH/jade-emperor.png"
   },
   {
-    'code': 'gtsfc',
-    'name': 'Football Carnival',
-    'thumbnail': '/images/playtech/gtsfc.jpg',
-    'group': 'Slots'
+    "name": "Ji Xiang 8",
+    "code": "gtsjxb",
+    "group": "SlotMachines",
+    "thumbnail": "https://indoxbet.com//Resources/images/desktop/PLAYTECH/ji-xiang.png"
   },
   {
-    'code': 'tmqd',
-    'name': 'The Three Musketeers and The Queen&#39;s Diamond',
-    'thumbnail': '/images/playtech/tmqd.jpg',
-    'group': 'Slots'
+    "name": "Jungle Giants",
+    "code": "jnglg",
+    "group": "SlotMachines",
+    "thumbnail": "https://indoxbet.com//Resources/images/desktop/PLAYTECH/jungle-giants.png"
   },
   {
-    'code': 'gts51',
-    'name': 'Lucky Panda',
-    'thumbnail': '/images/playtech/gts51.jpg',
-    'group': 'Slots'
+    "name": "Land of Gold",
+    "code": "lndg",
+    "group": "SlotMachines",
+    "thumbnail": "https://indoxbet.com//Resources/images/desktop/PLAYTECH/land-of-gold.png"
   },
   {
-    'code': 'tclsc',
-    'name': '3 Clowns Scratch',
-    'thumbnail': '/images/playtech/tclsc.jpg',
-    'group': 'Scratchcards'
+    "name": "Legacy Of The Wild",
+    "code": "legwld",
+    "group": "SlotMachines",
+    "thumbnail": "https://indoxbet.com//Resources/images/desktop/PLAYTECH/legacy-of-the-wild.png"
   },
   {
-    'code': 'scs',
-    'name': 'Classic Slot Scratch',
-    'thumbnail': '/images/playtech/scs.jpg',
-    'group': 'Scratchcards'
+    "name": "Lie Yan Zuan Shi",
+    "code": "ght_a",
+    "group": "SlotMachines",
+    "thumbnail": "https://indoxbet.com//Resources/images/desktop/PLAYTECH/lie-yan-zuan-shi.png"
   },
   {
-    'code': 'rky',
-    'name': 'Rocky',
-    'thumbnail': '/images/playtech/rky.jpg',
-    'group': 'Slots'
+    "name": "Liu Fu Shou",
+    "code": "kfp",
+    "group": "SlotMachines",
+    "thumbnail": "https://indoxbet.com//Resources/images/desktop/PLAYTECH/liu-fu-shou.png"
   },
   {
-    'code': 'bjsd2',
-    'name': 'Blackjack Surrender',
-    'thumbnail': '/images/playtech/bjsd2.jpg',
-    'group': 'Table Games'
+    "name": "Lotto Madness",
+    "code": "lm",
+    "group": "SlotMachines",
+    "thumbnail": "https://indoxbet.com//Resources/images/desktop/PLAYTECH/lotto-madness.png"
   },
   {
-    'code': 'paw',
-    'name': 'Piggies and the Wolf',
-    'thumbnail': '/images/playtech/paw.jpg',
-    'group': 'Slots'
+    "name": "Magical Stacks",
+    "code": "mgstk",
+    "group": "SlotMachines",
+    "thumbnail": "https://indoxbet.com//Resources/images/desktop/PLAYTECH/magical-stacks.png"
   },
   {
-    'code': 'mmy',
-    'name': 'The Mummy',
-    'thumbnail': '/images/playtech/mmy.jpg',
-    'group': 'Slots'
+    "name": "Marilyn Monroe",
+    "code": "gtsmrln",
+    "group": "SlotMachines",
+    "thumbnail": "https://indoxbet.com//Resources/images/desktop/PLAYTECH/marilyn-monroe.png"
   },
   {
-    'code': 'qop',
-    'name': 'Queen of Pyramids',
-    'thumbnail': '/images/playtech/qop.jpg',
-    'group': 'Slots'
+    "name": "Miss Fortune",
+    "code": "mfrt",
+    "group": "SlotMachines",
+    "thumbnail": "https://indoxbet.com//Resources/images/desktop/PLAYTECH/miss-fortune.png"
   },
   {
-    'code': 'grel',
-    'name': 'Gold Rally',
-    'thumbnail': '/images/playtech/grel.jpg',
-    'group': 'Slots'
+    "name": "Mr. Cashback",
+    "code": "mrcb",
+    "group": "SlotMachines",
+    "thumbnail": "https://indoxbet.com//Resources/images/desktop/PLAYTECH/mr.cashback.png"
   },
   {
-    'code': 'rodz',
-    'name': 'American Roulette',
-    'thumbnail': '/images/playtech/rodz.jpg',
-    'group': 'Table Games'
+    "name": "Neptunes Kingdom",
+    "code": "nk",
+    "group": "SlotMachines",
+    "thumbnail": "https://indoxbet.com//Resources/images/desktop/PLAYTECH/neptunes-kingdom.png"
   },
   {
-    'code': 'rodz_g',
-    'name': 'Premium American Roulette',
-    'thumbnail': '/images/playtech/rodz_g.jpg',
-    'group': 'Table Games'
+    "name": "Penguin Vacation",
+    "code": "pgv",
+    "group": "SlotMachines",
+    "thumbnail": "https://indoxbet.com//Resources/images/desktop/PLAYTECH/penguin-vacation.png"
   },
   {
-    'code': 'gtsdrdv',
-    'name': 'Daring Dave &amp; the Eye of Ra',
-    'thumbnail': '/images/playtech/gtsdrdv.jpg',
-    'group': 'Slots'
+    "name": "Panther Moon",
+    "code": "pmn",
+    "group": "SlotMachines",
+    "thumbnail": "https://indoxbet.com//Resources/images/desktop/PLAYTECH/phanter-moon.png"
   },
   {
-    'code': 'dcv',
-    'name': 'The Discovery',
-    'thumbnail': '/images/playtech/dcv.jpg',
-    'group': 'Slots'
+    "name": "Pharaohs Secrets",
+    "code": "pst",
+    "group": "SlotMachines",
+    "thumbnail": "https://indoxbet.com//Resources/images/desktop/PLAYTECH/pharaoh-secret.png"
   },
   {
-    'code': 'glg',
-    'name': 'Golden Games',
-    'thumbnail': '/images/playtech/glg.jpg',
-    'group': 'Slots'
+    "name": "Pharaoh’s Treasure Deluxe",
+    "code": "phtd",
+    "group": "SlotMachines",
+    "thumbnail": "https://indoxbet.com//Resources/images/desktop/PLAYTECH/pharaoh-treasure-deluxe.png"
   },
   {
-    'code': 'gtsru',
-    'name': 'Rubik&#39;s Riches',
-    'thumbnail': '/images/playtech/gtsru.jpg',
-    'group': 'Others'
+    "name": "Piggies and the Wolf",
+    "code": "paw",
+    "group": "SlotMachines",
+    "thumbnail": "https://indoxbet.com//Resources/images/desktop/PLAYTECH/piggies-and-the-wolf.png"
   },
   {
-    'code': 'ms',
-    'name': 'Magic Slots',
-    'thumbnail': '/images/playtech/ms.jpg',
-    'group': 'Slots'
+    "name": "Pink Panther",
+    "code": "pnp",
+    "group": "SlotMachines",
+    "thumbnail": "https://indoxbet.com//Resources/images/desktop/PLAYTECH/pink-phanter.png"
   },
   {
-    'code': 'bjp',
-    'name': 'Perfect Blackjack Multihand 5',
-    'thumbnail': '/images/playtech/bjp.jpg',
-    'group': 'Table Games'
+    "name": "Pixel Samurai",
+    "code": "pisa",
+    "group": "SlotMachines",
+    "thumbnail": "https://indoxbet.com//Resources/images/desktop/PLAYTECH/pixel-samurai.png"
   },
   {
-    'code': 'dt2',
-    'name': 'Desert Treasure II',
-    'thumbnail': '/images/playtech/dt2.jpg',
-    'group': 'Slots'
+    "name": "Plenty OFortune",
+    "code": "gtspor",
+    "group": "SlotMachines",
+    "thumbnail": "https://indoxbet.com//Resources/images/desktop/PLAYTECH/plenty-of-fortunes.png"
   },
   {
-    'code': 'ttc',
-    'name': 'Top Trumps Celebs',
-    'thumbnail': '/images/playtech/ttc.jpg',
-    'group': 'Slots'
+    "name": "Purple Hot",
+    "code": "phot",
+    "group": "SlotMachines",
+    "thumbnail": "https://indoxbet.com//Resources/images/desktop/PLAYTECH/phot.png"
   },
   {
-    'code': 'dv2',
-    'name': 'Diamond Valley Pro',
-    'thumbnail': '/images/playtech/dv2.jpg',
-    'group': 'Slots'
+    "name": "Ri Ri Jin Cai",
+    "code": "ririjc",
+    "group": "SlotMachines",
+    "thumbnail": "https://indoxbet.com//Resources/images/desktop/PLAYTECH/ri-ri-jin-cai.png"
   },
   {
-    'code': 'fmn',
-    'name': 'Fruit Mania',
-    'thumbnail': '/images/playtech/fmn.jpg',
-    'group': 'Slots'
+    "name": "Ri Ri Sheng Cai",
+    "code": "ririshc",
+    "group": "SlotMachines",
+    "thumbnail": "https://indoxbet.com//Resources/images/desktop/PLAYTECH/ri-ri-sheng-cai.png"
   },
   {
-    'code': 'gtscb',
-    'name': 'Cashblox',
-    'thumbnail': '/images/playtech/gtscb.jpg',
-    'group': 'Others'
+    "name": "Rocky",
+    "code": "rky",
+    "group": "SlotMachines",
+    "thumbnail": "https://indoxbet.com//Resources/images/desktop/PLAYTECH/rocky.png"
   },
   {
-    'code': 'ro_g',
-    'name': 'Premium (European) Roulette',
-    'thumbnail': '/images/playtech/ro_g.jpg',
-    'group': 'Table Games'
+    "name": "Rome and Glory",
+    "code": "rng2",
+    "group": "SlotMachines",
+    "thumbnail": "https://indoxbet.com//Resources/images/desktop/PLAYTECH/rome-and-glory.png"
   },
   {
-    'code': 'gtsdgk',
-    'name': 'Dragon Kingdom',
-    'thumbnail': '/images/playtech/gtsdgk.jpg',
-    'group': 'Slots'
+    "name": "Safari Heat",
+    "code": "sfh",
+    "group": "SlotMachines",
+    "thumbnail": "https://indoxbet.com//Resources/images/desktop/PLAYTECH/safari-heat.png"
   },
   {
-    'code': 'spr',
-    'name': 'Sparta',
-    'thumbnail': '/images/playtech/spr.jpg',
-    'group': 'Slots'
+    "name": "Samba Brazil",
+    "code": "gtssmbr",
+    "group": "SlotMachines",
+    "thumbnail": "https://indoxbet.com//Resources/images/desktop/PLAYTECH/samba-brazil.png"
   },
   {
-    'code': 'gtsjzc',
-    'name': 'The Jazz Club',
-    'thumbnail': '/images/playtech/gtsjzc.jpg',
-    'group': 'Slots'
+    "name": "Santa Surprise",
+    "code": "ssp",
+    "group": "SlotMachines",
+    "thumbnail": "https://indoxbet.com//Resources/images/desktop/PLAYTECH/santa-surprise.png"
   },
   {
-    'code': 'fcgz',
-    'name': 'Fei Cui Gong Zhu',
-    'thumbnail': '/images/playtech/fcgz.jpg',
-    'group': 'Slots'
+    "name": "Secrets of the Amazon",
+    "code": "samz",
+    "group": "SlotMachines",
+    "thumbnail": "https://indoxbet.com//Resources/images/desktop/PLAYTECH/secret-of-amazon.png"
   },
   {
-    'code': 'vcstd',
-    'name': 'Vacation Station Deluxe',
-    'thumbnail': '/images/playtech/vcstd.jpg',
-    'group': 'Slots'
+    "name": "Sherlock Mystery",
+    "code": "shmst",
+    "group": "SlotMachines",
+    "thumbnail": "https://indoxbet.com//Resources/images/desktop/PLAYTECH/sherlock-mystery.png"
   },
   {
-    'code': 'ctiv',
-    'name': 'Cat In Vegas',
-    'thumbnail': '/images/playtech/ctiv.jpg',
-    'group': 'Slots'
+    "name": "Si Xiang",
+    "code": "sx",
+    "group": "SlotMachines",
+    "thumbnail": "https://indoxbet.com//Resources/images/desktop/PLAYTECH/si-xiang.png"
   },
   {
-    'code': 'donq',
-    'name': 'The Riches of Don Quixote',
-    'thumbnail': '/images/playtech/donq.jpg',
-    'group': 'Slots'
+    "name": "Silent Samurai",
+    "code": "sis",
+    "group": "SlotMachines",
+    "thumbnail": "https://indoxbet.com//Resources/images/desktop/PLAYTECH/silent-samurai.png"
   },
   {
-    'code': 'ashcpl',
-    'name': 'Chests of Plenty',
-    'thumbnail': '/images/playtech/ashcpl.jpg',
-    'group': 'Slots'
+    "name": "Silver Bullet",
+    "code": "sib",
+    "group": "SlotMachines",
+    "thumbnail": "https://indoxbet.com//Resources/images/desktop/PLAYTECH/silver-bullet.png"
   },
   {
-    'code': 'ashsbd',
-    'name': 'Sinbad&#39;s Golden Voyage',
-    'thumbnail': '/images/playtech/ashsbd.jpg',
-    'group': 'Slots'
+    "name": "Sinbads Golden Voyage",
+    "code": "ashsbd",
+    "group": "SlotMachines",
+    "thumbnail": "https://indoxbet.com//Resources/images/desktop/PLAYTECH/sinbad's-golden-voyage.png"
   },
   {
-    'code': 'gtsir',
-    'name': 'Ice Run',
-    'thumbnail': '/images/playtech/gtsir.jpg',
-    'group': 'Slots'
+    "name": "Streak of Luck",
+    "code": "sol",
+    "group": "SlotMachines",
+    "thumbnail": "https://indoxbet.com//Resources/images/desktop/PLAYTECH/streak-of-luck.png"
   },
   {
-    'code': 'gtsgme',
-    'name': 'The Great Ming Empire',
-    'thumbnail': '/images/playtech/gtsgme.jpg',
-    'group': 'Slots'
+    "name": "Sun Wukong",
+    "code": "gtsswk",
+    "group": "SlotMachines",
+    "thumbnail": "https://indoxbet.com//Resources/images/desktop/PLAYTECH/sun-wu-kong.png"
   },
   {
-    'code': 'gtsflzt',
-    'name': 'Fei Long Zai Tian',
-    'thumbnail': '/images/playtech/gtsflzt.jpg',
-    'group': 'Slots'
+    "name": "Sweet Party",
+    "code": "cnpr",
+    "group": "SlotMachines",
+    "thumbnail": "https://indoxbet.com//Resources/images/desktop/PLAYTECH/sweet-party.png"
   },
   {
-    'code': 'ashbob',
-    'name': 'Bounty of the Beanstalk',
-    'thumbnail': '/images/playtech/ashbob.jpg',
-    'group': 'Slots'
+    "name": "Thai Paradise",
+    "code": "tpd2",
+    "group": "SlotMachines",
+    "thumbnail": "https://indoxbet.com//Resources/images/desktop/PLAYTECH/thai-paradise.png"
   },
   {
-    'code': 'ashfta',
-    'name': 'Fairest of Them All',
-    'thumbnail': '/images/playtech/ashfta.jpg',
-    'group': 'Slots'
+    "name": "The Glass Slipper",
+    "code": "ashglss",
+    "group": "SlotMachines",
+    "thumbnail": "https://indoxbet.com//Resources/images/desktop/PLAYTECH/the-glass-slipper.png"
   },
   {
-    'code': 'gtsswk',
-    'name': 'Sun Wukong',
-    'thumbnail': '/images/playtech/gtsswk.jpg',
-    'group': 'Slots'
+    "name": "The Great Ming Empire",
+    "code": "gtsgme",
+    "group": "SlotMachines",
+    "thumbnail": "https://indoxbet.com//Resources/images/desktop/PLAYTECH/great-ming-empire.png"
   },
   {
-    'code': 'mgstk',
-    'name': 'Magical Stacks',
-    'thumbnail': '/images/playtech/mgstk.jpg',
-    'group': 'Slots'
+    "name": "The Riches of Don Quixote",
+    "code": "donq",
+    "group": "SlotMachines",
+    "thumbnail": "https://indoxbet.com//Resources/images/desktop/PLAYTECH/the-riches-of-don-quixote.png"
   },
   {
-    'code': 'topg',
-    'name': 'Top Gun',
-    'thumbnail': '/images/playtech/topg.jpg',
-    'group': 'Slots'
+    "name": "The Three Musketeers",
+    "code": "tmqd",
+    "group": "SlotMachines",
+    "thumbnail": "https://indoxbet.com//Resources/images/desktop/PLAYTECH/3-musketeers.png"
   },
   {
-    'code': 'zcjbjp',
-    'name': 'Zhao Cai Jin Bao Jackpot',
-    'thumbnail': '/images/playtech/zcjbjp.jpg',
-    'group': 'Slots'
+    "name": "Tiger Claw",
+    "code": "tigc",
+    "group": "SlotMachines",
+    "thumbnail": "https://indoxbet.com//Resources/images/desktop/PLAYTECH/tiger-claw.png"
   },
   {
-    'code': 'zctz',
-    'name': 'Zhao Cai Tong Zi',
-    'thumbnail': '/images/playtech/zctz.jpg',
-    'group': 'Slots'
+    "name": "Time for a Deal",
+    "code": "ashtmd",
+    "group": "SlotMachines",
+    "thumbnail": "https://indoxbet.com//Resources/images/desktop/PLAYTECH/time-for-a-deal.png"
   },
   {
-    'code': 'fdtjg',
-    'name': 'Frankie Dettori&#39;s Magic Seven Jackpot',
-    'thumbnail': '/images/playtech/fdtjg.jpg',
-    'group': 'Slots'
+    "name": "Top Gun",
+    "code": "topg",
+    "group": "SlotMachines",
+    "thumbnail": "https://indoxbet.com//Resources/images/desktop/PLAYTECH/topgun.png"
   },
   {
-    'code': 'bs',
-    'name': 'Bai Shi',
-    'thumbnail': '/images/playtech/bs.jpg',
-    'group': 'Slots'
+    "name": "Top Trumps Celebs",
+    "code": "ttc",
+    "group": "SlotMachines",
+    "thumbnail": "https://indoxbet.com//Resources/images/desktop/PLAYTECH/top-trumps-celebs.png"
   },
   {
-    'code': 'sx',
-    'name': 'Si Xiang',
-    'thumbnail': '/images/playtech/sx.jpg',
-    'group': 'Slots'
+    "name": "Vacation Station",
+    "code": "er",
+    "group": "SlotMachines",
+    "thumbnail": "https://indoxbet.com//Resources/images/desktop/PLAYTECH/vacation-station.png"
   },
   {
-    'code': 'gtsjxb',
-    'name': 'Ji Xiang 8',
-    'thumbnail': '/images/playtech/gtsjxb.jpg',
-    'group': 'Slots'
+    "name": "Vacation Station Deluxe",
+    "code": "vcstd",
+    "group": "SlotMachines",
+    "thumbnail": "https://indoxbet.com//Resources/images/desktop/PLAYTECH/vaction-station-deluxe.png"
   },
   {
-    'code': 'lndg',
-    'name': 'Land of Gold',
-    'thumbnail': '/images/playtech/lndg.jpg',
-    'group': 'Slots'
+    "name": "Vikingmania",
+    "code": "gts52",
+    "group": "SlotMachines",
+    "thumbnail": "https://indoxbet.com//Resources/images/desktop/PLAYTECH/vikingmania.png"
   },
   {
-    'code': 'gesjp',
-    'name': 'Geisha Story Jackpot',
-    'thumbnail': '/images/playtech/gesjp.jpg',
-    'group': 'Slots'
+    "name": "Ways of the Phoenix",
+    "code": "wotp",
+    "group": "SlotMachines",
+    "thumbnail": "https://indoxbet.com//Resources/images/desktop/PLAYTECH/way-of-the-phoenix.png"
   },
   {
-    'code': 'wlgjp',
-    'name': 'Wu Long Jackpot',
-    'thumbnail': '/images/playtech/wlgjp.jpg',
-    'group': 'Slots'
+    "name": "White King",
+    "code": "whk",
+    "group": "SlotMachines",
+    "thumbnail": "https://indoxbet.com//Resources/images/desktop/PLAYTECH/white-king.png"
   },
   {
-    'code': 'sisjp',
-    'name': 'Silent Samurai Jackpot',
-    'thumbnail': '/images/playtech/sisjp.jpg',
-    'group': 'Slots'
+    "name": "Wild Gambler",
+    "code": "gtswg",
+    "group": "SlotMachines",
+    "thumbnail": "https://indoxbet.com//Resources/images/desktop/PLAYTECH/wild-gambler.png"
   },
   {
-    'code': 'qnw',
-    'name': 'Queen Of Wands',
-    'thumbnail': '/images/playtech/qnw.jpg',
-    'group': 'Slots'
+    "name": "Wild Gambler: Arctic Adventure",
+    "code": "ashwgaa",
+    "group": "SlotMachines",
+    "thumbnail": "https://indoxbet.com//Resources/images/desktop/PLAYTECH/wild-gambler-artic-adventure.png"
   },
   {
-    'code': 'kfp',
-    'name': 'Liu Fu Shou',
-    'thumbnail': '/images/playtech/kfp.jpg',
-    'group': 'Slots'
+    "name": "Wild Spirit",
+    "code": "wis",
+    "group": "SlotMachines",
+    "thumbnail": "https://indoxbet.com//Resources/images/desktop/PLAYTECH/wild-spirit.png"
   },
   {
-    'code': 'jqw',
-    'name': 'Jin Qian Wa',
-    'thumbnail': '/images/playtech/jqw.jpg',
-    'group': 'Slots'
+    "name": "Wings of Gold",
+    "code": "gtswng",
+    "group": "SlotMachines",
+    "thumbnail": "https://indoxbet.com//Resources/images/desktop/PLAYTECH/wings-of-gold.png"
   },
   {
-    'code': 'aogs',
-    'name': 'Age of The Gods ™',
-    'thumbnail': '/images/playtech/aogs.jpg',
-    'group': 'Slots'
+    "name": "Wu Lu Cai Shen",
+    "code": "wlcsh",
+    "group": "SlotMachines",
+    "thumbnail": "https://indoxbet.com//Resources/images/desktop/PLAYTECH/wu-lu-cai-shen.png"
   },
   {
-    'code': 'furf',
-    'name': 'Age of The Gods: Furious Four',
-    'thumbnail': '/images/playtech/furf.jpg',
-    'group': 'Slots'
+    "name": "Wu Long",
+    "code": "wlg",
+    "group": "SlotMachines",
+    "thumbnail": "https://indoxbet.com//Resources/images/desktop/PLAYTECH/wu-long.png"
   },
   {
-    'code': 'nc_7bal',
-    'name': 'No Commision Live Baccarat',
-    'thumbnail': '/images/playtech/nc_7bal.jpg',
-    'group': 'Live Dealers Casino'
+    "name": "Xuan Pu Lian Huan",
+    "code": "xufe",
+    "group": "SlotMachines",
+    "thumbnail": "https://indoxbet.com//Resources/images/desktop/PLAYTECH/xuan-pu-lian-huan.png"
   },
   {
-    'code': 'nc_bal',
-    'name': 'No Commission Mini Baccarat Live',
-    'thumbnail': '/images/playtech/nc_bal.jpg',
-    'group': 'Live Dealers Casino'
+    "name": "Yun Cong Long",
+    "code": "yclong",
+    "group": "SlotMachines",
+    "thumbnail": "https://indoxbet.com//Resources/images/desktop/PLAYTECH/yun-con-long.png"
   },
   {
-    'code': 'ftg',
-    'name': 'Five Tiger Generals',
-    'thumbnail': '/images/playtech/ftg.jpg',
-    'group': 'Slots'
+    "name": "Zhao Cai Jing Bao Jackpot",
+    "code": "zcjbjp",
+    "group": "SlotMachines",
+    "thumbnail": "https://indoxbet.com//Resources/images/desktop/PLAYTECH/zhai-cai-jin-bao-jackpot.png"
   },
   {
-    'code': 'wlcsh',
-    'name': 'Wu Lu Cai Shen',
-    'thumbnail': '/images/playtech/wlcsh.jpg',
-    'group': 'Slots'
+    "name": "Aztec Reel",
+    "code": "pop_sw_ar_skw",
+    "group": "POPSlots",
+    "thumbnail": "https://indoxbet.com//Resources/images/desktop/PLAYTECH/pop_sw_ar_skw.png"
   },
   {
-    'code': 'spud',
-    'name': 'Spud O&#39;Reillys Crops of Gold',
-    'thumbnail': '/images/playtech/spud.jpg',
-    'group': 'Slots'
+    "name": "Blue Wizard",
+    "code": "gpas_bwizard_pop",
+    "group": "POPSlots",
+    "thumbnail": "https://indoxbet.com//Resources/images/desktop/PLAYTECH/gpas_bwizard_pop.png"
   },
   {
-    'code': 'athn',
-    'name': 'Age of The Gods: Goddess of Wisdom',
-    'thumbnail': '/images/playtech/athn.jpg',
-    'group': 'Slots'
+    "name": "Dragon Bond",
+    "code": "gpas_dbond_pop",
+    "group": "POPSlots",
+    "thumbnail": "https://indoxbet.com//Resources/images/desktop/PLAYTECH/gpas_dbond_pop.png"
   },
   {
-    'code': 'longlong',
-    'name': 'Long Long Long',
-    'thumbnail': '/images/playtech/longlong.jpg',
-    'group': 'Slots'
+    "name": "Fire Reel",
+    "code": "pop_sw_fr_skw",
+    "group": "POPSlots",
+    "thumbnail": "https://indoxbet.com//Resources/images/desktop/PLAYTECH/pop_sw_fr_skw.png"
   },
   {
-    'code': 'chao',
-    'name': 'Chaoji 888',
-    'thumbnail': '/images/playtech/chao.jpg',
-    'group': 'Slots'
+    "name": "Jinfu Long",
+    "code": "gpas_jflong_pop",
+    "group": "POPSlots",
+    "thumbnail": "https://indoxbet.com//Resources/images/desktop/PLAYTECH/gpas_jflong_pop.png"
   },
   {
-    'code': 'bfb',
-    'name': 'Buffalo Blitz',
-    'thumbnail': '/images/playtech/bfb.jpg',
-    'group': 'Slots'
+    "name": "Jin Qian Wa Jackpot",
+    "code": "pop_sw_jqw_ab_jp_skw",
+    "group": "POPSlots",
+    "thumbnail": "https://indoxbet.com//Resources/images/desktop/PLAYTECH/pop_sw_jqw_ab_jp_skw.png"
   },
   {
-    'code': 'zeus',
-    'name': 'Age of The Gods: King of Olympus',
-    'thumbnail': '/images/playtech/zeus.jpg',
-    'group': 'Slots'
+    "name": "Ni Shu Shen Me",
+    "code": "gpas_nsshen_pop",
+    "group": "POPSlots",
+    "thumbnail": "https://indoxbet.com//Resources/images/desktop/PLAYTECH/gpas_nsshen_pop.png"
   },
   {
-    'code': 'gemq',
-    'name': 'Gem Queen',
-    'thumbnail': '/images/playtech/gemq.jpg',
-    'group': 'Slots'
+    "name": "Pharaoh’s Daughter",
+    "code": "gpas_scqueen_pop",
+    "group": "POPSlots",
+    "thumbnail": "https://indoxbet.com//Resources/images/desktop/PLAYTECH/gpas_scqueen_pop.png"
   },
   {
-    'code': 'aztec',
-    'name': 'Inca Jackpot',
-    'thumbnail': '/images/playtech/aztec.jpg',
-    'group': 'Slots'
+    "name": "Respin Mania Wu Shi Jackpot",
+    "code": "pop_sw_rm_ab_jp_skw",
+    "group": "POPSlots",
+    "thumbnail": "https://indoxbet.com//Resources/images/desktop/PLAYTECH/pop_sw_rm_ab_jp_skw.png"
   },
   {
-    'code': 'hrcls',
-    'name': 'Age of The Gods: Prince of Olympus',
-    'thumbnail': '/images/playtech/hrcls.jpg',
-    'group': 'Slots'
+    "name": "Riverboat Reel",
+    "code": "pop_sw_rr_skw",
+    "group": "POPSlots",
+    "thumbnail": "https://indoxbet.com//Resources/images/desktop/PLAYTECH/pop_sw_rr_skw.png"
   },
   {
-    'code': 'hlf2',
-    'name': 'Halloween Fortune II',
-    'thumbnail': '/images/playtech/hlf2.jpg',
-    'group': 'Slots'
+    "name": "Savage Jungle",
+    "code": "gpas_sjungle_pop",
+    "group": "POPSlots",
+    "thumbnail": "https://indoxbet.com//Resources/images/desktop/PLAYTECH/gpas_sjungle_pop.png"
   },
   {
-    'code': 'fkmj',
-    'name': 'Feng Kuang Ma Jiang',
-    'thumbnail': '/images/playtech/fkmj.jpg',
-    'group': 'Slots'
+    "name": "Tsai Shens Gift",
+    "code": "gpas_tsgift_pop",
+    "group": "POPSlots",
+    "thumbnail": "https://indoxbet.com//Resources/images/desktop/PLAYTECH/gpas_tsgift_pop.png"
   },
   {
-    'code': 'gtsfpc',
-    'name': 'Fish Prawn Crab',
-    'thumbnail': '/images/playtech/gtsfpc.jpg',
-    'group': 'Table Games'
+    "name": "Metal Reel",
+    "code": "pop_sw_mr_skw",
+    "group": "POPSlots",
+    "thumbnail": "https://indoxbet.com//Resources/images/desktop/PLAYTECH/pop_sw_mr_skw.png"
   },
   {
-    'code': 'ririjc',
-    'name': 'Ri Ri Jin Cai',
-    'thumbnail': '/images/playtech/ririjc.jpg',
-    'group': 'Slots'
+    "name": "Water Reel",
+    "code": "pop_sw_wrl_skw",
+    "group": "POPSlots",
+    "thumbnail": "https://indoxbet.com//Resources/images/desktop/PLAYTECH/pop_sw_wrl_skw.png"
   },
   {
-    'code': 'mfrt',
-    'name': 'Miss Fortune',
-    'thumbnail': '/images/playtech/mfrt.jpg',
-    'group': 'Slots'
+    "name": "Zhao Cai Tong Zi Jackpot",
+    "code": "pop_shctz_ab_jp_skw",
+    "group": "POPSlots",
+    "thumbnail": "https://indoxbet.com//Resources/images/desktop/PLAYTECH/pop_shctz_ab_jp_skw.png"
   },
   {
-    'code': 'ftsis',
-    'name': 'Age of The Gods: Fate Sisters',
-    'thumbnail': '/images/playtech/ftsis.jpg',
-    'group': 'Slots'
+    "name": "Tiger Stacks",
+    "code": "gpas_tstacks_pop",
+    "group": "POPSlots",
+    "thumbnail": "https://indoxbet.com//Resources/images/desktop/PLAYTECH/gpas_tstacks_pop.png"
   },
   {
-    'code': 'ririshc',
-    'name': 'Ri Ri Sheng Cai',
-    'thumbnail': '/images/playtech/ririshc.jpg',
-    'group': 'Slots'
+    "name": "8 Treasures 1 Queen",
+    "code": "pop_sw_8tr1qu_skw",
+    "group": "POPSlots",
+    "thumbnail": "https://indoxbet.com//Resources/images/desktop/PLAYTECH/pop_sw_8tr1qu_skw.png"
   },
   {
-    'code': 'gtsje',
-    'name': 'Jade Emperor',
-    'thumbnail': '/images/playtech/gtsje.jpg',
-    'group': 'Slots'
+    "name": "Asian Fantasy",
+    "code": "pop_swaf_skw",
+    "group": "POPSlots",
+    "thumbnail": "https://indoxbet.com//Resources/images/desktop/PLAYTECH/pop_swaf_skw.png"
   },
   {
-    'code': 'cashfi',
-    'name': 'Cash Fish',
-    'thumbnail': '/images/playtech/cashfi.jpg',
-    'group': 'Others'
+    "name": "Dragon Riches",
+    "code": "pop_sw_dr_skw",
+    "group": "POPSlots",
+    "thumbnail": "https://indoxbet.com//Resources/images/desktop/PLAYTECH/dragon-riches.png"
   },
   {
-    'code': 'trpmnk',
-    'name': 'Triple Monkey',
-    'thumbnail': '/images/playtech/trpmnk.jpg',
-    'group': 'Slots'
+    "name": "Fat Choy Choy Sun",
+    "code": "gpas_fatchoy_pop",
+    "group": "POPSlots",
+    "thumbnail": "https://indoxbet.com//Resources/images/desktop/PLAYTECH/gpas_fatchoy_pop.png"
   },
   {
-    'code': 'ashwgaa',
-    'name': 'Wild Gambler 2: Arctic Adventure',
-    'thumbnail': '/images/playtech/ashwgaa.jpg',
-    'group': 'Slots'
+    "name": "Eternal Lady",
+    "code": "gpas_elady_pop",
+    "group": "POPSlots",
+    "thumbnail": "https://indoxbet.com//Resources/images/desktop/PLAYTECH/gpas_elady_pop.png"
   },
   {
-    'code': 'fday',
-    'name': 'Fortune Day',
-    'thumbnail': '/images/playtech/fday.jpg',
-    'group': 'Slots'
+    "name": "Fiesta de la Memoria",
+    "code": "gpas_fiesta_pop",
+    "group": "POPSlots",
+    "thumbnail": "https://indoxbet.com//Resources/images/desktop/PLAYTECH/fiesta-memoria.png"
   },
   {
-    'code': 'lm',
-    'name': 'Lotto Madness',
-    'thumbnail': '/images/playtech/lm.jpg',
-    'group': 'Slots'
+    "name": "Fortune Lions",
+    "code": "pop_swfl_skw",
+    "group": "POPSlots",
+    "thumbnail": "https://indoxbet.com//Resources/images/desktop/PLAYTECH/pop_swfl_skw.png"
   },
   {
-    'code': 'ght_a',
-    'name': 'Lie Yan Zuan Shi',
-    'thumbnail': '/images/playtech/ght_a.jpg',
-    'group': 'Slots'
+    "name": "Haoshi Cheng Shuang",
+    "code": "pop_swhcs_skw",
+    "group": "POPSlots",
+    "thumbnail": "https://indoxbet.com//Resources/images/desktop/PLAYTECH/pop_swhcs_skw.png"
   },
   {
-    'code': 'ashtmd',
-    'name': 'Time for a Deal',
-    'thumbnail': '/images/playtech/ashtmd.jpg',
-    'group': 'Slots'
+    "name": "Jinfu Xingyun",
+    "code": "gpas_xjinfu_pop",
+    "group": "POPSlots",
+    "thumbnail": "https://indoxbet.com//Resources/images/desktop/PLAYTECH/gpas_xjinfu_pop.png"
   },
   {
-    'code': 'ashadv',
-    'name': 'Adventures in Wonderland',
-    'thumbnail': '/images/playtech/ashadv.jpg',
-    'group': 'Slots'
+    "name": "Legend of the Jaguar",
+    "code": "gpas_lotj_pop",
+    "group": "POPSlots",
+    "thumbnail": "https://indoxbet.com//Resources/images/desktop/PLAYTECH/legend-of-jaguar.png"
   },
   {
-    'code': 'ashglss',
-    'name': 'The Glass Slipper',
-    'thumbnail': '/images/playtech/ashglss.jpg',
-    'group': 'Slots'
+    "name": "Panther Pays",
+    "code": "gpas_panthpays_pop",
+    "group": "POPSlots",
+    "thumbnail": "https://indoxbet.com//Resources/images/desktop/PLAYTECH/phanter-pays.png"
   },
   {
-    'code': 'savcas',
-    'name': 'Savannah Cash',
-    'thumbnail': '/images/playtech/savcas.jpg',
-    'group': 'Slots'
+    "name": "Raiders of the Hidden Realm",
+    "code": "gpas_rothr_pop",
+    "group": "POPSlots",
+    "thumbnail": "https://indoxbet.com//Resources/images/desktop/PLAYTECH/raiders-of-the-hidden-realm.png"
   },
   {
-    'code': 'pop_swfl_skw',
-    'name': 'Fortune Lions',
-    'thumbnail': '/images/playtech/pop_swfl_skw.jpg',
-    'group': 'Slots'
+    "name": "Satsumos Revenge",
+    "code": "gpas_satsumo_pop",
+    "group": "POPSlots",
+    "thumbnail": "https://indoxbet.com//Resources/images/desktop/PLAYTECH/satsumo-revenge.png"
   },
   {
-    'code': 'hotktv',
-    'name': 'Hot KTV',
-    'thumbnail': '/images/playtech/hotktv.jpg',
-    'group': 'Slots'
+    "name": "Si Ling",
+    "code": "pop_swsl_skw",
+    "group": "POPSlots",
+    "thumbnail": "https://indoxbet.com//Resources/images/desktop/PLAYTECH/pop_swsl_skw.png"
   },
   {
-    'code': 'aogro',
-    'name': 'Age Of The Gods Roulette',
-    'thumbnail': '/images/playtech/aogro.jpg',
-    'group': 'Table Games'
+    "name": "Sky Queen",
+    "code": "gpas_squeen_pop",
+    "group": "POPSlots",
+    "thumbnail": "https://indoxbet.com//Resources/images/desktop/PLAYTECH/gpas_squeen_pop.png"
   },
   {
-    'code': 'heavru',
-    'name': 'Heavenly Ruler',
-    'thumbnail': '/images/playtech/heavru.jpg',
-    'group': 'Slots'
+    "name": "Tiger Turtle Dragon Phoenix",
+    "code": "gpas_tigertdp_pop",
+    "group": "POPSlots",
+    "thumbnail": "https://indoxbet.com//Resources/images/desktop/PLAYTECH/gpas_tigertdp_pop.png"
   },
   {
-    'code': 'pop_swsl_skw',
-    'name': 'Si Ling',
-    'thumbnail': '/images/playtech/pop_swsl_skw.jpg',
-    'group': 'Slots'
+    "name": "Ying Xiong Lu Bu",
+    "code": "pop_sw_yxlb_skw",
+    "group": "POPSlots",
+    "thumbnail": "https://indoxbet.com//Resources/images/desktop/PLAYTECH/ying-xiong-lu-bu.png"
   },
   {
-    'code': 'slion',
-    'name': 'Super Lion',
-    'thumbnail': '/images/playtech/slion.jpg',
-    'group': 'Slots'
+    "name": "All Bets Blackjack",
+    "code": "abbj",
+    "group": "TableCards",
+    "thumbnail": "https://indoxbet.com//Resources/images/desktop/PLAYTECH/all-bets-blackjack.png"
   },
   {
-    'code': 'pop_swhcs_skw',
-    'name': 'Haoshi Cheng Shuang',
-    'thumbnail': '/images/playtech/pop_swhcs_skw.jpg',
-    'group': 'Slots'
+    "name": "Baccarat",
+    "code": "ba",
+    "group": "TableCards",
+    "thumbnail": "https://indoxbet.com//Resources/images/desktop/PLAYTECH/baccarat.png"
   },
   {
-    'code': 'warg',
-    'name': 'Warriors Gold',
-    'thumbnail': '/images/playtech/warg.jpg',
-    'group': 'Slots'
+    "name": "Caribbean Stud Poker",
+    "code": "car",
+    "group": "TableCards",
+    "thumbnail": "https://indoxbet.com//Resources/images/desktop/PLAYTECH/carabbian-stud-poker.png"
   },
   {
-    'code': 'pop_sw_8tr1qu_skw',
-    'name': '8 Treasures 1 Queen',
-    'thumbnail': '/images/playtech/pop_sw_8tr1qu_skw.jpg',
-    'group': 'Slots'
+    "name": "Cashback Blackjack",
+    "code": "bjcb",
+    "group": "TableCards",
+    "thumbnail": "https://indoxbet.com//Resources/images/desktop/PLAYTECH/cashback-blackjack.png"
   },
   {
-    'code': 'titimama',
-    'name': 'Tiao Tiao Mao Mao',
-    'thumbnail': '/images/playtech/titimama.jpg',
-    'group': 'Slots'
+    "name": "Casino HoldEm",
+    "code": "cheaa",
+    "group": "TableCards",
+    "thumbnail": "https://indoxbet.com//Resources/images/desktop/PLAYTECH/casino-holdem.png"
   },
   {
-    'code': 'egspin',
-    'name': 'Egypt Spin',
-    'thumbnail': '/images/playtech/egspin.jpg',
-    'group': 'Slots'
+    "name": "Classic Roulette",
+    "code": "ro",
+    "group": "TableCards",
+    "thumbnail": "https://indoxbet.com//Resources/images/desktop/PLAYTECH/classic-roulette.png"
   },
   {
-    'code': 'sugla',
-    'name': 'Sugar Land',
-    'thumbnail': '/images/playtech/sugla.jpg',
-    'group': 'Slots'
+    "name": "Diamond Bet Roulette",
+    "code": "dbro",
+    "group": "TableCards",
+    "thumbnail": "https://indoxbet.com//Resources/images/desktop/PLAYTECH/diamond-bet-roulette.png"
   },
   {
-    'code': 'aeolus',
-    'name': 'Age of the Gods: God of Storms',
-    'thumbnail': '/images/playtech/aeolus.jpg',
-    'group': 'Slots'
+    "name": "Dragon Jackpot Roulette",
+    "code": "drgro",
+    "group": "TableCards",
+    "thumbnail": "https://indoxbet.com//Resources/images/desktop/PLAYTECH/dragon-jackpot-roulette.png"
   },
   {
-    'code': 'ashhof',
-    'name': 'Heart of the Frontier',
-    'thumbnail': '/images/playtech/ashhof.jpg',
-    'group': 'Slots'
+    "name": "European Roulette",
+    "code": "ro",
+    "group": "TableCards",
+    "thumbnail": "https://indoxbet.com//Resources/images/desktop/PLAYTECH/european-roulette.png"
   },
   {
-    'code': 'ashicv',
-    'name': 'Ice Cave',
-    'thumbnail': '/images/playtech/ashicv.jpg',
-    'group': 'Slots'
+    "name": "Frankie Dettori Magic Seven Blackjack",
+    "code": "fdtbj",
+    "group": "TableCards",
+    "thumbnail": "https://indoxbet.com//Resources/images/desktop/PLAYTECH/frankie-dettori-blackjack.png"
   },
   {
-    'code': 'legwld',
-    'name': 'Legacy Of The Wild',
-    'thumbnail': '/images/playtech/legwld.jpg',
-    'group': 'Slots'
+    "name": "Free Chip Blackjack",
+    "code": "fcbj",
+    "group": "TableCards",
+    "thumbnail": "https://indoxbet.com//Resources/images/desktop/PLAYTECH/fcbj.png"
   },
   {
-    'code': 'drgro',
-    'name': 'Dragon Jackpot Roulette',
-    'thumbnail': '/images/playtech/drgro.jpg',
-    'group': 'Table Games'
+    "name": "Heads Up Holdem",
+    "code": "huh",
+    "group": "TableCards",
+    "thumbnail": "https://indoxbet.com//Resources/images/desktop/PLAYTECH/heads-up-holdem.png"
   },
   {
-    'code': 'fmjp',
-    'name': 'Funky Monkey Jackpot',
-    'thumbnail': '/images/playtech/fmjp.jpg',
-    'group': 'Slots'
+    "name": "Mini Roulette",
+    "code": "mro",
+    "group": "TableCards",
+    "thumbnail": "https://indoxbet.com//Resources/images/desktop/PLAYTECH/mini-roulette.png"
   },
   {
-    'code': 'grbjp',
-    'name': 'Great blue Jackpot',
-    'thumbnail': '/images/playtech/grbjp.jpg',
-    'group': 'Slots'
+    "name": "Perfect Blackjack",
+    "code": "bjp",
+    "group": "TableCards",
+    "thumbnail": "https://indoxbet.com//Resources/images/desktop/PLAYTECH/bjp.png"
   },
   {
-    'code': 'yclong',
-    'name': 'Yun Cong Long',
-    'thumbnail': '/images/playtech/yclong.jpg',
-    'group': 'Slots'
+    "name": "Premium American Roulette",
+    "code": "rodz_g",
+    "group": "TableCards",
+    "thumbnail": "https://indoxbet.com//Resources/images/desktop/PLAYTECH/premium-american-roulette.png"
   },
   {
-    'code': 'xufe',
-    'name': 'Xuan Pu Lian Huan',
-    'thumbnail': '/images/playtech/xufe.jpg',
-    'group': 'Slots'
+    "name": "Premium Blackjack",
+    "code": "bjto",
+    "group": "TableCards",
+    "thumbnail": "https://indoxbet.com//Resources/images/desktop/PLAYTECH/premium-blackjack.png"
   },
   {
-    'code': 'popc',
-    'name': 'Gaelic Luck',
-    'thumbnail': '/images/playtech/popc.jpg',
-    'group': 'Slots'
+    "name": "Premium European Roulette",
+    "code": "ro_g",
+    "group": "TableCards",
+    "thumbnail": "https://indoxbet.com//Resources/images/desktop/PLAYTECH/premium-european-roulette.png"
   },
   {
-    'code': 'pisa',
-    'name': 'Pixel Samurai',
-    'thumbnail': '/images/playtech/pisa.jpg',
-    'group': 'Slots'
-  },
-  {
-    'code': 'phtd',
-    'name': 'Pharaoh’s Treasure Deluxe',
-    'thumbnail': '/images/playtech/phtd.jpg',
-    'group': 'Slots'
-  },
-  {
-    'code': 'jnglg',
-    'name': 'Jungle Giants',
-    'thumbnail': '/images/playtech/jnglg.jpg',
-    'group': 'Slots'
-  },
-  {
-    'code': 'epa',
-    'name': 'Epic Ape',
-    'thumbnail': '/images/playtech/epa.jpg',
-    'group': 'Slots'
-  },
-  {
-    'code': 'drgch',
-    'name': 'Dragon Champions',
-    'thumbnail': '/images/playtech/drgch.jpg',
-    'group': 'Slots'
-  },
-  {
-    'code': 'wotp',
-    'name': 'Ways of the Phoenix',
-    'thumbnail': '/images/playtech/wotp.jpg',
-    'group': 'Slots'
-  },
-  {
-    'code': 'ccccny',
-    'name': 'Coin Coin Coin',
-    'thumbnail': '/images/playtech/ccccny.jpg',
-    'group': 'Slots'
-  },
-  {
-    'code': 'tigc',
-    'name': 'Tiger Claw',
-    'thumbnail': '/images/playtech/tigc.jpg',
-    'group': 'Slots'
-  },
-  {
-    'code': 'anwild',
-    'name': 'Anaconda Wild',
-    'thumbnail': '/images/playtech/anwild.jpg',
-    'group': 'Slots'
-  },
-  {
-    'code': 'gpas_panthpays_pop',
-    'name': 'Panther Pays',
-    'thumbnail': '/images/playtech/gpas_panthpays_pop.jpg',
-    'group': 'Slots'
-  },
-  {
-    'code': 'gpas_rothr_pop',
-    'name': 'Raiders of the Hidden Realm',
-    'thumbnail': '/images/playtech/gpas_rothr_pop.jpg',
-    'group': 'Slots'
-  },
-  {
-    'code': 'gpas_lotj_pop',
-    'name': 'Legend of the Jaguar',
-    'thumbnail': '/images/playtech/gpas_lotj_pop.jpg',
-    'group': 'Slots'
-  },
-  {
-    'code': 'gpas_fiesta_pop',
-    'name': 'Fiesta de la Memoria',
-    'thumbnail': '/images/playtech/gpas_fiesta_pop.jpg',
-    'group': 'Slots'
-  },
-  {
-    'code': 'gpas_satsumo_pop',
-    'name': 'Satsumo&#39;s Revenge',
-    'thumbnail': '/images/playtech/gpas_satsumo_pop.jpg',
-    'group': 'Slots'
-  },
-  {
-    'code': 'pop_sw_dr_skw',
-    'name': 'Dragon Riches',
-    'thumbnail': '/images/playtech/pop_sw_dr_skw.jpg',
-    'group': 'Slots'
-  },
-  {
-    'code': 'pop_sw_yxlb_skw',
-    'name': 'Ying Xiong Lu Bu',
-    'thumbnail': '/images/playtech/pop_sw_yxlb_skw.jpg',
-    'group': 'Slots'
-  },
-  {
-    'code': 'gpas_elady_pop',
-    'name': 'Eternal Lady',
-    'thumbnail': '/images/playtech/gpas_elady_pop.jpg',
-    'group': 'Slots'
-  },
-  {
-    'code': 'gpas_xjinfu_pop',
-    'name': 'Jinfu Xingyun',
-    'thumbnail': '/images/playtech/gpas_xjinfu_pop.jpg',
-    'group': 'Slots'
-  },
-  {
-    'code': 'gpas_squeen_pop',
-    'name': 'Sky Queen',
-    'thumbnail': '/images/playtech/gpas_squeen_pop.jpg',
-    'group': 'Slots'
-  },
-  {
-    'code': 'gpas_tigertdp_pop',
-    'name': 'Tiger Turtle Dragon Phoenix',
-    'thumbnail': '/images/playtech/gpas_tigertdp_pop.jpg',
-    'group': 'Slots'
-  },
-  {
-    'code': 'gpas_fatchoy_pop',
-    'name': 'Fat Choy Choy Sun',
-    'thumbnail': '/images/playtech/gpas_fatchoy_pop.jpg',
-    'group': 'Slots'
-  },
-  {
-    'code': 'pop_sw_jqw_ab_jp_skw',
-    'name': 'Jin Qian Wa Jackpot',
-    'thumbnail': '/images/playtech/pop_sw_jqw_ab_jp_skw.jpg',
-    'group': 'Slots'
-  },
-  {
-    'code': 'pop_sw_rm_ab_jp_skw',
-    'name': 'Respin Mania Wu Shi Jackpot',
-    'thumbnail': '/images/playtech/pop_sw_rm_ab_jp_skw.jpg',
-    'group': 'Slots'
-  },
-  {
-    'code': 'pop_shctz_ab_jp_skw',
-    'name': 'Zhao Cai Tong Zi Jackpot',
-    'thumbnail': '/images/playtech/pop_shctz_ab_jp_skw.jpg',
-    'group': 'Slots'
-  },
-  {
-    'code': 'gpas_dbond_pop',
-    'name': 'Dragon Bond',
-    'thumbnail': '/images/playtech/gpas_dbond_pop.jpg',
-    'group': 'Slots'
-  },
-  {
-    'code': 'gpas_jflong_pop',
-    'name': 'Jinfu Long',
-    'thumbnail': '/images/playtech/gpas_jflong_pop.jpg',
-    'group': 'Slots'
-  },
-  {
-    'code': 'gpas_scqueen_pop',
-    'name': 'Pharaoh’s Daughter',
-    'thumbnail': '/images/playtech/gpas_scqueen_pop.jpg',
-    'group': 'Slots'
-  },
-  {
-    'code': 'gpas_sjungle_pop',
-    'name': 'Savage Jungle',
-    'thumbnail': '/images/playtech/gpas_sjungle_pop.jpg',
-    'group': 'Slots'
-  },
-  {
-    'code': 'fcbj',
-    'name': 'Free Chip Blackjack',
-    'thumbnail': '/images/playtech/fcbj.jpg',
-    'group': 'Slots'
-  },
-  {
-    'code': 'ljxy',
-    'name': 'Long Jia Xiang Yun',
-    'thumbnail': '/images/playtech/ljxy.jpg',
-    'group': 'Slots'
-  },
-  {
-    'code': 'pop_sw_ar_skw',
-    'name': 'Aztec Reel',
-    'thumbnail': '/images/playtech/pop_sw_ar_skw.jpg',
-    'group': 'Slots'
-  },
-  {
-    'code': 'pop_sw_fr_skw',
-    'name': 'Fire Reel',
-    'thumbnail': '/images/playtech/pop_sw_fr_skw.jpg',
-    'group': 'Slots'
-  },
-  {
-    'code': 'pop_sw_mr_skw',
-    'name': 'Metal Reel',
-    'thumbnail': '/images/playtech/pop_sw_mr_skw.jpg',
-    'group': 'Slots'
-  },
-  {
-    'code': 'pop_sw_rr_skw',
-    'name': 'Riverboat Reel',
-    'thumbnail': '/images/playtech/pop_sw_rr_skw.jpg',
-    'group': 'Slots'
-  },
-  {
-    'code': 'pop_sw_wrl_skw',
-    'name': 'Water Reel',
-    'thumbnail': '/images/playtech/pop_sw_wrl_skw.jpg',
-    'group': 'Slots'
-  },
-  {
-    'code': 'gpas_bwizard_pop',
-    'name': 'Blue Wizard',
-    'thumbnail': '/images/playtech/gpas_bwizard_pop.jpg',
-    'group': 'Slots'
-  },
-  {
-    'code': 'gpas_tsgift_pop',
-    'name': 'Tsai Shens Gift',
-    'thumbnail': '/images/playtech/gpas_tsgift_pop.jpg',
-    'group': 'Slots'
-  },
-  {
-    'code': 'gpas_tstacks_pop',
-    'name': 'Tiger Stacks',
-    'thumbnail': '/images/playtech/gpas_tstacks_pop.jpg',
-    'group': 'Slots'
-  },
-  {
-    'code': 'gpas_nsshen_pop',
-    'name': 'Ni Shu Shen Me',
-    'thumbnail': '/images/playtech/gpas_nsshen_pop.jpg',
-    'group': 'Slots'
-  },
-  {
-    'code': 'whk2',
-    'name': 'White King 2',
-    'thumbnail': '/images/playtech/whk2.jpg',
-    'group': 'Slots'
-  },
-  {
-    'code': 'mnkmn',
-    'name': 'Monkey Mania',
-    'thumbnail': '/images/playtech/mnkmn.jpg',
-    'group': 'Slots'
+    "name": "Spread Bet Roulette",
+    "code": "sbro",
+    "group": "TableCards",
+    "thumbnail": "https://indoxbet.com//Resources/images/desktop/PLAYTECH/spread-bet-roulette.png"
   }
 ]
