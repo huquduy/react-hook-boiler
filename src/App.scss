@@ -82,17 +82,30 @@ a {
 
 .MuiTab-textColorInherit {
   &.Mui-selected {
-    // border: 2px solid $primaryColor;
     border-radius: 8px;
-    // background: rgba(239, 215, 127, 0.2);
     .MuiTypography-colorPrimary{
       span{
-        border: 1px solid $primaryColor;
+        border: 1px solid #ecd78b;
         background: rgba(239, 215, 127, 0.1);
         border-radius: 4px;
       }
     }
-   
+  }
+}
+.slot-page{
+  .game-tabs{
+    .MuiTab-textColorInherit {
+      &.Mui-selected {
+        border-radius: 8px;
+        .MuiTypography-colorPrimary{
+          span{
+            border: 2px solid #ecd78b;
+            background: rgba(239, 215, 127, 0.1);
+            border-radius: 4px;
+          }
+        }
+      }
+    }
   }
 }
 .PrivateTabIndicator-root-512 {
