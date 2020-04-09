@@ -38,4 +38,11 @@
   .link-primary{
     color: $secondaryColor;
   }
+  .custom-checkbox{
+    display: inline-block;
+    text-align:left;
+    .MuiFormControlLabel-labe{
+      padding-left: 50px;
+    }
+  }
 }

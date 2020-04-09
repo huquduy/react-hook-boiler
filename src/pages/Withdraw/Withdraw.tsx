@@ -131,16 +131,11 @@ const Withdraw: React.FC<RouteComponentProps> = ({ history }) => {
                   name="calcAmount"
                   label="Transfer Bank :"
                   type="text"
-                  disable={isLoading.toString()}
                   fullWidth={true}
                   component={TextInput}
+                  disabled={true}
                 />
               </div>
-              {/* <div className="des-amount">
-                                <span>(IDR 1000 = 1 unit)</span> <br />
-                                <span>Min : 50 IDR</span><br />
-                                <span>Max : 99000 IDR</span>
-                            </div> */}
               <div>
                 <Field
                   validate={required}

@@ -33,9 +33,7 @@
     background: $backgroundBody;
     color: $primaryColor;
     .marquee-content{
-      .marquee-text{
-        margin-right: 50px;
-      }
+      padding-left: 50%;
     }
   }
   .logo {
@@ -61,7 +59,7 @@
       display: inline-block;
       width: 50%;
       color: #fff;
-      background-color: $secondaryColor;
+      background-color:$successColor;
     }
   }
   .auth{
@@ -71,7 +69,7 @@
       display: inline-block;
       width: 33.33%;
       color: #fff;
-      background-color: $successColor;
+      background-color: $blueColor;
     }
     .login {
       height: 35px;
@@ -87,7 +85,7 @@
       display: inline-block;
       width: 33.33%;
       color: #fff;
-      background-color: $secondaryColor;
+      background-color: $successColor;
     }
   }
   .text-home{
