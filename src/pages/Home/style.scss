@@ -11,14 +11,14 @@
       border-bottom: 0;
       padding-top: 16px;
       .MuiTab-textColorInherit{
-        width: 65px;
-        height: 80px;
+        max-width: 65px;
+        max-height: 80px;
         }
       .MuiTab-textColorInherit.Mui-selected{
         border: 1px solid $primaryColor;
         border-radius: 4px;
-        width: 65px;
-        height: 80px;
+        max-width: 65px;
+        max-height: 80px;
         background: rgba(239, 215, 127, 0.2);
       }
       .MuiTabs-indicator{
@@ -32,6 +32,9 @@
   .marquee{
     background: $backgroundBody;
     color: $primaryColor;
+    .marquee-content{
+      padding-left: 50%;
+    }
   }
   .logo {
     width: 100%;
@@ -56,7 +59,7 @@
       display: inline-block;
       width: 50%;
       color: #fff;
-      background-color: $secondaryColor;
+      background-color:$successColor;
     }
   }
   .auth{
@@ -66,7 +69,7 @@
       display: inline-block;
       width: 33.33%;
       color: #fff;
-      background-color: $successColor;
+      background-color: $blueColor;
     }
     .login {
       height: 35px;
@@ -82,7 +85,7 @@
       display: inline-block;
       width: 33.33%;
       color: #fff;
-      background-color: $secondaryColor;
+      background-color: $successColor;
     }
   }
   .text-home{

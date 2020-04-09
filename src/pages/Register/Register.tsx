@@ -32,7 +32,7 @@ interface IForm {
   username: string,
   password: string,
   phone: string,
-  currency:string,
+  currency: string,
 }
 const { Form } = withTypes<IForm>()
 
@@ -41,12 +41,12 @@ const Register: React.FC<RouteComponentProps> = ({ history }) => {
     bankAccountName: '',
     bankAccountNumber: '',
     bankId: 2,
-    currency:'IDR',
+    currency: 'IDR',
     email: '',
     password: '',
     phone: '',
     username: ''
-   
+
   })
   const [banks, setBanks] = useState<IOption[] | []>([])
 
@@ -71,12 +71,12 @@ const Register: React.FC<RouteComponentProps> = ({ history }) => {
       console.log(error);
       // return showSnackbar(error)
       return showDialog(error, 'Error')
-    }else {
+    } else {
       setAuthStatus(token)
       showDialog('Register Successfully', 'Success')
       history.push('/home')
     }
-    
+
   }
   const handeChangeCheckbox = () => {
 
@@ -212,14 +212,14 @@ const Register: React.FC<RouteComponentProps> = ({ history }) => {
                 />
               </div>
               <div>
-              <FormControlLabel
-
+                <FormControlLabel
+                  className="custom-checkbox"
                   value="ischeck"
                   control={<Checkbox color="primary" onChange={handeChangeCheckbox} />}
                   label={'*I am over 18 years of age and have read and accepted Terms & Conditions, Privacy Policy & Betting Rules as published on this site.'}
                   name="isCheck"
                 />
-                </div>
+              </div>
               <div>
                 <Button variant="outlined" color="primary" type="submit" startIcon={<AddIcon />}>
                   Register

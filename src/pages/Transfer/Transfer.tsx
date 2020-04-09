@@ -82,24 +82,34 @@ const Transfer: React.FC = () => {
     })).catch(err => err)
     if (error) {
       return showDialog(error, 'Error')
-    } 
+    }
     const { data: creditResps } = await withLoading(() => get({ path: 'user/credit' }))
-    const { data: credit } = find(propEq('title', origin))(creditResps);
-    setInitialValues({
-      ...initialValues,
-      credit
+    const correctCreditProps = ({ title, data }): IOption => ({
+      title,
+      value: data
     })
+    const creditsCorrected = map(correctCreditProps)(creditResps)
+    setCredits(creditsCorrected)
+    const optionsCorrected = map(titleWithCredit)(creditsCorrected)
+    setOriginOptions(optionsCorrected)
+    setTargetOptions(optionsCorrected)
+    // const [{ title: origin }, { title: target }] = creditsCorrected
+    // const { data: credit } = find(propEq('title', origin))(creditResps);
+    // setInitialValues({
+    //   ...initialValues,
+    //   credit
+    // })
     return showDialog('Transfer Successfully', 'Success')
   }
 
   const handleChangeTransferFrom = (event: React.ChangeEvent<{ value: unknown }>) => {
-    const { value } = event.target
-    const { data: credit } = find(propEq('label', value))(credits);
-    setInitialValues({
-      ...initialValues,
-      credit,
-      origin: String(value)
-    })
+    // const { value } = event.target
+    // const { data: credit } = find(propEq('label', value))(credits);
+    // setInitialValues({
+    //   ...initialValues,
+    //   credit,
+    //   origin: String(value)
+    // })
   }
 
   const handleChangeTransferTo = (event: React.ChangeEvent<{ value: unknown }>) => {
@@ -112,7 +122,7 @@ const Transfer: React.FC = () => {
         map(titleWithCredit)
       )(credits)
       return setOriginOptions(suppliersFiltered)
-    } 
+    }
     const isMainWallet = ({ title }: IOption) => title === MAIN_WALLET
     const mainWalletFiltered = pipe(
       filter<IOption, 'array'>(isMainWallet),
@@ -233,8 +243,6 @@ const Transfer: React.FC = () => {
                   * I want to claim bonus with term and conditions. Rollover {bonus.rollingTime} Times
                 </Typography>
               </div> : null}
-
-
               <div>
                 <Button variant="outlined" color="primary" type="submit" startIcon={<SendIcon />}>
                   Submit
