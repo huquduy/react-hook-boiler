@@ -25,10 +25,6 @@ const Contact: React.FC<RouteComponentProps> = ({ history }) => {
               <td>+855883071618</td>
             </tr>
             <tr>
-              <td>BBM</td>
-              <td>7AD69275</td>
-            </tr>
-            <tr>
               <td>Wechat</td>
               <td>Hokibet188</td>
             </tr>

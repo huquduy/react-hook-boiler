@@ -10,7 +10,7 @@ import './style.scss';
 
 const Banking: React.FC<RouteComponentProps> = ({ history }) => {
   return (
-    <div className='term-page'>
+    <div className='bank-page'>
       <Header />
       <Typography color="primary" className="title" variant="h5" align="center" component="h2" gutterBottom={true}>
         TPerbankan
@@ -21,68 +21,63 @@ const Banking: React.FC<RouteComponentProps> = ({ history }) => {
           HokiBet188, menyediakan berbagai pilihan dalam melakukan Deposit dan Penarikan agar Anda dapat melakukan transaksi dengan nyaman dan efektif. Pelajari metode pembayaran kami dibawah ini dan pilih cara transaksi yang cocok dengan Anda.
         </div>
         <div className="table-responsive">
-          <table className="tbl-faq">
+          <table className="tbl-bank">
             <thead>
               <tr>
-                <th rowSpan={2}>PILIHAN BANK</th>
-                <th rowSpan={2}>STATUS</th>
+                <th rowSpan={2}> BANK</th>
                 <th rowSpan={2}>TRANSAKSI</th>
-                <th rowSpan={2}>METODE PERBANKAN</th>
+                <th rowSpan={2}>METODE</th>
                 <th colSpan={2}>BATAS TRANSAKSI (IDR)</th>
               </tr>
               <tr>
-                <th>JUMLAH MINIMAL</th>
-                <th>JUMLAH MAKSIMAL</th>
+                <th>MINIMAL</th>
+                <th>MAKSIMAL</th>
               </tr>
             </thead>
             <tbody>
               <tr>
                 <td rowSpan={2}>BCA</td>
-                <td rowSpan={2}>Online</td>
                 <td>Deposit</td>
-                <td>Transfer ATM/Internet Banking</td>
+                <td>ATM/Internet Banking</td>
                 <td rowSpan={2}>50.000</td>
                 <td rowSpan={2}>99.000.000</td>
               </tr>
               <tr>
                 <td>Withdraw</td>
-                <td>Transfer BCA</td>
+                <td>BCA</td>
               </tr>
               <tr>
                 <td rowSpan={2}>BNI</td>
-                <td rowSpan={2}>Online</td>
                 <td>Deposit</td>
-                <td>Transfer ATM/Internet Banking</td>
+                <td>ATM/Internet Banking</td>
                 <td rowSpan={2}>50.000</td>
                 <td rowSpan={2}>99.000.000</td>
               </tr>
               <tr>
                 <td>Withdraw</td>
-                <td>Transfer BNI</td>
+                <td>BNI</td>
               </tr>
               <tr>
                 <td rowSpan={2}>MANDIRI</td>
-                <td rowSpan={2}>Online</td>
                 <td>Deposit</td>
-                <td>Transfer ATM/Internet Banking</td>
+                <td>ATM/Internet Banking</td>
                 <td rowSpan={2}>50.000</td>
                 <td rowSpan={2}>99.000.000</td>
               </tr>
               <tr>
                 <td>Withdraw</td>
-                <td>Transfer MANDIRI</td>
+                <td>MANDIRI</td>
               </tr>
               <tr>
                 <td rowSpan={2}>BRI</td>
-                <td rowSpan={2}>Online</td>
                 <td>Deposit</td>
-                <td>Transfer ATM/Internet Banking</td>
+                <td>ATM/Internet Banking</td>
                 <td rowSpan={2}>50.000</td>
                 <td rowSpan={2}>99.000.000</td>
               </tr>
               <tr>
                 <td>Withdraw</td>
-                <td>Transfer BANK</td>
+                <td>BANK</td>
               </tr>
             </tbody>
           </table>
