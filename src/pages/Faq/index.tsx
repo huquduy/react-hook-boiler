@@ -33,9 +33,9 @@ const Faq: React.FC<RouteComponentProps> = ({ history }) => {
           <table className="margin-left table table-bordered tbl-faq">
             <thead>
               <tr>
-                <th>Method of withdrawal</th>
-                <th>The Company Processing Time</th>
-                <th>Funds Received&nbsp; by You (Estimated)</th>
+                <th>Method WD</th>
+                <th>Processing Time</th>
+                <th>Funds Received</th>
               </tr>
             </thead>
             <tbody>

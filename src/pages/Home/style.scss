@@ -51,15 +51,17 @@
       display: inline-block;
       width: 50%;
       color: rgba(0, 0, 0, 0.87);
-      background-color: $primaryColor;
+      background: linear-gradient(to bottom, #c5a149 20%, #efd77f 80%, #c5a149 100%);
+      border:1px solid #b38005;
     }
     .register {
       height: 35px;
       line-height: 35px;
       display: inline-block;
       width: 50%;
-      color: #fff;
-      background-color:$successColor;
+      color: rgba(0, 0, 0, 0.87);
+      border:1px solid #b38005;
+      background: linear-gradient(to bottom, #c5a149 20%, #efd77f 80%, #c5a149 100%);
     }
   }
   .auth{
@@ -68,8 +70,9 @@
       line-height: 35px;
       display: inline-block;
       width: 33.33%;
-      color: #fff;
-      background-color: $blueColor;
+      color: rgba(0, 0, 0, 0.87);
+      border:1px solid #b38005;
+      background: linear-gradient(to bottom, #c5a149 20%, #efd77f 80%, #c5a149 100%);
     }
     .login {
       height: 35px;
@@ -77,15 +80,18 @@
       display: inline-block;
       width: 33.33%;
       color: rgba(0, 0, 0, 0.87);
-      background-color: $primaryColor;
+      border:1px solid #b38005;
+      background: linear-gradient(to bottom, #c5a149 20%, #efd77f 80%, #c5a149 100%);
     }
     .register {
       height: 35px;
       line-height: 35px;
       display: inline-block;
       width: 33.33%;
-      color: #fff;
-      background-color: $successColor;
+      color: rgba(0, 0, 0, 0.87);
+      border:1px solid #b38005;
+      // background: $successColor;
+      background: linear-gradient(to bottom, #c5a149 20%, #efd77f 80%, #c5a149 100%);
     }
   }
   .text-home{
@@ -93,6 +99,16 @@
     background: #0a0a0a;
     padding: 16px;
     border-top: 1px solid $primaryColor;
+    .MuiExpansionPanel-root{
+      background:none;
+      color:inherit;
+      .MuiExpansionPanelSummary-root{
+        padding:0;
+      }
+      .MuiExpansionPanelSummary-content{
+        margin: 0;
+      }
+    }
     h3{
       text-align:center;
       padding: 10px 0px;

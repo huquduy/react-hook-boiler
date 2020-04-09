@@ -1,5 +1,5 @@
 @import "../../colors";
-.term-page {
+.bank-page {
   color: $primaryColor;
   background: $backgroundBody;
   .container {
@@ -25,15 +25,17 @@
     overflow-x: scroll;
     margin-top:10px;
   }
-  table.tbl-faq {
+  table.tbl-bank {
     border-spacing: 0;
     width: 100%;
     border: 1px solid $gray-head !important;
     font-size: 1rem;
+    font-size: 0.7rem;
     tr {
       td {
         border: 1px solid $gray-head;
         padding: 5px;
+        font-size: 0.7rem;
       }
       th {
         border: 1px solid $gray-head;
