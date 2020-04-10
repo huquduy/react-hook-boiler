@@ -9,13 +9,13 @@ import Bottom from 'components/Bottom'
 import Header from 'components/Header'
 import TextInput from 'components/TextInput'
 import { AuthContext } from 'contexts/authContext'
+import useErrorDialog from 'hooks/error-dialog/error-dialog'
 import useLoading from 'hooks/loading'
-import useSnackbar from 'hooks/snackbar'
 import React, { useEffect, useState } from 'react'
 import { Field, withTypes } from 'react-final-form'
 import { RouteComponentProps, withRouter } from 'react-router-dom'
-import { composeValidators, required } from 'services/form'
-import {  post } from 'services/http'
+import { compareWithField, composeValidators, minLength, required } from 'services/form'
+import { put } from 'services/http'
 import './style.scss'
 
 interface IForm {
@@ -27,7 +27,7 @@ interface IForm {
   bankAccountName: string,
   bankAccountNumber: string,
   new_password: string,
-  password_confirmation:string,
+  password_confirmation: string,
   username: string
 
 }
@@ -44,25 +44,24 @@ const Profile: React.FC<RouteComponentProps> = ({ history }) => {
     phone: auth.phone,
     password: '',
     new_password: '',
-    password_confirmation:'',
+    password_confirmation: '',
     username: auth.username
 
   })
-
   const [isLoading, withLoading, Loading] = useLoading(false)
-  const [showSnackbar, Snackbar] = useSnackbar(false)
+  const [showDialog, ErrorDialogComponent] = useErrorDialog(false)
 
   const handleChangePassword = async ({ password, new_password, password_confirmation, }) => {
-    const { error } = await withLoading(() => post({
+    const { error } = await withLoading(() => put({
       body: {
         new_password, password, password_confirmation
       },
       path: 'user/password'
     })).catch((err) => err)
     if (error) {
-      return showSnackbar(error)
+      return showDialog(error.validate, 'Error')
     }
-    // history.push('/home')
+    showDialog('Updated Successfully', 'Success')
   }
   useEffect(() => { }, [])
   return (
@@ -154,7 +153,7 @@ const Profile: React.FC<RouteComponentProps> = ({ history }) => {
                   validate={composeValidators(required)}
                   name="password"
                   label="Old Password :"
-                  type="text"
+                  type="password"
                   disable={isLoading.toString()}
                   fullWidth={true}
                   component={TextInput}
@@ -162,7 +161,7 @@ const Profile: React.FC<RouteComponentProps> = ({ history }) => {
               </div>
               <div>
                 <Field
-                  validate={required}
+                  validate={composeValidators(required, minLength(5))}
                   name="new_password"
                   label="New Password :"
                   type="password"
@@ -173,7 +172,7 @@ const Profile: React.FC<RouteComponentProps> = ({ history }) => {
               </div>
               <div>
                 <Field
-                  validate={required}
+                  validate={compareWithField('new_password')}
                   name="password_confirmation"
                   label="Confirm Password :"
                   type="password"
@@ -190,7 +189,7 @@ const Profile: React.FC<RouteComponentProps> = ({ history }) => {
             </div>
           </form>}
       </Form>
-      <Snackbar />
+      <ErrorDialogComponent />
       <Bottom />
     </div>
 

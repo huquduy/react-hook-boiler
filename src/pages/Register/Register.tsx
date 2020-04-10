@@ -55,27 +55,23 @@ const Register: React.FC<RouteComponentProps> = ({ history }) => {
   const [showDialog, ErrorDialogComponent] = useErrorDialog(false)
 
   const handleRegister = async ({ username, password, phone, bankAccountName, bankAccountNumber, email, bankId, currency }) => {
-    const { token, error } = await withLoading(() => post({
+    const data = await withLoading(() => post({
       body: {
         // tslint:disable-next-line: object-literal-sort-keys
         password, username, phone, bankAccountName, bankAccountNumber, email, bankId: Number(bankId), currency
       },
       path: 'user/signUp'
     })).catch((err) => {
-      console.log(err);
-      return showDialog(err, 'Error')
-
+      let message ='';
+      if(err.length > 0){
+        message = `${err[0].parameter} ${err[0].message}`
+      }
+      return showDialog(message, 'Error')
     })
-    if (error) {
-      console.log(error);
-      // return showSnackbar(error)
-      return showDialog(error, 'Error')
-    } else {
-      setAuthStatus(token)
-      showDialog('Register Successfully', 'Success')
+    if (data) {
+      setAuthStatus(data.token)
       history.push('/home')
     }
-
   }
   const handeChangeCheckbox = () => {
 
@@ -191,7 +187,7 @@ const Register: React.FC<RouteComponentProps> = ({ history }) => {
               <div>
                 <Field
                   variant="outlined"
-                  validate={composeValidators(required, minLength(10))}
+                  validate={composeValidators(required, minLength(9))}
                   name="bankAccountNumber"
                   label="Bank account number"
                   fullWidth={true}

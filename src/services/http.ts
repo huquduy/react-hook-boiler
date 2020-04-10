@@ -63,6 +63,19 @@ export const post = async ({ path, body } : { path: string, body: any }) => {
   }
   return payload
 }
+export const put = async ({ path, body } : { path: string, body: any }) => {
+  const url = baseUrl + path
+  const response = await fetch(url, {
+    body: JSON.stringify(body),
+    headers: attachHeaders(),
+    method: 'PUT'
+  })
+  const payload = await response.json()
+  if (!response.ok) {
+    throw payload
+  }
+  return payload
+}
 
 export const apiRequest = async (
   url: string,

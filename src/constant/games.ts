@@ -5,7 +5,7 @@ const LOTTERY_TAB = 'Lottery'
 const POKER_TAB = 'Poker'
 const TANGKAS_TAB = 'Tangkas'
 const FISHHUNTER_TAB = 'Fishing'
-const COCK_FIGHT = 'Cockfight'
+const COCK_FIGHT = 'fight'
 
 export interface IProviderProps {
   idName?: string;
