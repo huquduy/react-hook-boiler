@@ -64,52 +64,52 @@ export const games = [
         items:[
           {
             icon: '',
-            route: '/slots/pg',
+            route: '/gs/groups/playtech/types/slot/codes/7bal',
             title: 'PT CASINO',
           },
           {
             icon: '',
-            route: '/slots/pg',
+            route: '/gs/groups/allbet/types/null/codes/null',
             title: 'ALLBET CASINO',
           },
           {
             icon: '',
-            route: '/slots/pg',
+            route: '/gs/groups/asiagaming/types/casino/codes/null',
             title: 'AG CASINO',
           },
           {
             icon: '',
-            route: '/slots/pg',
+            route: '/gs/groups/gameplay/types/casino/codes/casino',
             title: 'GP CASINO',
           },
           {
             icon: '',
-            route: '/slots/pg',
+            route: '/gs/groups/microgaming/types/LC/codes/null',
             title: 'MG CASINO',
           },
           {
             icon: '',
-            route: '/slots/pg',
+            route: '/gs/groups/idn/types/null/codes/null',
             title: 'BB CASINO',
           },
           {
             icon: '',
-            route: '/slots/pg',
+            route: '/gs/groups/bbin/types/slot/codes/live',
             title: 'IDN CASINO',
           },
           {
             icon: '',
-            route: '/slots/pg',
+            route: '/gs/groups/og/types/null/codes/null',
             title: 'OG CASINO',
           },
           {
             icon: '',
-            route: '/slots/pg',
+            route: '/tg/groups/SBO/types/SBO/codes/LIVECASINO',
             title: 'SBO CASINO',
           },
           {
             icon: '',
-            route: '/slots/pg',
+            route: '/tg/groups/TRG/types/ION/codes/BACCARAT',
             title: 'ION CASINO',
           }
         ]
@@ -121,17 +121,17 @@ export const games = [
         items:[
           {
             icon: '',
-            route: '/slots/pg',
+            route: '/gs/groups/wft/types/null/codes/null',
             title: 'WFT SPORTSBOOK',
           },
           {
             icon: '',
-            route: '/slots/pg',
+            route: '/gs/groups/bbin/types/slot/codes/ball',
             title: 'BBIN SPORTSBOOK',
           },
           {
             icon: '',
-            route: '/slots/pg',
+            route: '/tg/groups/SBO/types/SBO/codes/SPORTS',
             title: 'SBO SPORTSBOOK',
           }
         ]
@@ -143,41 +143,41 @@ export const games = [
         items:[
           {
             icon: '',
-            route: '/slots/pg',
+            route: '/gs/groups/playtech/types/slot/codes/cashfi',
             title: 'PLAYTECH',
           },
           {
             icon: '',
-            route: '/slots/pg',
+            route: '/gs/groups/gg/types/slot/codes/null',
             title: 'GG Gaming',
           },
           {
             icon: '',
-            route: '/slots/pg',
+            route: '/tg/groups/JOKER/types/SLOTS/codes/Fishing',
             title: 'JOKER',
           }
         ]
       },
       {
         icon: 'poker.png',
-        route: '/poker',
+        route: '/gs/groups/idnPoker/types/null/codes/null',
         title: 'Poker',
       },
       {
         icon: 'tangkas.png',
-        route: '/tangkas',
+        route: '/gs/groups/tangkas/types/null/codes/null',
         title: 'Tangkas',
       },
       {
         icon: 'lottery.png',
-        route: '/play/lottery',
+        route: '/gs/groups/toto4d/types/null/codes/null',
         title: 'Lottery',
 
       },
       {
-        icon: 'cockfight.png',
-        route: '/play/cookfight',
-        title: 'Cock Fight',
+        icon: 'fight.png',
+        route: '/gs/groups/cookfight/types/null/codes/null',
+        title: 'Fight',
       }
     ]
   },
