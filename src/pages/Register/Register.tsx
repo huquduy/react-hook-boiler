@@ -5,8 +5,7 @@ import {
   Typography,
 } from '@material-ui/core'
 import {
-  Add as AddIcon,
-  LockOpen as LockOpenIcon,
+  Add as AddIcon
 } from '@material-ui/icons'
 import Header from 'components/Header'
 import SelectInput, { IOption } from 'components/SelectInput'
@@ -14,7 +13,7 @@ import TextInput from 'components/TextInput'
 import { AuthContext } from 'contexts/authContext'
 import useErrorDialog from 'hooks/error-dialog/error-dialog'
 import useLoading from 'hooks/loading'
-import useSnackbar from 'hooks/snackbar'
+// import useSnackbar from 'hooks/snackbar'
 import { map } from 'ramda'
 import React, { useEffect, useState } from 'react'
 import { Field, withTypes } from 'react-final-form'
@@ -225,11 +224,11 @@ const Register: React.FC<RouteComponentProps> = ({ history }) => {
                   Register
                 </Button>
               </div>
-              <div>
+              {/* <div>
                 <Button variant="outlined" className="success" href="/login" startIcon={<LockOpenIcon />}>
                   Back to Login
                 </Button>
-              </div>
+              </div> */}
             </div>
           </form>}
       </Form>
