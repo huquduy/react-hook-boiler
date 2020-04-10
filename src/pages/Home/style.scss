@@ -108,11 +108,15 @@
       .MuiExpansionPanelSummary-content{
         margin: 0;
       }
+      .MuiIconButton-root{
+        color:$gray-head;
+      }
     }
     h3{
       text-align:center;
       padding: 10px 0px;
       margin: 0;
+      width: 100%;
     }
     p{
       text-align:left;
