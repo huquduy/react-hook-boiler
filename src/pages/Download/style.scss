@@ -1,0 +1,129 @@
+@import '../../colors';
+
+.download-page {
+  overflow: hidden;
+  .game-tabs {
+    color: $primaryColor;
+    background: #0a0a0a;
+    display: flex;
+    flex-direction: column;
+    .custom_tab{
+      border-bottom: 0;
+      padding-top: 16px;
+      .MuiTab-textColorInherit{
+        max-width: 65px;
+        max-height: 80px;
+        }
+      .MuiTab-textColorInherit.Mui-selected{
+        border: 1px solid $primaryColor;
+        border-radius: 4px;
+        max-width: 65px;
+        max-height: 80px;
+        background: rgba(239, 215, 127, 0.2);
+      }
+      .MuiTabs-indicator{
+        height: 0;
+      }
+    }
+    .game-type-icon {
+      width: 40px;
+    }
+  }
+  .marquee{
+    background: $backgroundBody;
+    color: $primaryColor;
+    .marquee-content{
+      padding-left: 50%;
+    }
+  }
+  .logo {
+    width: 100%;
+  }
+  .provider{
+    background: transparent;
+    color: $primaryColor;
+    box-shadow: none
+  }
+  .authentication {
+    .login {
+      height: 35px;
+      line-height: 35px;
+      display: inline-block;
+      width: 50%;
+      color: rgba(0, 0, 0, 0.87);
+      background: linear-gradient(to bottom, #c5a149 20%, #efd77f 80%, #c5a149 100%);
+      border:1px solid #b38005;
+    }
+    .register {
+      height: 35px;
+      line-height: 35px;
+      display: inline-block;
+      width: 50%;
+      color: rgba(0, 0, 0, 0.87);
+      border:1px solid #b38005;
+      background: linear-gradient(to bottom, #c5a149 20%, #efd77f 80%, #c5a149 100%);
+    }
+  }
+  .auth{
+    .transfer{
+      height: 35px;
+      line-height: 35px;
+      display: inline-block;
+      width: 33.33%;
+      color: rgba(0, 0, 0, 0.87);
+      border:1px solid #b38005;
+      background: linear-gradient(to bottom, #c5a149 20%, #efd77f 80%, #c5a149 100%);
+    }
+    .login {
+      height: 35px;
+      line-height: 35px;
+      display: inline-block;
+      width: 33.33%;
+      color: rgba(0, 0, 0, 0.87);
+      border:1px solid #b38005;
+      background: linear-gradient(to bottom, #c5a149 20%, #efd77f 80%, #c5a149 100%);
+    }
+    .register {
+      height: 35px;
+      line-height: 35px;
+      display: inline-block;
+      width: 33.33%;
+      color: rgba(0, 0, 0, 0.87);
+      border:1px solid #b38005;
+      // background: $successColor;
+      background: linear-gradient(to bottom, #c5a149 20%, #efd77f 80%, #c5a149 100%);
+    }
+  }
+  .text-home{
+    color:$gray-head;
+    background: #0a0a0a;
+    padding: 16px;
+    border-top: 1px solid $primaryColor;
+    .MuiExpansionPanel-root{
+      background:none;
+      color:inherit;
+      .MuiExpansionPanelSummary-root{
+        padding:0;
+      }
+      .MuiExpansionPanelSummary-content{
+        margin: 0;
+      }
+      .MuiIconButton-root{
+        color:$gray-head;
+      }
+    }
+    h3{
+      text-align:center;
+      padding: 10px 0px;
+      margin: 0;
+      width: 100%;
+    }
+    p{
+      text-align:left;
+    }
+    .color-gold{
+      color:$primaryColor;
+    }
+  }
+  
+}
