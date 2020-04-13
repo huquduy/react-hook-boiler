@@ -78,7 +78,7 @@ const Header: React.FC = () => {
           onClick={handleCloseDrawer}
           onKeyDown={handleCloseDrawer}
         />
-        <Sidebar />
+        <Sidebar handleCloseDrawer={handleCloseDrawer} />
       </Drawer>
       <AppBar className='header' position="fixed">
         <Toolbar>
@@ -99,7 +99,6 @@ const Header: React.FC = () => {
               <div className="block-hidden"> <AccountCircleIcon style={{ display: 'none' }} />&nbsp;</div>
             : <div className="content-header">
               <Button className='header-left' color="inherit" aria-controls="simple-menu" aria-haspopup="true" onClick={toggleProfileMenu}>
-
                 <Typography variant="caption" display="block" gutterBottom={true}>
                   {auth.username}
                 </Typography>
