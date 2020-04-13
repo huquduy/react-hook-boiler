@@ -60,7 +60,6 @@ const Header: React.FC = () => {
   }
 
   const handleCloseDrawer = () => {
-    console.log('handleCloseDrawer');
     setDrawerOpened(false);
   };
 

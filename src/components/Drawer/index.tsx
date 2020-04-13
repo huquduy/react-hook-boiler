@@ -7,12 +7,12 @@ import { ExpandLess, ExpandMore, } from '@material-ui/icons'
 import { imageSrc } from 'config'
 import { AuthContext } from 'contexts/authContext'
 import { map } from 'ramda'
-import React, { useState , ReactNode} from 'react'
+import React from 'react'
 import { Link } from 'react-router-dom'
 import { games, profile, report } from './constant'
 import './style.scss'
 
-const Sidebar: React.FC = (handleCloseDrawer) => {
+const Sidebar= (handleCloseDrawer: any) => {
   const { auth } = React.useContext(AuthContext)
   const isLogged = !auth.token.length
   const onClick = (e) => {
