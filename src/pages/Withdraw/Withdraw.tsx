@@ -9,6 +9,7 @@ import Bottom from 'components/Bottom'
 import Header from 'components/Header'
 import TextInput from 'components/TextInput'
 import { AuthContext } from 'contexts/authContext'
+import useErrorDialog from 'hooks/error-dialog/error-dialog'
 import useLoading from 'hooks/loading'
 import useSnackbar from 'hooks/snackbar'
 import Numeral from 'numeral'
@@ -16,14 +17,14 @@ import React, { useEffect, useState } from 'react'
 import { Field, withTypes } from 'react-final-form'
 import { RouteComponentProps, withRouter } from 'react-router-dom'
 import { composeValidators, mustBeNumber, required } from 'services/form'
-import { post } from 'services/http'
+import { put } from 'services/http'
 import './style.scss'
 
 interface IForm {
-  password: string,
+  confirmPassword: string,
   bankName: string,
   bankAccountName: string,
-  bankAccountNumber: string,
+  bankAccountNo: string,
   amount: string,
   calcAmount:string;
 
@@ -32,28 +33,32 @@ const { Form } = withTypes<IForm>()
 
 const Withdraw: React.FC<RouteComponentProps> = ({ history }) => {
   const { auth } = React.useContext(AuthContext)
+  const [showDialog, ErrorDialogComponent] = useErrorDialog(false)
   const [initialValues, setInitialValues] = useState<IForm>({
     amount: '',
     bankAccountName: auth.bankAccountName,
-    bankAccountNumber: auth.bankAccountNumber,
+    bankAccountNo: auth.bankAccountNumber,
     bankName: auth.bankName,
-    password: '',
+    confirmPassword: '',
     calcAmount: '',
   })
 
   const [isLoading, withLoading, Loading] = useLoading(false)
   const [showSnackbar, Snackbar] = useSnackbar(false)
 
-  const handleDeposit = async ({ amount, password }) => {
-    const { error } = await withLoading(() => post({
+  const handleDeposit = async ({ amount, confirmPassword, bankAccountName, bankAccountNo, bankName}) => {
+    const { error } = await withLoading(() => put({
       body: {
-        amount, password
+        amount, confirmPassword, bankAccountName, bankAccountNo, bankName
       },
       path: 'withdraws/execute'
     })).catch((err) => err)
     if (error) {
-      return showSnackbar(error)
+      // return showSnackbar(error)
+      return showDialog(error, 'Error')
     }
+    return showDialog('Withdraws Succesfully', 'Success')
+
   }
   const handleChange = (event: React.ChangeEvent<{ value: unknown }>) => {
     const { value } = event.target
@@ -104,7 +109,7 @@ const Withdraw: React.FC<RouteComponentProps> = ({ history }) => {
               </div>
               <div>
                 <Field
-                  name="bankAccountNumber"
+                  name="bankAccountNo"
                   label="Bank Account No :"
                   type="text"
                   disabled={true}
@@ -127,7 +132,7 @@ const Withdraw: React.FC<RouteComponentProps> = ({ history }) => {
               </div>
               <div>
                 <Field
-                  validate={composeValidators(required, mustBeNumber)}
+                  validate={composeValidators(required)}
                   name="calcAmount"
                   label="Transfer Bank :"
                   type="text"
@@ -139,7 +144,7 @@ const Withdraw: React.FC<RouteComponentProps> = ({ history }) => {
               <div>
                 <Field
                   validate={required}
-                  name="password"
+                  name="confirmPassword"
                   label="Confirm Password :"
                   type="password"
                   disable={isLoading.toString()}
@@ -155,7 +160,8 @@ const Withdraw: React.FC<RouteComponentProps> = ({ history }) => {
             </div>
           </form>}
       </Form>
-      <Snackbar />
+      {/* <Snackbar /> */}
+      <ErrorDialogComponent />
       <Bottom />
     </div>
 

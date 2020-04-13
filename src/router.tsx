@@ -31,6 +31,7 @@ const Transfer = lazy(()=> import('./pages/Transfer'))
 const DepositReport = lazy(()=> import('./pages/Report/Deposit'))
 const WithdrawReport = lazy(()=> import('./pages/Report/Withdraw'))
 const TransferReport = lazy(()=> import('./pages/Report/Transfer'))
+const Download = lazy(()=> import('./pages/Download/Download'))
 
 const RequiredLoginRooute = ({ component: Component, ...rest }) => {
   const { pathname } = useLocation()
@@ -73,6 +74,7 @@ const Router = () => {
           <RequiredLoginRooute path="/report/withdraw" component={WithdrawReport} />
           <RequiredLoginRooute path="/report/transfer" component={TransferReport} />
           <RequiredLoginRooute path="/profile" component={Profile} />
+          <Route path="/mobile/0" component={Download} />
         </Switch>
       </Suspense>
     </BrowserRouter>
