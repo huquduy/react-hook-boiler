@@ -2,6 +2,7 @@ import { ExpansionPanel, ExpansionPanelDetails, ExpansionPanelSummary, Grid, Pap
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import Bottom from 'components/Bottom'
 import Header from 'components/Header'
+import Link from 'components/Link'
 import TabPanel from 'components/TabPanel'
 import { imageSrc } from 'config'
 import GAMES, { getGameType, IProviderProps, SLOT_TAB } from 'constant/games'
@@ -10,7 +11,7 @@ import useLoading from 'hooks/loading'
 import { map } from 'ramda'
 import React, { useEffect, useMemo, useState } from 'react'
 import MarqueeText from 'react-marquee-text-component'
-import { Link, RouteComponentProps, withRouter } from 'react-router-dom'
+import { RouteComponentProps, withRouter } from 'react-router-dom'
 import Carousel from 'react-slick'
 import { get } from 'services/http'
 import { carousels } from './constant'
@@ -67,21 +68,22 @@ const Home: React.FC<RouteComponentProps> = ({ history }) => {
             <div key={item}>
               <img className='logo' alt='hokibet188' src={`${imageSrc}/home-carousel/${item}`} />
             </div>
-            , carousels)
+          , carousels)
         }
       </Carousel>
 
       {/* Authentication functions */}
       {
-        isLogged
-          ? <div className='authentication'>
-            <Link className="register" to="/register">Register</Link>
-            <Link className="login" to="/login">Login</Link>
+        isLogged ?
+          <div className='authentication'>
+            <Link className="register" href="/register">Register</Link>
+            <Link className="login" href="/login">Login</Link>
           </div>
-          : <div className='auth'>
-            <Link className="register" to="/deposit">Deposit</Link>
-            <Link className="transfer" to="/transfer">Transfer</Link>
-            <Link className="login" to="/withdraw">Withdraw</Link>
+          :
+          <div className='auth'>
+            <Link className="register" href="/deposit">Deposit</Link>
+            <Link className="transfer" href="/transfer">Transfer</Link>
+            <Link className="login" href="/withdraw">Withdraw</Link>
           </div>
       }
       <MarqueeText className="marquee" text={runningText} duration={30} repeat={2} />
@@ -97,12 +99,14 @@ const Home: React.FC<RouteComponentProps> = ({ history }) => {
         >
           {map(({ idName }: { idName: string }) => <Tab
             key={idName}
-            label={<div>
-              <img className='game-type-icon' alt='hokibet188' src={`${imageSrc}icons/${idName.toLocaleLowerCase()}.png`} />
-              <Typography variant="caption" display="block" gutterBottom={true}>
-                {idName}
-              </Typography>
-            </div>}
+            label={
+              <div>
+                <img className='game-type-icon' alt='hokibet188' src={`${imageSrc}icons/${idName.toLocaleLowerCase()}.png`} />
+                <Typography variant="caption" display="block" gutterBottom={true}>
+                  {idName}
+                </Typography>
+              </div>
+            }
             value={idName}
           />, GAMES)}
         </Tabs>
@@ -110,29 +114,30 @@ const Home: React.FC<RouteComponentProps> = ({ history }) => {
           <Grid container={true} spacing={1}>
             {map(({ image, idName, route, target }: IProviderProps) =>
               <Grid item={true} xs={4} sm={4} key={idName}>
-                <a href={route} target={target}>
+                <Link href={route} target={target}>
                   <Paper className='provider'>
                     <img className='logo' alt='hokibet188' src={`${imageSrc}providers/${image}`} />
                     <Typography variant="caption" display="block" gutterBottom={true}>
                       {idName}
                     </Typography>
                   </Paper>
-                </a>
+                </Link>
               </Grid>
-              , providers)}
+            , providers)}
           </Grid>
         </TabPanel>
       </div>
       {/* Text intro */}
       <div className="text-home">
-      {map(({ id, title, content }) => <ExpansionPanel key={id} expanded={expanded === id} onChange={handleChangeExpand(id)}>
-          <ExpansionPanelSummary  expandIcon={<ExpandMoreIcon />} aria-controls={id} id={id} key={id}>
-            <h3>{title}</h3>
-          </ExpansionPanelSummary>
-          <ExpansionPanelDetails key={id}>
-          <div dangerouslySetInnerHTML={{ __html: content }} />
-          </ExpansionPanelDetails> 
-        </ExpansionPanel>, intro)}
+        {map(({ id, title, content }) => 
+          <ExpansionPanel key={id} expanded={expanded === id} onChange={handleChangeExpand(id)}>
+            <ExpansionPanelSummary expandIcon={<ExpandMoreIcon />} aria-controls={id} id={id} key={id}>
+              <h3>{title}</h3>
+            </ExpansionPanelSummary>
+            <ExpansionPanelDetails key={id}>
+              <div dangerouslySetInnerHTML={{ __html: content }} />
+            </ExpansionPanelDetails> 
+          </ExpansionPanel>, intro)}
       </div>
       <Bottom />
     </div>
