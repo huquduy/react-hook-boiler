@@ -7,12 +7,12 @@ import { ExpandLess, ExpandMore, } from '@material-ui/icons'
 import { imageSrc } from 'config'
 import { AuthContext } from 'contexts/authContext'
 import { map } from 'ramda'
-import React from 'react'
+import React, { useState , ReactNode} from 'react'
 import { Link } from 'react-router-dom'
-import { games, profile, report } from './constant';
+import { games, profile, report } from './constant'
 import './style.scss'
 
-const Sidebar: React.FC = () => {
+const Sidebar: React.FC = (handleCloseDrawer) => {
   const { auth } = React.useContext(AuthContext)
   const isLogged = !auth.token.length
   const onClick = (e) => {
@@ -95,7 +95,7 @@ const Sidebar: React.FC = () => {
   return (
     <div className='drawer'>
       <List>
-        <ListItem button={true} key="home">
+        <ListItem button={true} key="home" onClick={handleCloseDrawer}>
           <Link to='/home' className='item'>
             <span className='item-text'><img alt='hokibet188' className="icon-menu" src={`${imageSrc}/icons/home.png`} />Home</span>
           </Link>
