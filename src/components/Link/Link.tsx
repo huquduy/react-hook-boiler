@@ -15,13 +15,13 @@ const HokiLink = ({ href, target, children }: ILink & React.HTMLAttributes<HTMLD
   const { auth } = React.useContext(AuthContext)
   if (target && auth.isLogged) {
     return (
-      <MuiLink href={href} target={target}>
+      <MuiLink href={href} target={target} style={{ color: '#efd77f' }}>
         {children}
       </MuiLink>
     )
   }
   return (
-    <Link to={href}>
+    <Link to={href} style={{ color: '#efd77f' }}>
       {children}
     </Link>
   )
