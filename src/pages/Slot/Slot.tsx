@@ -1,14 +1,15 @@
-import { Chip, Grid, IconButton, InputAdornment, Link as LinkMui, Paper, Tab, Tabs, TextField, Typography } from '@material-ui/core'
+import { Chip, Grid, IconButton, InputAdornment, Paper, Tab, Tabs, TextField, Typography } from '@material-ui/core'
 import SearchIcon from '@material-ui/icons/Search';
 import Bottom from 'components/Bottom'
 import Header from 'components/Header'
+import Link from 'components/Link'
 import TabPanel from 'components/TabPanel'
 import { imageSrc } from 'config'
 import { getGameType, IProviderProps, SLOT_TAB } from 'constant/games'
 import { filter, map, reduce } from 'ramda'
 import React, { useCallback, useEffect, useMemo, useState } from 'react'
 import ReactImageFallback from 'react-image-fallback'
-import { Link, useParams, withRouter } from 'react-router-dom'
+import { useParams, withRouter } from 'react-router-dom'
 import gamesByProvider, { IGames } from './constant'
 import './style.scss'
 
@@ -86,12 +87,12 @@ const Home: React.FC = () => {
           {map(({ idName, image, route, target }: IProviderProps) => <Tab
             key={idName}
             label={
-              <LinkMui href={route} target={target}>
+              <Link href={route} target={target}>
                 <img className='game-type-icon' alt='hokibet188' src={`${imageSrc}providers/${image}`} />
                 <Typography variant="caption" display="block" gutterBottom={true}>
                   {idName}
                 </Typography>
-              </LinkMui>
+              </Link>
               }
             value={route}
           />, providers )}
@@ -138,7 +139,7 @@ const Home: React.FC = () => {
           <Grid container={true} spacing={1}>
             {map(({ code, name, thumbnail, linkGame }: IGames) => 
               <Grid item={true} xs={4} sm={4} key={code}>
-                <Link to={genarateLoginPage(providerId, code)} target="_blank">
+                <Link href={genarateLoginPage(providerId, code)} target="_blank">
                   <Paper className={`provider ${providerId}`}>
                     <ReactImageFallback
                       fallbackImage='/images/404.jpg'
