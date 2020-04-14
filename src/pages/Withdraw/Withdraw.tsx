@@ -11,7 +11,7 @@ import TextInput from 'components/TextInput'
 import { AuthContext } from 'contexts/authContext'
 import useErrorDialog from 'hooks/error-dialog/error-dialog'
 import useLoading from 'hooks/loading'
-import useSnackbar from 'hooks/snackbar'
+// import useSnackbar from 'hooks/snackbar'
 import Numeral from 'numeral'
 import React, { useEffect, useState } from 'react'
 import { Field, withTypes } from 'react-final-form'
@@ -44,7 +44,7 @@ const Withdraw: React.FC<RouteComponentProps> = ({ history }) => {
   })
 
   const [isLoading, withLoading, Loading] = useLoading(false)
-  const [showSnackbar, Snackbar] = useSnackbar(false)
+  // const [showSnackbar, Snackbar] = useSnackbar(false)
 
   const handleDeposit = async ({ amount, confirmPassword, bankAccountName, bankAccountNo, bankName}) => {
     const { error } = await withLoading(() => put({
