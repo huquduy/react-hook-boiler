@@ -87,7 +87,7 @@ const Home: React.FC = () => {
           {map(({ idName, image, route, target }: IProviderProps) => <Tab
             key={idName}
             label={
-              <Link href={route} target={target}>
+              <Link href={route} target={target} className="MuiTypography-colorPrimary">
                 <img className='game-type-icon' alt='hokibet188' src={`${imageSrc}providers/${image}`} />
                 <Typography variant="caption" display="block" gutterBottom={true}>
                   {idName}
