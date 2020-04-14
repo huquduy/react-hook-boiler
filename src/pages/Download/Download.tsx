@@ -1,5 +1,4 @@
-import { ExpansionPanel, ExpansionPanelDetails, ExpansionPanelSummary, Grid, Paper, Tab, Tabs, Typography } from '@material-ui/core'
-import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
+import { Grid, Paper, Tab, Tabs, Typography } from '@material-ui/core'
 import Bottom from 'components/Bottom'
 import Header from 'components/Header'
 import TabPanel from 'components/TabPanel'
@@ -8,8 +7,8 @@ import { AuthContext } from 'contexts/authContext'
 import useLoading from 'hooks/loading'
 import { map } from 'ramda'
 import React, { useEffect, useMemo, useState } from 'react'
-import { Link, RouteComponentProps, withRouter } from 'react-router-dom'
-import { get } from 'services/http'
+import { RouteComponentProps, withRouter } from 'react-router-dom'
+// import { get } from 'services/http'
 import DOWNLOADTYPES, { getGameType, IProviderProps, PLAYTECH } from './constant'
 import './style.scss'
 

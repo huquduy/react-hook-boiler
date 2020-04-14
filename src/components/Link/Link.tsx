@@ -8,8 +8,7 @@ import { Link } from 'react-router-dom'
 interface ILink {
   href: string;
   target?: string;
-  children: React.ReactNode,
-  className?: string;
+  children: React.ReactNode;
 }
 
 const HokiLink = ({ href, target, children, className }: ILink & React.HTMLAttributes<HTMLDivElement>) => {
