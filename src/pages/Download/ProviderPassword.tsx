@@ -9,18 +9,19 @@ import useErrorDialog from 'hooks/error-dialog/error-dialog'
 import useLoading from 'hooks/loading'
 import React, { useState } from 'react'
 import { Field, withTypes } from 'react-final-form'
-import { post } from 'services/http'
 import { compareWithField, required } from 'services/form'
+import { post } from 'services/http'
 
 interface IForm {
 	password: string,
 	confirmPassword: string,
 	username: string,
-	inforText: string,
+	infoText: string,
+	showForm: boolean,
 }
 const { Form } = withTypes<IForm>()
 
-const ProviderPassword = ({ url, username, inforText }) => {
+const ProviderPassword = ({ url, username, infoText, showForm }) => {
 	const { auth } = React.useContext(AuthContext)
 	const [isLoading, withLoading] = useLoading(false)
 	const [showDialog, ErrorDialogComponent] = useErrorDialog(false)
@@ -28,7 +29,8 @@ const ProviderPassword = ({ url, username, inforText }) => {
 		confirmPassword: '',
 		password: '',
 		username: username,
-		inforText: inforText
+		infoText: infoText,
+		showForm: showForm,
 	})
 	const handleUpdatePassword = async ({ password }) => {
 		const { error } = await withLoading(() => post({
@@ -44,7 +46,8 @@ const ProviderPassword = ({ url, username, inforText }) => {
 	}
 
 	return (
-		<div className="form-password">
+		<div>
+				{showForm ? <div className="form-password">
 			<Form
 				initialValues={initialValues}
 				onSubmit={handleUpdatePassword}
@@ -52,7 +55,7 @@ const ProviderPassword = ({ url, username, inforText }) => {
 				{({ handleSubmit }) =>
 					<form onSubmit={handleSubmit}>
 						<div className='container'>
-							<div>
+							{username ? <div>
 								<Field
 									name="username"
 									label="Username :"
@@ -61,8 +64,8 @@ const ProviderPassword = ({ url, username, inforText }) => {
 									component={TextInput}
 									disabled={true}
 								/>
-							</div>
-							<div>
+							</div>: null}
+							{ infoText ? <div>
 								<Field
 									validate={required}
 									name="password"
@@ -71,13 +74,14 @@ const ProviderPassword = ({ url, username, inforText }) => {
 									fullWidth={true}
 									component={TextInput}
 								/>
-							</div>
-							<div>
+							</div>: null
+							}
+								{ infoText ? <div>
 								<Typography color="primary" variant="caption" display="block" gutterBottom={true}>
-									{inforText}
+									{infoText}
 								</Typography>
-							</div>
-							<div>
+							</div> : null}
+							{infoText ? <div>
 								<Field
 									validate={compareWithField('password')}
 									name="confirmPassword"
@@ -86,17 +90,19 @@ const ProviderPassword = ({ url, username, inforText }) => {
 									fullWidth={true}
 									component={TextInput}
 								/>
-							</div>
-							<div>
+							</div> :null}
+							{ infoText ? <div>
 								<Button variant="outlined" color="primary" type="submit" startIcon={<SendIcon />}>
 									Submit
                 </Button>
-							</div>
+							</div>: null}
 						</div>
 					</form>}
 			</Form>
 			<ErrorDialogComponent />
+		</div>: null}
 		</div>
+	
 	)
 }
 

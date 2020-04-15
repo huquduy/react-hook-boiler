@@ -23,6 +23,7 @@ export interface IGameTypeProps {
 	url?: string;
 	username?: string;
 	inforText?: string;
+	showForm?: boolean;
 }
 
 const DOWNLOADTYPES = [
@@ -54,8 +55,9 @@ const DOWNLOADTYPES = [
 		],
 		title: 'PLAYTECH',
 		url: 'playtech/password/update',
-		inforText: 'Pleasse choose password for PlayTech',
-		username: 'tester@HOKI'
+		infoText: 'Pleasse choose password for PlayTech',
+		username: 'tester@HOKI',
+		showForm: true
 	},
 	{
 		idName: ALLBET,
@@ -79,8 +81,9 @@ const DOWNLOADTYPES = [
 		],
 		title: 'ALLBET',
 		url: 'allbet/password/update',
-		inforText: 'Pleasse choose password for AllBet',
-		username: 'testervh1'
+		infoText: 'Pleasse choose password for AllBet',
+		username: 'testervh1',
+		showForm: true
 	},
 	{
 		idName: GAMEPLAY,
@@ -111,8 +114,9 @@ const DOWNLOADTYPES = [
 		],
 		title: 'MICROGAME',
 		url: 'microgaming/password/update',
-		inforText: 'Pleasse choose password for Microgaming',
-		username: 'hoki_tester'
+		infoText: 'Pleasse choose password for Microgaming',
+		username: 'hoki_tester',
+		showForm: true
 	},
 	{
 		idName: FISH,
@@ -129,8 +133,9 @@ const DOWNLOADTYPES = [
 		],
 		title: 'FISH',
 		url: 'fishhunter/password/update',
-		inforText: 'Pleasse choose password for Fish hunter',
-		username: 'tester@TCGSA'
+		infoText: 'Pleasse choose password for Fish hunter',
+		username: 'tester@TCGSA',
+		showForm: true
 	},
 	{
 		idName: IDN,
@@ -155,8 +160,9 @@ const DOWNLOADTYPES = [
 		],
 		title: 'IDN',
 		url: 'idn/password/update',
-		inforText: 'Pleasse choose password for IDN',
-		username: 'BPAER7p'
+		infoText: 'Pleasse choose password for IDN',
+		username: 'BPAER7p',
+		showForm: true
 	},
 	{
 		idName: FIGHT,
@@ -178,13 +184,14 @@ const DOWNLOADTYPES = [
 				version: 'IOS version',
 			}
 		],
-		title: 'FIGHT'
+		title: 'FIGHT',
+		showForm: false
 	},
 	{
 		idName: SSLOT,
 		providers: [
 			{
-				idName: '',
+				idName: '13',
 				image: 'mobile_android.png',
 				route: 'https://www.1sgames88.com/android/download.htm',
 				target: '_blank',
@@ -192,7 +199,7 @@ const DOWNLOADTYPES = [
 				version: 'Android version',
 			},
 			{
-				idName: '',
+				idName: '14',
 				image: 'mobile_android.png',
 				route: 'itms-services://?action=download-manifest&amp;url=https://www.1sgames88.com/mobileservice/app/ios/plist',
 				target: '_blank',
@@ -201,7 +208,8 @@ const DOWNLOADTYPES = [
 			}
 		],
 		title: 'SSLOT',
-		username: 'tester@hokiid'
+		username: 'tester@hokiid',
+		showForm: true
 	},
 ]
 
