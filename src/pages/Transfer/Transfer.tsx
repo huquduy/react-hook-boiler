@@ -14,8 +14,7 @@ import TextInput from 'components/TextInput'
 import { AuthContext } from 'contexts/authContext'
 import useErrorDialog from 'hooks/error-dialog/error-dialog'
 import useLoading from 'hooks/loading'
-import useSnackbar from 'hooks/snackbar'
-import { filter, find, map, pipe, propEq } from 'ramda'
+import { map } from 'ramda'
 import React, { useEffect, useState } from 'react'
 import { Field, withTypes } from 'react-final-form'
 import { composeValidators, mustBeNumber, required } from 'services/form'
@@ -43,8 +42,8 @@ export interface IBonus {
 
 const { Form } = withTypes<IForm>()
 
-const titleWithCredit = ({ title, value }) => ({
-  title: `${title} - (${value} IDR)`,
+const titleWithCredit = ({ title, data }) => ({
+  title: `${title} - (${data} IDR)`,
   value: title
 })
 
@@ -57,8 +56,6 @@ const Transfer: React.FC = () => {
     origin: '',
     target: '',
   })
-  const [originOptions, setOriginOptions] = useState<IOption[] | []>([])
-  const [targetOptions, setTargetOptions] = useState<IOption[] | []>([])
   const [credits, setCredits] = useState<IOption[] | []>([])
   const [showDialog, ErrorDialogComponent] = useErrorDialog(false)
   const [bonus, setBonus] = useState<IBonus>({
@@ -69,9 +66,17 @@ const Transfer: React.FC = () => {
     status: 1,
     title: '',
   })
-  const [checkShow, setCheckShow] = useState(false)
+  const [isAllowedBonus, setIsAllowedBonus] = useState(false)
   const [isLoading, withLoading, Loading] = useLoading(false)
-  const [, Snackbar] = useSnackbar(false)
+
+  const fetchCredits = async () => {
+    const [{ data: creditResps }] = await withLoading(() => Promise.all([
+      withLoading(() => get({ path: 'user/credit' }))
+    ]))
+    const creditsCorrected = map(titleWithCredit)(creditResps)
+    setCredits(creditsCorrected)
+    return creditsCorrected
+  }
 
   const handleTransfer = async ({ amount, loyaltyBonus, origin, target }) => {
     const { error } = await withLoading(() => post({
@@ -83,52 +88,18 @@ const Transfer: React.FC = () => {
     if (error) {
       return showDialog(error, 'Error')
     }
-    const { data: creditResps } = await withLoading(() => get({ path: 'user/credit' }))
-    const correctCreditProps = ({ title, data }): IOption => ({
-      title,
-      value: data
-    })
-    const creditsCorrected = map(correctCreditProps)(creditResps)
-    setCredits(creditsCorrected)
-    const optionsCorrected = map(titleWithCredit)(creditsCorrected)
-    setOriginOptions(optionsCorrected)
-    setTargetOptions(optionsCorrected)
-    // const [{ title: origin }, { title: target }] = creditsCorrected
-    // const { data: credit } = find(propEq('title', origin))(creditResps);
-    // setInitialValues({
-    //   ...initialValues,
-    //   credit
-    // })
+    await fetchCredits()
     return showDialog('Transfer Successfully', 'Success')
   }
 
-  const handleChangeTransferFrom = (event: React.ChangeEvent<{ value: unknown }>) => {
-    // const { value } = event.target
-    // const { data: credit } = find(propEq('label', value))(credits);
-    // setInitialValues({
-    //   ...initialValues,
-    //   credit,
-    //   origin: String(value)
-    // })
-  }
-
-  const handleChangeTransferTo = (event: React.ChangeEvent<{ value: unknown }>) => {
-    const target = String(event.target.value)
-    fetchBonusProvider(target)
-    if (target === MAIN_WALLET) {
-      const notMainWallet = ({ title }: IOption) => title !== MAIN_WALLET
-      const suppliersFiltered = pipe(
-        filter<IOption, 'array'>(notMainWallet),
-        map(titleWithCredit)
-      )(credits)
-      return setOriginOptions(suppliersFiltered)
+  const handleChangeProvider = change => (event: React.ChangeEvent<{ value: unknown }>) => {
+    const selectedValue = String(event.target.value)
+    fetchBonusProvider(origin)
+    const [{ value: mainWallet }, { value: secondProvider }] = credits
+    if (selectedValue === mainWallet) {
+      return change(secondProvider)
     }
-    const isMainWallet = ({ title }: IOption) => title === MAIN_WALLET
-    const mainWalletFiltered = pipe(
-      filter<IOption, 'array'>(isMainWallet),
-      map(titleWithCredit)
-    )(credits)
-    return setOriginOptions(mainWalletFiltered)
+    return change(mainWallet)
   }
 
   const handeChangeCheckbox = (event: React.ChangeEvent<{ checked: boolean }>) => {
@@ -138,11 +109,12 @@ const Transfer: React.FC = () => {
       loyaltyBonus: value
     })
   }
+
   const fetchBonusProvider = async (provider: string) => {
     const ignoredBonuses = ['4D lottery', 'Poker IDN']
-    const isAllowedBonus = !ignoredBonuses.includes(provider)
-    setCheckShow(isAllowedBonus)
-    if (isAllowedBonus) {
+    const allowedBonus = !ignoredBonuses.includes(provider)
+    setIsAllowedBonus(allowedBonus)
+    if (allowedBonus) {
       const bonusResps = await withLoading(() => get({
         body: { provider },
         path: 'transfer/bonus/loyalty/'
@@ -150,27 +122,17 @@ const Transfer: React.FC = () => {
       }))
         .catch((err) => err)
       if (bonusResps.error) {
-        setCheckShow(false)
+        setIsAllowedBonus(false)
         return;
       }
       setBonus({ ...bonusResps, ...{ fullText: (`${bonusResps.title} Bonus ${bonusResps.percentage * 100} %`).toUpperCase() } })
     }
   }
+
   useEffect(() => {
-    const fetchData = async () => {
-      const correctCreditProps = ({ title, data }): IOption => ({
-        title,
-        value: data
-      })
-      const [{ data: creditResps }] = await withLoading(() => Promise.all([
-        withLoading(() => get({ path: 'user/credit' }))
-      ]))
-      const creditsCorrected = map(correctCreditProps)(creditResps)
-      setCredits(creditsCorrected)
-      const optionsCorrected = map(titleWithCredit)(creditsCorrected)
-      setOriginOptions(optionsCorrected)
-      setTargetOptions(optionsCorrected)
-      const [{ title: origin }, { title: target }] = creditsCorrected
+    const fetchInitial = async () => {
+      const creditsCorrected = await fetchCredits()
+      const [{ value: origin }, { value: target }] = creditsCorrected
       setInitialValues({
         ...initialValues,
         origin,
@@ -180,7 +142,7 @@ const Transfer: React.FC = () => {
     }
 
     if (auth.username) {
-      fetchData()
+      fetchInitial()
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
@@ -196,63 +158,67 @@ const Transfer: React.FC = () => {
         initialValues={initialValues}
         onSubmit={handleTransfer}
       >
-        {({ handleSubmit }) =>
-          <form onSubmit={handleSubmit}>
-            <div className='container'>
-              <div>
-                <Field
-                  name="origin"
-                  label="Transfer From"
-                  fullWidth={true}
-                  options={originOptions}
-                  handleChange={handleChangeTransferFrom}
-                  variant="outlined"
-                  component={SelectInput}
-                />
+        {({ handleSubmit, form }) => {
+          const changeOrigin = value => form.change('origin', value)
+          const changeTarget = value => form.change('target', value)
+          return (
+            <form onSubmit={handleSubmit}>
+              <div className='container'>
+                <div>
+                  <Field
+                    name="origin"
+                    label="Transfer From"
+                    fullWidth={true}
+                    options={credits}
+                    handleChange={handleChangeProvider(changeTarget)}
+                    variant="outlined"
+                    component={SelectInput}
+                  />
+                </div>
+                <div>
+                  <Field
+                    name="target"
+                    label="Transfer To"
+                    fullWidth={true}
+                    options={credits}
+                    handleChange={handleChangeProvider(changeOrigin)}
+                    variant="outlined"
+                    component={SelectInput}
+                  />
+                </div>
+                <div>
+                  <Field
+                    validate={composeValidators(required, mustBeNumber)}
+                    name="amount"
+                    label="Amount"
+                    type="text"
+                    disable={isLoading.toString()}
+                    fullWidth={true}
+                    component={TextInput}
+                  />
+                </div>
+                {isAllowedBonus ?
+                  <div>
+                    <FormControlLabel
+                      value="loyaltyBonus"
+                      control={<Checkbox color="primary" onChange={handeChangeCheckbox} />}
+                      label={bonus.fullText}
+                      name="loyaltyBonus"
+                    />
+                    <Typography variant="caption" display="block" gutterBottom={true}>
+                      * I want to claim bonus with term and conditions. Rollover {bonus.rollingTime} Times
+                    </Typography>
+                  </div> : null}
+                <div>
+                  <Button variant="outlined" color="primary" type="submit" startIcon={<SendIcon />}>
+                    Submit
+                  </Button>
+                </div>
               </div>
-              <div>
-                <Field
-                  name="target"
-                  label="Transfer To"
-                  fullWidth={true}
-                  options={targetOptions}
-                  handleChange={handleChangeTransferTo}
-                  variant="outlined"
-                  component={SelectInput}
-                />
-              </div>
-              <div>
-                <Field
-                  validate={composeValidators(required, mustBeNumber)}
-                  name="amount"
-                  label="Amount"
-                  type="text"
-                  disable={isLoading.toString()}
-                  fullWidth={true}
-                  component={TextInput}
-                />
-              </div>
-              {checkShow ? <div>
-                <FormControlLabel
-                  value="loyaltyBonus"
-                  control={<Checkbox color="primary" onChange={handeChangeCheckbox} />}
-                  label={bonus.fullText}
-                  name="loyaltyBonus"
-                />
-                <Typography variant="caption" display="block" gutterBottom={true}>
-                  * I want to claim bonus with term and conditions. Rollover {bonus.rollingTime} Times
-                </Typography>
-              </div> : null}
-              <div>
-                <Button variant="outlined" color="primary" type="submit" startIcon={<SendIcon />}>
-                  Submit
-                </Button>
-              </div>
-            </div>
-          </form>}
+            </form>)
+        }}
       </Form>
       <ErrorDialogComponent />
-      <Snackbar />
       <Bottom />
     </div>
 
