@@ -4,7 +4,6 @@
   overflow: hidden;
   .game-tabs {
     color: $primaryColor;
-    // background: #0a0a0a;
     display: flex;
     flex-direction: column;
     .custom_tab {
@@ -33,6 +32,15 @@
   .logo {
     width: 100%;
   }
+  .custom-block{
+    border: 1px solid #efd77f;
+    border-radius: 4px;
+    margin-right: 5px;
+    max-width: 32.0%;
+    &:last-child{
+      margin-right: 0px;
+    }
+  }
   .provider {
     background: transparent;
     color: $primaryColor;
@@ -41,8 +49,8 @@
   .btn-download {
     color: #efd77f;
     border: 1px solid rgba(239, 215, 127, 0.5);
-    padding: 5px 15px;
-    font-size: 1.0625rem;
+    padding: 5px 7px;
+    font-size: 1.0rem;
     min-width: 64px;
     box-sizing: border-box;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,

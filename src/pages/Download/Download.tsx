@@ -50,7 +50,7 @@ const Download: React.FC<RouteComponentProps> = ({ history }) => {
 				<TabPanel value={activeTab}>
 					<Grid container={true} spacing={1}>
 						{map(({ image, idName, route, target, title, version }: IProviderProps) =>
-							<Grid item={true} xs={4} sm={4} key={idName}>
+							<Grid item={true} xs={4} sm={4} key={idName} className="custom-block">
 								<Paper className='provider'>
 									<Typography variant="caption" display="block" gutterBottom={true}>
 										{title}
@@ -68,7 +68,7 @@ const Download: React.FC<RouteComponentProps> = ({ history }) => {
 					</Grid>
 					<Paper>
 						{map((item: any) =>
-							<div >{item.idName === activeTab ? <ProviderPassword url={item.url} username={item.username} inforText={item.inforText} /> : null}
+							<div >{item.idName === activeTab ? <ProviderPassword url={item.url} username={item.username} infoText={item.infoText} showForm={item.showForm} /> : null}
 							</div>, DOWNLOADTYPES)}
 					</Paper>
 				</TabPanel>
