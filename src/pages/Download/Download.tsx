@@ -1,65 +1,22 @@
-import { Button, Grid, Paper, Tab, Tabs, Typography } from '@material-ui/core'
-import {
-	Send as SendIcon,
-} from '@material-ui/icons'
+import { Grid, Paper, Tab, Tabs, Typography } from '@material-ui/core'
 import Bottom from 'components/Bottom'
 import Header from 'components/Header'
 import Link from 'components/Link'
 import TabPanel from 'components/TabPanel'
-import TextInput from 'components/TextInput'
 import { imageSrc } from 'config'
-import { AuthContext } from 'contexts/authContext'
-import useErrorDialog from 'hooks/error-dialog/error-dialog'
-import useLoading from 'hooks/loading'
 import { map } from 'ramda'
-import React, { useEffect, useMemo, useState } from 'react'
-import { Field, withTypes } from 'react-final-form'
+import React, { useMemo, useState } from 'react'
 import { RouteComponentProps, withRouter } from 'react-router-dom'
-import { post } from 'services/http'
 import DOWNLOADTYPES, { getGameType, IProviderProps, PLAYTECH } from './constant'
+import ProviderPassword from './ProviderPassword'
 import './style.scss'
 
-interface IForm {
-	password: string,
-	confirmPassword: string,
-	username: string,
-
-}
-const { Form } = withTypes<IForm>()
 
 const Download: React.FC<RouteComponentProps> = ({ history }) => {
-	const { auth } = React.useContext(AuthContext)
 	const [activeTab, setActiveTab] = useState(PLAYTECH)
-	const isLogged = !auth.token.length
-	const [, withLoading] = useLoading(false)
-	const [showDialog, ErrorDialogComponent] = useErrorDialog(false)
-	const [initialValues, setInitialValues] = useState<IForm>({
-		confirmPassword: '',
-		password: '',
-		username: '',
-	})
-
 	const handleChangeTab = (event: React.ChangeEvent<{}>, newValue: string) => {
 		setActiveTab(newValue);
 	};
-	const handleUpdatePassword = async ({ password }) => {
-		const { error } = await withLoading(() => post({
-			body: {
-				password
-			},
-			path: 'playtech/password/update'
-		})).catch(err => err)
-		if (error) {
-			// return showSnackbar(error)
-			return showDialog(error, 'Error')
-		}
-		// history.push('/home')
-		return showDialog('Deposit Succesfully', 'Success')
-	}
-
-	useEffect(() => {
-		// eslint-disable-next-line react-hooks/exhaustive-deps
-	}, [])
 
 	const { providers }: { providers: IProviderProps[] } = useMemo(() => getGameType(activeTab), [activeTab])
 
@@ -110,55 +67,16 @@ const Download: React.FC<RouteComponentProps> = ({ history }) => {
 							, providers)}
 					</Grid>
 					<Paper>
-						<Form
-							initialValues={initialValues}
-							onSubmit={handleUpdatePassword}
-						>
-							{({ handleSubmit }) =>
-								<form onSubmit={handleSubmit}>
-									<div className='container'>
-										<div>
-											<Field
-												name="username"
-												label="Username :"
-												type="text"
-												fullWidth={true}
-												component={TextInput}
-											/>
-										</div>
-										<div>
-											<Field
-												name="password"
-												label="Password: "
-												type="text"
-												fullWidth={true}
-												component={TextInput}
-											/>
-										</div>
-										<div>
-											<Field
-												name="confirmPassword"
-												label="Memastikan Password :"
-												type="text"
-												fullWidth={true}
-												component={TextInput}
-											/>
-										</div>
-										<div>
-											<Button variant="outlined" color="primary" type="submit" startIcon={<SendIcon />}>
-												Submit
-                			</Button>
-										</div>
-									</div>
-								</form>}
-						</Form>
+						{map((item: any) =>
+							<div >{item.idName === activeTab ? <ProviderPassword url={item.url} username={item.username} inforText={item.inforText} /> : null}
+							</div>, DOWNLOADTYPES)}
 					</Paper>
 				</TabPanel>
 			</div>
-			<ErrorDialogComponent />
 			<Bottom />
 		</div>
 	)
 }
 
 export default withRouter(Download)
+
