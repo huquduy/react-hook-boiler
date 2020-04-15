@@ -23,7 +23,7 @@ import Credits from 'components/Credits'
 import { AuthContext } from 'contexts/authContext'
 import useDialog from 'hooks/dialog'
 import React, { useState } from 'react'
-import { useHistory, Link } from 'react-router-dom'
+import { Link, useHistory } from 'react-router-dom'
 import Sidebar from '../Drawer'
 import './style.scss'
 
@@ -115,17 +115,17 @@ const Header: React.FC = () => {
                 <MenuItem onClick={showCreditsDialog}><LocalAtmIcon />{auth.balance} IDR</MenuItem>
                 <MenuItem onClick={navigateToProfile}>Profile</MenuItem>
                 <MenuItem className="profile-menu">
-                  <List><ListItem button onClick={handleClickOpen}>
+                  <List><ListItem button={true} onClick={handleClickOpen}>
                     <ListItemText primary="Report" />
                     {open ? <ExpandLess /> : <ExpandMore />}
                         </ListItem>
-                    <Collapse in={open} timeout="auto" unmountOnExit>
-                      <List component="div" disablePadding>
-                        <ListItem button>
+                    <Collapse in={open} timeout="auto" unmountOnExit={true}>
+                      <List component="div" disablePadding={true}>
+                        <ListItem button={true}>
                           <Link to="/report/deposit" className="link-primary">Deposit</Link>
                         </ListItem>
-                        <ListItem button><Link to="/report/withdraw" className="link-primary">Withdrawn</Link></ListItem>
-                        <ListItem button><Link to="/report/transfer" className="link-primary">Transfer</Link></ListItem>
+                        <ListItem button={true}><Link to="/report/withdraw" className="link-primary">Withdrawn</Link></ListItem>
+                        <ListItem button={true}><Link to="/report/transfer" className="link-primary">Transfer</Link></ListItem>
                       </List>
                     </Collapse>
                   </List>

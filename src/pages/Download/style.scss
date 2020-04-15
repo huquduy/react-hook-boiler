@@ -4,7 +4,7 @@
   overflow: hidden;
   .game-tabs {
     color: $primaryColor;
-    background: #0a0a0a;
+    // background: #0a0a0a;
     display: flex;
     flex-direction: column;
     .custom_tab {
@@ -53,7 +53,32 @@
     border-radius: 4px;
     text-transform: uppercase;
   }
+}
+
+.form-password {
+  margin-top: 15px;
+  color: $primaryColor;
+  .title {
+    line-height: 70px;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 15px;
+    > div {
+      margin-top: 15px;
+      width: 75%;
+      align-self: center;
+    }
+  }
   form {
     width: 100%;
+  }
+  .bottom-wraper{
+    margin-top:50px;
+  }
+  .MuiFormLabel-root.Mui-disabled,
+  .MuiIconButton-root {
+    color: $primaryColor;
   }
 }
