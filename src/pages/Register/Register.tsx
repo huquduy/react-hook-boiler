@@ -1,19 +1,17 @@
 import {
   Button,
-  Checkbox,
-  FormControlLabel,
   Typography,
 } from '@material-ui/core'
 import {
   Add as AddIcon
 } from '@material-ui/icons'
+import Checkbox from 'components/Checkbox'
 import Header from 'components/Header'
 import SelectInput, { IOption } from 'components/SelectInput'
 import TextInput from 'components/TextInput'
 import { AuthContext } from 'contexts/authContext'
 import useErrorDialog from 'hooks/error-dialog/error-dialog'
 import useLoading from 'hooks/loading'
-// import useSnackbar from 'hooks/snackbar'
 import { map } from 'ramda'
 import React, { useEffect, useState } from 'react'
 import { Field, withTypes } from 'react-final-form'
@@ -62,8 +60,8 @@ const Register: React.FC<RouteComponentProps> = ({ history }) => {
       },
       path: 'user/signUp'
     })).catch((err) => {
-      let message ='';
-      if(err.length > 0){
+      let message = '';
+      if (err.length > 0) {
         message = `${err[0].parameter} ${err[0].message}`
       }
       return showDialog(message, 'Error')
@@ -73,13 +71,6 @@ const Register: React.FC<RouteComponentProps> = ({ history }) => {
       history.push('/home')
     }
   }
-  const handeChangeCheckbox = () => {
-
-  }
-  const handleChange = () => {
-
-  }
-
 
   useEffect(() => {
     const fetchBanks = async () => {
@@ -181,7 +172,6 @@ const Register: React.FC<RouteComponentProps> = ({ history }) => {
                   fullWidth={true}
                   options={banks}
                   component={SelectInput}
-                  handleChange={handleChange}
                 />
               </div>
               <div>
@@ -207,29 +197,31 @@ const Register: React.FC<RouteComponentProps> = ({ history }) => {
                 />
               </div>
               <div>
-                <FormControlLabel
+                <Field
+                  name="loyaltyBonus"
+                  type="checkbox"
+                  label={'*I am over 18 years of age and have read and accepted Terms & Conditions, Privacy Policy & Betting Rules as published on this site.'}
+                  disable={isLoading.toString()}
+                  component={Checkbox}
+                  validate={required}
+                />
+                {/* <FormControlLabel
                   className="custom-checkbox"
                   value="ischeck"
                   control={<Checkbox color="primary" onChange={handeChangeCheckbox} />}
                   label={'*I am over 18 years of age and have read and accepted Terms & Conditions, Privacy Policy & Betting Rules as published on this site.'}
                   name="isCheck"
-                />
+                /> */}
               </div>
               <div>
                 <Button variant="outlined" color="primary" type="submit" startIcon={<AddIcon />}>
                   Register
                 </Button>
               </div>
-              {/* <div>
-                <Button variant="outlined" className="success" href="/login" startIcon={<LockOpenIcon />}>
-                  Back to Login
-                </Button>
-              </div> */}
             </div>
           </form>}
       </Form>
       <ErrorDialogComponent />
-      {/* <Snackbar /> */}
     </div>
   )
 }

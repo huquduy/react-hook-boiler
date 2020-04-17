@@ -1,13 +1,12 @@
 import {
   Button,
-  Checkbox,
-  FormControlLabel,
   Typography
 } from '@material-ui/core'
 import {
   Send as SendIcon,
 } from '@material-ui/icons'
 import Bottom from 'components/Bottom'
+import Checkbox from 'components/Checkbox'
 import Header from 'components/Header'
 import SelectInput, { IOption } from 'components/SelectInput'
 import TextInput from 'components/TextInput'
@@ -21,7 +20,7 @@ import { composeValidators, mustBeNumber, required } from 'services/form'
 import { get, post } from 'services/http'
 import './style.scss'
 
-const MAIN_WALLET = 'Main Wallet'
+// const MAIN_WALLET = 'Main Wallet'
 
 interface IForm {
   origin: string,
@@ -100,14 +99,6 @@ const Transfer: React.FC = () => {
       return change(secondProvider)
     }
     return change(mainWallet)
-  }
-
-  const handeChangeCheckbox = (event: React.ChangeEvent<{ checked: boolean }>) => {
-    const value = event.target.checked
-    setInitialValues({
-      ...initialValues,
-      loyaltyBonus: value
-    })
   }
 
   const fetchBonusProvider = async (provider: string) => {
@@ -199,12 +190,13 @@ const Transfer: React.FC = () => {
                 </div>
                 {isAllowedBonus ?
                   <div>
-                    <FormControlLabel
-                      value="loyaltyBonus"
-                      control={<Checkbox color="primary" onChange={handeChangeCheckbox} />}
-                      label={bonus.fullText}
-                      name="loyaltyBonus"
-                    />
+                    <Field
+                    name="loyaltyBonus"
+                    type="checkbox"
+                    label={bonus.fullText}
+                    disable={isLoading.toString()}
+                    component={Checkbox}
+                  />
                     <Typography variant="caption" display="block" gutterBottom={true}>
                       * I want to claim bonus with term and conditions. Rollover {bonus.rollingTime} Times
                     </Typography>

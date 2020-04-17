@@ -26,7 +26,9 @@ const SelectInput: React.FC<ISelectInput> = ({ input, meta, label, options, hand
 
   const callbackOnChange = e => {
     input.onChange(e)
-    handleChange(e)
+    if(handleChange) {
+      handleChange(e)
+    }
   }
 
   return (
