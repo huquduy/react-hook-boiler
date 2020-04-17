@@ -24,15 +24,17 @@ import './style.scss'
 
 interface IForm {
   password: string,
-  bankName: string,
+  fromBank: string,
   bankAccountName: string,
   bankAccountNumber: string,
-  bankId: number,
+  toBank: number,
   accountName: string,
   accountNumber: string,
   amount: string,
   calcAmount: string,
-
+  currency: string,
+  paymentMethod: string,
+  toBankName:string,
 }
 const { Form } = withTypes<IForm>()
 
@@ -45,20 +47,23 @@ const Deposit: React.FC<RouteComponentProps> = ({ history }) => {
     amount: '',
     bankAccountName: auth.bankAccountName,
     bankAccountNumber: auth.bankAccountNumber,
-    bankId: auth.bankId,
-    bankName: auth.bankName,
+    fromBank: auth.bankName,
     password: '',
-    calcAmount: ''
+    calcAmount: '',
+    currency: 'IDR',
+    paymentMethod: 'Local Transfer',
+    toBank: 0,
+    toBankName: ''
   })
   const [banks, setBanks] = useState<IOption[] | []>([])
 
   const [isLoading, withLoading, Loading] = useLoading(false)
   // const [showSnackbar, Snackbar] = useSnackbar(false)
 
-  const handleDeposit = async ({ amount, password }) => {
+  const handleDeposit = async ({ amount, password, toBankName, currency, bankAccountNumber, bankAccountName, paymentMethod, fromBank}) => {
     const { error } = await withLoading(() => post({
       body: {
-        amount, password
+        amount, password, currency, bankAccountNumber, bankAccountName, paymentMethod, fromBank, toBank:toBankName
       },
       path: 'deposit/execute'
     })).catch(err => err)
@@ -74,7 +79,8 @@ const Deposit: React.FC<RouteComponentProps> = ({ history }) => {
     const findResult = find(propEq('value', value ))(banks);
     setInitialValues({
       ...initialValues,
-      bankId: Number(value),
+      toBank: Number(value),
+      toBankName: findResult.title,
       accountName: findResult.accountName,
       accountNumber: findResult.accountNumber
     })
@@ -109,7 +115,8 @@ const Deposit: React.FC<RouteComponentProps> = ({ history }) => {
         ...initialValues,
         accountName: bankResps[initialBank].accountName,
         accountNumber: bankResps[initialBank].accountNumber,
-        bankId: bankResps[initialBank].id,
+        toBank: bankResps[initialBank].id,
+        toBankName: bankResps[initialBank].bankName,
       })
     }
     fetchBanks()
@@ -132,7 +139,7 @@ const Deposit: React.FC<RouteComponentProps> = ({ history }) => {
             <div className='container'>
               <div>
                 <Field
-                  name="bankName"
+                  name="fromBank"
                   label="From Bank :"
                   type="text"
                   fullWidth={true}
@@ -162,7 +169,7 @@ const Deposit: React.FC<RouteComponentProps> = ({ history }) => {
               </div>
               <div>
                 <Field
-                  name="bankId"
+                  name="toBank"
                   label="To Bank :"
                   fullWidth={true}
                   options={banks}
