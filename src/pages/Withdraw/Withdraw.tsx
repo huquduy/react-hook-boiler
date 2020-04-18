@@ -22,11 +22,13 @@ import './style.scss'
 
 interface IForm {
   confirmPassword: string,
-  bankName: string,
+  fromBank: string,
   bankAccountName: string,
   bankAccountNo: string,
   amount: string,
   calcAmount:string;
+  paymentMethod:string;
+  currency: string;
 
 }
 const { Form } = withTypes<IForm>()
@@ -38,18 +40,20 @@ const Withdraw: React.FC<RouteComponentProps> = ({ history }) => {
     amount: '',
     bankAccountName: auth.bankAccountName,
     bankAccountNo: auth.bankAccountNumber,
-    bankName: auth.bankName,
+    fromBank: auth.bankName,
     confirmPassword: '',
     calcAmount: '',
+    paymentMethod:'Local Transfer',
+    currency:'IDR'
   })
 
   const [isLoading, withLoading, Loading] = useLoading(false)
   // const [showSnackbar, Snackbar] = useSnackbar(false)
 
-  const handleDeposit = async ({ amount, confirmPassword, bankAccountName, bankAccountNo, bankName}) => {
+  const handleWithdraws = async ({ amount, confirmPassword, bankAccountName, bankAccountNo, fromBank, paymentMethod, currency}) => {
     const { error } = await withLoading(() => put({
       body: {
-        amount, confirmPassword, bankAccountName, bankAccountNo, bankName
+        amount, confirmPassword, bankAccountName, bankAccountNo, fromBank, paymentMethod,currency
       },
       path: 'withdraws/execute'
     })).catch((err) => err)
@@ -82,14 +86,14 @@ const Withdraw: React.FC<RouteComponentProps> = ({ history }) => {
       </Typography>
       <Form
         initialValues={initialValues}
-        onSubmit={handleDeposit}
+        onSubmit={handleWithdraws}
       >
         {({ handleSubmit }) =>
           <form onSubmit={handleSubmit}>
             <div className='container'>
               <div>
                 <Field
-                  name="bankName"
+                  name="fromBank"
                   label="From Bank :"
                   type="text"
                   fullWidth={true}
