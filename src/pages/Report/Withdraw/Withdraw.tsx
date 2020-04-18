@@ -57,7 +57,7 @@ const WithdrawReport: React.FC<RouteComponentProps> = ({ history }) => {
       return showSnackbar(error)
     }
     dataResults.forEach((item:any) => {
-      item.updatedAt = moment(new Date(item.updatedAt)).format("YYYY-MM-DD HH:mm")
+      item.updatedAt = moment(new Date(item.updatedAt)).format("DD-MM-YYYY HH:mm")
    })
     setRows(dataResults)
   }

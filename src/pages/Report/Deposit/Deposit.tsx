@@ -58,7 +58,7 @@ const DepositReport: React.FC<RouteComponentProps> = () => {
       return showSnackbar(error)
     }
     dataResults.forEach((item:any) => {
-      item.createdAt = moment(new Date(item.createdAt)).format("YYYY-MM-DD HH:mm")
+      item.createdAt = moment(new Date(item.createdAt)).format("DD-MM-YYYY HH:mm")
    })
     return setRows(dataResults)
   }
