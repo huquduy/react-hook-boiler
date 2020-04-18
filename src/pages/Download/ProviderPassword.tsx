@@ -2,9 +2,7 @@ import { Button, Typography } from '@material-ui/core'
 import {
 	Send as SendIcon,
 } from '@material-ui/icons'
-
 import TextInput from 'components/TextInput'
-import { AuthContext } from 'contexts/authContext'
 import useErrorDialog from 'hooks/error-dialog/error-dialog'
 import useLoading from 'hooks/loading'
 import React, { useState } from 'react'
@@ -22,10 +20,9 @@ interface IForm {
 const { Form } = withTypes<IForm>()
 
 const ProviderPassword = ({ url, username, infoText, showForm }) => {
-	const { auth } = React.useContext(AuthContext)
-	const [isLoading, withLoading] = useLoading(false)
+	const [, withLoading] = useLoading(false)
 	const [showDialog, ErrorDialogComponent] = useErrorDialog(false)
-	const [initialValues, setInitialValues] = useState<IForm>({
+	const [initialValues] = useState<IForm>({
 		confirmPassword: '',
 		password: '',
 		username: username,
