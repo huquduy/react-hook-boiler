@@ -56,6 +56,9 @@ const TransferReport: React.FC<RouteComponentProps> = ({ history }) => {
     if (error) {
       return showSnackbar(error)
     }
+    dataResults.forEach((item:any) => {
+       item.createdAt = moment(new Date(item.createdAt)).format("YYYY-MM-DD HH:mm")
+    })
     setRows(dataResults)
   }
   const handleChangePage = (event: unknown, newPage: number) => {

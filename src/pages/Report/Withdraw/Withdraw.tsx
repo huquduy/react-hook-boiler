@@ -56,6 +56,9 @@ const WithdrawReport: React.FC<RouteComponentProps> = ({ history }) => {
     if (error) {
       return showSnackbar(error)
     }
+    dataResults.forEach((item:any) => {
+      item.updatedAt = moment(new Date(item.updatedAt)).format("YYYY-MM-DD HH:mm")
+   })
     setRows(dataResults)
   }
   const handleChangePage = (event: unknown, newPage: number) => {
@@ -136,14 +139,14 @@ const WithdrawReport: React.FC<RouteComponentProps> = ({ history }) => {
               </TableRow>
             </TableHead>
             <TableBody>
-              {map(({ id, amount, currency, createdAt, status }) =>
+              {map(({ id, amount, currency, updatedAt, status }) =>
                 <TableRow key={id}>
                   <TableCell align="center" color="primary" component="th" scope="row">
                     {id}
                   </TableCell>
                   <TableCell align="center">{amount} </TableCell>
                   <TableCell align="center">{currency} </TableCell>
-                  <TableCell align="center">{createdAt} </TableCell>
+                  <TableCell align="center">{updatedAt} </TableCell>
                   <TableCell align="center">{status} </TableCell>
                 </TableRow>
               , rows)}
