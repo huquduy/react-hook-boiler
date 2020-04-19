@@ -28,7 +28,7 @@ const Home: React.FC = () => {
       pg: `/tg/groups/PGSOFT/types/SLOTS/codes/${code}`,
       playtech: `/gs/groups/playtech/types/SL/codes/${code}`,
       pragmatic: `/tg/groups/PP/types/SLOTS/codes/${code}`,
-      s1: `/tg/groups/s1/types/SLOTS/codes/${code}`,
+      s1: `/gs/groups/s1/types/SLOTS/codes/${code}`,
     }
     if (proxies[type]) {
       return proxies[type]
