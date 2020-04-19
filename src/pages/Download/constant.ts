@@ -29,6 +29,7 @@ export interface IGameTypeProps {
 const DOWNLOADTYPES = [
 	{
 		idName: PLAYTECH,
+		image: 'slots/playtech.png',
 		providers: [
 			{
 				idName: '1',
@@ -61,6 +62,7 @@ const DOWNLOADTYPES = [
 	},
 	{
 		idName: ALLBET,
+		image: 'casinos/allbet.png',
 		providers: [
 			{
 				idName: '4',
@@ -87,6 +89,7 @@ const DOWNLOADTYPES = [
 	},
 	{
 		idName: GAMEPLAY,
+		image: 'casinos/gameplay.png',
 		providers: [
 			{
 				idName: '6',
@@ -101,6 +104,7 @@ const DOWNLOADTYPES = [
 	},
 	{
 		idName: MICROGAME,
+		image: 'casinos/microgaming.png',
 		providers: [
 			{
 				idName: '7',
@@ -120,6 +124,7 @@ const DOWNLOADTYPES = [
 	},
 	{
 		idName: FISH,
+		image: 'fishhunter/playtech.png',
 		providers: [
 			{
 				idName: '8',
@@ -139,6 +144,7 @@ const DOWNLOADTYPES = [
 	},
 	{
 		idName: IDN,
+		image: 'poker/idn.png',
 		providers: [
 			{
 				idName: '9',
@@ -166,6 +172,7 @@ const DOWNLOADTYPES = [
 	},
 	{
 		idName: FIGHT,
+		image: 'cockfight/cockfight.png',
 		providers: [
 			{
 				idName: '11',
@@ -189,6 +196,7 @@ const DOWNLOADTYPES = [
 	},
 	{
 		idName: SSLOT,
+		image: 'slots/1s.png',
 		providers: [
 			{
 				idName: '13',

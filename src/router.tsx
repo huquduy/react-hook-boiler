@@ -74,7 +74,7 @@ const Router = () => {
           <RequiredLoginRooute path="/report/withdraw" component={WithdrawReport} />
           <RequiredLoginRooute path="/report/transfer" component={TransferReport} />
           <RequiredLoginRooute path="/profile" component={Profile} />
-          <Route path="/mobile/0" component={Download} />
+          <RequiredLoginRooute path="/mobile/0" component={Download} />
         </Switch>
       </Suspense>
     </BrowserRouter>
