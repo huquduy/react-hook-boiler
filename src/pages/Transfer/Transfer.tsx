@@ -20,7 +20,7 @@ import { composeValidators, mustBeNumber, required } from 'services/form'
 import { get, post } from 'services/http'
 import './style.scss'
 
-// const MAIN_WALLET = 'Main Wallet'
+const MAIN_WALLET = 'Main Wallet'
 
 interface IForm {
   origin: string,
@@ -31,12 +31,10 @@ interface IForm {
 }
 
 export interface IBonus {
-  id: number,
   title: string,
   rollingTime: number,
-  status: number,
+  status: boolean,
   percentage: number,
-  fullText: string,
 }
 
 const { Form } = withTypes<IForm>()
@@ -58,14 +56,11 @@ const Transfer: React.FC = () => {
   const [credits, setCredits] = useState<IOption[] | []>([])
   const [showDialog, ErrorDialogComponent] = useErrorDialog(false)
   const [bonus, setBonus] = useState<IBonus>({
-    fullText: '',
-    id: 0,
     percentage: 0,
     rollingTime: 0,
-    status: 1,
+    status: false,
     title: '',
   })
-  const [isAllowedBonus, setIsAllowedBonus] = useState(false)
   const [isLoading, withLoading, Loading] = useLoading(false)
 
   const fetchCredits = async () => {
@@ -87,13 +82,16 @@ const Transfer: React.FC = () => {
     if (error) {
       return showDialog(error, 'Error')
     }
+    fetchBonusProvider(target)
     await fetchCredits()
     return showDialog('Transfer Successfully', 'Success')
   }
 
-  const handleChangeProvider = change => (event: React.ChangeEvent<{ value: unknown }>) => {
+  const handleChangeProvider = (change, targetProvider) => (event: React.ChangeEvent<{ value: unknown }>) => {
     const selectedValue = String(event.target.value)
-    fetchBonusProvider(origin)
+    if (targetProvider === 'target') {
+      fetchBonusProvider(selectedValue)
+    }
     const [{ value: mainWallet }, { value: secondProvider }] = credits
     if (selectedValue === mainWallet) {
       return change(secondProvider)
@@ -102,9 +100,8 @@ const Transfer: React.FC = () => {
   }
 
   const fetchBonusProvider = async (provider: string) => {
-    const ignoredBonuses = ['4D lottery', 'Poker IDN']
+    const ignoredBonuses = [MAIN_WALLET, '4D lottery', 'Poker IDN']
     const allowedBonus = !ignoredBonuses.includes(provider)
-    setIsAllowedBonus(allowedBonus)
     if (allowedBonus) {
       const bonusResps = await withLoading(() => get({
         body: { provider },
@@ -113,11 +110,20 @@ const Transfer: React.FC = () => {
       }))
         .catch((err) => err)
       if (bonusResps.error) {
-        setIsAllowedBonus(false)
-        return;
+        return setBonus({
+          ...bonus,
+          status: false
+        })
       }
-      setBonus({ ...bonusResps, ...{ fullText: (`${bonusResps.title} Bonus ${bonusResps.percentage * 100} %`).toUpperCase() } })
+      return setBonus({
+        ...bonusResps,
+        status: Boolean(bonusResps)
+      })
     }
+    return setBonus({
+      ...bonus,
+      status: false
+    })
   }
 
   useEffect(() => {
@@ -129,7 +135,7 @@ const Transfer: React.FC = () => {
         origin,
         target,
       })
-      fetchBonusProvider(origin)
+      fetchBonusProvider(target)
     }
 
     if (auth.username) {
@@ -161,7 +167,7 @@ const Transfer: React.FC = () => {
                     label="Transfer From"
                     fullWidth={true}
                     options={credits}
-                    handleChange={handleChangeProvider(changeTarget)}
+                    handleChange={handleChangeProvider(changeTarget, '')}
                     variant="outlined"
                     component={SelectInput}
                   />
@@ -172,7 +178,7 @@ const Transfer: React.FC = () => {
                     label="Transfer To"
                     fullWidth={true}
                     options={credits}
-                    handleChange={handleChangeProvider(changeOrigin)}
+                    handleChange={handleChangeProvider(changeOrigin, 'target')}
                     variant="outlined"
                     component={SelectInput}
                   />
@@ -188,15 +194,15 @@ const Transfer: React.FC = () => {
                     component={TextInput}
                   />
                 </div>
-                {isAllowedBonus ?
+                {bonus.status ?
                   <div>
                     <Field
-                    name="loyaltyBonus"
-                    type="checkbox"
-                    label={bonus.fullText}
-                    disable={isLoading.toString()}
-                    component={Checkbox}
-                  />
+                      name="loyaltyBonus"
+                      type="checkbox"
+                      label={(`${bonus.title} Bonus ${bonus.percentage * 100} %`).toUpperCase()}
+                      disable={isLoading.toString()}
+                      component={Checkbox}
+                    />
                     <Typography variant="caption" display="block" gutterBottom={true}>
                       * I want to claim bonus with term and conditions. Rollover {bonus.rollingTime} Times
                     </Typography>
