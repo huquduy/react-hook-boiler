@@ -3,30 +3,55 @@
 .download-page {
   overflow: hidden;
   .game-tabs {
+    padding-top: 15px;
     color: $primaryColor;
+    background: #0a0a0a;
     display: flex;
     flex-direction: column;
-    .custom_tab {
-      border-bottom: 0;
-      padding-top: 16px;
-      .MuiTab-textColorInherit {
-        max-width: 65px;
-        max-height: 80px;
-      }
-      .MuiTab-textColorInherit.Mui-selected {
-        border: 1px solid $primaryColor;
-        border-radius: 4px;
-        max-width: 65px;
-        max-height: 80px;
-        background: rgba(239, 215, 127, 0.2);
-      }
-      .MuiTabs-indicator {
-        height: 0;
-      }
-    }
     .game-type-icon {
-      width: 40px;
+      width: 100px;
     }
+  }
+  .game {
+    width: 100%;
+    border-radius: 4px;
+  }
+  .provider{
+    background: transparent;
+    color: $primaryColor;
+    box-shadow: none
+  }
+  .game-search {
+    margin: 15px 20px;
+  }
+  .group {
+    margin: 15px 0;
+    display: flex;
+    align-items: center;
+    .toogle-search {
+      margin-right: 10px;
+    }
+    > button {
+      padding: 0;
+    }
+  }
+  .microgaming {
+    overflow: hidden;
+    position: relative;
+    height: 130px;
+  }
+  
+  .microgaming img {
+    position: absolute;
+    clip-path: inset(0% 48% 0% 0%);
+    left: 10%;
+    height: 70%;
+    width: 175%;
+  }
+  .microgaming span {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
   }
 
   .logo {
@@ -41,11 +66,11 @@
       margin-right: 0px;
     }
   }
-  .provider {
-    background: transparent;
-    color: $primaryColor;
-    box-shadow: none;
-  }
+  // .provider {
+  //   background: transparent;
+  //   color: $primaryColor;
+  //   box-shadow: none;
+  // }
   .btn-download {
     color: #efd77f;
     border: 1px solid rgba(239, 215, 127, 0.5);

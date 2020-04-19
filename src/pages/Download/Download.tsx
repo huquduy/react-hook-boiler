@@ -21,7 +21,7 @@ const Download: React.FC<RouteComponentProps> = ({ history }) => {
 	const { providers }: { providers: IProviderProps[] } = useMemo(() => getGameType(activeTab), [activeTab])
 
 	return (
-		<div className='download-page'>
+		<div className='download-page slot-page'>
 			<Header />
 			<Typography color="primary" className="title" variant="h5" align="center" component="h2" gutterBottom={true}>
 				MOBILE DOWNLOAD
@@ -36,10 +36,10 @@ const Download: React.FC<RouteComponentProps> = ({ history }) => {
 					variant="scrollable"
 					scrollButtons="on"
 				>
-					{map(({ idName }: { idName: string }) => <Tab
+					{map(({ idName, image }) => <Tab
 						key={idName}
 						label={<div>
-							<img className='game-type-icon' alt='hokibet188' src={`${imageSrc}icons/download.png`} />
+							<img className='game-type-icon' alt='hokibet188' src={`${imageSrc}providers/${image}`} />
 							<Typography variant="caption" display="block" gutterBottom={true}>
 								{idName}
 							</Typography>
