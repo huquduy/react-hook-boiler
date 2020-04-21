@@ -6,15 +6,15 @@ import {
   Send as SendIcon,
 } from '@material-ui/icons'
 import Bottom from 'components/Bottom'
+import Checkbox from 'components/Checkbox'
 import Header from 'components/Header'
 import SelectInput, { IOption } from 'components/SelectInput'
 import TextInput from 'components/TextInput'
 import { AuthContext } from 'contexts/authContext'
 import useErrorDialog from 'hooks/error-dialog/error-dialog'
 import useLoading from 'hooks/loading'
-// import useSnackbar from 'hooks/snackbar'
 import Numeral from 'numeral'
-import { find, map, propEq } from 'ramda'
+import { find, map, propEq, isEmpty } from 'ramda'
 import React, { useEffect, useState } from 'react'
 import { Field, withTypes } from 'react-final-form'
 import { RouteComponentProps, withRouter } from 'react-router-dom'
@@ -35,6 +35,14 @@ interface IForm {
   currency: string,
   paymentMethod: string,
   toBankName:string,
+  extraBonus:boolean,
+}
+export interface IBonus {
+  id:number,
+  title: string,
+  rollingTime: number,
+  status: boolean,
+  percentage: number,
 }
 const { Form } = withTypes<IForm>()
 
@@ -53,17 +61,25 @@ const Deposit: React.FC<RouteComponentProps> = ({ history }) => {
     currency: 'IDR',
     paymentMethod: 'Local Transfer',
     toBank: 0,
-    toBankName: ''
+    toBankName: '',
+    extraBonus: false
+  })
+  const [bonus, setBonus] = useState<IBonus>({
+    id:0,
+    percentage: 0,
+    rollingTime: 0,
+    status: false,
+    title: '',
   })
   const [banks, setBanks] = useState<IOption[] | []>([])
 
   const [isLoading, withLoading, Loading] = useLoading(false)
   // const [showSnackbar, Snackbar] = useSnackbar(false)
 
-  const handleDeposit = async ({ amount, password, toBankName, currency, bankAccountNumber, bankAccountName, paymentMethod, fromBank}) => {
+  const handleDeposit = async ({ amount, password, toBankName, currency, bankAccountNumber, bankAccountName, paymentMethod, fromBank, extraBonus}) => {
     const { error } = await withLoading(() => post({
       body: {
-        amount, password, currency, bankAccountNumber, bankAccountName, paymentMethod, fromBank, toBank:toBankName
+        amount, password, currency, bankAccountNumber, bankAccountName, paymentMethod, fromBank, toBank:toBankName, extraBonus
       },
       path: 'deposit/execute'
     })).catch(err => err)
@@ -94,33 +110,57 @@ const Deposit: React.FC<RouteComponentProps> = ({ history }) => {
       calcAmount: String(calcAmount)
     })
   }
-  useEffect(() => {
-    const fetchBanks = async () => {
-      const correctBankProps = ({ bankName, id, accountName, accountNumber }) => ({
-        accountName,
-        accountNumber,
-        title: bankName,
-        value: String(id)
-      })
-      const { data: bankResps, error }: { data: any[], error: string } = await withLoading(() => get({
-        path: 'banking'
+  const fetchBonusProvider = async () => {
+      const {bonus: bonusResps} = await withLoading(() => get({
+        path: 'deposit/bonus/extra'
       }))
         .catch((err) => err)
-      if (error) {
-        return;
+      if (isEmpty(bonusResps)) {
+        return setBonus({
+          ...bonus,
+          status: false
+        })
       }
-      setBanks(map(correctBankProps, bankResps))
+      return setBonus({
+        ...bonusResps,
+        status: Boolean(bonusResps)
+      })
+  }
+  const correctBankProps = ({ bankName, id, accountName, accountNumber }) => ({
+    accountName,
+    accountNumber,
+    title: bankName,
+    value: String(id)
+  })
+  const fetchBanks = async () => {
+    const { data: bankResps, error }: { data: any[], error: string } = await withLoading(() => get({
+      path: 'banking'
+    }))
+      .catch((err) => err)
+    if (error) {
+      return;
+    }
+    const bankCorrected = map(correctBankProps, bankResps)
+    setBanks(bankCorrected)
+    return bankCorrected;
+  }
+
+  useEffect(() => {
+    const fetchInitial = async () => {
+      const bankCorrected = await fetchBanks() ||[]
       const initialBank = 0;
       setInitialValues({
-        ...initialValues,
-        accountName: bankResps[initialBank].accountName,
-        accountNumber: bankResps[initialBank].accountNumber,
-        toBank: bankResps[initialBank].id,
-        toBankName: bankResps[initialBank].bankName,
-      })
+      ...initialValues,
+      accountName: bankCorrected[initialBank].accountName,
+      accountNumber: bankCorrected[initialBank].accountNumber,
+      toBank: Number(bankCorrected[initialBank].value),
+      toBankName: bankCorrected[initialBank].title,
+    })
+    fetchBonusProvider()
     }
-    fetchBanks()
-
+    if (auth.username) {
+      fetchInitial()
+    }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
   return (
@@ -234,6 +274,19 @@ const Deposit: React.FC<RouteComponentProps> = ({ history }) => {
                   component={TextInput}
                 />
               </div>
+              {bonus.status ?
+                  <div>
+                    <Field
+                      name="extraBonus"
+                      type="checkbox"
+                      label={(`${bonus.title} Bonus ${bonus.percentage * 100} % WITHDRAWN ANY TIME`).toUpperCase()}
+                      disable={isLoading.toString()}
+                      component={Checkbox}
+                    />
+                    <Typography variant="caption" display="block" gutterBottom={true}>
+                      * I want to claim bonus with term and conditions. Rollover {bonus.rollingTime} Times
+                    </Typography>
+                  </div> : null}
               <div>
                 <Button variant="outlined" color="primary" type="submit" startIcon={<SendIcon />}>
                   Submit
