@@ -61,30 +61,28 @@ const DOWNLOADTYPES = [
 		showForm: true
 	},
 	{
-		idName: ALLBET,
-		image: 'casinos/allbet.png',
+		idName: SSLOT,
+		image: 'slots/1s.png',
 		providers: [
 			{
-				idName: '4',
+				idName: '13',
 				image: 'mobile_android.png',
-				route: 'https://www.abgapp88.net/',
+				route: 'https://www.1sgames88.com/android/download.htm',
 				target: '_blank',
-				title: 'LIVE CASINO',
+				title: '',
 				version: 'Android version',
 			},
 			{
-				idName: '5',
-				image: 'mobile_ios.jpg',
-				route: 'https://www.abgapp88.net/',
+				idName: '14',
+				image: 'mobile_android.png',
+				route: 'itms-services://?action=download-manifest&amp;url=https://www.1sgames88.com/mobileservice/app/ios/plist',
 				target: '_blank',
-				title: 'LIVE CASINO',
+				title: '',
 				version: 'IOS version',
 			}
 		],
-		title: 'ALLBET',
-		url: 'allbet/password/update',
-		infoText: 'Pleasse choose password for AllBet',
-		username: 'testervh1',
+		title: 'SSLOT',
+		username: 'tester@hokiid',
 		showForm: true
 	},
 	{
@@ -195,28 +193,30 @@ const DOWNLOADTYPES = [
 		showForm: false
 	},
 	{
-		idName: SSLOT,
-		image: 'slots/1s.png',
+		idName: ALLBET,
+		image: 'casinos/allbet.png',
 		providers: [
 			{
-				idName: '13',
+				idName: '4',
 				image: 'mobile_android.png',
-				route: 'https://www.1sgames88.com/android/download.htm',
+				route: 'https://www.abgapp88.net/',
 				target: '_blank',
-				title: '',
+				title: 'LIVE CASINO',
 				version: 'Android version',
 			},
 			{
-				idName: '14',
-				image: 'mobile_android.png',
-				route: 'itms-services://?action=download-manifest&amp;url=https://www.1sgames88.com/mobileservice/app/ios/plist',
+				idName: '5',
+				image: 'mobile_ios.jpg',
+				route: 'https://www.abgapp88.net/',
 				target: '_blank',
-				title: '',
+				title: 'LIVE CASINO',
 				version: 'IOS version',
 			}
 		],
-		title: 'SSLOT',
-		username: 'tester@hokiid',
+		title: 'ALLBET',
+		url: 'allbet/password/update',
+		infoText: 'Pleasse choose password for AllBet',
+		username: 'testervh1',
 		showForm: true
 	},
 ]
