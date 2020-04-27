@@ -132,7 +132,7 @@ const Home: React.FC<RouteComponentProps> = ({ history }) => {
         {map(({ id, title, content }) => 
           <ExpansionPanel key={id} expanded={expanded === id} onChange={handleChangeExpand(id)}>
             <ExpansionPanelSummary expandIcon={<ExpandMoreIcon />} aria-controls={id} id={id} key={id}>
-              <h3>{title}</h3>
+              <h1>{title}</h1>
             </ExpansionPanelSummary>
             <ExpansionPanelDetails key={id}>
               <div dangerouslySetInnerHTML={{ __html: content }} />

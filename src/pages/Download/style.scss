@@ -60,7 +60,7 @@
   .custom-block{
     border: 1px solid #efd77f;
     border-radius: 4px;
-    margin-right: 5px;
+    margin-right: 20px;
     max-width: 32.0%;
     &:last-child{
       margin-right: 0px;
@@ -85,6 +85,9 @@
     line-height: 1.75;
     border-radius: 4px;
     text-transform: uppercase;
+  }
+  .MuiGrid-root.MuiGrid-container{
+    justify-content: center;
   }
 }
 
@@ -114,4 +117,5 @@
   .MuiIconButton-root {
     color: $primaryColor;
   }
+  
 }
