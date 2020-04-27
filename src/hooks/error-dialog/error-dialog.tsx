@@ -39,7 +39,7 @@ const useErrorDialog: HookDialog = (status) => {
         onClose={handleClose}
         aria-labelledby="responsive-dialog-title"
       >
-        {statusApi === 'Error' ?  <DialogTitle id="responsive-dialog-title" className="error">{statusApi}</DialogTitle>: 
+        {statusApi === 'Error' ?  <DialogTitle id="responsive-dialog-title" className="error">System Message</DialogTitle>: 
         <DialogTitle id="responsive-dialog-title" className="success">{statusApi}</DialogTitle>}
          
         <DialogContent>

@@ -32,13 +32,6 @@ const DOWNLOADTYPES = [
 		image: 'slots/playtech.png',
 		providers: [
 			{
-				idName: '1',
-				image: 'mobile_pc.png',
-				route: '',
-				title: 'PC',
-				version: 'PC version'
-			},
-			{
 				idName: '2',
 				image: 'mobile_android.png',
 				route: 'http://mlive.gsoft888.com',
