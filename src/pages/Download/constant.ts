@@ -33,7 +33,7 @@ const DOWNLOADTYPES = [
 		providers: [
 			{
 				idName: '2',
-				image: 'mobile_android.png',
+				image: 'android.png',
 				route: 'http://mlive.gsoft888.com',
 				title: 'LIVE CASINO',
 				version: 'Android version',
@@ -41,7 +41,7 @@ const DOWNLOADTYPES = [
 			},
 			{
 				idName: '3',
-				image: 'mobile_android.png',
+				image: 'android.png',
 				route: 'http://mgames.gsoft888.com',
 				title: 'SLOTS',
 				version: 'Android version',
@@ -59,7 +59,7 @@ const DOWNLOADTYPES = [
 		providers: [
 			{
 				idName: '13',
-				image: 'mobile_android.png',
+				image: 'android.png',
 				route: 'https://www.1sgames88.com/android/download.htm',
 				target: '_blank',
 				title: '',
@@ -67,7 +67,7 @@ const DOWNLOADTYPES = [
 			},
 			{
 				idName: '14',
-				image: 'mobile_android.png',
+				image: 'ios.png',
 				route: 'itms-services://?action=download-manifest&amp;url=https://www.1sgames88.com/mobileservice/app/ios/plist',
 				target: '_blank',
 				title: '',
@@ -84,7 +84,7 @@ const DOWNLOADTYPES = [
 		providers: [
 			{
 				idName: '6',
-				image: 'mobile_android.png',
+				image: 'android.png',
 				route: 'http://casino.gpiops.com/mob/download.html?op=hokibet188',
 				target: '_blank',
 				title: 'LIVE CASINO',
@@ -99,7 +99,7 @@ const DOWNLOADTYPES = [
 		providers: [
 			{
 				idName: '7',
-				image: 'mobile_android.png',
+				image: 'android.png',
 				route: 'https://drive.google.com/file/d/1IZDCEXawj5W7TUCOlSsM8eXVgTYkubp4/view?usp=sharing',
 				target: '_blank',
 				title: 'SLOTS',
@@ -119,7 +119,7 @@ const DOWNLOADTYPES = [
 		providers: [
 			{
 				idName: '8',
-				image: 'mobile_android.png',
+				image: 'android.png',
 				route: '/https://dl.gg626.com/iOS/public/download.html',
 				target: '_blank',
 				title: 'SLOTS',
@@ -139,7 +139,7 @@ const DOWNLOADTYPES = [
 		providers: [
 			{
 				idName: '9',
-				image: 'mobile_android.png',
+				image: 'android.png',
 				route: 'http://www.ios88app.com/android/poker.apk',
 				target: '_blank',
 				title: '',
@@ -147,7 +147,7 @@ const DOWNLOADTYPES = [
 			},
 			{
 				idName: '10',
-				image: 'mobile_ios.jpg',
+				image: 'ios.png',
 				route: 'https://www.gameiosapk.com/iphone.php',
 				target: '_blank',
 				title: '',
@@ -167,7 +167,7 @@ const DOWNLOADTYPES = [
 		providers: [
 			{
 				idName: '11',
-				image: 'mobile_android.png',
+				image: 'android.png',
 				route: 'http://www3.hs8416.com/Mobile/Download.aspx',
 				target: '_blank',
 				title: '',
@@ -175,7 +175,7 @@ const DOWNLOADTYPES = [
 			},
 			{
 				idName: '12',
-				image: 'mobile_ios.jpg',
+				image: 'ios.png',
 				route: 'http://www3.hs8416.com/Mobile/Download.aspx',
 				target: '_blank',
 				title: '',
@@ -191,7 +191,7 @@ const DOWNLOADTYPES = [
 		providers: [
 			{
 				idName: '4',
-				image: 'mobile_android.png',
+				image: 'android.png',
 				route: 'https://www.abgapp88.net/',
 				target: '_blank',
 				title: 'LIVE CASINO',
@@ -199,7 +199,7 @@ const DOWNLOADTYPES = [
 			},
 			{
 				idName: '5',
-				image: 'mobile_ios.jpg',
+				image: 'ios.png',
 				route: 'https://www.abgapp88.net/',
 				target: '_blank',
 				title: 'LIVE CASINO',
