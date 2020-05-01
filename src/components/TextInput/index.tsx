@@ -11,6 +11,13 @@ const  TextInput : React.FC<Props> = ({ input, meta, ...rest }: Props) => {
     meta.touched
   
   const helperText = error ? meta.error || meta.submitError : undefined
+  const callbackOnChange = (e:any) => {
+    if(rest[`lowercase`] && rest[`lowercase`] === 'true'){
+      input.onChange(e.target.value.toLowerCase())
+    }else {
+      input.onChange(e)
+    } 
+  }
 
   return (
     <TextField
@@ -20,6 +27,7 @@ const  TextInput : React.FC<Props> = ({ input, meta, ...rest }: Props) => {
       error={error}
       {...input}
       {...rest}
+      onChange={callbackOnChange}
     />
   )
 }

@@ -118,6 +118,7 @@ const Register: React.FC<RouteComponentProps> = ({ history }) => {
                   fullWidth={true}
                   disable={isLoading.toString()}
                   component={TextInput}
+                  lowercase="true"
                 />
               </div>
               <div>
