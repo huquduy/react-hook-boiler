@@ -71,6 +71,12 @@ const Register: React.FC<RouteComponentProps> = ({ history }) => {
       history.push('/home')
     }
   }
+  const handleChange = (event: React.ChangeEvent<{ value: unknown }>) => {
+    const value = String(event.target.value).toLowerCase();
+    setInitialValues((prevState) =>({
+      ...prevState, username: String(value)
+    }))
+  }
 
   useEffect(() => {
     const fetchBanks = async () => {

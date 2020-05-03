@@ -3,8 +3,11 @@ import React from 'react'
 import { FieldRenderProps } from 'react-final-form'
 
 type Props = FieldRenderProps<string, any>
+interface IInput extends Props {
+  handleChange?: any
+}
 
-const  TextInput : React.FC<Props> = ({ input, meta, ...rest }: Props) => {
+const  TextInput : React.FC<IInput> = ({ input, meta, handleChange, ...rest }: IInput) => {
 
   const error =
     ((meta.submitError && !meta.dirtySinceLastSubmit) || meta.error) &&
@@ -16,6 +19,9 @@ const  TextInput : React.FC<Props> = ({ input, meta, ...rest }: Props) => {
       input.onChange(e.target.value.toLowerCase())
     }else {
       input.onChange(e)
+      if(handleChange) {
+        handleChange(e)
+      }
     } 
   }
 

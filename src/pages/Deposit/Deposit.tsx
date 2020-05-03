@@ -244,7 +244,7 @@ const Deposit: React.FC<RouteComponentProps> = ({ history }) => {
                   name="amount"
                   label="Amount :"
                   type="text"
-                  onChange={handleChangeAmount}
+                  handleChange={handleChangeAmount}
                   placeholder="kredit(1kredit=1000 rupiah)"
                   disable={isLoading.toString()}
                   fullWidth={true}
