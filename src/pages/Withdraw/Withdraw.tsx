@@ -129,7 +129,7 @@ const Withdraw: React.FC<RouteComponentProps> = ({ history }) => {
                   type="text"
                   disable={isLoading.toString()}
                   fullWidth={true}
-                  onChange={handleChange}
+                  handleChange={handleChange}
                   placeholder="kredit(1kredit=1000 rupiah)"
                   component={TextInput}
                 />
