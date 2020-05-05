@@ -7,27 +7,33 @@ import {
   Typography
 } from '@material-ui/core';
 import React, { FC, ReactNode, useState } from 'react'
+import { useHistory } from "react-router-dom";
 import './style.scss'
 
-type TCallback = (msg: string, statusAPI: string) => void
+type TCallback = (msg: string, statusAPI: string , redirectUrl?: string) => void
 type HookDialog = (status: boolean) => [TCallback, React.FC<{ children?: ReactNode, title?: string }>]
 
 const useErrorDialog: HookDialog = (status) => {
   const [isOpened, setIsOpened] = useState(status)
   const [message, setMessage] = useState('')
   const [statusApi, setStatusAPI] = useState('')
+  const [redirectURL, setRedirectUrl] = useState('')
+  const history = useHistory()
 
   const handleClose = () => {
     setIsOpened(false)
     setMessage('')
     setStatusAPI('')
+    if(redirectURL && redirectURL !=='') {
+      history.push(redirectURL)
+    }
   }
 
-  const showDialog = ( msg: string, statusAPI: string) => {
+  const showDialog = ( msg: string, statusAPI: string, redirectUrl?: string ) => {
     setMessage(msg)
     setStatusAPI(statusAPI)
     setIsOpened(true)
-
+    setRedirectUrl(redirectUrl || '')
   }
 
   const ErrorDialogComponent: FC<{ children?: ReactNode, title?: string }> = ({

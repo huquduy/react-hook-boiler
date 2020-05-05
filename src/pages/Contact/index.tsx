@@ -32,9 +32,9 @@ const Contact: React.FC<RouteComponentProps> = ({ history }) => {
         </table>
         <h4>FOLLOWS</h4>
         <ul>
-          <li><a target='_blank' href="https://www.facebook.com/Hokibet188live-1109599625879678"><img className='game-type-icon' alt='hokibet188' src={`${imageSrc}icons/connect_fb.jpg`} /></a></li>
-          <li><a target='_blank' href="http://www.gollhoki.com/"><img className='game-type-icon' alt='hokibet188' src={`${imageSrc}icons/connect_blog.jpg`} /></a></li>
-          <li><a target='_blank' href="https://www.instagram.com/hokibet188.bola"><img className='game-type-icon' alt='hokibet188' src={`${imageSrc}icons/INSTAGRAM_PNG.png`} /></a></li>
+          <li><a target='_blank' href="https://www.facebook.com/Hokibet188live-1109599625879678"  rel="noopener noreferrer"><img className='game-type-icon' alt='hokibet188' src={`${imageSrc}icons/connect_fb.jpg`} /></a></li>
+          <li><a target='_blank' href="http://www.gollhoki.com/"  rel="noopener noreferrer"><img className='game-type-icon' alt='hokibet188' src={`${imageSrc}icons/connect_blog.jpg`} /></a></li>
+          <li><a target='_blank' href="https://www.instagram.com/hokibet188.bola"  rel="noopener noreferrer"><img className='game-type-icon' alt='hokibet188' src={`${imageSrc}icons/INSTAGRAM_PNG.png`} /></a></li>
         </ul>
       </div>
       <Bottom />
