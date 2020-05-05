@@ -22,17 +22,20 @@ import {
 import Credits from 'components/Credits'
 import { AuthContext } from 'contexts/authContext'
 import useDialog from 'hooks/dialog'
+import useLoading from 'hooks/loading'
 import React, { useState } from 'react'
 import { Link, useHistory } from 'react-router-dom'
+import { get } from 'services/http'
 import Sidebar from '../Drawer'
 import './style.scss'
 
-
 const Header: React.FC = () => {
+  const [, withLoading, ] = useLoading(false)
   const { auth, setUnauthStatus } = React.useContext(AuthContext)
   const [isDrawerOpened, setDrawerOpened] = useState<boolean>(false);
   const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null)
   const [showCreditsDialog, CreditsDialog] = useDialog(false)
+  const [balance, setBalance] = useState('')
   const history = useHistory()
   const [open, setOpen] = React.useState(false);
   const handleClickOpen = () => {
@@ -40,8 +43,20 @@ const Header: React.FC = () => {
   };
 
   const toggleProfileMenu = (event: React.MouseEvent<HTMLButtonElement>) => {
+    fetchInformation();
     setAnchorEl(event.currentTarget);
   };
+
+  const fetchInformation = async () => {
+    const { user: User, error }: { user: any, error: string } = await withLoading(() => get({
+      path: 'user/infomation'
+    }))
+      .catch((err) => err)
+    if (error) {
+      return;
+    }
+    setBalance(String(User.balance))
+  }
 
   const handleClose = () => {
     setAnchorEl(null)
@@ -112,7 +127,7 @@ const Header: React.FC = () => {
                 onClose={handleClose}
                 anchorPosition={{ top: 40, left: 0 }}
               >
-                <MenuItem onClick={showCreditsDialog}><LocalAtmIcon />{auth.balance} IDR</MenuItem>
+                <MenuItem onClick={showCreditsDialog}><LocalAtmIcon />{balance} IDR</MenuItem>
                 <MenuItem onClick={navigateToProfile}>Profile</MenuItem>
                 <MenuItem className="profile-menu">
                   <List><ListItem button={true} onClick={handleClickOpen}>

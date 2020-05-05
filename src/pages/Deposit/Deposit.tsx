@@ -84,11 +84,9 @@ const Deposit: React.FC<RouteComponentProps> = ({ history }) => {
       path: 'deposit/execute'
     })).catch(err => err)
     if (error) {
-      // return showSnackbar(error)
       return showDialog(error, 'Error')
     }
-    // history.push('/home')
-    return showDialog('Deposit Succesfully', 'Success')
+    return showDialog('Deposit Succesfully', 'Success', '/report/deposit')
   }
   const handleChange = (event: React.ChangeEvent<{ value: unknown }>) => {
     const { value } = event.target

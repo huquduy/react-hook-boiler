@@ -58,10 +58,9 @@ const Withdraw: React.FC<RouteComponentProps> = ({ history }) => {
       path: 'withdraws/execute'
     })).catch((err) => err)
     if (error) {
-      // return showSnackbar(error)
       return showDialog(error, 'Error')
     }
-    return showDialog('Withdraws Succesfully', 'Success')
+    return showDialog('Withdraws Succesfully', 'Success', '/report/withdraw')
 
   }
   const handleChange = (event: React.ChangeEvent<{ value: unknown }>) => {
