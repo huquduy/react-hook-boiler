@@ -75,7 +75,9 @@ const Transfer: React.FC = () => {
   const handleTransfer = async ({ amount, loyaltyBonus, origin, target }) => {
     const { error } = await withLoading(() => post({
       body: {
-        amount, loyaltyBonus, origin, target
+        amount,
+        loyaltyBonus: bonus ? loyaltyBonus : false,
+        origin, target
       },
       path: 'transfer/execute'
     })).catch(err => err)
@@ -91,6 +93,12 @@ const Transfer: React.FC = () => {
     const selectedValue = String(event.target.value)
     if (targetProvider === 'target') {
       fetchBonusProvider(selectedValue)
+    }
+    if (targetProvider === 'origin' && selectedValue !== MAIN_WALLET) {
+      setBonus({
+        ...bonus,
+        status: false
+      })
     }
     const [{ value: mainWallet }, { value: secondProvider }] = credits
     if (selectedValue === mainWallet) {
@@ -167,7 +175,7 @@ const Transfer: React.FC = () => {
                     label="Transfer From"
                     fullWidth={true}
                     options={credits}
-                    handleChange={handleChangeProvider(changeTarget, '')}
+                    handleChange={handleChangeProvider(changeTarget, 'origin')}
                     variant="outlined"
                     component={SelectInput}
                   />
