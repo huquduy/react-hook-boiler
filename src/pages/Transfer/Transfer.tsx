@@ -16,17 +16,20 @@ import useLoading from 'hooks/loading'
 import { map } from 'ramda'
 import React, { useEffect, useState } from 'react'
 import { Field, withTypes } from 'react-final-form'
+import { OnChange } from 'react-final-form-listeners'
 import { composeValidators, mustBeNumber, required } from 'services/form'
 import { get, post } from 'services/http'
 import './style.scss'
 
 const MAIN_WALLET = 'Main Wallet'
+const ignoredBonuses = [MAIN_WALLET, '4D lottery', 'Poker IDN']
 
 interface IForm {
   origin: string,
   target: string,
   amount: string,
   loyaltyBonus: boolean,
+  welcomeBonus: boolean,
   credit: string
 }
 
@@ -52,10 +55,17 @@ const Transfer: React.FC = () => {
     loyaltyBonus: false,
     origin: '',
     target: '',
+    welcomeBonus: false,
   })
   const [credits, setCredits] = useState<IOption[] | []>([])
   const [showDialog, ErrorDialogComponent] = useErrorDialog(false)
-  const [bonus, setBonus] = useState<IBonus>({
+  const [loyaltyBonus, setLoyaltyBonus] = useState<IBonus>({
+    percentage: 0,
+    rollingTime: 0,
+    status: false,
+    title: '',
+  })
+  const [welcomeBonus, setWelcomeBonus] = useState<IBonus>({
     percentage: 0,
     rollingTime: 0,
     status: false,
@@ -72,11 +82,12 @@ const Transfer: React.FC = () => {
     return creditsCorrected
   }
 
-  const handleTransfer = async ({ amount, loyaltyBonus, origin, target }) => {
+  const handleTransfer = async ({ amount, loyaltyBonus: loyaltyBonusClaim, welcomeBonus: welcomeBonusClaim, origin, target }) => {
     const { error } = await withLoading(() => post({
       body: {
         amount,
-        loyaltyBonus: bonus ? loyaltyBonus : false,
+        bonus: welcomeBonus.status ? welcomeBonusClaim : undefined,
+        loyaltyBonus: loyaltyBonus.status ? loyaltyBonusClaim : undefined,
         origin, target
       },
       path: 'transfer/execute'
@@ -84,22 +95,13 @@ const Transfer: React.FC = () => {
     if (error) {
       return showDialog(error, 'Error')
     }
-    fetchBonusProvider(target)
+    fetchLoyaltyBonus(target)
     await fetchCredits()
     return showDialog('Transfer Successfully', 'Success')
   }
 
-  const handleChangeProvider = (change, targetProvider) => (event: React.ChangeEvent<{ value: unknown }>) => {
+  const handleChangeProvider = (change) => (event: React.ChangeEvent<{ value: unknown }>) => {
     const selectedValue = String(event.target.value)
-    if (targetProvider === 'target') {
-      fetchBonusProvider(selectedValue)
-    }
-    if (targetProvider === 'origin' && selectedValue !== MAIN_WALLET) {
-      setBonus({
-        ...bonus,
-        status: false
-      })
-    }
     const [{ value: mainWallet }, { value: secondProvider }] = credits
     if (selectedValue === mainWallet) {
       return change(secondProvider)
@@ -107,9 +109,12 @@ const Transfer: React.FC = () => {
     return change(mainWallet)
   }
 
-  const fetchBonusProvider = async (provider: string) => {
-    const ignoredBonuses = [MAIN_WALLET, '4D lottery', 'Poker IDN']
+  const fetchLoyaltyBonus = async (provider: string) => {
     const allowedBonus = !ignoredBonuses.includes(provider)
+    const disableLoyaltyBonus = () => setLoyaltyBonus({
+      ...loyaltyBonus,
+      status: false
+    })
     if (allowedBonus) {
       const bonusResps = await withLoading(() => get({
         body: { provider },
@@ -117,20 +122,36 @@ const Transfer: React.FC = () => {
 
       }))
         .catch((err) => err)
+
+      // Disable Loyalty bonus if occur error 
       if (bonusResps.error) {
-        return setBonus({
-          ...bonus,
-          status: false
-        })
+        return disableLoyaltyBonus()
       }
-      return setBonus({
+      return setLoyaltyBonus({
         ...bonusResps,
         status: Boolean(bonusResps)
       })
     }
-    return setBonus({
-      ...bonus,
+    return disableLoyaltyBonus()
+  }
+
+  const fetchWelcomeBonus = async () => {
+    const disableWelcomeBonus = () => setWelcomeBonus({
+      ...welcomeBonus,
       status: false
+    })
+    const bonusResps = await withLoading(() => get({
+      path: 'transfer/bonus/welcome/'
+    }))
+      .catch((err) => err)
+
+    // Disable Welcome bonus if occur error 
+    if (bonusResps.error) {
+      return disableWelcomeBonus()
+    }
+    return setWelcomeBonus({
+      ...bonusResps,
+      status: Boolean(bonusResps)
     })
   }
 
@@ -143,7 +164,8 @@ const Transfer: React.FC = () => {
         origin,
         target,
       })
-      fetchBonusProvider(target)
+      fetchWelcomeBonus()
+      fetchLoyaltyBonus(target)
     }
 
     if (auth.username) {
@@ -151,6 +173,17 @@ const Transfer: React.FC = () => {
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
+
+  useEffect(() => {
+    if (welcomeBonus.status) {
+      console.log('loyaltyBonus to false')
+      setLoyaltyBonus({
+        ...loyaltyBonus,
+        status: false
+      })
+    }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [welcomeBonus])
 
   return (
     <div className='deposit-page'>
@@ -175,7 +208,7 @@ const Transfer: React.FC = () => {
                     label="Transfer From"
                     fullWidth={true}
                     options={credits}
-                    handleChange={handleChangeProvider(changeTarget, 'origin')}
+                    handleChange={handleChangeProvider(changeTarget)}
                     variant="outlined"
                     component={SelectInput}
                   />
@@ -186,10 +219,15 @@ const Transfer: React.FC = () => {
                     label="Transfer To"
                     fullWidth={true}
                     options={credits}
-                    handleChange={handleChangeProvider(changeOrigin, 'target')}
+                    handleChange={handleChangeProvider(changeOrigin)}
                     variant="outlined"
                     component={SelectInput}
                   />
+                  <OnChange name="target">
+                    {(value) => {
+                      fetchLoyaltyBonus(value)
+                    }}
+                  </OnChange>
                 </div>
                 <div>
                   <Field
@@ -202,17 +240,30 @@ const Transfer: React.FC = () => {
                     component={TextInput}
                   />
                 </div>
-                {bonus.status ?
+                {welcomeBonus.status ?
                   <div>
                     <Field
-                      name="loyaltyBonus"
+                      name="welcomeBonus"
                       type="checkbox"
-                      label={(`${bonus.title} Bonus ${bonus.percentage * 100} %`).toUpperCase()}
+                      label={(`${welcomeBonus.title} Bonus ${welcomeBonus.percentage * 100} %`).toUpperCase()}
                       disable={isLoading.toString()}
                       component={Checkbox}
                     />
                     <Typography variant="caption" display="block" gutterBottom={true}>
-                      * I want to claim bonus with term and conditions. Rollover {bonus.rollingTime} Times
+                      * I want to claim bonus with term and conditions. Rollover {welcomeBonus.rollingTime} Times
+                    </Typography>
+                  </div> : null}
+                {loyaltyBonus.status && !welcomeBonus.status ?
+                  <div>
+                    <Field
+                      name="loyaltyBonus"
+                      type="checkbox"
+                      label={(`${loyaltyBonus.title} Bonus ${loyaltyBonus.percentage * 100} %`).toUpperCase()}
+                      disable={isLoading.toString()}
+                      component={Checkbox}
+                    />
+                    <Typography variant="caption" display="block" gutterBottom={true}>
+                      * I want to claim bonus with term and conditions. Rollover {loyaltyBonus.rollingTime} Times
                     </Typography>
                   </div> : null}
                 <div>
