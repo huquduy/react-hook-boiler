@@ -9,7 +9,7 @@ import { getGameType, IProviderProps, SLOT_TAB } from 'constant/games'
 import { filter, map, reduce } from 'ramda'
 import React, { useCallback, useEffect, useMemo, useState } from 'react'
 import ReactImageFallback from 'react-image-fallback'
-import { useParams, withRouter } from 'react-router-dom'
+import { useParams } from 'react-router-dom'
 import gamesByProvider, { IGames } from './constant'
 import './style.scss'
 
@@ -162,4 +162,4 @@ const Home: React.FC = () => {
   )
 }
 
-export default withRouter(Home)
+export default Home

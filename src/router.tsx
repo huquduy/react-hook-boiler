@@ -70,11 +70,11 @@ const Router = () => {
           <RequiredLoginRooute path="/transfer" component={Transfer} />
           <RequiredLoginRooute path="/deposit" component={Deposit} />
           <RequiredLoginRooute path="/withdraw" component={Withdraw} />
-          <RequiredLoginRooute path="/report/deposit" component={DepositReport} />
-          <RequiredLoginRooute path="/report/withdraw" component={WithdrawReport} />
-          <RequiredLoginRooute path="/report/transfer" component={TransferReport} />
+          <RequiredLoginRooute path="/reports/deposit" component={DepositReport} />
+          <RequiredLoginRooute path="/reports/withdraw" component={WithdrawReport} />
+          <RequiredLoginRooute path="/reports/transfer" component={TransferReport} />
           <RequiredLoginRooute path="/profile" component={Profile} />
-          <RequiredLoginRooute path="/mobile/0" component={Download} />
+          <RequiredLoginRooute path="/mobiles/:providerId" component={Download} />
         </Switch>
       </Suspense>
     </BrowserRouter>
