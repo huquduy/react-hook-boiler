@@ -120,7 +120,7 @@ const Sidebar= (handleCloseDrawer: any) => {
         {map((item: any) =>
           <MenuItem title={item.title} route={item.route} icon={item.icon} items={item.items} key="3" />, games)}
         <ListItem button={true} key="download">
-          <Link to='/mobile/0' className='item'>
+          <Link to='/mobiles/playtech' className='item'>
             <span className='item-text'><img alt='hokibet188' className="icon-menu" src={`${imageSrc}/icons/download.png`} />Download</span>
           </Link>
         </ListItem>
