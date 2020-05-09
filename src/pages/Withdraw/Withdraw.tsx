@@ -36,7 +36,7 @@ const { Form } = withTypes<IForm>()
 const Withdraw: React.FC<RouteComponentProps> = ({ history }) => {
   const { auth } = React.useContext(AuthContext)
   const [showDialog, ErrorDialogComponent] = useErrorDialog(false)
-  const [initialValues, setInitialValues] = useState<IForm>({
+  const [initialValues] = useState<IForm>({
     amount: '',
     bankAccountName: auth.bankAccountName,
     bankAccountNo: auth.bankAccountNumber,
