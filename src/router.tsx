@@ -45,6 +45,8 @@ const RequiredLoginRooute = ({ component: Component, ...rest }) => {
   );
 }
 
+const NotFoundRedirect = () => <Redirect to='/' />
+
 const Router = () => {
   return (
     <BrowserRouter>
@@ -75,6 +77,7 @@ const Router = () => {
           <RequiredLoginRooute path="/reports/transfer" component={TransferReport} />
           <RequiredLoginRooute path="/profile" component={Profile} />
           <RequiredLoginRooute path="/mobiles/:providerId" component={Download} />
+          <Route component={NotFoundRedirect} />
         </Switch>
       </Suspense>
     </BrowserRouter>
