@@ -88,10 +88,10 @@ const Deposit: React.FC<RouteComponentProps> = ({ history }) => {
     }
     return showDialog('Deposit Succesfully', 'Success', '/reports/deposit')
   }
-  const handleChange =  (change) => (event: React.ChangeEvent<{ value: unknown }>) => {
-    const value  = event.target.value;
-    const {accountName, accountNumber} = find(propEq('value', value))(banks);
-    change({accountName, accountNumber})
+  const handleChange = (change) => (event: React.ChangeEvent<{ value: unknown }>) => {
+    const value = event.target.value;
+    const { accountName, accountNumber } = find(propEq('value', value))(banks);
+    change({ accountName, accountNumber })
   }
   const calculateAmount = (value) => {
     const result = Numeral(Number(value) * 1000).format('0,0')
@@ -163,9 +163,9 @@ const Deposit: React.FC<RouteComponentProps> = ({ history }) => {
       >
         {({ handleSubmit, form }) => {
           const changeCalcAmount = value => form.change('calcAmount', value)
-          const changeBankInfo = ({accountName,accountNumber}) => form.batch(() => {
-            form.change('accountName',accountName)
-            form.change('accountNumber',accountNumber)
+          const changeBankInfo = ({ accountName, accountNumber }) => form.batch(() => {
+            form.change('accountName', accountName)
+            form.change('accountNumber', accountNumber)
           })
           return (
             <form onSubmit={handleSubmit}>
