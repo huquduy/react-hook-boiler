@@ -14,9 +14,10 @@ import { AuthContext } from 'contexts/authContext'
 import useErrorDialog from 'hooks/error-dialog/error-dialog'
 import useLoading from 'hooks/loading'
 import Numeral from 'numeral'
-import { find, map, propEq, isEmpty } from 'ramda'
+import { find, isEmpty, map, propEq } from 'ramda'
 import React, { useEffect, useState } from 'react'
 import { Field, withTypes } from 'react-final-form'
+import { OnChange } from 'react-final-form-listeners'
 import { RouteComponentProps, withRouter } from 'react-router-dom'
 import { composeValidators, mustBeNumber, required } from 'services/form'
 import { get, post } from 'services/http'
@@ -34,11 +35,11 @@ interface IForm {
   calcAmount: string,
   currency: string,
   paymentMethod: string,
-  toBankName:string,
-  extraBonus:boolean,
+  toBankName: string,
+  extraBonus: boolean,
 }
 export interface IBonus {
-  id:number,
+  id: number,
   title: string,
   rollingTime: number,
   status: boolean,
@@ -65,7 +66,7 @@ const Deposit: React.FC<RouteComponentProps> = ({ history }) => {
     extraBonus: false
   })
   const [bonus, setBonus] = useState<IBonus>({
-    id:0,
+    id: 0,
     percentage: 0,
     rollingTime: 0,
     status: false,
@@ -74,12 +75,11 @@ const Deposit: React.FC<RouteComponentProps> = ({ history }) => {
   const [banks, setBanks] = useState<IOption[] | []>([])
 
   const [isLoading, withLoading, Loading] = useLoading(false)
-  // const [showSnackbar, Snackbar] = useSnackbar(false)
 
-  const handleDeposit = async ({ amount, password, toBankName, currency, bankAccountNumber, bankAccountName, paymentMethod, fromBank, extraBonus}) => {
+  const handleDeposit = async ({ amount, password, toBankName, currency, bankAccountNumber, bankAccountName, paymentMethod, fromBank, extraBonus }) => {
     const { error } = await withLoading(() => post({
       body: {
-        amount, password, currency, bankAccountNumber, bankAccountName, paymentMethod, fromBank, toBank:toBankName, extraBonus
+        amount, password, currency, bankAccountNumber, bankAccountName, paymentMethod, fromBank, toBank: toBankName, extraBonus
       },
       path: 'deposit/execute'
     })).catch(err => err)
@@ -88,41 +88,30 @@ const Deposit: React.FC<RouteComponentProps> = ({ history }) => {
     }
     return showDialog('Deposit Succesfully', 'Success', '/report/deposit')
   }
-  const handleChange = (event: React.ChangeEvent<{ value: unknown }>) => {
-    const { value } = event.target
-    const findResult = find(propEq('value', value ))(banks);
-    setInitialValues({
-      ...initialValues,
-      toBank: Number(value),
-      toBankName: findResult.title,
-      accountName: findResult.accountName,
-      accountNumber: findResult.accountNumber
-    })
+  const handleChange =  (change) => (event: React.ChangeEvent<{ value: unknown }>) => {
+    const value  = event.target.value;
+    const {accountName, accountNumber} = find(propEq('value', value))(banks);
+    change({accountName, accountNumber})
   }
-  const handleChangeAmount = (event: React.ChangeEvent<{ value: unknown }>) => {
-    const { value } = event.target
-    const calcAmount = Numeral(Number(value) * 1000).format('0,0')
-    setInitialValues({
-      ...initialValues,
-      amount: String(value),
-      calcAmount: String(calcAmount)
-    })
+  const calculateAmount = (value) => {
+    const result = Numeral(Number(value) * 1000).format('0,0')
+    return result;
   }
   const fetchBonusProvider = async () => {
-      const {bonus: bonusResps} = await withLoading(() => get({
-        path: 'deposit/bonus/extra'
-      }))
-        .catch((err) => err)
-      if (isEmpty(bonusResps)) {
-        return setBonus({
-          ...bonus,
-          status: false
-        })
-      }
+    const { bonus: bonusResps } = await withLoading(() => get({
+      path: 'deposit/bonus/extra'
+    }))
+      .catch((err) => err)
+    if (isEmpty(bonusResps)) {
       return setBonus({
-        ...bonusResps,
-        status: Boolean(bonusResps)
+        ...bonus,
+        status: false
       })
+    }
+    return setBonus({
+      ...bonusResps,
+      status: Boolean(bonusResps)
+    })
   }
   const correctBankProps = ({ bankName, id, accountName, accountNumber }) => ({
     accountName,
@@ -145,16 +134,16 @@ const Deposit: React.FC<RouteComponentProps> = ({ history }) => {
 
   useEffect(() => {
     const fetchInitial = async () => {
-      const bankCorrected = await fetchBanks() ||[]
+      const bankCorrected = await fetchBanks() || []
       const initialBank = 0;
       setInitialValues({
-      ...initialValues,
-      accountName: bankCorrected[initialBank].accountName,
-      accountNumber: bankCorrected[initialBank].accountNumber,
-      toBank: Number(bankCorrected[initialBank].value),
-      toBankName: bankCorrected[initialBank].title,
-    })
-    fetchBonusProvider()
+        ...initialValues,
+        accountName: bankCorrected[initialBank].accountName,
+        accountNumber: bankCorrected[initialBank].accountNumber,
+        toBank: Number(bankCorrected[initialBank].value),
+        toBankName: bankCorrected[initialBank].title,
+      })
+      fetchBonusProvider()
     }
     if (auth.username) {
       fetchInitial()
@@ -172,107 +161,119 @@ const Deposit: React.FC<RouteComponentProps> = ({ history }) => {
         initialValues={initialValues}
         onSubmit={handleDeposit}
       >
-        {({ handleSubmit }) =>
-          <form onSubmit={handleSubmit}>
-            <div className='container'>
-              <div>
-                <Field
-                  name="fromBank"
-                  label="From Bank :"
-                  type="text"
-                  fullWidth={true}
-                  disabled={true}
-                  component={TextInput}
-                />
-              </div>
-              <div>
-                <Field
-                  name="bankAccountName"
-                  label="Bank Account Name: "
-                  type="text"
-                  disabled={true}
-                  fullWidth={true}
-                  component={TextInput}
-                />
-              </div>
-              <div>
-                <Field
-                  name="bankAccountNumber"
-                  label="Bank Account No :"
-                  type="text"
-                  disabled={true}
-                  fullWidth={true}
-                  component={TextInput}
-                />
-              </div>
-              <div>
-                <Field
-                  name="toBank"
-                  label="To Bank :"
-                  fullWidth={true}
-                  options={banks}
-                  handleChange={handleChange}
-                  variant="outlined"
-                  component={SelectInput}
-                />
-              </div>
-              <div>
-                <Field
-                  name="accountName"
-                  label="Account Name :"
-                  type="text"
-                  disabled={true}
-                  fullWidth={true}
-                  component={TextInput}
-                />
-              </div>
-              <div>
-                <Field
-                  name="accountNumber"
-                  label="Account Number :"
-                  type="text"
-                  disabled={true}
-                  fullWidth={true}
-                  component={TextInput}
-                />
-              </div>
-              <div>
-                <Field
-                  validate={composeValidators(required, mustBeNumber)}
-                  name="amount"
-                  label="Amount :"
-                  type="text"
-                  handleChange={handleChangeAmount}
-                  placeholder="kredit(1kredit=1000 rupiah)"
-                  disable={isLoading.toString()}
-                  fullWidth={true}
-                  component={TextInput}
-                />
-              </div>
-              <div>
-                <Field
-                  validate={composeValidators(required)}
-                  name="calcAmount"
-                  label="Transfer Bank :"
-                  type="text"
-                  disable={isLoading.toString()}
-                  fullWidth={true}
-                  component={TextInput}
-                  disabled={true}
-                />
-              </div>
-              <div>
-                <Field
-                  validate={required}
-                  name="password"
-                  label="Confirm Password :"
-                  type="password"
-                  disable={isLoading.toString()}
-                  fullWidth={true}
-                  component={TextInput}
-                />
-              </div>
-              {bonus.status ?
+        {({ handleSubmit, form }) => {
+          const changeCalcAmount = value => form.change('calcAmount', value)
+          const changeBankInfo = ({accountName,accountNumber}) => form.batch(() => {
+            form.change('accountName',accountName)
+            form.change('accountNumber',accountNumber)
+          })
+          return (
+            <form onSubmit={handleSubmit}>
+              <div className='container'>
+                <div>
+                  <Field
+                    name="fromBank"
+                    label="From Bank :"
+                    type="text"
+                    fullWidth={true}
+                    disabled={true}
+                    component={TextInput}
+                  />
+                </div>
+                <div>
+                  <Field
+                    name="bankAccountName"
+                    label="Bank Account Name: "
+                    type="text"
+                    disabled={true}
+                    fullWidth={true}
+                    component={TextInput}
+                  />
+                </div>
+                <div>
+                  <Field
+                    name="bankAccountNumber"
+                    label="Bank Account No :"
+                    type="text"
+                    disabled={true}
+                    fullWidth={true}
+                    component={TextInput}
+                  />
+                </div>
+                <div>
+                  <Field
+                    name="toBank"
+                    label="To Bank :"
+                    fullWidth={true}
+                    options={banks}
+                    handleChange={handleChange(changeBankInfo)}
+                    variant="outlined"
+                    component={SelectInput}
+                  />
+                </div>
+                <div>
+                  <Field
+                    name="accountName"
+                    label="Account Name :"
+                    type="text"
+                    disabled={true}
+                    fullWidth={true}
+                    component={TextInput}
+                  />
+                </div>
+                <div>
+                  <Field
+                    name="accountNumber"
+                    label="Account Number :"
+                    type="text"
+                    disabled={true}
+                    fullWidth={true}
+                    component={TextInput}
+                  />
+                </div>
+                <div>
+                  <Field
+                    validate={composeValidators(required, mustBeNumber)}
+                    name="amount"
+                    label="Amount :"
+                    type="text"
+                    placeholder="kredit(1kredit=1000 rupiah)"
+                    disable={isLoading.toString()}
+                    fullWidth={true}
+                    component={TextInput}
+                  />
+                  <OnChange name="amount">
+                    {(value) => {
+                      const result = calculateAmount(value)
+                      changeCalcAmount(result)
+                    }}
+                  </OnChange>
+                </div>
+
+                <div>
+                  <Field
+                    validate={composeValidators(required)}
+                    name="calcAmount"
+                    label="Transfer Bank :"
+                    type="text"
+                    disable={isLoading.toString()}
+                    fullWidth={true}
+                    component={TextInput}
+                    disabled={true}
+                  />
+                </div>
+                <div>
+                  <Field
+                    validate={required}
+                    name="password"
+                    label="Confirm Password :"
+                    type="password"
+                    disable={isLoading.toString()}
+                    fullWidth={true}
+                    component={TextInput}
+                  />
+                </div>
+                {bonus.status ?
                   <div>
                     <Field
                       name="extraBonus"
@@ -283,15 +284,19 @@ const Deposit: React.FC<RouteComponentProps> = ({ history }) => {
                     />
                     <Typography variant="caption" display="block" gutterBottom={true}>
                       * I want to claim bonus with term and conditions. Rollover {bonus.rollingTime} Times
-                    </Typography>
+                  </Typography>
                   </div> : null}
-              <div>
-                <Button variant="outlined" color="primary" type="submit" startIcon={<SendIcon />}>
-                  Submit
-                </Button>
+                <div>
+                  <Button variant="outlined" color="primary" type="submit" startIcon={<SendIcon />}>
+                    Submit
+              </Button>
+                </div>
               </div>
-            </div>
-          </form>}
+            </form>
+          )
+        }}
+
+
       </Form>
       <ErrorDialogComponent />
       {/* <Snackbar /> */}
