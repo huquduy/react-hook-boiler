@@ -137,10 +137,10 @@ const Header: React.FC = () => {
                     <Collapse in={open} timeout="auto" unmountOnExit={true}>
                       <List component="div" disablePadding={true}>
                         <ListItem button={true}>
-                          <Link to="/report/deposit" className="link-primary">Deposit</Link>
+                          <Link to="/reports/deposit" className="link-primary">Deposit</Link>
                         </ListItem>
-                        <ListItem button={true}><Link to="/report/withdraw" className="link-primary">Withdrawn</Link></ListItem>
-                        <ListItem button={true}><Link to="/report/transfer" className="link-primary">Transfer</Link></ListItem>
+                        <ListItem button={true}><Link to="/reports/withdraw" className="link-primary">Withdrawn</Link></ListItem>
+                        <ListItem button={true}><Link to="/reports/transfer" className="link-primary">Transfer</Link></ListItem>
                       </List>
                     </Collapse>
                   </List>

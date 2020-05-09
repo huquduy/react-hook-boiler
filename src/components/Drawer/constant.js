@@ -212,17 +212,17 @@ export const report = [{
   items: [
     {
       icon: '',
-      route: '/report/deposit',
+      route: '/reports/deposit',
       title: 'Report Deposit',
     },
     {
       icon: '',
-      route: '/report/withdraw',
+      route: '/reports/withdraw',
       title: 'Report Withdrawn',
     },
     {
       icon: '',
-      route: '/report/transfer',
+      route: '/reports/transfer',
       title: 'Report Transfer',
     }
   ]

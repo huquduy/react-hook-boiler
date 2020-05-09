@@ -86,7 +86,7 @@ const Deposit: React.FC<RouteComponentProps> = ({ history }) => {
     if (error) {
       return showDialog(error, 'Error')
     }
-    return showDialog('Deposit Succesfully', 'Success', '/report/deposit')
+    return showDialog('Deposit Succesfully', 'Success', '/reports/deposit')
   }
   const handleChange = (event: React.ChangeEvent<{ value: unknown }>) => {
     const { value } = event.target

@@ -60,7 +60,7 @@ const Withdraw: React.FC<RouteComponentProps> = ({ history }) => {
     if (error) {
       return showDialog(error, 'Error')
     }
-    return showDialog('Withdraws Succesfully', 'Success', '/report/withdraw')
+    return showDialog('Withdraws Succesfully', 'Success', '/reports/withdraw')
 
   }
   const handleChange = (event: React.ChangeEvent<{ value: unknown }>) => {

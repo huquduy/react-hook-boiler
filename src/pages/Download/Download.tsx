@@ -4,79 +4,87 @@ import Header from 'components/Header'
 import Link from 'components/Link'
 import TabPanel from 'components/TabPanel'
 import { imageSrc } from 'config'
+import { AuthContext } from 'contexts/authContext'
 import { map } from 'ramda'
 import React, { useMemo, useState } from 'react'
-import { RouteComponentProps, withRouter } from 'react-router-dom'
-import DOWNLOADTYPES, { getGameType, IProviderProps, PLAYTECH } from './constant'
+import { useParams } from 'react-router-dom'
+import DOWNLOADTYPES, { getGameType, IDownloadProps, IGameTypeProps, PLAYTECH } from './constant'
 import ProviderPassword from './ProviderPassword'
 import './style.scss'
 
+const Download: React.FC = () => {
+  const { providerId = PLAYTECH } = useParams()
+  const { auth } = React.useContext(AuthContext)
+  const [activeTab, setActiveTab] = useState(providerId)
 
-const Download: React.FC<RouteComponentProps> = ({ history }) => {
-	const [activeTab, setActiveTab] = useState(PLAYTECH)
-	const handleChangeTab = (event: React.ChangeEvent<{}>, newValue: string) => {
-		setActiveTab(newValue);
-	};
+  const handleChangeTab = (event: React.ChangeEvent<{}>, newValue: string) => {
+    setActiveTab(newValue);
+  };
 
-	const { providers }: { providers: IProviderProps[] } = useMemo(() => getGameType(activeTab), [activeTab])
+  const { downloads, idName, url, prefix = '', suffix = '' }: IGameTypeProps = useMemo(() => getGameType(activeTab), [activeTab])
 
-	return (
-		<div className='download-page slot-page'>
-			<Header />
-			<Typography color="primary" className="title" variant="h5" align="center" component="h2" gutterBottom={true}>
-				MOBILE DOWNLOAD
-            </Typography>
-			{/* Provider list */}
-			<div className='game-tabs'>
-				<Tabs
-					className="custom_tab"
-					value={activeTab}
-					onChange={handleChangeTab}
-					indicatorColor="primary"
-					variant="scrollable"
-					scrollButtons="on"
-				>
-					{map(({ idName, image }) => <Tab
-						key={idName}
-						label={<div>
-							<img className='game-type-icon' alt='hokibet188' src={`${imageSrc}providers/${image}`} />
-							<Typography variant="caption" display="block" gutterBottom={true}>
-								{idName}
-							</Typography>
-						</div>}
-						value={idName}
-					/>, DOWNLOADTYPES)}
-				</Tabs>
-				<TabPanel value={activeTab}>
-					<Grid container={true} spacing={1}>
-						{map(({ image, idName, route, target, title, version }: IProviderProps) =>
-							<Grid item={true} xs={4} sm={4} key={idName} className="custom-block">
-								<Paper className='provider'>
-									<Typography variant="caption" display="block" gutterBottom={true}>
-										{title}
-									</Typography>
-									<Typography variant="caption" display="block" gutterBottom={true}>
-										{version}
-									</Typography>
-									<img className='logo' alt='hokibet188' src={`${imageSrc}icons/${image}`} />
-								</Paper>
-								<Link className="btn-download" href={route} target={target}>
-									Download
+  return (
+    <div className='download-page slot-page'>
+      <Header />
+      <Typography color="primary" className="title" variant="h5" align="center" component="h2" gutterBottom={true}>
+        MOBILE DOWNLOAD
+      </Typography>
+      {/* Provider list */}
+      <div className='game-tabs'>
+        <Tabs
+          className="custom_tab"
+          value={activeTab}
+          onChange={handleChangeTab}
+          indicatorColor="primary"
+          variant="scrollable"
+          scrollButtons="on"
+        >
+          {map(({ idName: providerName, image }) => <Tab
+            key={providerName.toLowerCase()}
+            label={
+              <div>
+                <img className='game-type-icon' alt='hokibet188' src={`${imageSrc}providers/${image}`} />
+                <Typography variant="caption" display="block" gutterBottom={true}>
+                  {providerName}
+                </Typography>
+              </div>
+						}
+            value={providerName.toLowerCase()}
+          />, DOWNLOADTYPES)}
+        </Tabs>
+        <TabPanel value={activeTab}>
+          <Grid container={true} spacing={1}>
+            {map(({ image, route, title, version }: IDownloadProps) =>
+              <Grid item={true} xs={4} sm={4} key={route + image} className="custom-block">
+                <Paper className='provider'>
+                  <Typography variant="caption" display="block" gutterBottom={true}>
+                    {title}
+                  </Typography>
+                  <Typography variant="caption" display="block" gutterBottom={true}>
+                    {version}
+                  </Typography>
+                  <img className='logo' alt='hokibet188' src={`${imageSrc}icons/${image}`} />
+                </Paper>
+                <Link className="btn-download" href={route} target='_blank'>
+                  Download
                 </Link>
-							</Grid>
-							, providers)}
-					</Grid>
-					<Paper>
-						{map((item: any) =>
-							<div >{item.idName === activeTab ? <ProviderPassword url={item.url} username={item.username} infoText={item.infoText} showForm={item.showForm} /> : null}
-							</div>, DOWNLOADTYPES)}
-					</Paper>
-				</TabPanel>
-			</div>
-			<Bottom />
-		</div>
-	)
+              </Grid>
+            , downloads)}
+          </Grid>
+          <Paper>
+            <ProviderPassword
+              url={url}
+              username={prefix + auth.username + suffix}
+              passwordDescription={`Pleasse choose password for ${idName}`}
+              isShown={Boolean(url)}
+            />
+          </Paper>
+        </TabPanel>
+      </div>
+      <Bottom />
+    </div>
+  )
 }
 
-export default withRouter(Download)
+export default Download
 
