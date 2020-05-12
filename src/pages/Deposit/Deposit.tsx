@@ -121,7 +121,7 @@ const Deposit: React.FC<RouteComponentProps> = ({ history }) => {
   })
   const fetchBanks = async () => {
     const { data: bankResps, error }: { data: any[], error: string } = await withLoading(() => get({
-      path: 'banking'
+      path: 'banking/by/group'
     }))
       .catch((err) => err)
     if (error) {
