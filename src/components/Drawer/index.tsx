@@ -46,7 +46,7 @@ const Sidebar= (handleCloseDrawer: any) => {
               {map((item) => (
                 <React.Fragment key={item.title}>
                   {!item.items ? <ListItem button={true} key={item.title}>
-                    <Link to={item.route} className='item'>
+                    <Link to={item.route} className='item' target={item.target}>
                       <span className='item-text'>
                         {item.icon ? <img alt='hokibet188' className="icon-menu" src={`${imageSrc}/icons/${item.icon}`} /> : null}
                         {item.title}
