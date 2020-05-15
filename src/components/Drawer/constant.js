@@ -65,52 +65,62 @@ export const games = [
           {
             icon: '',
             route: '/gs/groups/playtech/types/slot/codes/7bal',
-            title: 'PT CASINO',
+            title: 'PLAYTECH',
+            target: '_blank',
           },
           {
             icon: '',
             route: '/gs/groups/allbet/types/null/codes/null',
-            title: 'ALLBET CASINO',
+            title: 'ALLBET',
+            target: '_blank',
           },
           {
             icon: '',
             route: '/gs/groups/asiagaming/types/casino/codes/null',
-            title: 'AG CASINO',
+            title: 'ASIA GAMING',
+            target: '_blank',
           },
           {
             icon: '',
             route: '/gs/groups/gameplay/types/casino/codes/casino',
-            title: 'GP CASINO',
+            title: 'GAME PLAY',
+            target: '_blank',
           },
           {
             icon: '',
             route: '/gs/groups/microgaming/types/LC/codes/null',
-            title: 'MG CASINO',
-          },
-          {
-            icon: '',
-            route: '/gs/groups/idn/types/null/codes/null',
-            title: 'BB CASINO',
+            title: 'MICRO GAMING',
+            target: '_blank',
           },
           {
             icon: '',
             route: '/gs/groups/bbin/types/slot/codes/live',
-            title: 'IDN CASINO',
+            title: 'BBin',
+            target: '_blank',
+          },
+          {
+            icon: '',
+            route: '/gs/groups/idn/types/null/codes/null',
+            title: 'IDN LIVE',
+            target: '_blank',
           },
           {
             icon: '',
             route: '/gs/groups/og/types/null/codes/null',
             title: 'OG CASINO',
+            target: '_blank',
           },
           {
             icon: '',
             route: '/tg/groups/SBO/types/SBO/codes/LIVECASINO',
             title: 'SBO CASINO',
+            target: '_blank',
           },
           {
             icon: '',
             route: '/tg/groups/TRG/types/ION/codes/BACCARAT',
             title: 'ION CASINO',
+            target: '_blank',
           }
         ]
       },
@@ -128,11 +138,13 @@ export const games = [
             icon: '',
             route: '/gs/groups/bbin/types/slot/codes/ball',
             title: 'BBIN SPORTSBOOK',
+            target: '_blank',
           },
           {
             icon: '',
             route: '/tg/groups/SBO/types/SBO/codes/SPORTS',
             title: 'SBO SPORTSBOOK',
+            target: '_blank',
           }
         ]
       },
