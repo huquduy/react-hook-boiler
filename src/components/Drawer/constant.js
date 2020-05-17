@@ -4,12 +4,12 @@ export const games = [
     icon: 'sports.png',
     route: '',
     title: 'Games',
-    items:[
+    items: [
       {
         icon: 'slots.png',
         route: '',
         title: 'Slots',
-        items:[
+        items: [
           {
             icon: '',
             route: '/slots/pg',
@@ -34,6 +34,7 @@ export const games = [
             icon: '',
             route: '/gs/groups/asiagaming/types/slot/codes/unused',
             title: 'Asiagaming',
+            target: '_blank',
           },
           {
             icon: '',
@@ -49,11 +50,24 @@ export const games = [
             icon: '',
             route: '/tg/groups/SBO/types/SBO/codes/CQ9',
             title: 'SBO',
+            target: '_blank'
           },
           {
             icon: '',
             route: '/slots/gameplay',
             title: 'Gameplay',
+          },
+          {
+            icon: '',
+            route: '/gs/groups/gg/types/slot/codes/null',
+            title: 'GG gaming',
+            target: '_blank',
+          },
+          {
+            icon: '',
+            route: '/gs/groups/bbin/types/slot/codes/Ltlottery',
+            title: 'BBin',
+            target: '_blank',
           }
         ]
       },
@@ -61,7 +75,7 @@ export const games = [
         icon: 'casino.png',
         route: '',
         title: 'Casino',
-        items:[
+        items: [
           {
             icon: '',
             route: '/gs/groups/playtech/types/slot/codes/7bal',
@@ -128,12 +142,12 @@ export const games = [
         icon: 'sports.png',
         route: '',
         title: 'Sports',
-        items:[
-          {
-            icon: '',
-            route: '/gs/groups/wft/types/null/codes/null',
-            title: 'WFT SPORTSBOOK',
-          },
+        items: [
+          // {
+          //   icon: '',
+          //   route: '/gs/groups/wft/types/null/codes/null',
+          //   title: 'WFT SPORTSBOOK',
+          // },
           {
             icon: '',
             route: '/gs/groups/bbin/types/slot/codes/ball',
@@ -152,21 +166,24 @@ export const games = [
         icon: 'fishing.png',
         route: '',
         title: 'Fishing',
-        items:[
+        items: [
           {
             icon: '',
             route: '/gs/groups/playtech/types/slot/codes/cashfi',
             title: 'PLAYTECH',
+            target: '_blank',
           },
           {
             icon: '',
             route: '/gs/groups/gg/types/slot/codes/null',
             title: 'GG Gaming',
+            target: '_blank',
           },
           {
             icon: '',
             route: '/tg/groups/JOKER/types/SLOTS/codes/Fishing',
             title: 'JOKER',
+            target: '_blank',
           }
         ]
       },
@@ -174,22 +191,25 @@ export const games = [
         icon: 'poker.png',
         route: '/gs/groups/idnPoker/types/null/codes/null',
         title: 'Poker',
+        target: '_blank',
       },
       {
         icon: 'tangkas.png',
         route: '/gs/groups/tangkas/types/null/codes/null',
         title: 'Tangkas',
+        target: '_blank',
       },
       {
         icon: 'lottery.png',
         route: '/gs/groups/toto4d/types/null/codes/null',
         title: 'Lottery',
-
+        target: '_blank',
       },
       {
         icon: 'fight.png',
         route: '/gs/groups/cookfight/types/null/codes/null',
         title: 'Fight',
+        target: '_blank',
       }
     ]
   },
