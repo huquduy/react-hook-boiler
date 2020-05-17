@@ -11,6 +11,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import { games, profile, report } from './constant'
 import './style.scss'
+import HokiLink from 'components/Link/Link'
 
 const Sidebar= (handleCloseDrawer: any) => {
   const { auth } = React.useContext(AuthContext)
@@ -46,12 +47,13 @@ const Sidebar= (handleCloseDrawer: any) => {
               {map((item) => (
                 <React.Fragment key={item.title}>
                   {!item.items ? <ListItem button={true} key={item.title}>
-                    <Link to={item.route} className='item' target={item.target}>
+                  {/* ({item.route, 'item',{item.target}}) */}
+                    <HokiLink href={item.route} className='item' target={item.target}>
                       <span className='item-text'>
                         {item.icon ? <img alt='hokibet188' className="icon-menu" src={`${imageSrc}/icons/${item.icon}`} /> : null}
                         {item.title}
                       </span>
-                    </Link>
+                    </HokiLink>
                   </ListItem> :
                   <MenuItem title={item.title} route={item.route} icon={item.icon} items={item.items} />}
                 </React.Fragment>
