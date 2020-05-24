@@ -28,6 +28,7 @@ interface IForm {
   origin: string,
   target: string,
   amount: string,
+  lebaranBonus: boolean,
   loyaltyBonus: boolean,
   welcomeBonus: boolean,
   credit: string
@@ -52,6 +53,7 @@ const Transfer: React.FC = () => {
   const [initialValues, setInitialValues] = useState<IForm>({
     amount: '',
     credit: '',
+    lebaranBonus: false,
     loyaltyBonus: false,
     origin: '',
     target: '',
@@ -71,6 +73,12 @@ const Transfer: React.FC = () => {
     status: false,
     title: '',
   })
+  const [lebaranBonus, setLebaranBonus] = useState<IBonus>({
+    percentage: 0,
+    rollingTime: 0,
+    status: false,
+    title: '',
+  })
   const [isLoading, withLoading, Loading] = useLoading(false)
 
   const fetchCredits = async () => {
@@ -82,11 +90,12 @@ const Transfer: React.FC = () => {
     return creditsCorrected
   }
 
-  const handleTransfer = async ({ amount, loyaltyBonus: loyaltyBonusClaim, welcomeBonus: welcomeBonusClaim, origin, target }) => {
+  const handleTransfer = async ({ amount, loyaltyBonus: loyaltyBonusClaim, welcomeBonus: welcomeBonusClaim, lebaranBonus: lebaranBonusClaim, origin, target }) => {
     const { error } = await withLoading(() => post({
       body: {
         amount,
         bonus: welcomeBonus.status ? welcomeBonusClaim : undefined,
+        lebaranBonus: lebaranBonus.status ? lebaranBonusClaim : undefined,
         loyaltyBonus: loyaltyBonus.status ? loyaltyBonusClaim : undefined,
         origin, target
       },
@@ -96,6 +105,7 @@ const Transfer: React.FC = () => {
       return showDialog(error, 'Error')
     }
     fetchLoyaltyBonus(target)
+    fetchLebaranBonus(target)
     await fetchCredits()
     return showDialog('Transfer Successfully', 'Success')
   }
@@ -155,6 +165,26 @@ const Transfer: React.FC = () => {
     })
   }
 
+  const fetchLebaranBonus = async (provider: string) => {
+    const bonusResps = await withLoading(() => get({
+      body: { provider },
+      path: 'transfer/bonuses/lebaran/'
+    }))
+      .catch((err) => err)
+
+    // Disable Welcome bonus if occur error 
+    if (bonusResps.error) {
+      return setLebaranBonus({
+        ...lebaranBonus,
+        status: false
+      })
+    }
+    return setLebaranBonus({
+      ...bonusResps,
+      status: Boolean(bonusResps)
+    })
+  }
+
   useEffect(() => {
     const fetchInitial = async () => {
       const creditsCorrected = await fetchCredits()
@@ -176,7 +206,6 @@ const Transfer: React.FC = () => {
 
   useEffect(() => {
     if (welcomeBonus.status) {
-      console.log('loyaltyBonus to false')
       setLoyaltyBonus({
         ...loyaltyBonus,
         status: false
@@ -219,7 +248,14 @@ const Transfer: React.FC = () => {
                     label="Transfer To"
                     fullWidth={true}
                     options={credits}
-                    handleChange={handleChangeProvider(changeOrigin)}
+                    // tslint:disable-next-line: jsx-no-lambda
+                    handleChange={event => {
+                      handleChangeProvider(changeOrigin)(event)
+                      const selectedProvider = String(event.target.value)
+                      if (selectedProvider === 'UTG Slot (Joker, PG, PP)') {
+                        fetchLebaranBonus(selectedProvider)
+                      }
+                    }}
                     variant="outlined"
                     component={SelectInput}
                   />
@@ -264,6 +300,19 @@ const Transfer: React.FC = () => {
                     />
                     <Typography variant="caption" display="block" gutterBottom={true}>
                       * I want to claim bonus with term and conditions. Rollover {loyaltyBonus.rollingTime} Times
+                    </Typography>
+                  </div> : null}
+                {lebaranBonus.status ?
+                  <div>
+                    <Field
+                      name="lebaranBonus"
+                      type="checkbox"
+                      label={(`${lebaranBonus.title} Bonus ${lebaranBonus.percentage * 100} %`).toUpperCase()}
+                      disable={isLoading.toString()}
+                      component={Checkbox}
+                    />
+                    <Typography variant="caption" display="block" gutterBottom={true}>
+                      * I want to claim bonus with term and conditions. Rollover {lebaranBonus.rollingTime} Times
                     </Typography>
                   </div> : null}
                 <div>
