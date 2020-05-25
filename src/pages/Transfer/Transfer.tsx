@@ -289,7 +289,7 @@ const Transfer: React.FC = () => {
                       * I want to claim bonus with term and conditions. Rollover {welcomeBonus.rollingTime} Times
                     </Typography>
                   </div> : null}
-                {loyaltyBonus.status && !welcomeBonus.status ?
+                {loyaltyBonus.status && !welcomeBonus.status && lebaranBonus.status ?
                   <div>
                     <Field
                       name="loyaltyBonus"
