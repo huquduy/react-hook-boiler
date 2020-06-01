@@ -1,20 +1,5 @@
 export const promotions = [
   {
-    id: '0',
-    name: 'Luckydraw Hb',
-    image: 'Promosi.jpg',
-    group: 'Promotion',
-    content: `<div><ul><h4 class="bold cap">Promo Tebar Hoki Ramadhan Bonus 88%</h4><p>Syarat dan Ketentuan berlaku :</p>
-    <p>1. Promo dimulai dari tanggal 25 Mei - 31 Mei.</p>
-    <p>2. Promo berlaku untuk semua Member / Pemain dan Hanya berkesempatan 1x Claim per id.</p>
-    <p>3. Promo hanya Berlaku untuk UTG Slot Games dengan TO(turnover) sebanyak 15x.</p>
-    <p>4. Member wajib memilih "Bonus THR Lebaran 88%" sewaktu melakukan transfer Credit ke games UTG slots.</p>
-    <p>5. Credit dapat di withdraw setelah credit + bonus mencapai turn over sebanyak 15x<br /> Contoh :<br /> - depo 100 RP (100 c) + bonus Lebaran 88% = RP. 188.000 (188 c)<br /> - turn over RP.188,000 (188 c) x 15 = RP 2.820.000 (2.820 c)</p>
-    <p>6. Promo Cashback Tidak berlaku saat mengikuti Promo ini.</p>
-    <p>7. Pihak Hokibet188.com berhak mengubah atau menambahkan aturan dalam promo ini kapan saja tanpa pemberitahuan terlebih dahulu.</p>
-    <p>8. Keputusan Hokibet188.com adalah mutlak dan tidak dapat di ganggu gugat.</p></ul></div>`
-  },
-  {
     id: '1',
     name: 'Luckydraw Hb',
     image: 'Luckydraw_Hb.jpg',
