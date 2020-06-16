@@ -1,206 +1,338 @@
 export default [
   {
-    code: 'wild-inferno',
-    name: 'Wild Inferno',
-    group: 'Video Slot',
-    thumbnail: '/images/pg/wild-inferno.png'
+    'name': 'Ganesha Fortune',
+    'code': 'ganesha-fortune',
+    'group': 'VideoSlots',
+    'thumbnail': 'https://indoxbet.com//Resources/images/desktop/PGSOFT/ganesha-fortune.png'
   },
   {
-    code: 'double-fortune',
-    name: 'Double Fortune',
-    group: 'Video Slot',
-    thumbnail: '/images/pg/double-fortune.png'
+    'name': 'Egypts Book of Mystery',
+    'code': 'egypts-book-mystery',
+    'group': 'VideoSlots',
+    'thumbnail': 'https://indoxbet.com//Resources/images/desktop/PGSOFT/egypts-book-mystery.png'
   },
   {
-    code: 'tomb-of-treasure',
-    name: 'Tomb Of Treasure',
-    group: 'Video Slot',
-    thumbnail: '/images/pg/tomb-of-treasure.png'
+    'name': 'Mahjong Ways 2',
+    'code': 'mahjong-ways2',
+    'group': 'VideoSlots',
+    'thumbnail': 'https://indoxbet.com//Resources/images/desktop/PGSOFT/mahjong-ways2.png'
   },
   {
-    code: 'jungle-delight',
-    name: 'Jungle Delight',
-    group: 'Video Slot',
-    thumbnail: '/images/pg/jungle-delight.png'
+    'name': 'Bikini Paradise',
+    'code': 'bikini-paradise',
+    'group': 'VideoSlots',
+    'thumbnail': 'https://indoxbet.com//Resources/images/desktop/PGSOFT/bikini-paradise.png'
   },
   {
-    code: 'three-monkeys',
-    name: 'Three Monkeys',
-    group: 'Video Slot',
-    thumbnail: '/images/pg/three-monkeys.png'
+    'name': 'Caishen Wins',
+    'code': 'cai-shen-wins',
+    'group': 'VideoSlots',
+    'thumbnail': 'https://indoxbet.com//Resources/images/desktop/PGSOFT/cai-shen-wins.png'
   },
   {
-    code: 'ganesha-gold',
-    name: 'Ganesha Gold',
-    group: 'Video Slot',
-    thumbnail: '/images/pg/ganesha-gold.png'
+    'name': 'Candy Burst',
+    'code': 'candy-burst',
+    'group': 'VideoSlots',
+    'thumbnail': 'https://indoxbet.com//Resources/images/desktop/PGSOFT/candy-burst.png'
   },
   {
-    code: 'emperors-favour',
-    name: "Emperor's Favour",
-    group: 'Video Slot',
-    thumbnail: '/images/pg/emperors-favour.png'
+    'name': 'Shaolin Soccer',
+    'code': 'shaolin-soccer',
+    'group': 'VideoSlots',
+    'thumbnail': 'https://indoxbet.com//Resources/images/desktop/PGSOFT/shaolin-soccer.png'
   },
   {
-    code: 'dragon-legend',
-    name: 'Dragon Legend',
-    group: 'Video Slot',
-    thumbnail: '/images/pg/dragon-legend.png'
+    'name': 'Gem Saviour Conquest',
+    'code': 'gem-saviour-conquest',
+    'group': 'VideoSlots',
+    'thumbnail': 'https://indoxbet.com//Resources/images/desktop/PGSOFT/gem-saviour-conquest.png'
   },
   {
-    code: 'fortune-gods',
-    name: 'Fortune Gods',
-    group: 'Video Slot',
-    thumbnail: '/images/pg/fortune-gods.png'
+    'name': 'Reel Love',
+    'code': 'reel-love',
+    'group': 'VideoSlots',
+    'thumbnail': 'https://indoxbet.com//Resources/images/desktop/PGSOFT/reel-love.png'
   },
   {
-    code: 'gem-saviour',
-    name: 'Gem Saviour',
-    group: 'Video Slot',
-    thumbnail: '/images/pg/gem-saviour.png'
+    'name': 'Fortune Mouse',
+    'code': 'fortune-mouse',
+    'group': 'VideoSlots',
+    'thumbnail': 'https://indoxbet.com//Resources/images/desktop/PGSOFT/fortune-mouse.png'
   },
   {
-    code: 'gem-saviour-sword',
-    name: 'Gem Saviour Sword',
-    group: 'Video Slot',
-    thumbnail: '/images/pg/gem-saviour-sword.png'
+    'name': 'Dragon Hatch',
+    'code': 'dragon-hatch',
+    'group': 'VideoSlots',
+    'thumbnail': 'https://indoxbet.com//Resources/images/desktop/PGSOFT/dragon-hatch.png'
   },
   {
-    code: 'hip-hop-panda',
-    name: 'Hip Hop Panda',
-    group: 'Video Slot',
-    thumbnail: '/images/pg/hip-hop-panda.png'
+    'name': 'Mahjong Ways',
+    'code': 'mahjong-ways',
+    'group': 'VideoSlots',
+    'thumbnail': 'https://indoxbet.com//Resources/images/desktop/PGSOFT/mahjong-ways.png'
   },
   {
-    code: 'diaochan',
-    name: 'Honey Trap of Diao Chan',
-    group: 'Video Slot',
-    thumbnail: '/images/pg/diaochan.png'
+    'name': 'Dragon Tiger Luck',
+    'code': 'dragon-tiger-luck',
+    'group': 'VideoSlots',
+    'thumbnail': 'https://indoxbet.com//Resources/images/desktop/PGSOFT/dragon-tiger-luck.png'
   },
   {
-    code: 'hood-wolf',
-    name: 'Hood vs Wood',
-    group: 'Video Slot',
-    thumbnail: '/images/pg/hood-wolf.png'
+    'name': 'Leprechaun Riches',
+    'code': 'leprechaun-riches',
+    'group': 'VideoSlots',
+    'thumbnail': 'https://indoxbet.com//Resources/images/desktop/PGSOFT/leprechaun-riches.png'
   },
   {
-    code: 'hotpot',
-    name: 'Hotpot',
-    group: 'Video Slot',
-    thumbnail: '/images/pg/hotpot.png'
+    'name': 'Captains Bounty',
+    'code': 'captains-bounty',
+    'group': 'VideoSlots',
+    'thumbnail': 'https://indoxbet.com//Resources/images/desktop/PGSOFT/captains-bounty.png'
   },
   {
-    code: 'legend-of-hou-yi',
-    name: 'Legend of Hou Yi',
-    group: 'Video Slot',
-    thumbnail: '/images/pg/legend-of-hou-yi.png'
+    'name': 'Double Fortune',
+    'code': 'double-fortune',
+    'group': 'VideoSlots',
+    'thumbnail': 'https://indoxbet.com//Resources/images/desktop/PGSOFT/double-fortune.png'
   },
   {
-    code: 'medusa',
-    name: 'Medusa',
-    group: 'Video Slot',
-    thumbnail: '/images/pg/medusa.png'
+    'name': 'The Great Icescape',
+    'code': 'the-great-icescape',
+    'group': 'VideoSlots',
+    'thumbnail': 'https://indoxbet.com//Resources/images/desktop/PGSOFT/the-great-icescape.png'
   },
   {
-    code: 'medusa2',
-    name: 'Medusa 2',
-    group: 'Video Slot',
-    thumbnail: '/images/pg/medusa2.png'
+    'name': 'Ganesha Gold',
+    'code': 'ganesha-gold',
+    'group': 'VideoSlots',
+    'thumbnail': 'https://indoxbet.com//Resources/images/desktop/PGSOFT/ganesha-gold.png'
   },
   {
-    code: 'mr-hallow-win',
-    name: 'Mr. Hallow-Win',
-    group: 'Video Slot',
-    thumbnail: '/images/pg/mr-hallow-win.png'
+    'name': 'Jungle Delight',
+    'code': 'jungle-delight',
+    'group': 'VideoSlots',
+    'thumbnail': 'https://indoxbet.com//Resources/images/desktop/PGSOFT/jungle-delight.png'
   },
   {
-    code: 'peas-fairy',
-    name: 'Peas Fairy',
-    group: 'Video Slot',
-    thumbnail: '/images/pg/peas-fairy.png'
+    'name': 'Flirting Scholar',
+    'code': 'flirting-scholar',
+    'group': 'VideoSlots',
+    'thumbnail': 'https://indoxbet.com//Resources/images/desktop/PGSOFT/flirting-scholar.png'
   },
   {
-    code: 'piggy-gold',
-    name: 'Piggy Gold',
-    group: 'Video Slot',
-    thumbnail: '/images/pg/piggy-gold.png'
+    'name': 'Muay Thai Champion',
+    'code': 'muay-thai-champion',
+    'group': 'VideoSlots',
+    'thumbnail': 'https://indoxbet.com//Resources/images/desktop/PGSOFT/muay-thai-champion.png'
   },
   {
-    code: 'plushie-frenzy',
-    name: 'Plushie Frenzy',
-    group: 'Video Slot',
-    thumbnail: '/images/pg/plushie-frenzy.png'
+    'name': 'Piggy Gold',
+    'code': 'piggy-gold',
+    'group': 'VideoSlots',
+    'thumbnail': 'https://indoxbet.com//Resources/images/desktop/PGSOFT/piggy-gold.png'
   },
   {
-    code: 'prosperity-lion',
-    name: 'Prosperity Lion',
-    group: 'Video Slot',
-    thumbnail: '/images/pg/prosperity-lion.png'
+    'name': 'Journey to the Wealth',
+    'code': 'journey-to-the-wealth',
+    'group': 'VideoSlots',
+    'thumbnail': 'https://indoxbet.com//Resources/images/desktop/PGSOFT/journey-to-the-wealth.png'
   },
   {
-    code: 'restaurant-craze',
-    name: 'Restaurant Craze',
-    group: 'Video Slot',
-    thumbnail: '/images/pg/restaurant-craze.png'
+    'name': 'Ninja vs Samurai',
+    'code': 'ninja-vs-samurai',
+    'group': 'VideoSlots',
+    'thumbnail': 'https://indoxbet.com//Resources/images/desktop/PGSOFT/ninja-vs-samurai.png'
   },
   {
-    code: 'santas-gift-rush',
-    name: "Santa's Gift Rush",
-    group: 'Video Slot',
-    thumbnail: '/images/pg/santas-gift-rush.png'
+    'name': 'Legend of Hou Yi',
+    'code': 'legend-of-hou-yi',
+    'group': 'VideoSlots',
+    'thumbnail': 'https://indoxbet.com//Resources/images/desktop/PGSOFT/legend-of-hou-yi.png'
   },
   {
-    code: 'steam-punk',
-    name: 'Steampunk',
-    group: 'Video Slot',
-    thumbnail: '/images/pg/steam-punk.png'
+    'name': 'Dragon Legend',
+    'code': 'dragon-legend',
+    'group': 'VideoSlots',
+    'thumbnail': 'https://indoxbet.com//Resources/images/desktop/PGSOFT/dragon-legend.png'
   },
   {
-    code: 'summon-conquer',
-    name: 'Summon & Conquer',
-    group: 'Video Slot',
-    thumbnail: '/images/pg/summon-conquer.png'
+    'name': 'Wild Inferno',
+    'code': 'wild-inferno',
+    'group': 'VideoSlots',
+    'thumbnail': 'https://indoxbet.com//Resources/images/desktop/PGSOFT/wild-inferno.png'
   },
   {
-    code: 'fortune-tree',
-    name: 'Tree of Fortune',
-    group: 'Video Slot',
-    thumbnail: '/images/pg/fortune-tree.png'
+    'name': 'Fortune Gods',
+    'code': 'fortune-gods',
+    'group': 'VideoSlots',
+    'thumbnail': 'https://indoxbet.com//Resources/images/desktop/PGSOFT/fortune-gods.png'
   },
   {
-    code: 'win-win-won2',
-    name: 'Win Win Won 2',
-    group: 'Video Slot',
-    thumbnail: '/images/pg/win-win-won2.png'
+    'name': 'Honey Trap of Diao Chan',
+    'code': 'diaochan',
+    'group': 'VideoSlots',
+    'thumbnail': 'https://indoxbet.com//Resources/images/desktop/PGSOFT/diaochan.png'
   },
   {
-    code: 'wizdom-wonders',
-    name: 'Wizdom Wonders',
-    group: 'Video Slot',
-    thumbnail: '/images/pg/wizdom-wonders.png'
+    'name': 'Tomb Of Treasure',
+    'code': 'tomb-of-treasure',
+    'group': 'VideoSlots',
+    'thumbnail': 'https://indoxbet.com//Resources/images/desktop/PGSOFT/tomb-of-treasure.png'
   },
   {
-    code: 'blackjack-us',
-    name: 'American Blackjack',
-    group: 'Table&Card Games',
-    thumbnail: '/images/pg/blackjack-us.png'
+    'name': 'Emperors Favour',
+    'code': 'emperors-favour',
+    'group': 'VideoSlots',
+    'thumbnail': 'https://indoxbet.com//Resources/images/desktop/PGSOFT/emperor_favour.png'
   },
   {
-    code: 'baccarat-deluxe',
-    name: 'Baccarat Deluxe',
-    group: 'Table&Card Games',
-    thumbnail: '/images/pg/baccarat-deluxe.png'
+    'name': 'Tiki Go',
+    'code': 'tiki-go',
+    'group': 'VideoSlots',
+    'thumbnail': 'https://indoxbet.com//Resources/images/desktop/PGSOFT/tiki-go.png'
   },
   {
-    code: 'blackjack-eu',
-    name: 'European Blackjack',
-    group: 'Table&Card Games',
-    thumbnail: '/images/pg/blackjack-eu.png'
+    'name': 'Symbols of Egypt',
+    'code': 'symbols-of-egypt',
+    'group': 'VideoSlots',
+    'thumbnail': 'https://indoxbet.com//Resources/images/desktop/PGSOFT/symbols-of-egypt.png'
   },
   {
-    code: 'joker-wild',
-    name: 'Joker Wild',
-    group: 'Table&Card Games',
-    thumbnail: '/images/pg/joker-wild.png'
+    'name': 'Tree of Fortune',
+    'code': 'fortune-tree',
+    'group': 'VideoSlots',
+    'thumbnail': 'https://indoxbet.com//Resources/images/desktop/PGSOFT/fortune-tree.png'
+  },
+  {
+    'name': 'Mr. Hallow-Win',
+    'code': 'mr-hallow-win',
+    'group': 'VideoSlots',
+    'thumbnail': 'https://indoxbet.com//Resources/images/desktop/PGSOFT/mr-hallow-win.png'
+  },
+  {
+    'name': 'Santas Gift Rush',
+    'code': 'santas-gift-rush',
+    'group': 'VideoSlots',
+    'thumbnail': 'https://indoxbet.com//Resources/images/desktop/PGSOFT/santas-gift-rush.png'
+  },
+  {
+    'name': 'Hotpot',
+    'code': 'hotpot',
+    'group': 'VideoSlots',
+    'thumbnail': 'https://indoxbet.com//Resources/images/desktop/PGSOFT/hotpot.png'
+  },
+  {
+    'name': 'Gem Saviour',
+    'code': 'gem-saviour',
+    'group': 'VideoSlots',
+    'thumbnail': 'https://indoxbet.com//Resources/images/desktop/PGSOFT/gem-saviour.png'
+  },
+  {
+    'name': 'Three Monkeys',
+    'code': 'three-monkeys',
+    'group': 'VideoSlots',
+    'thumbnail': 'https://indoxbet.com//Resources/images/desktop/PGSOFT/three-monkeys.png'
+  },
+  {
+    'name': 'Prosperity Lion',
+    'code': 'prosperity-lion',
+    'group': 'VideoSlots',
+    'thumbnail': 'https://indoxbet.com//Resources/images/desktop/PGSOFT/prosperity-lion.png'
+  },
+  {
+    'name': 'Hip Hop Panda',
+    'code': 'hip-hop-panda',
+    'group': 'VideoSlots',
+    'thumbnail': 'https://indoxbet.com//Resources/images/desktop/PGSOFT/hip-hop-panda.png'
+  },
+  {
+    'name': 'Win Win Won 2',
+    'code': 'win-win-won',
+    'group': 'VideoSlots',
+    'thumbnail': 'https://indoxbet.com//Resources/images/desktop/PGSOFT/win-win-won2.png'
+  },
+  {
+    'name': 'Medusa 2',
+    'code': 'medusa2',
+    'group': 'VideoSlots',
+    'thumbnail': 'https://indoxbet.com//Resources/images/desktop/PGSOFT/medusa2.png'
+  },
+  {
+    'name': 'Plushie Frenzy',
+    'code': 'plushie-frenzy',
+    'group': 'VideoSlots',
+    'thumbnail': 'https://indoxbet.com//Resources/images/desktop/PGSOFT/plushie-frenzy.png'
+  },
+  {
+    'name': 'Medusa',
+    'code': 'medusa',
+    'group': 'VideoSlots',
+    'thumbnail': 'https://indoxbet.com//Resources/images/desktop/PGSOFT/medusa.png'
+  },
+  {
+    'name': 'Gem Saviour Sword',
+    'code': 'gem-saviour-sword',
+    'group': 'VideoSlots',
+    'thumbnail': 'https://indoxbet.com//Resources/images/desktop/PGSOFT/gem-saviour-sword.png'
+  },
+  {
+    'name': 'Hood vs Wolf',
+    'code': 'hood-wolf',
+    'group': 'VideoSlots',
+    'thumbnail': 'https://indoxbet.com//Resources/images/desktop/PGSOFT/hood-wolf.png'
+  },
+  {
+    'name': 'Summon & Conquer',
+    'code': 'summon-conquer',
+    'group': 'VideoSlots',
+    'thumbnail': 'https://indoxbet.com//Resources/images/desktop/PGSOFT/summon-conquer.png'
+  },
+  {
+    'name': 'Steampunk',
+    'code': 'steam-punk',
+    'group': 'VideoSlots',
+    'thumbnail': 'https://indoxbet.com//Resources/images/desktop/PGSOFT/steam-punk.png'
+  },
+  {
+    'name': 'Wizdom Wonders',
+    'code': 'wizdom-wonders',
+    'group': 'VideoSlots',
+    'thumbnail': 'https://indoxbet.com//Resources/images/desktop/PGSOFT/wizdom-wonders.png'
+  },
+  {
+    'name': 'Peas Fairy',
+    'code': 'peas-fairy',
+    'group': 'VideoSlots',
+    'thumbnail': 'https://indoxbet.com//Resources/images/desktop/PGSOFT/peas-fairy.png'
+  },
+  {
+    'name': 'Restaurant Craze',
+    'code': 'restaurant-craze',
+    'group': 'VideoSlots',
+    'thumbnail': 'https://indoxbet.com//Resources/images/desktop/PGSOFT/restaurant-craze.png'
+  },
+  {
+    'name': 'Baccarat Deluxe',
+    'code': 'baccarat-deluxe',
+    'group': 'TableCardGames',
+    'thumbnail': 'https://indoxbet.com//Resources/images/desktop/PGSOFT/baccarat-deluxe.png'
+  },
+  {
+    'name': 'Joker Wild',
+    'code': 'joker-wild',
+    'group': 'TableCardGames',
+    'thumbnail': 'https://indoxbet.com//Resources/images/desktop/PGSOFT/joker-wild.png'
+  },
+  {
+    'name': 'American Blackjack',
+    'code': 'blackjack-us',
+    'group': 'TableCardGames',
+    'thumbnail': 'https://indoxbet.com//Resources/images/desktop/PGSOFT/blackjack-us.png'
+  },
+  {
+    'name': 'European Blackjack™',
+    'code': 'blackjack-eu',
+    'group': 'TableCardGames',
+    'thumbnail': 'https://indoxbet.com//Resources/images/desktop/PGSOFT/blackjack-eu.png'
   }
 ]

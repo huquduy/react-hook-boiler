@@ -5,2302 +5,24 @@ const json = {
       {
         "@class": "portfolio VideoSlots",
         "@data-cat": "VideoSlots",
-        "@data-bound": "",
-        "@style": "display: inline-block;",
-        "div": {
-          "@class": "portfolio-wrapper",
-          "div": [
-            {
-              "@class": "dreamtechcontainer",
-              "img": {
-                "@src": "/Resources/images/desktop/PP/vs75bronco.png?20191224"
-              },
-              "div": {
-                "@class": "middle",
-                "div": {
-                  "@class": "text",
-                  "a": {
-                    "@class": "popup-pp slot_btn",
-                    "@href": "#",
-                    "@data-game": "vs75bronco",
-                    "@title": "PLAY NOW",
-                    "#text": "PLAY NOW"
-                  }
-                }
-              }
-            },
-            {
-              "@class": "slotGameName",
-              "#text": "Bronco Spirit™"
-            }
-          ]
-        }
-      },
-      {
-        "@class": "portfolio VideoSlots",
-        "@data-cat": "VideoSlots",
-        "@data-bound": "",
-        "@style": "display: inline-block;",
-        "div": {
-          "@class": "portfolio-wrapper",
-          "div": [
-            {
-              "@class": "dreamtechcontainer",
-              "img": {
-                "@src": "/Resources/images/desktop/PP/vs25pyramid.png?20191224"
-              },
-              "div": {
-                "@class": "middle",
-                "div": {
-                  "@class": "text",
-                  "a": {
-                    "@class": "popup-pp slot_btn",
-                    "@href": "#",
-                    "@data-game": "vs25pyramid",
-                    "@title": "PLAY NOW",
-                    "#text": "PLAY NOW"
-                  }
-                }
-              }
-            },
-            {
-              "@class": "slotGameName",
-              "#text": "Pyramid King™"
-            }
-          ]
-        }
-      },
-      {
-        "@class": "portfolio VideoSlots",
-        "@data-cat": "VideoSlots",
-        "@data-bound": "",
-        "@style": "display: inline-block;",
-        "div": {
-          "@class": "portfolio-wrapper",
-          "div": [
-            {
-              "@class": "dreamtechcontainer",
-              "img": {
-                "@src": "/Resources/images/desktop/PP/vs5ultrab.png?20191224"
-              },
-              "div": {
-                "@class": "middle",
-                "div": {
-                  "@class": "text",
-                  "a": {
-                    "@class": "popup-pp slot_btn",
-                    "@href": "#",
-                    "@data-game": "vs5ultrab",
-                    "@title": "PLAY NOW",
-                    "#text": "PLAY NOW"
-                  }
-                }
-              }
-            },
-            {
-              "@class": "slotGameName",
-              "#text": "Ultra Burn™"
-            }
-          ]
-        }
-      },
-      {
-        "@class": "portfolio VideoSlots",
-        "@data-cat": "VideoSlots",
-        "@data-bound": "",
-        "@style": "display: inline-block;",
-        "div": {
-          "@class": "portfolio-wrapper",
-          "div": [
-            {
-              "@class": "dreamtechcontainer",
-              "img": {
-                "@src": "/Resources/images/desktop/PP/vs1money.png?20191224"
-              },
-              "div": {
-                "@class": "middle",
-                "div": {
-                  "@class": "text",
-                  "a": {
-                    "@class": "popup-pp slot_btn",
-                    "@href": "#",
-                    "@data-game": "vs1money",
-                    "@title": "PLAY NOW",
-                    "#text": "PLAY NOW"
-                  }
-                }
-              }
-            },
-            {
-              "@class": "slotGameName",
-              "#text": "Money Money Money™"
-            }
-          ]
-        }
-      },
-      {
-        "@class": "portfolio VideoSlots",
-        "@data-cat": "VideoSlots",
-        "@data-bound": "",
-        "@style": "display: inline-block;",
-        "div": {
-          "@class": "portfolio-wrapper",
-          "div": [
-            {
-              "@class": "dreamtechcontainer",
-              "img": {
-                "@src": "/Resources/images/desktop/PP/vs117649starz.png?20191224"
-              },
-              "div": {
-                "@class": "middle",
-                "div": {
-                  "@class": "text",
-                  "a": {
-                    "@class": "popup-pp slot_btn",
-                    "@href": "#",
-                    "@data-game": "vs117649starz",
-                    "@title": "PLAY NOW",
-                    "#text": "PLAY NOW"
-                  }
-                }
-              }
-            },
-            {
-              "@class": "slotGameName",
-              "#text": "Starz Megaways™"
-            }
-          ]
-        }
-      },
-      {
-        "@class": "portfolio VideoSlots",
-        "@data-cat": "VideoSlots",
-        "@data-bound": "",
-        "@style": "display: inline-block;",
-        "div": {
-          "@class": "portfolio-wrapper",
-          "div": [
-            {
-              "@class": "dreamtechcontainer",
-              "img": {
-                "@src": "/Resources/images/desktop/PP/vs20fruitparty.png?20191224"
-              },
-              "div": {
-                "@class": "middle",
-                "div": {
-                  "@class": "text",
-                  "a": {
-                    "@class": "popup-pp slot_btn",
-                    "@href": "#",
-                    "@data-game": "vs20fruitparty",
-                    "@title": "PLAY NOW",
-                    "#text": "PLAY NOW"
-                  }
-                }
-              }
-            },
-            {
-              "@class": "slotGameName",
-              "#text": "Fruit Party™"
-            }
-          ]
-        }
-      },
-      {
-        "@class": "portfolio VideoSlots",
-        "@data-cat": "VideoSlots",
-        "@data-bound": "",
-        "@style": "display: inline-block;",
-        "div": {
-          "@class": "portfolio-wrapper",
-          "div": [
-            {
-              "@class": "dreamtechcontainer",
-              "img": {
-                "@src": "/Resources/images/desktop/PP/vs10bookoftut.png?20191224"
-              },
-              "div": {
-                "@class": "middle",
-                "div": {
-                  "@class": "text",
-                  "a": {
-                    "@class": "popup-pp slot_btn",
-                    "@href": "#",
-                    "@data-game": "vs10bookoftut",
-                    "@title": "PLAY NOW",
-                    "#text": "PLAY NOW"
-                  }
-                }
-              }
-            },
-            {
-              "@class": "slotGameName",
-              "#text": "John Hunter and the Book of Tut™"
-            }
-          ]
-        }
-      },
-      {
-        "@class": "portfolio VideoSlots",
-        "@data-cat": "VideoSlots",
-        "@data-bound": "",
-        "@style": "display: inline-block;",
-        "div": {
-          "@class": "portfolio-wrapper",
-          "div": [
-            {
-              "@class": "dreamtechcontainer",
-              "img": {
-                "@src": "/Resources/images/desktop/PP/vs10threestar.png?20191224"
-              },
-              "div": {
-                "@class": "middle",
-                "div": {
-                  "@class": "text",
-                  "a": {
-                    "@class": "popup-pp slot_btn",
-                    "@href": "#",
-                    "@data-game": "vs10threestar",
-                    "@title": "PLAY NOW",
-                    "#text": "PLAY NOW"
-                  }
-                }
-              }
-            },
-            {
-              "@class": "slotGameName",
-              "#text": "Three Star Fortune™"
-            }
-          ]
-        }
-      },
-      {
-        "@class": "portfolio VideoSlots",
-        "@data-cat": "VideoSlots",
-        "@data-bound": "",
-        "@style": "display: inline-block;",
-        "div": {
-          "@class": "portfolio-wrapper",
-          "div": [
-            {
-              "@class": "dreamtechcontainer",
-              "img": {
-                "@src": "/Resources/images/desktop/PP/vswaysrhino.png?20191224"
-              },
-              "div": {
-                "@class": "middle",
-                "div": {
-                  "@class": "text",
-                  "a": {
-                    "@class": "popup-pp slot_btn",
-                    "@href": "#",
-                    "@data-game": "vswaysrhino",
-                    "@title": "PLAY NOW",
-                    "#text": "PLAY NOW"
-                  }
-                }
-              }
-            },
-            {
-              "@class": "slotGameName",
-              "#text": "Great Rhino Megaways™"
-            }
-          ]
-        }
-      },
-      {
-        "@class": "portfolio VideoSlots",
-        "@data-cat": "VideoSlots",
-        "@data-bound": "",
-        "@style": "display: inline-block;",
-        "div": {
-          "@class": "portfolio-wrapper",
-          "div": [
-            {
-              "@class": "dreamtechcontainer",
-              "img": {
-                "@src": "/Resources/images/desktop/PP/vs243dancingpar.png?20191224"
-              },
-              "div": {
-                "@class": "middle",
-                "div": {
-                  "@class": "text",
-                  "a": {
-                    "@class": "popup-pp slot_btn",
-                    "@href": "#",
-                    "@data-game": "vs243dancingpar",
-                    "@title": "PLAY NOW",
-                    "#text": "PLAY NOW"
-                  }
-                }
-              }
-            },
-            {
-              "@class": "slotGameName",
-              "#text": "Dance Party™"
-            }
-          ]
-        }
-      },
-      {
-        "@class": "portfolio VideoSlots",
-        "@data-cat": "VideoSlots",
-        "@data-bound": "",
-        "@style": "display: inline-block;",
-        "div": {
-          "@class": "portfolio-wrapper",
-          "div": [
-            {
-              "@class": "dreamtechcontainer",
-              "img": {
-                "@src": "/Resources/images/desktop/PP/vs5hotburn.png?20191224"
-              },
-              "div": {
-                "@class": "middle",
-                "div": {
-                  "@class": "text",
-                  "a": {
-                    "@class": "popup-pp slot_btn",
-                    "@href": "#",
-                    "@data-game": "vs5hotburn",
-                    "@title": "PLAY NOW",
-                    "#text": "PLAY NOW"
-                  }
-                }
-              }
-            },
-            {
-              "@class": "slotGameName",
-              "#text": "Hot to Burn™"
-            }
-          ]
-        }
-      },
-      {
-        "@class": "portfolio VideoSlots",
-        "@data-cat": "VideoSlots",
-        "@data-bound": "",
-        "@style": "display: inline-block;",
-        "div": {
-          "@class": "portfolio-wrapper",
-          "div": [
-            {
-              "@class": "dreamtechcontainer",
-              "img": {
-                "@src": "/Resources/images/desktop/PP/vs5aztecgems.png?20191224"
-              },
-              "div": {
-                "@class": "middle",
-                "div": {
-                  "@class": "text",
-                  "a": {
-                    "@class": "popup-pp slot_btn",
-                    "@href": "#",
-                    "@data-game": "vs5aztecgems",
-                    "@title": "PLAY NOW",
-                    "#text": "PLAY NOW"
-                  }
-                }
-              }
-            },
-            {
-              "@class": "slotGameName",
-              "#text": "Aztec Gems"
-            }
-          ]
-        }
-      },
-      {
-        "@class": "portfolio VideoSlots",
-        "@data-cat": "VideoSlots",
-        "@data-bound": "",
-        "@style": "display: inline-block;",
-        "div": {
-          "@class": "portfolio-wrapper",
-          "div": [
-            {
-              "@class": "dreamtechcontainer",
-              "img": {
-                "@src": "/Resources/images/desktop/PP/vs5joker.png?20191224"
-              },
-              "div": {
-                "@class": "middle",
-                "div": {
-                  "@class": "text",
-                  "a": {
-                    "@class": "popup-pp slot_btn",
-                    "@href": "#",
-                    "@data-game": "vs5joker",
-                    "@title": "PLAY NOW",
-                    "#text": "PLAY NOW"
-                  }
-                }
-              }
-            },
-            {
-              "@class": "slotGameName",
-              "#text": "Jokers Jewels"
-            }
-          ]
-        }
-      },
-      {
-        "@class": "portfolio VideoSlots",
-        "@data-cat": "VideoSlots",
-        "@data-bound": "",
-        "@style": "display: inline-block;",
-        "div": {
-          "@class": "portfolio-wrapper",
-          "div": [
-            {
-              "@class": "dreamtechcontainer",
-              "img": {
-                "@src": "/Resources/images/desktop/PP/vs20fruitsw.png?20191224"
-              },
-              "div": {
-                "@class": "middle",
-                "div": {
-                  "@class": "text",
-                  "a": {
-                    "@class": "popup-pp slot_btn",
-                    "@href": "#",
-                    "@data-game": "vs20fruitsw",
-                    "@title": "PLAY NOW",
-                    "#text": "PLAY NOW"
-                  }
-                }
-              }
-            },
-            {
-              "@class": "slotGameName",
-              "#text": "Sweet Bonanza™"
-            }
-          ]
-        }
-      },
-      {
-        "@class": "portfolio ClassicSlots",
-        "@data-cat": "ClassicSlots",
-        "@data-bound": "",
-        "@style": "display: inline-block;",
-        "div": {
-          "@class": "portfolio-wrapper",
-          "div": [
-            {
-              "@class": "dreamtechcontainer",
-              "img": {
-                "@src": "/Resources/images/desktop/PP/vs1dragon8.png?20191224"
-              },
-              "div": {
-                "@class": "middle",
-                "div": {
-                  "@class": "text",
-                  "a": {
-                    "@class": "popup-pp slot_btn",
-                    "@href": "#",
-                    "@data-game": "vs1dragon8",
-                    "@title": "PLAY NOW",
-                    "#text": "PLAY NOW"
-                  }
-                }
-              }
-            },
-            {
-              "@class": "slotGameName",
-              "#text": "888 Dragons™"
-            }
-          ]
-        }
-      },
-      {
-        "@class": "portfolio VideoSlots",
-        "@data-cat": "VideoSlots",
-        "@data-bound": "",
-        "@style": "display: inline-block;",
-        "div": {
-          "@class": "portfolio-wrapper",
-          "div": [
-            {
-              "@class": "dreamtechcontainer",
-              "img": {
-                "@src": "/Resources/images/desktop/PP/vs20rhino.png?20191224"
-              },
-              "div": {
-                "@class": "middle",
-                "div": {
-                  "@class": "text",
-                  "a": {
-                    "@class": "popup-pp slot_btn",
-                    "@href": "#",
-                    "@data-game": "vs20rhino",
-                    "@title": "PLAY NOW",
-                    "#text": "PLAY NOW"
-                  }
-                }
-              }
-            },
-            {
-              "@class": "slotGameName",
-              "#text": "Great Rhino™"
-            }
-          ]
-        }
-      },
-      {
-        "@class": "portfolio VideoSlots",
-        "@data-cat": "VideoSlots",
-        "@data-bound": "",
-        "@style": "display: inline-block;",
-        "div": {
-          "@class": "portfolio-wrapper",
-          "div": [
-            {
-              "@class": "dreamtechcontainer",
-              "img": {
-                "@src": "/Resources/images/desktop/PP/vs243fortune.png?20191224"
-              },
-              "div": {
-                "@class": "middle",
-                "div": {
-                  "@class": "text",
-                  "a": {
-                    "@class": "popup-pp slot_btn",
-                    "@href": "#",
-                    "@data-game": "vs243fortune",
-                    "@title": "PLAY NOW",
-                    "#text": "PLAY NOW"
-                  }
-                }
-              }
-            },
-            {
-              "@class": "slotGameName",
-              "#text": "Caishen’s Gold™"
-            }
-          ]
-        }
-      },
-      {
-        "@class": "portfolio VideoSlots",
-        "@data-cat": "VideoSlots",
-        "@data-bound": "",
-        "@style": "display: inline-block;",
-        "div": {
-          "@class": "portfolio-wrapper",
-          "div": [
-            {
-              "@class": "dreamtechcontainer",
-              "img": {
-                "@src": "/Resources/images/desktop/PP/vs243lions.png?20191224"
-              },
-              "div": {
-                "@class": "middle",
-                "div": {
-                  "@class": "text",
-                  "a": {
-                    "@class": "popup-pp slot_btn",
-                    "@href": "#",
-                    "@data-game": "vs243lions",
-                    "@title": "PLAY NOW",
-                    "#text": "PLAY NOW"
-                  }
-                }
-              }
-            },
-            {
-              "@class": "slotGameName",
-              "#text": "5 Lions™"
-            }
-          ]
-        }
-      },
-      {
-        "@class": "portfolio VideoSlots",
-        "@data-cat": "VideoSlots",
-        "@data-bound": "",
-        "@style": "display: inline-block;",
-        "div": {
-          "@class": "portfolio-wrapper",
-          "div": [
-            {
-              "@class": "dreamtechcontainer",
-              "img": {
-                "@src": "/Resources/images/desktop/PP/vs10firestrike.png?20191224"
-              },
-              "div": {
-                "@class": "middle",
-                "div": {
-                  "@class": "text",
-                  "a": {
-                    "@class": "popup-pp slot_btn",
-                    "@href": "#",
-                    "@data-game": "vs10firestrike",
-                    "@title": "PLAY NOW",
-                    "#text": "PLAY NOW"
-                  }
-                }
-              }
-            },
-            {
-              "@class": "slotGameName",
-              "#text": "Fire Strike™"
-            }
-          ]
-        }
-      },
-      {
-        "@class": "portfolio VideoSlots",
-        "@data-cat": "VideoSlots",
-        "@data-bound": "",
-        "@style": "display: inline-block;",
-        "div": {
-          "@class": "portfolio-wrapper",
-          "div": [
-            {
-              "@class": "dreamtechcontainer",
-              "img": {
-                "@src": "/Resources/images/desktop/PP/vs20sbxmas.png?20191224"
-              },
-              "div": {
-                "@class": "middle",
-                "div": {
-                  "@class": "text",
-                  "a": {
-                    "@class": "popup-pp slot_btn",
-                    "@href": "#",
-                    "@data-game": "vs20sbxmas",
-                    "@title": "PLAY NOW",
-                    "#text": "PLAY NOW"
-                  }
-                }
-              }
-            },
-            {
-              "@class": "slotGameName",
-              "#text": "Sweet Bonanza Xmas™"
-            }
-          ]
-        }
-      },
-      {
-        "@class": "portfolio VideoSlots",
-        "@data-cat": "VideoSlots",
-        "@data-bound": "",
-        "@style": "display: inline-block;",
-        "div": {
-          "@class": "portfolio-wrapper",
-          "div": [
-            {
-              "@class": "dreamtechcontainer",
-              "img": {
-                "@src": "/Resources/images/desktop/PP/vs1ball.png?20191224"
-              },
-              "div": {
-                "@class": "middle",
-                "div": {
-                  "@class": "text",
-                  "a": {
-                    "@class": "popup-pp slot_btn",
-                    "@href": "#",
-                    "@data-game": "vs1ball",
-                    "@title": "PLAY NOW",
-                    "#text": "PLAY NOW"
-                  }
-                }
-              }
-            },
-            {
-              "@class": "slotGameName",
-              "#text": "Lucky Dragon Ball™"
-            }
-          ]
-        }
-      },
-      {
-        "@class": "portfolio VideoSlots",
-        "@data-cat": "VideoSlots",
-        "@data-bound": "",
-        "@style": "display: inline-block;",
-        "div": {
-          "@class": "portfolio-wrapper",
-          "div": [
-            {
-              "@class": "dreamtechcontainer",
-              "img": {
-                "@src": "/Resources/images/desktop/PP/vs20vegasmagic.png?20191224"
-              },
-              "div": {
-                "@class": "middle",
-                "div": {
-                  "@class": "text",
-                  "a": {
-                    "@class": "popup-pp slot_btn",
-                    "@href": "#",
-                    "@data-game": "vs20vegasmagic",
-                    "@title": "PLAY NOW",
-                    "#text": "PLAY NOW"
-                  }
-                }
-              }
-            },
-            {
-              "@class": "slotGameName",
-              "#text": "Vegas Magic™"
-            }
-          ]
-        }
-      },
-      {
-        "@class": "portfolio VideoSlots",
-        "@data-cat": "VideoSlots",
-        "@data-bound": "",
-        "@style": "display: inline-block;",
-        "div": {
-          "@class": "portfolio-wrapper",
-          "div": [
-            {
-              "@class": "dreamtechcontainer",
-              "img": {
-                "@src": "/Resources/images/desktop/PP/vs15diamond.png?20191224"
-              },
-              "div": {
-                "@class": "middle",
-                "div": {
-                  "@class": "text",
-                  "a": {
-                    "@class": "popup-pp slot_btn",
-                    "@href": "#",
-                    "@data-game": "vs15diamond",
-                    "@title": "PLAY NOW",
-                    "#text": "PLAY NOW"
-                  }
-                }
-              }
-            },
-            {
-              "@class": "slotGameName",
-              "#text": "Diamond Strike™"
-            }
-          ]
-        }
-      },
-      {
-        "@class": "portfolio VideoSlots",
-        "@data-cat": "VideoSlots",
-        "@data-bound": "",
-        "@style": "display: inline-block;",
-        "div": {
-          "@class": "portfolio-wrapper",
-          "div": [
-            {
-              "@class": "dreamtechcontainer",
-              "img": {
-                "@src": "/Resources/images/desktop/PP/vs20eightdragons.png?20191224"
-              },
-              "div": {
-                "@class": "middle",
-                "div": {
-                  "@class": "text",
-                  "a": {
-                    "@class": "popup-pp slot_btn",
-                    "@href": "#",
-                    "@data-game": "vs20eightdragons",
-                    "@title": "PLAY NOW",
-                    "#text": "PLAY NOW"
-                  }
-                }
-              }
-            },
-            {
-              "@class": "slotGameName",
-              "#text": "8 Dragons™"
-            }
-          ]
-        }
-      },
-      {
-        "@class": "portfolio VideoSlots",
-        "@data-cat": "VideoSlots",
-        "@data-bound": "",
-        "@style": "display: inline-block;",
-        "div": {
-          "@class": "portfolio-wrapper",
-          "div": [
-            {
-              "@class": "dreamtechcontainer",
-              "img": {
-                "@src": "/Resources/images/desktop/PP/vs25scarabqueen.png?20191224"
-              },
-              "div": {
-                "@class": "middle",
-                "div": {
-                  "@class": "text",
-                  "a": {
-                    "@class": "popup-pp slot_btn",
-                    "@href": "#",
-                    "@data-game": "vs25scarabqueen",
-                    "@title": "PLAY NOW",
-                    "#text": "PLAY NOW"
-                  }
-                }
-              }
-            },
-            {
-              "@class": "slotGameName",
-              "#text": "John Hunter and the Tomb of the Scarab Queen™"
-            }
-          ]
-        }
-      },
-      {
-        "@class": "portfolio VideoSlots",
-        "@data-cat": "VideoSlots",
-        "@data-bound": "",
-        "@style": "display: inline-block;",
-        "div": {
-          "@class": "portfolio-wrapper",
-          "div": [
-            {
-              "@class": "dreamtechcontainer",
-              "img": {
-                "@src": "/Resources/images/desktop/PP/vs7776aztec.png?20191224"
-              },
-              "div": {
-                "@class": "middle",
-                "div": {
-                  "@class": "text",
-                  "a": {
-                    "@class": "popup-pp slot_btn",
-                    "@href": "#",
-                    "@data-game": "vs7776aztec",
-                    "@title": "PLAY NOW",
-                    "#text": "PLAY NOW"
-                  }
-                }
-              }
-            },
-            {
-              "@class": "slotGameName",
-              "#text": "Aztec Bonanza™"
-            }
-          ]
-        }
-      },
-      {
-        "@class": "portfolio VideoSlots",
-        "@data-cat": "VideoSlots",
-        "@data-bound": "",
-        "@style": "display: inline-block;",
-        "div": {
-          "@class": "portfolio-wrapper",
-          "div": [
-            {
-              "@class": "dreamtechcontainer",
-              "img": {
-                "@src": "/Resources/images/desktop/PP/vs7fire88.png?20191224"
-              },
-              "div": {
-                "@class": "middle",
-                "div": {
-                  "@class": "text",
-                  "a": {
-                    "@class": "popup-pp slot_btn",
-                    "@href": "#",
-                    "@data-game": "vs7fire88",
-                    "@title": "PLAY NOW",
-                    "#text": "PLAY NOW"
-                  }
-                }
-              }
-            },
-            {
-              "@class": "slotGameName",
-              "#text": "Fire88"
-            }
-          ]
-        }
-      },
-      {
-        "@class": "portfolio VideoSlots",
-        "@data-cat": "VideoSlots",
-        "@data-bound": "",
-        "@style": "display: inline-block;",
-        "div": {
-          "@class": "portfolio-wrapper",
-          "div": [
-            {
-              "@class": "dreamtechcontainer",
-              "img": {
-                "@src": "/Resources/images/desktop/PP/vs25mustang.png?20191224"
-              },
-              "div": {
-                "@class": "middle",
-                "div": {
-                  "@class": "text",
-                  "a": {
-                    "@class": "popup-pp slot_btn",
-                    "@href": "#",
-                    "@data-game": "vs25mustang",
-                    "@title": "PLAY NOW",
-                    "#text": "PLAY NOW"
-                  }
-                }
-              }
-            },
-            {
-              "@class": "slotGameName",
-              "#text": "Mustang Gold™"
-            }
-          ]
-        }
-      },
-      {
-        "@class": "portfolio VideoSlots",
-        "@data-cat": "VideoSlots",
-        "@data-bound": "",
-        "@style": "display: inline-block;",
-        "div": {
-          "@class": "portfolio-wrapper",
-          "div": [
-            {
-              "@class": "dreamtechcontainer",
-              "img": {
-                "@src": "/Resources/images/desktop/PP/vs40wildwest.png?20191224"
-              },
-              "div": {
-                "@class": "middle",
-                "div": {
-                  "@class": "text",
-                  "a": {
-                    "@class": "popup-pp slot_btn",
-                    "@href": "#",
-                    "@data-game": "vs40wildwest",
-                    "@title": "PLAY NOW",
-                    "#text": "PLAY NOW"
-                  }
-                }
-              }
-            },
-            {
-              "@class": "slotGameName",
-              "#text": "Wild West Gold™"
-            }
-          ]
-        }
-      },
-      {
-        "@class": "portfolio VideoSlots",
-        "@data-cat": "VideoSlots",
-        "@data-bound": "",
-        "@style": "display: inline-block;",
-        "div": {
-          "@class": "portfolio-wrapper",
-          "div": [
-            {
-              "@class": "dreamtechcontainer",
-              "img": {
-                "@src": "/Resources/images/desktop/PP/vs40frrainbow.png?20191224"
-              },
-              "div": {
-                "@class": "middle",
-                "div": {
-                  "@class": "text",
-                  "a": {
-                    "@class": "popup-pp slot_btn",
-                    "@href": "#",
-                    "@data-game": "vs40frrainbow",
-                    "@title": "PLAY NOW",
-                    "#text": "PLAY NOW"
-                  }
-                }
-              }
-            },
-            {
-              "@class": "slotGameName",
-              "#text": "Fruit Rainbow™"
-            }
-          ]
-        }
-      },
-      {
-        "@class": "portfolio VideoSlots",
-        "@data-cat": "VideoSlots",
-        "@data-bound": "",
-        "@style": "display: inline-block;",
-        "div": {
-          "@class": "portfolio-wrapper",
-          "div": [
-            {
-              "@class": "dreamtechcontainer",
-              "img": {
-                "@src": "/Resources/images/desktop/PP/vs40madwheel.png?20191224"
-              },
-              "div": {
-                "@class": "middle",
-                "div": {
-                  "@class": "text",
-                  "a": {
-                    "@class": "popup-pp slot_btn",
-                    "@href": "#",
-                    "@data-game": "vs40madwheel",
-                    "@title": "PLAY NOW",
-                    "#text": "PLAY NOW"
-                  }
-                }
-              }
-            },
-            {
-              "@class": "slotGameName",
-              "#text": "The Wild Machine™"
-            }
-          ]
-        }
-      },
-      {
-        "@class": "portfolio VideoSlots",
-        "@data-cat": "VideoSlots",
-        "@data-bound": "",
-        "@style": "display: inline-block;",
-        "div": {
-          "@class": "portfolio-wrapper",
-          "div": [
-            {
-              "@class": "dreamtechcontainer",
-              "img": {
-                "@src": "/Resources/images/desktop/PP/vs4096mystery.png?20191224"
-              },
-              "div": {
-                "@class": "middle",
-                "div": {
-                  "@class": "text",
-                  "a": {
-                    "@class": "popup-pp slot_btn",
-                    "@href": "#",
-                    "@data-game": "vs4096mystery",
-                    "@title": "PLAY NOW",
-                    "#text": "PLAY NOW"
-                  }
-                }
-              }
-            },
-            {
-              "@class": "slotGameName",
-              "#text": "Mysterious™"
-            }
-          ]
-        }
-      },
-      {
-        "@class": "portfolio VideoSlots",
-        "@data-cat": "VideoSlots",
-        "@data-bound": "",
-        "@style": "display: inline-block;",
-        "div": {
-          "@class": "portfolio-wrapper",
-          "div": [
-            {
-              "@class": "dreamtechcontainer",
-              "img": {
-                "@src": "/Resources/images/desktop/PP/vs75empress.png?20191224"
-              },
-              "div": {
-                "@class": "middle",
-                "div": {
-                  "@class": "text",
-                  "a": {
-                    "@class": "popup-pp slot_btn",
-                    "@href": "#",
-                    "@data-game": "vs75empress",
-                    "@title": "PLAY NOW",
-                    "#text": "PLAY NOW"
-                  }
-                }
-              }
-            },
-            {
-              "@class": "slotGameName",
-              "#text": "Golden Beauty™"
-            }
-          ]
-        }
-      },
-      {
-        "@class": "portfolio VideoSlots",
-        "@data-cat": "VideoSlots",
-        "@data-bound": "",
-        "@style": "display: inline-block;",
-        "div": {
-          "@class": "portfolio-wrapper",
-          "div": [
-            {
-              "@class": "dreamtechcontainer",
-              "img": {
-                "@src": "/Resources/images/desktop/PP/vs1masterjoker.png?20191224"
-              },
-              "div": {
-                "@class": "middle",
-                "div": {
-                  "@class": "text",
-                  "a": {
-                    "@class": "popup-pp slot_btn",
-                    "@href": "#",
-                    "@data-game": "vs1masterjoker",
-                    "@title": "PLAY NOW",
-                    "#text": "PLAY NOW"
-                  }
-                }
-              }
-            },
-            {
-              "@class": "slotGameName",
-              "#text": "Master Joker™"
-            }
-          ]
-        }
-      },
-      {
-        "@class": "portfolio VideoSlots",
-        "@data-cat": "VideoSlots",
-        "@data-bound": "",
-        "@style": "display: inline-block;",
-        "div": {
-          "@class": "portfolio-wrapper",
-          "div": [
-            {
-              "@class": "dreamtechcontainer",
-              "img": {
-                "@src": "/Resources/images/desktop/PP/vs5super7.png?20191224"
-              },
-              "div": {
-                "@class": "middle",
-                "div": {
-                  "@class": "text",
-                  "a": {
-                    "@class": "popup-pp slot_btn",
-                    "@href": "#",
-                    "@data-game": "vs5super7",
-                    "@title": "PLAY NOW",
-                    "#text": "PLAY NOW"
-                  }
-                }
-              }
-            },
-            {
-              "@class": "slotGameName",
-              "#text": "Super 7s™"
-            }
-          ]
-        }
-      },
-      {
-        "@class": "portfolio VideoSlots",
-        "@data-cat": "VideoSlots",
-        "@data-bound": "",
-        "@style": "display: inline-block;",
-        "div": {
-          "@class": "portfolio-wrapper",
-          "div": [
-            {
-              "@class": "dreamtechcontainer",
-              "img": {
-                "@src": "/Resources/images/desktop/PP/vs20kraken.png?20191224"
-              },
-              "div": {
-                "@class": "middle",
-                "div": {
-                  "@class": "text",
-                  "a": {
-                    "@class": "popup-pp slot_btn",
-                    "@href": "#",
-                    "@data-game": "vs20kraken",
-                    "@title": "PLAY NOW",
-                    "#text": "PLAY NOW"
-                  }
-                }
-              }
-            },
-            {
-              "@class": "slotGameName",
-              "#text": "Release the Kraken™"
-            }
-          ]
-        }
-      },
-      {
-        "@class": "portfolio VideoSlots",
-        "@data-cat": "VideoSlots",
-        "@data-bound": "",
-        "@style": "display: inline-block;",
-        "div": {
-          "@class": "portfolio-wrapper",
-          "div": [
-            {
-              "@class": "dreamtechcontainer",
-              "img": {
-                "@src": "/Resources/images/desktop/PP/vs4096bufking.png?20191224"
-              },
-              "div": {
-                "@class": "middle",
-                "div": {
-                  "@class": "text",
-                  "a": {
-                    "@class": "popup-pp slot_btn",
-                    "@href": "#",
-                    "@data-game": "vs4096bufking",
-                    "@title": "PLAY NOW",
-                    "#text": "PLAY NOW"
-                  }
-                }
-              }
-            },
-            {
-              "@class": "slotGameName",
-              "#text": "Buffalo King™"
-            }
-          ]
-        }
-      },
-      {
-        "@class": "portfolio VideoSlots",
-        "@data-cat": "VideoSlots",
-        "@data-bound": "",
-        "@style": "display: inline-block;",
-        "div": {
-          "@class": "portfolio-wrapper",
-          "div": [
-            {
-              "@class": "dreamtechcontainer",
-              "img": {
-                "@src": "/Resources/images/desktop/PP/vs8magicjourn.png?20191224"
-              },
-              "div": {
-                "@class": "middle",
-                "div": {
-                  "@class": "text",
-                  "a": {
-                    "@class": "popup-pp slot_btn",
-                    "@href": "#",
-                    "@data-game": "vs8magicjourn",
-                    "@title": "PLAY NOW",
-                    "#text": "PLAY NOW"
-                  }
-                }
-              }
-            },
-            {
-              "@class": "slotGameName",
-              "#text": "Magic Journey™"
-            }
-          ]
-        }
-      },
-      {
-        "@class": "portfolio VideoSlots",
-        "@data-cat": "VideoSlots",
-        "@data-bound": "",
-        "@style": "display: inline-block;",
-        "div": {
-          "@class": "portfolio-wrapper",
-          "div": [
-            {
-              "@class": "dreamtechcontainer",
-              "img": {
-                "@src": "/Resources/images/desktop/PP/vs25mmouse.png?20191224"
-              },
-              "div": {
-                "@class": "middle",
-                "div": {
-                  "@class": "text",
-                  "a": {
-                    "@class": "popup-pp slot_btn",
-                    "@href": "#",
-                    "@data-game": "vs25mmouse",
-                    "@title": "PLAY NOW",
-                    "#text": "PLAY NOW"
-                  }
-                }
-              }
-            },
-            {
-              "@class": "slotGameName",
-              "#text": "Money Mouse™"
-            }
-          ]
-        }
-      },
-      {
-        "@class": "portfolio VideoSlots",
-        "@data-cat": "VideoSlots",
-        "@data-bound": "",
-        "@style": "display: inline-block;",
-        "div": {
-          "@class": "portfolio-wrapper",
-          "div": [
-            {
-              "@class": "dreamtechcontainer",
-              "img": {
-                "@src": "/Resources/images/desktop/PP/vs20aladdinsorc.png?20191224"
-              },
-              "div": {
-                "@class": "middle",
-                "div": {
-                  "@class": "text",
-                  "a": {
-                    "@class": "popup-pp slot_btn",
-                    "@href": "#",
-                    "@data-game": "vs20aladdinsorc",
-                    "@title": "PLAY NOW",
-                    "#text": "PLAY NOW"
-                  }
-                }
-              }
-            },
-            {
-              "@class": "slotGameName",
-              "#text": "Aladdin and the Sorcerrer™"
-            }
-          ]
-        }
-      },
-      {
-        "@class": "portfolio VideoSlots",
-        "@data-cat": "VideoSlots",
-        "@data-bound": "",
-        "@style": "display: inline-block;",
-        "div": {
-          "@class": "portfolio-wrapper",
-          "div": [
-            {
-              "@class": "dreamtechcontainer",
-              "img": {
-                "@src": "/Resources/images/desktop/PP/vs243fortseren.png?20191224"
-              },
-              "div": {
-                "@class": "middle",
-                "div": {
-                  "@class": "text",
-                  "a": {
-                    "@class": "popup-pp slot_btn",
-                    "@href": "#",
-                    "@data-game": "vs243fortseren",
-                    "@title": "PLAY NOW",
-                    "#text": "PLAY NOW"
-                  }
-                }
-              }
-            },
-            {
-              "@class": "slotGameName",
-              "#text": "Greek Gods™"
-            }
-          ]
-        }
-      },
-      {
-        "@class": "portfolio VideoSlots",
-        "@data-cat": "VideoSlots",
-        "@data-bound": "",
-        "@style": "display: inline-block;",
-        "div": {
-          "@class": "portfolio-wrapper",
-          "div": [
-            {
-              "@class": "dreamtechcontainer",
-              "img": {
-                "@src": "/Resources/images/desktop/PP/vs20hercpeg.png?20191224"
-              },
-              "div": {
-                "@class": "middle",
-                "div": {
-                  "@class": "text",
-                  "a": {
-                    "@class": "popup-pp slot_btn",
-                    "@href": "#",
-                    "@data-game": "vs20hercpeg",
-                    "@title": "PLAY NOW",
-                    "#text": "PLAY NOW"
-                  }
-                }
-              }
-            },
-            {
-              "@class": "slotGameName",
-              "#text": "Hercules and Pegasus™"
-            }
-          ]
-        }
-      },
-      {
-        "@class": "portfolio VideoSlots",
-        "@data-cat": "VideoSlots",
-        "@data-bound": "",
-        "@style": "display: inline-block;",
-        "div": {
-          "@class": "portfolio-wrapper",
-          "div": [
-            {
-              "@class": "dreamtechcontainer",
-              "img": {
-                "@src": "/Resources/images/desktop/PP/vs1fortunetree.png?20191224"
-              },
-              "div": {
-                "@class": "middle",
-                "div": {
-                  "@class": "text",
-                  "a": {
-                    "@class": "popup-pp slot_btn",
-                    "@href": "#",
-                    "@data-game": "vs1fortunetree",
-                    "@title": "PLAY NOW",
-                    "#text": "PLAY NOW"
-                  }
-                }
-              }
-            },
-            {
-              "@class": "slotGameName",
-              "#text": "Tree of Riches™"
-            }
-          ]
-        }
-      },
-      {
-        "@class": "portfolio VideoSlots",
-        "@data-cat": "VideoSlots",
-        "@data-bound": "",
-        "@style": "display: inline-block;",
-        "div": {
-          "@class": "portfolio-wrapper",
-          "div": [
-            {
-              "@class": "dreamtechcontainer",
-              "img": {
-                "@src": "/Resources/images/desktop/PP/vs20honey.png?20191224"
-              },
-              "div": {
-                "@class": "middle",
-                "div": {
-                  "@class": "text",
-                  "a": {
-                    "@class": "popup-pp slot_btn",
-                    "@href": "#",
-                    "@data-game": "vs20honey",
-                    "@title": "PLAY NOW",
-                    "#text": "PLAY NOW"
-                  }
-                }
-              }
-            },
-            {
-              "@class": "slotGameName",
-              "#text": "Honey Honey Honey"
-            }
-          ]
-        }
-      },
-      {
-        "@class": "portfolio VideoSlots",
-        "@data-cat": "VideoSlots",
-        "@data-bound": "",
-        "@style": "display: inline-block;",
-        "div": {
-          "@class": "portfolio-wrapper",
-          "div": [
-            {
-              "@class": "dreamtechcontainer",
-              "img": {
-                "@src": "/Resources/images/desktop/PP/vs5spjoker.png?20191224"
-              },
-              "div": {
-                "@class": "middle",
-                "div": {
-                  "@class": "text",
-                  "a": {
-                    "@class": "popup-pp slot_btn",
-                    "@href": "#",
-                    "@data-game": "vs5spjoker",
-                    "@title": "PLAY NOW",
-                    "#text": "PLAY NOW"
-                  }
-                }
-              }
-            },
-            {
-              "@class": "slotGameName",
-              "#text": "Super Joker™"
-            }
-          ]
-        }
-      },
-      {
-        "@class": "portfolio VideoSlots",
-        "@data-cat": "VideoSlots",
-        "@data-bound": "",
-        "@style": "display: inline-block;",
-        "div": {
-          "@class": "portfolio-wrapper",
-          "div": [
-            {
-              "@class": "dreamtechcontainer",
-              "img": {
-                "@src": "/Resources/images/desktop/PP/vs9hotroll.png?20191224"
-              },
-              "div": {
-                "@class": "middle",
-                "div": {
-                  "@class": "text",
-                  "a": {
-                    "@class": "popup-pp slot_btn",
-                    "@href": "#",
-                    "@data-game": "vs9hotroll",
-                    "@title": "PLAY NOW",
-                    "#text": "PLAY NOW"
-                  }
-                }
-              }
-            },
-            {
-              "@class": "slotGameName",
-              "#text": "Hot Chilli™"
-            }
-          ]
-        }
-      },
-      {
-        "@class": "portfolio VideoSlots",
-        "@data-cat": "VideoSlots",
-        "@data-bound": "",
-        "@style": "display: inline-block;",
-        "div": {
-          "@class": "portfolio-wrapper",
-          "div": [
-            {
-              "@class": "dreamtechcontainer",
-              "img": {
-                "@src": "/Resources/images/desktop/PP/vs7776secrets.png?20191224"
-              },
-              "div": {
-                "@class": "middle",
-                "div": {
-                  "@class": "text",
-                  "a": {
-                    "@class": "popup-pp slot_btn",
-                    "@href": "#",
-                    "@data-game": "vs7776secrets",
-                    "@title": "PLAY NOW",
-                    "#text": "PLAY NOW"
-                  }
-                }
-              }
-            },
-            {
-              "@class": "slotGameName",
-              "#text": "John Hunter and the Aztec Treasure™"
-            }
-          ]
-        }
-      },
-      {
-        "@class": "portfolio VideoSlots",
-        "@data-cat": "VideoSlots",
-        "@data-bound": "",
-        "@style": "display: inline-block;",
-        "div": {
-          "@class": "portfolio-wrapper",
-          "div": [
-            {
-              "@class": "dreamtechcontainer",
-              "img": {
-                "@src": "/Resources/images/desktop/PP/vs243mwarrior.png?20191224"
-              },
-              "div": {
-                "@class": "middle",
-                "div": {
-                  "@class": "text",
-                  "a": {
-                    "@class": "popup-pp slot_btn",
-                    "@href": "#",
-                    "@data-game": "vs243mwarrior",
-                    "@title": "PLAY NOW",
-                    "#text": "PLAY NOW"
-                  }
-                }
-              }
-            },
-            {
-              "@class": "slotGameName",
-              "#text": "Monkey Warrior™"
-            }
-          ]
-        }
-      },
-      {
-        "@class": "portfolio VideoSlots",
-        "@data-cat": "VideoSlots",
-        "@data-bound": "",
-        "@style": "display: inline-block;",
-        "div": {
-          "@class": "portfolio-wrapper",
-          "div": [
-            {
-              "@class": "dreamtechcontainer",
-              "img": {
-                "@src": "/Resources/images/desktop/PP/vs243caishien.png?20191224"
-              },
-              "div": {
-                "@class": "middle",
-                "div": {
-                  "@class": "text",
-                  "a": {
-                    "@class": "popup-pp slot_btn",
-                    "@href": "#",
-                    "@data-game": "vs243caishien",
-                    "@title": "PLAY NOW",
-                    "#text": "PLAY NOW"
-                  }
-                }
-              }
-            },
-            {
-              "@class": "slotGameName",
-              "#text": "Caishen’s Cash™"
-            }
-          ]
-        }
-      },
-      {
-        "@class": "portfolio VideoSlots",
-        "@data-cat": "VideoSlots",
-        "@data-bound": "",
-        "@style": "display: inline-block;",
-        "div": {
-          "@class": "portfolio-wrapper",
-          "div": [
-            {
-              "@class": "dreamtechcontainer",
-              "img": {
-                "@src": "/Resources/images/desktop/PP/vs243lionsgold.png?20191224"
-              },
-              "div": {
-                "@class": "middle",
-                "div": {
-                  "@class": "text",
-                  "a": {
-                    "@class": "popup-pp slot_btn",
-                    "@href": "#",
-                    "@data-game": "vs243lionsgold",
-                    "@title": "PLAY NOW",
-                    "#text": "PLAY NOW"
-                  }
-                }
-              }
-            },
-            {
-              "@class": "slotGameName",
-              "#text": "5 Lions Gold™"
-            }
-          ]
-        }
-      },
-      {
-        "@class": "portfolio VideoSlots",
-        "@data-cat": "VideoSlots",
-        "@data-bound": "",
-        "@style": "display: inline-block;",
-        "div": {
-          "@class": "portfolio-wrapper",
-          "div": [
-            {
-              "@class": "dreamtechcontainer",
-              "img": {
-                "@src": "/Resources/images/desktop/PP/vs20chicken.png?20191224"
-              },
-              "div": {
-                "@class": "middle",
-                "div": {
-                  "@class": "text",
-                  "a": {
-                    "@class": "popup-pp slot_btn",
-                    "@href": "#",
-                    "@data-game": "vs20chicken",
-                    "@title": "PLAY NOW",
-                    "#text": "PLAY NOW"
-                  }
-                }
-              }
-            },
-            {
-              "@class": "slotGameName",
-              "#text": "The Great Chicken Escape™"
-            }
-          ]
-        }
-      },
-      {
-        "@class": "portfolio VideoSlots",
-        "@data-cat": "VideoSlots",
-        "@data-bound": "",
-        "@style": "display: inline-block;",
-        "div": {
-          "@class": "portfolio-wrapper",
-          "div": [
-            {
-              "@class": "dreamtechcontainer",
-              "img": {
-                "@src": "/Resources/images/desktop/PP/vs10vampwolf.png?20191224"
-              },
-              "div": {
-                "@class": "middle",
-                "div": {
-                  "@class": "text",
-                  "a": {
-                    "@class": "popup-pp slot_btn",
-                    "@href": "#",
-                    "@data-game": "vs10vampwolf",
-                    "@title": "PLAY NOW",
-                    "#text": "PLAY NOW"
-                  }
-                }
-              }
-            },
-            {
-              "@class": "slotGameName",
-              "#text": "Vampire vs Wolves™"
-            }
-          ]
-        }
-      },
-      {
-        "@class": "portfolio VideoSlots",
-        "@data-cat": "VideoSlots",
-        "@data-bound": "",
-        "@style": "display: inline-block;",
-        "div": {
-          "@class": "portfolio-wrapper",
-          "div": [
-            {
-              "@class": "dreamtechcontainer",
-              "img": {
-                "@src": "/Resources/images/desktop/PP/vs5trjokers.png?20191224"
-              },
-              "div": {
-                "@class": "middle",
-                "div": {
-                  "@class": "text",
-                  "a": {
-                    "@class": "popup-pp slot_btn",
-                    "@href": "#",
-                    "@data-game": "vs5trjokers",
-                    "@title": "PLAY NOW",
-                    "#text": "PLAY NOW"
-                  }
-                }
-              }
-            },
-            {
-              "@class": "slotGameName",
-              "#text": "Triple Joker™"
-            }
-          ]
-        }
-      },
-      {
-        "@class": "portfolio VideoSlots",
-        "@data-cat": "VideoSlots",
-        "@data-bound": "",
-        "@style": "display: inline-block;",
-        "div": {
-          "@class": "portfolio-wrapper",
-          "div": [
-            {
-              "@class": "dreamtechcontainer",
-              "img": {
-                "@src": "/Resources/images/desktop/PP/vs20wildpix.png?20191224"
-              },
-              "div": {
-                "@class": "middle",
-                "div": {
-                  "@class": "text",
-                  "a": {
-                    "@class": "popup-pp slot_btn",
-                    "@href": "#",
-                    "@data-game": "vs20wildpix",
-                    "@title": "PLAY NOW",
-                    "#text": "PLAY NOW"
-                  }
-                }
-              }
-            },
-            {
-              "@class": "slotGameName",
-              "#text": "Wild Pixies™"
-            }
-          ]
-        }
-      },
-      {
-        "@class": "portfolio VideoSlots",
-        "@data-cat": "VideoSlots",
-        "@data-bound": "",
-        "@style": "display: inline-block;",
-        "div": {
-          "@class": "portfolio-wrapper",
-          "div": [
-            {
-              "@class": "dreamtechcontainer",
-              "img": {
-                "@src": "/Resources/images/desktop/PP/vs40pirate.png?20191224"
-              },
-              "div": {
-                "@class": "middle",
-                "div": {
-                  "@class": "text",
-                  "a": {
-                    "@class": "popup-pp slot_btn",
-                    "@href": "#",
-                    "@data-game": "vs40pirate",
-                    "@title": "PLAY NOW",
-                    "#text": "PLAY NOW"
-                  }
-                }
-              }
-            },
-            {
-              "@class": "slotGameName",
-              "#text": "Pirate Gold™"
-            }
-          ]
-        }
-      },
-      {
-        "@class": "portfolio VideoSlots",
-        "@data-cat": "VideoSlots",
-        "@data-bound": "",
-        "@style": "display: inline-block;",
-        "div": {
-          "@class": "portfolio-wrapper",
-          "div": [
-            {
-              "@class": "dreamtechcontainer",
-              "img": {
-                "@src": "/Resources/images/desktop/PP/vs20doghouse.png?20191224"
-              },
-              "div": {
-                "@class": "middle",
-                "div": {
-                  "@class": "text",
-                  "a": {
-                    "@class": "popup-pp slot_btn",
-                    "@href": "#",
-                    "@data-game": "vs20doghouse",
-                    "@title": "PLAY NOW",
-                    "#text": "PLAY NOW"
-                  }
-                }
-              }
-            },
-            {
-              "@class": "slotGameName",
-              "#text": "The Dog House™"
-            }
-          ]
-        }
-      },
-      {
-        "@class": "portfolio VideoSlots",
-        "@data-cat": "VideoSlots",
-        "@data-bound": "",
-        "@style": "display: inline-block;",
-        "div": {
-          "@class": "portfolio-wrapper",
-          "div": [
-            {
-              "@class": "dreamtechcontainer",
-              "img": {
-                "@src": "/Resources/images/desktop/PP/vs20egypttrs.png?20191224"
-              },
-              "div": {
-                "@class": "middle",
-                "div": {
-                  "@class": "text",
-                  "a": {
-                    "@class": "popup-pp slot_btn",
-                    "@href": "#",
-                    "@data-game": "vs20egypttrs",
-                    "@title": "PLAY NOW",
-                    "#text": "PLAY NOW"
-                  }
-                }
-              }
-            },
-            {
-              "@class": "slotGameName",
-              "#text": "Egyptian Fortunes™"
-            }
-          ]
-        }
-      },
-      {
-        "@class": "portfolio VideoSlots",
-        "@data-cat": "VideoSlots",
-        "@data-bound": "",
-        "@style": "display: inline-block;",
-        "div": {
-          "@class": "portfolio-wrapper",
-          "div": [
-            {
-              "@class": "dreamtechcontainer",
-              "img": {
-                "@src": "/Resources/images/desktop/PP/vs10fruity2.png?20191224"
-              },
-              "div": {
-                "@class": "middle",
-                "div": {
-                  "@class": "text",
-                  "a": {
-                    "@class": "popup-pp slot_btn",
-                    "@href": "#",
-                    "@data-game": "vs10fruity2",
-                    "@title": "PLAY NOW",
-                    "#text": "PLAY NOW"
-                  }
-                }
-              }
-            },
-            {
-              "@class": "slotGameName",
-              "#text": "Extra Juicy™"
-            }
-          ]
-        }
-      },
-      {
-        "@class": "portfolio VideoSlots",
-        "@data-cat": "VideoSlots",
-        "@data-bound": "",
-        "@style": "display: inline-block;",
-        "div": {
-          "@class": "portfolio-wrapper",
-          "div": [
-            {
-              "@class": "dreamtechcontainer",
-              "img": {
-                "@src": "/Resources/images/desktop/PP/vs25gladiator.png?20191224"
-              },
-              "div": {
-                "@class": "middle",
-                "div": {
-                  "@class": "text",
-                  "a": {
-                    "@class": "popup-pp slot_btn",
-                    "@href": "#",
-                    "@data-game": "vs25gladiator",
-                    "@title": "PLAY NOW",
-                    "#text": "PLAY NOW"
-                  }
-                }
-              }
-            },
-            {
-              "@class": "slotGameName",
-              "#text": "Wild Gladiator™"
-            }
-          ]
-        }
-      },
-      {
-        "@class": "portfolio VideoSlots",
-        "@data-cat": "VideoSlots",
-        "@data-bound": "",
-        "@style": "display: inline-block;",
-        "div": {
-          "@class": "portfolio-wrapper",
-          "div": [
-            {
-              "@class": "dreamtechcontainer",
-              "img": {
-                "@src": "/Resources/images/desktop/PP/vs25goldpig.png?20191224"
-              },
-              "div": {
-                "@class": "middle",
-                "div": {
-                  "@class": "text",
-                  "a": {
-                    "@class": "popup-pp slot_btn",
-                    "@href": "#",
-                    "@data-game": "vs25goldpig",
-                    "@title": "PLAY NOW",
-                    "#text": "PLAY NOW"
-                  }
-                }
-              }
-            },
-            {
-              "@class": "slotGameName",
-              "#text": "Golden Pig™"
-            }
-          ]
-        }
-      },
-      {
-        "@class": "portfolio VideoSlots",
-        "@data-cat": "VideoSlots",
-        "@data-bound": "",
-        "@style": "display: inline-block;",
-        "div": {
-          "@class": "portfolio-wrapper",
-          "div": [
-            {
-              "@class": "dreamtechcontainer",
-              "img": {
-                "@src": "/Resources/images/desktop/PP/vs18mashang.png?20191224"
-              },
-              "div": {
-                "@class": "middle",
-                "div": {
-                  "@class": "text",
-                  "a": {
-                    "@class": "popup-pp slot_btn",
-                    "@href": "#",
-                    "@data-game": "vs18mashang",
-                    "@title": "PLAY NOW",
-                    "#text": "PLAY NOW"
-                  }
-                }
-              }
-            },
-            {
-              "@class": "slotGameName",
-              "#text": "Treasure Horse™"
-            }
-          ]
-        }
-      },
-      {
-        "@class": "portfolio VideoSlots",
-        "@data-cat": "VideoSlots",
-        "@data-bound": "",
-        "@style": "display: inline-block;",
-        "div": {
-          "@class": "portfolio-wrapper",
-          "div": [
-            {
-              "@class": "dreamtechcontainer",
-              "img": {
-                "@src": "/Resources/images/desktop/PP/vs50safariking.png?20191224"
-              },
-              "div": {
-                "@class": "middle",
-                "div": {
-                  "@class": "text",
-                  "a": {
-                    "@class": "popup-pp slot_btn",
-                    "@href": "#",
-                    "@data-game": "vs50safariking",
-                    "@title": "PLAY NOW",
-                    "#text": "PLAY NOW"
-                  }
-                }
-              }
-            },
-            {
-              "@class": "slotGameName",
-              "#text": "Safari King™"
-            }
-          ]
-        }
-      },
-      {
-        "@class": "portfolio VideoSlots",
-        "@data-cat": "VideoSlots",
-        "@data-bound": "",
-        "@style": "display: inline-block;",
-        "div": {
-          "@class": "portfolio-wrapper",
-          "div": [
-            {
-              "@class": "dreamtechcontainer",
-              "img": {
-                "@src": "/Resources/images/desktop/PP/vs20leprexmas.png?20191224"
-              },
-              "div": {
-                "@class": "middle",
-                "div": {
-                  "@class": "text",
-                  "a": {
-                    "@class": "popup-pp slot_btn",
-                    "@href": "#",
-                    "@data-game": "vs20leprexmas",
-                    "@title": "PLAY NOW",
-                    "#text": "PLAY NOW"
-                  }
-                }
-              }
-            },
-            {
-              "@class": "slotGameName",
-              "#text": "Leprechaun Carol™"
-            }
-          ]
-        }
-      },
-      {
-        "@class": "portfolio VideoSlots",
-        "@data-cat": "VideoSlots",
-        "@data-bound": "",
-        "@style": "display: inline-block;",
-        "div": {
-          "@class": "portfolio-wrapper",
-          "div": [
-            {
-              "@class": "dreamtechcontainer",
-              "img": {
-                "@src": "/Resources/images/desktop/PP/vs5trdragons.png?20191224"
-              },
-              "div": {
-                "@class": "middle",
-                "div": {
-                  "@class": "text",
-                  "a": {
-                    "@class": "popup-pp slot_btn",
-                    "@href": "#",
-                    "@data-game": "vs5trdragons",
-                    "@title": "PLAY NOW",
-                    "#text": "PLAY NOW"
-                  }
-                }
-              }
-            },
-            {
-              "@class": "slotGameName",
-              "#text": "Triple Dragons™"
-            }
-          ]
-        }
-      },
-      {
-        "@class": "portfolio VideoSlots",
-        "@data-cat": "VideoSlots",
-        "@data-bound": "",
-        "@style": "display: inline-block;",
-        "div": {
-          "@class": "portfolio-wrapper",
-          "div": [
-            {
-              "@class": "dreamtechcontainer",
-              "img": {
-                "@src": "/Resources/images/desktop/PP/vs10egyptcls.png?20191224"
-              },
-              "div": {
-                "@class": "middle",
-                "div": {
-                  "@class": "text",
-                  "a": {
-                    "@class": "popup-pp slot_btn",
-                    "@href": "#",
-                    "@data-game": "vs10egyptcls",
-                    "@title": "PLAY NOW",
-                    "#text": "PLAY NOW"
-                  }
-                }
-              }
-            },
-            {
-              "@class": "slotGameName",
-              "#text": "Ancient Egypt Classic™"
-            }
-          ]
-        }
-      },
-      {
-        "@class": "portfolio VideoSlots",
-        "@data-cat": "VideoSlots",
-        "@data-bound": "",
-        "@style": "display: inline-block;",
-        "div": {
-          "@class": "portfolio-wrapper",
-          "div": [
-            {
-              "@class": "dreamtechcontainer",
-              "img": {
-                "@src": "/Resources/images/desktop/PP/vs9chen.png?20191224"
-              },
-              "div": {
-                "@class": "middle",
-                "div": {
-                  "@class": "text",
-                  "a": {
-                    "@class": "popup-pp slot_btn",
-                    "@href": "#",
-                    "@data-game": "vs9chen",
-                    "@title": "PLAY NOW",
-                    "#text": "PLAY NOW"
-                  }
-                }
-              }
-            },
-            {
-              "@class": "slotGameName",
-              "#text": "Master Chen’s Fortune™"
-            }
-          ]
-        }
-      },
-      {
-        "@class": "portfolio VideoSlots",
-        "@data-cat": "VideoSlots",
-        "@data-bound": "",
         "@style": "display: inline-block;",
-        "div": {
-          "@class": "portfolio-wrapper",
-          "div": [
-            {
-              "@class": "dreamtechcontainer",
-              "img": {
-                "@src": "/Resources/images/desktop/PP/vs25davinci.png?20191224"
-              },
-              "div": {
-                "@class": "middle",
-                "div": {
-                  "@class": "text",
-                  "a": {
-                    "@class": "popup-pp slot_btn",
-                    "@href": "#",
-                    "@data-game": "vs25davinci",
-                    "@title": "PLAY NOW",
-                    "#text": "PLAY NOW"
-                  }
-                }
-              }
-            },
-            {
-              "@class": "slotGameName",
-              "#text": "Da Vincis Treasure™"
-            }
-          ]
-        }
-      },
-      {
-        "@class": "portfolio VideoSlots",
-        "@data-cat": "VideoSlots",
         "@data-bound": "",
-        "@style": "display: inline-block;",
         "div": {
           "@class": "portfolio-wrapper",
           "div": [
             {
               "@class": "dreamtechcontainer",
               "img": {
-                "@src": "/Resources/images/desktop/PP/vs25peking.png?20191224"
+                "@src": "/Resources/images/desktop/PGSOFT/ganesha-fortune.png?20191224"
               },
               "div": {
                 "@class": "middle",
                 "div": {
                   "@class": "text",
                   "a": {
-                    "@class": "popup-pp slot_btn",
+                    "@class": "popup-pgsoft slot_btn",
                     "@href": "#",
-                    "@data-game": "vs25peking",
+                    "@data-game": "ganesha-fortune",
                     "@title": "PLAY NOW",
                     "#text": "PLAY NOW"
                   }
@@ -2309,7 +31,7 @@ const json = {
             },
             {
               "@class": "slotGameName",
-              "#text": "Peking Luck™"
+              "#text": "Ganesha Fortune"
             }
           ]
         }
@@ -2317,58 +39,24 @@ const json = {
       {
         "@class": "portfolio VideoSlots",
         "@data-cat": "VideoSlots",
-        "@data-bound": "",
         "@style": "display: inline-block;",
-        "div": {
-          "@class": "portfolio-wrapper",
-          "div": [
-            {
-              "@class": "dreamtechcontainer",
-              "img": {
-                "@src": "/Resources/images/desktop/PP/vs20leprechaun.png?20191224"
-              },
-              "div": {
-                "@class": "middle",
-                "div": {
-                  "@class": "text",
-                  "a": {
-                    "@class": "popup-pp slot_btn",
-                    "@href": "#",
-                    "@data-game": "vs20leprechaun",
-                    "@title": "PLAY NOW",
-                    "#text": "PLAY NOW"
-                  }
-                }
-              }
-            },
-            {
-              "@class": "slotGameName",
-              "#text": "Leprechaun Song™"
-            }
-          ]
-        }
-      },
-      {
-        "@class": "portfolio VideoSlots",
-        "@data-cat": "VideoSlots",
         "@data-bound": "",
-        "@style": "display: inline-block;",
         "div": {
           "@class": "portfolio-wrapper",
           "div": [
             {
               "@class": "dreamtechcontainer",
               "img": {
-                "@src": "/Resources/images/desktop/PP/vs25asgard.png?20191224"
+                "@src": "/Resources/images/desktop/PGSOFT/egypts-book-mystery.png?20191224"
               },
               "div": {
                 "@class": "middle",
                 "div": {
                   "@class": "text",
                   "a": {
-                    "@class": "popup-pp slot_btn",
+                    "@class": "popup-pgsoft slot_btn",
                     "@href": "#",
-                    "@data-game": "vs25asgard",
+                    "@data-game": "egypts-book-mystery",
                     "@title": "PLAY NOW",
                     "#text": "PLAY NOW"
                   }
@@ -2377,7 +65,7 @@ const json = {
             },
             {
               "@class": "slotGameName",
-              "#text": "Asgard™"
+              "#text": "Egypts Book of Mystery"
             }
           ]
         }
@@ -2385,58 +73,24 @@ const json = {
       {
         "@class": "portfolio VideoSlots",
         "@data-cat": "VideoSlots",
-        "@data-bound": "",
         "@style": "display: inline-block;",
-        "div": {
-          "@class": "portfolio-wrapper",
-          "div": [
-            {
-              "@class": "dreamtechcontainer",
-              "img": {
-                "@src": "/Resources/images/desktop/PP/vs10madame.png?20191224"
-              },
-              "div": {
-                "@class": "middle",
-                "div": {
-                  "@class": "text",
-                  "a": {
-                    "@class": "popup-pp slot_btn",
-                    "@href": "#",
-                    "@data-game": "vs10madame",
-                    "@title": "PLAY NOW",
-                    "#text": "PLAY NOW"
-                  }
-                }
-              }
-            },
-            {
-              "@class": "slotGameName",
-              "#text": "Madame Destiny™"
-            }
-          ]
-        }
-      },
-      {
-        "@class": "portfolio VideoSlots",
-        "@data-cat": "VideoSlots",
         "@data-bound": "",
-        "@style": "display: inline-block;",
         "div": {
           "@class": "portfolio-wrapper",
           "div": [
             {
               "@class": "dreamtechcontainer",
               "img": {
-                "@src": "/Resources/images/desktop/PP/vs1024butterfly.png?20191224"
+                "@src": "/Resources/images/desktop/PGSOFT/mahjong-ways2.png?20191224"
               },
               "div": {
                 "@class": "middle",
                 "div": {
                   "@class": "text",
                   "a": {
-                    "@class": "popup-pp slot_btn",
+                    "@class": "popup-pgsoft slot_btn",
                     "@href": "#",
-                    "@data-game": "vs1024butterfly",
+                    "@data-game": "mahjong-ways2",
                     "@title": "PLAY NOW",
                     "#text": "PLAY NOW"
                   }
@@ -2445,7 +99,7 @@ const json = {
             },
             {
               "@class": "slotGameName",
-              "#text": "Jade Butterfly™"
+              "#text": "Mahjong Ways 2"
             }
           ]
         }
@@ -2453,58 +107,24 @@ const json = {
       {
         "@class": "portfolio VideoSlots",
         "@data-cat": "VideoSlots",
-        "@data-bound": "",
         "@style": "display: inline-block;",
-        "div": {
-          "@class": "portfolio-wrapper",
-          "div": [
-            {
-              "@class": "dreamtechcontainer",
-              "img": {
-                "@src": "/Resources/images/desktop/PP/vs25champ.png?20191224"
-              },
-              "div": {
-                "@class": "middle",
-                "div": {
-                  "@class": "text",
-                  "a": {
-                    "@class": "popup-pp slot_btn",
-                    "@href": "#",
-                    "@data-game": "vs25champ",
-                    "@title": "PLAY NOW",
-                    "#text": "PLAY NOW"
-                  }
-                }
-              }
-            },
-            {
-              "@class": "slotGameName",
-              "#text": "The Champions™"
-            }
-          ]
-        }
-      },
-      {
-        "@class": "portfolio VideoSlots",
-        "@data-cat": "VideoSlots",
         "@data-bound": "",
-        "@style": "display: inline-block;",
         "div": {
           "@class": "portfolio-wrapper",
           "div": [
             {
               "@class": "dreamtechcontainer",
               "img": {
-                "@src": "/Resources/images/desktop/PP/vs25chilli.png?20191224"
+                "@src": "/Resources/images/desktop/PGSOFT/bikini-paradise.png?20191224"
               },
               "div": {
                 "@class": "middle",
                 "div": {
                   "@class": "text",
                   "a": {
-                    "@class": "popup-pp slot_btn",
+                    "@class": "popup-pgsoft slot_btn",
                     "@href": "#",
-                    "@data-game": "vs25chilli",
+                    "@data-game": "bikini-paradise",
                     "@title": "PLAY NOW",
                     "#text": "PLAY NOW"
                   }
@@ -2513,7 +133,7 @@ const json = {
             },
             {
               "@class": "slotGameName",
-              "#text": "Chilli Heat"
+              "#text": "Bikini Paradise"
             }
           ]
         }
@@ -2521,58 +141,24 @@ const json = {
       {
         "@class": "portfolio VideoSlots",
         "@data-cat": "VideoSlots",
-        "@data-bound": "",
         "@style": "display: inline-block;",
-        "div": {
-          "@class": "portfolio-wrapper",
-          "div": [
-            {
-              "@class": "dreamtechcontainer",
-              "img": {
-                "@src": "/Resources/images/desktop/PP/vs15fairytale.png?20191224"
-              },
-              "div": {
-                "@class": "middle",
-                "div": {
-                  "@class": "text",
-                  "a": {
-                    "@class": "popup-pp slot_btn",
-                    "@href": "#",
-                    "@data-game": "vs15fairytale",
-                    "@title": "PLAY NOW",
-                    "#text": "PLAY NOW"
-                  }
-                }
-              }
-            },
-            {
-              "@class": "slotGameName",
-              "#text": "Fairytale Fortune"
-            }
-          ]
-        }
-      },
-      {
-        "@class": "portfolio VideoSlots",
-        "@data-cat": "VideoSlots",
         "@data-bound": "",
-        "@style": "display: inline-block;",
         "div": {
           "@class": "portfolio-wrapper",
           "div": [
             {
               "@class": "dreamtechcontainer",
               "img": {
-                "@src": "/Resources/images/desktop/PP/vs10egypt.png?20191224"
+                "@src": "/Resources/images/desktop/PGSOFT/cai-shen-wins.png?20191224"
               },
               "div": {
                 "@class": "middle",
                 "div": {
                   "@class": "text",
                   "a": {
-                    "@class": "popup-pp slot_btn",
+                    "@class": "popup-pgsoft slot_btn",
                     "@href": "#",
-                    "@data-game": "vs10egypt",
+                    "@data-game": "cai-shen-wins",
                     "@title": "PLAY NOW",
                     "#text": "PLAY NOW"
                   }
@@ -2581,7 +167,7 @@ const json = {
             },
             {
               "@class": "slotGameName",
-              "#text": "Ancient Egypt™"
+              "#text": "Caishen Wins"
             }
           ]
         }
@@ -2589,24 +175,24 @@ const json = {
       {
         "@class": "portfolio VideoSlots",
         "@data-cat": "VideoSlots",
-        "@data-bound": "",
         "@style": "display: inline-block;",
+        "@data-bound": "",
         "div": {
           "@class": "portfolio-wrapper",
           "div": [
             {
               "@class": "dreamtechcontainer",
               "img": {
-                "@src": "/Resources/images/desktop/PP/vs25newyear.png?20191224"
+                "@src": "/Resources/images/desktop/PGSOFT/candy-burst.png?20191224"
               },
               "div": {
                 "@class": "middle",
                 "div": {
                   "@class": "text",
                   "a": {
-                    "@class": "popup-pp slot_btn",
+                    "@class": "popup-pgsoft slot_btn",
                     "@href": "#",
-                    "@data-game": "vs25newyear",
+                    "@data-game": "candy-burst",
                     "@title": "PLAY NOW",
                     "#text": "PLAY NOW"
                   }
@@ -2615,7 +201,7 @@ const json = {
             },
             {
               "@class": "slotGameName",
-              "#text": "Lucky New Year"
+              "#text": "Candy Burst"
             }
           ]
         }
@@ -2623,24 +209,24 @@ const json = {
       {
         "@class": "portfolio VideoSlots",
         "@data-cat": "VideoSlots",
-        "@data-bound": "",
         "@style": "display: inline-block;",
+        "@data-bound": "",
         "div": {
           "@class": "portfolio-wrapper",
           "div": [
             {
               "@class": "dreamtechcontainer",
               "img": {
-                "@src": "/Resources/images/desktop/PP/vs9madmonkey.png?20191224"
+                "@src": "/Resources/images/desktop/PGSOFT/shaolin-soccer.png?20191224"
               },
               "div": {
                 "@class": "middle",
                 "div": {
                   "@class": "text",
                   "a": {
-                    "@class": "popup-pp slot_btn",
+                    "@class": "popup-pgsoft slot_btn",
                     "@href": "#",
-                    "@data-game": "vs9madmonkey",
+                    "@data-game": "shaolin-soccer",
                     "@title": "PLAY NOW",
                     "#text": "PLAY NOW"
                   }
@@ -2649,7 +235,7 @@ const json = {
             },
             {
               "@class": "slotGameName",
-              "#text": "Monkey Madness™"
+              "#text": "Shaolin Soccer"
             }
           ]
         }
@@ -2657,24 +243,24 @@ const json = {
       {
         "@class": "portfolio VideoSlots",
         "@data-cat": "VideoSlots",
-        "@data-bound": "",
         "@style": "display: inline-block;",
+        "@data-bound": "",
         "div": {
           "@class": "portfolio-wrapper",
           "div": [
             {
               "@class": "dreamtechcontainer",
               "img": {
-                "@src": "/Resources/images/desktop/PP/vs25goldrush.png?20191224"
+                "@src": "/Resources/images/desktop/PGSOFT/gem-saviour-conquest.png?20191224"
               },
               "div": {
                 "@class": "middle",
                 "div": {
                   "@class": "text",
                   "a": {
-                    "@class": "popup-pp slot_btn",
+                    "@class": "popup-pgsoft slot_btn",
                     "@href": "#",
-                    "@data-game": "vs25goldrush",
+                    "@data-game": "gem-saviour-conquest",
                     "@title": "PLAY NOW",
                     "#text": "PLAY NOW"
                   }
@@ -2683,7 +269,7 @@ const json = {
             },
             {
               "@class": "slotGameName",
-              "#text": "Gold Rush™"
+              "#text": "Gem Saviour Conquest"
             }
           ]
         }
@@ -2691,24 +277,24 @@ const json = {
       {
         "@class": "portfolio VideoSlots",
         "@data-cat": "VideoSlots",
-        "@data-bound": "",
         "@style": "display: inline-block;",
+        "@data-bound": "",
         "div": {
           "@class": "portfolio-wrapper",
           "div": [
             {
               "@class": "dreamtechcontainer",
               "img": {
-                "@src": "/Resources/images/desktop/PP/vs20santa.png?20191224"
+                "@src": "/Resources/images/desktop/PGSOFT/reel-love.png?20191224"
               },
               "div": {
                 "@class": "middle",
                 "div": {
                   "@class": "text",
                   "a": {
-                    "@class": "popup-pp slot_btn",
+                    "@class": "popup-pgsoft slot_btn",
                     "@href": "#",
-                    "@data-game": "vs20santa",
+                    "@data-game": "reel-love",
                     "@title": "PLAY NOW",
                     "#text": "PLAY NOW"
                   }
@@ -2717,7 +303,7 @@ const json = {
             },
             {
               "@class": "slotGameName",
-              "#text": "Santa™"
+              "#text": "Reel Love"
             }
           ]
         }
@@ -2725,24 +311,24 @@ const json = {
       {
         "@class": "portfolio VideoSlots",
         "@data-cat": "VideoSlots",
-        "@data-bound": "",
         "@style": "display: inline-block;",
+        "@data-bound": "",
         "div": {
           "@class": "portfolio-wrapper",
           "div": [
             {
               "@class": "dreamtechcontainer",
               "img": {
-                "@src": "/Resources/images/desktop/PP/vs25pandagold.png?20191224"
+                "@src": "/Resources/images/desktop/PGSOFT/fortune-mouse.png?20191224"
               },
               "div": {
                 "@class": "middle",
                 "div": {
                   "@class": "text",
                   "a": {
-                    "@class": "popup-pp slot_btn",
+                    "@class": "popup-pgsoft slot_btn",
                     "@href": "#",
-                    "@data-game": "vs25pandagold",
+                    "@data-game": "fortune-mouse",
                     "@title": "PLAY NOW",
                     "#text": "PLAY NOW"
                   }
@@ -2751,7 +337,7 @@ const json = {
             },
             {
               "@class": "slotGameName",
-              "#text": "Panda’s Fortune™"
+              "#text": "Fortune Mouse"
             }
           ]
         }
@@ -2759,24 +345,24 @@ const json = {
       {
         "@class": "portfolio VideoSlots",
         "@data-cat": "VideoSlots",
-        "@data-bound": "",
         "@style": "display: inline-block;",
+        "@data-bound": "",
         "div": {
           "@class": "portfolio-wrapper",
           "div": [
             {
               "@class": "dreamtechcontainer",
               "img": {
-                "@src": "/Resources/images/desktop/PP/vs7pigs.png?20191224"
+                "@src": "/Resources/images/desktop/PGSOFT/dragon-hatch.png?20191224"
               },
               "div": {
                 "@class": "middle",
                 "div": {
                   "@class": "text",
                   "a": {
-                    "@class": "popup-pp slot_btn",
+                    "@class": "popup-pgsoft slot_btn",
                     "@href": "#",
-                    "@data-game": "vs7pigs",
+                    "@data-game": "dragon-hatch",
                     "@title": "PLAY NOW",
                     "#text": "PLAY NOW"
                   }
@@ -2785,7 +371,7 @@ const json = {
             },
             {
               "@class": "slotGameName",
-              "#text": "7 Piggies™"
+              "#text": "Dragon Hatch"
             }
           ]
         }
@@ -2793,24 +379,24 @@ const json = {
       {
         "@class": "portfolio VideoSlots",
         "@data-cat": "VideoSlots",
-        "@data-bound": "",
         "@style": "display: inline-block;",
+        "@data-bound": "",
         "div": {
           "@class": "portfolio-wrapper",
           "div": [
             {
               "@class": "dreamtechcontainer",
               "img": {
-                "@src": "/Resources/images/desktop/PP/vs25dragonkingdom.png?20191224"
+                "@src": "/Resources/images/desktop/PGSOFT/mahjong-ways.png?20191224"
               },
               "div": {
                 "@class": "middle",
                 "div": {
                   "@class": "text",
                   "a": {
-                    "@class": "popup-pp slot_btn",
+                    "@class": "popup-pgsoft slot_btn",
                     "@href": "#",
-                    "@data-game": "vs25dragonkingdom",
+                    "@data-game": "mahjong-ways",
                     "@title": "PLAY NOW",
                     "#text": "PLAY NOW"
                   }
@@ -2819,7 +405,7 @@ const json = {
             },
             {
               "@class": "slotGameName",
-              "#text": "Dragon Kingdom"
+              "#text": "Mahjong Ways"
             }
           ]
         }
@@ -2827,24 +413,24 @@ const json = {
       {
         "@class": "portfolio VideoSlots",
         "@data-cat": "VideoSlots",
-        "@data-bound": "",
         "@style": "display: inline-block;",
+        "@data-bound": "",
         "div": {
           "@class": "portfolio-wrapper",
           "div": [
             {
               "@class": "dreamtechcontainer",
               "img": {
-                "@src": "/Resources/images/desktop/PP/vs7monkeys.png?20191224"
+                "@src": "/Resources/images/desktop/PGSOFT/dragon-tiger-luck.png?20191224"
               },
               "div": {
                 "@class": "middle",
                 "div": {
                   "@class": "text",
                   "a": {
-                    "@class": "popup-pp slot_btn",
+                    "@class": "popup-pgsoft slot_btn",
                     "@href": "#",
-                    "@data-game": "vs7monkeys",
+                    "@data-game": "dragon-tiger-luck",
                     "@title": "PLAY NOW",
                     "#text": "PLAY NOW"
                   }
@@ -2853,7 +439,7 @@ const json = {
             },
             {
               "@class": "slotGameName",
-              "#text": "7 Monkeys"
+              "#text": "Dragon Tiger Luck"
             }
           ]
         }
@@ -2861,24 +447,24 @@ const json = {
       {
         "@class": "portfolio VideoSlots",
         "@data-cat": "VideoSlots",
-        "@data-bound": "",
         "@style": "display: inline-block;",
+        "@data-bound": "",
         "div": {
           "@class": "portfolio-wrapper",
           "div": [
             {
               "@class": "dreamtechcontainer",
               "img": {
-                "@src": "/Resources/images/desktop/PP/vs25queenofgold.png?20191224"
+                "@src": "/Resources/images/desktop/PGSOFT/leprechaun-riches.png?20191224"
               },
               "div": {
                 "@class": "middle",
                 "div": {
                   "@class": "text",
                   "a": {
-                    "@class": "popup-pp slot_btn",
+                    "@class": "popup-pgsoft slot_btn",
                     "@href": "#",
-                    "@data-game": "vs25queenofgold",
+                    "@data-game": "leprechaun-riches",
                     "@title": "PLAY NOW",
                     "#text": "PLAY NOW"
                   }
@@ -2887,7 +473,7 @@ const json = {
             },
             {
               "@class": "slotGameName",
-              "#text": "Queen of Gold™"
+              "#text": "Leprechaun Riches"
             }
           ]
         }
@@ -2895,24 +481,24 @@ const json = {
       {
         "@class": "portfolio VideoSlots",
         "@data-cat": "VideoSlots",
-        "@data-bound": "",
         "@style": "display: inline-block;",
+        "@data-bound": "",
         "div": {
           "@class": "portfolio-wrapper",
           "div": [
             {
               "@class": "dreamtechcontainer",
               "img": {
-                "@src": "/Resources/images/desktop/PP/vs25wildspells.png?20191224"
+                "@src": "/Resources/images/desktop/PGSOFT/captains-bounty.png?20191224"
               },
               "div": {
                 "@class": "middle",
                 "div": {
                   "@class": "text",
                   "a": {
-                    "@class": "popup-pp slot_btn",
+                    "@class": "popup-pgsoft slot_btn",
                     "@href": "#",
-                    "@data-game": "vs25wildspells",
+                    "@data-game": "captains-bounty",
                     "@title": "PLAY NOW",
                     "#text": "PLAY NOW"
                   }
@@ -2921,7 +507,7 @@ const json = {
             },
             {
               "@class": "slotGameName",
-              "#text": "Wild Spells™"
+              "#text": "Captains Bounty"
             }
           ]
         }
@@ -2929,24 +515,24 @@ const json = {
       {
         "@class": "portfolio VideoSlots",
         "@data-cat": "VideoSlots",
-        "@data-bound": "",
         "@style": "display: inline-block;",
+        "@data-bound": "",
         "div": {
           "@class": "portfolio-wrapper",
           "div": [
             {
               "@class": "dreamtechcontainer",
               "img": {
-                "@src": "/Resources/images/desktop/PP/vs25journey.png?20191224"
+                "@src": "/Resources/images/desktop/PGSOFT/double-fortune.png?20191224"
               },
               "div": {
                 "@class": "middle",
                 "div": {
                   "@class": "text",
                   "a": {
-                    "@class": "popup-pp slot_btn",
+                    "@class": "popup-pgsoft slot_btn",
                     "@href": "#",
-                    "@data-game": "vs25journey",
+                    "@data-game": "double-fortune",
                     "@title": "PLAY NOW",
                     "#text": "PLAY NOW"
                   }
@@ -2955,7 +541,7 @@ const json = {
             },
             {
               "@class": "slotGameName",
-              "#text": "Journey to the West"
+              "#text": "Double Fortune"
             }
           ]
         }
@@ -2963,24 +549,24 @@ const json = {
       {
         "@class": "portfolio VideoSlots",
         "@data-cat": "VideoSlots",
-        "@data-bound": "",
         "@style": "display: inline-block;",
+        "@data-bound": "",
         "div": {
           "@class": "portfolio-wrapper",
           "div": [
             {
               "@class": "dreamtechcontainer",
               "img": {
-                "@src": "/Resources/images/desktop/PP/vs25kingdoms.png?20191224"
+                "@src": "/Resources/images/desktop/PGSOFT/the-great-icescape.png?20191224"
               },
               "div": {
                 "@class": "middle",
                 "div": {
                   "@class": "text",
                   "a": {
-                    "@class": "popup-pp slot_btn",
+                    "@class": "popup-pgsoft slot_btn",
                     "@href": "#",
-                    "@data-game": "vs25kingdoms",
+                    "@data-game": "the-great-icescape",
                     "@title": "PLAY NOW",
                     "#text": "PLAY NOW"
                   }
@@ -2989,7 +575,7 @@ const json = {
             },
             {
               "@class": "slotGameName",
-              "#text": "3 Kingdoms - Battle of Red Cliffs"
+              "#text": "The Great Icescape"
             }
           ]
         }
@@ -2997,24 +583,24 @@ const json = {
       {
         "@class": "portfolio VideoSlots",
         "@data-cat": "VideoSlots",
-        "@data-bound": "",
         "@style": "display: inline-block;",
+        "@data-bound": "",
         "div": {
           "@class": "portfolio-wrapper",
           "div": [
             {
               "@class": "dreamtechcontainer",
               "img": {
-                "@src": "/Resources/images/desktop/PP/vs25pantherqueen.png?20191224"
+                "@src": "/Resources/images/desktop/PGSOFT/ganesha-gold.png?20191224"
               },
               "div": {
                 "@class": "middle",
                 "div": {
                   "@class": "text",
                   "a": {
-                    "@class": "popup-pp slot_btn",
+                    "@class": "popup-pgsoft slot_btn",
                     "@href": "#",
-                    "@data-game": "vs25pantherqueen",
+                    "@data-game": "ganesha-gold",
                     "@title": "PLAY NOW",
                     "#text": "PLAY NOW"
                   }
@@ -3023,7 +609,7 @@ const json = {
             },
             {
               "@class": "slotGameName",
-              "#text": "Panther Queen™"
+              "#text": "Ganesha Gold"
             }
           ]
         }
@@ -3031,24 +617,24 @@ const json = {
       {
         "@class": "portfolio VideoSlots",
         "@data-cat": "VideoSlots",
-        "@data-bound": "",
         "@style": "display: inline-block;",
+        "@data-bound": "",
         "div": {
           "@class": "portfolio-wrapper",
           "div": [
             {
               "@class": "dreamtechcontainer",
               "img": {
-                "@src": "/Resources/images/desktop/PP/vs3train.png?20191224"
+                "@src": "/Resources/images/desktop/PGSOFT/jungle-delight.png?20191224"
               },
               "div": {
                 "@class": "middle",
                 "div": {
                   "@class": "text",
                   "a": {
-                    "@class": "popup-pp slot_btn",
+                    "@class": "popup-pgsoft slot_btn",
                     "@href": "#",
-                    "@data-game": "vs3train",
+                    "@data-game": "jungle-delight",
                     "@title": "PLAY NOW",
                     "#text": "PLAY NOW"
                   }
@@ -3057,7 +643,7 @@ const json = {
             },
             {
               "@class": "slotGameName",
-              "#text": "Gold Train™"
+              "#text": "Jungle Delight"
             }
           ]
         }
@@ -3065,24 +651,24 @@ const json = {
       {
         "@class": "portfolio VideoSlots",
         "@data-cat": "VideoSlots",
-        "@data-bound": "",
         "@style": "display: inline-block;",
+        "@data-bound": "",
         "div": {
           "@class": "portfolio-wrapper",
           "div": [
             {
               "@class": "dreamtechcontainer",
               "img": {
-                "@src": "/Resources/images/desktop/PP/vs25vegas.png?20191224"
+                "@src": "/Resources/images/desktop/PGSOFT/flirting-scholar.png?20191224"
               },
               "div": {
                 "@class": "middle",
                 "div": {
                   "@class": "text",
                   "a": {
-                    "@class": "popup-pp slot_btn",
+                    "@class": "popup-pgsoft slot_btn",
                     "@href": "#",
-                    "@data-game": "vs25vegas",
+                    "@data-game": "flirting-scholar",
                     "@title": "PLAY NOW",
                     "#text": "PLAY NOW"
                   }
@@ -3091,7 +677,7 @@ const json = {
             },
             {
               "@class": "slotGameName",
-              "#text": "Vegas Nights™"
+              "#text": "Flirting Scholar"
             }
           ]
         }
@@ -3099,24 +685,24 @@ const json = {
       {
         "@class": "portfolio VideoSlots",
         "@data-cat": "VideoSlots",
-        "@data-bound": "",
         "@style": "display: inline-block;",
+        "@data-bound": "",
         "div": {
           "@class": "portfolio-wrapper",
           "div": [
             {
               "@class": "dreamtechcontainer",
               "img": {
-                "@src": "/Resources/images/desktop/PP/vs50aladdin.png?20191224"
+                "@src": "/Resources/images/desktop/PGSOFT/muay-thai-champion.png?20191224"
               },
               "div": {
                 "@class": "middle",
                 "div": {
                   "@class": "text",
                   "a": {
-                    "@class": "popup-pp slot_btn",
+                    "@class": "popup-pgsoft slot_btn",
                     "@href": "#",
-                    "@data-game": "vs50aladdin",
+                    "@data-game": "muay-thai-champion",
                     "@title": "PLAY NOW",
                     "#text": "PLAY NOW"
                   }
@@ -3125,7 +711,7 @@ const json = {
             },
             {
               "@class": "slotGameName",
-              "#text": "3 Genie Wishes"
+              "#text": "Muay Thai Champion"
             }
           ]
         }
@@ -3133,24 +719,24 @@ const json = {
       {
         "@class": "portfolio VideoSlots",
         "@data-cat": "VideoSlots",
-        "@data-bound": "",
         "@style": "display: inline-block;",
+        "@data-bound": "",
         "div": {
           "@class": "portfolio-wrapper",
           "div": [
             {
               "@class": "dreamtechcontainer",
               "img": {
-                "@src": "/Resources/images/desktop/PP/vs25dwarves.png?20191224"
+                "@src": "/Resources/images/desktop/PGSOFT/piggy-gold.png?20191224"
               },
               "div": {
                 "@class": "middle",
                 "div": {
                   "@class": "text",
                   "a": {
-                    "@class": "popup-pp slot_btn",
+                    "@class": "popup-pgsoft slot_btn",
                     "@href": "#",
-                    "@data-game": "vs25dwarves",
+                    "@data-game": "piggy-gold",
                     "@title": "PLAY NOW",
                     "#text": "PLAY NOW"
                   }
@@ -3159,7 +745,7 @@ const json = {
             },
             {
               "@class": "slotGameName",
-              "#text": "Dwarven Gold"
+              "#text": "Piggy Gold"
             }
           ]
         }
@@ -3167,24 +753,24 @@ const json = {
       {
         "@class": "portfolio VideoSlots",
         "@data-cat": "VideoSlots",
-        "@data-bound": "",
         "@style": "display: inline-block;",
+        "@data-bound": "",
         "div": {
           "@class": "portfolio-wrapper",
           "div": [
             {
               "@class": "dreamtechcontainer",
               "img": {
-                "@src": "/Resources/images/desktop/PP/vs20bl.png?20191224"
+                "@src": "/Resources/images/desktop/PGSOFT/journey-to-the-wealth.png?20191224"
               },
               "div": {
                 "@class": "middle",
                 "div": {
                   "@class": "text",
                   "a": {
-                    "@class": "popup-pp slot_btn",
+                    "@class": "popup-pgsoft slot_btn",
                     "@href": "#",
-                    "@data-game": "vs20bl",
+                    "@data-game": "journey-to-the-wealth",
                     "@title": "PLAY NOW",
                     "#text": "PLAY NOW"
                   }
@@ -3193,7 +779,7 @@ const json = {
             },
             {
               "@class": "slotGameName",
-              "#text": "Busy Bees™"
+              "#text": "Journey to the Wealth"
             }
           ]
         }
@@ -3201,24 +787,24 @@ const json = {
       {
         "@class": "portfolio VideoSlots",
         "@data-cat": "VideoSlots",
-        "@data-bound": "",
         "@style": "display: inline-block;",
+        "@data-bound": "",
         "div": {
           "@class": "portfolio-wrapper",
           "div": [
             {
               "@class": "dreamtechcontainer",
               "img": {
-                "@src": "/Resources/images/desktop/PP/vs15b.png?20191224"
+                "@src": "/Resources/images/desktop/PGSOFT/ninja-vs-samurai.png?20191224"
               },
               "div": {
                 "@class": "middle",
                 "div": {
                   "@class": "text",
                   "a": {
-                    "@class": "popup-pp slot_btn",
+                    "@class": "popup-pgsoft slot_btn",
                     "@href": "#",
-                    "@data-game": "vs15b",
+                    "@data-game": "ninja-vs-samurai",
                     "@title": "PLAY NOW",
                     "#text": "PLAY NOW"
                   }
@@ -3227,7 +813,7 @@ const json = {
             },
             {
               "@class": "slotGameName",
-              "#text": "Crazy 7s™"
+              "#text": "Ninja vs Samurai"
             }
           ]
         }
@@ -3235,24 +821,24 @@ const json = {
       {
         "@class": "portfolio VideoSlots",
         "@data-cat": "VideoSlots",
-        "@data-bound": "",
         "@style": "display: inline-block;",
+        "@data-bound": "",
         "div": {
           "@class": "portfolio-wrapper",
           "div": [
             {
               "@class": "dreamtechcontainer",
               "img": {
-                "@src": "/Resources/images/desktop/PP/vs13g.png?20191224"
+                "@src": "/Resources/images/desktop/PGSOFT/legend-of-hou-yi.png?20191224"
               },
               "div": {
                 "@class": "middle",
                 "div": {
                   "@class": "text",
                   "a": {
-                    "@class": "popup-pp slot_btn",
+                    "@class": "popup-pgsoft slot_btn",
                     "@href": "#",
-                    "@data-game": "vs13g",
+                    "@data-game": "legend-of-hou-yi",
                     "@title": "PLAY NOW",
                     "#text": "PLAY NOW"
                   }
@@ -3261,7 +847,7 @@ const json = {
             },
             {
               "@class": "slotGameName",
-              "#text": "Devils 13™"
+              "#text": "Legend of Hou Yi"
             }
           ]
         }
@@ -3269,24 +855,24 @@ const json = {
       {
         "@class": "portfolio VideoSlots",
         "@data-cat": "VideoSlots",
-        "@data-bound": "",
         "@style": "display: inline-block;",
+        "@data-bound": "",
         "div": {
           "@class": "portfolio-wrapper",
           "div": [
             {
               "@class": "dreamtechcontainer",
               "img": {
-                "@src": "/Resources/images/desktop/PP/vs25h.png?20191224"
+                "@src": "/Resources/images/desktop/PGSOFT/dragon-legend.png?20191224"
               },
               "div": {
                 "@class": "middle",
                 "div": {
                   "@class": "text",
                   "a": {
-                    "@class": "popup-pp slot_btn",
+                    "@class": "popup-pgsoft slot_btn",
                     "@href": "#",
-                    "@data-game": "vs25h",
+                    "@data-game": "dragon-legend",
                     "@title": "PLAY NOW",
                     "#text": "PLAY NOW"
                   }
@@ -3295,7 +881,7 @@ const json = {
             },
             {
               "@class": "slotGameName",
-              "#text": "Fruity Blast™"
+              "#text": "Dragon Legend"
             }
           ]
         }
@@ -3303,24 +889,24 @@ const json = {
       {
         "@class": "portfolio VideoSlots",
         "@data-cat": "VideoSlots",
-        "@data-bound": "",
         "@style": "display: inline-block;",
+        "@data-bound": "",
         "div": {
           "@class": "portfolio-wrapper",
           "div": [
             {
               "@class": "dreamtechcontainer",
               "img": {
-                "@src": "/Resources/images/desktop/PP/vs20gg.png?20191224"
+                "@src": "/Resources/images/desktop/PGSOFT/wild-inferno.png?20191224"
               },
               "div": {
                 "@class": "middle",
                 "div": {
                   "@class": "text",
                   "a": {
-                    "@class": "popup-pp slot_btn",
+                    "@class": "popup-pgsoft slot_btn",
                     "@href": "#",
-                    "@data-game": "vs20gg",
+                    "@data-game": "wild-inferno",
                     "@title": "PLAY NOW",
                     "#text": "PLAY NOW"
                   }
@@ -3329,7 +915,7 @@ const json = {
             },
             {
               "@class": "slotGameName",
-              "#text": "Spooky Fortune™"
+              "#text": "Wild Inferno"
             }
           ]
         }
@@ -3337,24 +923,24 @@ const json = {
       {
         "@class": "portfolio VideoSlots",
         "@data-cat": "VideoSlots",
-        "@data-bound": "",
         "@style": "display: inline-block;",
+        "@data-bound": "",
         "div": {
           "@class": "portfolio-wrapper",
           "div": [
             {
               "@class": "dreamtechcontainer",
               "img": {
-                "@src": "/Resources/images/desktop/PP/vs50pixie.png?20191224"
+                "@src": "/Resources/images/desktop/PGSOFT/fortune-gods.png?20191224"
               },
               "div": {
                 "@class": "middle",
                 "div": {
                   "@class": "text",
                   "a": {
-                    "@class": "popup-pp slot_btn",
+                    "@class": "popup-pgsoft slot_btn",
                     "@href": "#",
-                    "@data-game": "vs50pixie",
+                    "@data-game": "fortune-gods",
                     "@title": "PLAY NOW",
                     "#text": "PLAY NOW"
                   }
@@ -3363,7 +949,7 @@ const json = {
             },
             {
               "@class": "slotGameName",
-              "#text": "Pixie Wings™"
+              "#text": "Fortune Gods"
             }
           ]
         }
@@ -3371,24 +957,24 @@ const json = {
       {
         "@class": "portfolio VideoSlots",
         "@data-cat": "VideoSlots",
-        "@data-bound": "",
         "@style": "display: inline-block;",
+        "@data-bound": "",
         "div": {
           "@class": "portfolio-wrapper",
           "div": [
             {
               "@class": "dreamtechcontainer",
               "img": {
-                "@src": "/Resources/images/desktop/PP/vs4096jurassic.png?20191224"
+                "@src": "/Resources/images/desktop/PGSOFT/diaochan.png?20191224"
               },
               "div": {
                 "@class": "middle",
                 "div": {
                   "@class": "text",
                   "a": {
-                    "@class": "popup-pp slot_btn",
+                    "@class": "popup-pgsoft slot_btn",
                     "@href": "#",
-                    "@data-game": "vs4096jurassic",
+                    "@data-game": "diaochan",
                     "@title": "PLAY NOW",
                     "#text": "PLAY NOW"
                   }
@@ -3397,7 +983,7 @@ const json = {
             },
             {
               "@class": "slotGameName",
-              "#text": "Jurassic Giants™"
+              "#text": "Honey Trap of Diao Chan"
             }
           ]
         }
@@ -3405,24 +991,24 @@ const json = {
       {
         "@class": "portfolio VideoSlots",
         "@data-cat": "VideoSlots",
-        "@data-bound": "",
         "@style": "display: inline-block;",
+        "@data-bound": "",
         "div": {
           "@class": "portfolio-wrapper",
           "div": [
             {
               "@class": "dreamtechcontainer",
               "img": {
-                "@src": "/Resources/images/desktop/PP/vs25wolfgold.png?20191224"
+                "@src": "/Resources/images/desktop/PGSOFT/tomb-of-treasure.png?20191224"
               },
               "div": {
                 "@class": "middle",
                 "div": {
                   "@class": "text",
                   "a": {
-                    "@class": "popup-pp slot_btn",
+                    "@class": "popup-pgsoft slot_btn",
                     "@href": "#",
-                    "@data-game": "vs25wolfgold",
+                    "@data-game": "tomb-of-treasure",
                     "@title": "PLAY NOW",
                     "#text": "PLAY NOW"
                   }
@@ -3431,7 +1017,7 @@ const json = {
             },
             {
               "@class": "slotGameName",
-              "#text": "Wolf Gold™"
+              "#text": "Tomb Of Treasure"
             }
           ]
         }
@@ -3439,24 +1025,24 @@ const json = {
       {
         "@class": "portfolio VideoSlots",
         "@data-cat": "VideoSlots",
-        "@data-bound": "",
         "@style": "display: inline-block;",
+        "@data-bound": "",
         "div": {
           "@class": "portfolio-wrapper",
           "div": [
             {
               "@class": "dreamtechcontainer",
               "img": {
-                "@src": "/Resources/images/desktop/PP/vs1024atlantis.png?20191224"
+                "@src": "/Resources/images/desktop/PGSOFT/emperor_favour.png?20191224"
               },
               "div": {
                 "@class": "middle",
                 "div": {
                   "@class": "text",
                   "a": {
-                    "@class": "popup-pp slot_btn",
+                    "@class": "popup-pgsoft slot_btn",
                     "@href": "#",
-                    "@data-game": "vs1024atlantis",
+                    "@data-game": "emperors-favour",
                     "@title": "PLAY NOW",
                     "#text": "PLAY NOW"
                   }
@@ -3465,7 +1051,7 @@ const json = {
             },
             {
               "@class": "slotGameName",
-              "#text": "Queen of Atlantis™"
+              "#text": "Emperors Favour"
             }
           ]
         }
@@ -3473,24 +1059,24 @@ const json = {
       {
         "@class": "portfolio VideoSlots",
         "@data-cat": "VideoSlots",
-        "@data-bound": "",
         "@style": "display: inline-block;",
+        "@data-bound": "",
         "div": {
           "@class": "portfolio-wrapper",
           "div": [
             {
               "@class": "dreamtechcontainer",
               "img": {
-                "@src": "/Resources/images/desktop/PP/vs50hercules.png?20191224"
+                "@src": "/Resources/images/desktop/PGSOFT/tiki-go.png?20191224"
               },
               "div": {
                 "@class": "middle",
                 "div": {
                   "@class": "text",
                   "a": {
-                    "@class": "popup-pp slot_btn",
+                    "@class": "popup-pgsoft slot_btn",
                     "@href": "#",
-                    "@data-game": "vs50hercules",
+                    "@data-game": "tiki-go",
                     "@title": "PLAY NOW",
                     "#text": "PLAY NOW"
                   }
@@ -3499,7 +1085,7 @@ const json = {
             },
             {
               "@class": "slotGameName",
-              "#text": "Hercules Son of Zeus"
+              "#text": "Tiki Go"
             }
           ]
         }
@@ -3507,24 +1093,24 @@ const json = {
       {
         "@class": "portfolio VideoSlots",
         "@data-cat": "VideoSlots",
-        "@data-bound": "",
         "@style": "display: inline-block;",
+        "@data-bound": "",
         "div": {
           "@class": "portfolio-wrapper",
           "div": [
             {
               "@class": "dreamtechcontainer",
               "img": {
-                "@src": "/Resources/images/desktop/PP/vs30catz.png?20191224"
+                "@src": "/Resources/images/desktop/PGSOFT/symbols-of-egypt.png?20191224"
               },
               "div": {
                 "@class": "middle",
                 "div": {
                   "@class": "text",
                   "a": {
-                    "@class": "popup-pp slot_btn",
+                    "@class": "popup-pgsoft slot_btn",
                     "@href": "#",
-                    "@data-game": "vs30catz",
+                    "@data-game": "symbols-of-egypt",
                     "@title": "PLAY NOW",
                     "#text": "PLAY NOW"
                   }
@@ -3533,7 +1119,7 @@ const json = {
             },
             {
               "@class": "slotGameName",
-              "#text": "The Catfather Part II"
+              "#text": "Symbols of Egypt"
             }
           ]
         }
@@ -3541,24 +1127,24 @@ const json = {
       {
         "@class": "portfolio VideoSlots",
         "@data-cat": "VideoSlots",
-        "@data-bound": "",
         "@style": "display: inline-block;",
+        "@data-bound": "",
         "div": {
           "@class": "portfolio-wrapper",
           "div": [
             {
               "@class": "dreamtechcontainer",
               "img": {
-                "@src": "/Resources/images/desktop/PP/vs40beowulf.png?20191224"
+                "@src": "/Resources/images/desktop/PGSOFT/fortune-tree.png?20191224"
               },
               "div": {
                 "@class": "middle",
                 "div": {
                   "@class": "text",
                   "a": {
-                    "@class": "popup-pp slot_btn",
+                    "@class": "popup-pgsoft slot_btn",
                     "@href": "#",
-                    "@data-game": "vs40beowulf",
+                    "@data-game": "fortune-tree",
                     "@title": "PLAY NOW",
                     "#text": "PLAY NOW"
                   }
@@ -3567,7 +1153,7 @@ const json = {
             },
             {
               "@class": "slotGameName",
-              "#text": "Beowulf"
+              "#text": "Tree of Fortune"
             }
           ]
         }
@@ -3575,24 +1161,24 @@ const json = {
       {
         "@class": "portfolio VideoSlots",
         "@data-cat": "VideoSlots",
-        "@data-bound": "",
         "@style": "display: inline-block;",
+        "@data-bound": "",
         "div": {
           "@class": "portfolio-wrapper",
           "div": [
             {
               "@class": "dreamtechcontainer",
               "img": {
-                "@src": "/Resources/images/desktop/PP/vs50chinesecharms.png?20191224"
+                "@src": "/Resources/images/desktop/PGSOFT/mr-hallow-win.png?20191224"
               },
               "div": {
                 "@class": "middle",
                 "div": {
                   "@class": "text",
                   "a": {
-                    "@class": "popup-pp slot_btn",
+                    "@class": "popup-pgsoft slot_btn",
                     "@href": "#",
-                    "@data-game": "vs50chinesecharms",
+                    "@data-game": "mr-hallow-win",
                     "@title": "PLAY NOW",
                     "#text": "PLAY NOW"
                   }
@@ -3601,7 +1187,7 @@ const json = {
             },
             {
               "@class": "slotGameName",
-              "#text": "Lucky Dragons"
+              "#text": "Mr. Hallow-Win"
             }
           ]
         }
@@ -3609,24 +1195,24 @@ const json = {
       {
         "@class": "portfolio VideoSlots",
         "@data-cat": "VideoSlots",
-        "@data-bound": "",
         "@style": "display: inline-block;",
+        "@data-bound": "",
         "div": {
           "@class": "portfolio-wrapper",
           "div": [
             {
               "@class": "dreamtechcontainer",
               "img": {
-                "@src": "/Resources/images/desktop/PP/vs25dwarves_new.png?20191224"
+                "@src": "/Resources/images/desktop/PGSOFT/santas-gift-rush.png?20191224"
               },
               "div": {
                 "@class": "middle",
                 "div": {
                   "@class": "text",
                   "a": {
-                    "@class": "popup-pp slot_btn",
+                    "@class": "popup-pgsoft slot_btn",
                     "@href": "#",
-                    "@data-game": "vs25dwarves_new",
+                    "@data-game": "santas-gift-rush",
                     "@title": "PLAY NOW",
                     "#text": "PLAY NOW"
                   }
@@ -3635,7 +1221,7 @@ const json = {
             },
             {
               "@class": "slotGameName",
-              "#text": "Dwarven Gold Deluxe"
+              "#text": "Santas Gift Rush"
             }
           ]
         }
@@ -3643,24 +1229,24 @@ const json = {
       {
         "@class": "portfolio VideoSlots",
         "@data-cat": "VideoSlots",
-        "@data-bound": "",
         "@style": "display: inline-block;",
+        "@data-bound": "",
         "div": {
           "@class": "portfolio-wrapper",
           "div": [
             {
               "@class": "dreamtechcontainer",
               "img": {
-                "@src": "/Resources/images/desktop/PP/vs25romeoandjuliet.png?20191224"
+                "@src": "/Resources/images/desktop/PGSOFT/hotpot.png?20191224"
               },
               "div": {
                 "@class": "middle",
                 "div": {
                   "@class": "text",
                   "a": {
-                    "@class": "popup-pp slot_btn",
+                    "@class": "popup-pgsoft slot_btn",
                     "@href": "#",
-                    "@data-game": "vs25romeoandjuliet",
+                    "@data-game": "hotpot",
                     "@title": "PLAY NOW",
                     "#text": "PLAY NOW"
                   }
@@ -3669,7 +1255,7 @@ const json = {
             },
             {
               "@class": "slotGameName",
-              "#text": "Romeo and Juliet"
+              "#text": "Hotpot"
             }
           ]
         }
@@ -3677,24 +1263,24 @@ const json = {
       {
         "@class": "portfolio VideoSlots",
         "@data-cat": "VideoSlots",
-        "@data-bound": "",
         "@style": "display: inline-block;",
+        "@data-bound": "",
         "div": {
           "@class": "portfolio-wrapper",
           "div": [
             {
               "@class": "dreamtechcontainer",
               "img": {
-                "@src": "/Resources/images/desktop/PP/vs25safari.png?20191224"
+                "@src": "/Resources/images/desktop/PGSOFT/gem-saviour.png?20191224"
               },
               "div": {
                 "@class": "middle",
                 "div": {
                   "@class": "text",
                   "a": {
-                    "@class": "popup-pp slot_btn",
+                    "@class": "popup-pgsoft slot_btn",
                     "@href": "#",
-                    "@data-game": "vs25safari",
+                    "@data-game": "gem-saviour",
                     "@title": "PLAY NOW",
                     "#text": "PLAY NOW"
                   }
@@ -3703,7 +1289,7 @@ const json = {
             },
             {
               "@class": "slotGameName",
-              "#text": "Hot Safari"
+              "#text": "Gem Saviour"
             }
           ]
         }
@@ -3711,24 +1297,24 @@ const json = {
       {
         "@class": "portfolio VideoSlots",
         "@data-cat": "VideoSlots",
-        "@data-bound": "",
         "@style": "display: inline-block;",
+        "@data-bound": "",
         "div": {
           "@class": "portfolio-wrapper",
           "div": [
             {
               "@class": "dreamtechcontainer",
               "img": {
-                "@src": "/Resources/images/desktop/PP/vs9hockey.png?20191224"
+                "@src": "/Resources/images/desktop/PGSOFT/three-monkeys.png?20191224"
               },
               "div": {
                 "@class": "middle",
                 "div": {
                   "@class": "text",
                   "a": {
-                    "@class": "popup-pp slot_btn",
+                    "@class": "popup-pgsoft slot_btn",
                     "@href": "#",
-                    "@data-game": "vs9hockey",
+                    "@data-game": "three-monkeys",
                     "@title": "PLAY NOW",
                     "#text": "PLAY NOW"
                   }
@@ -3737,7 +1323,7 @@ const json = {
             },
             {
               "@class": "slotGameName",
-              "#text": "Hockey League Wild Match"
+              "#text": "Three Monkeys"
             }
           ]
         }
@@ -3745,24 +1331,24 @@ const json = {
       {
         "@class": "portfolio VideoSlots",
         "@data-cat": "VideoSlots",
-        "@data-bound": "",
         "@style": "display: inline-block;",
+        "@data-bound": "",
         "div": {
           "@class": "portfolio-wrapper",
           "div": [
             {
               "@class": "dreamtechcontainer",
               "img": {
-                "@src": "/Resources/images/desktop/PP/vs50kingkong.png?20191224"
+                "@src": "/Resources/images/desktop/PGSOFT/prosperity-lion.png?20191224"
               },
               "div": {
                 "@class": "middle",
                 "div": {
                   "@class": "text",
                   "a": {
-                    "@class": "popup-pp slot_btn",
+                    "@class": "popup-pgsoft slot_btn",
                     "@href": "#",
-                    "@data-game": "vs50kingkong",
+                    "@data-game": "prosperity-lion",
                     "@title": "PLAY NOW",
                     "#text": "PLAY NOW"
                   }
@@ -3771,7 +1357,7 @@ const json = {
             },
             {
               "@class": "slotGameName",
-              "#text": "Mighty Kong"
+              "#text": "Prosperity Lion"
             }
           ]
         }
@@ -3779,24 +1365,24 @@ const json = {
       {
         "@class": "portfolio VideoSlots",
         "@data-cat": "VideoSlots",
-        "@data-bound": "",
         "@style": "display: inline-block;",
+        "@data-bound": "",
         "div": {
           "@class": "portfolio-wrapper",
           "div": [
             {
               "@class": "dreamtechcontainer",
               "img": {
-                "@src": "/Resources/images/desktop/PP/vs20godiva.png?20191224"
+                "@src": "/Resources/images/desktop/PGSOFT/hip-hop-panda.png?20191224"
               },
               "div": {
                 "@class": "middle",
                 "div": {
                   "@class": "text",
                   "a": {
-                    "@class": "popup-pp slot_btn",
+                    "@class": "popup-pgsoft slot_btn",
                     "@href": "#",
-                    "@data-game": "vs20godiva",
+                    "@data-game": "hip-hop-panda",
                     "@title": "PLAY NOW",
                     "#text": "PLAY NOW"
                   }
@@ -3805,7 +1391,7 @@ const json = {
             },
             {
               "@class": "slotGameName",
-              "#text": "Lady Godiva"
+              "#text": "Hip Hop Panda"
             }
           ]
         }
@@ -3813,24 +1399,24 @@ const json = {
       {
         "@class": "portfolio VideoSlots",
         "@data-cat": "VideoSlots",
-        "@data-bound": "",
         "@style": "display: inline-block;",
+        "@data-bound": "",
         "div": {
           "@class": "portfolio-wrapper",
           "div": [
             {
               "@class": "dreamtechcontainer",
               "img": {
-                "@src": "/Resources/images/desktop/PP/vs9catz.png?20191224"
+                "@src": "/Resources/images/desktop/PGSOFT/win-win-won2.png?20191224"
               },
               "div": {
                 "@class": "middle",
                 "div": {
                   "@class": "text",
                   "a": {
-                    "@class": "popup-pp slot_btn",
+                    "@class": "popup-pgsoft slot_btn",
                     "@href": "#",
-                    "@data-game": "vs9catz",
+                    "@data-game": "win-win-won",
                     "@title": "PLAY NOW",
                     "#text": "PLAY NOW"
                   }
@@ -3839,7 +1425,7 @@ const json = {
             },
             {
               "@class": "slotGameName",
-              "#text": "The Catfather"
+              "#text": "Win Win Won 2"
             }
           ]
         }
@@ -3847,24 +1433,24 @@ const json = {
       {
         "@class": "portfolio VideoSlots",
         "@data-cat": "VideoSlots",
-        "@data-bound": "",
         "@style": "display: inline-block;",
+        "@data-bound": "",
         "div": {
           "@class": "portfolio-wrapper",
           "div": [
             {
               "@class": "dreamtechcontainer",
               "img": {
-                "@src": "/Resources/images/desktop/PP/vs15ktv.png?20191224"
+                "@src": "/Resources/images/desktop/PGSOFT/medusa2.png?20191224"
               },
               "div": {
                 "@class": "middle",
                 "div": {
                   "@class": "text",
                   "a": {
-                    "@class": "popup-pp slot_btn",
+                    "@class": "popup-pgsoft slot_btn",
                     "@href": "#",
-                    "@data-game": "vs15ktv",
+                    "@data-game": "medusa2",
                     "@title": "PLAY NOW",
                     "#text": "PLAY NOW"
                   }
@@ -3873,7 +1459,7 @@ const json = {
             },
             {
               "@class": "slotGameName",
-              "#text": "KTV"
+              "#text": "Medusa 2"
             }
           ]
         }
@@ -3881,24 +1467,24 @@ const json = {
       {
         "@class": "portfolio VideoSlots",
         "@data-cat": "VideoSlots",
-        "@data-bound": "",
         "@style": "display: inline-block;",
+        "@data-bound": "",
         "div": {
           "@class": "portfolio-wrapper",
           "div": [
             {
               "@class": "dreamtechcontainer",
               "img": {
-                "@src": "/Resources/images/desktop/PP/vs243crystalcave.png?20191224"
+                "@src": "/Resources/images/desktop/PGSOFT/plushie-frenzy.png?20191224"
               },
               "div": {
                 "@class": "middle",
                 "div": {
                   "@class": "text",
                   "a": {
-                    "@class": "popup-pp slot_btn",
+                    "@class": "popup-pgsoft slot_btn",
                     "@href": "#",
-                    "@data-game": "vs243crystalcave",
+                    "@data-game": "plushie-frenzy",
                     "@title": "PLAY NOW",
                     "#text": "PLAY NOW"
                   }
@@ -3907,7 +1493,7 @@ const json = {
             },
             {
               "@class": "slotGameName",
-              "#text": "Magic Crystals"
+              "#text": "Plushie Frenzy"
             }
           ]
         }
@@ -3915,24 +1501,24 @@ const json = {
       {
         "@class": "portfolio VideoSlots",
         "@data-cat": "VideoSlots",
-        "@data-bound": "",
         "@style": "display: inline-block;",
+        "@data-bound": "",
         "div": {
           "@class": "portfolio-wrapper",
           "div": [
             {
               "@class": "dreamtechcontainer",
               "img": {
-                "@src": "/Resources/images/desktop/PP/vs20hockey.png?20191224"
+                "@src": "/Resources/images/desktop/PGSOFT/medusa.png?20191224"
               },
               "div": {
                 "@class": "middle",
                 "div": {
                   "@class": "text",
                   "a": {
-                    "@class": "popup-pp slot_btn",
+                    "@class": "popup-pgsoft slot_btn",
                     "@href": "#",
-                    "@data-game": "vs20hockey",
+                    "@data-game": "medusa",
                     "@title": "PLAY NOW",
                     "#text": "PLAY NOW"
                   }
@@ -3941,7 +1527,7 @@ const json = {
             },
             {
               "@class": "slotGameName",
-              "#text": "Hockey League"
+              "#text": "Medusa"
             }
           ]
         }
@@ -3949,24 +1535,24 @@ const json = {
       {
         "@class": "portfolio VideoSlots",
         "@data-cat": "VideoSlots",
-        "@data-bound": "",
         "@style": "display: inline-block;",
+        "@data-bound": "",
         "div": {
           "@class": "portfolio-wrapper",
           "div": [
             {
               "@class": "dreamtechcontainer",
               "img": {
-                "@src": "/Resources/images/desktop/PP/vs50amt.png?20191224"
+                "@src": "/Resources/images/desktop/PGSOFT/gem-saviour-sword.png?20191224"
               },
               "div": {
                 "@class": "middle",
                 "div": {
                   "@class": "text",
                   "a": {
-                    "@class": "popup-pp slot_btn",
+                    "@class": "popup-pgsoft slot_btn",
                     "@href": "#",
-                    "@data-game": "vs50amt",
+                    "@data-game": "gem-saviour-sword",
                     "@title": "PLAY NOW",
                     "#text": "PLAY NOW"
                   }
@@ -3975,7 +1561,7 @@ const json = {
             },
             {
               "@class": "slotGameName",
-              "#text": "Aladdins Treasure"
+              "#text": "Gem Saviour Sword"
             }
           ]
         }
@@ -3983,24 +1569,24 @@ const json = {
       {
         "@class": "portfolio VideoSlots",
         "@data-cat": "VideoSlots",
-        "@data-bound": "",
         "@style": "display: inline-block;",
+        "@data-bound": "",
         "div": {
           "@class": "portfolio-wrapper",
           "div": [
             {
               "@class": "dreamtechcontainer",
               "img": {
-                "@src": "/Resources/images/desktop/PP/vs20rome.png?20191224"
+                "@src": "/Resources/images/desktop/PGSOFT/hood-wolf.png?20191224"
               },
               "div": {
                 "@class": "middle",
                 "div": {
                   "@class": "text",
                   "a": {
-                    "@class": "popup-pp slot_btn",
+                    "@class": "popup-pgsoft slot_btn",
                     "@href": "#",
-                    "@data-game": "vs20rome",
+                    "@data-game": "hood-wolf",
                     "@title": "PLAY NOW",
                     "#text": "PLAY NOW"
                   }
@@ -4009,7 +1595,7 @@ const json = {
             },
             {
               "@class": "slotGameName",
-              "#text": "Glorious Rome"
+              "#text": "Hood vs Wolf"
             }
           ]
         }
@@ -4017,24 +1603,24 @@ const json = {
       {
         "@class": "portfolio VideoSlots",
         "@data-cat": "VideoSlots",
-        "@data-bound": "",
         "@style": "display: inline-block;",
+        "@data-bound": "",
         "div": {
           "@class": "portfolio-wrapper",
           "div": [
             {
               "@class": "dreamtechcontainer",
               "img": {
-                "@src": "/Resources/images/desktop/PP/vs25sea.png?20191224"
+                "@src": "/Resources/images/desktop/PGSOFT/summon-conquer.png?20191224"
               },
               "div": {
                 "@class": "middle",
                 "div": {
                   "@class": "text",
                   "a": {
-                    "@class": "popup-pp slot_btn",
+                    "@class": "popup-pgsoft slot_btn",
                     "@href": "#",
-                    "@data-game": "vs25sea",
+                    "@data-game": "summon-conquer",
                     "@title": "PLAY NOW",
                     "#text": "PLAY NOW"
                   }
@@ -4043,7 +1629,7 @@ const json = {
             },
             {
               "@class": "slotGameName",
-              "#text": "Great Reef"
+              "#text": "Summon & Conquer"
             }
           ]
         }
@@ -4051,24 +1637,24 @@ const json = {
       {
         "@class": "portfolio VideoSlots",
         "@data-cat": "VideoSlots",
-        "@data-bound": "",
         "@style": "display: inline-block;",
+        "@data-bound": "",
         "div": {
           "@class": "portfolio-wrapper",
           "div": [
             {
               "@class": "dreamtechcontainer",
               "img": {
-                "@src": "/Resources/images/desktop/PP/vs13ladyofmoon.png?20191224"
+                "@src": "/Resources/images/desktop/PGSOFT/steam-punk.png?20191224"
               },
               "div": {
                 "@class": "middle",
                 "div": {
                   "@class": "text",
                   "a": {
-                    "@class": "popup-pp slot_btn",
+                    "@class": "popup-pgsoft slot_btn",
                     "@href": "#",
-                    "@data-game": "vs13ladyofmoon",
+                    "@data-game": "steam-punk",
                     "@title": "PLAY NOW",
                     "#text": "PLAY NOW"
                   }
@@ -4077,7 +1663,7 @@ const json = {
             },
             {
               "@class": "slotGameName",
-              "#text": "Lady of the Moon"
+              "#text": "Steampunk"
             }
           ]
         }
@@ -4085,24 +1671,24 @@ const json = {
       {
         "@class": "portfolio VideoSlots",
         "@data-cat": "VideoSlots",
-        "@data-bound": "",
         "@style": "display: inline-block;",
+        "@data-bound": "",
         "div": {
           "@class": "portfolio-wrapper",
           "div": [
             {
               "@class": "dreamtechcontainer",
               "img": {
-                "@src": "/Resources/images/desktop/PP/vs20cm.png?20191224"
+                "@src": "/Resources/images/desktop/PGSOFT/wizdom-wonders.png?20191224"
               },
               "div": {
                 "@class": "middle",
                 "div": {
                   "@class": "text",
                   "a": {
-                    "@class": "popup-pp slot_btn",
+                    "@class": "popup-pgsoft slot_btn",
                     "@href": "#",
-                    "@data-game": "vs20cm",
+                    "@data-game": "wizdom-wonders",
                     "@title": "PLAY NOW",
                     "#text": "PLAY NOW"
                   }
@@ -4111,7 +1697,7 @@ const json = {
             },
             {
               "@class": "slotGameName",
-              "#text": "Sugar Rush"
+              "#text": "Wizdom Wonders"
             }
           ]
         }
@@ -4119,24 +1705,24 @@ const json = {
       {
         "@class": "portfolio VideoSlots",
         "@data-cat": "VideoSlots",
-        "@data-bound": "",
         "@style": "display: inline-block;",
+        "@data-bound": "",
         "div": {
           "@class": "portfolio-wrapper",
           "div": [
             {
               "@class": "dreamtechcontainer",
               "img": {
-                "@src": "/Resources/images/desktop/PP/vs20cms.png?20191224"
+                "@src": "/Resources/images/desktop/PGSOFT/peas-fairy.png?20191224"
               },
               "div": {
                 "@class": "middle",
                 "div": {
                   "@class": "text",
                   "a": {
-                    "@class": "popup-pp slot_btn",
+                    "@class": "popup-pgsoft slot_btn",
                     "@href": "#",
-                    "@data-game": "vs20cms",
+                    "@data-game": "peas-fairy",
                     "@title": "PLAY NOW",
                     "#text": "PLAY NOW"
                   }
@@ -4145,7 +1731,7 @@ const json = {
             },
             {
               "@class": "slotGameName",
-              "#text": "Sugar Rush Summer Time"
+              "#text": "Peas Fairy"
             }
           ]
         }
@@ -4153,24 +1739,24 @@ const json = {
       {
         "@class": "portfolio VideoSlots",
         "@data-cat": "VideoSlots",
-        "@data-bound": "",
         "@style": "display: inline-block;",
+        "@data-bound": "",
         "div": {
           "@class": "portfolio-wrapper",
           "div": [
             {
               "@class": "dreamtechcontainer",
               "img": {
-                "@src": "/Resources/images/desktop/PP/vs20cw.png?20191224"
+                "@src": "/Resources/images/desktop/PGSOFT/restaurant-craze.png?20191224"
               },
               "div": {
                 "@class": "middle",
                 "div": {
                   "@class": "text",
                   "a": {
-                    "@class": "popup-pp slot_btn",
+                    "@class": "popup-pgsoft slot_btn",
                     "@href": "#",
-                    "@data-game": "vs20cw",
+                    "@data-game": "restaurant-craze",
                     "@title": "PLAY NOW",
                     "#text": "PLAY NOW"
                   }
@@ -4179,32 +1765,32 @@ const json = {
             },
             {
               "@class": "slotGameName",
-              "#text": "Sugar Rush Winter"
+              "#text": "Restaurant Craze"
             }
           ]
         }
       },
       {
-        "@class": "portfolio VideoSlots",
-        "@data-cat": "VideoSlots",
-        "@data-bound": "",
+        "@class": "portfolio TableCardGames",
+        "@data-cat": "TableCardGames",
         "@style": "display: inline-block;",
+        "@data-bound": "",
         "div": {
           "@class": "portfolio-wrapper",
           "div": [
             {
               "@class": "dreamtechcontainer",
               "img": {
-                "@src": "/Resources/images/desktop/PP/vs20cmv.png?20191224"
+                "@src": "/Resources/images/desktop/PGSOFT/baccarat-deluxe.png?20191224"
               },
               "div": {
                 "@class": "middle",
                 "div": {
                   "@class": "text",
                   "a": {
-                    "@class": "popup-pp slot_btn",
+                    "@class": "popup-pgsoft slot_btn",
                     "@href": "#",
-                    "@data-game": "vs20cmv",
+                    "@data-game": "baccarat-deluxe",
                     "@title": "PLAY NOW",
                     "#text": "PLAY NOW"
                   }
@@ -4213,32 +1799,32 @@ const json = {
             },
             {
               "@class": "slotGameName",
-              "#text": "Sugar Rush Valentines Day"
+              "#text": "Baccarat Deluxe"
             }
           ]
         }
       },
       {
-        "@class": "portfolio VideoSlots",
-        "@data-cat": "VideoSlots",
-        "@data-bound": "",
+        "@class": "portfolio TableCardGames",
+        "@data-cat": "TableCardGames",
         "@style": "display: inline-block;",
+        "@data-bound": "",
         "div": {
           "@class": "portfolio-wrapper",
           "div": [
             {
               "@class": "dreamtechcontainer",
               "img": {
-                "@src": "/Resources/images/desktop/PP/vs20egypt.png?20191224"
+                "@src": "/Resources/images/desktop/PGSOFT/joker-wild.png?20191224"
               },
               "div": {
                 "@class": "middle",
                 "div": {
                   "@class": "text",
                   "a": {
-                    "@class": "popup-pp slot_btn",
+                    "@class": "popup-pgsoft slot_btn",
                     "@href": "#",
-                    "@data-game": "vs20egypt",
+                    "@data-game": "joker-wild",
                     "@title": "PLAY NOW",
                     "#text": "PLAY NOW"
                   }
@@ -4247,32 +1833,32 @@ const json = {
             },
             {
               "@class": "slotGameName",
-              "#text": "Tales of Egypt"
+              "#text": "Joker Wild"
             }
           ]
         }
       },
       {
-        "@class": "portfolio TableGames",
-        "@data-cat": "TableGames",
-        "@data-bound": "",
+        "@class": "portfolio TableCardGames",
+        "@data-cat": "TableCardGames",
         "@style": "display: inline-block;",
+        "@data-bound": "",
         "div": {
           "@class": "portfolio-wrapper",
           "div": [
             {
               "@class": "dreamtechcontainer",
               "img": {
-                "@src": "/Resources/images/desktop/PP/bjmb.png?20191224"
+                "@src": "/Resources/images/desktop/PGSOFT/blackjack-us.png?20191224"
               },
               "div": {
                 "@class": "middle",
                 "div": {
                   "@class": "text",
                   "a": {
-                    "@class": "popup-pp slot_btn",
+                    "@class": "popup-pgsoft slot_btn",
                     "@href": "#",
-                    "@data-game": "bjmb",
+                    "@data-game": "blackjack-us",
                     "@title": "PLAY NOW",
                     "#text": "PLAY NOW"
                   }
@@ -4287,26 +1873,26 @@ const json = {
         }
       },
       {
-        "@class": "portfolio TableGames",
-        "@data-cat": "TableGames",
-        "@data-bound": "",
+        "@class": "portfolio TableCardGames",
+        "@data-cat": "TableCardGames",
         "@style": "display: inline-block;",
+        "@data-bound": "",
         "div": {
           "@class": "portfolio-wrapper",
           "div": [
             {
               "@class": "dreamtechcontainer",
               "img": {
-                "@src": "/Resources/images/desktop/PP/bca.png?20191224"
+                "@src": "/Resources/images/desktop/PGSOFT/blackjack-eu.png?20191224"
               },
               "div": {
                 "@class": "middle",
                 "div": {
                   "@class": "text",
                   "a": {
-                    "@class": "popup-pp slot_btn",
+                    "@class": "popup-pgsoft slot_btn",
                     "@href": "#",
-                    "@data-game": "bca",
+                    "@data-game": "blackjack-eu",
                     "@title": "PLAY NOW",
                     "#text": "PLAY NOW"
                   }
@@ -4315,619 +1901,7 @@ const json = {
             },
             {
               "@class": "slotGameName",
-              "#text": "Baccarat"
-            }
-          ]
-        }
-      },
-      {
-        "@class": "portfolio TableGames",
-        "@data-cat": "TableGames",
-        "@data-bound": "",
-        "@style": "display: inline-block;",
-        "div": {
-          "@class": "portfolio-wrapper",
-          "div": [
-            {
-              "@class": "dreamtechcontainer",
-              "img": {
-                "@src": "/Resources/images/desktop/PP/bnadvanced.png?20191224"
-              },
-              "div": {
-                "@class": "middle",
-                "div": {
-                  "@class": "text",
-                  "a": {
-                    "@class": "popup-pp slot_btn",
-                    "@href": "#",
-                    "@data-game": "bnadvanced",
-                    "@title": "PLAY NOW",
-                    "#text": "PLAY NOW"
-                  }
-                }
-              }
-            },
-            {
-              "@class": "slotGameName",
-              "#text": "Dragon Bonus Baccarat™"
-            }
-          ]
-        }
-      },
-      {
-        "@class": "portfolio TableGames",
-        "@data-cat": "TableGames",
-        "@data-bound": "",
-        "@style": "display: inline-block;",
-        "div": {
-          "@class": "portfolio-wrapper",
-          "div": [
-            {
-              "@class": "dreamtechcontainer",
-              "img": {
-                "@src": "/Resources/images/desktop/PP/bndt.png?20191224"
-              },
-              "div": {
-                "@class": "middle",
-                "div": {
-                  "@class": "text",
-                  "a": {
-                    "@class": "popup-pp slot_btn",
-                    "@href": "#",
-                    "@data-game": "bndt",
-                    "@title": "PLAY NOW",
-                    "#text": "PLAY NOW"
-                  }
-                }
-              }
-            },
-            {
-              "@class": "slotGameName",
-              "#text": "Dragon Tiger™"
-            }
-          ]
-        }
-      },
-      {
-        "@class": "portfolio TableGames",
-        "@data-cat": "TableGames",
-        "@data-bound": "",
-        "@style": "display: inline-block;",
-        "div": {
-          "@class": "portfolio-wrapper",
-          "div": [
-            {
-              "@class": "dreamtechcontainer",
-              "img": {
-                "@src": "/Resources/images/desktop/PP/rla.png?20191224"
-              },
-              "div": {
-                "@class": "middle",
-                "div": {
-                  "@class": "text",
-                  "a": {
-                    "@class": "popup-pp slot_btn",
-                    "@href": "#",
-                    "@data-game": "rla",
-                    "@title": "PLAY NOW",
-                    "#text": "PLAY NOW"
-                  }
-                }
-              }
-            },
-            {
-              "@class": "slotGameName",
-              "#text": "Roulette Crystal"
-            }
-          ]
-        }
-      },
-      {
-        "@class": "portfolio TableGames",
-        "@data-cat": "TableGames",
-        "@data-bound": "",
-        "@style": "display: inline-block;",
-        "div": {
-          "@class": "portfolio-wrapper",
-          "div": [
-            {
-              "@class": "dreamtechcontainer",
-              "img": {
-                "@src": "/Resources/images/desktop/PP/bjma.png?20191224"
-              },
-              "div": {
-                "@class": "middle",
-                "div": {
-                  "@class": "text",
-                  "a": {
-                    "@class": "popup-pp slot_btn",
-                    "@href": "#",
-                    "@data-game": "bjma",
-                    "@title": "PLAY NOW",
-                    "#text": "PLAY NOW"
-                  }
-                }
-              }
-            },
-            {
-              "@class": "slotGameName",
-              "#text": "Multihand Blackjack"
-            }
-          ]
-        }
-      },
-      {
-        "@class": "portfolio ClassicSlots",
-        "@data-cat": "ClassicSlots",
-        "@data-bound": "",
-        "@style": "display: inline-block;",
-        "div": {
-          "@class": "portfolio-wrapper",
-          "div": [
-            {
-              "@class": "dreamtechcontainer",
-              "img": {
-                "@src": "/Resources/images/desktop/PP/vs1tigers.png?20191224"
-              },
-              "div": {
-                "@class": "middle",
-                "div": {
-                  "@class": "text",
-                  "a": {
-                    "@class": "popup-pp slot_btn",
-                    "@href": "#",
-                    "@data-game": "vs1tigers",
-                    "@title": "PLAY NOW",
-                    "#text": "PLAY NOW"
-                  }
-                }
-              }
-            },
-            {
-              "@class": "slotGameName",
-              "#text": "Triple Tigers™"
-            }
-          ]
-        }
-      },
-      {
-        "@class": "portfolio ClassicSlots",
-        "@data-cat": "ClassicSlots",
-        "@data-bound": "",
-        "@style": "display: inline-block;",
-        "div": {
-          "@class": "portfolio-wrapper",
-          "div": [
-            {
-              "@class": "dreamtechcontainer",
-              "img": {
-                "@src": "/Resources/images/desktop/PP/cs5moneyroll.png?20191224"
-              },
-              "div": {
-                "@class": "middle",
-                "div": {
-                  "@class": "text",
-                  "a": {
-                    "@class": "popup-pp slot_btn",
-                    "@href": "#",
-                    "@data-game": "cs5moneyroll",
-                    "@title": "PLAY NOW",
-                    "#text": "PLAY NOW"
-                  }
-                }
-              }
-            },
-            {
-              "@class": "slotGameName",
-              "#text": "Money Roll™"
-            }
-          ]
-        }
-      },
-      {
-        "@class": "portfolio ClassicSlots",
-        "@data-cat": "ClassicSlots",
-        "@data-bound": "",
-        "@style": "display: inline-block;",
-        "div": {
-          "@class": "portfolio-wrapper",
-          "div": [
-            {
-              "@class": "dreamtechcontainer",
-              "img": {
-                "@src": "/Resources/images/desktop/PP/cs3irishcharms.png?20191224"
-              },
-              "div": {
-                "@class": "middle",
-                "div": {
-                  "@class": "text",
-                  "a": {
-                    "@class": "popup-pp slot_btn",
-                    "@href": "#",
-                    "@data-game": "cs3irishcharms",
-                    "@title": "PLAY NOW",
-                    "#text": "PLAY NOW"
-                  }
-                }
-              }
-            },
-            {
-              "@class": "slotGameName",
-              "#text": "Irish Charms™"
-            }
-          ]
-        }
-      },
-      {
-        "@class": "portfolio ClassicSlots",
-        "@data-cat": "ClassicSlots",
-        "@data-bound": "",
-        "@style": "display: inline-block;",
-        "div": {
-          "@class": "portfolio-wrapper",
-          "div": [
-            {
-              "@class": "dreamtechcontainer",
-              "img": {
-                "@src": "/Resources/images/desktop/PP/cs5triple8gold.png?20191224"
-              },
-              "div": {
-                "@class": "middle",
-                "div": {
-                  "@class": "text",
-                  "a": {
-                    "@class": "popup-pp slot_btn",
-                    "@href": "#",
-                    "@data-game": "cs5triple8gold",
-                    "@title": "PLAY NOW",
-                    "#text": "PLAY NOW"
-                  }
-                }
-              }
-            },
-            {
-              "@class": "slotGameName",
-              "#text": "888 Gold™"
-            }
-          ]
-        }
-      },
-      {
-        "@class": "portfolio ClassicSlots",
-        "@data-cat": "ClassicSlots",
-        "@data-bound": "",
-        "@style": "display: inline-block;",
-        "div": {
-          "@class": "portfolio-wrapper",
-          "div": [
-            {
-              "@class": "dreamtechcontainer",
-              "img": {
-                "@src": "/Resources/images/desktop/PP/cs3w.png?20191224"
-              },
-              "div": {
-                "@class": "middle",
-                "div": {
-                  "@class": "text",
-                  "a": {
-                    "@class": "popup-pp slot_btn",
-                    "@href": "#",
-                    "@data-game": "cs3w",
-                    "@title": "PLAY NOW",
-                    "#text": "PLAY NOW"
-                  }
-                }
-              }
-            },
-            {
-              "@class": "slotGameName",
-              "#text": "Diamonds are Forever 3 Lines"
-            }
-          ]
-        }
-      },
-      {
-        "@class": "portfolio VideoPoker",
-        "@data-cat": "VideoPoker",
-        "@data-bound": "",
-        "@style": "display: inline-block;",
-        "div": {
-          "@class": "portfolio-wrapper",
-          "div": [
-            {
-              "@class": "dreamtechcontainer",
-              "img": {
-                "@src": "/Resources/images/desktop/PP/vpa.png?20191224"
-              },
-              "div": {
-                "@class": "middle",
-                "div": {
-                  "@class": "text",
-                  "a": {
-                    "@class": "popup-pp slot_btn",
-                    "@href": "#",
-                    "@data-game": "vpa",
-                    "@title": "PLAY NOW",
-                    "#text": "PLAY NOW"
-                  }
-                }
-              }
-            },
-            {
-              "@class": "slotGameName",
-              "#text": "Jacks or Better"
-            }
-          ]
-        }
-      },
-      {
-        "@class": "portfolio OtherGames",
-        "@data-cat": "OtherGames",
-        "@data-bound": "",
-        "@style": "display: inline-block;",
-        "div": {
-          "@class": "portfolio-wrapper",
-          "div": [
-            {
-              "@class": "dreamtechcontainer",
-              "img": {
-                "@src": "/Resources/images/desktop/PP/kna.png?20191224"
-              },
-              "div": {
-                "@class": "middle",
-                "div": {
-                  "@class": "text",
-                  "a": {
-                    "@class": "popup-pp slot_btn",
-                    "@href": "#",
-                    "@data-game": "kna",
-                    "@title": "PLAY NOW",
-                    "#text": "PLAY NOW"
-                  }
-                }
-              }
-            },
-            {
-              "@class": "slotGameName",
-              "#text": "Keno"
-            }
-          ]
-        }
-      },
-      {
-        "@class": "portfolio JackpotGames",
-        "@data-cat": "JackpotGames",
-        "@data-bound": "",
-        "@style": "display: inline-block;",
-        "div": {
-          "@class": "portfolio-wrapper",
-          "div": [
-            {
-              "@class": "dreamtechcontainer",
-              "img": {
-                "@src": "/Resources/images/desktop/PP/vs1dragon8_jp.png?20191224"
-              },
-              "div": {
-                "@class": "middle",
-                "div": {
-                  "@class": "text",
-                  "a": {
-                    "@class": "popup-pp slot_btn",
-                    "@href": "#",
-                    "@data-game": "vs1dragon8_jp",
-                    "@title": "PLAY NOW",
-                    "#text": "PLAY NOW"
-                  }
-                }
-              }
-            },
-            {
-              "@class": "slotGameName",
-              "#text": "888 Dragons"
-            }
-          ]
-        }
-      },
-      {
-        "@class": "portfolio JackpotGames",
-        "@data-cat": "JackpotGames",
-        "@data-bound": "",
-        "@style": "display: inline-block;",
-        "div": {
-          "@class": "portfolio-wrapper",
-          "div": [
-            {
-              "@class": "dreamtechcontainer",
-              "img": {
-                "@src": "/Resources/images/desktop/PP/vs5aztecgems_jp.png?20191224"
-              },
-              "div": {
-                "@class": "middle",
-                "div": {
-                  "@class": "text",
-                  "a": {
-                    "@class": "popup-pp slot_btn",
-                    "@href": "#",
-                    "@data-game": "vs5aztecgems_jp",
-                    "@title": "PLAY NOW",
-                    "#text": "PLAY NOW"
-                  }
-                }
-              }
-            },
-            {
-              "@class": "slotGameName",
-              "#text": "Aztec Gems"
-            }
-          ]
-        }
-      },
-      {
-        "@class": "portfolio JackpotGames",
-        "@data-cat": "JackpotGames",
-        "@data-bound": "",
-        "@style": "display: inline-block;",
-        "div": {
-          "@class": "portfolio-wrapper",
-          "div": [
-            {
-              "@class": "dreamtechcontainer",
-              "img": {
-                "@src": "/Resources/images/desktop/PP/vs25journey_jp.png?20191224"
-              },
-              "div": {
-                "@class": "middle",
-                "div": {
-                  "@class": "text",
-                  "a": {
-                    "@class": "popup-pp slot_btn",
-                    "@href": "#",
-                    "@data-game": "vs25journey_jp",
-                    "@title": "PLAY NOW",
-                    "#text": "PLAY NOW"
-                  }
-                }
-              }
-            },
-            {
-              "@class": "slotGameName",
-              "#text": "Journey to the West"
-            }
-          ]
-        }
-      },
-      {
-        "@class": "portfolio JackpotGames",
-        "@data-cat": "JackpotGames",
-        "@data-bound": "",
-        "@style": "display: inline-block;",
-        "div": {
-          "@class": "portfolio-wrapper",
-          "div": [
-            {
-              "@class": "dreamtechcontainer",
-              "img": {
-                "@src": "/Resources/images/desktop/PP/vs9madmonkey_jp.png?20191224"
-              },
-              "div": {
-                "@class": "middle",
-                "div": {
-                  "@class": "text",
-                  "a": {
-                    "@class": "popup-pp slot_btn",
-                    "@href": "#",
-                    "@data-game": "vs9madmonkey_jp",
-                    "@title": "PLAY NOW",
-                    "#text": "PLAY NOW"
-                  }
-                }
-              }
-            },
-            {
-              "@class": "slotGameName",
-              "#text": "Monkey Madness"
-            }
-          ]
-        }
-      },
-      {
-        "@class": "portfolio JackpotGames",
-        "@data-cat": "JackpotGames",
-        "@data-bound": "",
-        "@style": "display: inline-block;",
-        "div": {
-          "@class": "portfolio-wrapper",
-          "div": [
-            {
-              "@class": "dreamtechcontainer",
-              "img": {
-                "@src": "/Resources/images/desktop/PP/vs7monkeys_jp.png?20191224"
-              },
-              "div": {
-                "@class": "middle",
-                "div": {
-                  "@class": "text",
-                  "a": {
-                    "@class": "popup-pp slot_btn",
-                    "@href": "#",
-                    "@data-game": "vs7monkeys_jp",
-                    "@title": "PLAY NOW",
-                    "#text": "PLAY NOW"
-                  }
-                }
-              }
-            },
-            {
-              "@class": "slotGameName",
-              "#text": "7 Monkeys"
-            }
-          ]
-        }
-      },
-      {
-        "@class": "portfolio JackpotGames",
-        "@data-cat": "JackpotGames",
-        "@data-bound": "",
-        "@style": "display: inline-block;",
-        "div": {
-          "@class": "portfolio-wrapper",
-          "div": [
-            {
-              "@class": "dreamtechcontainer",
-              "img": {
-                "@src": "/Resources/images/desktop/PP/vs25safari_jp.png?20191224"
-              },
-              "div": {
-                "@class": "middle",
-                "div": {
-                  "@class": "text",
-                  "a": {
-                    "@class": "popup-pp slot_btn",
-                    "@href": "#",
-                    "@data-game": "vs25safari_jp",
-                    "@title": "PLAY NOW",
-                    "#text": "PLAY NOW"
-                  }
-                }
-              }
-            },
-            {
-              "@class": "slotGameName",
-              "#text": "Hot Safari"
-            }
-          ]
-        }
-      },
-      {
-        "@class": "portfolio JackpotGames",
-        "@data-cat": "JackpotGames",
-        "@data-bound": "",
-        "@style": "display: inline-block;",
-        "div": {
-          "@class": "portfolio-wrapper",
-          "div": [
-            {
-              "@class": "dreamtechcontainer",
-              "img": {
-                "@src": "/Resources/images/desktop/PP/vs30catz_jp.png?20191224"
-              },
-              "div": {
-                "@class": "middle",
-                "div": {
-                  "@class": "text",
-                  "a": {
-                    "@class": "popup-pp slot_btn",
-                    "@href": "#",
-                    "@data-game": "vs30catz_jp",
-                    "@title": "PLAY NOW",
-                    "#text": "PLAY NOW"
-                  }
-                }
-              }
-            },
-            {
-              "@class": "slotGameName",
-              "#text": "The Catfather Part II"
+              "#text": "European Blackjack™"
             }
           ]
         }
