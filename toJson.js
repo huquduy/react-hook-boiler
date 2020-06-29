@@ -1910,11 +1910,163 @@ const json = {
   }
 }
 
-console.log(JSON.stringify(json.div.div.map(item => {
+// console.log(JSON.stringify(json.div.div.map(item => {
+//   return {
+//     name: item.div.div[1]['#text'],
+//     code: item.div.div[0].div.div.a['@data-game'],
+//     group: item['@data-cat'],
+//     thumbnail: 'https://indoxbet.com/' + item.div.div[0].img['@src'].split('?')[0]
+//   }
+// })))
+
+const b = 
+[{
+  "code": "EG-SLOT-A033",
+  "name": "Pigsy"
+},
+{
+  "code": "EG-SLOT-A029",
+  "name": "Cai Shen Dao"
+},
+{
+  "code": "EG-SLOT-A032",
+  "name": "The Masked Prince"
+},
+{
+  "code": "EG-SLOT-A027",
+  "name": "Shanghai Godfather"
+},
+{
+  "code": "EG-SLOT-A028",
+  "name": "Double Happiness"
+},
+{
+  "code": "EG-SLOT-A031",
+  "name": "World Cup Fever"
+},
+{
+  "code": "EG-SLOT-C002",
+  "name": "Dragon 8"
+},
+{
+  "code": "EG-SLOT-A026",
+  "name": "Child of Wealth"
+},
+{
+  "code": "EG-SLOT-A025",
+  "name": "Fortune Lion"
+},
+{
+  "code": "EG-SLOT-A024",
+  "name": "Lucky Fa"
+},
+{
+  "code": "EG-SLOT-C001",
+  "name": "Super 7"
+},
+{
+  "code": "EG-SLOT-A021",
+  "name": "Fortune Cat"
+},
+{
+  "code": "EG-SLOT-A022",
+  "name": "Saint of Mahjong"
+},
+{
+  "code": "EG-SLOT-A023",
+  "name": "Prosperity Tree"
+},
+{
+  "code": "EG-SLOT-A008",
+  "name": "Red Chamber"
+},
+{
+  "code": "EG-SLOT-S006",
+  "name": "Volley Beauties"
+},
+{
+  "code": "EG-SLOT-S007",
+  "name": "Zombie Hunter"
+},
+{
+  "code": "EG-SLOT-A018",
+  "name": "Cheung Po Tsai"
+},
+{
+  "code": "EG-SLOT-S005",
+  "name": "Angels & Demons"
+},
+{
+  "code": "EG-SLOT-A020",
+  "name": "Golden Chicken"
+},
+{
+  "code": "EG-SLOT-A006",
+  "name": "Ji Gong"
+},
+{
+  "code": "EG-SLOT-A003",
+  "name": "The Guard"
+},
+{
+  "code": "EG-SLOT-A015",
+  "name": "Fruit Poppers"
+},
+{
+  "code": "EG-SLOT-A014",
+  "name": "Diamond Crush"
+},
+{
+  "code": "EG-SLOT-A016",
+  "name": "Tropical Treasure"
+},
+{
+  "code": "EG-SLOT-A017",
+  "name": "North South Lions"
+},
+{
+  "code": "EG-SLOT-A011",
+  "name": "Red Dragon"
+},
+{
+  "code": "EG-SLOT-A010",
+  "name": "Funny Farm"
+},
+{
+  "code": "EG-SLOT-A009",
+  "name": "Innocent Classmates"
+},
+{
+  "code": "EG-SLOT-A004",
+  "name": "Dragon & Tiger"
+},
+{
+  "code": "EG-SLOT-A005",
+  "name": "Fantasy Goddess"
+},
+{
+  "code": "EG-SLOT-A013",
+  "name": "Bikini Chaser"
+},
+{
+  "code": "EG-SLOT-A012",
+  "name": "Creepy Cuddlers"
+},
+{
+  "code": "EG-SLOT-A002",
+  "name": "Three Star God"
+},
+{
+  "code": "EG-SLOT-A001",
+  "name": "New Year Rich"
+}
+]
+
+console.log(b.map(item => {
+  const file = item.code.replace(/-/g, '_');
   return {
-    name: item.div.div[1]['#text'],
-    code: item.div.div[0].div.div.a['@data-game'],
-    group: item['@data-cat'],
-    thumbnail: 'https://indoxbet.com/' + item.div.div[0].img['@src'].split('?')[0]
+    ...item,
+    thumbnail: 'https://sa.cdncollection.com/h5prod/2006191216/assets/image/egame/en/' + file + '_en.jpg',
+    group: 'Slots'
   }
-})))
+}))

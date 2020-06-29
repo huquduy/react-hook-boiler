@@ -82,6 +82,12 @@ const GAMETYPES = [
         image: 'slots/bbin.png',
         route: '/gs/groups/bbin/types/slot/codes/Ltlottery',
         target: '_blank',
+      },
+      {
+        idName: 'SA',
+        image: 'slots/sa.png',
+        route: '/slots/sa',
+        target: '_blank',
       }
     ],
     title:'SLOT'
