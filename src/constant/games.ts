@@ -82,12 +82,6 @@ const GAMETYPES = [
         image: 'slots/bbin.png',
         route: '/gs/groups/bbin/types/slot/codes/Ltlottery',
         target: '_blank',
-      },
-      {
-        idName: 'SA',
-        image: 'slots/sa.png',
-        route: '/slots/sa',
-        target: '_blank',
       }
     ],
     title:'SLOT'
@@ -155,6 +149,12 @@ const GAMETYPES = [
         route: '/tg/groups/TRG/types/ION/codes/BACCARAT',
         target: '_blank',
       },
+      {
+        idName: 'SA',
+        image: 'casinos/sa.png',
+        route: '/gs/groups/sa/types/LC/codes/null',
+        target: '_blank',
+      }
     ],
     title:'CASINO'
   },

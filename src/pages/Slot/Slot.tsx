@@ -29,7 +29,6 @@ const Home: React.FC = () => {
       playtech: `/gs/groups/playtech/types/SL/codes/${code}`,
       pragmatic: `/tg/groups/PP/types/SLOTS/codes/${code}`,
       s1: `/gs/groups/s1/types/SLOTS/codes/${code}`,
-      sa: `/gs/groups/sa/types/SL/codes/${code}`
     }
     if (proxies[type]) {
       return proxies[type]
