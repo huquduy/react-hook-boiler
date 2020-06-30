@@ -1,5 +1,6 @@
 import s1 from './1s.constant'
 import gameplay from './gameplay.constant'
+import habanero from './habanero.constant'
 import joker from './joker.constant'
 import microgaming from './microgaming.constant'
 import pg from './pg.constant'
@@ -17,6 +18,7 @@ export interface IGames {
 
 export default {
   gameplay,
+  habanero,
   joker,
   microgaming,
   pg,

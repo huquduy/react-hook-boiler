@@ -25,6 +25,11 @@ const GAMETYPES = [
     idName: SLOT_TAB,
     providers: [
       {
+        idName: 'Habanero',
+        image: 'slots/Habanero.png',
+        route: '/slots/habanero'
+      },
+      {
         idName: 'PG',
         image: 'slots/pg.png',
         route: '/slots/pg'
@@ -161,12 +166,6 @@ const GAMETYPES = [
   {
     idName: SPORTS_TAB,
     providers: [
-      // {
-      //   idName: 'WFT',
-      //   image: 'sportsbook/wft.png',
-      //   route: '/gs/groups/wft/types/null/codes/null',
-      //   target: '_blank',
-      // },
       {
         idName: 'BNIN',
         image: 'sportsbook/bbin.png',

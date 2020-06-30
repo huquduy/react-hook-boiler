@@ -23,6 +23,7 @@ const Home: React.FC = () => {
   const genarateLoginPage = (type: string, code: string) => {
     const proxies = {
       gameplay: `/gs/groups/gameplay/types/slots/codes/${code}`,
+      habanero: `/gs/groups/habanero/types/SL/codes/${code}`,
       joker: `/tg/groups/JOKER/types/SLOTS/codes/${code}`,
       microgaming: `/gs/groups/microgaming/types/SL/codes/${code}`,
       pg: `/tg/groups/PGSOFT/types/SLOTS/codes/${code}`,
