@@ -25,11 +25,6 @@ const GAMETYPES = [
     idName: SLOT_TAB,
     providers: [
       {
-        idName: 'Habanero',
-        image: 'slots/Habanero.png',
-        route: '/slots/habanero'
-      },
-      {
         idName: 'PG',
         image: 'slots/pg.png',
         route: '/slots/pg'
@@ -87,7 +82,12 @@ const GAMETYPES = [
         image: 'slots/bbin.png',
         route: '/gs/groups/bbin/types/slot/codes/Ltlottery',
         target: '_blank',
-      }
+      },
+      {
+        idName: 'Habanero',
+        image: 'slots/Habanero.png',
+        route: '/slots/habanero'
+      },
     ],
     title:'SLOT'
   },

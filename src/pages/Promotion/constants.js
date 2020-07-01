@@ -4,14 +4,54 @@ export const promotions = [
     name: 'Luckydraw Hb',
     image: 'Luckydraw_Hb.jpg',
     group: 'Promotion',
-    content: '<div><ul><h4 class="bold cap">SELAMAT KEPADA PARA PEMENANG LUCKYDRAW  ( 01 MEI - 01 JUNI 2020 )</h4><li>iPhone 11 Pro Max: Ninjah***ri</li><li>Samsung S10: Mily***r</li><li>Laptop Asus: Badu***8</li><li>Oppo F11: Chy***e</li><li>Oppo A5s: Baw***1</li><p class="bold cap">Hadiah Uang Tunai Masing - masing 1 Juta Rupiah</p><li>Uang Tunai 1 Juta: Irwa**8 </li><li>Uang Tunai 1 Juta: Gam99***a</li><li>Uang Tunai 1 Juta: Abiab***2</li><li>Uang Tunai 1 Juta: Men**g</li><li>Uang Tunai 1 Juta: Inov**7</li></ul></div>'
+    content: `<div>
+      <ul>
+        <h4 class="bold cap">SELAMAT KEPADA PARA PEMENANG LUCKYDRAW  ( 01 JUNI - 01 JULY 2020 )</h4>
+        <p>1. ID : Star***l &gt; Samsung S20 Ultra</p>
+        <p>2. ID : Ruzz***8 &gt; Samsung Note 10</p>
+        <p>3. ID : Chae***r &gt; LAPTOP ASUS</p>
+        <p>4. ID : Mike**7 &nbsp;&gt; OPPO Reno F2</p>
+        <p>5. ID : Men**g &gt; OPPO A31</p>
+        <p><br></p>
+        <p>Hadiah yang tunai masing-masing mendapatkan 1 juta rupiah</p>
+        <p>1. ID : Bawl**1</p>
+        <p>2. ID : Joo**l</p>
+        <p>3. ID : Gam99***a</p>
+        <p>4. ID : Bono**n</p>
+        <p>5. ID : Inov**7</p>
+      </ul>
+    </div>`
   },
   {
     id: '2',
     name: 'lucky_draw',
     image: 'lucky_draw.jpg',
     group: 'Promotion',
-    content: '<div><ul><h4 class="bold cap">PROMO LUCKY DRAW HOKIBET188 (01 MEI 2020 – 01 JUNI 2020)</h4><p>CARA BERPARTISIPASI :</p><li>Memiliki Account active di HOKIBET188</li><li>Aktif Bermain, Setiap anda melakukan taruhan/bet akan mendapatkan 1 transaction id</li><li>Lucky Draw yang di undi adalah dari ticket transaction bet Anda dari tgl 01 MEI jam 12.00 s/d 01 JUNI 2020 jam 12.00</li><p>SYARAT DAN KETENTUAN :</p><li>1.Promo ini berlaku untuk semua member active kami yang setia di Hokibet188</li><li>2.Hadiah yang diberikan antara lain</li><li> Hadiah 1 : Samsung Galaxy s20 Ultra</li><li> Hadiah 2 : Samsung Note 11+</li><li> Hadiah 3 : Laptop Asus Vivibook A412DA Ryzen</li><li> Hadiah 4 : Oppo Reno F2</li><li> Hadiah 5 : Oppo A31</li><li> Hadiah 6 - 10 : Uang Tunai Masing - Masing 1 Juta Rupiah</li><li>3.Pemenang Akan Kami Informasikan Pada Tanggal 01 JUNI 2020 jam 12.00 Melalui:</li><li> Halaman FB kami www.facebook.com/hokibet188</li><li> Instagram @hokibet188</li><li>4.kami akan melakukan panggilan telpon melalui Whatsapp ke Pemenang Jika selama 2 hari kami mencoba untuk mengkonfirmasi berdasarkan data Hp yg Terdaftar,namun data yang tidak valid atau tidak bisa di konfirmasi pihak Hokibet188 Berhak membatalkan atau menghanguskan hadiah yang telah anda dapatkan</li><li>5. Hadiah tidak dapat di alihkan atas nama orang lain dan tidak dapat di tukar dengan barang lain atau pun di uangkan.</li><li>6.Hadiah tidak dapat di claim hanya dengan bukti screenshoot yang anda kirimkan</li><li>7. Hadiah yang anda dapatkan akan kami Komfirmasi Melalui telpon WhatsApp untuk menanyakan alamat yang valid serta member diwajibkan mengisi alamat di profil anda</li></ul></div>'
+    content: `<div>
+      <ul>
+        <h4 class="bold cap">PROMO LUCKY DRAW HOKIBET188 (01 JULY 2020 – 01 AUGUST 2020)</h4>
+        <p>CARA BERPARTISIPASI :</p>
+        <li>Memiliki Account active di HOKIBET188</li>
+        <li>Aktif Bermain, Setiap anda melakukan taruhan/bet akan mendapatkan 1 transaction id</li>
+        <li>Lucky Draw yang di undi adalah dari ticket transaction bet Anda dari tgl 01 JULY jam 12.00 s/d 01 AUGUST 2020 jam 12.00</li>
+        <p>SYARAT DAN KETENTUAN :</p>
+        <li>1.Promo ini berlaku untuk semua member active kami yang setia di Hokibet188</li>
+        <li>2.Hadiah yang diberikan antara lain</li>
+        <li> Hadiah 1 : Samsung Galaxy s20 Ultra</li>
+        <li> Hadiah 2 : Samsung Note 11+</li>
+        <li> Hadiah 3 : Laptop Asus Vivibook A412DA Ryzen</li>
+        <li> Hadiah 4 : Oppo Reno F2</li>
+        <li> Hadiah 5 : Oppo A31</li>
+        <li> Hadiah 6 - 10 : Uang Tunai Masing - Masing 1 Juta Rupiah</li>
+        <li>3.Pemenang Akan Kami Informasikan Pada Tanggal 01 AUGUST 2020 jam 12.00 Melalui:</li>
+        <li> Halaman FB kami www.facebook.com/hokibet188</li>
+        <li> Instagram @hokibet188</li>
+        <li>4.kami akan melakukan panggilan telpon melalui Whatsapp ke Pemenang Jika selama 2 hari kami mencoba untuk mengkonfirmasi berdasarkan data Hp yg Terdaftar,namun data yang tidak valid atau tidak bisa di konfirmasi pihak Hokibet188 Berhak membatalkan atau menghanguskan hadiah yang telah anda dapatkan</li>
+        <li>5. Hadiah tidak dapat di alihkan atas nama orang lain dan tidak dapat di tukar dengan barang lain atau pun di uangkan.</li>
+        <li>6.Hadiah tidak dapat di claim hanya dengan bukti screenshoot yang anda kirimkan</li>
+        <li>7. Hadiah yang anda dapatkan akan kami Komfirmasi Melalui telpon WhatsApp untuk menanyakan alamat yang valid serta member diwajibkan mengisi alamat di profil anda</li>
+      </ul>
+    </div>`
   },
   {
     id: '3',
