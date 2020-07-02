@@ -1,794 +1,794 @@
 export default [
   {
-    'name': 'Scopa',
-    'code': 'SGScopa',
-    'group': 'Slots',
-    'thumbnail': 'https://app-test.insvr.com/img/rectangle/425/SGScopa_en.png'
+    "name": "Scopa",
+    "code": "63bd3f4e-9605-4c4e-8dc4-c0046b5b28cf",
+    "group": "Video Slots",
+    "thumbnail": "https://app-test.insvr.com/img/rectangle/425/SGScopa_en.png"
   },
   {
-    'name': 'Techno Tumble',
-    'code': 'SGTechnoTumble',
-    'group': 'Slots',
-    'thumbnail': 'https://app-test.insvr.com/img/rectangle/425/SGTechnoTumble_en.png'
+    "name": "Techno Tumble",
+    "code": "4dfec42d-8d38-4e39-a42d-6d91f33cfba2",
+    "group": "Video Slots",
+    "thumbnail": "https://app-test.insvr.com/img/rectangle/425/SGTechnoTumble_en.png"
   },
   {
-    'name': 'Lucky Fortune Cat',
-    'code': 'SGLuckyFortuneCat',
-    'group': 'Slots',
-    'thumbnail': 'https://app-test.insvr.com/img/rectangle/425/SGLuckyFortuneCat_en.png'
+    "name": "Lucky Fortune Cat",
+    "code": "fae450be-1bb0-436c-b7bb-0d263bd30012",
+    "group": "Video Slots",
+    "thumbnail": "https://app-test.insvr.com/img/rectangle/425/SGLuckyFortuneCat_en.png"
   },
   {
-    'name': 'Knockout Football Rush',
-    'code': 'SGKnockoutFootballRush',
-    'group': 'Slots',
-    'thumbnail': 'https://app-test.insvr.com/img/rectangle/425/SGKnockoutFootballRush_en.png'
+    "name": "Knockout Football Rush",
+    "code": "5b7542d6-3508-474b-ab92-0526bffaa6b3",
+    "group": "Video Slots",
+    "thumbnail": "https://app-test.insvr.com/img/rectangle/425/SGKnockoutFootballRush_en.png"
   },
   {
-    'name': 'Loony Blox',
-    'code': 'SGLoonyBlox',
-    'group': 'Slots',
-    'thumbnail': 'https://app-test.insvr.com/img/rectangle/425/SGLoonyBlox_en.png'
+    "name": "Loony Blox",
+    "code": "58b03210-c3c6-48ff-a1d6-6178b59cf743",
+    "group": "Video Slots",
+    "thumbnail": "https://app-test.insvr.com/img/rectangle/425/SGLoonyBlox_en.png"
   },
   {
-    'name': 'Fa Cai Shen Deluxe',
-    'code': 'SGFaCaiShenDeluxe',
-    'group': 'Slots',
-    'thumbnail': 'https://app-test.insvr.com/img/rectangle/425/SGFaCaiShenDeluxe_en.png'
+    "name": "Fa Cai Shen Deluxe",
+    "code": "f6ec9772-6456-46e3-9db7-109edab3b6ee",
+    "group": "Video Slots",
+    "thumbnail": "https://app-test.insvr.com/img/rectangle/425/SGFaCaiShenDeluxe_en.png"
   },
   {
-    'name': 'Naughty Santa',
-    'code': 'SGNaughtySanta',
-    'group': 'Slots',
-    'thumbnail': 'https://app-test.insvr.com/img/rectangle/425/SGNaughtySanta_en.png'
+    "name": "Naughty Santa",
+    "code": "c541caa6-38b9-41e7-bb49-73aa9e1fddf3",
+    "group": "Video Slots",
+    "thumbnail": "https://app-test.insvr.com/img/rectangle/425/SGNaughtySanta_en.png"
   },
   {
-    'name': 'Hot Hot Halloween',
-    'code': 'SGHotHotHalloween',
-    'group': 'Slots',
-    'thumbnail': 'https://app-test.insvr.com/img/rectangle/425/SGHotHotHalloween_en.png'
+    "name": "Hot Hot Halloween",
+    "code": "4c763afc-e0d8-4160-99d1-945a8bac04f1",
+    "group": "Video Slots",
+    "thumbnail": "https://app-test.insvr.com/img/rectangle/425/SGHotHotHalloween_en.png"
   },
   {
-    'name': 'Wizards Want War',
-    'code': 'SGWizardsWantWar',
-    'group': 'Slots',
-    'thumbnail': 'https://app-test.insvr.com/img/rectangle/425/SGWizardsWantWar_en.png'
+    "name": "Wizards Want War",
+    "code": "7a64f55e-903d-4bad-b4a2-cd05cdabae34",
+    "group": "Video Slots",
+    "thumbnail": "https://app-test.insvr.com/img/rectangle/425/SGWizardsWantWar_en.png"
   },
   {
-    'name': 'Colossal Gems',
-    'code': 'SGColossalGems',
-    'group': 'Slots',
-    'thumbnail': 'https://app-test.insvr.com/img/rectangle/425/SGColossalGems_en.png'
+    "name": "Colossal Gems",
+    "code": "523d5393-e343-4d4d-8d28-cd722cfdcb5e",
+    "group": "Video Slots",
+    "thumbnail": "https://app-test.insvr.com/img/rectangle/425/SGColossalGems_en.png"
   },
   {
-    'name': 'Nuwa',
-    'code': 'SGNuwa',
-    'group': 'Slots',
-    'thumbnail': 'https://app-test.insvr.com/img/rectangle/425/SGNuwa_en.png'
+    "name": "Nuwa",
+    "code": "ca94c17b-4f2c-47c8-b4d5-b0707fd4ba93",
+    "group": "Video Slots",
+    "thumbnail": "https://app-test.insvr.com/img/rectangle/425/SGNuwa_en.png"
   },
   {
-    'name': 'Wild Trucks',
-    'code': 'SGWildTrucks',
-    'group': 'Slots',
-    'thumbnail': 'https://app-test.insvr.com/img/rectangle/425/SGWildTrucks_en.png'
+    "name": "Wild Trucks",
+    "code": "1c6a613d-2a7b-41ca-ab03-2dc444a90fff",
+    "group": "Video Slots",
+    "thumbnail": "https://app-test.insvr.com/img/rectangle/425/SGWildTrucks_en.png"
   },
   {
-    'name': 'Lucky Lucky',
-    'code': 'SGLuckyLucky',
-    'group': 'Slots',
-    'thumbnail': 'https://app-test.insvr.com/img/rectangle/425/SGLuckyLucky_en.png'
+    "name": "Lucky Lucky",
+    "code": "8c6c77be-91de-4695-9b23-7fd21412249e",
+    "group": "Video Slots",
+    "thumbnail": "https://app-test.insvr.com/img/rectangle/425/SGLuckyLucky_en.png"
   },
   {
-    'name': 'Magic Oak',
-    'code': 'SGMagicOak',
-    'group': 'Slots',
-    'thumbnail': 'https://app-test.insvr.com/img/rectangle/425/SGMagicOak_en.png'
+    "name": "Magic Oak",
+    "code": "393743c7-a976-4275-a530-6faf0f5abcd1",
+    "group": "Video Slots",
+    "thumbnail": "https://app-test.insvr.com/img/rectangle/425/SGMagicOak_en.png"
   },
   {
-    'name': 'Mount Mazuma',
-    'code': 'SGMountMazuma',
-    'group': 'Slots',
-    'thumbnail': 'https://app-test.insvr.com/img/rectangle/425/SGMountMazuma_en.png'
+    "name": "Mount Mazuma",
+    "code": "8c1709fd-82be-4232-9920-7806b72e39f3",
+    "group": "Video Slots",
+    "thumbnail": "https://app-test.insvr.com/img/rectangle/425/SGMountMazuma_en.png"
   },
   {
-    'name': '5 Lucky Lions',
-    'code': 'SG5LuckyLions',
-    'group': 'Slots',
-    'thumbnail': 'https://app-test.insvr.com/img/rectangle/425/SG5LuckyLions_en.png'
+    "name": "5 Lucky Lions",
+    "code": "2ea16004-982a-4e9f-8efe-55bc9b2d462b",
+    "group": "Video Slots",
+    "thumbnail": "https://app-test.insvr.com/img/rectangle/425/SG5LuckyLions_en.png"
   },
   {
-    'name': 'Hot Hot Fruit',
-    'code': 'SGHotHotFruit',
-    'group': 'Slots',
-    'thumbnail': 'https://app-test.insvr.com/img/rectangle/425/SGHotHotFruit_en.png'
+    "name": "Hot Hot Fruit",
+    "code": "7ed3c94d-1987-4ee1-b7b9-11d378c7695c",
+    "group": "Video Slots",
+    "thumbnail": "https://app-test.insvr.com/img/rectangle/425/SGHotHotFruit_en.png"
   },
   {
-    'name': 'Happiest Christmas Tree',
-    'code': 'SGHappiestChristmasTree',
-    'group': 'Slots',
-    'thumbnail': 'https://app-test.insvr.com/img/rectangle/425/SGHappiestChristmasTree_en.png'
+    "name": "Happiest Christmas Tree",
+    "code": "fc04bc9f-7cb0-4bc1-aeb8-e821d3267a9b",
+    "group": "Video Slots",
+    "thumbnail": "https://app-test.insvr.com/img/rectangle/425/SGHappiestChristmasTree_en.png"
   },
   {
-    'name': 'Pumpkin Patch',
-    'code': 'SGPumpkinPatch',
-    'group': 'Slots',
-    'thumbnail': 'https://app-test.insvr.com/img/rectangle/425/SGPumpkinPatch_en.png'
+    "name": "Pumpkin Patch",
+    "code": "93033d00-d65b-4b45-8b09-af5fc099bbdf",
+    "group": "Video Slots",
+    "thumbnail": "https://app-test.insvr.com/img/rectangle/425/SGPumpkinPatch_en.png"
   },
   {
-    'name': 'Jump!',
-    'code': 'SGJump',
-    'group': 'Slots',
-    'thumbnail': 'https://app-test.insvr.com/img/rectangle/425/SGJump_en.png'
+    "name": "Jump!",
+    "code": "35b43ac6-9796-455d-b078-c97d7f1724d1",
+    "group": "Video Slots",
+    "thumbnail": "https://app-test.insvr.com/img/rectangle/425/SGJump_en.png"
   },
   {
-    'name': 'Egyptian Dreams Deluxe',
-    'code': 'SGEgyptianDreamsDeluxe',
-    'group': 'Slots',
-    'thumbnail': 'https://app-test.insvr.com/img/rectangle/425/SGEgyptianDreamsDeluxe_en.png'
+    "name": "Egyptian Dreams Deluxe",
+    "code": "9a473125-e12a-4f09-9665-027388d11881",
+    "group": "Video Slots",
+    "thumbnail": "https://app-test.insvr.com/img/rectangle/425/SGEgyptianDreamsDeluxe_en.png"
   },
   {
-    'name': 'Ways Of Fortune',
-    'code': 'SGWaysOfFortune',
-    'group': 'Slots',
-    'thumbnail': 'https://app-test.insvr.com/img/rectangle/425/SGWaysOfFortune_en.png'
+    "name": "Ways Of Fortune",
+    "code": "8daa5aff-1922-480a-9c8f-4bf23004cfbd",
+    "group": "Video Slots",
+    "thumbnail": "https://app-test.insvr.com/img/rectangle/425/SGWaysOfFortune_en.png"
   },
   {
-    'name': 'Knockout Football',
-    'code': 'SGKnockoutFootball',
-    'group': 'Slots',
-    'thumbnail': 'https://app-test.insvr.com/img/rectangle/425/SGKnockoutFootball_en.png'
+    "name": "Knockout Football",
+    "code": "14b24776-0ce2-41f5-95c2-cb00354efc85",
+    "group": "Video Slots",
+    "thumbnail": "https://app-test.insvr.com/img/rectangle/425/SGKnockoutFootball_en.png"
   },
   {
-    'name': 'Fortune Dogs',
-    'code': 'SGFortuneDogs',
-    'group': 'Slots',
-    'thumbnail': 'https://app-test.insvr.com/img/rectangle/425/SGFortuneDogs_en.png'
+    "name": "Fortune Dogs",
+    "code": "5bfa1c17-9497-468f-8203-daa3460f52ab",
+    "group": "Video Slots",
+    "thumbnail": "https://app-test.insvr.com/img/rectangle/425/SGFortuneDogs_en.png"
   },
   {
-    'name': 'Presto!',
-    'code': 'SGPresto',
-    'group': 'Slots',
-    'thumbnail': 'https://app-test.insvr.com/img/rectangle/425/SGPresto_en.png'
+    "name": "Presto!",
+    "code": "59c8c247-790f-427c-9c80-6668b66e39fc",
+    "group": "Video Slots",
+    "thumbnail": "https://app-test.insvr.com/img/rectangle/425/SGPresto_en.png"
   },
   {
-    'name': 'London Hunter',
-    'code': 'SGLondonHunter',
-    'group': 'Slots',
-    'thumbnail': 'https://app-test.insvr.com/img/rectangle/425/SGLondonHunter_en.png'
+    "name": "London Hunter",
+    "code": "2637ffcc-15dd-4342-aeb5-c86c9f854f41",
+    "group": "Video Slots",
+    "thumbnail": "https://app-test.insvr.com/img/rectangle/425/SGLondonHunter_en.png"
   },
   {
-    'name': 'Four Divine Beasts',
-    'code': 'SGFourDivineBeasts',
-    'group': 'Slots',
-    'thumbnail': 'https://app-test.insvr.com/img/rectangle/425/SGFourDivineBeasts_en.png'
+    "name": "Four Divine Beasts",
+    "code": "f36657b1-26b5-496a-a0a2-c320e3808098",
+    "group": "Video Slots",
+    "thumbnail": "https://app-test.insvr.com/img/rectangle/425/SGFourDivineBeasts_en.png"
   },
   {
-    'name': '5 Mariachis',
-    'code': 'SG5Mariachis',
-    'group': 'Slots',
-    'thumbnail': 'https://app-test.insvr.com/img/rectangle/425/SG5Mariachis_en.png'
+    "name": "5 Mariachis",
+    "code": "0c21bcc8-f700-4d97-9d5d-0bf38581a71b",
+    "group": "Video Slots",
+    "thumbnail": "https://app-test.insvr.com/img/rectangle/425/SG5Mariachis_en.png"
   },
   {
-    'name': "Santa's Village",
-    'code': 'SGSantasVillage',
-    'group': 'Slots',
-    'thumbnail': 'https://app-test.insvr.com/img/rectangle/425/SGSantasVillage_en.png'
+    "name": "Santa's Village",
+    "code": "ce6e3094-a38c-4db6-bc3d-951484ea94fd",
+    "group": "Video Slots",
+    "thumbnail": "https://app-test.insvr.com/img/rectangle/425/SGSantasVillage_en.png"
   },
   {
-    'name': 'Rolling Roger',
-    'code': 'SGRollingRoger',
-    'group': 'Slots',
-    'thumbnail': 'https://app-test.insvr.com/img/rectangle/425/SGRollingRoger_en.png'
+    "name": "Rolling Roger",
+    "code": "f72e46dc-ca7b-4108-a77e-7c22bb35bdfa",
+    "group": "Video Slots",
+    "thumbnail": "https://app-test.insvr.com/img/rectangle/425/SGRollingRoger_en.png"
   },
   {
-    'name': 'Cake Valley',
-    'code': 'SGCakeValley',
-    'group': 'Slots',
-    'thumbnail': 'https://app-test.insvr.com/img/rectangle/425/SGCakeValley_en.png'
+    "name": "Cake Valley",
+    "code": "521e9a0a-c19a-4f3e-9fa3-d3e804f7db3e",
+    "group": "Video Slots",
+    "thumbnail": "https://app-test.insvr.com/img/rectangle/425/SGCakeValley_en.png"
   },
   {
-    'name': 'Scruffy Scallywags',
-    'code': 'SGScruffyScallywags',
-    'group': 'Slots',
-    'thumbnail': 'https://app-test.insvr.com/img/rectangle/425/SGScruffyScallywags_en.png'
+    "name": "Scruffy Scallywags",
+    "code": "9d270b47-acab-4745-8568-0bdc4195cf38",
+    "group": "Video Slots",
+    "thumbnail": "https://app-test.insvr.com/img/rectangle/425/SGScruffyScallywags_en.png"
   },
   {
-    'name': 'The Dead Escape',
-    'code': 'SGTheDeadEscape',
-    'group': 'Slots',
-    'thumbnail': 'https://app-test.insvr.com/img/rectangle/425/SGTheDeadEscape_en.png'
+    "name": "The Dead Escape",
+    "code": "866a3bbd-f2a2-440f-88dd-77aa96daf93b",
+    "group": "Video Slots",
+    "thumbnail": "https://app-test.insvr.com/img/rectangle/425/SGTheDeadEscape_en.png"
   },
   {
-    'name': 'Panda Panda',
-    'code': 'SGPandaPanda',
-    'group': 'Slots',
-    'thumbnail': 'https://app-test.insvr.com/img/rectangle/425/SGPandaPanda_en.png'
+    "name": "Panda Panda",
+    "code": "a910426e-f5d3-45a5-b4ea-9c1893db8424",
+    "group": "Video Slots",
+    "thumbnail": "https://app-test.insvr.com/img/rectangle/425/SGPandaPanda_en.png"
   },
   {
-    'name': 'Bird of Thunder',
-    'code': 'SGBirdOfThunder',
-    'group': 'Slots',
-    'thumbnail': 'https://app-test.insvr.com/img/rectangle/425/SGBirdOfThunder_en.png'
+    "name": "Bird of Thunder",
+    "code": "c939c078-3e16-4d5b-9cd7-b2566ea8fb49",
+    "group": "Video Slots",
+    "thumbnail": "https://app-test.insvr.com/img/rectangle/425/SGBirdOfThunder_en.png"
   },
   {
-    'name': 'Koi Gate',
-    'code': 'SGTheKoiGate',
-    'group': 'Slots',
-    'thumbnail': 'https://app-test.insvr.com/img/rectangle/425/SGTheKoiGate_en.png'
+    "name": "Koi Gate",
+    "code": "91288247-d3ae-4ae6-be8a-8c3a1795b02a",
+    "group": "Video Slots",
+    "thumbnail": "https://app-test.insvr.com/img/rectangle/425/SGTheKoiGate_en.png"
   },
   {
-    'name': 'Fire Rooster',
-    'code': 'SGFireRooster',
-    'group': 'Slots',
-    'thumbnail': 'https://app-test.insvr.com/img/rectangle/425/SGFireRooster_en.png'
+    "name": "Fire Rooster",
+    "code": "2a84d1bd-f067-449b-a26d-744f9bb149dd",
+    "group": "Video Slots",
+    "thumbnail": "https://app-test.insvr.com/img/rectangle/425/SGFireRooster_en.png"
   },
   {
-    'name': 'Fenghuang',
-    'code': 'SGFenghuang',
-    'group': 'Slots',
-    'thumbnail': 'https://app-test.insvr.com/img/rectangle/425/SGFenghuang_en.png'
+    "name": "Fenghuang",
+    "code": "2831ada3-865d-4399-944f-214eb7a9e834",
+    "group": "Video Slots",
+    "thumbnail": "https://app-test.insvr.com/img/rectangle/425/SGFenghuang_en.png"
   },
   {
-    'name': 'Jugglenaut',
-    'code': 'SGJugglenaut',
-    'group': 'Slots',
-    'thumbnail': 'https://app-test.insvr.com/img/rectangle/425/SGJugglenaut_en.png'
+    "name": "Jugglenaut",
+    "code": "271e586f-c34a-46e4-b91b-979112904877",
+    "group": "Video Slots",
+    "thumbnail": "https://app-test.insvr.com/img/rectangle/425/SGJugglenaut_en.png"
   },
   {
-    'name': 'Sparta',
-    'code': 'SGSparta',
-    'group': 'Slots',
-    'thumbnail': 'https://app-test.insvr.com/img/rectangle/425/SGSparta_en.png'
+    "name": "Sparta",
+    "code": "4ab67499-7ce3-4735-bfb7-c088a3d82e66",
+    "group": "Video Slots",
+    "thumbnail": "https://app-test.insvr.com/img/rectangle/425/SGSparta_en.png"
   },
   {
-    'name': "Ocean's Call",
-    'code': 'SGOceansCall',
-    'group': 'Slots',
-    'thumbnail': 'https://app-test.insvr.com/img/rectangle/425/SGOceansCall_en.png'
+    "name": "Ocean's Call",
+    "code": "bcc10c03-e2c5-49a6-9e22-269aac8d5db3",
+    "group": "Video Slots",
+    "thumbnail": "https://app-test.insvr.com/img/rectangle/425/SGOceansCall_en.png"
   },
   {
-    'name': 'Glam Rock',
-    'code': 'SGGlamRock',
-    'group': 'Slots',
-    'thumbnail': 'https://app-test.insvr.com/img/rectangle/425/SGGlamRock_en.png'
+    "name": "Glam Rock",
+    "code": "060537df-4d45-4245-99fc-d944ecf25283",
+    "group": "Video Slots",
+    "thumbnail": "https://app-test.insvr.com/img/rectangle/425/SGGlamRock_en.png"
   },
   {
-    'name': 'Gangsters',
-    'code': 'SGGangsters',
-    'group': 'Slots',
-    'thumbnail': 'https://app-test.insvr.com/img/rectangle/425/SGGangsters_en.png'
+    "name": "Gangsters",
+    "code": "7db64a54-08f1-4ee6-bca6-38cea0bcaf93",
+    "group": "Video Slots",
+    "thumbnail": "https://app-test.insvr.com/img/rectangle/425/SGGangsters_en.png"
   },
   {
-    'name': 'Super Twister',
-    'code': 'SGSuperTwister',
-    'group': 'Slots',
-    'thumbnail': 'https://app-test.insvr.com/img/rectangle/425/SGSuperTwister_en.png'
+    "name": "Super Twister",
+    "code": "2a32bf15-af6b-4098-93bc-1fbb2c68f1fb",
+    "group": "Video Slots",
+    "thumbnail": "https://app-test.insvr.com/img/rectangle/425/SGSuperTwister_en.png"
   },
   {
-    'name': 'Arcane Elements',
-    'code': 'SGArcaneElements',
-    'group': 'Slots',
-    'thumbnail': 'https://app-test.insvr.com/img/rectangle/425/SGArcaneElements_en.png'
+    "name": "Arcane Elements",
+    "code": "22a66166-5d9c-4264-9279-d9b7e2dfa9d2",
+    "group": "Video Slots",
+    "thumbnail": "https://app-test.insvr.com/img/rectangle/425/SGArcaneElements_en.png"
   },
   {
-    'name': 'Coyote Crash',
-    'code': 'SGCoyoteCrash',
-    'group': 'Slots',
-    'thumbnail': 'https://app-test.insvr.com/img/rectangle/425/SGCoyoteCrash_en.png'
+    "name": "Coyote Crash",
+    "code": "50c122f0-48c8-4b6d-8b5a-87d80ac9441e",
+    "group": "Video Slots",
+    "thumbnail": "https://app-test.insvr.com/img/rectangle/425/SGCoyoteCrash_en.png"
   },
   {
-    'name': '12 Zodiacs',
-    'code': 'SG12Zodiacs',
-    'group': 'Slots',
-    'thumbnail': 'https://app-test.insvr.com/img/rectangle/425/SG12Zodiacs_en.png'
+    "name": "12 Zodiacs",
+    "code": "751493ca-a768-47c7-8276-8cf0f20f6aa7",
+    "group": "Video Slots",
+    "thumbnail": "https://app-test.insvr.com/img/rectangle/425/SG12Zodiacs_en.png"
   },
   {
-    'name': 'Fa Cai Shen',
-    'code': 'SGFaCaiShen',
-    'group': 'Slots',
-    'thumbnail': 'https://app-test.insvr.com/img/rectangle/425/SGFaCaiShen_en.png'
+    "name": "Fa Cai Shen",
+    "code": "10a0c4dd-ba76-4f33-8e67-b9b67211c2d7",
+    "group": "Video Slots",
+    "thumbnail": "https://app-test.insvr.com/img/rectangle/425/SGFaCaiShen_en.png"
   },
   {
-    'name': 'Ruffled Up',
-    'code': 'SGRuffledUp',
-    'group': 'Slots',
-    'thumbnail': 'https://app-test.insvr.com/img/rectangle/425/SGRuffledUp_en.png'
+    "name": "Ruffled Up",
+    "code": "c4a234d1-76db-4c2f-9a41-011d54479471",
+    "group": "Video Slots",
+    "thumbnail": "https://app-test.insvr.com/img/rectangle/425/SGRuffledUp_en.png"
   },
   {
-    'name': 'Bombs Away',
-    'code': 'SGBombsAway',
-    'group': 'Slots',
-    'thumbnail': 'https://app-test.insvr.com/img/rectangle/425/SGBombsAway_en.png'
+    "name": "Bombs Away",
+    "code": "607bcb11-6197-468d-9a57-d66bdc8dc94e",
+    "group": "Video Slots",
+    "thumbnail": "https://app-test.insvr.com/img/rectangle/425/SGBombsAway_en.png"
   },
   {
-    'name': "Dragon's Throne",
-    'code': 'SGDragonsThrone',
-    'group': 'Slots',
-    'thumbnail': 'https://app-test.insvr.com/img/rectangle/425/SGDragonsThrone_en.png'
+    "name": "Dragon's Throne",
+    "code": "2e306242-7086-4a3f-b416-de2c46822256",
+    "group": "Video Slots",
+    "thumbnail": "https://app-test.insvr.com/img/rectangle/425/SGDragonsThrone_en.png"
   },
   {
-    'name': 'Roman Empire',
-    'code': 'SGRomanEmpire',
-    'group': 'Slots',
-    'thumbnail': 'https://app-test.insvr.com/img/rectangle/425/SGRomanEmpire_en.png'
+    "name": "Roman Empire",
+    "code": "21c6761e-82e6-4b8a-821c-0d564c0368c1",
+    "group": "Video Slots",
+    "thumbnail": "https://app-test.insvr.com/img/rectangle/425/SGRomanEmpire_en.png"
   },
   {
-    'name': 'Zeus 2',
-    'code': 'SGZeus2',
-    'group': 'Slots',
-    'thumbnail': 'https://app-test.insvr.com/img/rectangle/425/SGZeus2_en.png'
+    "name": "Zeus 2",
+    "code": "7d0b36b1-cd6f-49c7-a03a-8cff4dac54dd",
+    "group": "Video Slots",
+    "thumbnail": "https://app-test.insvr.com/img/rectangle/425/SGZeus2_en.png"
   },
   {
-    'name': 'Wicked Witch',
-    'code': 'SGWickedWitch',
-    'group': 'Slots',
-    'thumbnail': 'https://app-test.insvr.com/img/rectangle/425/SGWickedWitch_en.png'
+    "name": "Wicked Witch",
+    "code": "4c23a2eb-43c5-4e35-8547-068986fd06ac",
+    "group": "Video Slots",
+    "thumbnail": "https://app-test.insvr.com/img/rectangle/425/SGWickedWitch_en.png"
   },
   {
-    'name': 'Gold Rush',
-    'code': 'SGGoldRush',
-    'group': 'Slots',
-    'thumbnail': 'https://app-test.insvr.com/img/rectangle/425/SGGoldRush_en.png'
+    "name": "Gold Rush",
+    "code": "1ec0b85d-484f-4d50-9ccc-73e4b0b49557",
+    "group": "Video Slots",
+    "thumbnail": "https://app-test.insvr.com/img/rectangle/425/SGGoldRush_en.png"
   },
   {
-    'name': 'Galactic Cash',
-    'code': 'SGGalacticCash',
-    'group': 'Slots',
-    'thumbnail': 'https://app-test.insvr.com/img/rectangle/425/SGGalacticCash_en.png'
+    "name": "Galactic Cash",
+    "code": "15d4fb6c-96a1-4a26-8992-e5bce0d152a5",
+    "group": "Video Slots",
+    "thumbnail": "https://app-test.insvr.com/img/rectangle/425/SGGalacticCash_en.png"
   },
   {
-    'name': 'Buggy Bonus',
-    'code': 'SGBuggyBonus',
-    'group': 'Slots',
-    'thumbnail': 'https://app-test.insvr.com/img/rectangle/425/SGBuggyBonus_en.png'
+    "name": "Buggy Bonus",
+    "code": "1e6acf05-9fb2-4e82-bdc0-7fd26695c20a",
+    "group": "Video Slots",
+    "thumbnail": "https://app-test.insvr.com/img/rectangle/425/SGBuggyBonus_en.png"
   },
   {
-    'name': 'Treasure Tomb',
-    'code': 'SGTreasureTomb',
-    'group': 'Slots',
-    'thumbnail': 'https://app-test.insvr.com/img/rectangle/425/SGTreasureTomb_en.png'
+    "name": "Treasure Tomb",
+    "code": "d010fc11-0c14-40af-9bcc-90498568167b",
+    "group": "Video Slots",
+    "thumbnail": "https://app-test.insvr.com/img/rectangle/425/SGTreasureTomb_en.png"
   },
   {
-    'name': 'Treasure Diver',
-    'code': 'SGTreasureDiver',
-    'group': 'Slots',
-    'thumbnail': 'https://app-test.insvr.com/img/rectangle/425/SGTreasureDiver_en.png'
+    "name": "Treasure Diver",
+    "code": "32aec1c8-4b72-4a23-ad54-527e242f63fc",
+    "group": "Video Slots",
+    "thumbnail": "https://app-test.insvr.com/img/rectangle/425/SGTreasureDiver_en.png"
   },
   {
-    'name': 'Carnival Cash',
-    'code': 'SGCarnivalCash',
-    'group': 'Slots',
-    'thumbnail': 'https://app-test.insvr.com/img/rectangle/425/SGCarnivalCash_en.png'
+    "name": "Carnival Cash",
+    "code": "fca99d14-19b6-4115-b34b-9c18bf4e5266",
+    "group": "Video Slots",
+    "thumbnail": "https://app-test.insvr.com/img/rectangle/425/SGCarnivalCash_en.png"
   },
   {
-    'name': 'Dragon Castle',
-    'code': 'SGTheDragonCastle',
-    'group': 'Slots',
-    'thumbnail': 'https://app-test.insvr.com/img/rectangle/425/SGTheDragonCastle_en.png'
+    "name": "Dragon Castle",
+    "code": "77c60b59-35ef-4d0f-bc30-6a6b4e529b0e",
+    "group": "Video Slots",
+    "thumbnail": "https://app-test.insvr.com/img/rectangle/425/SGTheDragonCastle_en.png"
   },
   {
-    'name': 'Monster Mash Cash',
-    'code': 'SGMonsterMashCash',
-    'group': 'Slots',
-    'thumbnail': 'https://app-test.insvr.com/img/rectangle/425/SGMonsterMashCash_en.png'
+    "name": "Monster Mash Cash",
+    "code": "9b3ccd00-0d7a-4c0f-9438-d247fa6f191b",
+    "group": "Video Slots",
+    "thumbnail": "https://app-test.insvr.com/img/rectangle/425/SGMonsterMashCash_en.png"
   },
   {
-    'name': 'Little Green Money',
-    'code': 'SGLittleGreenMoney',
-    'group': 'Slots',
-    'thumbnail': 'https://app-test.insvr.com/img/rectangle/425/SGLittleGreenMoney_en.png'
+    "name": "Little Green Money",
+    "code": "0261c138-9323-45a7-8e27-beb1b94d6cd4",
+    "group": "Video Slots",
+    "thumbnail": "https://app-test.insvr.com/img/rectangle/425/SGLittleGreenMoney_en.png"
   },
   {
-    'name': "Viking's Plunder",
-    'code': 'SGVikingsPlunder',
-    'group': 'Slots',
-    'thumbnail': 'https://app-test.insvr.com/img/rectangle/425/SGVikingsPlunder_en.png'
+    "name": "Viking's Plunder",
+    "code": "96d3ad3a-65c6-4d9a-aed6-b48863303aa0",
+    "group": "Video Slots",
+    "thumbnail": "https://app-test.insvr.com/img/rectangle/425/SGVikingsPlunder_en.png"
   },
   {
-    'name': 'Dr Feelgood',
-    'code': 'SGDrFeelgood',
-    'group': 'Slots',
-    'thumbnail': 'https://app-test.insvr.com/img/rectangle/425/SGDrFeelgood_en.png'
+    "name": "Dr Feelgood",
+    "code": "ebcb906b-cf1f-4203-83d7-242920fc4068",
+    "group": "Video Slots",
+    "thumbnail": "https://app-test.insvr.com/img/rectangle/425/SGDrFeelgood_en.png"
   },
   {
-    'name': "Blackbeard's Bounty",
-    'code': 'SGBlackbeardsBounty',
-    'group': 'Slots',
-    'thumbnail': 'https://app-test.insvr.com/img/rectangle/425/SGBlackbeardsBounty_en.png'
+    "name": "Blackbeard's Bounty",
+    "code": "db0dc2c8-52ef-4fba-8e89-62ac7fdb3fe6",
+    "group": "Video Slots",
+    "thumbnail": "https://app-test.insvr.com/img/rectangle/425/SGBlackbeardsBounty_en.png"
   },
   {
-    'name': 'Weird Science',
-    'code': 'SGWeirdScience',
-    'group': 'Slots',
-    'thumbnail': 'https://app-test.insvr.com/img/rectangle/425/SGWeirdScience_en.png'
+    "name": "Weird Science",
+    "code": "a23b409f-64b4-4836-9f4a-d6ce664a851b",
+    "group": "Video Slots",
+    "thumbnail": "https://app-test.insvr.com/img/rectangle/425/SGWeirdScience_en.png"
   },
   {
-    'name': 'Pool Shark',
-    'code': 'SGPoolShark',
-    'group': 'Slots',
-    'thumbnail': 'https://app-test.insvr.com/img/rectangle/425/SGPoolShark_en.png'
+    "name": "Pool Shark",
+    "code": "c49aace8-3a50-4d79-a863-f2af2fa4a69e",
+    "group": "Video Slots",
+    "thumbnail": "https://app-test.insvr.com/img/rectangle/425/SGPoolShark_en.png"
   },
   {
-    'name': 'S.O.S!',
-    'code': 'SGSOS',
-    'group': 'Slots',
-    'thumbnail': 'https://app-test.insvr.com/img/rectangle/425/SGSOS_en.png'
+    "name": "S.O.S!",
+    "code": "5589a76c-b155-4e41-b593-3c5f45c2c1e2",
+    "group": "Video Slots",
+    "thumbnail": "https://app-test.insvr.com/img/rectangle/425/SGSOS_en.png"
   },
   {
-    'name': 'Zeus',
-    'code': 'SGZeus',
-    'group': 'Slots',
-    'thumbnail': 'https://app-test.insvr.com/img/rectangle/425/SGZeus_en.png'
+    "name": "Zeus",
+    "code": "92a59831-60f6-4c13-aa5a-91ddbd162094",
+    "group": "Video Slots",
+    "thumbnail": "https://app-test.insvr.com/img/rectangle/425/SGZeus_en.png"
   },
   {
-    'name': 'Pamper Me',
-    'code': 'SGPamperMe',
-    'group': 'Slots',
-    'thumbnail': 'https://app-test.insvr.com/img/rectangle/425/SGPamperMe_en.png'
+    "name": "Pamper Me",
+    "code": "e12ce149-2ccc-440f-8096-abcfdab918a2",
+    "group": "Video Slots",
+    "thumbnail": "https://app-test.insvr.com/img/rectangle/425/SGPamperMe_en.png"
   },
   {
-    'name': 'Space Fortune',
-    'code': 'SGSpaceFortune',
-    'group': 'Slots',
-    'thumbnail': 'https://app-test.insvr.com/img/rectangle/425/SGSpaceFortune_en.png'
+    "name": "Space Fortune",
+    "code": "a3dfe2de-f660-4ef7-8c3c-e91c51676d02",
+    "group": "Video Slots",
+    "thumbnail": "https://app-test.insvr.com/img/rectangle/425/SGSpaceFortune_en.png"
   },
   {
-    'name': 'Jungle Rumble',
-    'code': 'SGJungleRumble',
-    'group': 'Slots',
-    'thumbnail': 'https://app-test.insvr.com/img/rectangle/425/SGJungleRumble_en.png'
+    "name": "Jungle Rumble",
+    "code": "00e2dcfe-5b40-4b0d-a280-019e24256a64",
+    "group": "Video Slots",
+    "thumbnail": "https://app-test.insvr.com/img/rectangle/425/SGJungleRumble_en.png"
   },
   {
-    'name': 'Super Strike',
-    'code': 'SGSuperStrike',
-    'group': 'Slots',
-    'thumbnail': 'https://app-test.insvr.com/img/rectangle/425/SGSuperStrike_en.png'
+    "name": "Super Strike",
+    "code": "b31e3b2d-8d91-446a-96f3-c7c0a33ac48f",
+    "group": "Video Slots",
+    "thumbnail": "https://app-test.insvr.com/img/rectangle/425/SGSuperStrike_en.png"
   },
   {
-    'name': 'Barnstormer Bucks',
-    'code': 'SGBarnstormerBucks',
-    'group': 'Slots',
-    'thumbnail': 'https://app-test.insvr.com/img/rectangle/425/SGBarnstormerBucks_en.png'
+    "name": "Barnstormer Bucks",
+    "code": "fe8aeb04-f4a1-4d03-91fc-347164d3311f",
+    "group": "Video Slots",
+    "thumbnail": "https://app-test.insvr.com/img/rectangle/425/SGBarnstormerBucks_en.png"
   },
   {
-    'name': 'Bikini Island',
-    'code': 'SGBikiniIsland',
-    'group': 'Slots',
-    'thumbnail': 'https://app-test.insvr.com/img/rectangle/425/SGBikiniIsland_en.png'
+    "name": "Bikini Island",
+    "code": "bba331de-bd16-4339-a1bb-3b2507679458",
+    "group": "Video Slots",
+    "thumbnail": "https://app-test.insvr.com/img/rectangle/425/SGBikiniIsland_en.png"
   },
   {
-    'name': 'Tower Of Pizza',
-    'code': 'SGTowerOfPizza',
-    'group': 'Slots',
-    'thumbnail': 'https://app-test.insvr.com/img/rectangle/425/SGTowerOfPizza_en.png'
+    "name": "Tower Of Pizza",
+    "code": "efde4893-e69f-4130-bba0-dbe35cbef444",
+    "group": "Video Slots",
+    "thumbnail": "https://app-test.insvr.com/img/rectangle/425/SGTowerOfPizza_en.png"
   },
   {
-    'name': 'Mystic Fortune',
-    'code': 'SGMysticFortune',
-    'group': 'Slots',
-    'thumbnail': 'https://app-test.insvr.com/img/rectangle/425/SGMysticFortune_en.png'
+    "name": "Mystic Fortune",
+    "code": "8abd77cb-b9d6-4fa7-bf53-9e97164ba7bb",
+    "group": "Video Slots",
+    "thumbnail": "https://app-test.insvr.com/img/rectangle/425/SGMysticFortune_en.png"
   },
   {
-    'name': 'Mr Bling',
-    'code': 'SGMrBling',
-    'group': 'Slots',
-    'thumbnail': 'https://app-test.insvr.com/img/rectangle/425/SGMrBling_en.png'
+    "name": "Mr Bling",
+    "code": "94de09a6-c185-41ed-922e-e7b046afcd85",
+    "group": "Video Slots",
+    "thumbnail": "https://app-test.insvr.com/img/rectangle/425/SGMrBling_en.png"
   },
   {
-    'name': 'Flying High',
-    'code': 'SGFlyingHigh',
-    'group': 'Slots',
-    'thumbnail': 'https://app-test.insvr.com/img/rectangle/425/SGFlyingHigh_en.png'
+    "name": "Flying High",
+    "code": "20a90044-463a-4437-9b6d-53f07abbb67e",
+    "group": "Video Slots",
+    "thumbnail": "https://app-test.insvr.com/img/rectangle/425/SGFlyingHigh_en.png"
   },
   {
-    'name': 'Queen of Queens',
-    'code': 'SGQueenOfQueens243',
-    'group': 'Slots',
-    'thumbnail': 'https://app-test.insvr.com/img/rectangle/425/SGQueenOfQueens243_en.png'
+    "name": "Queen of Queens",
+    "code": "9d1b3483-6682-42fe-9100-3bbab18fa0e1",
+    "group": "Video Slots",
+    "thumbnail": "https://app-test.insvr.com/img/rectangle/425/SGQueenOfQueens243_en.png"
   },
   {
-    'name': 'Cash Reef',
-    'code': 'SGCashReef',
-    'group': 'Slots',
-    'thumbnail': 'https://app-test.insvr.com/img/rectangle/425/SGCashReef_en.png'
+    "name": "Cash Reef",
+    "code": "b0694407-0884-4079-b32f-4d402c24fdf5",
+    "group": "Video Slots",
+    "thumbnail": "https://app-test.insvr.com/img/rectangle/425/SGCashReef_en.png"
   },
   {
-    'name': 'Sir Blingalot',
-    'code': 'SGSirBlingalot',
-    'group': 'Slots',
-    'thumbnail': 'https://app-test.insvr.com/img/rectangle/425/SGSirBlingalot_en.png'
+    "name": "Sir Blingalot",
+    "code": "46ef70b6-d033-4d3f-bc28-2b0797d85422",
+    "group": "Video Slots",
+    "thumbnail": "https://app-test.insvr.com/img/rectangle/425/SGSirBlingalot_en.png"
   },
   {
-    'name': 'Pucker Up Prince',
-    'code': 'SGPuckerUpPrince',
-    'group': 'Slots',
-    'thumbnail': 'https://app-test.insvr.com/img/rectangle/425/SGPuckerUpPrince_en.png'
+    "name": "Pucker Up Prince",
+    "code": "18105f09-f46f-48df-b47f-3a55fe25b82b",
+    "group": "Video Slots",
+    "thumbnail": "https://app-test.insvr.com/img/rectangle/425/SGPuckerUpPrince_en.png"
   },
   {
-    'name': 'Golden Unicorn',
-    'code': 'SGGoldenUnicorn',
-    'group': 'Slots',
-    'thumbnail': 'https://app-test.insvr.com/img/rectangle/425/SGGoldenUnicorn_en.png'
+    "name": "Golden Unicorn",
+    "code": "237d327a-9fd2-4887-a2ad-32ec1e548ab2",
+    "group": "Video Slots",
+    "thumbnail": "https://app-test.insvr.com/img/rectangle/425/SGGoldenUnicorn_en.png"
   },
   {
-    'name': 'The Grape Escape',
-    'code': 'SGGrapeEscape',
-    'group': 'Slots',
-    'thumbnail': 'https://app-test.insvr.com/img/rectangle/425/SGGrapeEscape_en.png'
+    "name": "The Grape Escape",
+    "code": "2c256464-e17f-4093-91a0-de0e82ed426d",
+    "group": "Video Slots",
+    "thumbnail": "https://app-test.insvr.com/img/rectangle/425/SGGrapeEscape_en.png"
   },
   {
-    'name': "Ride 'em Cowboy",
-    'code': 'SGRideEmCowboy',
-    'group': 'Slots',
-    'thumbnail': 'https://app-test.insvr.com/img/rectangle/425/SGRideEmCowboy_en.png'
+    "name": "Ride 'em Cowboy",
+    "code": "b1732b6a-65a7-4186-b365-f6cab9ea3f0d",
+    "group": "Video Slots",
+    "thumbnail": "https://app-test.insvr.com/img/rectangle/425/SGRideEmCowboy_en.png"
   },
   {
-    'name': "Shogun's Land",
-    'code': 'SGShogunsLand',
-    'group': 'Slots',
-    'thumbnail': 'https://app-test.insvr.com/img/rectangle/425/SGShogunsLand_en.png'
+    "name": "Shogun's Land",
+    "code": "7df6af0c-a8ba-45fb-a82e-ea817a1b255f",
+    "group": "Video Slots",
+    "thumbnail": "https://app-test.insvr.com/img/rectangle/425/SGShogunsLand_en.png"
   },
   {
-    'name': 'Frontier Fortune',
-    'code': 'SGFrontierFortunes',
-    'group': 'Slots',
-    'thumbnail': 'https://app-test.insvr.com/img/rectangle/425/SGFrontierFortunes_en.png'
+    "name": "Frontier Fortune",
+    "code": "dff34079-2c49-4ade-a203-a9590598f0f7",
+    "group": "Video Slots",
+    "thumbnail": "https://app-test.insvr.com/img/rectangle/425/SGFrontierFortunes_en.png"
   },
   {
-    'name': 'The Big Deal',
-    'code': 'SGTheBigDeal',
-    'group': 'Slots',
-    'thumbnail': 'https://app-test.insvr.com/img/rectangle/425/SGTheBigDeal_en.png'
+    "name": "The Big Deal",
+    "code": "895439b9-1ff5-4b19-bd98-5e2cbabbc9fb",
+    "group": "Video Slots",
+    "thumbnail": "https://app-test.insvr.com/img/rectangle/425/SGTheBigDeal_en.png"
   },
   {
-    'name': "Sky's the Limit",
-    'code': 'SGSkysTheLimit',
-    'group': 'Slots',
-    'thumbnail': 'https://app-test.insvr.com/img/rectangle/425/SGSkysTheLimit_en.png'
+    "name": "Sky's the Limit",
+    "code": "0d615764-1193-44b6-a38e-c46454f1e566",
+    "group": "Video Slots",
+    "thumbnail": "https://app-test.insvr.com/img/rectangle/425/SGSkysTheLimit_en.png"
   },
   {
-    'name': 'Rodeo Drive',
-    'code': 'SGRodeoDrive',
-    'group': 'Slots',
-    'thumbnail': 'https://app-test.insvr.com/img/rectangle/425/SGRodeoDrive_en.png'
+    "name": "Rodeo Drive",
+    "code": "817516f3-1cae-42ed-bf04-c391f989fa3b",
+    "group": "Video Slots",
+    "thumbnail": "https://app-test.insvr.com/img/rectangle/425/SGRodeoDrive_en.png"
   },
   {
-    'name': 'Haunted House',
-    'code': 'SGHauntedHouse',
-    'group': 'Slots',
-    'thumbnail': 'https://app-test.insvr.com/img/rectangle/425/SGHauntedHouse_en.png'
+    "name": "Haunted House",
+    "code": "0dcb76b3-4b8a-4678-833f-f6d8f93e0d85",
+    "group": "Video Slots",
+    "thumbnail": "https://app-test.insvr.com/img/rectangle/425/SGHauntedHouse_en.png"
   },
   {
-    'name': 'Disco Funk',
-    'code': 'SGDiscoFunk',
-    'group': 'Slots',
-    'thumbnail': 'https://app-test.insvr.com/img/rectangle/425/SGDiscoFunk_en.png'
+    "name": "Disco Funk",
+    "code": "c4fe3304-82d0-42cd-ad07-38e632ae1978",
+    "group": "Video Slots",
+    "thumbnail": "https://app-test.insvr.com/img/rectangle/425/SGDiscoFunk_en.png"
   },
   {
-    'name': 'Cashosaurus',
-    'code': 'SGCashosaurus',
-    'group': 'Slots',
-    'thumbnail': 'https://app-test.insvr.com/img/rectangle/425/SGCashosaurus_en.png'
+    "name": "Cashosaurus",
+    "code": "491921fd-c831-45e9-a12b-4b9283f4894d",
+    "group": "Video Slots",
+    "thumbnail": "https://app-test.insvr.com/img/rectangle/425/SGCashosaurus_en.png"
   },
   {
-    'name': 'Arctic Wonders',
-    'code': 'SGArcticWonders',
-    'group': 'Slots',
-    'thumbnail': 'https://app-test.insvr.com/img/rectangle/425/SGArcticWonders_en.png'
+    "name": "Arctic Wonders",
+    "code": "06c945de-bce0-4018-a4d3-80270a92b687",
+    "group": "Video Slots",
+    "thumbnail": "https://app-test.insvr.com/img/rectangle/425/SGArcticWonders_en.png"
   },
   {
-    'name': 'All For One',
-    'code': 'SGAllForOne',
-    'group': 'Slots',
-    'thumbnail': 'https://app-test.insvr.com/img/rectangle/425/SGAllForOne_en.png'
+    "name": "All For One",
+    "code": "22adc19c-f18a-4e2c-8304-ec709eade16b",
+    "group": "Video Slots",
+    "thumbnail": "https://app-test.insvr.com/img/rectangle/425/SGAllForOne_en.png"
   },
   {
-    'name': 'Double O Dollars',
-    'code': 'SGDoubleODollars',
-    'group': 'Slots',
-    'thumbnail': 'https://app-test.insvr.com/img/rectangle/425/SGDoubleODollars_en.png'
+    "name": "Double O Dollars",
+    "code": "539ea7ee-3633-429d-b6e5-2103bbd884b2",
+    "group": "Video Slots",
+    "thumbnail": "https://app-test.insvr.com/img/rectangle/425/SGDoubleODollars_en.png"
   },
   {
-    'name': "Kane's Inferno",
-    'code': 'SGKanesInferno',
-    'group': 'Slots',
-    'thumbnail': 'https://app-test.insvr.com/img/rectangle/425/SGKanesInferno_en.png'
+    "name": "Kane's Inferno",
+    "code": "7e19a464-dca8-49f9-932a-84ef8964c35d",
+    "group": "Video Slots",
+    "thumbnail": "https://app-test.insvr.com/img/rectangle/425/SGKanesInferno_en.png"
   },
   {
-    'name': "Aztlan's Gold",
-    'code': 'SGAzlandsGold',
-    'group': 'Slots',
-    'thumbnail': 'https://app-test.insvr.com/img/rectangle/425/SGAzlandsGold_en.png'
+    "name": "Aztlan's Gold",
+    "code": "ace5a8be-eeca-40b2-b574-3f721f42a2cc",
+    "group": "Video Slots",
+    "thumbnail": "https://app-test.insvr.com/img/rectangle/425/SGAzlandsGold_en.png"
   },
   {
-    'name': "Dragon's Realm",
-    'code': 'SGDragonsRealm',
-    'group': 'Slots',
-    'thumbnail': 'https://app-test.insvr.com/img/rectangle/425/SGDragonsRealm_en.png'
+    "name": "Dragon's Realm",
+    "code": "6b58ac6a-39fd-4a88-86f2-18618def81c9",
+    "group": "Video Slots",
+    "thumbnail": "https://app-test.insvr.com/img/rectangle/425/SGDragonsRealm_en.png"
   },
   {
-    'name': 'Egyptian Dreams',
-    'code': 'SGEgyptianDreams',
-    'group': 'Slots',
-    'thumbnail': 'https://app-test.insvr.com/img/rectangle/425/SGEgyptianDreams_en.png'
+    "name": "Egyptian Dreams",
+    "code": "e304d273-fe80-4500-9021-e29f719a8983",
+    "group": "Video Slots",
+    "thumbnail": "https://app-test.insvr.com/img/rectangle/425/SGEgyptianDreams_en.png"
   },
   {
-    'name': 'Indian Cash Catcher',
-    'code': 'SGIndianCashCatcher',
-    'group': 'Slots',
-    'thumbnail': 'https://app-test.insvr.com/img/rectangle/425/SGIndianCashCatcher_en.png'
+    "name": "Indian Cash Catcher",
+    "code": "025ba6c9-7f55-4de7-be65-5f960cb98314",
+    "group": "Video Slots",
+    "thumbnail": "https://app-test.insvr.com/img/rectangle/425/SGIndianCashCatcher_en.png"
   },
   {
-    'name': "King Tut's Tomb",
-    'code': 'SGKingTutsTomb',
-    'group': 'Slots',
-    'thumbnail': 'https://app-test.insvr.com/img/rectangle/425/SGKingTutsTomb_en.png'
+    "name": "King Tut's Tomb",
+    "code": "d92e22e6-0c07-479a-9543-aedf30ab326b",
+    "group": "Video Slots",
+    "thumbnail": "https://app-test.insvr.com/img/rectangle/425/SGKingTutsTomb_en.png"
   },
   {
-    'name': 'Mummy Money',
-    'code': 'SGMummyMoney',
-    'group': 'Slots',
-    'thumbnail': 'https://app-test.insvr.com/img/rectangle/425/SGMummyMoney_en.png'
+    "name": "Mummy Money",
+    "code": "4d216181-d169-4aa2-a423-9abe8c4d12f3",
+    "group": "Video Slots",
+    "thumbnail": "https://app-test.insvr.com/img/rectangle/425/SGMummyMoney_en.png"
   },
   {
-    'name': "Pirate's Plunder",
-    'code': 'SGPiratesPlunder',
-    'group': 'Slots',
-    'thumbnail': 'https://app-test.insvr.com/img/rectangle/425/SGPiratesPlunder_en.png'
+    "name": "Pirate's Plunder",
+    "code": "551432fd-3ebe-4669-b1f1-971756cec1ea",
+    "group": "Video Slots",
+    "thumbnail": "https://app-test.insvr.com/img/rectangle/425/SGPiratesPlunder_en.png"
   },
   {
-    'name': 'Queen of Queens II',
-    'code': 'SGQueenOfQueens1024',
-    'group': 'Slots',
-    'thumbnail': 'https://app-test.insvr.com/img/rectangle/425/SGQueenOfQueens1024_en.png'
+    "name": "Queen of Queens II",
+    "code": "b61bdd07-68ec-4bb4-a4bb-d16c7b654f83",
+    "group": "Video Slots",
+    "thumbnail": "https://app-test.insvr.com/img/rectangle/425/SGQueenOfQueens1024_en.png"
   },
   {
-    'name': 'Shaolin Fortunes',
-    'code': 'SGShaolinFortunes243',
-    'group': 'Slots',
-    'thumbnail': 'https://app-test.insvr.com/img/rectangle/425/SGShaolinFortunes243_en.png'
+    "name": "Shaolin Fortunes",
+    "code": "9435d14a-9946-4d13-8bb3-1c3074d3de1a",
+    "group": "Video Slots",
+    "thumbnail": "https://app-test.insvr.com/img/rectangle/425/SGShaolinFortunes243_en.png"
   },
   {
-    'name': 'Shaolin Fortunes 100',
-    'code': 'SGShaolinFortunes100',
-    'group': 'Slots',
-    'thumbnail': 'https://app-test.insvr.com/img/rectangle/425/SGShaolinFortunes100_en.png'
+    "name": "Shaolin Fortunes 100",
+    "code": "9964bedd-5473-403b-a0c7-0e893eebb044",
+    "group": "Video Slots",
+    "thumbnail": "https://app-test.insvr.com/img/rectangle/425/SGShaolinFortunes100_en.png"
   },
   {
-    'name': 'Three Card Poker Deluxe',
-    'code': 'TGThreeCardPokerDeluxe',
-    'group': 'Table games',
-    'thumbnail': 'https://app-test.insvr.com/img/rectangle/425/TGThreeCardPokerDeluxe_en.png'
+    "name": "Three Card Poker Deluxe",
+    "code": "8f8c4452-e929-40de-8e4c-de88d73a5837",
+    "group": "Casino Poker",
+    "thumbnail": "https://app-test.insvr.com/img/rectangle/425/TGThreeCardPokerDeluxe_en.png"
   },
   {
-    'name': 'American Blackjack',
-    'code': 'TGBlackjackAmerican',
-    'group': 'Table games',
-    'thumbnail': 'https://app-test.insvr.com/img/rectangle/425/TGBlackjackAmerican_en.png'
+    "name": "American Blackjack",
+    "code": "c8ebf2d4-cddd-4b4b-a2d5-13bd2c90e85d",
+    "group": "Blackjack",
+    "thumbnail": "https://app-test.insvr.com/img/rectangle/425/TGBlackjackAmerican_en.png"
   },
   {
-    'name': 'Dragon Tiger',
-    'code': 'TGDragonTiger',
-    'group': 'Table games',
-    'thumbnail': 'https://app-test.insvr.com/img/rectangle/425/TGDragonTiger_en.png'
+    "name": "Dragon Tiger",
+    "code": "c425bc2a-da32-4e68-95f9-dfdc603c84e6",
+    "group": "Dragon Tiger",
+    "thumbnail": "https://app-test.insvr.com/img/rectangle/425/TGDragonTiger_en.png"
   },
   {
-    'name': 'War',
-    'code': 'TGWar',
-    'group': 'Table games',
-    'thumbnail': 'https://app-test.insvr.com/img/rectangle/425/TGWar_en.png'
+    "name": "War",
+    "code": "827a75b3-4477-424c-9ec3-734675fe2ea9",
+    "group": "War",
+    "thumbnail": "https://app-test.insvr.com/img/rectangle/425/TGWar_en.png"
   },
   {
-    'name': 'Three Card Poker',
-    'code': 'TGThreeCardPoker',
-    'group': 'Table games',
-    'thumbnail': 'https://app-test.insvr.com/img/rectangle/425/TGThreeCardPoker_en.png'
+    "name": "Three Card Poker",
+    "code": "401ef4ed-4833-45cf-8815-7255e5075d3b",
+    "group": "Casino Poker",
+    "thumbnail": "https://app-test.insvr.com/img/rectangle/425/TGThreeCardPoker_en.png"
   },
   {
-    'name': 'Sic Bo',
-    'code': 'SicBo',
-    'group': 'Table games',
-    'thumbnail': 'https://app-test.insvr.com/img/rectangle/425/SicBo_en.png'
+    "name": "Sic Bo",
+    "code": "91906013-f398-457a-95cb-862d89fcaa94",
+    "group": "Sic Bo",
+    "thumbnail": "https://app-test.insvr.com/img/rectangle/425/SicBo_en.png"
   },
   {
-    'name': 'Baccarat Zero Commission',
-    'code': 'Baccarat3HZC',
-    'group': 'Table games',
-    'thumbnail': 'https://app-test.insvr.com/img/rectangle/425/Baccarat3HZC_en.png'
+    "name": "Baccarat Zero Commission",
+    "code": "88d2f842-68b9-482c-9646-413854b3bce0",
+    "group": "Baccarat",
+    "thumbnail": "https://app-test.insvr.com/img/rectangle/425/Baccarat3HZC_en.png"
   },
   {
-    'name': 'Double Exposure',
-    'code': 'BlackJack3HDoubleExposure',
-    'group': 'Table games',
-    'thumbnail': 'https://app-test.insvr.com/img/rectangle/425/BlackJack3HDoubleExposure_en.png'
+    "name": "Double Exposure",
+    "code": "7f6df602-71b5-465a-a031-b67be26cc14f",
+    "group": "Blackjack",
+    "thumbnail": "https://app-test.insvr.com/img/rectangle/425/BlackJack3HDoubleExposure_en.png"
   },
   {
-    'name': 'Blackjack',
-    'code': 'BlackJack3H',
-    'group': 'Table games',
-    'thumbnail': 'https://app-test.insvr.com/img/rectangle/425/BlackJack3H_en.png'
+    "name": "Blackjack",
+    "code": "1f3e2ee3-8ca8-4590-83a3-3cf3c8130ba0",
+    "group": "Blackjack",
+    "thumbnail": "https://app-test.insvr.com/img/rectangle/425/BlackJack3H_en.png"
   },
   {
-    'name': 'Baccarat',
-    'code': 'AmericanBaccarat',
-    'group': 'Table games',
-    'thumbnail': 'https://app-test.insvr.com/img/rectangle/425/AmericanBaccarat_en.png'
+    "name": "Baccarat",
+    "code": "6ce4b30f-388a-419f-8131-f11178e0872b",
+    "group": "Baccarat",
+    "thumbnail": "https://app-test.insvr.com/img/rectangle/425/AmericanBaccarat_en.png"
   },
   {
-    'name': 'Roulette',
-    'code': 'EURoulette',
-    'group': 'Table games',
-    'thumbnail': 'https://app-test.insvr.com/img/rectangle/425/EURoulette_en.png'
+    "name": "Roulette",
+    "code": "6df2e5b0-34ca-454b-b34c-cfb9035faf35",
+    "group": "Roulette",
+    "thumbnail": "https://app-test.insvr.com/img/rectangle/425/EURoulette_en.png"
   },
   {
-    'name': "Caribbean Hold'em",
-    'code': 'CaribbeanHoldem',
-    'group': 'Table games',
-    'thumbnail': 'https://app-test.insvr.com/img/rectangle/425/CaribbeanHoldem_en.png'
+    "name": "Caribbean Hold'em",
+    "code": "1b159e43-da9c-4e0d-b735-1c11c2fb22e2",
+    "group": "Casino Poker",
+    "thumbnail": "https://app-test.insvr.com/img/rectangle/425/CaribbeanHoldem_en.png"
   },
   {
-    'name': 'Caribbean Stud',
-    'code': 'CaribbeanStud',
-    'group': 'Table games',
-    'thumbnail': 'https://app-test.insvr.com/img/rectangle/425/CaribbeanStud_en.png'
+    "name": "Caribbean Stud",
+    "code": "4ad7299e-32c5-4ea4-83a4-a1cf2580a0ed",
+    "group": "Casino Poker",
+    "thumbnail": "https://app-test.insvr.com/img/rectangle/425/CaribbeanStud_en.png"
   },
   {
-    'name': 'Tens or Better 50 Hand',
-    'code': 'TensorBetter50Hand',
-    'group': 'Poker',
-    'thumbnail': 'https://app-test.insvr.com/img/rectangle/425/TensorBetter50Hand_en.png'
+    "name": "Tens or Better 50 Hand",
+    "code": "c6fb3b94-7481-4442-9731-65b38b38b6c2",
+    "group": "Video Poker",
+    "thumbnail": "https://app-test.insvr.com/img/rectangle/425/TensorBetter50Hand_en.png"
   },
   {
-    'name': 'Joker Poker 50 Hand',
-    'code': 'JokerPoker50Hand',
-    'group': 'Poker',
-    'thumbnail': 'https://app-test.insvr.com/img/rectangle/425/JokerPoker50Hand_en.png'
+    "name": "Joker Poker 50 Hand",
+    "code": "d87131e2-916f-4fe2-8df6-2f54d604f50d",
+    "group": "Video Poker",
+    "thumbnail": "https://app-test.insvr.com/img/rectangle/425/JokerPoker50Hand_en.png"
   },
   {
-    'name': 'Jacks or Better 50 Hand',
-    'code': 'JacksorBetter50Hand',
-    'group': 'Poker',
-    'thumbnail': 'https://app-test.insvr.com/img/rectangle/425/JacksorBetter50Hand_en.png'
+    "name": "Jacks or Better 50 Hand",
+    "code": "b35fb6d6-ce17-421d-862b-b4a2ddf9cb18",
+    "group": "Video Poker",
+    "thumbnail": "https://app-test.insvr.com/img/rectangle/425/JacksorBetter50Hand_en.png"
   },
   {
-    'name': 'Double Double Bonus Poker 50 Hand',
-    'code': 'DoubleDoubleBonusPoker50Hand',
-    'group': 'Poker',
-    'thumbnail': 'https://app-test.insvr.com/img/rectangle/425/DoubleDoubleBonusPoker50Hand_en.png'
+    "name": "Double Double Bonus Poker 50 Hand",
+    "code": "25603c02-5da2-4b72-aa1f-898e463fb250",
+    "group": "Video Poker",
+    "thumbnail": "https://app-test.insvr.com/img/rectangle/425/DoubleDoubleBonusPoker50Hand_en.png"
   },
   {
-    'name': 'Double Bonus Poker 50 Hand',
-    'code': 'DoubleBonusPoker50Hand',
-    'group': 'Poker',
-    'thumbnail': 'https://app-test.insvr.com/img/rectangle/425/DoubleBonusPoker50Hand_en.png'
+    "name": "Double Bonus Poker 50 Hand",
+    "code": "40db3a3c-f84c-4761-ace0-e788d281264f",
+    "group": "Video Poker",
+    "thumbnail": "https://app-test.insvr.com/img/rectangle/425/DoubleBonusPoker50Hand_en.png"
   },
   {
-    'name': 'Deuces Wild 50 Hand',
-    'code': 'DuecesWild50Hand',
-    'group': 'Poker',
-    'thumbnail': 'https://app-test.insvr.com/img/rectangle/425/DuecesWild50Hand_en.png'
+    "name": "Deuces Wild 50 Hand",
+    "code": "470ca6bb-8b0f-4a7b-8acd-28d266d14005",
+    "group": "Video Poker",
+    "thumbnail": "https://app-test.insvr.com/img/rectangle/425/DuecesWild50Hand_en.png"
   },
   {
-    'name': 'Bonus Poker 50 Hand',
-    'code': 'BonusPoker50Hand',
-    'group': 'Poker',
-    'thumbnail': 'https://app-test.insvr.com/img/rectangle/425/BonusPoker50Hand_en.png'
+    "name": "Bonus Poker 50 Hand",
+    "code": "0f3ef9bf-5b48-407c-b18d-02efa65a1da1",
+    "group": "Video Poker",
+    "thumbnail": "https://app-test.insvr.com/img/rectangle/425/BonusPoker50Hand_en.png"
   },
   {
-    'name': 'Bonus Deuces Wild 50 Hand',
-    'code': 'BonusDuecesWild50Hand',
-    'group': 'Poker',
-    'thumbnail': 'https://app-test.insvr.com/img/rectangle/425/BonusDuecesWild50Hand_en.png'
+    "name": "Bonus Deuces Wild 50 Hand",
+    "code": "76a75288-0e4c-4ebb-afc0-78ad4192ebce",
+    "group": "Video Poker",
+    "thumbnail": "https://app-test.insvr.com/img/rectangle/425/BonusDuecesWild50Hand_en.png"
   },
   {
-    'name': 'All American Poker 50 Hand',
-    'code': 'AllAmericanPoker50Hand',
-    'group': 'Poker',
-    'thumbnail': 'https://app-test.insvr.com/img/rectangle/425/AllAmericanPoker50Hand_en.png'
+    "name": "All American Poker 50 Hand",
+    "code": "8dcdddf3-63b2-4a52-b201-502006f5dbd5",
+    "group": "Video Poker",
+    "thumbnail": "https://app-test.insvr.com/img/rectangle/425/AllAmericanPoker50Hand_en.png"
   },
   {
-    'name': 'Aces and Eights 50 Hand',
-    'code': 'AcesandEights50Hand',
-    'group': 'Poker',
-    'thumbnail': 'https://app-test.insvr.com/img/rectangle/425/AcesandEights50Hand_en.png'
+    "name": "Aces and Eights 50 Hand",
+    "code": "a795d873-b61b-4cfc-b48f-94bc67f01468",
+    "group": "Video Poker",
+    "thumbnail": "https://app-test.insvr.com/img/rectangle/425/AcesandEights50Hand_en.png"
   }
 ]
