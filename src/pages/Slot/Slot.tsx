@@ -27,6 +27,7 @@ const Home: React.FC = () => {
       joker: `/tg/groups/JOKER/types/SLOTS/codes/${code}`,
       microgaming: `/gs/groups/microgaming/types/SL/codes/${code}`,
       pg: `/tg/groups/PGSOFT/types/SLOTS/codes/${code}`,
+      playandgo: `/gs/groups/playandgo/types/SL/codes/${code}`,
       playtech: `/gs/groups/playtech/types/SL/codes/${code}`,
       pragmatic: `/tg/groups/PP/types/SLOTS/codes/${code}`,
       s1: `/gs/groups/s1/types/SLOTS/codes/${code}`,

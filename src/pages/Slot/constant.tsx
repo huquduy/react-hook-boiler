@@ -4,6 +4,7 @@ import habanero from './habanero.constant'
 import joker from './joker.constant'
 import microgaming from './microgaming.constant'
 import pg from './pg.constant'
+import playandgo from './playAndGo.constant'
 import playtech from './playtech.constant'
 import pragmatic from './pragmatic.constant'
 import sa from './sa.constant'
@@ -23,6 +24,7 @@ export default {
   microgaming,
   pg,
   playtech,
+  playandgo,
   pragmatic,
   s1,
   sa

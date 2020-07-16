@@ -25,6 +25,11 @@ const GAMETYPES = [
     idName: SLOT_TAB,
     providers: [
       {
+        idName: 'Play And Go',
+        image: 'slots/playandgo.png',
+        route: '/slots/playandgo'
+      },
+      {
         idName: 'Habanero',
         image: 'slots/habanero.png',
         route: '/slots/habanero'
