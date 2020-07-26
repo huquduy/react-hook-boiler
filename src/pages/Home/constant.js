@@ -1,6 +1,5 @@
 export const carousels = [
-  'ca-1.jpeg',
-  'ca-2.jpeg',
-  'ca-3.jpeg',
-  'ca-4.jpeg'
+  'HB_SLOT_M.jpg',
+  'HB_SPORT_M.jpg',
+  'NEW-GAME_M.jpg',
 ];
