@@ -1,3 +1,8 @@
+import moment from 'moment'
+
+const currentMonth = moment().format('MMM').toUpperCase()
+const oneMonthEarlier = moment().subtract(1, 'months').format('MMM').toUpperCase()
+const oneMonthLater = moment().add(1, 'months').format('MMM').toUpperCase()
 export const promotions = [
   {
     id: '1',
@@ -6,19 +11,19 @@ export const promotions = [
     group: 'Promotion',
     content: `<div>
       <ul>
-        <h4 class="bold cap">SELAMAT KEPADA PARA PEMENANG LUCKYDRAW  ( 01 JUNI - 01 JULY 2020 )</h4>
-        <p>1. ID : Star***l &gt; Samsung S20 Ultra</p>
-        <p>2. ID : Ruzz***8 &gt; Samsung Note 10</p>
-        <p>3. ID : Chae***r &gt; LAPTOP ASUS</p>
-        <p>4. ID : Mike**7 &nbsp;&gt; OPPO Reno F2</p>
-        <p>5. ID : Men**g &gt; OPPO A31</p>
+        <h4 class="bold cap">SELAMAT KEPADA PARA PEMENANG LUCKYDRAW  ( 01 ${oneMonthEarlier} - 01 ${currentMonth} 2020 )</h4>
+        <p>1. ID : Chae***r &gt; Samsung S20 Ultra</p>
+        <p>2. ID : Luci***r &gt; Samsung Note 10</p>
+        <p>3. ID : Dd*3 &gt; LAPTOP ASUS</p>
+        <p>4. ID : Kucing***3 &nbsp;&gt; OPPO Reno F2</p>
+        <p>5. ID : Bawi**1 &gt; OPPO A31</p>
         <p><br></p>
         <p>Hadiah yang tunai masing-masing mendapatkan 1 juta rupiah</p>
-        <p>1. ID : Bawl**1</p>
-        <p>2. ID : Joo**l</p>
-        <p>3. ID : Gam99***a</p>
-        <p>4. ID : Bono**n</p>
-        <p>5. ID : Inov**7</p>
+        <p>1. ID : Alm**a</p>
+        <p>2. ID : Hel**4</p>
+        <p>3. ID : Bon**n</p>
+        <p>4. ID : Gam99***a</p>
+        <p>5. ID : Ruz***8</p>
       </ul>
     </div>`
   },
@@ -29,11 +34,11 @@ export const promotions = [
     group: 'Promotion',
     content: `<div>
       <ul>
-        <h4 class="bold cap">PROMO LUCKY DRAW HOKIBET188 (01 JULY 2020 – 01 AUGUST 2020)</h4>
+        <h4 class="bold cap">PROMO LUCKY DRAW HOKIBET188 (01 ${currentMonth} 2020 – 01 ${oneMonthLater} 2020)</h4>
         <p>CARA BERPARTISIPASI :</p>
         <li>Memiliki Account active di HOKIBET188</li>
         <li>Aktif Bermain, Setiap anda melakukan taruhan/bet akan mendapatkan 1 transaction id</li>
-        <li>Lucky Draw yang di undi adalah dari ticket transaction bet Anda dari tgl 01 JULY jam 12.00 s/d 01 AUGUST 2020 jam 12.00</li>
+        <li>Lucky Draw yang di undi adalah dari ticket transaction bet Anda dari tgl 01 ${currentMonth} jam 12.00 s/d 01 ${oneMonthLater} 2020 jam 12.00</li>
         <p>SYARAT DAN KETENTUAN :</p>
         <li>1.Promo ini berlaku untuk semua member active kami yang setia di Hokibet188</li>
         <li>2.Hadiah yang diberikan antara lain</li>
@@ -43,7 +48,7 @@ export const promotions = [
         <li> Hadiah 4 : Oppo Reno F2</li>
         <li> Hadiah 5 : Oppo A31</li>
         <li> Hadiah 6 - 10 : Uang Tunai Masing - Masing 1 Juta Rupiah</li>
-        <li>3.Pemenang Akan Kami Informasikan Pada Tanggal 01 AUGUST 2020 jam 12.00 Melalui:</li>
+        <li>3.Pemenang Akan Kami Informasikan Pada Tanggal 01 ${oneMonthLater} 2020 jam 12.00 Melalui:</li>
         <li> Halaman FB kami www.facebook.com/hokibet188</li>
         <li> Instagram @hokibet188</li>
         <li>4.kami akan melakukan panggilan telpon melalui Whatsapp ke Pemenang Jika selama 2 hari kami mencoba untuk mengkonfirmasi berdasarkan data Hp yg Terdaftar,namun data yang tidak valid atau tidak bisa di konfirmasi pihak Hokibet188 Berhak membatalkan atau menghanguskan hadiah yang telah anda dapatkan</li>
