@@ -31,6 +31,7 @@
     "react-text-marquee": "^1.0.1",
     "socket.io-client": "^2.3.0",
     "store": "^2.0.12",
+    "react-device-detect": "^1.13.1",
     "typescript": "~3.7.2"
   },
   "devDependencies": {

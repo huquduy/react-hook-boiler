@@ -1,4 +1,4 @@
-@import "../../colors";
+@import "../../../../colors";
 .header-wraper {
   margin-top: 56px;
   .header {
@@ -14,14 +14,13 @@
       display: flex;
       align-items: center;
     }
-    .logo {
-      max-width: 150px;
-    }
   }
   .content-header {
     display: flex;
   }
-
+  .logo {
+    max-width: 150px;
+  }
 }
 .profile-menu {
   .MuiList-root {

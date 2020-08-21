@@ -1,0 +1,87 @@
+@import "../../../../colors";
+.browser-header-wraper {
+  .top-header-wrapper {
+    background: #0d0d0d;
+    padding: 10px 0;
+    .logo {
+      max-width: 225px;
+    }
+    form { 
+      width: 100%
+    }
+    .left-top {
+      > div {
+        margin-right: 10px;
+        display: flex;
+        align-items: center;
+        color: $primaryColor;
+        a {
+          margin: 10px;
+          &:last-child {
+            margin-right: 0;
+          }
+        }
+      }
+      .live-chat-icon {
+        width: 15px;
+        margin-right: 5px;
+      }
+      .user-details {
+        svg {
+          margin-right: 5px;
+        }
+      }
+    }
+    .link-primary{
+      color: $primaryColor;
+      line-height: 40px;
+    }
+  }
+  .nav-wrapper {
+    > div{
+      display: flex;
+      flex-direction: row;
+    }
+    .nav-item {
+      width: 120px;
+      padding: 5px 0;
+      .logo {
+        width: 35px;
+      }
+      span {
+        color: $primaryColor;
+        display: block;
+      }
+      &:hover {
+        box-shadow: 0px 0px 3px 3px rgba(0, 0, 0, .05);
+        background-color:rgba(218,165,32,0.09);
+      }
+    }
+    .nav-pane {
+      visibility: hidden;
+      opacity: 0;
+      transition: visibility 0s, opacity 0.5s linear;
+      width: 100%;
+      z-index: 9;
+      left: 0;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      background-color: rgba(0, 0, 0, 0.90);
+      border-bottom: 10px solid #242424;
+      border-top: 4px solid #151515;
+      padding: 15px;
+      .provider-link {
+        width: 210px;
+        .logo {
+          width: 100%
+        }
+      }
+    }
+  }
+}
+
+.nav-item:hover .nav-pane {
+  visibility: visible;
+  opacity: 1;
+  display: flex;
+}

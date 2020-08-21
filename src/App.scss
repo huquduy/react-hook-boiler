@@ -115,3 +115,18 @@ a {
   height: 0 !important
 }
 
+.MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline {
+  border-color: #e6bb20 !important
+}
+
+.MuiOutlinedInput-inputMarginDense {
+  padding-top: 7px !important;
+}
+
+.relative { 
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}

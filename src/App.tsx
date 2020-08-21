@@ -2,6 +2,7 @@ import { CssBaseline } from '@material-ui/core'
 import { createMuiTheme, MuiThemeProvider } from '@material-ui/core/styles'
 import AuthContextProvider from 'contexts/authContext'
 import React from 'react'
+import { isMobile } from 'react-device-detect'
 // import io from 'socket.io-client';
 import './App.scss'
 import Router from './router'
@@ -24,7 +25,7 @@ const theme = createMuiTheme({
   },
   typography: {
     fontFamily: 'hokifont',
-    fontSize: 17,
+    fontSize: isMobile ? 17 : 14,
   },
 })
 // const socket=io.connect("wss://echo.websocket.org/");
