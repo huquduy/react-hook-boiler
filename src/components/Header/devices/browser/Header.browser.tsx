@@ -176,7 +176,7 @@ const Header: React.FC = () => {
             const { providers }: { providers: IProviderProps[] } = getGameType(idName)
             return(
               <div className="nav-item">
-                <Link href={route}><img className='logo' alt='hokibet188' src={`${process.env.PUBLIC_URL}/images/icons/${idName}.png`} /><span>{title}</span></Link>
+                <Link href={route}><img className='logo' alt='hokibet188' src={`${process.env.PUBLIC_URL}/images/icons/${idName.toLowerCase()}.png`} /><span>{title}</span></Link>
                 <div className="nav-pane absolute">
                   {
                     providers.map(({ nav, route: playingRoute, target } ) => 
