@@ -1,590 +1,758 @@
 export default [
   {
-    code: 'fwria11mjbrwh',
-    name: 'Three Kingdoms Quest',
-    thumbnail: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/landscape/fwria11mjbrwh.png',
-    group: 'Slot'
+    "name": "Blackbeard Legacy",
+    "thumbnail": "/images/joker/swt38osdadyhc.png",
+    "group": "Slots",
+    "code": "swt38osdadyhc"
   },
   {
-    code: '8rqwot18etnuw',
-    name: 'Thunder God',
-    thumbnail: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/landscape/8rqwot18etnuw.png',
-    group: 'Slot'
+    "name": "The 4 Invention",
+    "thumbnail": "/images/joker/rqaonzn7kjjiy.png",
+    "group": "Slots",
+    "code": "rqaonzn7kjjiy"
   },
   {
-    code: 'kf41ymtxfos1r',
-    name: 'Ocean Paradise',
-    thumbnail: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/landscape/kf41ymtxfos1r.png',
-    group: 'Slot'
+    "name": "Mythical Sand",
+    "thumbnail": "/images/joker/m94wkgy3daxta.png",
+    "group": "Slots",
+    "code": "m94wkgy3daxta"
   },
   {
-    code: 'ebudnqj68h6d4',
-    name: 'Happy Party',
-    thumbnail: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/landscape/ebudnqj68h6d4.png',
-    group: 'Slot'
+    "name": "Cluster Mania",
+    "thumbnail": "/images/joker/iw7az1sm3drhh.png",
+    "group": "Slots",
+    "code": "iw7az1sm3drhh"
   },
   {
-    code: 'xtpy4bx49xhx1',
-    name: 'African',
-    thumbnail: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/landscape/xtpy4bx49xhx1.png',
-    group: 'Slot'
+    "name": "Power Stars",
+    "thumbnail": "/images/joker/hcu3p8r71kj3y.png",
+    "group": "Slots",
+    "code": "hcu3p8r71kj3y"
   },
   {
-    code: '1q36p58phmt6y',
-    name: 'Genie',
-    thumbnail: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/landscape/1q36p58phmt6y.png',
-    group: 'Slot'
+    "name": "Lucky Drum",
+    "thumbnail": "/images/joker/wpu7pzg74mj7y.png",
+    "group": "Slots",
+    "code": "wpu7pzg74mj7y"
   },
   {
-    code: 'dhdirsn3m3xia',
-    name: 'Lucky God',
-    thumbnail: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/landscape/dhdirsn3m3xia.png',
-    group: 'Slot'
+    "name": "Golden Dragon",
+    "thumbnail": "/images/joker/9w6aa6u5xbhzh.png",
+    "group": "Slots",
+    "code": "9w6aa6u5xbhzh"
   },
   {
-    code: 'rh8iwwntk3mie',
-    name: 'Dolphin Reef',
-    thumbnail: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/landscape/rh8iwwntk3mie.png',
-    group: 'Slot'
+    "name": "Hercules",
+    "thumbnail": "/images/joker/jsguaktmfyw1h.png",
+    "group": "Slots",
+    "code": "jsguaktmfyw1h"
   },
   {
-    code: 'axt5pxf7sk35y',
-    name: 'Highway Kings',
-    thumbnail: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/landscape/axt5pxf7sk35y.png',
-    group: 'Slot'
+    "name": "Queen",
+    "thumbnail": "/images/joker/gd3rn1kqj7gr4.png",
+    "group": "Slots",
+    "code": "gd3rn1kqj7gr4"
   },
   {
-    code: '69xaiyrbo4dae',
-    name: 'A Night Out',
-    thumbnail: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/landscape/69xaiyrbo4dae.png',
-    group: 'Slot'
+    "name": "Witch Brew",
+    "thumbnail": "/images/joker/bmr8675wqiigs.png",
+    "group": "Slots",
+    "code": "bmr8675wqiigs"
   },
   {
-    code: 'oqt9p9876m39y',
-    name: 'Azteca',
-    thumbnail: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/landscape/oqt9p9876m39y.png',
-    group: 'Slot'
+    "name": "Ancient Artifact",
+    "thumbnail": "/images/joker/ie9eti6w4zfcs.png",
+    "group": "Slots",
+    "code": "ie9eti6w4zfcs"
   },
   {
-    code: 'jbzd1cjsgh4dk',
-    name: 'Sparta',
-    thumbnail: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/landscape/jbzd1cjsgh4dk.png',
-    group: 'Slot'
+    "name": "Horus Eye",
+    "thumbnail": "/images/joker/j9nzkkbjfaz1a.png",
+    "group": "Slots",
+    "code": "j9nzkkbjfaz1a"
   },
   {
-    code: '4d5kdkpqi6sk4',
-    name: 'Safari Heat',
-    thumbnail: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/landscape/4d5kdkpqi6sk4.png',
-    group: 'Slot'
+    "name": "Money Vault",
+    "thumbnail": "/images/joker/oajk3h9o685xq.png",
+    "group": "Slots",
+    "code": "oajk3h9o685xq"
   },
   {
-    code: 'u6d7fsg355x7a',
-    name: 'Panther Moon',
-    thumbnail: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/landscape/u6d7fsg355x7a.png',
-    group: 'Slot'
+    "name": "Burning Pearl",
+    "thumbnail": "/images/joker/ur8593z8hu17w.png",
+    "group": "Slots",
+    "code": "ur8593z8hu17w"
   },
   {
-    code: 't656f48j75z6a',
-    name: 'Great Blue',
-    thumbnail: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/landscape/t656f48j75z6a.png',
-    group: 'Slot'
+    "name": "Tai Shang Lao Jung",
+    "thumbnail": "/images/joker/dxxsh3dfmjpio.png",
+    "group": "Slots",
+    "code": "dxxsh3dfmjpio"
   },
   {
-    code: 'z1pc5tp4zqhm1',
-    name: 'Silver Bullet',
-    thumbnail: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/landscape/z1pc5tp4zqhm1.png',
-    group: 'Slot'
+    "name": "Peach Banquet",
+    "thumbnail": "/images/joker/s77hiogba5dhe.png",
+    "group": "Slots",
+    "code": "s77hiogba5dhe"
   },
   {
-    code: 'bes8675wqiigs',
-    name: "Captain's Treasure",
-    thumbnail: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/landscape/bes8675wqiigs.png',
-    group: 'Slot'
+    "name": "Third Princes Journey",
+    "thumbnail": "/images/joker/bzgza4umpbwsh.png",
+    "group": "Slots",
+    "code": "bzgza4umpbwsh"
   },
   {
-    code: 'bwwza4umpbwsh',
-    name: 'Bonus Bear',
-    thumbnail: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/landscape/bwwza4umpbwsh.png',
-    group: 'Slot'
+    "name": "Octagon Gem",
+    "thumbnail": "/images/joker/4tyxfmpnwqokn.png",
+    "group": "Slots",
+    "code": "4tyxfmpnwqokn"
   },
   {
-    code: 's6xhiogba5dhe',
-    name: 'Football',
-    thumbnail: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/landscape/s6xhiogba5dhe.png',
-    group: 'Slot'
+    "name": "Hot Fruit",
+    "thumbnail": "/images/joker/soojfuqnaxycn.png",
+    "group": "Slots",
+    "code": "soojfuqnaxycn"
   },
   {
-    code: '5864tji8w113w',
-    name: 'Thai Paradise',
-    thumbnail: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/landscape/5864tji8w113w.png',
-    group: 'Slot'
+    "name": "Lucky Rooster",
+    "thumbnail": "/images/joker/7cz37fritkfao.png",
+    "group": "Slots",
+    "code": "7cz37fritkfao"
   },
   {
-    code: 'qieoeyodyyyoc',
-    name: "Captain's Treasure Pro",
-    thumbnail: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/landscape/qieoeyodyyyoc.png',
-    group: 'Slot'
+    "name": "Dolphin Treasure",
+    "thumbnail": "/images/joker/ateqfxp1sqamn.png",
+    "group": "Slots",
+    "code": "ateqfxp1sqamn"
   },
   {
-    code: '79mafnrjt48aa',
-    name: 'Pan Jin Lian',
-    thumbnail: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/landscape/79mafnrjt48aa.png',
-    group: 'Slot'
+    "name": "Three Kingdoms Quest",
+    "thumbnail": "/images/joker/fwria11mjbrwh.png",
+    "group": "Slots",
+    "code": "fwria11mjbrwh"
   },
   {
-    code: 'k3anse3yrrunq',
-    name: 'MoneyBangBang',
-    thumbnail: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/landscape/k3anse3yrrunq.png',
-    group: 'Slot'
+    "name": "Thunder God",
+    "thumbnail": "/images/joker/8rqwot18etnuw.png",
+    "group": "Slots",
+    "code": "8rqwot18etnuw"
   },
   {
-    code: 'pirtanombyroh',
-    name: 'Huga',
-    thumbnail: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/landscape/pirtanombyroh.png',
-    group: 'Slot'
+    "name": "Ocean Paradise",
+    "thumbnail": "/images/joker/kf41ymtxfos1r.png",
+    "group": "Slots",
+    "code": "kf41ymtxfos1r"
   },
   {
-    code: 'ne4gq55cpitgg',
-    name: 'Beanstalk',
-    thumbnail: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/landscape/ne4gq55cpitgg.png',
-    group: 'Slot'
+    "name": "Bagua",
+    "thumbnail": "/images/joker/gn1bc1kqj7gr4.png",
+    "group": "Slots",
+    "code": "gn1bc1kqj7gr4"
   },
   {
-    code: 'kia1eetdryo1c',
-    name: 'Alice',
-    thumbnail: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/landscape/kia1eetdryo1c.png',
-    group: 'Slot'
+    "name": "Bagua 2",
+    "thumbnail": "/images/joker/quofrdenycyyn.png",
+    "group": "Slots",
+    "code": "quofrdenycyyn"
   },
   {
-    code: 'u17q53q45xcp1',
-    name: 'White Snake',
-    thumbnail: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/landscape/u17q53q45xcp1.png',
-    group: 'Slot'
+    "name": "Chilli Hunter",
+    "thumbnail": "/images/joker/n1ydr5mncpogn.png",
+    "group": "Slots",
+    "code": "n1ydr5mncpogn"
   },
   {
-    code: 'ef1uyxt98o6ur',
-    name: 'Lucky God Progressive',
-    thumbnail: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/landscape/ef1uyxt98o6ur.png',
-    group: 'Slot'
+    "name": "Octagon Gem 2",
+    "thumbnail": "/images/joker/gsttgo1debywc.png",
+    "group": "Slots",
+    "code": "gsttgo1debywc"
   },
   {
-    code: '9xpa7brfxj7zo',
-    name: 'Mammamia',
-    thumbnail: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/landscape/9xpa7brfxj7zo.png',
-    group: 'Slot'
+    "name": "Wild Fairies",
+    "thumbnail": "/images/joker/1wt58azdhdo6c.png",
+    "group": "Slots",
+    "code": "1wt58azdhdo6c"
   },
   {
-    code: 'naagsa5ycfugq',
-    name: 'Ancient Egypt',
-    thumbnail: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/landscape/naagsa5ycfugq.png',
-    group: 'Slot'
+    "name": "Wild Protector",
+    "thumbnail": "/images/joker/pxcw1fyibefoo.png",
+    "group": "Slots",
+    "code": "pxcw1fyibefoo"
   },
   {
-    code: 'i4rc816e388c6',
-    name: 'Robin Hood',
-    thumbnail: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/landscape/i4rc816e388c6.png',
-    group: 'Slot'
+    "name": "Dragon Of The Eastern Sea",
+    "thumbnail": "/images/joker/fqho1inijjfwo.png",
+    "group": "Slots",
+    "code": "fqho1inijjfwo"
   },
   {
-    code: 'nh9swadbc3use',
-    name: 'HighwayKings Progressive',
-    thumbnail: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/landscape/nh9swadbc3use.png',
-    group: 'Slot'
+    "name": "Yggdrasil",
+    "thumbnail": "/images/joker/9ii7s6u5xbhzh.png",
+    "group": "Slots",
+    "code": "9ii7s6u5xbhzh"
   },
   {
-    code: 'tqi9778i7mi6o',
-    name: 'Miami',
-    thumbnail: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/landscape/tqi9778i7mi6o.png',
-    group: 'Slot'
+    "name": "Lady Hawk",
+    "thumbnail": "/images/joker/wcaadzg74mj7y.png",
+    "group": "Slots",
+    "code": "wcaadzg74mj7y"
   },
   {
-    code: '9mqe9bhroi78s',
-    name: 'Golden Monkey King',
-    thumbnail: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/landscape/9mqe9bhroi78s.png',
-    group: 'Slot'
+    "name": "Fifty Lions",
+    "thumbnail": "/images/joker/fk9yoi4wkifrs.png",
+    "group": "Slots",
+    "code": "fk9yoi4wkifrs"
   },
   {
-    code: 'byz81hmsq748k',
-    name: 'Supreme Caishen',
-    thumbnail: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/landscape/byz81hmsq748k.png',
-    group: 'Slot'
+    "name": "Book Of Ra Deluxe",
+    "thumbnail": "/images/joker/hf5hx8w9u1q3r.png",
+    "group": "Slots",
+    "code": "hf5hx8w9u1q3r"
   },
   {
-    code: '5m6k9j7rwspjs',
-    name: 'Roma',
-    thumbnail: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/landscape/5m6k9j7rwspjs.png',
-    group: 'Slot'
+    "name": "Four Tigers",
+    "thumbnail": "/images/joker/rsjogw1ukbeic.png",
+    "group": "Slots",
+    "code": "rsjogw1ukbeic"
   },
   {
-    code: 'igg7tisz4ukhw',
-    name: 'Egypt Queen',
-    thumbnail: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/landscape/igg7tisz4ukhw.png',
-    group: 'Slot'
+    "name": "Nugget Hunters",
+    "thumbnail": "/images/joker/84igeq3a8r9d6.png",
+    "group": "Slots",
+    "code": "84igeq3a8r9d6"
   },
   {
-    code: 'w4ypzw6o48mpq',
-    name: 'Dragon Phoenix',
-    thumbnail: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/landscape/w4ypzw6o48mpq.png',
-    group: 'Slot'
+    "name": "Happy Party",
+    "thumbnail": "/images/joker/ebudnqj68h6d4.png",
+    "group": "Slots",
+    "code": "ebudnqj68h6d4"
   },
   {
-    code: 'xbxy1yegyhnyk',
-    name: 'Jungle Island',
-    thumbnail: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/landscape/xbxy1yegyhnyk.png',
-    group: 'Slot'
+    "name": "Safari Life",
+    "thumbnail": "/images/joker/xtpy4bx49xhx1.png",
+    "group": "Slots",
+    "code": "xtpy4bx49xhx1"
   },
   {
-    code: 'foff4ikkjprr1',
-    name: 'Water Margin',
-    thumbnail: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/landscape/foff4ikkjprr1.png',
-    group: 'Slot'
+    "name": "Genie",
+    "thumbnail": "/images/joker/1q36p58phmt6y.png",
+    "group": "Slots",
+    "code": "1q36p58phmt6y"
   },
   {
-    code: 'ruufkzk1kpefn',
-    name: 'SilverBullet Progressive',
-    thumbnail: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/landscape/ruufkzk1kpefn.png',
-    group: 'Slot'
+    "name": "Lucky Panda",
+    "thumbnail": "/images/joker/tbfxuhxs694xk.png",
+    "group": "Slots",
+    "code": "tbfxuhxs694xk"
   },
   {
-    code: 'awn5jciusna5c',
-    name: 'Captains Treasure Progressive',
-    thumbnail: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/landscape/awn5jciusna5c.png',
-    group: 'Slot'
+    "name": "Lucky God",
+    "thumbnail": "/images/joker/dhdirsn3m3xia.png",
+    "group": "Slots",
+    "code": "dhdirsn3m3xia"
   },
   {
-    code: '3hj4fkfji4z4a',
-    name: 'Lucky God Progressive 2',
-    thumbnail: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/landscape/3hj4fkfji4z4a.png',
-    group: 'Slot'
+    "name": "Dolphin Reef",
+    "thumbnail": "/images/joker/rh8iwwntk3mie.png",
+    "group": "Slots",
+    "code": "rh8iwwntk3mie"
   },
   {
-    code: '4akkze7ywgukq',
-    name: 'Crypto Mania',
-    thumbnail: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/landscape/4akkze7ywgukq.png',
-    group: 'Slot'
+    "name": "Highway Kings",
+    "thumbnail": "/images/joker/axt5pxf7sk35y.png",
+    "group": "Slots",
+    "code": "axt5pxf7sk35y"
   },
   {
-    code: '86burqb38a9ua',
-    name: 'Bushido Blade',
-    thumbnail: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/landscape/86burqb38a9ua.png',
-    group: 'Slot'
+    "name": "A Night Out",
+    "thumbnail": "/images/joker/69xaiyrbo4dae.png",
+    "group": "Slots",
+    "code": "69xaiyrbo4dae"
   },
   {
-    code: 'o7f9ih8t6559e',
-    name: 'Empress Regnant',
-    thumbnail: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/landscape/o7f9ih8t6559e.png',
-    group: 'Slot'
+    "name": "Azteca",
+    "thumbnail": "/images/joker/oqt9p9876m39y.png",
+    "group": "Slots",
+    "code": "oqt9p9876m39y"
   },
   {
-    code: '8u9r4tj48chd1',
-    name: 'Dynamite Reels',
-    thumbnail: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/landscape/8u9r4tj48chd1.png',
-    group: 'Slot'
+    "name": "Sparta",
+    "thumbnail": "/images/joker/jbzd1cjsgh4dk.png",
+    "group": "Slots",
+    "code": "jbzd1cjsgh4dk"
   },
   {
-    code: 'wtupmzq14xepn',
-    name: 'Lions Dance',
-    thumbnail: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/landscape/wtupmzq14xepn.png',
-    group: 'Slot'
+    "name": "Safari Heat",
+    "thumbnail": "/images/joker/4d5kdkpqi6sk4.png",
+    "group": "Slots",
+    "code": "4d5kdkpqi6sk4"
   },
   {
-    code: 'd8cso3u8ct1iw',
-    name: 'Phoenix 888',
-    thumbnail: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/landscape/d8cso3u8ct1iw.png',
-    group: 'Slot'
+    "name": "Panther Moon",
+    "thumbnail": "/images/joker/u6d7fsg355x7a.png",
+    "group": "Slots",
+    "code": "u6d7fsg355x7a"
   },
   {
-    code: '3yfmucpss64mk',
-    name: 'Dragon Power Flame',
-    thumbnail: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/landscape/3yfmucpss64mk.png',
-    group: 'Slot'
+    "name": "Great Blue",
+    "thumbnail": "/images/joker/t656f48j75z6a.png",
+    "group": "Slots",
+    "code": "t656f48j75z6a"
   },
   {
-    code: 'bmr8675wqiigs',
-    name: "Witch's Brew",
-    thumbnail: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/landscape/bmr8675wqiigs.png',
-    group: 'Slot'
+    "name": "Silver Bullet",
+    "thumbnail": "/images/joker/z1pc5tp4zqhm1.png",
+    "group": "Slots",
+    "code": "z1pc5tp4zqhm1"
   },
   {
-    code: 'bzgza4umpbwsh',
-    name: "Third Prince's Journey",
-    thumbnail: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/landscape/bzgza4umpbwsh.png',
-    group: 'Slot'
+    "name": "Captains Treasure",
+    "thumbnail": "/images/joker/bes8675wqiigs.png",
+    "group": "Slots",
+    "code": "bes8675wqiigs"
   },
   {
-    code: 's77hiogba5dhe',
-    name: 'Peach Banquet',
-    thumbnail: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/landscape/s77hiogba5dhe.png',
-    group: 'Slot'
+    "name": "Bonus Bear",
+    "thumbnail": "/images/joker/bwwza4umpbwsh.png",
+    "group": "Slots",
+    "code": "bwwza4umpbwsh"
   },
   {
-    code: 'dxxsh3dfmjpio',
-    name: 'Tai Shang Lao Jun',
-    thumbnail: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/landscape/dxxsh3dfmjpio.png',
-    group: 'Slot'
+    "name": "Football",
+    "thumbnail": "/images/joker/s6xhiogba5dhe.png",
+    "group": "Slots",
+    "code": "s6xhiogba5dhe"
   },
   {
-    code: '7cz37fritkfao',
-    name: 'Lucky Rooster',
-    thumbnail: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/landscape/7cz37fritkfao.png',
-    group: 'Slot'
+    "name": "Thai Paradise",
+    "thumbnail": "/images/joker/5864tji8w113w.png",
+    "group": "Slots",
+    "code": "5864tji8w113w"
   },
   {
-    code: '7tccifcktqre1',
-    name: 'Chinese Boss',
-    thumbnail: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/landscape/7tccifcktqre1.png',
-    group: 'Slot'
+    "name": "Captains Treasure Pro",
+    "thumbnail": "/images/joker/qieoeyodyyyoc.png",
+    "group": "Slots",
+    "code": "qieoeyodyyyoc"
   },
   {
-    code: 'zygj7oqga9nck',
-    name: 'Caishen Riches',
-    thumbnail: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/landscape/zygj7oqga9nck.png',
-    group: 'Slot'
+    "name": "Pan Jin Lian",
+    "thumbnail": "/images/joker/79mafnrjt48aa.png",
+    "group": "Slots",
+    "code": "79mafnrjt48aa"
   },
   {
-    code: 'srd3xusx3ughr',
-    name: 'Enter The KTV',
-    thumbnail: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/landscape/srd3xusx3ughr.png',
-    group: 'Slot'
+    "name": "Money Bang Bang",
+    "thumbnail": "/images/joker/k3anse3yrrunq.png",
+    "group": "Slots",
+    "code": "k3anse3yrrunq"
   },
   {
-    code: '1ru5x5zx7us6r',
-    name: 'Lightning God',
-    thumbnail: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/landscape/1ru5x5zx7us6r.png',
-    group: 'Slot'
+    "name": "Huga",
+    "thumbnail": "/images/joker/pirtanombyroh.png",
+    "group": "Slots",
+    "code": "pirtanombyroh"
   },
   {
-    code: 'dkzdo35rcipfs',
-    name: 'China',
-    thumbnail: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/landscape/dkzdo35rcipfs.png',
-    group: 'Slot'
+    "name": "Beanstalk",
+    "thumbnail": "/images/joker/ne4gq55cpitgg.png",
+    "group": "Slots",
+    "code": "ne4gq55cpitgg"
   },
   {
-    code: 'q9gi4yybyadoe',
-    name: 'Wild Giant Panda',
-    thumbnail: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/landscape/q9gi4yybyadoe.png',
-    group: 'Slot'
+    "name": "Alice",
+    "thumbnail": "/images/joker/kia1eetdryo1c.png",
+    "group": "Slots",
+    "code": "kia1eetdryo1c"
   },
   {
-    code: 'wykepsq659qp4',
-    name: 'Four Dragons',
-    thumbnail: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/landscape/wykepsq659qp4.png',
-    group: 'Slot'
+    "name": "White Snake",
+    "thumbnail": "/images/joker/u17q53q45xcp1.png",
+    "group": "Slots",
+    "code": "u17q53q45xcp1"
   },
   {
-    code: 'rsjogw1ukbeic',
-    name: 'Four Tigers',
-    thumbnail: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/landscape/rsjogw1ukbeic.png',
-    group: 'Slot'
+    "name": "Lucky God Progressive",
+    "thumbnail": "/images/joker/ef1uyxt98o6ur.png",
+    "group": "Slots",
+    "code": "ef1uyxt98o6ur"
   },
   {
-    code: '5ii9zgw5unc3h',
-    name: 'Neptune Treasure',
-    thumbnail: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/landscape/5ii9zgw5unc3h.png',
-    group: 'Slot'
+    "name": "Mammamia",
+    "thumbnail": "/images/joker/9xpa7brfxj7zo.png",
+    "group": "Slots",
+    "code": "9xpa7brfxj7zo"
   },
   {
-    code: 'xmzfobaryz7xs',
-    name: 'Lord Of The Ocean',
-    thumbnail: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/landscape/xmzfobaryz7xs.png',
-    group: 'Slot'
+    "name": "Ancient Egypt",
+    "thumbnail": "/images/joker/naagsa5ycfugq.png",
+    "group": "Slots",
+    "code": "naagsa5ycfugq"
   },
   {
-    code: 'qxoindypyeboy',
-    name: 'Geisha',
-    thumbnail: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/landscape/qxoindypyeboy.png',
-    group: 'Slot'
+    "name": "Robin Hood",
+    "thumbnail": "/images/joker/i4rc816e388c6.png",
+    "group": "Slots",
+    "code": "i4rc816e388c6"
   },
   {
-    code: 'aij68ciusna5c',
-    name: 'Columbus',
-    thumbnail: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/landscape/aij68ciusna5c.png',
-    group: 'Slot'
+    "name": "Highway Kings Progressive",
+    "thumbnail": "/images/joker/nh9swadbc3use.png",
+    "group": "Slots",
+    "code": "nh9swadbc3use"
   },
   {
-    code: 'satj3o6ya8dcq',
-    name: 'Just Jewels',
-    thumbnail: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/landscape/satj3o6ya8dcq.png',
-    group: 'Slot'
+    "name": "Monkey King",
+    "thumbnail": "/images/joker/9upe5bm4xph81.png",
+    "group": "Slots",
+    "code": "9upe5bm4xph81"
   },
   {
-    code: '8nsbhokge7nrk',
-    name: 'Queen Of The Nile',
-    thumbnail: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/landscape/8nsbhokge7nrk.png',
-    group: 'Slot'
+    "name": "Miami",
+    "thumbnail": "/images/joker/tqi9778i7mi6o.png",
+    "group": "Slots",
+    "code": "tqi9778i7mi6o"
   },
   {
-    code: 'ww3a8wsu4de7c',
-    name: 'Sizzling Hot',
-    thumbnail: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/landscape/ww3a8wsu4de7c.png',
-    group: 'Slot'
+    "name": "Supreme Caishen",
+    "thumbnail": "/images/joker/byz81hmsq748k.png",
+    "group": "Slots",
+    "code": "byz81hmsq748k"
   },
   {
-    code: '43bx3e7ywgukq',
-    name: 'Dolphin Pearl',
-    thumbnail: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/landscape/43bx3e7ywgukq.png',
-    group: 'Slot'
+    "name": "Golden Monkey King",
+    "thumbnail": "/images/joker/9mqe9bhroi78s.png",
+    "group": "Slots",
+    "code": "9mqe9bhroi78s"
   },
   {
-    code: 'ioheiiqk3xrc1',
-    name: 'Book Of Ra',
-    thumbnail: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/landscape/ioheiiqk3xrc1.png',
-    group: 'Slot'
+    "name": "Silver Bullet Progressive",
+    "thumbnail": "/images/joker/ruufkzk1kpefn.png",
+    "group": "Slots",
+    "code": "ruufkzk1kpefn"
   },
   {
-    code: '7f9h9fwz11kaw',
-    name: 'Lucky Lady Charm',
-    thumbnail: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/landscape/7f9h9fwz11kaw.png',
-    group: 'Slot'
+    "name": "Captains Treasure Progressive",
+    "thumbnail": "/images/joker/awn5jciusna5c.png",
+    "group": "Slots",
+    "code": "awn5jciusna5c"
   },
   {
-    code: '84igeq3a8r9d6',
-    name: 'Nugget Hunter',
-    thumbnail: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/landscape/84igeq3a8r9d6.png',
-    group: 'Slot'
+    "name": "Roma",
+    "thumbnail": "/images/joker/5m6k9j7rwspjs.png",
+    "group": "Slots",
+    "code": "5m6k9j7rwspjs"
   },
   {
-    code: 'fk9yoi4wkifrs',
-    name: 'Fifty Lions',
-    thumbnail: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/landscape/fk9yoi4wkifrs.png',
-    group: 'Slot'
+    "name": "Egypt Queen",
+    "thumbnail": "/images/joker/igg7tisz4ukhw.png",
+    "group": "Slots",
+    "code": "igg7tisz4ukhw"
   },
   {
-    code: 'ateqfxp1sqamn',
-    name: 'Dolphin Treasure',
-    thumbnail: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/landscape/ateqfxp1sqamn.png',
-    group: 'Slot'
+    "name": "Dragon Phoenix",
+    "thumbnail": "/images/joker/w4ypzw6o48mpq.png",
+    "group": "Slots",
+    "code": "w4ypzw6o48mpq"
   },
   {
-    code: 'ie9eti6w4zfcs',
-    name: 'Ancient Artifact',
-    thumbnail: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/landscape/ie9eti6w4zfcs.png',
-    group: 'Slot'
+    "name": "Archer",
+    "thumbnail": "/images/joker/wfo7bzs95uq7r.png",
+    "group": "Slots",
+    "code": "wfo7bzs95uq7r"
   },
   {
-    code: 'oajk3h9o685xq',
-    name: 'Money Vault',
-    thumbnail: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/landscape/oajk3h9o685xq.png',
-    group: 'Slot'
+    "name": "Water Margin",
+    "thumbnail": "/images/joker/foff4ikkjprr1.png",
+    "group": "Slots",
+    "code": "foff4ikkjprr1"
   },
   {
-    code: 'ur8593z8hu17w',
-    name: 'Burning Pearl',
-    thumbnail: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/landscape/ur8593z8hu17w.png',
-    group: 'Slot'
+    "name": "Aladdin",
+    "thumbnail": "/images/joker/1q36p58phmt6y.png",
+    "group": "Slots",
+    "code": "1q36p58phmt6y"
   },
   {
-    code: 'j9nzkkbjfaz1a',
-    name: 'Horus Eye',
-    thumbnail: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/landscape/j9nzkkbjfaz1a.png',
-    group: 'Slot'
+    "name": "Happy Buddha",
+    "thumbnail": "/images/joker/55hj8ghaugxj6.png",
+    "group": "Slots",
+    "code": "55hj8ghaugxj6"
   },
   {
-    code: '4tyxfmpnwqokn',
-    name: 'Octagon Gem',
-    thumbnail: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/landscape/4tyxfmpnwqokn.png',
-    group: 'Slot'
+    "name": "Golden Island",
+    "thumbnail": "/images/joker/ywozehuuqbazc.png",
+    "group": "Slots",
+    "code": "ywozehuuqbazc"
   },
   {
-    code: 'soojfuqnaxycn',
-    name: 'Hot Fruits',
-    thumbnail: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/landscape/soojfuqnaxycn.png',
-    group: 'Slot'
+    "name": "Lucky God Progressive 2",
+    "thumbnail": "/images/joker/3hj4fkfji4z4a.png",
+    "group": "Slots",
+    "code": "3hj4fkfji4z4a"
   },
   {
-    code: 'xkhy6baryz7xs',
-    name: 'Fish Hunter 2 EX - Newbie',
-    thumbnail: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/landscape/xkhy6baryz7xs.png',
-    group: 'Fishing'
+    "name": "Jungle Island",
+    "thumbnail": "/images/joker/xbxy1yegyhnyk.png",
+    "group": "Slots",
+    "code": "xbxy1yegyhnyk"
   },
   {
-    code: 'qq5ocdypyeboy',
-    name: 'Fish Hunter 2 EX - Novice',
-    thumbnail: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/landscape/qq5ocdypyeboy.png',
-    group: 'Fishing'
+    "name": "Crypto Mania",
+    "thumbnail": "/images/joker/4akkze7ywgukq.png",
+    "group": "Slots",
+    "code": "4akkze7ywgukq"
   },
   {
-    code: 'g54rso4yefdrq',
-    name: 'Fish Hunter 2 EX - Pro',
-    thumbnail: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/landscape/g54rso4yefdrq.png',
-    group: 'Fishing'
+    "name": "Bushido Blade",
+    "thumbnail": "/images/joker/86burqb38a9ua.png",
+    "group": "Slots",
+    "code": "86burqb38a9ua"
   },
   {
-    code: 'ary5bxi9z165r',
-    name: 'Fish Hunter 2 EX - My Club',
-    thumbnail: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/landscape/ary5bxi9z165r.png',
-    group: 'Fishing'
+    "name": "Empress Regnant",
+    "thumbnail": "/images/joker/o7f9ih8t6559e.png",
+    "group": "Slots",
+    "code": "o7f9ih8t6559e"
   },
   {
-    code: 'b8rzo7uzqt4sw',
-    name: 'Fish Hunting: Golden Toad',
-    thumbnail: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/landscape/b8rzo7uzqt4sw.png',
-    group: 'Fishing'
+    "name": "Dynamite Reels",
+    "thumbnail": "/images/joker/8u9r4tj48chd1.png",
+    "group": "Slots",
+    "code": "8u9r4tj48chd1"
   },
   {
-    code: '8d7r1okge7nrk',
-    name: 'Fish Hunting: Da Sheng Nao Hai',
-    thumbnail: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/landscape/8d7r1okge7nrk.png',
-    group: 'Fishing'
+    "name": "Lions Dance",
+    "thumbnail": "/images/joker/wtupmzq14xepn.png",
+    "group": "Slots",
+    "code": "wtupmzq14xepn"
   },
   {
-    code: 'nzkseaudcbosc',
-    name: 'Fish Hunting: Li Kui Pi Yu',
-    thumbnail: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/landscape/nzkseaudcbosc.png',
-    group: 'Fishing'
+    "name": "Phoenix 888",
+    "thumbnail": "/images/joker/d8cso3u8ct1iw.png",
+    "group": "Slots",
+    "code": "d8cso3u8ct1iw"
   },
   {
-    code: 'wi17jwsu4de7c',
-    name: 'Fish Hunting: Yao Qian Shu',
-    thumbnail: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/landscape/wi17jwsu4de7c.png',
-    group: 'Fishing'
+    "name": "Dragon Power Flame",
+    "thumbnail": "/images/joker/3yfmucpss64mk.png",
+    "group": "Slots",
+    "code": "3yfmucpss64mk"
   },
   {
-    code: '1jeqx59c7ztqg',
-    name: 'Fish Hunter Monster Awaken',
-    thumbnail: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/landscape/1jeqx59c7ztqg.png',
-    group: 'Fishing'
+    "name": "Chinese Boss",
+    "thumbnail": "/images/joker/7tccifcktqre1.png",
+    "group": "Slots",
+    "code": "7tccifcktqre1"
   },
   {
-    code: '4omkmmpnwqokn',
-    name: 'Fish Hunter Spongebob',
-    thumbnail: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/landscape/4omkmmpnwqokn.png',
-    group: 'Fishing'
+    "name": "Caishen Riches",
+    "thumbnail": "/images/joker/zygj7oqga9nck.png",
+    "group": "Slots",
+    "code": "zygj7oqga9nck"
   },
   {
-    code: 'ddpg1amgc71gk',
-    name: 'Fish Hunter Insect Paradise',
-    thumbnail: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/landscape/ddpg1amgc71gk.png',
-    group: 'Fishing'
+    "name": "Enter The KTV",
+    "thumbnail": "/images/joker/srd3xusx3ughr.png",
+    "group": "Slots",
+    "code": "srd3xusx3ughr"
   },
   {
-    code: 'kk8nqm3cfwtng',
-    name: 'Fish Haiba',
-    thumbnail: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/landscape/kk8nqm3cfwtng.png',
-    group: 'Fishing'
+    "name": "Lightning God",
+    "thumbnail": "/images/joker/1ru5x5zx7us6r.png",
+    "group": "Slots",
+    "code": "1ru5x5zx7us6r"
   },
   {
-    code: 'dc7sh3dfmjpio',
-    name: 'Dragon Tiger',
-    thumbnail: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/landscape/dc7sh3dfmjpio.png',
-    group: 'ECasino'
+    "name": "Arctic Treasure",
+    "thumbnail": "/images/joker/7rw3tfwz11kaw.png",
+    "group": "Slots",
+    "code": "7rw3tfwz11kaw"
   },
   {
-    code: '3uim5ppkiqwk1',
-    name: 'Belangkai',
-    thumbnail: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/landscape/3uim5ppkiqwk1.png',
-    group: 'ECasino'
+    "name": "Golden Rooster",
+    "thumbnail": "/images/joker/jpiuhpbifei1o.png",
+    "group": "Slots",
+    "code": "jpiuhpbifei1o"
   },
   {
-    code: 'j3wngk3efrzn6',
-    name: 'Baccarat',
-    thumbnail: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/landscape/j3wngk3efrzn6.png',
-    group: 'ECasino'
+    "name": "China",
+    "thumbnail": "/images/joker/dkzdo35rcipfs.png",
+    "group": "Slots",
+    "code": "dkzdo35rcipfs"
   },
   {
-    code: 'yr1zy9u9xt6zr',
-    name: 'HuLu',
-    thumbnail: '//res.cloudinary.com/jsoftdev/image/upload/f_auto/v2/gameimages/landscape/yr1zy9u9xt6zr.png',
-    group: 'ECasino'
+    "name": "Four Dragons",
+    "thumbnail": "/images/joker/wykepsq659qp4.png",
+    "group": "Slots",
+    "code": "wykepsq659qp4"
+  },
+  {
+    "name": "Wild Giant Panda",
+    "thumbnail": "/images/joker/q9gi4yybyadoe.png",
+    "group": "Slots",
+    "code": "q9gi4yybyadoe"
+  },
+  {
+    "name": "Neptune Treasure",
+    "thumbnail": "/images/joker/5ii9zgw5unc3h.png",
+    "group": "Slots",
+    "code": "5ii9zgw5unc3h"
+  },
+  {
+    "name": "Lucky Lady Charm",
+    "thumbnail": "/images/joker/7f9h9fwz11kaw.png",
+    "group": "Slots",
+    "code": "7f9h9fwz11kaw"
+  },
+  {
+    "name": "Columbus",
+    "thumbnail": "/images/joker/aij68ciusna5c.png",
+    "group": "Slots",
+    "code": "aij68ciusna5c"
+  },
+  {
+    "name": "Just Jewels",
+    "thumbnail": "/images/joker/satj3o6ya8dcq.png",
+    "group": "Slots",
+    "code": "satj3o6ya8dcq"
+  },
+  {
+    "name": "Fifty Dragons",
+    "thumbnail": "/images/joker/k9gz4ebbrau1e.png",
+    "group": "Slots",
+    "code": "k9gz4ebbrau1e"
+  },
+  {
+    "name": "Book Of Ra",
+    "thumbnail": "/images/joker/ioheiiqk3xrc1.png",
+    "group": "Slots",
+    "code": "ioheiiqk3xrc1"
+  },
+  {
+    "name": "Mulan",
+    "thumbnail": "/images/joker/bcizh7dipjiso.png",
+    "group": "Slots",
+    "code": "bcizh7dipjiso"
+  },
+  {
+    "name": "Wild Spirit",
+    "thumbnail": "/images/joker/itzp5iqk3xrc1.png",
+    "group": "Slots",
+    "code": "itzp5iqk3xrc1"
+  },
+  {
+    "name": "Queen Of The Nile",
+    "thumbnail": "/images/joker/8nsbhokge7nrk.png",
+    "group": "Slots",
+    "code": "8nsbhokge7nrk"
+  },
+  {
+    "name": "Sizzling Hot",
+    "thumbnail": "/images/joker/ww3a8wsu4de7c.png",
+    "group": "Slots",
+    "code": "ww3a8wsu4de7c"
+  },
+  {
+    "name": "Dolphin Pearl Deluxe",
+    "thumbnail": "/images/joker/43bx3e7ywgukq.png",
+    "group": "Slots",
+    "code": "43bx3e7ywgukq"
+  },
+  {
+    "name": "Geisha",
+    "thumbnail": "/images/joker/qxoindypyeboy.png",
+    "group": "Slots",
+    "code": "qxoindypyeboy"
+  },
+  {
+    "name": "Lord Of The Ocean",
+    "thumbnail": "/images/joker/xmzfobaryz7xs.png",
+    "group": "Slots",
+    "code": "xmzfobaryz7xs"
+  },
+  {
+    "name": "Zhao Cai Jin Bao",
+    "thumbnail": "/images/joker/aodmmxp1sqamn.png",
+    "group": "Slots",
+    "code": "aodmmxp1sqamn"
+  },
+  {
+    "name": "Fei Long Zai Tian",
+    "thumbnail": "/images/joker/o3nxzh9o685xq.png",
+    "group": "Slots",
+    "code": "o3nxzh9o685xq"
+  },
+  {
+    "name": "Santa Surprise",
+    "thumbnail": "/images/joker/ufc6t3z8hu17w.png",
+    "group": "Slots",
+    "code": "ufc6t3z8hu17w"
+  },
+  {
+    "name": "Five Tiger Generals",
+    "thumbnail": "/images/joker/j6j1rkbjfaz1a.png",
+    "group": "Slots",
+    "code": "j6j1rkbjfaz1a"
+  },
+  {
+    "name": "Atom",
+    "thumbnail": "/images/joker/sy1jp1qq39gc4.png",
+    "group": "FunkyGames",
+    "code": "sy1jp1qq39gc4"
+  },
+  {
+    "name": "Cash Or Crash",
+    "thumbnail": "/images/joker/r43yaw4okfmfq.png",
+    "group": "FunkyGames",
+    "code": "r43yaw4okfmfq"
+  },
+  {
+    "name": "Fish Prawn Crab",
+    "thumbnail": "/images/joker/p91iknyjba8oa.png",
+    "group": "FunkyGames",
+    "code": "p91iknyjba8oa"
+  },
+  {
+    "name": "Football Strike",
+    "thumbnail": "/images/joker/dngdhamgc71gk.png",
+    "group": "FunkyGames",
+    "code": "dngdhamgc71gk"
+  },
+  {
+    "name": "Golden Crab",
+    "thumbnail": "/images/joker/cxawn8y7nejty.png",
+    "group": "FunkyGames",
+    "code": "cxawn8y7nejty"
+  },
+  {
+    "name": "Keno",
+    "thumbnail": "/images/joker/1ynmp4xq79sq4.png",
+    "group": "FunkyGames",
+    "code": "1ynmp4xq79sq4"
+  },
+  {
+    "name": "Lucky Wheel",
+    "thumbnail": "/images/joker/j8xs6ptzgo41w.png",
+    "group": "FunkyGames",
+    "code": "j8xs6ptzgo41w"
+  },
+  {
+    "name": "Burning Pearl Bingo",
+    "thumbnail": "/images/joker/tocki7xk7xwq1.png",
+    "group": "BingoGames",
+    "code": "tocki7xk7xwq1"
+  },
+  {
+    "name": "Cryptomania Bingo",
+    "thumbnail": "/images/joker/z7k6mqf3z495a.png",
+    "group": "BingoGames",
+    "code": "z7k6mqf3z495a"
+  },
+  {
+    "name": "Neptune Bingo",
+    "thumbnail": "/images/joker/cz3wgrounyetc.png",
+    "group": "BingoGames",
+    "code": "cz3wgrounyetc"
   }
 ]
