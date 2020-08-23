@@ -79,11 +79,20 @@ const Header: React.FC = () => {
               </Grid>
             </Grid>
             <Grid container={true} alignItems="center" xs={8}>
+              <Grid container={true} alignItems="center" justify="flex-end" className="left-top">
+                <div>
+                  <Link className="link-primary link" target='_blank' href="http://v2.zopim.com/widget/livechat.html?key=4AV3AjiTSLlEJzZEwHTFojUPOVayt8Wr&amp;mid=cKfo1EYVt8j2Ow&amp;lang=ms&amp;hostname=www.hokibet188.com&amp;api_calls=%5B%5D"><img className='live-chat-icon' alt='hokibet188' src={`${process.env.PUBLIC_URL}/images/icons/contact.png`} /><span>Live Chat</span></Link>
+                  |
+                  <Link className="link-primary link" href="/contact"><span>Contact us</span></Link>
+                  |
+                  <Link className="link-primary link" href="/fag"><span>FAQ</span></Link>
+                </div>
+              </Grid>
               {!auth.token ?
                 <Form onSubmit={handleLogin}>
                   {({ handleSubmit }) => 
                     <form onSubmit={handleSubmit}>
-                      <Grid container={true} justify="flex-end" className="left-top">
+                      <Grid container={true} justify="flex-end" className="left-top control">
                         <div>
                           <Field
                             validate={composeValidators(required, minLength(3))}
@@ -127,15 +136,6 @@ const Header: React.FC = () => {
                 </Form> : 
                 <Grid container={true}>
                   <Grid container={true} alignItems="center" justify="flex-end" className="left-top">
-                    <div>
-                      <Link className="link-primary" target='_blank' href="http://v2.zopim.com/widget/livechat.html?key=4AV3AjiTSLlEJzZEwHTFojUPOVayt8Wr&amp;mid=cKfo1EYVt8j2Ow&amp;lang=ms&amp;hostname=www.hokibet188.com&amp;api_calls=%5B%5D"><img className='live-chat-icon' alt='hokibet188' src={`${process.env.PUBLIC_URL}/images/icons/contact.png`} /><span>Live Chat</span></Link>
-                      |
-                      <Link className="link-primary" href="/contact"><span>Contact us</span></Link>
-                      |
-                      <Link className="link-primary" href="/fag"><span>FAQ</span></Link>
-                    </div>
-                  </Grid>
-                  <Grid container={true} alignItems="center" justify="flex-end" className="left-top">
                     <div className="user-details">
                       <AccountCircleIcon color="primary" />
                       <Typography color="primary" variant="subtitle2">
@@ -150,13 +150,13 @@ const Header: React.FC = () => {
                   </Grid>
                   <Grid container={true} alignItems="center" justify="flex-end" className="left-top">
                     <div>
-                      <Link className="link-primary" href="/deposit"><span>DEPOSIT</span></Link>
+                      <Link className="link-primary link" href="/deposit"><span>DEPOSIT</span></Link>
                       |
-                      <Link className="link-primary" href="/withdraw"><span>WITHDRAW</span></Link>
+                      <Link className="link-primary link" href="/withdraw"><span>WITHDRAW</span></Link>
                       |
-                      <Link className="link-primary" href="/transfer"><span>TRANSFER</span></Link>
+                      <Link className="link-primary link" href="/transfer"><span>TRANSFER</span></Link>
                       |
-                      <Link className="link-primary" href="/report"><span>REPORT</span></Link>
+                      <Link className="link-primary link" href="/report"><span>REPORT</span></Link>
                     </div>
                   </Grid>
                 </Grid>}

@@ -9,13 +9,16 @@
     form { 
       width: 100%
     }
+    .control {
+      align-items: end;
+    }
     .left-top {
       > div {
         margin-right: 10px;
         display: flex;
         align-items: center;
         color: $primaryColor;
-        a {
+        .link {
           margin: 10px;
           &:last-child {
             margin-right: 0;
