@@ -2,6 +2,8 @@ import {
   Button,
   Container,
   Grid,
+  Menu,
+  MenuItem,
   Typography,
 } from '@material-ui/core'
 import {
@@ -12,7 +14,7 @@ import {
 } from '@material-ui/icons'
 import Link from 'components/Link';
 import TextInput from 'components/TextInput'
-import GAMES, { getGameType, IProviderProps, SLOT_TAB } from 'constant/games'
+import GAMES, { getGameType, IProviderProps } from 'constant/games'
 import { AuthContext } from 'contexts/authContext'
 import useDialog from 'hooks/dialog'
 import useErrorDialog from 'hooks/error-dialog'
@@ -37,6 +39,15 @@ const Header: React.FC = () => {
   const [showCreditsDialog, CreditsDialog] = useDialog(false)
   const history = useHistory()
   const [showDialog, ErrorDialogComponent] = useErrorDialog(false)
+  const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
+
+  const showProfileMenu = (event: React.MouseEvent<HTMLButtonElement>) => {
+    setAnchorEl(event.currentTarget);
+  };
+
+  const closeProfileMenu = () => {
+    setAnchorEl(null);
+  };
 
   const fetchInformation = async () => {
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -78,8 +89,8 @@ const Header: React.FC = () => {
                 <Link href="/"><img className='logo' alt='hokibet188' src={`${process.env.PUBLIC_URL}/images/logo.png`} /></Link>
               </Grid>
             </Grid>
-            <Grid container={true} alignItems="center" xs={8}>
-              <Grid container={true} alignItems="center" justify="flex-end" className="left-top">
+            <Grid item={true} alignItems="center" xs={8}>
+              <Grid container={true} alignItems="center" justify="flex-end" className="right-top">
                 <div>
                   <Link className="link-primary link" target='_blank' href="http://v2.zopim.com/widget/livechat.html?key=4AV3AjiTSLlEJzZEwHTFojUPOVayt8Wr&amp;mid=cKfo1EYVt8j2Ow&amp;lang=ms&amp;hostname=www.hokibet188.com&amp;api_calls=%5B%5D"><img className='live-chat-icon' alt='hokibet188' src={`${process.env.PUBLIC_URL}/images/icons/contact.png`} /><span>Live Chat</span></Link>
                   |
@@ -92,7 +103,7 @@ const Header: React.FC = () => {
                 <Form onSubmit={handleLogin}>
                   {({ handleSubmit }) => 
                     <form onSubmit={handleSubmit}>
-                      <Grid container={true} justify="flex-end" className="left-top control">
+                      <Grid container={true} justify="flex-end" className="right-top control">
                         <div>
                           <Field
                             validate={composeValidators(required, minLength(3))}
@@ -135,20 +146,33 @@ const Header: React.FC = () => {
                     </form>}
                 </Form> : 
                 <Grid container={true}>
-                  <Grid container={true} alignItems="center" justify="flex-end" className="left-top">
+                  <Grid container={true} alignItems="center" justify="flex-end" className="right-top">
                     <div className="user-details">
-                      <AccountCircleIcon color="primary" />
-                      <Typography color="primary" variant="subtitle2">
-                        {auth.username},
-                      </Typography>
-                      &nbsp;&nbsp;
                       <CreditCardIcon color="primary" />
                       <Typography color="primary" variant="subtitle2">
                         {auth.balance} IDR
                       </Typography>
+                      &nbsp;&nbsp;
+                      <Button aria-controls="profile-menu" aria-haspopup="true" onClick={showProfileMenu}>
+                        <AccountCircleIcon color="primary" />
+                        <Typography color="primary" variant="subtitle2">
+                          {auth.username}
+                        </Typography>
+                      </Button>
+                      <Menu
+                        id="simple-menu"
+                        anchorEl={anchorEl}
+                        keepMounted={true}
+                        open={Boolean(anchorEl)}
+                        onClose={closeProfileMenu}
+                      >
+                        <MenuItem onClick={closeProfileMenu}>Logout</MenuItem>
+                        <MenuItem onClick={closeProfileMenu}>Profile</MenuItem>
+                        <MenuItem onClick={closeProfileMenu}>My balance</MenuItem>
+                      </Menu>
                     </div>
                   </Grid>
-                  <Grid container={true} alignItems="center" justify="flex-end" className="left-top">
+                  <Grid container={true} alignItems="center" justify="flex-end" className="right-top">
                     <div>
                       <Link className="link-primary link" href="/deposit"><span>DEPOSIT</span></Link>
                       |
