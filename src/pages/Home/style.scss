@@ -1,5 +1,29 @@
 @import '../../colors';
-
+.browser-home-page {
+  .home-icon {
+    .logo {
+      width: 90%
+    }
+  }
+  color: $primaryColor;
+  .slide {
+    width: 100%
+  }
+  .text-home {
+    h6{
+      text-align:center;
+    }
+  }
+  .announcement {
+    display: flex;
+    background: #2b2b2b;
+    line-height: 40px;
+    align-items: center;
+    svg {
+      margin-right: 15px;
+    }
+  }
+}
 .home-page {
   overflow: hidden;
   .game-tabs {
