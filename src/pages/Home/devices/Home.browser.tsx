@@ -12,7 +12,7 @@ import MarqueeText from 'react-marquee-text-component'
 import Carousel from 'react-slick'
 import { get } from 'services/http'
 import { carousels } from '../constant'
-import { intro } from '../content'
+import { introDetail, introTitle } from '../content'
 import '../style.scss'
 
 const settingsCarousel = {
@@ -75,19 +75,10 @@ const Home: React.FC = () => {
         </Grid>
       </Container>
       {/* Text intro */}
-      <div className="text-home">
-        {map(({ id, title, content }) => 
-          <ExpansionPanel color="primary" key={id} expanded={expanded === id} onChange={handleChangeExpand(id)}>
-            <ExpansionPanelSummary color="primary" expandIcon={<ExpandMore />} aria-controls={id} id={id} key={id}>
-              <Typography variant="h6" color="primary">{title}</Typography>
-            </ExpansionPanelSummary>
-            <ExpansionPanelDetails color="primary" key={id}>
-              <Typography variant="body2" color="primary">
-                <div dangerouslySetInnerHTML={{ __html: content }} />
-              </Typography>
-            </ExpansionPanelDetails> 
-          </ExpansionPanel>, intro)}
-      </div>
+      <Container className="text-home" maxWidth="lg">
+        <div dangerouslySetInnerHTML={{ __html: introTitle }} />
+        <div dangerouslySetInnerHTML={{ __html: introDetail }} />
+      </Container>
     </div>
   )
 }

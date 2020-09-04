@@ -11,6 +11,14 @@ export const games = [
         title: 'Slots',
         items: [
           {
+            title: 'Play And Go',
+            route: '/slots/playandgo'
+          },
+          {
+            title: 'Habanero',
+            route: '/slots/habanero'
+          },
+          {
             icon: '',
             route: '/slots/pg',
             title: 'PG',
@@ -76,6 +84,11 @@ export const games = [
         route: '',
         title: 'Casino',
         items: [
+          {
+            title: 'SA',
+            route: '/gs/groups/sa/types/LC/codes/null',
+            target: '_blank',
+          },
           {
             icon: '',
             route: '/gs/groups/playtech/types/slot/codes/7bal',
