@@ -1,5 +1,5 @@
 export const introTitle = `
-  Situs Judi Slot Online Terpercaya HokiBet118
+  Situs Judi Slot Online Terpercaya HokiBet188
 `
 
 export const introDetail = `
