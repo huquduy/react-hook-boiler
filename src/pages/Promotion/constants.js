@@ -19,11 +19,11 @@ export const promotions = [
         <p>5. ID : Kuemw***89 > OPPO A31</p>
         <p><br></p>
         <p>Hadiah yang tunai masing-masing mendapatkan 1 juta rupiah</p>
-        <p>1. ID : erv***ma</p>
-        <p>2. ID : dsx***3</p>
-        <p>3. ID : qqq***2</p>
-        <p>4. ID : musi**a</p>
-        <p>5. ID : loll**1</p>
+        <p>1. ID : erv**</p>
+        <p>2. ID : dsx**u</p>
+        <p>3. ID : qqq**p</p>
+        <p>4. ID : musi**1</p>
+        <p>5. ID : loll**8</p>
       </ul>
     </div>`
   },
