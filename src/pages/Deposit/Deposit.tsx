@@ -79,7 +79,7 @@ const Deposit: React.FC<RouteComponentProps> = ({ history }) => {
   const handleDeposit = async ({ amount, password, toBankName, currency, bankAccountNumber, bankAccountName, paymentMethod, fromBank, extraBonus }) => {
     const { error } = await withLoading(() => post({
       body: {
-        amount, password, currency, bankAccountNumber, bankAccountName, paymentMethod, fromBank, toBank: toBankName, extraBonus
+        amount, bankAccountName, bankAccountNumber, currency, extraBonus, fromBank, password, paymentMethod, toBank: toBankName
       },
       path: 'deposit/execute'
     })).catch(err => err)
@@ -89,9 +89,9 @@ const Deposit: React.FC<RouteComponentProps> = ({ history }) => {
     return showDialog('Deposit Succesfully', 'Success', '/reports/deposit')
   }
   const handleChange = (change) => (event: React.ChangeEvent<{ value: unknown }>) => {
-    const value = event.target.value;
-    const { accountName, accountNumber } = find(propEq('value', value))(banks);
-    change({ accountName, accountNumber })
+    const { value } = event.target
+    const { accountName, accountNumber, title } = find(propEq('value', value))(banks)
+    change({ accountName, accountNumber, title })
   }
   const calculateAmount = (value) => {
     const result = Numeral(Number(value) * 1000).format('0,0')
@@ -163,9 +163,11 @@ const Deposit: React.FC<RouteComponentProps> = ({ history }) => {
       >
         {({ handleSubmit, form }) => {
           const changeCalcAmount = value => form.change('calcAmount', value)
-          const changeBankInfo = ({ accountName, accountNumber }) => form.batch(() => {
+          const changeBankInfo = (data) => form.batch(() => {
+            const { accountName, accountNumber, title } = data
             form.change('accountName', accountName)
             form.change('accountNumber', accountNumber)
+            form.change('toBankName', title)
           })
           return (
             <form onSubmit={handleSubmit}>
