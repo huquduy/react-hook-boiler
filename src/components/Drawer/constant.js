@@ -85,6 +85,11 @@ export const games = [
         title: 'Casino',
         items: [
           {
+            title: 'Sexy',
+            route: '/gs/groups/sexy/types/LC/codes/null',
+            target: '_blank',
+          },
+          {
             title: 'SA',
             route: '/gs/groups/sa/types/LC/codes/null',
             target: '_blank',

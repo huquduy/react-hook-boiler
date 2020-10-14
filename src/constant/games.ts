@@ -116,6 +116,13 @@ const GAMETYPES = [
     idName: CASINO_TAB,
     providers: [
       {
+        idName: 'Sexy Baccarat',
+        image: 'casinos/sexy.png',
+        nav: 'casinos/W_PLAYTECH.png',
+        route: '/gs/groups/sexy/types/LC/codes/null',
+        target: '_blank',
+      },
+      {
         idName: 'Playtech',
         image: 'casinos/playtech.png',
         nav: 'casinos/W_PLAYTECH.png',
