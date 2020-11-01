@@ -12,18 +12,18 @@ export const promotions = [
     content: `<div>
       <ul>
         <h4 class="bold cap">SELAMAT KEPADA PARA PEMENANG LUCKYDRAW  ( 01 ${oneMonthEarlier} - 01 ${currentMonth} 2020 )</h4>
-        <p>1. ID : Pin*22 > Samsung S20 Ultra</p>
-        <p>2. ID : Juay**11 > Samsung Note 10</p>
-        <p>3. ID : Abyn***88 > LAPTOP ASUS</p>
-        <p>4. ID : Futi***7 > OPPO Reno F2</p>
-        <p>5. ID : Kuemw***89 > OPPO A31</p>
-        <p><br></p>
+        <p>1. ID : ZAn*43 &gt; Samsung S20 Ultra</p>
+        <p>2. ID : BUn**02 &gt; Samsung Note 10</p>
+        <p>3. ID : FinT**09 &gt; LAPTOP ASUS</p>
+        <p>4. ID : Iyum**7 &gt; OPPO Reno F2</p>
+        <p>5. ID : Punm**39 &gt; OPPO A31</p>
+        <p><br /></p>
         <p>Hadiah yang tunai masing-masing mendapatkan 1 juta rupiah</p>
-        <p>1. ID : erv**</p>
-        <p>2. ID : dsx**u</p>
-        <p>3. ID : qqq**p</p>
-        <p>4. ID : musi**1</p>
-        <p>5. ID : loll**8</p>
+        <p>1. ID : iluc*s</p>
+        <p>2. ID : mot**g</p>
+        <p>3. ID : tomc**g</p>
+        <p>4. ID : sab**nak</p>
+        <p>5. ID : kucin**23</p>
       </ul>
     </div>`
   },
